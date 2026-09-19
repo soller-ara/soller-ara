@@ -1,7 +1,7 @@
 {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-19T22:18:39.120445+00:00",
+  "fetched_at": "2026-09-19T23:18:02.013746+00:00",
   "source_count": 28,
   "source_status": [
     {
@@ -118,7 +118,7 @@
       "source_type": "media",
       "method": "html_listing_regex",
       "ok": true,
-      "count": 7,
+      "count": 6,
       "error": null
     },
     {
@@ -258,7 +258,7 @@
     }
   ],
   "social_integration_status": [],
-  "post_count": 123,
+  "post_count": 122,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
@@ -299,26 +299,6 @@
       "media_type": "video",
       "content_policy": "generated_social_summary",
       "rights_status": "platform_embed",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "c81a528c6c7bdabf2389",
-      "category": "news",
-      "source_id": "mallorca-directo-soller",
-      "source": "Mallorca Directo",
-      "source_type": "media",
-      "language": "es",
-      "locality": "Sóller",
-      "published_at": "2026-09-19T12:00:00+00:00",
-      "title": "Gasolineras más baratas en Sóller hoy: precios actualizados | Mallorca Directo",
-      "summary": "",
-      "url": "https://mallorcadirecto.com/comarca-de-ponent/soller/gasolineras",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
       "image_allowed": false,
       "related_sources": []
     },
