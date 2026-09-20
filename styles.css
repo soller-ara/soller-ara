@@ -180,11 +180,20 @@ a { color: inherit; }
   grid-template-columns: 1.7fr .8fr;
   gap: 24px;
   padding: clamp(28px, 5vw, 58px);
-  background: linear-gradient(135deg, #103f3b, #0f766e);
+  background:
+    linear-gradient(135deg, rgba(8, 66, 61, .92), rgba(15, 118, 110, .68)),
+    url("https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Paisaje_de_S%C3%B3ller_%28Mallorca%29.jpg/960px-Paisaje_de_S%C3%B3ller_%28Mallorca%29.jpg") center / cover;
   color: white;
   border-radius: 30px;
   box-shadow: var(--shadow);
 }
+.hero-credit {
+  margin: 10px 8px 0;
+  color: var(--muted);
+  font-size: .72rem;
+  line-height: 1.45;
+}
+.hero-credit a { color: inherit; }
 .hero h2 {
   margin: 10px 0 14px;
   font-size: clamp(2rem, 5vw, 4rem);
