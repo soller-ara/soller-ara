@@ -812,6 +812,62 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-09-19T16:19:57.242926+00:00",
       "error": ""
+    },
+    {
+      "post_id": "c997538355e41b999bc5",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122111590485467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122111590485467310",
+      "title": "El preu dels lloguers a Sóller s’han duplicat en només cinc anys i arriba als 1.282 euros al mes",
+      "post_url": "https://saveu.cat/noticies/el-preu-dels-lloguers-a-soller-shan-duplicat-en-nomes-cinc-anys-i-arriba-als-1-282-euros-al-mes/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-20T07:19:14.381759+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "c997538355e41b999bc5",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "17960167890226921",
+      "remote_url": "https://www.instagram.com/p/DdgCHASDQSn/",
+      "title": "El preu dels lloguers a Sóller s’han duplicat en només cinc anys i arriba als 1.282 euros al mes",
+      "post_url": "https://saveu.cat/noticies/el-preu-dels-lloguers-a-soller-shan-duplicat-en-nomes-cinc-anys-i-arriba-als-1-282-euros-al-mes/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-20T07:19:27.509312+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "bffea3084c17558b1611",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122111590605467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122111590605467310",
+      "title": "Multa de 100 euros al activistes de Cultura en Sec per penjar cartells a l’espai públic",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/09/20/354561/multa-100-euros-activistes-cultura-sec-per-penjar-cartells-espai-public.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-20T07:19:31.300515+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "bffea3084c17558b1611",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "17918121225442800",
+      "remote_url": "https://www.instagram.com/p/DdgCJFoDVpl/",
+      "title": "Multa de 100 euros al activistes de Cultura en Sec per penjar cartells a l’espai públic",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/09/20/354561/multa-100-euros-activistes-cultura-sec-per-penjar-cartells-espai-public.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-20T07:19:39.508473+00:00",
+      "error": ""
     }
   ]
 }
