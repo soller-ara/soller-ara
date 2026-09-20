@@ -311,7 +311,7 @@ function iconFor(category) {
     services: "🛠️",
     agenda: "📅",
     culture: "🎭",
-    sports: "⚽",
+    sports: "🏅",
     commerce: "🏪",
     social: "📱",
     news: "📰"
