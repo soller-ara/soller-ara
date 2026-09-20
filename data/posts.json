@@ -1,7 +1,7 @@
 {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-20T16:20:42.083319+00:00",
+  "fetched_at": "2026-09-20T17:18:00.545247+00:00",
   "source_count": 31,
   "source_status": [
     {
@@ -109,7 +109,7 @@
       "source_type": "media",
       "method": "html_listing_regex",
       "ok": true,
-      "count": 29,
+      "count": 28,
       "error": null
     },
     {
@@ -285,7 +285,7 @@
     }
   ],
   "social_integration_status": [],
-  "post_count": 122,
+  "post_count": 121,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
@@ -2734,26 +2734,6 @@
       "title": "IB3N | Retencions de vuit quilòmetres per un accident al túnel de Sóller",
       "summary": "",
       "url": "https://ib3.org/retencions-de-vuit-quilometres-per-un-accident-al-tunel-de-soller",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "cb8d717a98d1daff614a",
-      "category": "news",
-      "source_id": "ultima-hora-soller",
-      "source": "Última Hora",
-      "source_type": "media",
-      "language": "es",
-      "locality": "Sóller",
-      "published_at": "2026-07-22T18:41:00+02:00",
-      "title": "Menys Turisme convoca una manifestación en Sóller por considerarlo «al límite»",
-      "summary": "",
-      "url": "https://www.ultimahora.es/noticias/part-forana/2026/07/22/2675459/menys-turisme-convoca-manifestacion-soller-por-considerarlo-limite.html",
       "platform": null,
       "account": null,
       "media_type": null,
