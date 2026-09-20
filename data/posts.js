@@ -1,8 +1,8 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-20T12:24:15.717823+00:00",
-  "source_count": 28,
+  "fetched_at": "2026-09-20T13:09:50.270807+00:00",
+  "source_count": 31,
   "source_status": [
     {
       "source_id": "ajuntament-soller-noticies",
@@ -245,6 +245,33 @@ window.SOLLER_ARA_DATA = {
       "method": "rss",
       "ok": true,
       "count": 5,
+      "error": null
+    },
+    {
+      "source_id": "cronica-balear-soller",
+      "name": "Crónica Balear",
+      "source_type": "media",
+      "method": "freenewsapi_search",
+      "ok": true,
+      "count": 0,
+      "error": null
+    },
+    {
+      "source_id": "ara-balears-soller",
+      "name": "ARA Balears",
+      "source_type": "media",
+      "method": "rss",
+      "ok": true,
+      "count": 0,
+      "error": null
+    },
+    {
+      "source_id": "tren-soller-noticies",
+      "name": "Tren de Sóller · Actualitat",
+      "source_type": "institution",
+      "method": "html_listing_regex",
+      "ok": true,
+      "count": 0,
       "error": null
     },
     {
