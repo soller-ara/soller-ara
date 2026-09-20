@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-20T06:24:17.323785+00:00",
+  "fetched_at": "2026-09-20T07:18:58.864423+00:00",
   "source_count": 28,
   "source_status": [
     {
@@ -54,18 +54,18 @@ window.SOLLER_ARA_DATA = {
       "name": "Ajuntament de Sóller · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
-      "count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "ok": true,
+      "count": 2,
+      "error": null
     },
     {
       "source_id": "youtube-ib3-noticies-soller",
       "name": "IB3 Notícies · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "error": null
     },
     {
       "source_id": "goib-noticies-soller",
@@ -144,90 +144,90 @@ window.SOLLER_ARA_DATA = {
       "name": "Can Prunera · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "error": null
     },
     {
       "source_id": "youtube-aires-sollerics",
       "name": "Aires Sollerics · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "error": null
     },
     {
       "source_id": "youtube-xeremiers-soller",
       "name": "Xeremiers de Sóller · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "error": null
     },
     {
       "source_id": "youtube-club-volei-soller",
       "name": "Club Vòlei Sóller · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
-      "count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "ok": true,
+      "count": 1,
+      "error": null
     },
     {
       "source_id": "youtube-ballades-mallorca-soller",
       "name": "Ballades A Mallorca · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "error": null
     },
     {
       "source_id": "youtube-tramuntana-xxi",
       "name": "Tramuntana XXI · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "error": null
     },
     {
       "source_id": "youtube-gob-mallorca-soller",
       "name": "GOB Mallorca · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "error": null
     },
     {
       "source_id": "youtube-museu-maritim-soller",
       "name": "Museu Marítim de Mallorca · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "error": null
     },
     {
       "source_id": "youtube-serra-tramuntana",
       "name": "Serra de Tramuntana Patrimoni Mundial · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "error": null
     },
     {
       "source_id": "youtube-consell-mallorca-soller",
       "name": "Consell de Mallorca · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "error": null
     },
     {
       "source_id": "mucbo-noticies",
@@ -258,59 +258,72 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 119,
+  "post_count": 122,
   "related_pair_count": 0,
-  "errors": [
-    {
-      "source_id": "youtube-ajuntament-soller",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-ib3-noticies-soller",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-can-prunera",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-aires-sollerics",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-xeremiers-soller",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-club-volei-soller",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-ballades-mallorca-soller",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-tramuntana-xxi",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-gob-mallorca-soller",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-museu-maritim-soller",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-serra-tramuntana",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-consell-mallorca-soller",
-      "error": "HTTP Error 404: Not Found"
-    }
-  ],
+  "errors": [],
   "posts": [
+    {
+      "id": "c997538355e41b999bc5",
+      "category": "news",
+      "source_id": "sa-veu-soller",
+      "source": "Sa Veu de Sóller",
+      "source_type": "media",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-09-20T07:00:00+00:00",
+      "title": "El preu dels lloguers a Sóller s’han duplicat en només cinc anys i arriba als 1.282 euros al mes",
+      "summary": "",
+      "url": "https://saveu.cat/noticies/el-preu-dels-lloguers-a-soller-shan-duplicat-en-nomes-cinc-anys-i-arriba-als-1-282-euros-al-mes/",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "image_allowed": false,
+      "embed_type": "official_oembed",
+      "embed_url": "https://saveu.cat/noticies/el-preu-dels-lloguers-a-soller-shan-duplicat-en-nomes-cinc-anys-i-arriba-als-1-282-euros-al-mes/embed/",
+      "related_sources": []
+    },
+    {
+      "id": "bffea3084c17558b1611",
+      "category": "culture",
+      "source_id": "setmanari-soller",
+      "source": "Setmanari Sóller",
+      "source_type": "media",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-09-20T08:30:00+02:00",
+      "title": "Multa de 100 euros al activistes de Cultura en Sec per penjar cartells a l’espai públic",
+      "summary": "",
+      "url": "https://www.elsoller.cat/soller/local/2026/09/20/354561/multa-100-euros-activistes-cultura-sec-per-penjar-cartells-espai-public.html",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
+      "id": "e6326617ea0c3edff0d8",
+      "category": "sports",
+      "source_id": "youtube-club-volei-soller",
+      "source": "Club Vòlei Sóller · YouTube",
+      "source_type": "social",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-09-20T03:57:45+00:00",
+      "title": "trofeu ciutat de sóller",
+      "summary": "Vídeo publicat per Club Vòlei Sóller · YouTube.",
+      "url": "https://www.youtube.com/watch?v=q_-hMqJmesI",
+      "platform": "YouTube",
+      "account": "@CVSoller",
+      "media_type": "video",
+      "content_policy": "generated_social_summary",
+      "rights_status": "platform_embed",
+      "image_allowed": false,
+      "related_sources": []
+    },
     {
       "id": "e5643f62656989ce2984",
       "category": "news",
@@ -753,6 +766,26 @@ window.SOLLER_ARA_DATA = {
       "related_sources": []
     },
     {
+      "id": "85f85df365d3bcdba1c3",
+      "category": "agenda",
+      "source_id": "youtube-ajuntament-soller",
+      "source": "Ajuntament de Sóller · YouTube",
+      "source_type": "social",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-09-16T13:08:28+00:00",
+      "title": "Ple ordinari de l'Ajuntament de Sóller, celebrada el 16/9/2026 (Part 2 de la sessió del 9/9/2026).",
+      "summary": "Vídeo publicat per Ajuntament de Sóller · YouTube relacionat amb una sessió plenària o activitat municipal.",
+      "url": "https://www.youtube.com/watch?v=-c349w_HKS4",
+      "platform": "YouTube",
+      "account": "@ajuntamentdesoller_",
+      "media_type": "video",
+      "content_policy": "generated_social_summary",
+      "rights_status": "platform_embed",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
       "id": "c2c81b2f37ad4b716814",
       "category": "news",
       "source_id": "diario-mallorca-soller",
@@ -830,28 +863,6 @@ window.SOLLER_ARA_DATA = {
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "0c73c5accef3179057fa",
-      "category": "services",
-      "source_id": "sa-veu-soller",
-      "source": "Sa Veu de Sóller",
-      "source_type": "media",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-09-15T14:07:36+00:00",
-      "title": "Apareixen taques d’aigua marró davant les costes del Port de Sóller",
-      "summary": "",
-      "url": "https://saveu.cat/noticies/apareixen-taques-daigua-marro-davant-les-costes-del-port-de-soller/",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
-      "embed_type": "official_oembed",
-      "embed_url": "https://saveu.cat/noticies/apareixen-taques-daigua-marro-davant-les-costes-del-port-de-soller/embed/",
       "related_sources": []
     },
     {
@@ -1235,6 +1246,26 @@ window.SOLLER_ARA_DATA = {
       "related_sources": []
     },
     {
+      "id": "afc2f48c871c4c51a1c9",
+      "category": "news",
+      "source_id": "youtube-ajuntament-soller",
+      "source": "Ajuntament de Sóller · YouTube",
+      "source_type": "social",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-09-09T12:39:11+00:00",
+      "title": "Sessió plenària ordinària de l'Ajuntament de Sóller, celebrada el 9 de setembre de 2026.",
+      "summary": "Vídeo publicat per Ajuntament de Sóller · YouTube relacionat amb una sessió plenària o activitat municipal.",
+      "url": "https://www.youtube.com/watch?v=Ej0M-wttjM0",
+      "platform": "YouTube",
+      "account": "@ajuntamentdesoller_",
+      "media_type": "video",
+      "content_policy": "generated_social_summary",
+      "rights_status": "platform_embed",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
       "id": "bf8e16223ddd2d79f613",
       "category": "news",
       "source_id": "setmanari-soller",
@@ -1406,26 +1437,6 @@ window.SOLLER_ARA_DATA = {
       "title": "Sóller és el destí turístic més visitat en cotxe per turistes internacionals a Espanya",
       "summary": "",
       "url": "https://www.elsoller.cat/soller/local/2026/09/08/354521/soller-desti-turistic-mes-visitat-cotxe-per-turistes-internacionals-espanya.html",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "8de424af3ef664ecb4f0",
-      "category": "news",
-      "source_id": "setmanari-soller",
-      "source": "Setmanari Sóller",
-      "source_type": "media",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-09-08T10:15:00+02:00",
-      "title": "Mor un ciclista de 66 anys al Coll de Sóller",
-      "summary": "",
-      "url": "https://www.elsoller.cat/soller/local/2026/09/08/354519/mor-ciclista-anys-coll-soller.html",
       "platform": null,
       "account": null,
       "media_type": null,
