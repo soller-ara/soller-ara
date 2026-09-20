@@ -255,6 +255,7 @@ let currentCategory = "now";
 let currentSource = "all";
 let currentSearch = "";
 let sourceStatus = [];
+let configuredSources = [];
 
 const languageSelect = document.getElementById("languageSelect");
 const feed = document.getElementById("feed");
@@ -381,16 +382,22 @@ function updateLastUpdated() {
 
 function populateSourceSelect() {
   const currentValue = currentSource;
-  const uniqueSources = [...new Map(
-    posts
-      .filter((post) => post.source_id && post.source)
-      .map((post) => [post.source_id, { id: post.source_id, name: post.source }])
-  ).values()].sort((a, b) => a.name.localeCompare(b.name, currentLanguage));
+  const uniqueSources = new Map(
+    configuredSources
+      .filter((source) => source && source.id && source.name)
+      .map((source) => [source.id, { id: source.id, name: source.name }])
+  );
+  posts
+    .filter((post) => post.source_id && post.source)
+    .forEach((post) => uniqueSources.set(post.source_id, { id: post.source_id, name: post.source }));
+
+  const options = [...uniqueSources.values()]
+    .sort((a, b) => a.name.localeCompare(b.name, currentLanguage));
 
   sourceSelect.innerHTML = `<option value="all">${t("source.all")}</option>`
-    + uniqueSources.map((source) => `<option value="${escapeAttribute(source.id)}">${escapeHtml(source.name)}</option>`).join("");
+    + options.map((source) => `<option value="${escapeAttribute(source.id)}">${escapeHtml(source.name)}</option>`).join("");
 
-  sourceSelect.value = uniqueSources.some((source) => source.id === currentValue) ? currentValue : "all";
+  sourceSelect.value = options.some((source) => source.id === currentValue) ? currentValue : "all";
   currentSource = sourceSelect.value;
 }
 
@@ -651,6 +658,18 @@ function applyPostsPayload(payload) {
   usingDemoData = false;
 }
 
+async function loadConfiguredSources() {
+  try {
+    const response = await fetch(`sources.json?v=${Date.now()}`, { cache: "no-store" });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const payload = await response.json();
+    configuredSources = Array.isArray(payload.sources) ? payload.sources : [];
+  } catch (error) {
+    console.warn("No s'han pogut carregar les fonts configurades", error);
+    configuredSources = [];
+  }
+}
+
 async function loadPosts() {
   const embeddedPayload = window.SOLLER_ARA_DATA;
 
@@ -689,6 +708,7 @@ async function loadPosts() {
     }
   }
 
+  await loadConfiguredSources();
   populateSourceSelect();
   updateSourceHealth();
   updateLastUpdated();
