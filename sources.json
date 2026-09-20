@@ -1,5 +1,5 @@
 {
-  "version": 31,
+  "version": 32,
   "sources": [
     {
       "id": "ajuntament-soller-noticies",
@@ -682,6 +682,102 @@
       "verification_url": "https://canprunera.com/",
       "verification_method": "feed_linked_from_entity_website",
       "verified_at": "2026-09-17"
+    },
+    {
+      "id": "cronica-balear-soller",
+      "name": "Crónica Balear",
+      "type": "freenewsapi_search",
+      "url": "https://freenewsapi.ai/v1/search",
+      "host": "cronicabalear.es",
+      "query_terms": [
+        "Sóller",
+        "Port de Sóller",
+        "Biniaraix",
+        "Fornalutx"
+      ],
+      "language": "es",
+      "locality": "Sóller / Serra de Tramuntana",
+      "source_type": "media",
+      "max_items": 20,
+      "max_age_days": 60,
+      "enabled": true,
+      "image_policy": "disabled_until_rights_verified",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "include_keywords": [
+        "Sóller",
+        "Soller",
+        "Port de Sóller",
+        "Port de Soller",
+        "Biniaraix",
+        "Fornalutx",
+        "Vall de Sóller",
+        "Vall de Soller",
+        "Ferrocarril de Sóller",
+        "Tren de Sóller",
+        "Túnel de Sóller",
+        "Tunel de Soller"
+      ]
+    },
+    {
+      "id": "ara-balears-soller",
+      "name": "ARA Balears",
+      "type": "rss",
+      "url": "https://www.arabalears.cat/rss/",
+      "language": "ca",
+      "locality": "Sóller / Serra de Tramuntana",
+      "source_type": "media",
+      "max_items": 30,
+      "max_age_days": 60,
+      "enabled": true,
+      "image_policy": "disabled_until_rights_verified",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "include_keywords": [
+        "Sóller",
+        "Soller",
+        "Port de Sóller",
+        "Port de Soller",
+        "Biniaraix",
+        "Fornalutx",
+        "Vall de Sóller",
+        "Vall de Soller",
+        "Ferrocarril de Sóller",
+        "Tren de Sóller",
+        "Túnel de Sóller",
+        "Tunel de Soller"
+      ]
+    },
+    {
+      "id": "tren-soller-noticies",
+      "name": "Tren de Sóller · Actualitat",
+      "type": "html_listing_regex",
+      "url": "https://trendesoller.com/",
+      "allowed_host": "trendesoller.com",
+      "article_url_regex": "^/blog/[^/?#]+/[^/?#]+$",
+      "language": "es",
+      "locality": "Sóller / Port de Sóller",
+      "source_type": "institution",
+      "max_items": 20,
+      "max_age_days": 60,
+      "enabled": true,
+      "image_policy": "disabled_until_rights_verified",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "include_keywords": [
+        "Sóller",
+        "Soller",
+        "Port de Sóller",
+        "Port de Soller",
+        "Biniaraix",
+        "Fornalutx",
+        "Vall de Sóller",
+        "Vall de Soller",
+        "Ferrocarril de Sóller",
+        "Tren de Sóller",
+        "Túnel de Sóller",
+        "Tunel de Soller"
+      ]
     }
   ]
 }
