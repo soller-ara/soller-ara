@@ -1,7 +1,7 @@
 {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-21T17:17:41.616884+00:00",
+  "fetched_at": "2026-09-21T18:22:34.339227+00:00",
   "source_count": 31,
   "source_status": [
     {
@@ -1493,17 +1493,17 @@
       "related_sources": []
     },
     {
-      "id": "7ce73fcaa5e6876daf0f",
-      "category": "agenda",
+      "id": "99baa9bf4ff527ba42a8",
+      "category": "services",
       "source_id": "ajuntament-soller-noticies",
       "source": "Ajuntament de Sóller",
       "source_type": "official",
       "language": "ca",
       "locality": "Sóller",
-      "published_at": "2026-09-07T08:51:51+00:00",
-      "title": "Anunci de la convocatòria del pròxim ple ordinari",
-      "summary": "Tindrà lloc dimecres, 9 de setembre, a les 11:00h",
-      "url": "https://ajsoller.net/ca/noticies/anunci-de-la-convocatoria-del-proxim-ple-ordinari",
+      "published_at": "2026-09-07T05:37:04+00:00",
+      "title": "El tinent de batle assisteix a la presentació de l’inici de les obres d’ampliació de la rotonda de la ITV de Son Castelló",
+      "summary": "El tinent de batle de Sóller, Carlos Darder, ha assistit avui a l’inici de les obres d’ampliació de la rotonda de la ITV de Son Castelló, en un acte encapçalat pel president del Consell de Mallorca, Llorenç Galmés, amb…",
+      "url": "https://ajsoller.net/ca/noticies/el-tinent-de-batle-assisteix-la-presentacio-de-linici-de-les-obres-dampliacio-de-la",
       "platform": null,
       "account": null,
       "media_type": null,
