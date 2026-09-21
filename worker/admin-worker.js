@@ -452,11 +452,13 @@ async function manageSocialSettings(request, env, cors) {
 
 async function moderate(request, env, cors) {
   const body = await request.json().catch(() => ({}));
-  const allowed = new Set(["hide", "unhide", "delete-own"]);
+  const allowed = new Set(["hide", "unhide", "delete-own", "reclassify"]);
+  const allowedCategories = new Set(["news", "agenda", "alerts", "services", "culture", "sports", "commerce"]);
   const action = String(body.action || "");
   const postId = String(body.post_id || "").trim();
+  const category = String(body.category || "");
 
-  if (!allowed.has(action) || !postId) {
+  if (!allowed.has(action) || !postId || (action === "reclassify" && !allowedCategories.has(category))) {
     return json({ error: "Acción de moderación no válida." }, 400, cors);
   }
 
@@ -464,6 +466,7 @@ async function moderate(request, env, cors) {
     action,
     post_id: postId,
     note: "",
+    category,
     confirmation: "CONFIRMAR",
   });
 
