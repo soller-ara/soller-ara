@@ -2,5 +2,8 @@
   "version": 1,
   "hidden_post_ids": [],
   "notes": {},
-  "hidden_posts": {}
+  "hidden_posts": {},
+  "category_overrides": {
+    "08fd8546b7a184c76040": "services"
+  }
 }

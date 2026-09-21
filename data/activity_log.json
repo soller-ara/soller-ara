@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "64197e8ec4f7a2ba",
+      "timestamp": "2026-09-21T14:44:06.626989+00:00",
+      "action": "reclassify",
+      "area": "moderation",
+      "target_id": "08fd8546b7a184c76040",
+      "title": "Sóller 2010 deixa l’Hospital i es reparteix entre l’Ajuntament i Son Angelats",
+      "detail": "Acción de moderación completada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "1baac6505f887422",
       "timestamp": "2026-09-18T16:39:56.051114+00:00",
       "action": "publish",
