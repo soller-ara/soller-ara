@@ -1478,18 +1478,29 @@ def filter_by_max_age(source: dict, posts: list[dict]) -> list[dict]:
     return filtered
 
 
-def load_hidden_post_ids() -> set[str]:
+def load_moderation() -> dict:
     if not MODERATION_FILE.exists():
-        return set()
+        return {}
     try:
         payload = json.loads(MODERATION_FILE.read_text(encoding="utf-8"))
+        return payload if isinstance(payload, dict) else {}
     except Exception as exc:
         print(f"ERROR moderació: {exc}", file=sys.stderr)
-        return set()
+        return {}
+
+
+def load_hidden_post_ids() -> set[str]:
+    payload = load_moderation()
     return {
         str(item) for item in (payload.get("hidden_post_ids") or [])
         if str(item).strip()
     }
+
+
+def load_category_overrides() -> dict[str, str]:
+    raw = load_moderation().get("category_overrides") or {}
+    allowed = {"news", "agenda", "alerts", "services", "culture", "sports", "commerce"}
+    return {str(post_id): str(category) for post_id, category in raw.items() if str(post_id).strip() and str(category) in allowed}
 
 
 def load_manual_posts() -> list[dict]:
@@ -1600,6 +1611,11 @@ def main() -> int:
 
     # Només elimina duplicats exactes de la mateixa entrada. Mai elimina una publicació d'una altra font.
     hidden_post_ids = load_hidden_post_ids()
+    category_overrides = load_category_overrides()
+    for post in posts:
+        override = category_overrides.get(str(post.get("id") or ""))
+        if override:
+            post["category"] = override
     deduped = {
         post["id"]: post for post in posts
         if post.get("id") not in hidden_post_ids
