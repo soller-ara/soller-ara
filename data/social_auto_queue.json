@@ -1,26 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-09-21T14:34:37.535012+00:00",
-  "entries": [
-    {
-      "post_id": "c1dbe207375a2dad523c",
-      "title": "Educació renova el concert per mantenir la gratuïtat a cinc escoletes de Sóller",
-      "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
-      "source_type": "media",
-      "category": "culture",
-      "language": "ca",
-      "published_at": "2026-09-21T13:44:30+00:00",
-      "original_url": "https://saveu.cat/noticies/educacio-renova-el-concert-per-mantenir-la-gratuitat-a-cinc-escoletes-de-soller/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/c1dbe207375a2dad523c.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
