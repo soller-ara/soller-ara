@@ -896,6 +896,34 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-09-21T09:22:34.837185+00:00",
       "error": ""
+    },
+    {
+      "post_id": "08fd8546b7a184c76040",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122112256041467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122112256041467310",
+      "title": "Sóller 2010 deixa l’Hospital i es reparteix entre l’Ajuntament i Son Angelats",
+      "post_url": "https://saveu.cat/noticies/soller-2010-deixa-lhospital-i-es-reparteix-entre-lajuntament-i-son-angelats/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-21T10:21:01.855352+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "08fd8546b7a184c76040",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18564323602073051",
+      "remote_url": "https://www.instagram.com/p/Ddi7tWUDtQ0/",
+      "title": "Sóller 2010 deixa l’Hospital i es reparteix entre l’Ajuntament i Son Angelats",
+      "post_url": "https://saveu.cat/noticies/soller-2010-deixa-lhospital-i-es-reparteix-entre-lajuntament-i-son-angelats/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-21T10:21:10.165045+00:00",
+      "error": ""
     }
   ]
 }
