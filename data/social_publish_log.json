@@ -952,6 +952,34 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-09-21T14:21:23.811181+00:00",
       "error": ""
+    },
+    {
+      "post_id": "c1dbe207375a2dad523c",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122112368637467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122112368637467310",
+      "title": "Educació renova el concert per mantenir la gratuïtat a cinc escoletes de Sóller",
+      "post_url": "https://saveu.cat/noticies/educacio-renova-el-concert-per-mantenir-la-gratuitat-a-cinc-escoletes-de-soller/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-21T14:34:53.350021+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "c1dbe207375a2dad523c",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "17955931386249077",
+      "remote_url": "https://www.instagram.com/p/DdjYwsKnQ_Z/",
+      "title": "Educació renova el concert per mantenir la gratuïtat a cinc escoletes de Sóller",
+      "post_url": "https://saveu.cat/noticies/educacio-renova-el-concert-per-mantenir-la-gratuitat-a-cinc-escoletes-de-soller/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-21T14:35:03.327629+00:00",
+      "error": ""
     }
   ]
 }
