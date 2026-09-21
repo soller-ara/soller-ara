@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-21T07:22:47.649134+00:00",
+  "fetched_at": "2026-09-21T08:22:39.266323+00:00",
   "source_count": 31,
   "source_status": [
     {
@@ -72,9 +72,9 @@ window.SOLLER_ARA_DATA = {
       "name": "Govern de les Illes Balears",
       "source_type": "official",
       "method": "rss",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "error": "[Errno 104] Connection reset by peer"
+      "error": null
     },
     {
       "source_id": "ib3-noticies-soller",
@@ -287,12 +287,7 @@ window.SOLLER_ARA_DATA = {
   "social_integration_status": [],
   "post_count": 120,
   "related_pair_count": 0,
-  "errors": [
-    {
-      "source_id": "goib-noticies-soller",
-      "error": "[Errno 104] Connection reset by peer"
-    }
-  ],
+  "errors": [],
   "posts": [
     {
       "id": "c997538355e41b999bc5",
