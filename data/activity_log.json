@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "642c332bbadd3752",
+      "timestamp": "2026-09-21T14:46:07.084045+00:00",
+      "action": "reclassify",
+      "area": "moderation",
+      "target_id": "e9e1a681e86d016ad611",
+      "title": "Sóller encarrega la redacció d’un pla per fer front a les emergències",
+      "detail": "Acción de moderación completada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "e88942b1cb290119",
       "timestamp": "2026-09-21T14:45:37.252528+00:00",
       "action": "reclassify",
