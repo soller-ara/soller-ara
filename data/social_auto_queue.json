@@ -1,6 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-09-21T14:20:54.251116+00:00",
+  "entries": [
+    {
+      "post_id": "e9e1a681e86d016ad611",
+      "title": "Sóller encarrega la redacció d’un pla per fer front a les emergències",
+      "summary": "",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "source_type": "media",
+      "category": "alerts",
+      "language": "ca",
+      "published_at": "2026-09-21T13:49:34+00:00",
+      "original_url": "https://saveu.cat/noticies/soller-encarrega-la-redaccio-dun-pla-per-fer-front-a-les-emergencies/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/e9e1a681e86d016ad611.jpg"
+    }
+  ]
 }
