@@ -313,7 +313,7 @@ window.SOLLER_ARA_DATA = {
     },
     {
       "id": "c1dbe207375a2dad523c",
-      "category": "culture",
+      "category": "services",
       "source_id": "sa-veu-soller",
       "source": "Sa Veu de Sóller",
       "source_type": "media",

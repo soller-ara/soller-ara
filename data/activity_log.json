@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "0a6b9b62afb7057b",
+      "timestamp": "2026-09-21T14:46:20.907320+00:00",
+      "action": "reclassify",
+      "area": "moderation",
+      "target_id": "c1dbe207375a2dad523c",
+      "title": "Educació renova el concert per mantenir la gratuïtat a cinc escoletes de Sóller",
+      "detail": "Acción de moderación completada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "642c332bbadd3752",
       "timestamp": "2026-09-21T14:46:07.084045+00:00",
       "action": "reclassify",
