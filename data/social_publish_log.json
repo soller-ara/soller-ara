@@ -868,6 +868,34 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-09-20T07:19:39.508473+00:00",
       "error": ""
+    },
+    {
+      "post_id": "3c48176798e2614ece28",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122112233529467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122112233529467310",
+      "title": "Les oficines de Sóller 2010 es traslladen a l'Ajuntament",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/09/21/354563/les-oficines-soller-2010-traslladen-ajuntament.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-21T09:22:25.991685+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "3c48176798e2614ece28",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18121669562483803",
+      "remote_url": "https://www.instagram.com/p/Ddi1ALYjhT4/",
+      "title": "Les oficines de Sóller 2010 es traslladen a l'Ajuntament",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/09/21/354563/les-oficines-soller-2010-traslladen-ajuntament.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-21T09:22:34.837185+00:00",
+      "error": ""
     }
   ]
 }
