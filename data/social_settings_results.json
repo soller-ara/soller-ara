@@ -11,6 +11,12 @@
       "recorded_at": "2026-09-18T09:48:54.262801+00:00",
       "ok": false,
       "error": "No se ha guardado el cambio. Actualiza el panel y revisa la selección; puede haber cambiado en otra sesión."
+    },
+    {
+      "request_id": "10a6b522-4cee-4835-a05c-e9221050a094",
+      "recorded_at": "2026-09-21T09:12:53.960088+00:00",
+      "ok": true,
+      "version": 5
     }
   ]
 }

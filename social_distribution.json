@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 5,
   "enabled": true,
   "platforms": {
     "facebook": true,
@@ -123,6 +123,18 @@
       "instagram": true
     },
     "can-prunera-noticies": {
+      "facebook": true,
+      "instagram": true
+    },
+    "cronica-balear-soller": {
+      "facebook": true,
+      "instagram": true
+    },
+    "ara-balears-soller": {
+      "facebook": true,
+      "instagram": true
+    },
+    "tren-soller-noticies": {
       "facebook": true,
       "instagram": true
     }
