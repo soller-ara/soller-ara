@@ -239,6 +239,14 @@
             <div class="post-meta">${escapeHtml(post.source || "")} · ${escapeHtml(post.category || "")} · ${escapeHtml(formatDate(post.published_at))}</div>
             <div class="post-actions">
               ${post.url ? `<a class="button-link" href="${escapeHtml(post.url)}" target="_blank" rel="noopener">Abrir</a>` : ""}
+              <label>Tipo
+                <select id="post-category-${escapeHtml(post.id)}" data-category-select>
+                  ${["news", "agenda", "alerts", "services", "culture", "sports", "commerce"].map((category) =>
+                    `<option value="${category}"${post.category === category ? " selected" : ""}>${({news:"Noticias", agenda:"Agenda", alerts:"Avisos", services:"Servicios", culture:"Cultura", sports:"Deportes", commerce:"Comercio"})[category]}</option>`
+                  ).join("")}
+                </select>
+              </label>
+              <button type="button" data-action="reclassify" data-post-id="${escapeHtml(post.id)}">Guardar tipo</button>
               ${own
                 ? `<button type="button" data-edit-id="${escapeHtml(post.id)}">Editar</button>
                    <button class="danger" type="button" data-action="delete-own" data-post-id="${escapeHtml(post.id)}">Eliminar</button>`
@@ -251,7 +259,10 @@
     }
 
     target.querySelectorAll("[data-action]").forEach((button) => {
-      button.addEventListener("click", () => moderate(button.dataset.action, button.dataset.postId));
+      button.addEventListener("click", () => {
+        const select = document.getElementById("post-category-" + button.dataset.postId);
+        moderate(button.dataset.action, button.dataset.postId, select?.value || "");
+      });
     });
     target.querySelectorAll("[data-edit-id]").forEach((button) => {
       button.addEventListener("click", () => startEdit(button.dataset.editId));
@@ -417,21 +428,23 @@
     }
   }
 
-  function moderationApplied(data, action, postId) {
+  function moderationApplied(data, action, postId, category = "") {
     const posts = Array.isArray(data?.posts?.posts) ? data.posts.posts : [];
     const hidden = Array.isArray(data?.moderation?.hidden_post_ids)
       ? data.moderation.hidden_post_ids
       : [];
-    const present = posts.some((post) => post.id === postId);
+    const targetPost = posts.find((post) => post.id === postId);
+    const present = Boolean(targetPost);
     const isHidden = hidden.includes(postId);
 
     if (action === "hide") return isHidden && !present;
     if (action === "unhide") return !isHidden && present;
     if (action === "delete-own") return !present && !isHidden;
+    if (action === "reclassify") return present && targetPost.category === category;
     return false;
   }
 
-  async function waitForModeration(action, postId) {
+  async function waitForModeration(action, postId, category = "") {
     const attempts = 12;
     for (let attempt = 1; attempt <= attempts; attempt++) {
       await new Promise((resolve) => setTimeout(resolve, 2500));
@@ -443,7 +456,7 @@
       renderSocial(data);
       renderPosts();
 
-      if (moderationApplied(data, action, postId)) return true;
+      if (moderationApplied(data, action, postId, category)) return true;
       setMessage(
         moderationMessage,
         "Procesando en GitHub… " + attempt + "/" + attempts
@@ -452,11 +465,12 @@
     return false;
   }
 
-  async function moderate(action, postId) {
+  async function moderate(action, postId, category = "") {
     const labels = {
       "delete-own": "eliminar definitivamente esta publicación propia",
       "hide": "ocultar esta publicación",
       "unhide": "restaurar esta publicación",
+      "reclassify": "cambiar el tipo de esta publicación a " + category,
     };
     if (!confirm("¿Confirmas que quieres " + (labels[action] || "realizar esta acción") + "?")) return;
 
@@ -464,15 +478,16 @@
     try {
       await api("/api/moderate", {
         method: "POST",
-        body: JSON.stringify({ action, post_id: postId }),
+        body: JSON.stringify({ action, post_id: postId, category }),
       });
 
-      const applied = await waitForModeration(action, postId);
+      const applied = await waitForModeration(action, postId, category);
       if (applied) {
         const doneLabels = {
           "hide": "Publicación ocultada correctamente.",
           "unhide": "Publicación restaurada correctamente.",
           "delete-own": "Publicación eliminada correctamente.",
+          "reclassify": "Tipo de publicación actualizado correctamente.",
         };
         setMessage(moderationMessage, doneLabels[action] || "Acción completada.", "success");
       } else {
