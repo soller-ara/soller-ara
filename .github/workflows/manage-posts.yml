@@ -7,11 +7,16 @@ on:
         description: 'Acció'
         required: true
         type: choice
-        options: [hide, unhide, delete-own]
+        options: [hide, unhide, delete-own, reclassify]
       post_id:
         description: 'ID de la publicació'
         required: true
         type: string
+      category:
+        description: 'Tipus nou (només per reclassify)'
+        required: false
+        type: choice
+        options: [news, agenda, alerts, services, culture, sports, commerce]
       note:
         description: 'Compatibilitat API (no es desa)'
         required: false
@@ -45,6 +50,7 @@ jobs:
           MODERATION_ACTION: ${{ inputs.action }}
           POST_ID: ${{ inputs.post_id }}
           MODERATION_CONFIRMATION: ${{ inputs.confirmation }}
+          MODERATION_CATEGORY: ${{ inputs.category }}
         run: python scripts/manage_posts.py
 
       - name: Registrar activitat
