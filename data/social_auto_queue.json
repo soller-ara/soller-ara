@@ -1,26 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-09-21T10:20:49.363223+00:00",
-  "entries": [
-    {
-      "post_id": "08fd8546b7a184c76040",
-      "title": "Sóller 2010 deixa l’Hospital i es reparteix entre l’Ajuntament i Son Angelats",
-      "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
-      "source_type": "media",
-      "category": "sports",
-      "language": "ca",
-      "published_at": "2026-09-21T09:28:51+00:00",
-      "original_url": "https://saveu.cat/noticies/soller-2010-deixa-lhospital-i-es-reparteix-entre-lajuntament-i-son-angelats/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/08fd8546b7a184c76040.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
