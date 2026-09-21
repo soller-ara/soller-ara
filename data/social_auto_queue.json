@@ -1,6 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-09-21T09:22:12.228237+00:00",
+  "entries": [
+    {
+      "post_id": "3c48176798e2614ece28",
+      "title": "Les oficines de Sóller 2010 es traslladen a l'Ajuntament",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-09-21T10:30:28+02:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/09/21/354563/les-oficines-soller-2010-traslladen-ajuntament.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/3c48176798e2614ece28.jpg"
+    }
+  ]
 }

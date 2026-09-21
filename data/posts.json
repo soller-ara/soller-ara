@@ -1,7 +1,7 @@
 {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-21T08:22:39.266323+00:00",
+  "fetched_at": "2026-09-21T09:22:12.050112+00:00",
   "source_count": 31,
   "source_status": [
     {
@@ -289,6 +289,26 @@
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "3c48176798e2614ece28",
+      "category": "news",
+      "source_id": "setmanari-soller",
+      "source": "Setmanari Sóller",
+      "source_type": "media",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-09-21T10:30:28+02:00",
+      "title": "Les oficines de Sóller 2010 es traslladen a l'Ajuntament",
+      "summary": "",
+      "url": "https://www.elsoller.cat/soller/local/2026/09/21/354563/les-oficines-soller-2010-traslladen-ajuntament.html",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "image_allowed": false,
+      "related_sources": []
+    },
     {
       "id": "c997538355e41b999bc5",
       "category": "news",
@@ -1424,26 +1444,6 @@
       "title": "Muere un ciclista de una enfermedad súbita cuando recorría el Coll de Sóller",
       "summary": "",
       "url": "https://www.diariodemallorca.es/sucesos/sucesos-mallorca/2026/09/08/muere-ciclista-enfermedad-subita-recorria-134061958.html",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "e0cd59083e278c437347",
-      "category": "news",
-      "source_id": "setmanari-soller",
-      "source": "Setmanari Sóller",
-      "source_type": "media",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-09-08T12:35:00+02:00",
-      "title": "Sóller és el destí turístic més visitat en cotxe per turistes internacionals a Espanya",
-      "summary": "",
-      "url": "https://www.elsoller.cat/soller/local/2026/09/08/354521/soller-desti-turistic-mes-visitat-cotxe-per-turistes-internacionals-espanya.html",
       "platform": null,
       "account": null,
       "media_type": null,
