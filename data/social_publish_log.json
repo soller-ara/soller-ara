@@ -924,6 +924,34 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-09-21T10:21:10.165045+00:00",
       "error": ""
+    },
+    {
+      "post_id": "e9e1a681e86d016ad611",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122112361383467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122112361383467310",
+      "title": "Sóller encarrega la redacció d’un pla per fer front a les emergències",
+      "post_url": "https://saveu.cat/noticies/soller-encarrega-la-redaccio-dun-pla-per-fer-front-a-les-emergencies/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-21T14:21:11.861800+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "e9e1a681e86d016ad611",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "17878366506547447",
+      "remote_url": "https://www.instagram.com/p/DdjXMc-IBT5/",
+      "title": "Sóller encarrega la redacció d’un pla per fer front a les emergències",
+      "post_url": "https://saveu.cat/noticies/soller-encarrega-la-redaccio-dun-pla-per-fer-front-a-les-emergencies/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-21T14:21:23.811181+00:00",
+      "error": ""
     }
   ]
 }
