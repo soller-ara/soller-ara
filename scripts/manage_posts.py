@@ -25,6 +25,8 @@ POSTS_JS_FILE = ROOT / "data" / "posts.js"
 ACTION = os.environ.get("MODERATION_ACTION", "").strip()
 POST_ID = os.environ.get("POST_ID", "").strip()
 CONFIRMATION = os.environ.get("MODERATION_CONFIRMATION", "").strip()
+CATEGORY = os.environ.get("MODERATION_CATEGORY", "").strip()
+ALLOWED_CATEGORIES = {"news", "agenda", "alerts", "services", "culture", "sports", "commerce"}
 
 
 def load_json(path: Path, fallback: dict) -> dict:
@@ -45,6 +47,7 @@ def refresh_generated_feed() -> None:
     payload = load_json(POSTS_FILE, {"posts": []})
     moderation = load_json(MODERATION_FILE, {"hidden_post_ids": []})
     hidden = set(moderation.get("hidden_post_ids") or [])
+    category_overrides = moderation.get("category_overrides") or {}
 
     manual = load_json(MANUAL_FILE, {"posts": []})
     valid_manual_ids = {item.get("id") for item in (manual.get("posts") or []) if item.get("id")}
@@ -56,6 +59,10 @@ def refresh_generated_feed() -> None:
             continue
         if post.get("source_type") == "own" and post_id not in valid_manual_ids:
             continue
+        override = category_overrides.get(post_id)
+        if override in ALLOWED_CATEGORIES:
+            post = dict(post)
+            post["category"] = override
         posts.append(post)
 
     payload["posts"] = posts
@@ -165,6 +172,20 @@ def unhide() -> None:
         print(f"RESULTAT: publicació reactivada: {POST_ID}. Es recuperarà de la font a la pròxima actualització.")
 
 
+def reclassify() -> None:
+    if CATEGORY not in ALLOWED_CATEGORIES:
+        raise RuntimeError("Categoria no vàlida.")
+    payload = load_json(POSTS_FILE, {"posts": []})
+    target = next((item for item in (payload.get("posts") or []) if item.get("id") == POST_ID), None)
+    if target is None:
+        raise RuntimeError("No s'ha trobat aquesta publicació visible.")
+    moderation = load_json(MODERATION_FILE, {"version": 1, "hidden_post_ids": [], "notes": {}, "hidden_posts": {}, "category_overrides": {}})
+    moderation.setdefault("category_overrides", {})[POST_ID] = CATEGORY
+    save_json(MODERATION_FILE, moderation)
+    refresh_generated_feed()
+    print(f"RESULTAT: categoria actualitzada: {POST_ID} -> {CATEGORY}")
+
+
 def main() -> int:
     if CONFIRMATION != "CONFIRMAR":
         print("ERROR: cal escriure CONFIRMAR.", file=sys.stderr)
@@ -180,6 +201,8 @@ def main() -> int:
             hide()
         elif ACTION == "unhide":
             unhide()
+        elif ACTION == "reclassify":
+            reclassify()
         else:
             raise RuntimeError(f"Acció no suportada: {ACTION}")
         return 0
