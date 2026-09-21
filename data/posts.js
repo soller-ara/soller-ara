@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-21T21:19:22.156457+00:00",
+  "fetched_at": "2026-09-21T22:20:06.275409+00:00",
   "source_count": 31,
   "source_status": [
     {
@@ -118,7 +118,7 @@ window.SOLLER_ARA_DATA = {
       "source_type": "media",
       "method": "html_listing_regex",
       "ok": true,
-      "count": 7,
+      "count": 6,
       "error": null
     },
     {
@@ -285,7 +285,7 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 120,
+  "post_count": 119,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
@@ -331,26 +331,6 @@ window.SOLLER_ARA_DATA = {
       "image_allowed": false,
       "embed_type": "official_oembed",
       "embed_url": "https://saveu.cat/noticies/educacio-renova-el-concert-per-mantenir-la-gratuitat-a-cinc-escoletes-de-soller/embed/",
-      "related_sources": []
-    },
-    {
-      "id": "c81a528c6c7bdabf2389",
-      "category": "news",
-      "source_id": "mallorca-directo-soller",
-      "source": "Mallorca Directo",
-      "source_type": "media",
-      "language": "es",
-      "locality": "Sóller",
-      "published_at": "2026-09-21T12:00:00+00:00",
-      "title": "Gasolineras más baratas en Sóller hoy: precios actualizados | Mallorca Directo",
-      "summary": "",
-      "url": "https://mallorcadirecto.com/comarca-de-ponent/soller/gasolineras",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
       "related_sources": []
     },
     {
