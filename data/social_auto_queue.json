@@ -1,45 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-09-22T15:21:05.973477+00:00",
+  "generated_at": "2026-09-22T16:20:52.495910+00:00",
   "entries": [
     {
-      "post_id": "5127524af9e70d4b67b5",
-      "title": "El CEIP Ses Marjades reivindica una mobilitat més sostenible i segura",
-      "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
-      "source_type": "media",
-      "category": "services",
-      "language": "ca",
-      "published_at": "2026-09-22T16:31:00+02:00",
-      "original_url": "https://www.elsoller.cat/soller/local/2026/09/22/354565/ceip-ses-marjades-reivindica-mobilitat-mes-sostenible-segura.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/5127524af9e70d4b67b5.jpg"
-    },
-    {
-      "post_id": "e5dd00c94a45c53c892b",
-      "title": "La biblioteca seguirà a l’Hospital fins al seu retorn a Ses Escolàpies",
+      "post_id": "d4868cb8b4e1c0758f81",
+      "title": "El llum de Nadal torna als carrers de Sóller",
       "summary": "",
       "source": "Sa Veu de Sóller",
       "source_id": "sa-veu-soller",
       "source_type": "media",
       "category": "services",
       "language": "ca",
-      "published_at": "2026-09-22T13:55:51+00:00",
-      "original_url": "https://saveu.cat/noticies/la-biblioteca-seguira-a-lhospital-fins-al-seu-retorn-a-ses-escolapies/",
+      "published_at": "2026-09-22T13:45:28+00:00",
+      "original_url": "https://saveu.cat/noticies/el-llum-de-nadal-torna-als-carrers-de-soller/",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/e5dd00c94a45c53c892b.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/d4868cb8b4e1c0758f81.jpg"
     }
   ]
 }
