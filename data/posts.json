@@ -1,7 +1,7 @@
 {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-22T07:21:28.785443+00:00",
+  "fetched_at": "2026-09-22T08:21:58.459503+00:00",
   "source_count": 31,
   "source_status": [
     {
@@ -289,6 +289,26 @@
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "c624af39406f45f11b87",
+      "category": "agenda",
+      "source_id": "ajuntament-soller-noticies",
+      "source": "Ajuntament de Sóller",
+      "source_type": "official",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-09-22T07:35:43+00:00",
+      "title": "Convocatòria de subvencions de l’any 2026 per dur a terme actuacions d’administració electrònica, digitalització i ciberseguretat",
+      "summary": "L’Ajuntament de Sóller s’ha acollit a la convocatòria de subvencions de l’any 2026 per dur a terme actuacions d’administració electrònica, digitalització i ciberseguretat, promoguda pel Departament de Promoció Econòmica…",
+      "url": "https://ajsoller.net/ca/noticies/convocatoria-de-subvencions-de-lany-2026-dur-terme-actuacions-dadministracio-electronica",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "public_source_reviewed",
+      "image_allowed": false,
+      "related_sources": []
+    },
     {
       "id": "e9e1a681e86d016ad611",
       "category": "news",
@@ -1469,26 +1489,6 @@
       "media_type": null,
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "7ce73fcaa5e6876daf0f",
-      "category": "agenda",
-      "source_id": "ajuntament-soller-noticies",
-      "source": "Ajuntament de Sóller",
-      "source_type": "official",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-09-07T08:51:51+00:00",
-      "title": "Anunci de la convocatòria del pròxim ple ordinari",
-      "summary": "Tindrà lloc dimecres, 9 de setembre, a les 11:00h",
-      "url": "https://ajsoller.net/ca/noticies/anunci-de-la-convocatoria-del-proxim-ple-ordinari",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "short_factual_excerpt",
-      "rights_status": "public_source_reviewed",
       "image_allowed": false,
       "related_sources": []
     },
