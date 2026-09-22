@@ -1,26 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-09-22T16:20:52.495910+00:00",
-  "entries": [
-    {
-      "post_id": "d4868cb8b4e1c0758f81",
-      "title": "El llum de Nadal torna als carrers de Sóller",
-      "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
-      "source_type": "media",
-      "category": "services",
-      "language": "ca",
-      "published_at": "2026-09-22T13:45:28+00:00",
-      "original_url": "https://saveu.cat/noticies/el-llum-de-nadal-torna-als-carrers-de-soller/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/d4868cb8b4e1c0758f81.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
