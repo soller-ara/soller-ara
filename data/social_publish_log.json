@@ -1036,6 +1036,34 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-09-22T10:22:54.253184+00:00",
       "error": ""
+    },
+    {
+      "post_id": "1f1895b569548d7f50df",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122112925155467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122112925155467310",
+      "title": "Trobada d’experts en col·leccions entomològiques amb la participació del MUCBO",
+      "post_url": "https://mucbo.org/trobada-dexperts-en-colleccions-entomologiques-a-madrid-amb-la-participacio-del-mucbo/",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-22T11:20:56.446565+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "1f1895b569548d7f50df",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18151693477556049",
+      "remote_url": "https://www.instagram.com/p/DdlnXEzDhF0/",
+      "title": "Trobada d’experts en col·leccions entomològiques amb la participació del MUCBO",
+      "post_url": "https://mucbo.org/trobada-dexperts-en-colleccions-entomologiques-a-madrid-amb-la-participacio-del-mucbo/",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-22T11:21:09.742184+00:00",
+      "error": ""
     }
   ]
 }
