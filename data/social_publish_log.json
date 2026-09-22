@@ -1204,6 +1204,34 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-09-22T15:22:22.726335+00:00",
       "error": ""
+    },
+    {
+      "post_id": "d4868cb8b4e1c0758f81",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122113069611467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122113069611467310",
+      "title": "El llum de Nadal torna als carrers de Sóller",
+      "post_url": "https://saveu.cat/noticies/el-llum-de-nadal-torna-als-carrers-de-soller/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-22T16:21:13.329949+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "d4868cb8b4e1c0758f81",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18095146523647417",
+      "remote_url": "https://www.instagram.com/p/DdmJuXBlAs9/",
+      "title": "El llum de Nadal torna als carrers de Sóller",
+      "post_url": "https://saveu.cat/noticies/el-llum-de-nadal-torna-als-carrers-de-soller/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-22T16:21:27.406420+00:00",
+      "error": ""
     }
   ]
 }
