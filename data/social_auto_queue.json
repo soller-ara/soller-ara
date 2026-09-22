@@ -1,6 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-09-22T10:21:58.448740+00:00",
+  "entries": [
+    {
+      "post_id": "d95b816a5334ec3b996c",
+      "title": "Snorkel: Descobreix el fons marí",
+      "summary": "",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "source_type": "institution",
+      "category": "culture",
+      "language": "ca",
+      "published_at": "2026-09-22T10:04:16+00:00",
+      "original_url": "https://mucbo.org/snorkel-descobreix-el-fons-mari/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/d95b816a5334ec3b996c.jpg"
+    }
+  ]
 }

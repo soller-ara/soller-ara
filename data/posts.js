@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-22T09:20:34.352971+00:00",
+  "fetched_at": "2026-09-22T10:21:58.285050+00:00",
   "source_count": 31,
   "source_status": [
     {
@@ -289,6 +289,28 @@ window.SOLLER_ARA_DATA = {
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "d95b816a5334ec3b996c",
+      "category": "culture",
+      "source_id": "mucbo-noticies",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_type": "institution",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-09-22T10:04:16+00:00",
+      "title": "Snorkel: Descobreix el fons marí",
+      "summary": "",
+      "url": "https://mucbo.org/snorkel-descobreix-el-fons-mari/",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "image_allowed": false,
+      "embed_type": "official_oembed",
+      "embed_url": "https://mucbo.org/snorkel-descobreix-el-fons-mari/embed/",
+      "related_sources": []
+    },
     {
       "id": "c624af39406f45f11b87",
       "category": "agenda",
@@ -2334,28 +2356,6 @@ window.SOLLER_ARA_DATA = {
       "image_allowed": false,
       "embed_type": "official_oembed",
       "embed_url": "https://mucbo.org/dianthus-rupicola-subsp-bocchoriana-l-llorens-gradaille/embed/",
-      "related_sources": []
-    },
-    {
-      "id": "19fa1f728bd04376162f",
-      "category": "culture",
-      "source_id": "mucbo-noticies",
-      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
-      "source_type": "institution",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-08-06T06:30:18+00:00",
-      "title": "Oryctes nasicornis",
-      "summary": "",
-      "url": "https://mucbo.org/oryctes-nasicornis/",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "link_only_no_media_license",
-      "image_allowed": false,
-      "embed_type": "official_oembed",
-      "embed_url": "https://mucbo.org/oryctes-nasicornis/embed/",
       "related_sources": []
     },
     {
