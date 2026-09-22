@@ -980,6 +980,34 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-09-21T14:35:03.327629+00:00",
       "error": ""
+    },
+    {
+      "post_id": "c624af39406f45f11b87",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122112789975467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122112789975467310",
+      "title": "Convocatòria de subvencions de l’any 2026 per dur a terme actuacions d’administració electrònica, digitalització i ciberseguretat",
+      "post_url": "https://ajsoller.net/ca/noticies/convocatoria-de-subvencions-de-lany-2026-dur-terme-actuacions-dadministracio-electronica",
+      "source": "Ajuntament de Sóller",
+      "source_id": "ajuntament-soller-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-22T08:22:21.686515+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "c624af39406f45f11b87",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18110207368979873",
+      "remote_url": "https://www.instagram.com/p/DdlS7JmoAIP/",
+      "title": "Convocatòria de subvencions de l’any 2026 per dur a terme actuacions d’administració electrònica, digitalització i ciberseguretat",
+      "post_url": "https://ajsoller.net/ca/noticies/convocatoria-de-subvencions-de-lany-2026-dur-terme-actuacions-dadministracio-electronica",
+      "source": "Ajuntament de Sóller",
+      "source_id": "ajuntament-soller-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-22T08:22:38.611918+00:00",
+      "error": ""
     }
   ]
 }
