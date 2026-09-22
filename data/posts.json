@@ -1,7 +1,7 @@
 {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-22T10:21:58.285050+00:00",
+  "fetched_at": "2026-09-22T11:20:33.361920+00:00",
   "source_count": 31,
   "source_status": [
     {
@@ -289,6 +289,28 @@
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "1f1895b569548d7f50df",
+      "category": "culture",
+      "source_id": "mucbo-noticies",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_type": "institution",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-09-22T10:41:58+00:00",
+      "title": "Trobada d’experts en col·leccions entomològiques amb la participació del MUCBO",
+      "summary": "",
+      "url": "https://mucbo.org/trobada-dexperts-en-colleccions-entomologiques-a-madrid-amb-la-participacio-del-mucbo/",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "image_allowed": false,
+      "embed_type": "official_oembed",
+      "embed_url": "https://mucbo.org/trobada-dexperts-en-colleccions-entomologiques-a-madrid-amb-la-participacio-del-mucbo/embed/",
+      "related_sources": []
+    },
     {
       "id": "d95b816a5334ec3b996c",
       "category": "culture",
@@ -2334,28 +2356,6 @@
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "97ef71ab6c6e2898016b",
-      "category": "culture",
-      "source_id": "mucbo-noticies",
-      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
-      "source_type": "institution",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-08-06T07:13:21+00:00",
-      "title": "Dianthus rupicola subsp. bocchoriana",
-      "summary": "",
-      "url": "https://mucbo.org/dianthus-rupicola-subsp-bocchoriana-l-llorens-gradaille/",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "link_only_no_media_license",
-      "image_allowed": false,
-      "embed_type": "official_oembed",
-      "embed_url": "https://mucbo.org/dianthus-rupicola-subsp-bocchoriana-l-llorens-gradaille/embed/",
       "related_sources": []
     },
     {
