@@ -1008,6 +1008,34 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-09-22T08:22:38.611918+00:00",
       "error": ""
+    },
+    {
+      "post_id": "d95b816a5334ec3b996c",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122112895455467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122112895455467310",
+      "title": "Snorkel: Descobreix el fons marí",
+      "post_url": "https://mucbo.org/snorkel-descobreix-el-fons-mari/",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-22T10:22:43.671294+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "d95b816a5334ec3b996c",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18089031536226630",
+      "remote_url": "https://www.instagram.com/p/DdlgsqpD64b/",
+      "title": "Snorkel: Descobreix el fons marí",
+      "post_url": "https://mucbo.org/snorkel-descobreix-el-fons-mari/",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-22T10:22:54.253184+00:00",
+      "error": ""
     }
   ]
 }
