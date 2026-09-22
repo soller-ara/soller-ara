@@ -1,26 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-09-22T08:21:58.606424+00:00",
-  "entries": [
-    {
-      "post_id": "c624af39406f45f11b87",
-      "title": "Convocatòria de subvencions de l’any 2026 per dur a terme actuacions d’administració electrònica, digitalització i ciberseguretat",
-      "summary": "L’Ajuntament de Sóller s’ha acollit a la convocatòria de subvencions de l’any 2026 per dur a terme actuacions d’administració electrònica, digitalització i ciberseguretat, promoguda pel Departament de Promoció Econòmica…",
-      "source": "Ajuntament de Sóller",
-      "source_id": "ajuntament-soller-noticies",
-      "source_type": "official",
-      "category": "agenda",
-      "language": "ca",
-      "published_at": "2026-09-22T07:35:43+00:00",
-      "original_url": "https://ajsoller.net/ca/noticies/convocatoria-de-subvencions-de-lany-2026-dur-terme-actuacions-dadministracio-electronica",
-      "content_policy": "short_factual_excerpt",
-      "rights_status": "public_source_reviewed",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/c624af39406f45f11b87.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
