@@ -1120,6 +1120,34 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-09-22T12:26:40.283401+00:00",
       "error": ""
+    },
+    {
+      "post_id": "a8f1e7e3cfa0d14ba35c",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122113030125467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122113030125467310",
+      "title": "Iniciada la campanya que analitza l’impacte de les cremes en la qualitat de l’aire",
+      "post_url": "https://saveu.cat/noticies/iniciada-la-campanya-que-analitzara-limpacte-de-les-cremes-en-la-qualitat-de-laire/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-22T14:20:53.867367+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "a8f1e7e3cfa0d14ba35c",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "17885812134621864",
+      "remote_url": "https://www.instagram.com/p/Ddl79ExDY1y/",
+      "title": "Iniciada la campanya que analitza l’impacte de les cremes en la qualitat de l’aire",
+      "post_url": "https://saveu.cat/noticies/iniciada-la-campanya-que-analitzara-limpacte-de-les-cremes-en-la-qualitat-de-laire/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-22T14:21:07.166597+00:00",
+      "error": ""
     }
   ]
 }
