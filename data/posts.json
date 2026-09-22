@@ -1,7 +1,7 @@
 {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-21T23:18:29.761387+00:00",
+  "fetched_at": "2026-09-22T00:27:28.073997+00:00",
   "source_count": 31,
   "source_status": [
     {
@@ -126,9 +126,9 @@
       "name": "TIB · Avisos",
       "source_type": "official",
       "method": "html_listing_regex",
-      "ok": true,
-      "count": 2,
-      "error": null
+      "ok": false,
+      "count": 0,
+      "error": "<urlopen error [Errno -3] Temporary failure in name resolution>"
     },
     {
       "source_id": "consell-mallorca-soller",
@@ -285,9 +285,14 @@
     }
   ],
   "social_integration_status": [],
-  "post_count": 119,
+  "post_count": 117,
   "related_pair_count": 0,
-  "errors": [],
+  "errors": [
+    {
+      "source_id": "tib-avisos-soller",
+      "error": "<urlopen error [Errno -3] Temporary failure in name resolution>"
+    }
+  ],
   "posts": [
     {
       "id": "e9e1a681e86d016ad611",
@@ -535,26 +540,6 @@
       "media_type": null,
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "caf94b41a032507a5f12",
-      "category": "alerts",
-      "source_id": "tib-avisos-soller",
-      "source": "TIB · Avisos",
-      "source_type": "official",
-      "language": "ca",
-      "locality": "Sóller / Port de Sóller / Fornalutx",
-      "published_at": "2026-09-18T12:00:00+00:00",
-      "title": "26 de septiembre: Supresión de servicio en la línea 203",
-      "summary": "Debido a la celebración del RAL·LI VALL DE SANT PERE el sábado 26 de septiembre, la línea 203 suprime el servicio entre las paradas de Ma-10, Valldemossa y Ma-10, Sóller hasta las 14.30 h . En esta franja horaria, el…",
-      "url": "https://www.tib.org/es/w/avis-ral-li-vall-de-sant-pere-l203",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "short_factual_excerpt",
-      "rights_status": "official_public_source",
       "image_allowed": false,
       "related_sources": []
     },
@@ -2699,26 +2684,6 @@
       "media_type": null,
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "73e29e0bc47f531405ce",
-      "category": "alerts",
-      "source_id": "tib-avisos-soller",
-      "source": "TIB · Avisos",
-      "source_type": "official",
-      "language": "ca",
-      "locality": "Sóller / Port de Sóller / Fornalutx",
-      "published_at": "2026-06-26T12:00:00+00:00",
-      "title": "Prueba piloto: reserva de plaza línea 203 Port de Sóller–Deià–Valldemossa–Palma",
-      "summary": "Reserva de plaza en la línea 203 Port de Sóller–Deià–Valldemossa–Palma para la salida de las 15 h desde el Puerto de Sóller .",
-      "url": "https://www.tib.org/es/w/avis-prova-pilot-203",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "short_factual_excerpt",
-      "rights_status": "official_public_source",
       "image_allowed": false,
       "related_sources": []
     }
