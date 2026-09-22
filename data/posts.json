@@ -1,7 +1,7 @@
 {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-22T14:20:29.359993+00:00",
+  "fetched_at": "2026-09-22T15:21:05.798940+00:00",
   "source_count": 31,
   "source_status": [
     {
@@ -289,6 +289,26 @@
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "5127524af9e70d4b67b5",
+      "category": "services",
+      "source_id": "setmanari-soller",
+      "source": "Setmanari Sóller",
+      "source_type": "media",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-09-22T16:31:00+02:00",
+      "title": "El CEIP Ses Marjades reivindica una mobilitat més sostenible i segura",
+      "summary": "",
+      "url": "https://www.elsoller.cat/soller/local/2026/09/22/354565/ceip-ses-marjades-reivindica-mobilitat-mes-sostenible-segura.html",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "image_allowed": false,
+      "related_sources": []
+    },
     {
       "id": "a8f1e7e3cfa0d14ba35c",
       "category": "news",
@@ -1415,26 +1435,6 @@
       "media_type": "video",
       "content_policy": "generated_social_summary",
       "rights_status": "platform_embed",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "bf8e16223ddd2d79f613",
-      "category": "news",
-      "source_id": "setmanari-soller",
-      "source": "Setmanari Sóller",
-      "source_type": "media",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-09-09T13:19:00+02:00",
-      "title": "L’oposició i l'abstenció del regidor no adscrit, Pep Porcel tomben la pròrroga d’Aqualia",
-      "summary": "",
-      "url": "https://www.elsoller.cat/soller/local/2026/09/09/354523/oposicio-abstencio-del-regidor-adscrit-tomben-prorroga-aqualia.html",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
       "image_allowed": false,
       "related_sources": []
     },
