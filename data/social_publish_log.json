@@ -1148,6 +1148,62 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-09-22T14:21:07.166597+00:00",
       "error": ""
+    },
+    {
+      "post_id": "5127524af9e70d4b67b5",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122113051155467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122113051155467310",
+      "title": "El CEIP Ses Marjades reivindica una mobilitat més sostenible i segura",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/09/22/354565/ceip-ses-marjades-reivindica-mobilitat-mes-sostenible-segura.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-22T15:21:26.449378+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "5127524af9e70d4b67b5",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18112469798034045",
+      "remote_url": "https://www.instagram.com/p/DdmC6Y-nXRw/",
+      "title": "El CEIP Ses Marjades reivindica una mobilitat més sostenible i segura",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/09/22/354565/ceip-ses-marjades-reivindica-mobilitat-mes-sostenible-segura.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-22T15:21:56.774738+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "e5dd00c94a45c53c892b",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122113051287467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122113051287467310",
+      "title": "La biblioteca seguirà a l’Hospital fins al seu retorn a Ses Escolàpies",
+      "post_url": "https://saveu.cat/noticies/la-biblioteca-seguira-a-lhospital-fins-al-seu-retorn-a-ses-escolapies/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-22T15:22:08.120352+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "e5dd00c94a45c53c892b",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18596376595066659",
+      "remote_url": "https://www.instagram.com/p/DdmC9mCnWkj/",
+      "title": "La biblioteca seguirà a l’Hospital fins al seu retorn a Ses Escolàpies",
+      "post_url": "https://saveu.cat/noticies/la-biblioteca-seguira-a-lhospital-fins-al-seu-retorn-a-ses-escolapies/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-22T15:22:22.726335+00:00",
+      "error": ""
     }
   ]
 }
