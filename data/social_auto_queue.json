@@ -1,26 +1,45 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-09-22T11:20:33.604278+00:00",
+  "generated_at": "2026-09-22T12:25:46.966171+00:00",
   "entries": [
     {
-      "post_id": "1f1895b569548d7f50df",
-      "title": "Trobada d’experts en col·leccions entomològiques amb la participació del MUCBO",
+      "post_id": "8a9804f88acb901a287d",
+      "title": "Avís de canvi d’ubicació de les oficines de Sóller 2010",
+      "summary": "",
+      "source": "Sóller 2010",
+      "source_id": "soller-2010",
+      "source_type": "official",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-09-22T12:00:00+00:00",
+      "original_url": "https://soller2010.com/noticias/avis-de-canvi-de-ubicacio-de-les-oficines-de-soller-2010",
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "public_source_reviewed",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/8a9804f88acb901a287d.jpg"
+    },
+    {
+      "post_id": "ea3e7bc497430ad094d7",
+      "title": "El MUCBO amplia la seva col·lecció paleontològica amb una important donació.",
       "summary": "",
       "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
       "source_id": "mucbo-noticies",
       "source_type": "institution",
       "category": "culture",
       "language": "ca",
-      "published_at": "2026-09-22T10:41:58+00:00",
-      "original_url": "https://mucbo.org/trobada-dexperts-en-colleccions-entomologiques-a-madrid-amb-la-participacio-del-mucbo/",
+      "published_at": "2026-09-22T11:28:48+00:00",
+      "original_url": "https://mucbo.org/el-mucbo-amplia-la-seva-colleccio-paleontologica-amb-una-important-donacio/",
       "content_policy": "headline_date_link_only",
       "rights_status": "link_only_no_media_license",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/1f1895b569548d7f50df.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/ea3e7bc497430ad094d7.jpg"
     }
   ]
 }
