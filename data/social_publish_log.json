@@ -1064,6 +1064,62 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-09-22T11:21:09.742184+00:00",
       "error": ""
+    },
+    {
+      "post_id": "8a9804f88acb901a287d",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122112960471467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122112960471467310",
+      "title": "Avís de canvi d’ubicació de les oficines de Sóller 2010",
+      "post_url": "https://soller2010.com/noticias/avis-de-canvi-de-ubicacio-de-les-oficines-de-soller-2010",
+      "source": "Sóller 2010",
+      "source_id": "soller-2010",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-22T12:26:07.890520+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "8a9804f88acb901a287d",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18121382147290549",
+      "remote_url": "https://www.instagram.com/p/Ddlu0kdnSAB/",
+      "title": "Avís de canvi d’ubicació de les oficines de Sóller 2010",
+      "post_url": "https://soller2010.com/noticias/avis-de-canvi-de-ubicacio-de-les-oficines-de-soller-2010",
+      "source": "Sóller 2010",
+      "source_id": "soller-2010",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-22T12:26:23.168051+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "ea3e7bc497430ad094d7",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122112960843467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122112960843467310",
+      "title": "El MUCBO amplia la seva col·lecció paleontològica amb una important donació.",
+      "post_url": "https://mucbo.org/el-mucbo-amplia-la-seva-colleccio-paleontologica-amb-una-important-donacio/",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-22T12:26:31.620158+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "ea3e7bc497430ad094d7",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18107918630588187",
+      "remote_url": "https://www.instagram.com/p/Ddlu3b6HUoJ/",
+      "title": "El MUCBO amplia la seva col·lecció paleontològica amb una important donació.",
+      "post_url": "https://mucbo.org/el-mucbo-amplia-la-seva-colleccio-paleontologica-amb-una-important-donacio/",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-22T12:26:40.283401+00:00",
+      "error": ""
     }
   ]
 }
