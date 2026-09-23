@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-23T18:25:05.162450+00:00",
+  "fetched_at": "2026-09-23T19:19:27.993533+00:00",
   "source_count": 31,
   "source_status": [
     {
@@ -290,6 +290,26 @@ window.SOLLER_ARA_DATA = {
   "errors": [],
   "posts": [
     {
+      "id": "9d9be93a7013aadc5011",
+      "category": "news",
+      "source_id": "youtube-ib3-noticies-soller",
+      "source": "IB3 Notícies · YouTube",
+      "source_type": "social",
+      "language": "ca",
+      "locality": "Sóller / Fornalutx / Serra de Tramuntana",
+      "published_at": "2026-09-23T18:16:37+00:00",
+      "title": "Sóller imposa 600 multes per saltar-se la zona de baixes emissions",
+      "summary": "Vídeo publicat per IB3 Notícies · YouTube.",
+      "url": "https://www.youtube.com/shorts/4VrlsjLpCVk",
+      "platform": "YouTube",
+      "account": "@NoticiesIB3",
+      "media_type": "video",
+      "content_policy": "generated_social_summary",
+      "rights_status": "platform_embed",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
       "id": "17a4b7d4bdfdb3f5281e",
       "category": "services",
       "source_id": "setmanari-soller",
@@ -393,26 +413,6 @@ window.SOLLER_ARA_DATA = {
       "image_allowed": false,
       "embed_type": "official_oembed",
       "embed_url": "https://saveu.cat/noticies/lhorta-demana-zones-daparcament-per-a-residents/embed/",
-      "related_sources": []
-    },
-    {
-      "id": "bfb2ab441907ec43ae82",
-      "category": "news",
-      "source_id": "youtube-ib3-noticies-soller",
-      "source": "IB3 Notícies · YouTube",
-      "source_type": "social",
-      "language": "ca",
-      "locality": "Sóller / Fornalutx / Serra de Tramuntana",
-      "published_at": "2026-09-23T12:41:12+00:00",
-      "title": "Sóller imposa 600 multes per saltar-se la Zona de Baixes Emissions",
-      "summary": "Vídeo publicat per IB3 Notícies · YouTube.",
-      "url": "https://www.youtube.com/watch?v=w04kofFX0xM",
-      "platform": "YouTube",
-      "account": "@NoticiesIB3",
-      "media_type": "video",
-      "content_policy": "generated_social_summary",
-      "rights_status": "platform_embed",
-      "image_allowed": false,
       "related_sources": []
     },
     {
