@@ -1372,6 +1372,34 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-09-23T13:24:23.955287+00:00",
       "error": ""
+    },
+    {
+      "post_id": "c7ef9ccd46c5f288417d",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122113617735467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122113617735467310",
+      "title": "Les someres posen punt i final a la neteja dels torrents",
+      "post_url": "https://saveu.cat/noticies/les-someres-posen-punt-i-final-a-la-neteja-dels-torrents/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-23T14:21:44.935935+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "c7ef9ccd46c5f288417d",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "17963524997985045",
+      "remote_url": "https://www.instagram.com/p/Ddog2MuIFFN/",
+      "title": "Les someres posen punt i final a la neteja dels torrents",
+      "post_url": "https://saveu.cat/noticies/les-someres-posen-punt-i-final-a-la-neteja-dels-torrents/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-23T14:21:55.225290+00:00",
+      "error": ""
     }
   ]
 }
