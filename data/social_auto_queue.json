@@ -1,45 +1,64 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-09-23T15:21:22.263934+00:00",
+  "generated_at": "2026-09-23T16:22:13.744127+00:00",
   "entries": [
     {
-      "post_id": "3014a7d9af32e577fd44",
-      "title": "La Policia de Sóller estrena vehicles nous i amplia els mitjans per al servei diari",
+      "post_id": "17a4b7d4bdfdb3f5281e",
+      "title": "Deià posa en marxa dilluns la recollida porta a porta i una nova web informativa del servei",
       "summary": "",
       "source": "Setmanari Sóller",
       "source_id": "setmanari-soller",
       "source_type": "media",
       "category": "services",
       "language": "ca",
-      "published_at": "2026-09-23T16:45:00+02:00",
-      "original_url": "https://www.elsoller.cat/soller/local/2026/09/23/354567/policia-soller-estrena-vehicles-nous-amplia-els-mitjans-per-servei-diari.html",
+      "published_at": "2026-09-23T17:40:00+02:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/09/23/354569/deia-posa-marxa-dilluns-recollida-porta-porta-nova-web-informativa-del-servei.html",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/3014a7d9af32e577fd44.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/17a4b7d4bdfdb3f5281e.jpg"
     },
     {
-      "post_id": "b447b15ec6dfb6f9b235",
-      "title": "La Policia Local disposarà de tres nous vehicles patrulla",
+      "post_id": "1748e2a2753b27c1f452",
+      "title": "L’Horta demana zones d’aparcament per a residents",
       "summary": "",
       "source": "Sa Veu de Sóller",
       "source_id": "sa-veu-soller",
       "source_type": "media",
-      "category": "news",
+      "category": "services",
       "language": "ca",
-      "published_at": "2026-09-23T14:28:58+00:00",
-      "original_url": "https://saveu.cat/noticies/la-policia-local-disposara-de-tres-nous-vehicles-patrulla/",
+      "published_at": "2026-09-23T14:05:25+00:00",
+      "original_url": "https://saveu.cat/noticies/lhorta-demana-zones-daparcament-per-a-residents/",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/b447b15ec6dfb6f9b235.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/1748e2a2753b27c1f452.jpg"
+    },
+    {
+      "post_id": "7b5353788c587916c6a6",
+      "title": "IB3N | Sóller imposa 600 multes per saltar-se la zona de baixes emissions",
+      "summary": "",
+      "source": "IB3 Notícies",
+      "source_id": "ib3-noticies-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-09-23T12:00:00+00:00",
+      "original_url": "https://ib3.org/soller-imposa-600-multes-per-saltar-se-la-zona-de-baixes-emissions",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/7b5353788c587916c6a6.jpg"
     }
   ]
 }

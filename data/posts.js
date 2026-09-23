@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-23T15:21:22.130583+00:00",
+  "fetched_at": "2026-09-23T16:22:13.577753+00:00",
   "source_count": 31,
   "source_status": [
     {
@@ -290,6 +290,26 @@ window.SOLLER_ARA_DATA = {
   "errors": [],
   "posts": [
     {
+      "id": "17a4b7d4bdfdb3f5281e",
+      "category": "services",
+      "source_id": "setmanari-soller",
+      "source": "Setmanari Sóller",
+      "source_type": "media",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-09-23T17:40:00+02:00",
+      "title": "Deià posa en marxa dilluns la recollida porta a porta i una nova web informativa del servei",
+      "summary": "",
+      "url": "https://www.elsoller.cat/soller/local/2026/09/23/354569/deia-posa-marxa-dilluns-recollida-porta-porta-nova-web-informativa-del-servei.html",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
       "id": "3014a7d9af32e577fd44",
       "category": "services",
       "source_id": "setmanari-soller",
@@ -396,7 +416,7 @@ window.SOLLER_ARA_DATA = {
       "related_sources": []
     },
     {
-      "id": "8b8527ca841e4467d43f",
+      "id": "7b5353788c587916c6a6",
       "category": "news",
       "source_id": "ib3-noticies-soller",
       "source": "IB3 Notícies",
@@ -404,7 +424,7 @@ window.SOLLER_ARA_DATA = {
       "language": "ca",
       "locality": "Sóller / Serra de Tramuntana",
       "published_at": "2026-09-23T12:00:00+00:00",
-      "title": "IB3N | Sóller imposa 600 multes per saltar-se la Zona de Baixes Emissions",
+      "title": "IB3N | Sóller imposa 600 multes per saltar-se la zona de baixes emissions",
       "summary": "",
       "url": "https://ib3.org/soller-imposa-600-multes-per-saltar-se-la-zona-de-baixes-emissions",
       "platform": null,
@@ -1452,26 +1472,6 @@ window.SOLLER_ARA_DATA = {
       "title": "L’Aquàtics Sóller cadet es proclama mereixedor campió a Son Angelats",
       "summary": "",
       "url": "https://www.elsoller.cat/soller/esports/2026/09/11/354531/aquatics-soller-cadet-proclama-mereixedor-campio-son-angelats.html",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "88cd0b04c551c7129355",
-      "category": "news",
-      "source_id": "setmanari-soller",
-      "source": "Setmanari Sóller",
-      "source_type": "media",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-09-11T10:29:00+02:00",
-      "title": "«La revista vol ser un punt de trobada»",
-      "summary": "",
-      "url": "https://www.elsoller.cat/soller/societat-i-cultura/2026/09/11/354529/revista-vol-ser-punt-trobada.html",
       "platform": null,
       "account": null,
       "media_type": null,
