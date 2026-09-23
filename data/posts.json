@@ -1,7 +1,7 @@
 {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-23T09:21:22.155591+00:00",
+  "fetched_at": "2026-09-23T10:20:28.487890+00:00",
   "source_count": 31,
   "source_status": [
     {
@@ -45,9 +45,9 @@
       "name": "AEMET · Serra de Tramuntana",
       "source_type": "official",
       "method": "aemet_alerts",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "error": "HTTP Error 502: Bad Gateway"
+      "error": null
     },
     {
       "source_id": "youtube-ajuntament-soller",
@@ -287,12 +287,7 @@
   "social_integration_status": [],
   "post_count": 120,
   "related_pair_count": 0,
-  "errors": [
-    {
-      "source_id": "aemet-avisos-mallorca",
-      "error": "HTTP Error 502: Bad Gateway"
-    }
-  ],
+  "errors": [],
   "posts": [
     {
       "id": "748889245d0535ddbbcc",
