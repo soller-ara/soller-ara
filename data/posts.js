@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-23T12:26:07.511204+00:00",
+  "fetched_at": "2026-09-23T13:23:20.821255+00:00",
   "source_count": 31,
   "source_status": [
     {
@@ -64,7 +64,7 @@ window.SOLLER_ARA_DATA = {
       "source_type": "social",
       "method": "youtube_channel",
       "ok": true,
-      "count": 0,
+      "count": 1,
       "error": null
     },
     {
@@ -82,7 +82,7 @@ window.SOLLER_ARA_DATA = {
       "source_type": "media",
       "method": "html_search",
       "ok": true,
-      "count": 9,
+      "count": 10,
       "error": null
     },
     {
@@ -285,10 +285,50 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 121,
+  "post_count": 123,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "bfb2ab441907ec43ae82",
+      "category": "news",
+      "source_id": "youtube-ib3-noticies-soller",
+      "source": "IB3 Notícies · YouTube",
+      "source_type": "social",
+      "language": "ca",
+      "locality": "Sóller / Fornalutx / Serra de Tramuntana",
+      "published_at": "2026-09-23T12:41:12+00:00",
+      "title": "Sóller imposa 600 multes per saltar-se la Zona de Baixes Emissions",
+      "summary": "Vídeo publicat per IB3 Notícies · YouTube.",
+      "url": "https://www.youtube.com/watch?v=w04kofFX0xM",
+      "platform": "YouTube",
+      "account": "@NoticiesIB3",
+      "media_type": "video",
+      "content_policy": "generated_social_summary",
+      "rights_status": "platform_embed",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
+      "id": "8b8527ca841e4467d43f",
+      "category": "news",
+      "source_id": "ib3-noticies-soller",
+      "source": "IB3 Notícies",
+      "source_type": "media",
+      "language": "ca",
+      "locality": "Sóller / Serra de Tramuntana",
+      "published_at": "2026-09-23T12:00:00+00:00",
+      "title": "IB3N | Sóller imposa 600 multes per saltar-se la Zona de Baixes Emissions",
+      "summary": "",
+      "url": "https://ib3.org/soller-imposa-600-multes-per-saltar-se-la-zona-de-baixes-emissions",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "image_allowed": false,
+      "related_sources": []
+    },
     {
       "id": "c81a528c6c7bdabf2389",
       "category": "news",

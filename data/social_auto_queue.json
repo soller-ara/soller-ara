@@ -1,26 +1,45 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-09-23T12:26:07.600319+00:00",
+  "generated_at": "2026-09-23T13:23:20.968397+00:00",
   "entries": [
     {
-      "post_id": "0a41bed88a15266b3b3a",
-      "title": "1 de octubre: Cambio de dársena de la línea 204 en la Estación Intermodal",
-      "summary": "A partir del jueves 1 de octubre, la línea 204 Port de Sóller - Palma modifica su dársena de salida de la Estación Intermodal y pasa a salir desde la dársena 28 .",
-      "source": "TIB · Avisos",
-      "source_id": "tib-avisos-soller",
-      "source_type": "official",
-      "category": "alerts",
+      "post_id": "bfb2ab441907ec43ae82",
+      "title": "Sóller imposa 600 multes per saltar-se la Zona de Baixes Emissions",
+      "summary": "Vídeo publicat per IB3 Notícies · YouTube.",
+      "source": "IB3 Notícies · YouTube",
+      "source_id": "youtube-ib3-noticies-soller",
+      "source_type": "social",
+      "category": "news",
       "language": "ca",
-      "published_at": "2026-09-23T12:00:00+00:00",
-      "original_url": "https://www.tib.org/es/w/avis-canvi-darsenes-l204",
-      "content_policy": "short_factual_excerpt",
-      "rights_status": "official_public_source",
+      "published_at": "2026-09-23T12:41:12+00:00",
+      "original_url": "https://www.youtube.com/watch?v=w04kofFX0xM",
+      "content_policy": "generated_social_summary",
+      "rights_status": "platform_embed",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/0a41bed88a15266b3b3a.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/bfb2ab441907ec43ae82.jpg"
+    },
+    {
+      "post_id": "8b8527ca841e4467d43f",
+      "title": "IB3N | Sóller imposa 600 multes per saltar-se la Zona de Baixes Emissions",
+      "summary": "",
+      "source": "IB3 Notícies",
+      "source_id": "ib3-noticies-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-09-23T12:00:00+00:00",
+      "original_url": "https://ib3.org/soller-imposa-600-multes-per-saltar-se-la-zona-de-baixes-emissions",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/8b8527ca841e4467d43f.jpg"
     }
   ]
 }
