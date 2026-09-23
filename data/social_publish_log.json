@@ -1288,6 +1288,34 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-09-23T08:23:09.631416+00:00",
       "error": ""
+    },
+    {
+      "post_id": "0a41bed88a15266b3b3a",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122113570341467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122113570341467310",
+      "title": "1 de octubre: Cambio de dársena de la línea 204 en la Estación Intermodal",
+      "post_url": "https://www.tib.org/es/w/avis-canvi-darsenes-l204",
+      "source": "TIB · Avisos",
+      "source_id": "tib-avisos-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-23T12:26:28.349829+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "0a41bed88a15266b3b3a",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18103456496344670",
+      "remote_url": "https://www.instagram.com/p/DdoTp7imIdv/",
+      "title": "1 de octubre: Cambio de dársena de la línea 204 en la Estación Intermodal",
+      "post_url": "https://www.tib.org/es/w/avis-canvi-darsenes-l204",
+      "source": "TIB · Avisos",
+      "source_id": "tib-avisos-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-23T12:26:44.021330+00:00",
+      "error": ""
     }
   ]
 }
