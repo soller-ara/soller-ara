@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-23T02:20:11.992738+00:00",
+  "fetched_at": "2026-09-23T03:22:36.305868+00:00",
   "source_count": 31,
   "source_status": [
     {
@@ -54,18 +54,18 @@ window.SOLLER_ARA_DATA = {
       "name": "Ajuntament de Sóller · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
-      "count": 2,
-      "error": null
+      "ok": false,
+      "count": 0,
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "youtube-ib3-noticies-soller",
       "name": "IB3 Notícies · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "error": null
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "goib-noticies-soller",
@@ -81,9 +81,9 @@ window.SOLLER_ARA_DATA = {
       "name": "IB3 Notícies",
       "source_type": "media",
       "method": "html_search",
-      "ok": true,
-      "count": 10,
-      "error": null
+      "ok": false,
+      "count": 0,
+      "error": "<urlopen error timed out>"
     },
     {
       "source_id": "dbalears-soller",
@@ -144,90 +144,90 @@ window.SOLLER_ARA_DATA = {
       "name": "Can Prunera · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "error": null
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "youtube-aires-sollerics",
       "name": "Aires Sollerics · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "error": null
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "youtube-xeremiers-soller",
       "name": "Xeremiers de Sóller · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "error": null
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "youtube-club-volei-soller",
       "name": "Club Vòlei Sóller · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "error": null
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "youtube-ballades-mallorca-soller",
       "name": "Ballades A Mallorca · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "error": null
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "youtube-tramuntana-xxi",
       "name": "Tramuntana XXI · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "error": null
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "youtube-gob-mallorca-soller",
       "name": "GOB Mallorca · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "error": null
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "youtube-museu-maritim-soller",
       "name": "Museu Marítim de Mallorca · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "error": null
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "youtube-serra-tramuntana",
       "name": "Serra de Tramuntana Patrimoni Mundial · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "error": null
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "youtube-consell-mallorca-soller",
       "name": "Consell de Mallorca · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "error": null
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "mucbo-noticies",
@@ -285,9 +285,62 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 121,
+  "post_count": 109,
   "related_pair_count": 0,
-  "errors": [],
+  "errors": [
+    {
+      "source_id": "youtube-ajuntament-soller",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "source_id": "youtube-ib3-noticies-soller",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "source_id": "ib3-noticies-soller",
+      "error": "<urlopen error timed out>"
+    },
+    {
+      "source_id": "youtube-can-prunera",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "source_id": "youtube-aires-sollerics",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "source_id": "youtube-xeremiers-soller",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "source_id": "youtube-club-volei-soller",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "source_id": "youtube-ballades-mallorca-soller",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "source_id": "youtube-tramuntana-xxi",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "source_id": "youtube-gob-mallorca-soller",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "source_id": "youtube-museu-maritim-soller",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "source_id": "youtube-serra-tramuntana",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "source_id": "youtube-consell-mallorca-soller",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ],
   "posts": [
     {
       "id": "cd128d1888dd316ff7ec",
@@ -731,26 +784,6 @@ window.SOLLER_ARA_DATA = {
       "related_sources": []
     },
     {
-      "id": "58829026096dc6d5d78d",
-      "category": "news",
-      "source_id": "ib3-noticies-soller",
-      "source": "IB3 Notícies",
-      "source_type": "media",
-      "language": "ca",
-      "locality": "Sóller / Serra de Tramuntana",
-      "published_at": "2026-09-18T12:00:00+00:00",
-      "title": "IB3N | Bel Fullana invoca el Club Miseria al Solleric per la Nit de l’Art",
-      "summary": "",
-      "url": "https://ib3.org/bel-fullana-invoca-el-club-miseria-al-solleric-per-la-nit-de-lart",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
       "id": "caf94b41a032507a5f12",
       "category": "alerts",
       "source_id": "tib-avisos-soller",
@@ -936,26 +969,6 @@ window.SOLLER_ARA_DATA = {
       "image_allowed": false,
       "embed_type": "official_oembed",
       "embed_url": "https://saveu.cat/noticies/en-obres-el-bombament-de-fecals-de-sa-torre/embed/",
-      "related_sources": []
-    },
-    {
-      "id": "85f85df365d3bcdba1c3",
-      "category": "agenda",
-      "source_id": "youtube-ajuntament-soller",
-      "source": "Ajuntament de Sóller · YouTube",
-      "source_type": "social",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-09-16T13:08:28+00:00",
-      "title": "Ple ordinari de l'Ajuntament de Sóller, celebrada el 16/9/2026 (Part 2 de la sessió del 9/9/2026).",
-      "summary": "Vídeo publicat per Ajuntament de Sóller · YouTube relacionat amb una sessió plenària o activitat municipal.",
-      "url": "https://www.youtube.com/watch?v=-c349w_HKS4",
-      "platform": "YouTube",
-      "account": "@ajuntamentdesoller_",
-      "media_type": "video",
-      "content_policy": "generated_social_summary",
-      "rights_status": "platform_embed",
-      "image_allowed": false,
       "related_sources": []
     },
     {
@@ -1419,26 +1432,6 @@ window.SOLLER_ARA_DATA = {
       "related_sources": []
     },
     {
-      "id": "afc2f48c871c4c51a1c9",
-      "category": "news",
-      "source_id": "youtube-ajuntament-soller",
-      "source": "Ajuntament de Sóller · YouTube",
-      "source_type": "social",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-09-09T12:39:11+00:00",
-      "title": "Sessió plenària ordinària de l'Ajuntament de Sóller, celebrada el 9 de setembre de 2026.",
-      "summary": "Vídeo publicat per Ajuntament de Sóller · YouTube relacionat amb una sessió plenària o activitat municipal.",
-      "url": "https://www.youtube.com/watch?v=Ej0M-wttjM0",
-      "platform": "YouTube",
-      "account": "@ajuntamentdesoller_",
-      "media_type": "video",
-      "content_policy": "generated_social_summary",
-      "rights_status": "platform_embed",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
       "id": "44a1dc702fc12b8cc975",
       "category": "culture",
       "source_id": "ajuntament-soller-noticies",
@@ -1833,26 +1826,6 @@ window.SOLLER_ARA_DATA = {
       "related_sources": []
     },
     {
-      "id": "ffdb31e018cfb03ebb43",
-      "category": "services",
-      "source_id": "ib3-noticies-soller",
-      "source": "IB3 Notícies",
-      "source_type": "media",
-      "language": "ca",
-      "locality": "Sóller / Serra de Tramuntana",
-      "published_at": "2026-08-26T12:00:00+00:00",
-      "title": "IB3N | Dia 4 de setembre començaran les obres de la rotonda de la carretera de Sóller amb el polígon de Son Castelló",
-      "summary": "",
-      "url": "https://ib3.org/dia-4-de-setembre-comencaran-les-obres-de-la-rotonda-de-la-carretera-de-soller-amb-el-poligon-de-son-castello",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
       "id": "4a413c4d1af5feebd592",
       "category": "culture",
       "source_id": "can-prunera-noticies",
@@ -1872,26 +1845,6 @@ window.SOLLER_ARA_DATA = {
       "image_allowed": false,
       "embed_type": "official_oembed",
       "embed_url": "https://canprunera.com/para-que-sirve-un-museo/embed/",
-      "related_sources": []
-    },
-    {
-      "id": "e7dcc5ec8a0ee426f538",
-      "category": "news",
-      "source_id": "ib3-noticies-soller",
-      "source": "IB3 Notícies",
-      "source_type": "media",
-      "language": "ca",
-      "locality": "Sóller / Serra de Tramuntana",
-      "published_at": "2026-08-24T12:00:00+00:00",
-      "title": "IB3 | Tauler d'anuncis",
-      "summary": "",
-      "url": "https://ib3.org/tauler-danuncis",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
       "related_sources": []
     },
     {
@@ -1948,46 +1901,6 @@ window.SOLLER_ARA_DATA = {
       "title": "Sóller refuerza la sanidad para el eclipse",
       "summary": "",
       "url": "https://mallorcadirecto.com/comarca-de-ponent/soller/soller-refuerzo-sanitario-eclipse-manifestacion",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "bb30d9dd802bb447005c",
-      "category": "news",
-      "source_id": "ib3-noticies-soller",
-      "source": "IB3 Notícies",
-      "source_type": "media",
-      "language": "ca",
-      "locality": "Sóller / Serra de Tramuntana",
-      "published_at": "2026-08-20T12:00:00+00:00",
-      "title": "IB3N | El Port de Sóller, Banyalbufar i les Pitiüses han viscut una nit roent",
-      "summary": "",
-      "url": "https://ib3.org/el-port-de-soller-banyalbufar-i-les-pitiuses-han-viscut-una-nit-roent",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "f38356494978c1646200",
-      "category": "services",
-      "source_id": "ib3-noticies-soller",
-      "source": "IB3 Notícies",
-      "source_type": "media",
-      "language": "ca",
-      "locality": "Sóller / Serra de Tramuntana",
-      "published_at": "2026-08-16T12:00:00+00:00",
-      "title": "IB3N | L’art surt al carrer a Sóller",
-      "summary": "",
-      "url": "https://ib3.org/lart-surt-al-carrer-a-soller",
       "platform": null,
       "account": null,
       "media_type": null,
@@ -2159,46 +2072,6 @@ window.SOLLER_ARA_DATA = {
       "related_sources": []
     },
     {
-      "id": "b2b1b94c2052de61957e",
-      "category": "news",
-      "source_id": "ib3-noticies-soller",
-      "source": "IB3 Notícies",
-      "source_type": "media",
-      "language": "ca",
-      "locality": "Sóller / Serra de Tramuntana",
-      "published_at": "2026-08-09T12:00:00+00:00",
-      "title": "IB3N | Sóller contra la massificació turística",
-      "summary": "",
-      "url": "https://ib3.org/un-milenar-de-persones-a-soller-contra-la-massificacio-turistica",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "eaa53c1f4ec1dcc7025a",
-      "category": "news",
-      "source_id": "ib3-noticies-soller",
-      "source": "IB3 Notícies",
-      "source_type": "media",
-      "language": "ca",
-      "locality": "Sóller / Serra de Tramuntana",
-      "published_at": "2026-08-09T12:00:00+00:00",
-      "title": "IB3N | Sóller, creix el lloguer vacacional, però les places de turisme tradicional es mantenen",
-      "summary": "",
-      "url": "https://ib3.org/soller-creix-el-lloguer-vacacional-pero-les-places-de-turisme-tradicional-es-mantenen",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
       "id": "3d7e54ba52f395f02559",
       "category": "news",
       "source_id": "mallorca-directo-soller",
@@ -2335,26 +2208,6 @@ window.SOLLER_ARA_DATA = {
       "media_type": null,
       "content_policy": "short_factual_excerpt",
       "rights_status": "public_source_reviewed",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "6ab14a8beee9017af34a",
-      "category": "news",
-      "source_id": "ib3-noticies-soller",
-      "source": "IB3 Notícies",
-      "source_type": "media",
-      "language": "ca",
-      "locality": "Sóller / Serra de Tramuntana",
-      "published_at": "2026-08-06T12:00:00+00:00",
-      "title": "IB3N | Sóller es prepara per a la manifestació contra el model turístic",
-      "summary": "",
-      "url": "https://ib3.org/soller-es-prepara-per-a-la-manifestacio-contra-el-model-turistic",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
       "image_allowed": false,
       "related_sources": []
     },
@@ -2621,26 +2474,6 @@ window.SOLLER_ARA_DATA = {
       "related_sources": []
     },
     {
-      "id": "23319c6df296f5bc38aa",
-      "category": "news",
-      "source_id": "ib3-noticies-soller",
-      "source": "IB3 Notícies",
-      "source_type": "media",
-      "language": "ca",
-      "locality": "Sóller / Serra de Tramuntana",
-      "published_at": "2026-08-01T12:00:00+00:00",
-      "title": "IB3N | Sóller celebra la primera Trobada d’Embarcacions Clàssiques",
-      "summary": "",
-      "url": "https://ib3.org/soller-celebra-la-primera-trobada-dembarcacions-classiques",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
       "id": "ce20805351176c09b823",
       "category": "news",
       "source_id": "mallorca-directo-soller",
@@ -2714,26 +2547,6 @@ window.SOLLER_ARA_DATA = {
       "title": "Colapso en Sóller tras el cierre del túnel a causa de un accidente entre un turismo y un quad",
       "summary": "",
       "url": "https://www.ultimahora.es/sucesos/ultimas/2026/07/25/2677249/colapso-soller-tras-cierre-del-tunel-causa-accidente-entre-turismo-quad.html",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "023ec8a800c0edb57441",
-      "category": "news",
-      "source_id": "ib3-noticies-soller",
-      "source": "IB3 Notícies",
-      "source_type": "media",
-      "language": "ca",
-      "locality": "Sóller / Serra de Tramuntana",
-      "published_at": "2026-07-25T12:00:00+00:00",
-      "title": "IB3N | Retencions de vuit quilòmetres per un accident al túnel de Sóller",
-      "summary": "",
-      "url": "https://ib3.org/retencions-de-vuit-quilometres-per-un-accident-al-tunel-de-soller",
       "platform": null,
       "account": null,
       "media_type": null,
