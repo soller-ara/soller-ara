@@ -1400,6 +1400,62 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-09-23T14:21:55.225290+00:00",
       "error": ""
+    },
+    {
+      "post_id": "3014a7d9af32e577fd44",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122113635573467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122113635573467310",
+      "title": "La Policia de Sóller estrena vehicles nous i amplia els mitjans per al servei diari",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/09/23/354567/policia-soller-estrena-vehicles-nous-amplia-els-mitjans-per-servei-diari.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-23T15:21:43.213136+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "3014a7d9af32e577fd44",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18394927669207728",
+      "remote_url": "https://www.instagram.com/p/DdontbDnZ3y/",
+      "title": "La Policia de Sóller estrena vehicles nous i amplia els mitjans per al servei diari",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/09/23/354567/policia-soller-estrena-vehicles-nous-amplia-els-mitjans-per-servei-diari.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-23T15:21:57.516410+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "b447b15ec6dfb6f9b235",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122113635687467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122113635687467310",
+      "title": "La Policia Local disposarà de tres nous vehicles patrulla",
+      "post_url": "https://saveu.cat/noticies/la-policia-local-disposara-de-tres-nous-vehicles-patrulla/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-23T15:22:05.576120+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "b447b15ec6dfb6f9b235",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18459551908191441",
+      "remote_url": "https://www.instagram.com/p/DdonwMIHUIt/",
+      "title": "La Policia Local disposarà de tres nous vehicles patrulla",
+      "post_url": "https://saveu.cat/noticies/la-policia-local-disposara-de-tres-nous-vehicles-patrulla/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-23T15:22:20.367427+00:00",
+      "error": ""
     }
   ]
 }
