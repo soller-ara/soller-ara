@@ -1316,6 +1316,62 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-09-23T12:26:44.021330+00:00",
       "error": ""
+    },
+    {
+      "post_id": "bfb2ab441907ec43ae82",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122113601625467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122113601625467310",
+      "title": "Sóller imposa 600 multes per saltar-se la Zona de Baixes Emissions",
+      "post_url": "https://www.youtube.com/watch?v=w04kofFX0xM",
+      "source": "IB3 Notícies · YouTube",
+      "source_id": "youtube-ib3-noticies-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-23T13:23:41.342555+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "bfb2ab441907ec43ae82",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18094531925224630",
+      "remote_url": "https://www.instagram.com/p/DdoaM_AE2mA/",
+      "title": "Sóller imposa 600 multes per saltar-se la Zona de Baixes Emissions",
+      "post_url": "https://www.youtube.com/watch?v=w04kofFX0xM",
+      "source": "IB3 Notícies · YouTube",
+      "source_id": "youtube-ib3-noticies-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-23T13:23:58.713180+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "8b8527ca841e4467d43f",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122113601853467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122113601853467310",
+      "title": "IB3N | Sóller imposa 600 multes per saltar-se la Zona de Baixes Emissions",
+      "post_url": "https://ib3.org/soller-imposa-600-multes-per-saltar-se-la-zona-de-baixes-emissions",
+      "source": "IB3 Notícies",
+      "source_id": "ib3-noticies-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-23T13:24:05.637726+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "8b8527ca841e4467d43f",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18128828125797726",
+      "remote_url": "https://www.instagram.com/p/DdoaP_Lk8tV/",
+      "title": "IB3N | Sóller imposa 600 multes per saltar-se la Zona de Baixes Emissions",
+      "post_url": "https://ib3.org/soller-imposa-600-multes-per-saltar-se-la-zona-de-baixes-emissions",
+      "source": "IB3 Notícies",
+      "source_id": "ib3-noticies-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-23T13:24:23.955287+00:00",
+      "error": ""
     }
   ]
 }
