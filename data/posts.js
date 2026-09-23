@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-23T01:19:08.630574+00:00",
+  "fetched_at": "2026-09-23T02:20:11.992738+00:00",
   "source_count": 31,
   "source_status": [
     {
@@ -109,7 +109,7 @@ window.SOLLER_ARA_DATA = {
       "source_type": "media",
       "method": "html_listing_regex",
       "ok": true,
-      "count": 28,
+      "count": 29,
       "error": null
     },
     {
@@ -285,10 +285,30 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 120,
+  "post_count": 121,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "cd128d1888dd316ff7ec",
+      "category": "news",
+      "source_id": "ultima-hora-soller",
+      "source": "Última Hora",
+      "source_type": "media",
+      "language": "es",
+      "locality": "Sóller",
+      "published_at": "2026-09-23T03:48:01+02:00",
+      "title": "El sistema de vigilancia de la ZBE detecta 25.000 infracciones desde su activación en Sóller",
+      "summary": "",
+      "url": "https://www.ultimahora.es/noticias/part-forana/2026/09/23/2714321/sistema-vigilancia-zbe-detecta-25000-infracciones-desde-activacion-soller.html",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "image_allowed": false,
+      "related_sources": []
+    },
     {
       "id": "5127524af9e70d4b67b5",
       "category": "services",
