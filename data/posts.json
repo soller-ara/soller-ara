@@ -1,7 +1,7 @@
 {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-23T11:20:18.886865+00:00",
+  "fetched_at": "2026-09-23T12:26:07.511204+00:00",
   "source_count": 31,
   "source_status": [
     {
@@ -82,7 +82,7 @@
       "source_type": "media",
       "method": "html_search",
       "ok": true,
-      "count": 10,
+      "count": 9,
       "error": null
     },
     {
@@ -118,7 +118,7 @@
       "source_type": "media",
       "method": "html_listing_regex",
       "ok": true,
-      "count": 6,
+      "count": 7,
       "error": null
     },
     {
@@ -127,7 +127,7 @@
       "source_type": "official",
       "method": "html_listing_regex",
       "ok": true,
-      "count": 2,
+      "count": 3,
       "error": null
     },
     {
@@ -285,10 +285,50 @@
     }
   ],
   "social_integration_status": [],
-  "post_count": 120,
+  "post_count": 121,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "c81a528c6c7bdabf2389",
+      "category": "news",
+      "source_id": "mallorca-directo-soller",
+      "source": "Mallorca Directo",
+      "source_type": "media",
+      "language": "es",
+      "locality": "Sóller",
+      "published_at": "2026-09-23T12:00:00+00:00",
+      "title": "Gasolineras más baratas en Sóller hoy: precios actualizados | Mallorca Directo",
+      "summary": "",
+      "url": "https://mallorcadirecto.com/comarca-de-ponent/soller/gasolineras",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
+      "id": "0a41bed88a15266b3b3a",
+      "category": "alerts",
+      "source_id": "tib-avisos-soller",
+      "source": "TIB · Avisos",
+      "source_type": "official",
+      "language": "ca",
+      "locality": "Sóller / Port de Sóller / Fornalutx",
+      "published_at": "2026-09-23T12:00:00+00:00",
+      "title": "1 de octubre: Cambio de dársena de la línea 204 en la Estación Intermodal",
+      "summary": "A partir del jueves 1 de octubre, la línea 204 Port de Sóller - Palma modifica su dársena de salida de la Estación Intermodal y pasa a salir desde la dársena 28 .",
+      "url": "https://www.tib.org/es/w/avis-canvi-darsenes-l204",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "official_public_source",
+      "image_allowed": false,
+      "related_sources": []
+    },
     {
       "id": "748889245d0535ddbbcc",
       "category": "culture",
@@ -2700,26 +2740,6 @@
       "image_allowed": false,
       "embed_type": "official_oembed",
       "embed_url": "https://canprunera.com/el-mundo-de-mon-joan-tiquat/embed/",
-      "related_sources": []
-    },
-    {
-      "id": "023ec8a800c0edb57441",
-      "category": "news",
-      "source_id": "ib3-noticies-soller",
-      "source": "IB3 Notícies",
-      "source_type": "media",
-      "language": "ca",
-      "locality": "Sóller / Serra de Tramuntana",
-      "published_at": "2026-07-25T12:00:00+00:00",
-      "title": "IB3N | Retencions de vuit quilòmetres per un accident al túnel de Sóller",
-      "summary": "",
-      "url": "https://ib3.org/retencions-de-vuit-quilometres-per-un-accident-al-tunel-de-soller",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
       "related_sources": []
     },
     {

@@ -1,6 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-09-23T12:26:07.600319+00:00",
+  "entries": [
+    {
+      "post_id": "0a41bed88a15266b3b3a",
+      "title": "1 de octubre: Cambio de dársena de la línea 204 en la Estación Intermodal",
+      "summary": "A partir del jueves 1 de octubre, la línea 204 Port de Sóller - Palma modifica su dársena de salida de la Estación Intermodal y pasa a salir desde la dársena 28 .",
+      "source": "TIB · Avisos",
+      "source_id": "tib-avisos-soller",
+      "source_type": "official",
+      "category": "alerts",
+      "language": "ca",
+      "published_at": "2026-09-23T12:00:00+00:00",
+      "original_url": "https://www.tib.org/es/w/avis-canvi-darsenes-l204",
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "official_public_source",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/0a41bed88a15266b3b3a.jpg"
+    }
+  ]
 }
