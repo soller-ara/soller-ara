@@ -1,26 +1,45 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-09-23T14:21:25.679966+00:00",
+  "generated_at": "2026-09-23T15:21:22.263934+00:00",
   "entries": [
     {
-      "post_id": "c7ef9ccd46c5f288417d",
-      "title": "Les someres posen punt i final a la neteja dels torrents",
+      "post_id": "3014a7d9af32e577fd44",
+      "title": "La Policia de Sóller estrena vehicles nous i amplia els mitjans per al servei diari",
       "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
       "source_type": "media",
       "category": "services",
       "language": "ca",
-      "published_at": "2026-09-23T14:12:56+00:00",
-      "original_url": "https://saveu.cat/noticies/les-someres-posen-punt-i-final-a-la-neteja-dels-torrents/",
+      "published_at": "2026-09-23T16:45:00+02:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/09/23/354567/policia-soller-estrena-vehicles-nous-amplia-els-mitjans-per-servei-diari.html",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/c7ef9ccd46c5f288417d.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/3014a7d9af32e577fd44.jpg"
+    },
+    {
+      "post_id": "b447b15ec6dfb6f9b235",
+      "title": "La Policia Local disposarà de tres nous vehicles patrulla",
+      "summary": "",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-09-23T14:28:58+00:00",
+      "original_url": "https://saveu.cat/noticies/la-policia-local-disposara-de-tres-nous-vehicles-patrulla/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/b447b15ec6dfb6f9b235.jpg"
     }
   ]
 }
