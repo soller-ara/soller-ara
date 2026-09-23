@@ -1260,6 +1260,34 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-09-23T02:20:38.288747+00:00",
       "error": ""
+    },
+    {
+      "post_id": "748889245d0535ddbbcc",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122113464459467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122113464459467310",
+      "title": "Radiolaris i altres bitxos",
+      "post_url": "https://mucbo.org/radiolaris-i-altres-bitxos/",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-23T08:22:52.177282+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "748889245d0535ddbbcc",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18492949453097320",
+      "remote_url": "https://www.instagram.com/p/Ddn3xvnk-4u/",
+      "title": "Radiolaris i altres bitxos",
+      "post_url": "https://mucbo.org/radiolaris-i-altres-bitxos/",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-23T08:23:09.631416+00:00",
+      "error": ""
     }
   ]
 }
