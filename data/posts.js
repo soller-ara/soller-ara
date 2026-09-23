@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-23T07:21:46.160127+00:00",
+  "fetched_at": "2026-09-23T08:22:28.460676+00:00",
   "source_count": 31,
   "source_status": [
     {
@@ -289,6 +289,28 @@ window.SOLLER_ARA_DATA = {
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "748889245d0535ddbbcc",
+      "category": "culture",
+      "source_id": "mucbo-noticies",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_type": "institution",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-09-23T07:59:55+00:00",
+      "title": "Radiolaris i altres bitxos",
+      "summary": "",
+      "url": "https://mucbo.org/radiolaris-i-altres-bitxos/",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "image_allowed": false,
+      "embed_type": "official_oembed",
+      "embed_url": "https://mucbo.org/radiolaris-i-altres-bitxos/embed/",
+      "related_sources": []
+    },
     {
       "id": "cd128d1888dd316ff7ec",
       "category": "news",
@@ -2034,28 +2056,6 @@ window.SOLLER_ARA_DATA = {
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "29c0bf0d532a93c2622d",
-      "category": "culture",
-      "source_id": "mucbo-noticies",
-      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
-      "source_type": "institution",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-08-13T11:41:20+00:00",
-      "title": "Tallers per a apropar la natura al públic juvenil",
-      "summary": "",
-      "url": "https://mucbo.org/tallers-per-a-apropar-la-natura-al-public-juvenil/",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "link_only_no_media_license",
-      "image_allowed": false,
-      "embed_type": "official_oembed",
-      "embed_url": "https://mucbo.org/tallers-per-a-apropar-la-natura-al-public-juvenil/embed/",
       "related_sources": []
     },
     {
