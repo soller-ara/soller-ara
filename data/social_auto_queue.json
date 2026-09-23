@@ -1,26 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-09-23T19:19:28.091073+00:00",
-  "entries": [
-    {
-      "post_id": "9d9be93a7013aadc5011",
-      "title": "Sóller imposa 600 multes per saltar-se la zona de baixes emissions",
-      "summary": "Vídeo publicat per IB3 Notícies · YouTube.",
-      "source": "IB3 Notícies · YouTube",
-      "source_id": "youtube-ib3-noticies-soller",
-      "source_type": "social",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-09-23T18:16:37+00:00",
-      "original_url": "https://www.youtube.com/shorts/4VrlsjLpCVk",
-      "content_policy": "generated_social_summary",
-      "rights_status": "platform_embed",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/9d9be93a7013aadc5011.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
