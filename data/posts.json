@@ -1,7 +1,7 @@
 {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-23T05:19:32.773738+00:00",
+  "fetched_at": "2026-09-23T06:26:50.970661+00:00",
   "source_count": 31,
   "source_status": [
     {
@@ -109,7 +109,7 @@
       "source_type": "media",
       "method": "html_listing_regex",
       "ok": true,
-      "count": 29,
+      "count": 28,
       "error": null
     },
     {
@@ -285,7 +285,7 @@
     }
   ],
   "social_integration_status": [],
-  "post_count": 119,
+  "post_count": 118,
   "related_pair_count": 0,
   "errors": [
     {
@@ -2709,26 +2709,6 @@
       "image_allowed": false,
       "embed_type": "official_oembed",
       "embed_url": "https://canprunera.com/el-mundo-de-mon-joan-tiquat/embed/",
-      "related_sources": []
-    },
-    {
-      "id": "5484e7e2eb827d252c77",
-      "category": "news",
-      "source_id": "ultima-hora-soller",
-      "source": "Última Hora",
-      "source_type": "media",
-      "language": "es",
-      "locality": "Sóller",
-      "published_at": "2026-07-25T17:28:00+02:00",
-      "title": "Colapso en Sóller tras el cierre del túnel a causa de un accidente entre un turismo y un quad",
-      "summary": "",
-      "url": "https://www.ultimahora.es/sucesos/ultimas/2026/07/25/2677249/colapso-soller-tras-cierre-del-tunel-causa-accidente-entre-turismo-quad.html",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
       "related_sources": []
     },
     {
