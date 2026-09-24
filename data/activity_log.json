@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "0284f27a5a734d6b",
+      "timestamp": "2026-09-24T10:58:16.331233+00:00",
+      "action": "publish",
+      "area": "publications",
+      "target_id": "soller-ara-372b93382573b5a8",
+      "title": "Oferta de feina a l’administració pública.",
+      "detail": "Publicación propia creada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "34d31eb119daf32e",
       "timestamp": "2026-09-24T10:14:46.425966+00:00",
       "action": "publish",
