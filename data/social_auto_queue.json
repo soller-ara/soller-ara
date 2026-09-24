@@ -1,6 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-09-24T10:20:41.333619+00:00",
+  "entries": [
+    {
+      "post_id": "c4913208bab50a57070b",
+      "title": "Us recordam els punts d’atenció i contacte de Sóller 2010",
+      "summary": "Per a consultes i gestions relacionades amb l’aparcament, les targetes, l’ORA i les ZAR, us podeu adreçar a la primera planta de l’Ajuntament de Sóller. Horari d’atenció: de 9.30 a 14.00 h També podeu contactar amb…",
+      "source": "Ajuntament de Sóller",
+      "source_id": "ajuntament-soller-noticies",
+      "source_type": "official",
+      "category": "services",
+      "language": "ca",
+      "published_at": "2026-09-24T09:25:16+00:00",
+      "original_url": "https://ajsoller.net/ca/noticies/us-recordam-els-punts-datencio-i-contacte-de-soller-2010",
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "public_source_reviewed",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/c4913208bab50a57070b.jpg"
+    }
+  ]
 }

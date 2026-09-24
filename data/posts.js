@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-24T10:14:46.333489+00:00",
+  "fetched_at": "2026-09-24T10:20:41.211031+00:00",
   "source_count": 31,
   "source_status": [
     {
@@ -280,7 +280,7 @@ window.SOLLER_ARA_DATA = {
       "source_type": "own",
       "method": "manual",
       "ok": true,
-      "count": 1,
+      "count": 4,
       "error": null
     }
   ],
@@ -306,7 +306,8 @@ window.SOLLER_ARA_DATA = {
       "image_allowed": true,
       "original_url": "https://www.facebook.com/share/p/1GJsGFZGR6/?mibextid=wwXIfr",
       "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-dfa49977934563c2.jpg",
-      "media_type": "image"
+      "media_type": "image",
+      "related_sources": []
     },
     {
       "id": "soller-ara-bf76dec3afa594b8",
@@ -325,7 +326,8 @@ window.SOLLER_ARA_DATA = {
       "image_allowed": true,
       "original_url": "https://www.facebook.com/share/1EyixDzh8s/?mibextid=wwXIfr",
       "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-bf76dec3afa594b8.jpg",
-      "media_type": "image"
+      "media_type": "image",
+      "related_sources": []
     },
     {
       "id": "soller-ara-4b240950c08e60ba",
@@ -344,7 +346,28 @@ window.SOLLER_ARA_DATA = {
       "image_allowed": true,
       "original_url": "https://www.facebook.com/share/p/1EvKWu3c3i/?mibextid=wwXIfr",
       "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-4b240950c08e60ba.jpg",
-      "media_type": "image"
+      "media_type": "image",
+      "related_sources": []
+    },
+    {
+      "id": "c4913208bab50a57070b",
+      "category": "services",
+      "source_id": "ajuntament-soller-noticies",
+      "source": "Ajuntament de Sóller",
+      "source_type": "official",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-09-24T09:25:16+00:00",
+      "title": "Us recordam els punts d’atenció i contacte de Sóller 2010",
+      "summary": "Per a consultes i gestions relacionades amb l’aparcament, les targetes, l’ORA i les ZAR, us podeu adreçar a la primera planta de l’Ajuntament de Sóller. Horari d’atenció: de 9.30 a 14.00 h També podeu contactar amb…",
+      "url": "https://ajsoller.net/ca/noticies/us-recordam-els-punts-datencio-i-contacte-de-soller-2010",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "public_source_reviewed",
+      "image_allowed": false,
+      "related_sources": []
     },
     {
       "id": "9d9be93a7013aadc5011",
@@ -1574,26 +1597,6 @@ window.SOLLER_ARA_DATA = {
       "media_type": "video",
       "content_policy": "generated_social_summary",
       "rights_status": "platform_embed",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "44a1dc702fc12b8cc975",
-      "category": "culture",
-      "source_id": "ajuntament-soller-noticies",
-      "source": "Ajuntament de Sóller",
-      "source_type": "official",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-09-09T09:18:56+00:00",
-      "title": "Fornalutx celebra, un any més, el dia de la seva patrona",
-      "summary": "La celebració de la Nativitat de la Mare de Déu va tornar a reunir ahir els fornalutxencs i fornalutxenques. Gràcies per fer-nos partícips d’un dia tan vostre. Molts d’anys i bones festes, Fornalutx!",
-      "url": "https://ajsoller.net/ca/noticies/fornalutx-celebra-un-any-mes-el-dia-de-la-seva-patrona",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "short_factual_excerpt",
-      "rights_status": "public_source_reviewed",
       "image_allowed": false,
       "related_sources": []
     },
