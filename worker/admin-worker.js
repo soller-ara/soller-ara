@@ -19,7 +19,7 @@ export default {
 
     try {
       if (url.pathname === "/health") {
-        return json({ ok: true, service: "soller-ara-admin", version: "0.69", capabilities: ["social_settings", "web_analytics"] }, 200, cors);
+        return json({ ok: true, service: "soller-ara-admin", version: "0.70", capabilities: ["social_settings", "web_analytics", "manual_social_links"] }, 200, cors);
       }
 
       if (url.pathname === "/api/login" && request.method === "POST") {
@@ -206,6 +206,15 @@ async function requireSession(request, env) {
   return verifySession(env.SESSION_SECRET, auth.slice(7));
 }
 
+function isSafeHttpsUrl(value) {
+  try {
+    const url = new URL(value);
+    return url.protocol === "https:" && !url.username && !url.password && Boolean(url.hostname);
+  } catch (_) {
+    return false;
+  }
+}
+
 function repoParts(env) {
   return {
     owner: env.GITHUB_OWNER || DEFAULT_OWNER,
@@ -339,10 +348,20 @@ async function publish(request, env, cors) {
   if (!title || !text) return json({ error: "Faltan título o texto." }, 400, cors);
   if (title.length > 180) return json({ error: "El título es demasiado largo." }, 400, cors);
 
-  const allowedCategories = new Set(["news", "agenda", "alerts", "services", "culture", "sports", "commerce"]);
+  const allowedCategories = new Set(["news", "agenda", "alerts", "services", "culture", "sports", "commerce", "politics"]);
   const allowedLanguages = new Set(["ca", "es", "en"]);
   const category = allowedCategories.has(body.category) ? body.category : "news";
   const language = allowedLanguages.has(body.language) ? body.language : "ca";
+  const sourceName = String(body.source_name || "").trim();
+  const originalUrl = String(body.original_url || "").trim();
+
+  if ((sourceName && !originalUrl) || (!sourceName && originalUrl)) {
+    return json({ error: "Indica la fuente y el enlace original juntos." }, 400, cors);
+  }
+  if (sourceName.length > 120) return json({ error: "El nombre de la fuente es demasiado largo." }, 400, cors);
+  if (originalUrl && !isSafeHttpsUrl(originalUrl)) {
+    return json({ error: "El enlace original debe ser una URL https válida." }, 400, cors);
+  }
 
   await githubDispatch(env, "publish-own-content.yml", {
     confirmation: "PUBLICAR",
@@ -353,6 +372,8 @@ async function publish(request, env, cors) {
     image_url: String(body.image_url || "").trim(),
     facebook: Boolean(body.facebook),
     instagram: Boolean(body.instagram),
+    source_name: sourceName,
+    original_url: originalUrl,
   });
 
   return json({ ok: true, workflow: "Sóller Ara · publicar contingut propi" }, 202, cors);
@@ -371,7 +392,7 @@ async function editOwn(request, env, cors) {
     return json({ error: "El título es demasiado largo." }, 400, cors);
   }
 
-  const allowedCategories = new Set(["news", "agenda", "alerts", "services", "culture", "sports", "commerce"]);
+  const allowedCategories = new Set(["news", "agenda", "alerts", "services", "culture", "sports", "commerce", "politics"]);
   const allowedLanguages = new Set(["ca", "es", "en"]);
   const category = allowedCategories.has(body.category) ? body.category : "news";
   const language = allowedLanguages.has(body.language) ? body.language : "ca";
@@ -453,7 +474,7 @@ async function manageSocialSettings(request, env, cors) {
 async function moderate(request, env, cors) {
   const body = await request.json().catch(() => ({}));
   const allowed = new Set(["hide", "unhide", "delete-own", "reclassify"]);
-  const allowedCategories = new Set(["news", "agenda", "alerts", "services", "culture", "sports", "commerce"]);
+  const allowedCategories = new Set(["news", "agenda", "alerts", "services", "culture", "sports", "commerce", "politics"]);
   const action = String(body.action || "");
   const postId = String(body.post_id || "").trim();
   const category = String(body.category || "");
