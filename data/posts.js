@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-24T10:01:43.022373+00:00",
+  "fetched_at": "2026-09-24T10:14:46.333489+00:00",
   "source_count": 31,
   "source_status": [
     {
@@ -285,10 +285,29 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 124,
+  "post_count": 125,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "soller-ara-dfa49977934563c2",
+      "category": "services",
+      "source_id": "manual-4f785079a49c",
+      "source": "Som joves",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-09-24T10:14:46.333489+00:00",
+      "title": "Oferta de feina",
+      "summary": "FCC Aqualia S.A.",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-dfa49977934563c2.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": true,
+      "original_url": "https://www.facebook.com/share/p/1GJsGFZGR6/?mibextid=wwXIfr",
+      "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-dfa49977934563c2.jpg",
+      "media_type": "image"
+    },
     {
       "id": "soller-ara-bf76dec3afa594b8",
       "category": "services",
