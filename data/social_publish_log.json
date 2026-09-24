@@ -1725,6 +1725,34 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-09-24T14:22:34.845888+00:00",
       "error": ""
+    },
+    {
+      "post_id": "d7df0525aea9df0aaf8d",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122114203107467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122114203107467310",
+      "title": "El Mallorca es retroba amb la seva afició sollerica",
+      "post_url": "https://saveu.cat/noticies/el-mallorca-es-retroba-amb-la-seva-aficio-sollerica/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-24T15:22:11.100634+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "d7df0525aea9df0aaf8d",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18245986615312684",
+      "remote_url": "https://www.instagram.com/p/DdrMjvBiT8Q/",
+      "title": "El Mallorca es retroba amb la seva afició sollerica",
+      "post_url": "https://saveu.cat/noticies/el-mallorca-es-retroba-amb-la-seva-aficio-sollerica/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-24T15:22:26.834506+00:00",
+      "error": ""
     }
   ]
 }
