@@ -20,7 +20,7 @@ on:
         required: true
         default: 'news'
         type: choice
-        options: [news, agenda, alerts, services, culture, sports, commerce]
+        options: [news, agenda, alerts, services, culture, sports, commerce, politics]
       language:
         description: 'Idioma'
         required: true
@@ -29,6 +29,14 @@ on:
         options: [ca, es, en]
       image_url:
         description: 'URL pública de la imatge (opcional; si queda buida Sóller Ara genera una targeta automàtica)'
+        required: false
+        type: string
+      source_name:
+        description: 'Nom de la font original (opcional)'
+        required: false
+        type: string
+      original_url:
+        description: 'Enllaç https de la publicació original (opcional)'
         required: false
         type: string
       facebook:
@@ -79,6 +87,8 @@ jobs:
           POST_CATEGORY: ${{ inputs.category }}
           POST_LANGUAGE: ${{ inputs.language }}
           POST_IMAGE_URL: ${{ inputs.image_url }}
+          POST_SOURCE_NAME: ${{ inputs.source_name }}
+          POST_ORIGINAL_URL: ${{ inputs.original_url }}
         run: python scripts/add_own_post.py
 
       - name: Registrar activitat
@@ -124,6 +134,8 @@ jobs:
           POST_TITLE: ${{ inputs.title }}
           POST_BODY: ${{ inputs.body }}
           POST_IMAGE_URL: ${{ inputs.image_url }}
+          POST_ORIGINAL_URL: ${{ inputs.original_url }}
+          POST_SOURCE_NAME: ${{ inputs.source_name }}
           PUBLISH_FACEBOOK: ${{ inputs.facebook }}
           PUBLISH_INSTAGRAM: ${{ inputs.instagram }}
         run: python scripts/publish_own_social.py
