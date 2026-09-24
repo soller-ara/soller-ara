@@ -102,6 +102,29 @@ a { color: inherit; }
   align-items: center;
   gap: 10px;
 }
+.refresh-page-button {
+  min-height: 38px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 10px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--primary);
+  font: inherit;
+  font-size: .82rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+.refresh-page-button:hover {
+  border-color: var(--primary);
+  background: var(--primary-soft);
+}
+.refresh-page-button:disabled {
+  opacity: .65;
+  cursor: wait;
+}
 .brand-social-links {
   display: flex;
   align-items: center;
@@ -811,6 +834,8 @@ a { color: inherit; }
   .brand-wrap p { display: none; }
   .topbar { gap: 12px; }
   .topbar-actions { gap: 7px; }
+  .refresh-page-button { min-width: 38px; padding: 7px; justify-content: center; }
+  .refresh-page-button > span { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
   .brand-social-links { gap: 5px; }
   .brand-social-links a { min-width: 38px; padding: 7px; justify-content: center; }
   .brand-social-links a > span { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
