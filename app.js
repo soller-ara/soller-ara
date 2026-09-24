@@ -1,6 +1,7 @@
 const translations = {
   ca: {
     tagline: "Tot el que passa a Sóller, en un sol lloc.",
+    "refresh.button": "Actualitza",
     "nav.all": "Tot",
     "nav.now": "Ara",
     "nav.news": "Notícies",
@@ -83,6 +84,7 @@ const translations = {
   },
   es: {
     tagline: "Todo lo que pasa en Sóller, en un solo lugar.",
+    "refresh.button": "Actualizar",
     "nav.all": "Todo",
     "nav.now": "Ahora",
     "nav.news": "Noticias",
@@ -165,6 +167,7 @@ const translations = {
   },
   en: {
     tagline: "Everything happening in Sóller, in one place.",
+    "refresh.button": "Refresh",
     "nav.all": "All",
     "nav.now": "Now",
     "nav.news": "News",
@@ -280,6 +283,7 @@ const lastUpdated = document.getElementById("lastUpdated");
 const sourceHealthTitle = document.getElementById("sourceHealthTitle");
 const sourceHealthBody = document.getElementById("sourceHealthBody");
 const socialSources = document.getElementById("socialSources");
+const refreshPageButton = document.getElementById("refreshPageButton");
 
 function t(key) {
   return translations[currentLanguage][key] ?? translations.ca[key] ?? key;
@@ -746,6 +750,13 @@ languageSelect.addEventListener("change", (event) => {
 searchInput.addEventListener("input", (event) => {
   currentSearch = event.target.value;
   renderFeed();
+});
+
+refreshPageButton?.addEventListener("click", () => {
+  refreshPageButton.disabled = true;
+  const nextUrl = new URL(window.location.href);
+  nextUrl.searchParams.set("refresh", String(Date.now()));
+  window.location.replace(nextUrl.toString());
 });
 
 document.querySelectorAll(".category").forEach((button) => {
