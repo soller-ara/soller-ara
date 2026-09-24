@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-24T21:19:42.838358+00:00",
+  "fetched_at": "2026-09-24T22:20:57.567705+00:00",
   "source_count": 31,
   "source_status": [
     {
@@ -118,7 +118,7 @@ window.SOLLER_ARA_DATA = {
       "source_type": "media",
       "method": "html_listing_regex",
       "ok": true,
-      "count": 7,
+      "count": 6,
       "error": null
     },
     {
@@ -285,7 +285,7 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 127,
+  "post_count": 126,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
@@ -331,26 +331,6 @@ window.SOLLER_ARA_DATA = {
       "image_allowed": false,
       "embed_type": "official_oembed",
       "embed_url": "https://saveu.cat/noticies/el-mallorca-es-retroba-amb-la-seva-aficio-sollerica/embed/",
-      "related_sources": []
-    },
-    {
-      "id": "c81a528c6c7bdabf2389",
-      "category": "news",
-      "source_id": "mallorca-directo-soller",
-      "source": "Mallorca Directo",
-      "source_type": "media",
-      "language": "es",
-      "locality": "Sóller",
-      "published_at": "2026-09-24T12:00:00+00:00",
-      "title": "Gasolineras más baratas en Sóller hoy: precios actualizados | Mallorca Directo",
-      "summary": "",
-      "url": "https://mallorcadirecto.com/comarca-de-ponent/soller/gasolineras",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
       "related_sources": []
     },
     {
@@ -1663,17 +1643,17 @@ window.SOLLER_ARA_DATA = {
       "related_sources": []
     },
     {
-      "id": "44a1dc702fc12b8cc975",
-      "category": "culture",
+      "id": "897775e8c7786d03953b",
+      "category": "alerts",
       "source_id": "ajuntament-soller-noticies",
       "source": "Ajuntament de Sóller",
       "source_type": "official",
       "language": "ca",
       "locality": "Sóller",
-      "published_at": "2026-09-09T09:18:56+00:00",
-      "title": "Fornalutx celebra, un any més, el dia de la seva patrona",
-      "summary": "La celebració de la Nativitat de la Mare de Déu va tornar a reunir ahir els fornalutxencs i fornalutxenques. Gràcies per fer-nos partícips d’un dia tan vostre. Molts d’anys i bones festes, Fornalutx!",
-      "url": "https://ajsoller.net/ca/noticies/fornalutx-celebra-un-any-mes-el-dia-de-la-seva-patrona",
+      "published_at": "2026-09-09T07:56:50+00:00",
+      "title": "Emergències ha activat per avui l’alerta taronja (IG-1 del Pla Meteobal) per pluges i tempestes a totes les Illes Balears",
+      "summary": "Degut a què es preveuen precipitacions intenses, demanam a la ciutadania que extremi les precaucions: ▪️ Evitau els desplaçaments que no siguin necessaris. ▪️ Allunyau-vos dels torrents i de les zones baixes o…",
+      "url": "https://ajsoller.net/ca/noticies/emergencies-ha-activat-avui-lalerta-taronja-ig-1-del-pla-meteobal-pluges-i-tempestes-totes",
       "platform": null,
       "account": null,
       "media_type": null,
