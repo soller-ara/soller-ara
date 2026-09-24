@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "1e2784ee9ea3d88f",
+      "timestamp": "2026-09-24T10:01:43.126083+00:00",
+      "action": "publish",
+      "area": "publications",
+      "target_id": "soller-ara-bf76dec3afa594b8",
+      "title": "Nou servei de reciclatge - Gràcies per l’acollida.",
+      "detail": "Publicación propia creada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "6e3db9fd1a6470fd",
       "timestamp": "2026-09-24T09:39:19.182511+00:00",
       "action": "publish",
