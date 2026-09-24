@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-24T12:25:45.894165+00:00",
+  "fetched_at": "2026-09-24T13:23:12.391962+00:00",
   "source_count": 31,
   "source_status": [
     {
@@ -64,7 +64,7 @@ window.SOLLER_ARA_DATA = {
       "source_type": "social",
       "method": "youtube_channel",
       "ok": true,
-      "count": 1,
+      "count": 0,
       "error": null
     },
     {
@@ -285,7 +285,7 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 128,
+  "post_count": 127,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
@@ -470,26 +470,6 @@ window.SOLLER_ARA_DATA = {
       "media_type": null,
       "content_policy": "short_factual_excerpt",
       "rights_status": "public_source_reviewed",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "9d9be93a7013aadc5011",
-      "category": "news",
-      "source_id": "youtube-ib3-noticies-soller",
-      "source": "IB3 Notícies · YouTube",
-      "source_type": "social",
-      "language": "ca",
-      "locality": "Sóller / Fornalutx / Serra de Tramuntana",
-      "published_at": "2026-09-23T18:16:37+00:00",
-      "title": "Sóller imposa 600 multes per saltar-se la zona de baixes emissions",
-      "summary": "Vídeo publicat per IB3 Notícies · YouTube.",
-      "url": "https://www.youtube.com/shorts/4VrlsjLpCVk",
-      "platform": "YouTube",
-      "account": "@NoticiesIB3",
-      "media_type": "video",
-      "content_policy": "generated_social_summary",
-      "rights_status": "platform_embed",
       "image_allowed": false,
       "related_sources": []
     },
