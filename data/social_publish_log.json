@@ -1641,6 +1641,62 @@
       "post_url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-eedac3561ab09732.html",
       "recorded_at": "2026-09-24T11:20:38.325533+00:00",
       "error": ""
+    },
+    {
+      "post_id": "bd96aa779c72e39b3591",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122114125977467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122114125977467310",
+      "title": "La Tramuntanya presenta la quarta edició de la prova «Winter»",
+      "post_url": "https://saveu.cat/noticies/la-tramuntanya-presenta-la-quarta-edicio-de-la-prova-winter/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-24T12:26:05.332491+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "bd96aa779c72e39b3591",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18105677840248281",
+      "remote_url": "https://www.instagram.com/p/Ddq4Z8ijfkc/",
+      "title": "La Tramuntanya presenta la quarta edició de la prova «Winter»",
+      "post_url": "https://saveu.cat/noticies/la-tramuntanya-presenta-la-quarta-edicio-de-la-prova-winter/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-24T12:26:21.197328+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "9a4849bdc2aa695e5690",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122114126259467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122114126259467310",
+      "title": "Del Jardí Botànic a la cuina: Farines i blats",
+      "post_url": "https://mucbo.org/del-jardi-botanic-a-la-cuina-blats-i-farines/",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-24T12:26:32.405476+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "9a4849bdc2aa695e5690",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18111180358877575",
+      "remote_url": "https://www.instagram.com/p/Ddq4dRRjbVf/",
+      "title": "Del Jardí Botànic a la cuina: Farines i blats",
+      "post_url": "https://mucbo.org/del-jardi-botanic-a-la-cuina-blats-i-farines/",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-24T12:26:43.075567+00:00",
+      "error": ""
     }
   ]
 }
