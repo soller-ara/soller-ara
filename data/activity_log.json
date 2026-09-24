@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "f3f1f075e5188810",
+      "timestamp": "2026-09-24T11:20:11.605156+00:00",
+      "action": "publish",
+      "area": "publications",
+      "target_id": "soller-ara-eedac3561ab09732",
+      "title": "Oferta de feina - Sóller",
+      "detail": "Publicación propia creada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "0284f27a5a734d6b",
       "timestamp": "2026-09-24T10:58:16.331233+00:00",
       "action": "publish",

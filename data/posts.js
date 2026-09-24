@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-24T10:58:16.141267+00:00",
+  "fetched_at": "2026-09-24T11:20:11.512105+00:00",
   "source_count": 31,
   "source_status": [
     {
@@ -285,10 +285,29 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 126,
+  "post_count": 127,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "soller-ara-eedac3561ab09732",
+      "category": "services",
+      "source_id": "manual-4f785079a49c",
+      "source": "Som joves",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-09-24T11:20:11.512105+00:00",
+      "title": "Oferta de feina - Sóller",
+      "summary": "Ferros i aluminis Sóller",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-eedac3561ab09732.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": true,
+      "original_url": "https://www.facebook.com/share/p/18CaWbJr1N/?mibextid=wwXIfr",
+      "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-eedac3561ab09732.jpg",
+      "media_type": "image"
+    },
     {
       "id": "soller-ara-372b93382573b5a8",
       "category": "services",
