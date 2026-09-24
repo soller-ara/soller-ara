@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-24T11:20:11.512105+00:00",
+  "fetched_at": "2026-09-24T12:25:45.894165+00:00",
   "source_count": 31,
   "source_status": [
     {
@@ -118,7 +118,7 @@ window.SOLLER_ARA_DATA = {
       "source_type": "media",
       "method": "html_listing_regex",
       "ok": true,
-      "count": 6,
+      "count": 7,
       "error": null
     },
     {
@@ -280,15 +280,35 @@ window.SOLLER_ARA_DATA = {
       "source_type": "own",
       "method": "manual",
       "ok": true,
-      "count": 4,
+      "count": 6,
       "error": null
     }
   ],
   "social_integration_status": [],
-  "post_count": 127,
+  "post_count": 128,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "c81a528c6c7bdabf2389",
+      "category": "news",
+      "source_id": "mallorca-directo-soller",
+      "source": "Mallorca Directo",
+      "source_type": "media",
+      "language": "es",
+      "locality": "Sóller",
+      "published_at": "2026-09-24T12:00:00+00:00",
+      "title": "Gasolineras más baratas en Sóller hoy: precios actualizados | Mallorca Directo",
+      "summary": "",
+      "url": "https://mallorcadirecto.com/comarca-de-ponent/soller/gasolineras",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "image_allowed": false,
+      "related_sources": []
+    },
     {
       "id": "soller-ara-eedac3561ab09732",
       "category": "services",
@@ -306,7 +326,8 @@ window.SOLLER_ARA_DATA = {
       "image_allowed": true,
       "original_url": "https://www.facebook.com/share/p/18CaWbJr1N/?mibextid=wwXIfr",
       "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-eedac3561ab09732.jpg",
-      "media_type": "image"
+      "media_type": "image",
+      "related_sources": []
     },
     {
       "id": "soller-ara-372b93382573b5a8",
@@ -325,7 +346,52 @@ window.SOLLER_ARA_DATA = {
       "image_allowed": true,
       "original_url": "https://www.facebook.com/share/1awh56xZSC/?mibextid=wwXIfr",
       "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-372b93382573b5a8.jpg",
-      "media_type": "image"
+      "media_type": "image",
+      "related_sources": []
+    },
+    {
+      "id": "bd96aa779c72e39b3591",
+      "category": "sports",
+      "source_id": "sa-veu-soller",
+      "source": "Sa Veu de Sóller",
+      "source_type": "media",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-09-24T10:28:10+00:00",
+      "title": "La Tramuntanya presenta la quarta edició de la prova «Winter»",
+      "summary": "",
+      "url": "https://saveu.cat/noticies/la-tramuntanya-presenta-la-quarta-edicio-de-la-prova-winter/",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "image_allowed": false,
+      "embed_type": "official_oembed",
+      "embed_url": "https://saveu.cat/noticies/la-tramuntanya-presenta-la-quarta-edicio-de-la-prova-winter/embed/",
+      "related_sources": []
+    },
+    {
+      "id": "9a4849bdc2aa695e5690",
+      "category": "culture",
+      "source_id": "mucbo-noticies",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_type": "institution",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-09-24T10:20:59+00:00",
+      "title": "Del Jardí Botànic a la cuina: Farines i blats",
+      "summary": "",
+      "url": "https://mucbo.org/del-jardi-botanic-a-la-cuina-blats-i-farines/",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "image_allowed": false,
+      "embed_type": "official_oembed",
+      "embed_url": "https://mucbo.org/del-jardi-botanic-a-la-cuina-blats-i-farines/embed/",
+      "related_sources": []
     },
     {
       "id": "soller-ara-dfa49977934563c2",
@@ -1074,28 +1140,6 @@ window.SOLLER_ARA_DATA = {
       "content_policy": "short_factual_excerpt",
       "rights_status": "official_public_source",
       "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "10c6de320e4b8b78bed4",
-      "category": "services",
-      "source_id": "sa-veu-soller",
-      "source": "Sa Veu de Sóller",
-      "source_type": "media",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-09-18T10:00:00+00:00",
-      "title": "Ses Escolàpies encara la recta final de les obres amb la vista posada a reobrir-lo el 2027",
-      "summary": "",
-      "url": "https://saveu.cat/noticies/ses-escolapies-encara-la-recta-final-de-les-obres-amb-la-vista-posada-a-reobrir-lo-el-2027/",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
-      "embed_type": "official_oembed",
-      "embed_url": "https://saveu.cat/noticies/ses-escolapies-encara-la-recta-final-de-les-obres-amb-la-vista-posada-a-reobrir-lo-el-2027/embed/",
       "related_sources": []
     },
     {
@@ -1968,28 +2012,6 @@ window.SOLLER_ARA_DATA = {
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "d1c2f5ef3f4d2d6a130a",
-      "category": "culture",
-      "source_id": "mucbo-noticies",
-      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
-      "source_type": "institution",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-08-31T13:04:22+00:00",
-      "title": "El programa educatiu 2026-27 arriba amb novetats per als alumnes de tots els nivells",
-      "summary": "",
-      "url": "https://mucbo.org/el-programa-educatiu-2026-27-arriba-amb-novetats-pels-alumnes-de-tots-els-nivells/",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "link_only_no_media_license",
-      "image_allowed": false,
-      "embed_type": "official_oembed",
-      "embed_url": "https://mucbo.org/el-programa-educatiu-2026-27-arriba-amb-novetats-pels-alumnes-de-tots-els-nivells/embed/",
       "related_sources": []
     },
     {
