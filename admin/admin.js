@@ -542,8 +542,22 @@
     openModule("moderation");
   });
 
+  async function manualLinksReady() {
+    try {
+      const response = await fetch(API + "/health", { cache: "no-store", mode: "cors" });
+      const health = await response.json();
+      return Boolean(health?.capabilities?.includes("manual_social_links"));
+    } catch (_) {
+      return false;
+    }
+  }
+
   socialLinkForm.addEventListener("submit", async (event) => {
     event.preventDefault();
+    if (!await manualLinksReady()) {
+      setMessage(socialLinkMessage, "El módulo está listo en la web, pero falta desplegar el Worker actualizado en Cloudflare. No se ha publicado nada.", "error");
+      return;
+    }
     const data = new FormData(socialLinkForm);
     const payload = {
       source_name: String(data.get("source_name") || "").trim(),
