@@ -1595,6 +1595,34 @@
       "post_url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-dfa49977934563c2.html",
       "recorded_at": "2026-09-24T10:15:10.672004+00:00",
       "error": ""
+    },
+    {
+      "post_id": "c4913208bab50a57070b",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122114068569467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122114068569467310",
+      "title": "Us recordam els punts d’atenció i contacte de Sóller 2010",
+      "post_url": "https://ajsoller.net/ca/noticies/us-recordam-els-punts-datencio-i-contacte-de-soller-2010",
+      "source": "Ajuntament de Sóller",
+      "source_id": "ajuntament-soller-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-24T10:21:32.331398+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "c4913208bab50a57070b",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18098085446455031",
+      "remote_url": "https://www.instagram.com/p/DdqqJvfjLuW/",
+      "title": "Us recordam els punts d’atenció i contacte de Sóller 2010",
+      "post_url": "https://ajsoller.net/ca/noticies/us-recordam-els-punts-datencio-i-contacte-de-soller-2010",
+      "source": "Ajuntament de Sóller",
+      "source_id": "ajuntament-soller-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-24T10:21:42.209859+00:00",
+      "error": ""
     }
   ]
 }
