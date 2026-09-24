@@ -1,26 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-09-24T15:21:54.336750+00:00",
-  "entries": [
-    {
-      "post_id": "d7df0525aea9df0aaf8d",
-      "title": "El Mallorca es retroba amb la seva afició sollerica",
-      "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-09-24T13:23:10+00:00",
-      "original_url": "https://saveu.cat/noticies/el-mallorca-es-retroba-amb-la-seva-aficio-sollerica/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/d7df0525aea9df0aaf8d.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
