@@ -10,7 +10,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="../assets/brand/apple-touch-icon.png" />
   <title>Administración · Sóller Ara</title>
   <link rel="preload" as="image" href="../assets/brand/logo-soller-ara-web.png" />
-  <link rel="stylesheet" href="./admin.css?v=0.69" />
+  <link rel="stylesheet" href="./admin.css?v=0.70" />
 </head>
 <body>
   <main class="admin-shell">
@@ -40,7 +40,7 @@
         </div>
         <div class="header-actions">
           <a class="public-link button-secondary" href="../index.html">Volver a Sóller Ara</a>
-          <span id="adminVersion" class="status-pill">v0.69</span>
+          <span id="adminVersion" class="status-pill">v0.70</span>
           <span id="connectionState" class="status-pill">Conectado</span>
           <button id="logoutButton" class="button-secondary" type="button">Salir</button>
         </div>
@@ -49,6 +49,7 @@
       <nav class="admin-nav" aria-label="Módulos de administración">
         <button class="nav-button active" data-view="dashboard" type="button">Panel</button>
         <button class="nav-button" data-view="publish" type="button">Publicar</button>
+        <button class="nav-button" data-view="social-links" type="button">Enlaces de redes</button>
         <button class="nav-button" data-view="moderation" type="button">Moderación</button>
       </nav>
 
@@ -82,6 +83,30 @@
         </form>
       </section>
 
+      <section id="social-links" class="module">
+        <div class="module-heading">
+          <div>
+            <p class="eyebrow">Revisión manual</p>
+            <h2>Enlace de una red social</h2>
+            <p class="hint">Pega el enlace que has recibido en Facebook. Sóller Ara publicará un resumen propio en la web y, si lo marcas, en Instagram. Facebook se comparte desde la publicación original.</p>
+          </div>
+        </div>
+        <form id="socialLinkForm" class="form-card">
+          <label>Fuente o cuenta oficial<input name="source_name" maxlength="120" required placeholder="Ej.: Partido Popular de Sóller" /></label>
+          <label>Enlace de la publicación original<input name="original_url" type="url" required placeholder="https://www.facebook.com/..." /></label>
+          <label>Titular propio<input name="title" maxlength="180" required /></label>
+          <label>Resumen propio y neutral<textarea name="body" rows="6" required></textarea></label>
+          <div class="form-row">
+            <label>Categoría<select name="category"><option value="politics" selected>Política</option><option value="news">Noticias</option><option value="agenda">Agenda</option><option value="alerts">Avisos</option><option value="services">Servicios</option><option value="culture">Cultura</option><option value="sports">Deportes</option><option value="commerce">Comercio</option></select></label>
+            <label>Idioma<select name="language"><option value="ca">Català</option><option value="es">Español</option><option value="en">English</option></select></label>
+          </div>
+          <fieldset><legend>Destinos</legend><label class="check"><input type="checkbox" checked disabled /> Sóller Ara</label><label class="check"><input name="instagram" type="checkbox" /> Instagram</label></fieldset>
+          <p class="hint">No se descargan ni reutilizan fotografías, vídeos ni el texto completo de la fuente. El enlace original se muestra en la web y se incluye en el texto de Instagram.</p>
+          <button type="submit">Publicar propuesta revisada</button>
+          <p id="socialLinkMessage" class="message" aria-live="polite"></p>
+        </form>
+      </section>
+
       <section id="moderation" class="module">
         <div class="module-heading"><div><p class="eyebrow">Control editorial</p><h2>Publicaciones</h2></div><input id="postSearch" class="search-input" type="search" placeholder="Buscar publicación..." /></div>
         <div class="moderation-layout">
@@ -95,7 +120,7 @@
 
   <script src="./public-data.js?v=0.61"></script>
   <script src="./config.js?v=0.69"></script>
-  <script src="./admin.js?v=0.44"></script>
+  <script src="./admin.js?v=0.45"></script>
 </body>
 </html>
 
