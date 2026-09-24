@@ -23,6 +23,8 @@
   const cancelEditButton = document.getElementById("cancelEditButton");
   const facebookInput = publishForm.querySelector('input[name="facebook"]');
   const instagramInput = publishForm.querySelector('input[name="instagram"]');
+  const socialLinkForm = document.getElementById("socialLinkForm");
+  const socialLinkMessage = document.getElementById("socialLinkMessage");
 
   let statusPayload = null;
   let editPostId = "";
@@ -241,8 +243,8 @@
               ${post.url ? `<a class="button-link" href="${escapeHtml(post.url)}" target="_blank" rel="noopener">Abrir</a>` : ""}
               <label>Tipo
                 <select id="post-category-${escapeHtml(post.id)}" data-category-select>
-                  ${["news", "agenda", "alerts", "services", "culture", "sports", "commerce"].map((category) =>
-                    `<option value="${category}"${post.category === category ? " selected" : ""}>${({news:"Noticias", agenda:"Agenda", alerts:"Avisos", services:"Servicios", culture:"Cultura", sports:"Deportes", commerce:"Comercio"})[category]}</option>`
+                  ${["news", "agenda", "alerts", "services", "culture", "sports", "commerce", "politics"].map((category) =>
+                    `<option value="${category}"${post.category === category ? " selected" : ""}>${({news:"Noticias", agenda:"Agenda", alerts:"Avisos", services:"Servicios", culture:"Cultura", sports:"Deportes", commerce:"Comercio", politics:"Política"})[category]}</option>`
                   ).join("")}
                 </select>
               </label>
@@ -538,6 +540,33 @@
   cancelEditButton.addEventListener("click", () => {
     resetEditMode(true);
     openModule("moderation");
+  });
+
+  socialLinkForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const data = new FormData(socialLinkForm);
+    const payload = {
+      source_name: String(data.get("source_name") || "").trim(),
+      original_url: String(data.get("original_url") || "").trim(),
+      title: String(data.get("title") || "").trim(),
+      body: String(data.get("body") || "").trim(),
+      category: String(data.get("category") || "politics"),
+      language: String(data.get("language") || "ca"),
+      image_url: "",
+      facebook: false,
+      instagram: data.get("instagram") === "on",
+    };
+    if (!payload.source_name || !payload.original_url || !payload.title || !payload.body) return;
+    if (!confirm("¿Publicar esta propuesta revisada en Sóller Ara" + (payload.instagram ? " e Instagram" : "") + "?")) return;
+    setMessage(socialLinkMessage, "Enviando publicación…");
+    try {
+      const result = await api("/api/publish", { method: "POST", body: JSON.stringify(payload) });
+      setMessage(socialLinkMessage, "Publicación enviada. Workflow: " + (result.workflow || "iniciado") + ".", "success");
+      socialLinkForm.reset();
+      setTimeout(loadStatus, 4500);
+    } catch (error) {
+      setMessage(socialLinkMessage, error.message, "error");
+    }
   });
 
   publishForm.addEventListener("input", () => {
