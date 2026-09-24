@@ -1697,6 +1697,34 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-09-24T12:26:43.075567+00:00",
       "error": ""
+    },
+    {
+      "post_id": "f75bf4db4bc88aff7b5e",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122114179779467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122114179779467310",
+      "title": "L’oposició denuncia un suposat ús irregular de les targetes d’aparcament",
+      "post_url": "https://saveu.cat/noticies/loposicio-denuncia-un-suposat-us-irregular-de-les-targetes-daparcament/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-24T14:22:19.676005+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "f75bf4db4bc88aff7b5e",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18074678951712994",
+      "remote_url": "https://www.instagram.com/p/DdrFtY_Fxb7/",
+      "title": "L’oposició denuncia un suposat ús irregular de les targetes d’aparcament",
+      "post_url": "https://saveu.cat/noticies/loposicio-denuncia-un-suposat-us-irregular-de-les-targetes-daparcament/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-24T14:22:34.845888+00:00",
+      "error": ""
     }
   ]
 }
