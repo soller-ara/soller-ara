@@ -30,7 +30,7 @@ IMAGE_URL = os.environ.get("POST_IMAGE_URL", "").strip()
 CONFIRMATION = os.environ.get("EDIT_CONFIRMATION", "").strip()
 
 ALLOWED_CATEGORIES = {
-    "news", "agenda", "alerts", "services", "culture", "sports", "commerce"
+    "news", "agenda", "alerts", "services", "culture", "sports", "commerce", "politics"
 }
 ALLOWED_LANGUAGES = {"ca", "es", "en"}
 
@@ -134,12 +134,20 @@ def render_detail(post: dict) -> None:
     published_at = str(post.get("published_at") or "")
     post_url = str(post.get("url") or f"{SITE_URL}/noticies/{post_id}.html")
     image_url = str(post.get("media_url") or "")
+    source_name = str(post.get("source") or "Sóller Ara")
+    original_url = str(post.get("original_url") or "")
 
     safe_title = html.escape(title, quote=True)
     safe_body = html.escape(body, quote=True)
     body_html = "<br />".join(safe_body.splitlines())
     safe_url = html.escape(post_url, quote=True)
     safe_image = html.escape(image_url, quote=True) if image_url else ""
+    safe_source = html.escape(source_name, quote=True)
+    safe_original = html.escape(original_url, quote=True) if original_url else ""
+    reference_html = (
+        f'<p class="article-source">Font original: <strong>{safe_source}</strong> · <a class="origin-link" href="{safe_original}" target="_blank" rel="noopener noreferrer">Veure publicació original →</a></p>'
+        if safe_original else ""
+    )
     image_meta = (
         f'<meta property="og:image" content="{safe_image}" />\n'
         f'  <meta name="twitter:image" content="{safe_image}" />'
@@ -180,11 +188,12 @@ def render_detail(post: dict) -> None:
   <main class="legal-page">
     <a class="legal-back" href="../index.html">← Tornar a Sóller Ara</a>
     <article class="legal-card own-article">
-      <p class="eyebrow">Sóller Ara</p>
+      <p class="eyebrow">{safe_source}</p>
       <h1>{safe_title}</h1>
       <p class="article-date">{html.escape(published_at)}</p>
       {image_html}
       <div class="article-body"><p>{body_html}</p></div>
+      {reference_html}
       <p><a class="origin-link" href="../index.html">Veure més informació a Sóller Ara →</a></p>
     </article>
   </main>
@@ -228,8 +237,8 @@ def main() -> int:
         "language": LANGUAGE,
         "title": TITLE,
         "summary": BODY,
-        "rights_status": "owned",
-        "content_policy": "owned_content",
+        "rights_status": "no_reuse_reference_only" if target.get("original_url") else "owned",
+        "content_policy": "manual_link_reference" if target.get("original_url") else "owned_content",
         "image_allowed": bool(final_image),
     })
 
