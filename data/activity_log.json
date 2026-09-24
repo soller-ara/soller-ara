@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "6e3db9fd1a6470fd",
+      "timestamp": "2026-09-24T09:39:19.182511+00:00",
+      "action": "publish",
+      "area": "publications",
+      "target_id": "soller-ara-4b240950c08e60ba",
+      "title": "Escola Oficial d’Idiomes - Sóller",
+      "detail": "Publicación propia creada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "0a6b9b62afb7057b",
       "timestamp": "2026-09-21T14:46:20.907320+00:00",
       "action": "reclassify",

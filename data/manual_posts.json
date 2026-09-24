@@ -18,6 +18,25 @@
       "image_allowed": true,
       "media_url": "https://soller-ara.github.io/soller-ara",
       "media_type": "image"
+    },
+    {
+      "id": "soller-ara-4b240950c08e60ba",
+      "category": "culture",
+      "source_id": "manual-81040776e5e0",
+      "source": "Sóller, participació ciutadana",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-09-24T09:39:19.092350+00:00",
+      "title": "Escola Oficial d’Idiomes - Sóller",
+      "summary": "Places Vacants",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-4b240950c08e60ba.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": true,
+      "original_url": "https://www.facebook.com/share/p/1EvKWu3c3i/?mibextid=wwXIfr",
+      "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-4b240950c08e60ba.jpg",
+      "media_type": "image"
     }
   ]
 }

@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-24T09:22:21.388575+00:00",
+  "fetched_at": "2026-09-24T09:39:19.092350+00:00",
   "source_count": 31,
   "source_status": [
     {
@@ -285,10 +285,29 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 122,
+  "post_count": 123,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "soller-ara-4b240950c08e60ba",
+      "category": "culture",
+      "source_id": "manual-81040776e5e0",
+      "source": "Sóller, participació ciutadana",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-09-24T09:39:19.092350+00:00",
+      "title": "Escola Oficial d’Idiomes - Sóller",
+      "summary": "Places Vacants",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-4b240950c08e60ba.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": true,
+      "original_url": "https://www.facebook.com/share/p/1EvKWu3c3i/?mibextid=wwXIfr",
+      "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-4b240950c08e60ba.jpg",
+      "media_type": "image"
+    },
     {
       "id": "9d9be93a7013aadc5011",
       "category": "news",
