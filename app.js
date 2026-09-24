@@ -11,6 +11,7 @@ const translations = {
     "nav.sports": "Esports",
     "nav.commerce": "Comerç",
     "nav.social": "Xarxes",
+    "nav.politics": "Política",
     "hero.eyebrow": "Avui a Sóller",
     "hero.title": "La informació local, ordenada i accessible.",
     "hero.body": "Una portada única per descobrir avisos, serveis, notícies, agenda, cultura, esport, comerç i publicacions de fonts locals.",
@@ -78,7 +79,7 @@ const translations = {
     "card.share": "Compartir",
     "card.related": "Contingut relacionat",
     "empty": "No hi ha publicacions que coincideixin amb la cerca.",
-    categories: { now: "Ara", news: "Notícies", agenda: "Agenda", alerts: "Avisos", services: "Serveis", culture: "Cultura", sports: "Esports", commerce: "Comerç", social: "Xarxes" }
+    categories: { now: "Ara", news: "Notícies", agenda: "Agenda", alerts: "Avisos", services: "Serveis", culture: "Cultura", sports: "Esports", commerce: "Comerç", politics: "Política", social: "Xarxes" }
   },
   es: {
     tagline: "Todo lo que pasa en Sóller, en un solo lugar.",
@@ -92,6 +93,7 @@ const translations = {
     "nav.sports": "Deportes",
     "nav.commerce": "Comercio",
     "nav.social": "Redes",
+    "nav.politics": "Política",
     "hero.eyebrow": "Hoy en Sóller",
     "hero.title": "La información local, ordenada y accesible.",
     "hero.body": "Una portada única para descubrir avisos, servicios, noticias, agenda, cultura, deporte, comercio y publicaciones de fuentes locales.",
@@ -159,7 +161,7 @@ const translations = {
     "card.share": "Compartir",
     "card.related": "Contenido relacionado",
     "empty": "No hay publicaciones que coincidan con la búsqueda.",
-    categories: { now: "Ahora", news: "Noticias", agenda: "Agenda", alerts: "Avisos", services: "Servicios", culture: "Cultura", sports: "Deportes", commerce: "Comercio", social: "Redes" }
+    categories: { now: "Ahora", news: "Noticias", agenda: "Agenda", alerts: "Avisos", services: "Servicios", culture: "Cultura", sports: "Deportes", commerce: "Comercio", politics: "Política", social: "Redes" }
   },
   en: {
     tagline: "Everything happening in Sóller, in one place.",
@@ -173,6 +175,7 @@ const translations = {
     "nav.sports": "Sports",
     "nav.commerce": "Local business",
     "nav.social": "Social",
+    "nav.politics": "Politics",
     "hero.eyebrow": "Today in Sóller",
     "hero.title": "Local information, organized and accessible.",
     "hero.body": "A single homepage for alerts, services, news, events, culture, sports, local businesses and posts from local sources.",
@@ -240,7 +243,7 @@ const translations = {
     "card.share": "Share",
     "card.related": "Related content",
     "empty": "No posts match your search.",
-    categories: { now: "Now", news: "News", agenda: "Events", alerts: "Alerts", services: "Services", culture: "Culture", sports: "Sports", commerce: "Local business", social: "Social" }
+    categories: { now: "Now", news: "News", agenda: "Events", alerts: "Alerts", services: "Services", culture: "Culture", sports: "Sports", commerce: "Local business", politics: "Politics", social: "Social" }
   }
 };
 
@@ -326,6 +329,7 @@ function iconFor(category) {
     culture: "🎭",
     sports: "🏅",
     commerce: "🏪",
+    politics: "🏛️",
     social: "📱",
     news: "📰"
   }[category] || "📰";
@@ -450,6 +454,7 @@ function renderFeed() {
   feed.innerHTML = visiblePosts.map((post) => {
     const categoryLabel = translations[currentLanguage].categories[post.category] || post.category;
     const safeUrl = post.url || "#";
+    const originalUrl = post.original_url || "";
     const officialPreview = renderOfficialLinkPreview(post);
     const socialEmbed = renderSocialEmbed(post);
     const socialLabel = post.source_type === "social" && post.platform
@@ -474,7 +479,7 @@ function renderFeed() {
           ${socialEmbed}
           ${relatedHtml}
           <div class="card-actions">
-            ${post.source_type === "own" ? "" : `<a class="origin-link" href="${escapeAttribute(safeUrl)}" target="_blank" rel="noopener noreferrer">${t("card.original")} →</a>`}
+            ${originalUrl ? `<a class="origin-link" href="${escapeAttribute(originalUrl)}" target="_blank" rel="noopener noreferrer">${t("card.original")} →</a>` : (post.source_type === "own" ? "" : `<a class="origin-link" href="${escapeAttribute(safeUrl)}" target="_blank" rel="noopener noreferrer">${t("card.original")} →</a>`)}
             <button class="muted-button" type="button" data-share-id="${escapeAttribute(post.id || "")}">${t("card.share")}</button>
           </div>
         </div>
