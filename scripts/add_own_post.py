@@ -16,6 +16,7 @@ import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.parse import urlparse
 from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -31,11 +32,13 @@ BODY = os.environ.get("POST_BODY", "").strip()
 CATEGORY = os.environ.get("POST_CATEGORY", "news").strip() or "news"
 LANGUAGE = os.environ.get("POST_LANGUAGE", "ca").strip() or "ca"
 IMAGE_URL = os.environ.get("POST_IMAGE_URL", "").strip()
+SOURCE_NAME = os.environ.get("POST_SOURCE_NAME", "").strip()
+ORIGINAL_URL = os.environ.get("POST_ORIGINAL_URL", "").strip()
 CONFIRMATION = os.environ.get("PUBLISH_CONFIRMATION", "").strip()
 PUBLISH_KEY = (os.environ.get("PUBLISH_KEY", "").strip() or os.environ.get("GITHUB_RUN_ID", "").strip())
 
 ALLOWED_CATEGORIES = {
-    "news", "agenda", "alerts", "services", "culture", "sports", "commerce"
+    "news", "agenda", "alerts", "services", "culture", "sports", "commerce", "politics"
 }
 
 
@@ -137,6 +140,17 @@ def main() -> int:
     if CATEGORY not in ALLOWED_CATEGORIES:
         print(f"ERROR: categoria no vàlida: {CATEGORY}", file=sys.stderr)
         return 2
+    if bool(SOURCE_NAME) != bool(ORIGINAL_URL):
+        print("ERROR: font i enllaç original s'han d'indicar junts.", file=sys.stderr)
+        return 2
+    if ORIGINAL_URL:
+        parsed_original = urlparse(ORIGINAL_URL)
+        if parsed_original.scheme != "https" or not parsed_original.netloc:
+            print("ERROR: l'enllaç original ha de ser https.", file=sys.stderr)
+            return 2
+    if len(SOURCE_NAME) > 120:
+        print("ERROR: el nom de la font és massa llarg.", file=sys.stderr)
+        return 2
 
     now = datetime.now(timezone.utc).isoformat()
     post_id = stable_id_from_key(PUBLISH_KEY) if PUBLISH_KEY else stable_id(TITLE, now)
@@ -144,11 +158,13 @@ def main() -> int:
     post_url = f"{SITE_URL}/noticies/{post_id}.html"
     final_image_url = IMAGE_URL or generate_social_card(post_id, TITLE, CATEGORY)
 
+    display_source = SOURCE_NAME or "Sóller Ara"
+    source_id = "soller-ara" if not SOURCE_NAME else "manual-" + hashlib.sha1(SOURCE_NAME.casefold().encode("utf-8")).hexdigest()[:12]
     post = {
         "id": post_id,
         "category": CATEGORY,
-        "source_id": "soller-ara",
-        "source": "Sóller Ara",
+        "source_id": source_id,
+        "source": display_source,
         "source_type": "own",
         "language": LANGUAGE,
         "locality": "Sóller",
@@ -156,10 +172,12 @@ def main() -> int:
         "title": TITLE,
         "summary": BODY,
         "url": post_url,
-        "content_policy": "owned_content",
-        "rights_status": "owned",
+        "content_policy": "manual_link_reference" if ORIGINAL_URL else "owned_content",
+        "rights_status": "no_reuse_reference_only" if ORIGINAL_URL else "owned",
         "image_allowed": bool(final_image_url),
     }
+    if ORIGINAL_URL:
+        post["original_url"] = ORIGINAL_URL
     if final_image_url:
         post["media_url"] = final_image_url
         post["media_type"] = "image"
@@ -170,6 +188,12 @@ def main() -> int:
     body_html = "<br />".join(safe_body.splitlines())
     safe_url = html.escape(post_url, quote=True)
     safe_image = html.escape(final_image_url, quote=True) if final_image_url else ""
+    safe_source = html.escape(display_source, quote=True)
+    safe_original = html.escape(ORIGINAL_URL, quote=True) if ORIGINAL_URL else ""
+    reference_html = (
+        f'<p class="article-source">Font original: <strong>{safe_source}</strong> · <a class="origin-link" href="{safe_original}" target="_blank" rel="noopener noreferrer">Veure publicació original →</a></p>'
+        if safe_original else ""
+    )
     image_meta = (
         f'<meta property="og:image" content="{safe_image}" />\n'
         f'  <meta name="twitter:image" content="{safe_image}" />'
@@ -209,11 +233,12 @@ def main() -> int:
   <main class="legal-page">
     <a class="legal-back" href="../index.html">← Tornar a Sóller Ara</a>
     <article class="legal-card own-article">
-      <p class="eyebrow">Sóller Ara</p>
+      <p class="eyebrow">{safe_source}</p>
       <h1>{safe_title}</h1>
       <p class="article-date">{now}</p>
       {image_html}
       <div class="article-body"><p>{body_html}</p></div>
+      {reference_html}
       <p><a class="origin-link" href="../index.html">Veure més informació a Sóller Ara →</a></p>
     </article>
   </main>
