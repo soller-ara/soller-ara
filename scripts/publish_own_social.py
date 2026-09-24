@@ -25,6 +25,8 @@ GRAPH_VERSION = os.environ.get("META_GRAPH_VERSION", "v26.0").strip() or "v26.0"
 TITLE = os.environ.get("POST_TITLE", "").strip()
 BODY = os.environ.get("POST_BODY", "").strip()
 IMAGE_URL = (os.environ.get("OWN_IMAGE_URL", "").strip() or os.environ.get("POST_IMAGE_URL", "").strip())
+SOURCE_NAME = os.environ.get("POST_SOURCE_NAME", "").strip()
+ORIGINAL_URL = os.environ.get("POST_ORIGINAL_URL", "").strip()
 DO_FACEBOOK = os.environ.get("PUBLISH_FACEBOOK", "false").lower() == "true"
 DO_INSTAGRAM = os.environ.get("PUBLISH_INSTAGRAM", "false").lower() == "true"
 CONFIRMATION = os.environ.get("PUBLISH_CONFIRMATION", "").strip()
@@ -139,8 +141,12 @@ def discover_accounts() -> tuple[str, str, str, str]:
     return page_id, page_token, ig_id, ig_username
 
 
+def source_reference() -> str:
+    return f"\n\nFont original ({SOURCE_NAME}): {ORIGINAL_URL}" if SOURCE_NAME and ORIGINAL_URL else ""
+
+
 def publish_facebook(page_id: str, page_token: str) -> str:
-    message = f"{TITLE}\n\n{BODY}".strip()
+    message = f"{TITLE}\n\n{BODY}{source_reference()}".strip()
     result = graph(
         f"{page_id}/feed",
         method="POST",
@@ -165,7 +171,7 @@ def publish_instagram(ig_id: str, ig_username: str, page_token: str) -> str:
             "Instagram necessita una imatge pública. Afegeix POST_IMAGE_URL o desactiva Instagram."
         )
 
-    caption = f"{TITLE}\n\nNotícia completa: {POST_URL}\nEnllaços: https://soller-ara.github.io/soller-ara/enllacos.html\n\n{BODY}\n\n#Sóller #SollerAra".strip()
+    caption = f"{TITLE}\n\nNotícia completa: {POST_URL}\nEnllaços: https://soller-ara.github.io/soller-ara/enllacos.html\n\n{BODY}{source_reference()}\n\n#Sóller #SollerAra".strip()
     container = graph(
         f"{ig_id}/media",
         method="POST",
