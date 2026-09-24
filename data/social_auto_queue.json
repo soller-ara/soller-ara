@@ -1,6 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-09-24T14:21:47.526891+00:00",
+  "entries": [
+    {
+      "post_id": "f75bf4db4bc88aff7b5e",
+      "title": "L’oposició denuncia un suposat ús irregular de les targetes d’aparcament",
+      "summary": "",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "source_type": "media",
+      "category": "services",
+      "language": "ca",
+      "published_at": "2026-09-24T13:32:55+00:00",
+      "original_url": "https://saveu.cat/noticies/loposicio-denuncia-un-suposat-us-irregular-de-les-targetes-daparcament/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/f75bf4db4bc88aff7b5e.jpg"
+    }
+  ]
 }
