@@ -11,6 +11,8 @@ on:
       - "scripts/activity_log.py"
       - "scripts/log_admin_action.py"
       - "scripts/edit_own_post.py"
+      - "scripts/add_own_post.py"
+      - "scripts/publish_own_social.py"
       - "scripts/manage_sources.py"
       - "scripts/manage_social_settings.py"
       - "scripts/update_sources.py"
@@ -64,7 +66,9 @@ jobs:
 
       - name: Validar scripts de Administración y redes
         run: |
+          python -m py_compile scripts/add_own_post.py
           python -m py_compile scripts/edit_own_post.py
+          python -m py_compile scripts/publish_own_social.py
           python -m py_compile scripts/manage_sources.py
           python -m py_compile scripts/manage_social_settings.py
           python -m py_compile scripts/activity_log.py
