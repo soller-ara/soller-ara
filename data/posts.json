@@ -1,7 +1,7 @@
 {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-25T14:22:54.165830+00:00",
+  "fetched_at": "2026-09-25T14:36:36.161740+00:00",
   "source_count": 31,
   "source_status": [
     {
@@ -285,10 +285,29 @@
     }
   ],
   "social_integration_status": [],
-  "post_count": 130,
+  "post_count": 131,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "soller-ara-c2459797403a7627",
+      "category": "politics",
+      "source_id": "manual-86471f505308",
+      "source": "Socialistes de Sóller",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-09-25T14:36:36.161740+00:00",
+      "title": "Els Socialistes de Sóller convoquen una trobada oberta per iniciar el nou curs polític el pròxim 1 d'octubre.",
+      "summary": "La formació política organitza un acte a Ca'n Dulce a partir de les 19.30 hores adreçat a afiliats, simpatitzants i obert a tota la ciutadania, amb l'objectiu de compartir idees i converses acompanyades d'una picada.",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-c2459797403a7627.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": true,
+      "original_url": "https://www.facebook.com/share/p/1Er5HKMGvw/?mibextid=wwXIfr",
+      "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-c2459797403a7627.jpg",
+      "media_type": "image"
+    },
     {
       "id": "soller-ara-ac551e3062285427",
       "category": "politics",

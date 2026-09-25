@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "456226bb5b177746",
+      "timestamp": "2026-09-25T14:36:36.257894+00:00",
+      "action": "publish",
+      "area": "publications",
+      "target_id": "soller-ara-c2459797403a7627",
+      "title": "Els Socialistes de Sóller convoquen una trobada oberta per iniciar el nou curs polític el pròxim 1 d'octubre.",
+      "detail": "Publicación propia creada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "95fe6d0b38fccd1b",
       "timestamp": "2026-09-25T13:30:36.103294+00:00",
       "action": "publish",
