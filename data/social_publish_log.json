@@ -2042,6 +2042,34 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-09-25T11:21:50.088130+00:00",
       "error": ""
+    },
+    {
+      "post_id": "d67233b53b81a741dabb",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122114649105467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122114649105467310",
+      "title": "Sacar Pecho lleva al Parlamento Europeo la voz de las mujeres con cáncer de mama y una mirada única de la Serra de Tramuntana",
+      "post_url": "https://www.conselldemallorca.es/es/todas-las-noticias/-/asset_publisher/bqOupoVYvgPA/content/sacar-pecho-duu-al-parlament-europeu-la-veu-de-les-dones-amb-c%C3%A0ncer-de-mama-i-una-mirada-%C3%BAnica-de-la-serra-de-tramuntana/695139",
+      "source": "Consell de Mallorca",
+      "source_id": "consell-mallorca-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-25T12:26:45.930329+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "d67233b53b81a741dabb",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18156985894511410",
+      "remote_url": "https://www.instagram.com/p/DdtdR3cl-lT/",
+      "title": "Sacar Pecho lleva al Parlamento Europeo la voz de las mujeres con cáncer de mama y una mirada única de la Serra de Tramuntana",
+      "post_url": "https://www.conselldemallorca.es/es/todas-las-noticias/-/asset_publisher/bqOupoVYvgPA/content/sacar-pecho-duu-al-parlament-europeu-la-veu-de-les-dones-amb-c%C3%A0ncer-de-mama-i-una-mirada-%C3%BAnica-de-la-serra-de-tramuntana/695139",
+      "source": "Consell de Mallorca",
+      "source_id": "consell-mallorca-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-25T12:26:55.792714+00:00",
+      "error": ""
     }
   ]
 }
