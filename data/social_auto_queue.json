@@ -1,64 +1,64 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-09-25T09:21:18.011265+00:00",
+  "generated_at": "2026-09-25T10:21:21.295931+00:00",
   "entries": [
     {
-      "post_id": "95b9864a50c09182990f",
-      "title": "L’IBAVI desallotja i precinta gran part de l’Hospici pel risc d’ensorrament",
-      "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-09-25T11:00:00+02:00",
-      "original_url": "https://www.elsoller.cat/soller/local/2026/09/25/354573/ibavi-desallotja-precinta-gran-part-hospici-pel-risc-ensorrament.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/95b9864a50c09182990f.jpg"
-    },
-    {
-      "post_id": "ca99e8ccbfbc370c6404",
-      "title": "Sóller és el tercer municipi de Mallorcaque més places d’habitatge turístic ha renovat",
+      "post_id": "88ff67aadef7a0a57ca9",
+      "title": "Els hotels assoleixen les xifres d’ocupació laboral més elevades",
       "summary": "",
       "source": "Sa Veu de Sóller",
       "source_id": "sa-veu-soller",
       "source_type": "media",
       "category": "news",
       "language": "ca",
-      "published_at": "2026-09-25T08:30:00+00:00",
-      "original_url": "https://saveu.cat/noticies/soller-es-el-tercer-municipi-de-mallorcaque-mes-places-dhabitatge-turistic-ha-renovat/",
+      "published_at": "2026-09-25T10:00:00+00:00",
+      "original_url": "https://saveu.cat/noticies/els-hotels-assoleixen-les-xifres-docupacio-laboral-mes-elevades/",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/ca99e8ccbfbc370c6404.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/88ff67aadef7a0a57ca9.jpg"
     },
     {
-      "post_id": "dff44327253d4ed5c1ef",
-      "title": "El futbol solleric es reunirà per recordar en Nicolás",
-      "summary": "D’un desig nascut dins la seva família neix una trobada que vol reunir totes les persones que varen compartir amb Nicolás Aguilar Navarro la passió pel futbol. La seva germana Maria va proposar al batle celebrar un…",
+      "post_id": "16d81993bd61dafc57b6",
+      "title": "La quarta edició de la Tramuntanya Winter es disputarà el 17 d'octubre i fou presentada aquesta setmana",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-09-25T11:40:00+02:00",
+      "original_url": "https://www.elsoller.cat/soller/esports/2026/09/25/354583/quarta-edicio-tramuntanya-winter-disputara-octubre-fou-presentada-aquesta-setmana.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/16d81993bd61dafc57b6.jpg"
+    },
+    {
+      "post_id": "e702a58fb5a0664e57dc",
+      "title": "Presentada la quarta edició de la Tramuntanya Winter",
+      "summary": "L’Hotel Es Port va acollir ahir horabaixa la presentació d’aquesta prova de muntanya, que tornarà a reunir corredors a la Vall el pròxim 17 d’octubre. La Tramuntanya Winter manté els seus tres recorreguts, adaptats a…",
       "source": "Ajuntament de Sóller",
       "source_id": "ajuntament-soller-noticies",
       "source_type": "official",
       "category": "sports",
       "language": "ca",
-      "published_at": "2026-09-25T07:40:26+00:00",
-      "original_url": "https://ajsoller.net/ca/noticies/el-futbol-solleric-es-reunira-recordar-en-nicolas",
+      "published_at": "2026-09-25T07:37:42+00:00",
+      "original_url": "https://ajsoller.net/ca/noticies/presentada-la-quarta-edicio-de-la-tramuntanya-winter",
       "content_policy": "short_factual_excerpt",
       "rights_status": "public_source_reviewed",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/dff44327253d4ed5c1ef.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/e702a58fb5a0664e57dc.jpg"
     }
   ]
 }
