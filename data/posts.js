@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-25T13:30:36.008827+00:00",
+  "fetched_at": "2026-09-25T14:22:54.165830+00:00",
   "source_count": 31,
   "source_status": [
     {
@@ -280,7 +280,7 @@ window.SOLLER_ARA_DATA = {
       "source_type": "own",
       "method": "manual",
       "ok": true,
-      "count": 8,
+      "count": 9,
       "error": null
     }
   ],
@@ -306,7 +306,8 @@ window.SOLLER_ARA_DATA = {
       "image_allowed": true,
       "original_url": "https://www.facebook.com/share/1DaTdELAS6/?mibextid=wwXIfr",
       "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-ac551e3062285427.jpg",
-      "media_type": "image"
+      "media_type": "image",
+      "related_sources": []
     },
     {
       "id": "soller-ara-934624476dd3043e",
