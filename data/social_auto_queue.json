@@ -1,64 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-09-25T10:21:21.295931+00:00",
+  "generated_at": "2026-09-25T11:20:54.887786+00:00",
   "entries": [
     {
-      "post_id": "88ff67aadef7a0a57ca9",
-      "title": "Els hotels assoleixen les xifres d’ocupació laboral més elevades",
-      "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-09-25T10:00:00+00:00",
-      "original_url": "https://saveu.cat/noticies/els-hotels-assoleixen-les-xifres-docupacio-laboral-mes-elevades/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/88ff67aadef7a0a57ca9.jpg"
-    },
-    {
-      "post_id": "16d81993bd61dafc57b6",
-      "title": "La quarta edició de la Tramuntanya Winter es disputarà el 17 d'octubre i fou presentada aquesta setmana",
+      "post_id": "c25edb17e52d3433870f",
+      "title": "«Puc gaudir d’uns germans que no coneixia. És una sort»",
       "summary": "",
       "source": "Setmanari Sóller",
       "source_id": "setmanari-soller",
       "source_type": "media",
       "category": "news",
       "language": "ca",
-      "published_at": "2026-09-25T11:40:00+02:00",
-      "original_url": "https://www.elsoller.cat/soller/esports/2026/09/25/354583/quarta-edicio-tramuntanya-winter-disputara-octubre-fou-presentada-aquesta-setmana.html",
+      "published_at": "2026-09-25T10:31:00+02:00",
+      "original_url": "https://www.elsoller.cat/soller/societat-i-cultura/2026/09/25/354571/puc-gaudir-uns-germans-coneixia-sort.html",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/16d81993bd61dafc57b6.jpg"
-    },
-    {
-      "post_id": "e702a58fb5a0664e57dc",
-      "title": "Presentada la quarta edició de la Tramuntanya Winter",
-      "summary": "L’Hotel Es Port va acollir ahir horabaixa la presentació d’aquesta prova de muntanya, que tornarà a reunir corredors a la Vall el pròxim 17 d’octubre. La Tramuntanya Winter manté els seus tres recorreguts, adaptats a…",
-      "source": "Ajuntament de Sóller",
-      "source_id": "ajuntament-soller-noticies",
-      "source_type": "official",
-      "category": "sports",
-      "language": "ca",
-      "published_at": "2026-09-25T07:37:42+00:00",
-      "original_url": "https://ajsoller.net/ca/noticies/presentada-la-quarta-edicio-de-la-tramuntanya-winter",
-      "content_policy": "short_factual_excerpt",
-      "rights_status": "public_source_reviewed",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/e702a58fb5a0664e57dc.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/c25edb17e52d3433870f.jpg"
     }
   ]
 }
