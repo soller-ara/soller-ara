@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "dc60ef567843ad17",
+      "timestamp": "2026-09-25T08:29:22.217385+00:00",
+      "action": "reclassify",
+      "area": "moderation",
+      "target_id": "f75bf4db4bc88aff7b5e",
+      "title": "L’oposició denuncia un suposat ús irregular de les targetes d’aparcament",
+      "detail": "Acción de moderación completada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "f9a8b569de98c32c",
       "timestamp": "2026-09-25T08:28:49.037194+00:00",
       "action": "reclassify",
