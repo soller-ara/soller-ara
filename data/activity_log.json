@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "8fc96f2466ca0d76",
+      "timestamp": "2026-09-25T13:12:10.747796+00:00",
+      "action": "edit",
+      "area": "publications",
+      "target_id": "soller-ara-934624476dd3043e",
+      "title": "Ofertes de feina a Sóller: Oportunitats al sector administratiu i hoteler.",
+      "detail": "Publicación propia editada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "9e79c67218f4313f",
       "timestamp": "2026-09-25T12:51:08.004957+00:00",
       "action": "publish",

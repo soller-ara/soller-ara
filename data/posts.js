@@ -296,7 +296,7 @@ window.SOLLER_ARA_DATA = {
   "posts": [
     {
       "id": "soller-ara-934624476dd3043e",
-      "category": "services",
+      "category": "social",
       "source_id": "manual-4f785079a49c",
       "source": "Som joves",
       "source_type": "own",
