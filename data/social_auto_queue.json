@@ -1,64 +1,64 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-09-25T08:22:25.576795+00:00",
+  "generated_at": "2026-09-25T09:21:18.011265+00:00",
   "entries": [
     {
-      "post_id": "99bcb22349b2e8ff5d18",
-      "title": "AVÍS IMPORTANT",
-      "summary": "Els propers divendres, 25 i dilluns, 28 de setembre no es repartirà material per a la recollida porta a porta. Disculpau les molèsties i gràcies per la vostra comprensió.",
-      "source": "Ajuntament de Sóller",
-      "source_id": "ajuntament-soller-noticies",
-      "source_type": "official",
-      "category": "services",
-      "language": "ca",
-      "published_at": "2026-09-25T07:56:10+00:00",
-      "original_url": "https://ajsoller.net/ca/noticies/avis-important",
-      "content_policy": "short_factual_excerpt",
-      "rights_status": "public_source_reviewed",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/99bcb22349b2e8ff5d18.jpg"
-    },
-    {
-      "post_id": "966f9ed4009d8e668fdb",
-      "title": "De l’Hort a la Cuina: Meló – Varietats i gastronomia",
+      "post_id": "95b9864a50c09182990f",
+      "title": "L’IBAVI desallotja i precinta gran part de l’Hospici pel risc d’ensorrament",
       "summary": "",
-      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
-      "source_id": "mucbo-noticies",
-      "source_type": "institution",
-      "category": "culture",
-      "language": "ca",
-      "published_at": "2026-09-25T07:31:38+00:00",
-      "original_url": "https://mucbo.org/de-lhort-a-la-cuina-melo-varietats-i-gastronomia/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "link_only_no_media_license",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/966f9ed4009d8e668fdb.jpg"
-    },
-    {
-      "post_id": "9711b8046a70de46726b",
-      "title": "Cati Sánchez: “No vaig al Mundial amb cap pretensió concreta més que acabar bé i estar contenta”",
-      "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
       "source_type": "media",
       "category": "news",
       "language": "ca",
-      "published_at": "2026-09-25T07:22:24+00:00",
-      "original_url": "https://saveu.cat/entrevistes/cati-sanchez-no-vaig-al-mundial-amb-cap-pretensio-concreta-mes-que-acabar-be-i-estar-contenta/",
+      "published_at": "2026-09-25T11:00:00+02:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/09/25/354573/ibavi-desallotja-precinta-gran-part-hospici-pel-risc-ensorrament.html",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/9711b8046a70de46726b.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/95b9864a50c09182990f.jpg"
+    },
+    {
+      "post_id": "ca99e8ccbfbc370c6404",
+      "title": "Sóller és el tercer municipi de Mallorcaque més places d’habitatge turístic ha renovat",
+      "summary": "",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-09-25T08:30:00+00:00",
+      "original_url": "https://saveu.cat/noticies/soller-es-el-tercer-municipi-de-mallorcaque-mes-places-dhabitatge-turistic-ha-renovat/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/ca99e8ccbfbc370c6404.jpg"
+    },
+    {
+      "post_id": "dff44327253d4ed5c1ef",
+      "title": "El futbol solleric es reunirà per recordar en Nicolás",
+      "summary": "D’un desig nascut dins la seva família neix una trobada que vol reunir totes les persones que varen compartir amb Nicolás Aguilar Navarro la passió pel futbol. La seva germana Maria va proposar al batle celebrar un…",
+      "source": "Ajuntament de Sóller",
+      "source_id": "ajuntament-soller-noticies",
+      "source_type": "official",
+      "category": "sports",
+      "language": "ca",
+      "published_at": "2026-09-25T07:40:26+00:00",
+      "original_url": "https://ajsoller.net/ca/noticies/el-futbol-solleric-es-reunira-recordar-en-nicolas",
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "public_source_reviewed",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/dff44327253d4ed5c1ef.jpg"
     }
   ]
 }
