@@ -25,9 +25,15 @@
   const instagramInput = publishForm.querySelector('input[name="instagram"]');
   const socialLinkForm = document.getElementById("socialLinkForm");
   const socialLinkMessage = document.getElementById("socialLinkMessage");
+  const socialLinkHeading = document.getElementById("socialLinkHeading");
+  const socialLinkEditNote = document.getElementById("socialLinkEditNote");
+  const socialLinkSubmitButton = document.getElementById("socialLinkSubmitButton");
+  const cancelSocialLinkEditButton = document.getElementById("cancelSocialLinkEditButton");
+  const socialLinkList = document.getElementById("socialLinkList");
 
   let statusPayload = null;
   let editPostId = "";
+  let socialLinkEditPostId = "";
 
   function getToken() {
     return sessionStorage.getItem(TOKEN_KEY) || "";
@@ -271,6 +277,34 @@
     });
 
     renderHidden();
+    renderSocialLinkPosts();
+  }
+
+  function renderSocialLinkPosts() {
+    const posts = Array.isArray(statusPayload?.posts?.posts) ? statusPayload.posts.posts : [];
+    const links = posts.filter((post) => post.source_type === "own" && post.original_url);
+    if (!links.length) {
+      socialLinkList.innerHTML = '<p class="empty">Todavía no hay enlaces de redes publicados.</p>';
+      return;
+    }
+    socialLinkList.innerHTML = links.slice(0, 80).map((post) => `
+      <article class="post-item">
+        <header><h4>${escapeHtml(post.title || "Sin título")}</h4></header>
+        <div class="post-meta">${escapeHtml(post.source || "")} · ${escapeHtml(post.category || "")} · ${escapeHtml(formatDate(post.published_at))}</div>
+        <div class="post-actions">
+          ${post.url ? `<a class="button-link" href="${escapeHtml(post.url)}" target="_blank" rel="noopener">Abrir en la web</a>` : ""}
+          <a class="button-link" href="${escapeHtml(post.original_url)}" target="_blank" rel="noopener">Original</a>
+          <button type="button" data-social-link-edit-id="${escapeHtml(post.id)}">Editar</button>
+          <button class="danger" type="button" data-action="delete-own" data-post-id="${escapeHtml(post.id)}">Eliminar</button>
+        </div>
+      </article>
+    `).join("");
+    socialLinkList.querySelectorAll("[data-social-link-edit-id]").forEach((button) => {
+      button.addEventListener("click", () => startSocialLinkEdit(button.dataset.socialLinkEditId));
+    });
+    socialLinkList.querySelectorAll("[data-action]").forEach((button) => {
+      button.addEventListener("click", () => moderate(button.dataset.action, button.dataset.postId));
+    });
   }
 
   function renderHidden() {
@@ -361,7 +395,47 @@
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
-  async function waitForOwnEdit(postId, expected) {
+  function resetSocialLinkEditMode(resetForm = false) {
+    socialLinkEditPostId = "";
+    socialLinkHeading.textContent = "Enlace de una red social";
+    socialLinkEditNote.hidden = true;
+    socialLinkSubmitButton.textContent = "Publicar propuesta revisada";
+    cancelSocialLinkEditButton.hidden = true;
+    socialLinkForm.elements.source_name.readOnly = false;
+    socialLinkForm.elements.original_url.readOnly = false;
+    socialLinkForm.elements.instagram.disabled = false;
+    if (resetForm) socialLinkForm.reset();
+    setMessage(socialLinkMessage, "");
+  }
+
+  function startSocialLinkEdit(postId) {
+    const posts = Array.isArray(statusPayload?.posts?.posts) ? statusPayload.posts.posts : [];
+    const post = posts.find((item) => item.id === postId && item.source_type === "own" && item.original_url);
+    if (!post) {
+      setMessage(socialLinkMessage, "No se ha podido cargar este enlace de redes.", "error");
+      return;
+    }
+    socialLinkEditPostId = postId;
+    socialLinkForm.elements.source_name.value = post.source || "";
+    socialLinkForm.elements.original_url.value = post.original_url || "";
+    socialLinkForm.elements.title.value = post.title || "";
+    socialLinkForm.elements.body.value = post.summary || "";
+    socialLinkForm.elements.category.value = post.category || "politics";
+    socialLinkForm.elements.language.value = post.language || "ca";
+    socialLinkForm.elements.instagram.checked = false;
+    socialLinkForm.elements.source_name.readOnly = true;
+    socialLinkForm.elements.original_url.readOnly = true;
+    socialLinkForm.elements.instagram.disabled = true;
+    socialLinkHeading.textContent = "Editar enlace de redes";
+    socialLinkEditNote.hidden = false;
+    socialLinkSubmitButton.textContent = "Guardar cambios";
+    cancelSocialLinkEditButton.hidden = false;
+    setMessage(socialLinkMessage, "");
+    openModule("social-links");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  async function waitForOwnEdit(postId, expected, messageElement = publishMessage) {
     for (let attempt = 1; attempt <= 15; attempt++) {
       await new Promise((resolve) => setTimeout(resolve, 2500));
       const publicState = await readPublicState();
@@ -375,7 +449,7 @@
       ) {
         return true;
       }
-      setMessage(publishMessage, "Guardando cambios… " + attempt + "/15");
+      setMessage(messageElement, "Guardando cambios… " + attempt + "/15");
     }
     return false;
   }
@@ -542,6 +616,10 @@
     openModule("moderation");
   });
 
+  cancelSocialLinkEditButton.addEventListener("click", () => {
+    resetSocialLinkEditMode(true);
+  });
+
   async function manualLinksReady() {
     try {
       const response = await fetch(API + "/health", { cache: "no-store", mode: "cors" });
@@ -571,15 +649,39 @@
       instagram: data.get("instagram") === "on",
     };
     if (!payload.source_name || !payload.original_url || !payload.title || !payload.body) return;
-    if (!confirm("¿Publicar esta propuesta revisada en Sóller Ara" + (payload.instagram ? " e Instagram" : "") + "?")) return;
-    setMessage(socialLinkMessage, "Enviando publicación…");
+
+    const editing = Boolean(socialLinkEditPostId);
+    if (editing) {
+      payload.post_id = socialLinkEditPostId;
+      payload.instagram = false;
+      if (!confirm("¿Guardar los cambios de este enlace en Sóller Ara?")) return;
+    } else if (!confirm("¿Publicar esta propuesta revisada en Sóller Ara" + (payload.instagram ? " e Instagram" : "") + "?")) {
+      return;
+    }
+
+    socialLinkSubmitButton.disabled = true;
+    setMessage(socialLinkMessage, editing ? "Enviando cambios…" : "Enviando publicación…");
     try {
-      const result = await api("/api/publish", { method: "POST", body: JSON.stringify(payload) });
-      setMessage(socialLinkMessage, "Publicación enviada. Workflow: " + (result.workflow || "iniciado") + ".", "success");
-      socialLinkForm.reset();
-      setTimeout(loadStatus, 4500);
+      if (editing) {
+        await api("/api/edit", { method: "POST", body: JSON.stringify(payload) });
+        const applied = await waitForOwnEdit(socialLinkEditPostId, payload, socialLinkMessage);
+        if (!applied) {
+          setMessage(socialLinkMessage, "Los cambios están tardando más de lo previsto. Actualiza en unos segundos.", "error");
+          return;
+        }
+        setMessage(socialLinkMessage, "Enlace actualizado correctamente en Sóller Ara.", "success");
+        resetSocialLinkEditMode(true);
+        await loadStatus();
+      } else {
+        const result = await api("/api/publish", { method: "POST", body: JSON.stringify(payload) });
+        setMessage(socialLinkMessage, "Publicación enviada. Workflow: " + (result.workflow || "iniciado") + ".", "success");
+        socialLinkForm.reset();
+        setTimeout(loadStatus, 4500);
+      }
     } catch (error) {
       setMessage(socialLinkMessage, error.message, "error");
+    } finally {
+      socialLinkSubmitButton.disabled = false;
     }
   });
 
