@@ -2014,6 +2014,34 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-09-25T10:22:37.872667+00:00",
       "error": ""
+    },
+    {
+      "post_id": "c25edb17e52d3433870f",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122114619963467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122114619963467310",
+      "title": "«Puc gaudir d’uns germans que no coneixia. És una sort»",
+      "post_url": "https://www.elsoller.cat/soller/societat-i-cultura/2026/09/25/354571/puc-gaudir-uns-germans-coneixia-sort.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-25T11:21:09.554453+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "c25edb17e52d3433870f",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18122813219304295",
+      "remote_url": "https://www.instagram.com/p/DdtV0VcIKJ7/",
+      "title": "«Puc gaudir d’uns germans que no coneixia. És una sort»",
+      "post_url": "https://www.elsoller.cat/soller/societat-i-cultura/2026/09/25/354571/puc-gaudir-uns-germans-coneixia-sort.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-25T11:21:50.088130+00:00",
+      "error": ""
     }
   ]
 }
