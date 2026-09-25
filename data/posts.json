@@ -1,7 +1,7 @@
 {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-25T01:19:44.987428+00:00",
+  "fetched_at": "2026-09-25T02:20:17.483621+00:00",
   "source_count": 31,
   "source_status": [
     {
@@ -162,9 +162,9 @@
       "name": "Xeremiers de Sóller · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "error": null
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "youtube-club-volei-soller",
@@ -180,9 +180,9 @@
       "name": "Ballades A Mallorca · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "error": null
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "youtube-tramuntana-xxi",
@@ -198,9 +198,9 @@
       "name": "GOB Mallorca · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "error": null
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "youtube-museu-maritim-soller",
@@ -287,7 +287,20 @@
   "social_integration_status": [],
   "post_count": 126,
   "related_pair_count": 0,
-  "errors": [],
+  "errors": [
+    {
+      "source_id": "youtube-xeremiers-soller",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "source_id": "youtube-ballades-mallorca-soller",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "source_id": "youtube-gob-mallorca-soller",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ],
   "posts": [
     {
       "id": "f75bf4db4bc88aff7b5e",
@@ -1643,17 +1656,17 @@
       "related_sources": []
     },
     {
-      "id": "44a1dc702fc12b8cc975",
-      "category": "culture",
+      "id": "897775e8c7786d03953b",
+      "category": "alerts",
       "source_id": "ajuntament-soller-noticies",
       "source": "Ajuntament de Sóller",
       "source_type": "official",
       "language": "ca",
       "locality": "Sóller",
-      "published_at": "2026-09-09T09:18:56+00:00",
-      "title": "Fornalutx celebra, un any més, el dia de la seva patrona",
-      "summary": "La celebració de la Nativitat de la Mare de Déu va tornar a reunir ahir els fornalutxencs i fornalutxenques. Gràcies per fer-nos partícips d’un dia tan vostre. Molts d’anys i bones festes, Fornalutx!",
-      "url": "https://ajsoller.net/ca/noticies/fornalutx-celebra-un-any-mes-el-dia-de-la-seva-patrona",
+      "published_at": "2026-09-09T07:56:50+00:00",
+      "title": "Emergències ha activat per avui l’alerta taronja (IG-1 del Pla Meteobal) per pluges i tempestes a totes les Illes Balears",
+      "summary": "Degut a què es preveuen precipitacions intenses, demanam a la ciutadania que extremi les precaucions: ▪️ Evitau els desplaçaments que no siguin necessaris. ▪️ Allunyau-vos dels torrents i de les zones baixes o…",
+      "url": "https://ajsoller.net/ca/noticies/emergencies-ha-activat-avui-lalerta-taronja-ig-1-del-pla-meteobal-pluges-i-tempestes-totes",
       "platform": null,
       "account": null,
       "media_type": null,
