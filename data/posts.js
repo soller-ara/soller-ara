@@ -291,7 +291,7 @@ window.SOLLER_ARA_DATA = {
   "posts": [
     {
       "id": "99bcb22349b2e8ff5d18",
-      "category": "services",
+      "category": "alerts",
       "source_id": "ajuntament-soller-noticies",
       "source": "Ajuntament de Sóller",
       "source_type": "official",

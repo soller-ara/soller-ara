@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "8ce67bcb8101c922",
+      "timestamp": "2026-09-25T08:27:34.276406+00:00",
+      "action": "reclassify",
+      "area": "moderation",
+      "target_id": "99bcb22349b2e8ff5d18",
+      "title": "AVÍS IMPORTANT",
+      "detail": "Acción de moderación completada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "f027cd5fa4c8dd37",
       "timestamp": "2026-09-25T07:26:21.768906+00:00",
       "action": "publish",
