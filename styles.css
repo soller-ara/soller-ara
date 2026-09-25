@@ -733,6 +733,7 @@ a { color: inherit; }
 }
 .card h3 { margin: 0; font-size: 1.22rem; line-height: 1.25; }
 .card p { margin: 0; color: var(--muted); line-height: 1.55; }
+.card p.manual-link-summary { white-space: pre-line; }
 .social-account {
   color: var(--muted);
   font-size: .72rem;
