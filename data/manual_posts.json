@@ -151,6 +151,25 @@
       "original_url": "https://www.facebook.com/share/p/1DMLrJwrpA/?mibextid=wwXIfr",
       "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-934624476dd3043e.jpg",
       "media_type": "image"
+    },
+    {
+      "id": "soller-ara-ac551e3062285427",
+      "category": "politics",
+      "source_id": "manual-0ababd9997d0",
+      "source": "Vox Sóller",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-09-25T13:30:36.008827+00:00",
+      "title": "VOX Sóller anuncia una mesa informativa en la Plaza de la Constitución para este sábado",
+      "summary": "La formación política VOX Sóller ha convocado a sus simpatizantes y al público general a una mesa informativa que tendrá lugar el próximo sábado, 26 de septiembre, en horario de 10:00 h a 13:00 h. El acto informativo se celebrará en un punto neurálgico del municipio, la Plaza de la Constitución de Sóller.",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-ac551e3062285427.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": true,
+      "original_url": "https://www.facebook.com/share/1DaTdELAS6/?mibextid=wwXIfr",
+      "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-ac551e3062285427.jpg",
+      "media_type": "image"
     }
   ]
 }
