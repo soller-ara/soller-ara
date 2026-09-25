@@ -478,7 +478,7 @@ function renderFeed() {
           </div>
           <span class="badge">${escapeHtml(categoryLabel)}</span>
           <h3>${escapeHtml(post.title || "")}</h3>
-          ${post.summary ? `<p>${escapeHtml(post.summary)}</p>` : ""}
+          ${post.summary ? `<p${post.source_type === "own" && post.original_url ? ' class="manual-link-summary"' : ""}>${escapeHtml(post.summary)}</p>` : ""}
           ${officialPreview}
           ${socialEmbed}
           ${relatedHtml}
