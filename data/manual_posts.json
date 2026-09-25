@@ -113,6 +113,25 @@
       "original_url": "https://www.facebook.com/share/p/18CaWbJr1N/?mibextid=wwXIfr",
       "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-eedac3561ab09732.jpg",
       "media_type": "image"
+    },
+    {
+      "id": "soller-ara-fc4fe4f496360768",
+      "category": "politics",
+      "source_id": "manual-e589bf5d9d14",
+      "source": "Més per Sóller",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-09-25T07:26:21.577605+00:00",
+      "title": "Article setmanal",
+      "summary": "Article setmanal del partir polític Més per Sóller.",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-fc4fe4f496360768.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": true,
+      "original_url": "https://www.facebook.com/share/p/1cUyGYcsNG/?mibextid=wwXIfr",
+      "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-fc4fe4f496360768.jpg",
+      "media_type": "image"
     }
   ]
 }
