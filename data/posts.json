@@ -1,7 +1,7 @@
 {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-25T11:20:54.744944+00:00",
+  "fetched_at": "2026-09-25T12:26:29.017454+00:00",
   "source_count": 31,
   "source_status": [
     {
@@ -118,7 +118,7 @@
       "source_type": "media",
       "method": "html_listing_regex",
       "ok": true,
-      "count": 6,
+      "count": 7,
       "error": null
     },
     {
@@ -136,7 +136,7 @@
       "source_type": "official",
       "method": "html_listing_regex",
       "ok": true,
-      "count": 0,
+      "count": 1,
       "error": null
     },
     {
@@ -252,9 +252,9 @@
       "name": "Crónica Balear",
       "source_type": "media",
       "method": "freenewsapi_search",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "error": null
+      "error": "HTTP Error 503: Service Unavailable"
     },
     {
       "source_id": "ara-balears-soller",
@@ -285,10 +285,55 @@
     }
   ],
   "social_integration_status": [],
-  "post_count": 127,
+  "post_count": 129,
   "related_pair_count": 0,
-  "errors": [],
+  "errors": [
+    {
+      "source_id": "cronica-balear-soller",
+      "error": "HTTP Error 503: Service Unavailable"
+    }
+  ],
   "posts": [
+    {
+      "id": "c81a528c6c7bdabf2389",
+      "category": "news",
+      "source_id": "mallorca-directo-soller",
+      "source": "Mallorca Directo",
+      "source_type": "media",
+      "language": "es",
+      "locality": "Sóller",
+      "published_at": "2026-09-25T12:00:00+00:00",
+      "title": "Gasolineras más baratas en Sóller hoy: precios actualizados | Mallorca Directo",
+      "summary": "",
+      "url": "https://mallorcadirecto.com/comarca-de-ponent/soller/gasolineras",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
+      "id": "d67233b53b81a741dabb",
+      "category": "news",
+      "source_id": "consell-mallorca-soller",
+      "source": "Consell de Mallorca",
+      "source_type": "official",
+      "language": "ca",
+      "locality": "Sóller / Fornalutx / Serra de Tramuntana",
+      "published_at": "2026-09-25T12:00:00+00:00",
+      "title": "Sacar Pecho lleva al Parlamento Europeo la voz de las mujeres con cáncer de mama y una mirada única de la Serra de Tramuntana",
+      "summary": "",
+      "url": "https://www.conselldemallorca.es/es/todas-las-noticias/-/asset_publisher/bqOupoVYvgPA/content/sacar-pecho-duu-al-parlament-europeu-la-veu-de-les-dones-amb-c%C3%A0ncer-de-mama-i-una-mirada-%C3%BAnica-de-la-serra-de-tramuntana/695139",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "official_public_source",
+      "image_allowed": false,
+      "related_sources": []
+    },
     {
       "id": "88ff67aadef7a0a57ca9",
       "category": "news",
