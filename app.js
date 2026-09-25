@@ -433,7 +433,7 @@ function renderFeed() {
       || (currentCategory === "now"
         ? isNowPost(post)
         : currentCategory === "social"
-          ? post.source_type === "social"
+          ? (post.source_type === "social" || post.category === "social")
           : post.category === currentCategory);
     const sourceMatches = currentSource === "all" || post.source_id === currentSource;
     const relatedText = Array.isArray(post.related_sources) ? post.related_sources.map((item) => `${item.source || ""} ${item.title || ""}`).join(" ") : "";
@@ -553,7 +553,7 @@ function renderOfficialLinkPreview(post) {
 }
 
 function renderSocialEmbed(post) {
-  if (post.source_type === "own" && post.media_type === "image" && post.media_url) {
+  if (post.source_type === "own" && !post.original_url && post.media_type === "image" && post.media_url) {
     return `
       <div class="social-embed social-embed-image own-post-image">
         <img src="${escapeAttribute(post.media_url)}" alt="" loading="lazy" />
