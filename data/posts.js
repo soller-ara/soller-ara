@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-25T12:26:29.017454+00:00",
+  "fetched_at": "2026-09-25T12:51:07.782056+00:00",
   "source_count": 31,
   "source_status": [
     {
@@ -285,7 +285,7 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 129,
+  "post_count": 130,
   "related_pair_count": 0,
   "errors": [
     {
@@ -294,6 +294,25 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "posts": [
+    {
+      "id": "soller-ara-934624476dd3043e",
+      "category": "services",
+      "source_id": "manual-4f785079a49c",
+      "source": "Som joves",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-09-25T12:51:07.782056+00:00",
+      "title": "Ofertes de feina a Sóller: Oportunitats al sector administratiu i hoteler.",
+      "summary": "Atenció al públic (Sóller): Necessiten personal amb incorporació immediata per a jornada intensiva de matí (07:00 a 14:45), amb català, castellà i carnet de conduir (es valora anglès i experiència). Enviar CV a comercial@uenergia.es. \n \n Hotel Es Port: Selecciona personal responsable per formar part del seu equip. Els interessats poden enviar el CV a rrhh@hotelesport.com.",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-934624476dd3043e.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": true,
+      "original_url": "https://www.facebook.com/share/p/1DMLrJwrpA/?mibextid=wwXIfr",
+      "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-934624476dd3043e.jpg",
+      "media_type": "image"
+    },
     {
       "id": "c81a528c6c7bdabf2389",
       "category": "news",
