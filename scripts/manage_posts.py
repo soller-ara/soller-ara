@@ -26,7 +26,7 @@ ACTION = os.environ.get("MODERATION_ACTION", "").strip()
 POST_ID = os.environ.get("POST_ID", "").strip()
 CONFIRMATION = os.environ.get("MODERATION_CONFIRMATION", "").strip()
 CATEGORY = os.environ.get("MODERATION_CATEGORY", "").strip()
-ALLOWED_CATEGORIES = {"news", "agenda", "alerts", "services", "culture", "sports", "commerce", "politics"}
+ALLOWED_CATEGORIES = {"news", "agenda", "alerts", "services", "culture", "sports", "commerce", "politics", "social"}
 
 
 def load_json(path: Path, fallback: dict) -> dict:
