@@ -38,7 +38,7 @@ CONFIRMATION = os.environ.get("PUBLISH_CONFIRMATION", "").strip()
 PUBLISH_KEY = (os.environ.get("PUBLISH_KEY", "").strip() or os.environ.get("GITHUB_RUN_ID", "").strip())
 
 ALLOWED_CATEGORIES = {
-    "news", "agenda", "alerts", "services", "culture", "sports", "commerce", "politics"
+    "news", "agenda", "alerts", "services", "culture", "sports", "commerce", "politics", "social"
 }
 
 
