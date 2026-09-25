@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-25T02:20:17.483621+00:00",
+  "fetched_at": "2026-09-25T03:20:34.461171+00:00",
   "source_count": 31,
   "source_status": [
     {
@@ -54,18 +54,18 @@ window.SOLLER_ARA_DATA = {
       "name": "Ajuntament de Sóller · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
-      "count": 2,
-      "error": null
+      "ok": false,
+      "count": 0,
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "youtube-ib3-noticies-soller",
       "name": "IB3 Notícies · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "error": null
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "goib-noticies-soller",
@@ -144,18 +144,18 @@ window.SOLLER_ARA_DATA = {
       "name": "Can Prunera · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "error": null
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "youtube-aires-sollerics",
       "name": "Aires Sollerics · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "error": null
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "youtube-xeremiers-soller",
@@ -171,9 +171,9 @@ window.SOLLER_ARA_DATA = {
       "name": "Club Vòlei Sóller · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "error": null
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "youtube-ballades-mallorca-soller",
@@ -189,9 +189,9 @@ window.SOLLER_ARA_DATA = {
       "name": "Tramuntana XXI · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "error": null
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "youtube-gob-mallorca-soller",
@@ -207,27 +207,27 @@ window.SOLLER_ARA_DATA = {
       "name": "Museu Marítim de Mallorca · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "error": null
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "youtube-serra-tramuntana",
       "name": "Serra de Tramuntana Patrimoni Mundial · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "error": null
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "youtube-consell-mallorca-soller",
       "name": "Consell de Mallorca · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "error": null
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "mucbo-noticies",
@@ -285,11 +285,31 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 126,
+  "post_count": 124,
   "related_pair_count": 0,
   "errors": [
     {
+      "source_id": "youtube-ajuntament-soller",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "source_id": "youtube-ib3-noticies-soller",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "source_id": "youtube-can-prunera",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "source_id": "youtube-aires-sollerics",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
       "source_id": "youtube-xeremiers-soller",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "source_id": "youtube-club-volei-soller",
       "error": "HTTP Error 404: Not Found"
     },
     {
@@ -297,7 +317,23 @@ window.SOLLER_ARA_DATA = {
       "error": "HTTP Error 404: Not Found"
     },
     {
+      "source_id": "youtube-tramuntana-xxi",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
       "source_id": "youtube-gob-mallorca-soller",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "source_id": "youtube-museu-maritim-soller",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "source_id": "youtube-serra-tramuntana",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "source_id": "youtube-consell-mallorca-soller",
       "error": "HTTP Error 404: Not Found"
     }
   ],
@@ -1196,26 +1232,6 @@ window.SOLLER_ARA_DATA = {
       "related_sources": []
     },
     {
-      "id": "85f85df365d3bcdba1c3",
-      "category": "agenda",
-      "source_id": "youtube-ajuntament-soller",
-      "source": "Ajuntament de Sóller · YouTube",
-      "source_type": "social",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-09-16T13:08:28+00:00",
-      "title": "Ple ordinari de l'Ajuntament de Sóller, celebrada el 16/9/2026 (Part 2 de la sessió del 9/9/2026).",
-      "summary": "Vídeo publicat per Ajuntament de Sóller · YouTube relacionat amb una sessió plenària o activitat municipal.",
-      "url": "https://www.youtube.com/watch?v=-c349w_HKS4",
-      "platform": "YouTube",
-      "account": "@ajuntamentdesoller_",
-      "media_type": "video",
-      "content_policy": "generated_social_summary",
-      "rights_status": "platform_embed",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
       "id": "c2c81b2f37ad4b716814",
       "category": "news",
       "source_id": "diario-mallorca-soller",
@@ -1632,26 +1648,6 @@ window.SOLLER_ARA_DATA = {
       "media_type": null,
       "content_policy": "short_factual_excerpt",
       "rights_status": "public_source_reviewed",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "afc2f48c871c4c51a1c9",
-      "category": "news",
-      "source_id": "youtube-ajuntament-soller",
-      "source": "Ajuntament de Sóller · YouTube",
-      "source_type": "social",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-09-09T12:39:11+00:00",
-      "title": "Sessió plenària ordinària de l'Ajuntament de Sóller, celebrada el 9 de setembre de 2026.",
-      "summary": "Vídeo publicat per Ajuntament de Sóller · YouTube relacionat amb una sessió plenària o activitat municipal.",
-      "url": "https://www.youtube.com/watch?v=Ej0M-wttjM0",
-      "platform": "YouTube",
-      "account": "@ajuntamentdesoller_",
-      "media_type": "video",
-      "content_policy": "generated_social_summary",
-      "rights_status": "platform_embed",
       "image_allowed": false,
       "related_sources": []
     },
