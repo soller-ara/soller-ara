@@ -87,7 +87,8 @@
         <div class="module-heading">
           <div>
             <p class="eyebrow">Revisión manual</p>
-            <h2>Enlace de una red social</h2>
+            <h2 id="socialLinkHeading">Enlace de una red social</h2>
+            <p id="socialLinkEditNote" class="hint" hidden>La edición actualiza la web de Sóller Ara. No modifica publicaciones ya existentes en Instagram ni la publicación original de la fuente.</p>
             <p class="hint">Pega el enlace que has recibido en Facebook. Sóller Ara publicará un resumen propio en la web y, si lo marcas, en Instagram. Facebook se comparte desde la publicación original.</p>
           </div>
         </div>
@@ -102,9 +103,13 @@
           </div>
           <fieldset><legend>Destinos</legend><label class="check"><input type="checkbox" checked disabled /> Sóller Ara</label><label class="check"><input name="instagram" type="checkbox" /> Instagram</label></fieldset>
           <p class="hint">No se descargan ni reutilizan fotografías, vídeos ni el texto completo de la fuente. El enlace original se muestra en la web y se incluye en el texto de Instagram.</p>
-          <button type="submit">Publicar propuesta revisada</button>
+          <div class="header-actions"><button id="socialLinkSubmitButton" type="submit">Publicar propuesta revisada</button><button id="cancelSocialLinkEditButton" class="button-secondary" type="button" hidden>Cancelar edición</button></div>
           <p id="socialLinkMessage" class="message" aria-live="polite"></p>
         </form>
+        <article class="panel-card">
+          <div class="module-heading"><div><p class="eyebrow">Publicadas mediante este módulo</p><h3>Enlaces de redes publicados</h3></div></div>
+          <div id="socialLinkList" class="post-list"></div>
+        </article>
       </section>
 
       <section id="moderation" class="module">
@@ -120,7 +125,7 @@
 
   <script src="./public-data.js?v=0.61"></script>
   <script src="./config.js?v=0.69"></script>
-  <script src="./admin.js?v=0.45"></script>
+  <script src="./admin.js?v=0.46"></script>
 </body>
 </html>
 
