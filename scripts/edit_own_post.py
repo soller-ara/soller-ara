@@ -30,7 +30,7 @@ IMAGE_URL = os.environ.get("POST_IMAGE_URL", "").strip()
 CONFIRMATION = os.environ.get("EDIT_CONFIRMATION", "").strip()
 
 ALLOWED_CATEGORIES = {
-    "news", "agenda", "alerts", "services", "culture", "sports", "commerce", "politics"
+    "news", "agenda", "alerts", "services", "culture", "sports", "commerce", "politics", "social"
 }
 ALLOWED_LANGUAGES = {"ca", "es", "en"}
 
