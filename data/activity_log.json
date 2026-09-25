@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "76bd0b973b9380a0",
+      "timestamp": "2026-09-25T08:28:11.809197+00:00",
+      "action": "reclassify",
+      "area": "moderation",
+      "target_id": "e702a58fb5a0664e57dc",
+      "title": "Presentada la quarta edició de la Tramuntanya Winter",
+      "detail": "Acción de moderación completada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "8ce67bcb8101c922",
       "timestamp": "2026-09-25T08:27:34.276406+00:00",
       "action": "reclassify",
