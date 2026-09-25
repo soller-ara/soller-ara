@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "f9a8b569de98c32c",
+      "timestamp": "2026-09-25T08:28:49.037194+00:00",
+      "action": "reclassify",
+      "area": "moderation",
+      "target_id": "9711b8046a70de46726b",
+      "title": "Cati Sánchez: “No vaig al Mundial amb cap pretensió concreta més que acabar bé i estar contenta”",
+      "detail": "Acción de moderación completada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "76bd0b973b9380a0",
       "timestamp": "2026-09-25T08:28:11.809197+00:00",
       "action": "reclassify",
