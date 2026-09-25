@@ -1,26 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-09-25T12:26:29.155069+00:00",
-  "entries": [
-    {
-      "post_id": "d67233b53b81a741dabb",
-      "title": "Sacar Pecho lleva al Parlamento Europeo la voz de las mujeres con cáncer de mama y una mirada única de la Serra de Tramuntana",
-      "summary": "",
-      "source": "Consell de Mallorca",
-      "source_id": "consell-mallorca-soller",
-      "source_type": "official",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-09-25T12:00:00+00:00",
-      "original_url": "https://www.conselldemallorca.es/es/todas-las-noticias/-/asset_publisher/bqOupoVYvgPA/content/sacar-pecho-duu-al-parlament-europeu-la-veu-de-les-dones-amb-c%C3%A0ncer-de-mama-i-una-mirada-%C3%BAnica-de-la-serra-de-tramuntana/695139",
-      "content_policy": "short_factual_excerpt",
-      "rights_status": "official_public_source",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/d67233b53b81a741dabb.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }

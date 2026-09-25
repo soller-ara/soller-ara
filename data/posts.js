@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-25T12:51:07.782056+00:00",
+  "fetched_at": "2026-09-25T13:23:22.183030+00:00",
   "source_count": 31,
   "source_status": [
     {
@@ -244,7 +244,7 @@ window.SOLLER_ARA_DATA = {
       "source_type": "institution",
       "method": "rss",
       "ok": true,
-      "count": 5,
+      "count": 4,
       "error": null
     },
     {
@@ -252,9 +252,9 @@ window.SOLLER_ARA_DATA = {
       "name": "Crónica Balear",
       "source_type": "media",
       "method": "freenewsapi_search",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "error": "HTTP Error 503: Service Unavailable"
+      "error": null
     },
     {
       "source_id": "ara-balears-soller",
@@ -280,19 +280,14 @@ window.SOLLER_ARA_DATA = {
       "source_type": "own",
       "method": "manual",
       "ok": true,
-      "count": 7,
+      "count": 8,
       "error": null
     }
   ],
   "social_integration_status": [],
-  "post_count": 130,
+  "post_count": 129,
   "related_pair_count": 0,
-  "errors": [
-    {
-      "source_id": "cronica-balear-soller",
-      "error": "HTTP Error 503: Service Unavailable"
-    }
-  ],
+  "errors": [],
   "posts": [
     {
       "id": "soller-ara-934624476dd3043e",
@@ -311,7 +306,8 @@ window.SOLLER_ARA_DATA = {
       "image_allowed": true,
       "original_url": "https://www.facebook.com/share/p/1DMLrJwrpA/?mibextid=wwXIfr",
       "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-934624476dd3043e.jpg",
-      "media_type": "image"
+      "media_type": "image",
+      "related_sources": []
     },
     {
       "id": "c81a528c6c7bdabf2389",
@@ -2902,28 +2898,6 @@ window.SOLLER_ARA_DATA = {
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "f8dd10679782bbab097a",
-      "category": "culture",
-      "source_id": "can-prunera-noticies",
-      "source": "Can Prunera · Actualitat",
-      "source_type": "institution",
-      "language": "es",
-      "locality": "Sóller",
-      "published_at": "2026-07-27T12:29:51+00:00",
-      "title": "El mundo de Mon Joan Tiquat",
-      "summary": "",
-      "url": "https://canprunera.com/el-mundo-de-mon-joan-tiquat/?utm_source=rss&utm_medium=rss&utm_campaign=el-mundo-de-mon-joan-tiquat",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "link_only_no_media_license",
-      "image_allowed": false,
-      "embed_type": "official_oembed",
-      "embed_url": "https://canprunera.com/el-mundo-de-mon-joan-tiquat/embed/",
       "related_sources": []
     },
     {
