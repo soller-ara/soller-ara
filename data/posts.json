@@ -1,7 +1,7 @@
 {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-25T14:36:36.161740+00:00",
+  "fetched_at": "2026-09-25T15:22:57.320457+00:00",
   "source_count": 31,
   "source_status": [
     {
@@ -280,7 +280,7 @@
       "source_type": "own",
       "method": "manual",
       "ok": true,
-      "count": 9,
+      "count": 10,
       "error": null
     }
   ],
@@ -306,7 +306,8 @@
       "image_allowed": true,
       "original_url": "https://www.facebook.com/share/p/1Er5HKMGvw/?mibextid=wwXIfr",
       "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-c2459797403a7627.jpg",
-      "media_type": "image"
+      "media_type": "image",
+      "related_sources": []
     },
     {
       "id": "soller-ara-ac551e3062285427",
