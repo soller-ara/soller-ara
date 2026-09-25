@@ -348,7 +348,7 @@ async function publish(request, env, cors) {
   if (!title || !text) return json({ error: "Faltan título o texto." }, 400, cors);
   if (title.length > 180) return json({ error: "El título es demasiado largo." }, 400, cors);
 
-  const allowedCategories = new Set(["news", "agenda", "alerts", "services", "culture", "sports", "commerce", "politics"]);
+  const allowedCategories = new Set(["news", "agenda", "alerts", "services", "culture", "sports", "commerce", "politics", "social"]);
   const allowedLanguages = new Set(["ca", "es", "en"]);
   const category = allowedCategories.has(body.category) ? body.category : "news";
   const language = allowedLanguages.has(body.language) ? body.language : "ca";
@@ -392,7 +392,7 @@ async function editOwn(request, env, cors) {
     return json({ error: "El título es demasiado largo." }, 400, cors);
   }
 
-  const allowedCategories = new Set(["news", "agenda", "alerts", "services", "culture", "sports", "commerce", "politics"]);
+  const allowedCategories = new Set(["news", "agenda", "alerts", "services", "culture", "sports", "commerce", "politics", "social"]);
   const allowedLanguages = new Set(["ca", "es", "en"]);
   const category = allowedCategories.has(body.category) ? body.category : "news";
   const language = allowedLanguages.has(body.language) ? body.language : "ca";
@@ -474,7 +474,7 @@ async function manageSocialSettings(request, env, cors) {
 async function moderate(request, env, cors) {
   const body = await request.json().catch(() => ({}));
   const allowed = new Set(["hide", "unhide", "delete-own", "reclassify"]);
-  const allowedCategories = new Set(["news", "agenda", "alerts", "services", "culture", "sports", "commerce", "politics"]);
+  const allowedCategories = new Set(["news", "agenda", "alerts", "services", "culture", "sports", "commerce", "politics", "social"]);
   const action = String(body.action || "");
   const postId = String(body.post_id || "").trim();
   const category = String(body.category || "");
