@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "22910ebba0f2f602",
+      "timestamp": "2026-09-25T16:39:43.918388+00:00",
+      "action": "edit",
+      "area": "publications",
+      "target_id": "soller-ara-fc4fe4f496360768",
+      "title": "Crítiques a la inversió en cultura a Sóller",
+      "detail": "Publicación propia editada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "456226bb5b177746",
       "timestamp": "2026-09-25T14:36:36.257894+00:00",
       "action": "publish",
