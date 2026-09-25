@@ -20,7 +20,7 @@ on:
         required: true
         default: 'news'
         type: choice
-        options: [news, agenda, alerts, services, culture, sports, commerce, politics]
+        options: [news, agenda, alerts, services, culture, sports, commerce, politics, social]
       language:
         description: 'Idioma'
         required: true
