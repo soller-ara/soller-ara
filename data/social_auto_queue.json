@@ -1,6 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-09-26T11:19:23.035036+00:00",
+  "entries": [
+    {
+      "post_id": "7c106b6504ecd254bb3e",
+      "title": "Les demandes de Sóller encallen la reforma de la carretera de Desviament",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "services",
+      "language": "ca",
+      "published_at": "2026-09-26T12:30:00+02:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/09/26/354585/les-demandes-soller-encallen-reforma-carretera-desviament.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/7c106b6504ecd254bb3e.jpg"
+    }
+  ]
 }

@@ -1,7 +1,7 @@
 {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-26T10:19:16.125867+00:00",
+  "fetched_at": "2026-09-26T11:19:22.900048+00:00",
   "source_count": 31,
   "source_status": [
     {
@@ -289,6 +289,26 @@
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "7c106b6504ecd254bb3e",
+      "category": "services",
+      "source_id": "setmanari-soller",
+      "source": "Setmanari Sóller",
+      "source_type": "media",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-09-26T12:30:00+02:00",
+      "title": "Les demandes de Sóller encallen la reforma de la carretera de Desviament",
+      "summary": "",
+      "url": "https://www.elsoller.cat/soller/local/2026/09/26/354585/les-demandes-soller-encallen-reforma-carretera-desviament.html",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "image_allowed": false,
+      "related_sources": []
+    },
     {
       "id": "b283f4012802751d30ff",
       "category": "news",
@@ -1701,26 +1721,6 @@
       "media_type": null,
       "content_policy": "short_factual_excerpt",
       "rights_status": "public_source_reviewed",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "09cee0c1d125349f4ed6",
-      "category": "news",
-      "source_id": "setmanari-soller",
-      "source": "Setmanari Sóller",
-      "source_type": "media",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-09-13T09:00:00+02:00",
-      "title": "El Port, inclòs en el pla de conservació de zones marines",
-      "summary": "",
-      "url": "https://www.elsoller.cat/soller/local/2026/09/13/354541/port-inclos-pla-conservacio-zones-marines.html",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
       "image_allowed": false,
       "related_sources": []
     },
