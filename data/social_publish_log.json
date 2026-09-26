@@ -2153,6 +2153,34 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-09-26T07:20:12.929727+00:00",
       "error": ""
+    },
+    {
+      "post_id": "b283f4012802751d30ff",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122115046185467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122115046185467310",
+      "title": "El curtmetratge de Martí Arbona participa al festival de Berlín",
+      "post_url": "https://www.elsoller.cat/soller/societat-i-cultura/2026/09/26/354577/curtmetratge-marti-arbona-participa-festival-berlin.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-26T08:22:17.049967+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "b283f4012802751d30ff",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18129694633740591",
+      "remote_url": "https://www.instagram.com/p/DdvmGCiGvqc/",
+      "title": "El curtmetratge de Martí Arbona participa al festival de Berlín",
+      "post_url": "https://www.elsoller.cat/soller/societat-i-cultura/2026/09/26/354577/curtmetratge-marti-arbona-participa-festival-berlin.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-26T08:22:33.062732+00:00",
+      "error": ""
     }
   ]
 }
