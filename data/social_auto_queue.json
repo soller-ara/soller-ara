@@ -1,6 +1,45 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-09-26T07:19:31.167198+00:00",
+  "entries": [
+    {
+      "post_id": "a9d75239fa5488ceb1a8",
+      "title": "Nadal descarta convertir Isabel II en via d’entrada a Sóller i desvincula les cues a la reforma del trànsit",
+      "summary": "",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "source_type": "media",
+      "category": "services",
+      "language": "ca",
+      "published_at": "2026-09-26T07:00:00+00:00",
+      "original_url": "https://saveu.cat/noticies/nadal-descarta-convertir-isabel-ii-en-via-dentrada-a-soller-i-desvincula-les-cues-a-la-reforma-del-transit/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/a9d75239fa5488ceb1a8.jpg"
+    },
+    {
+      "post_id": "a4af2bcc4500adbd045d",
+      "title": "El Festival de Bandes Mortes, una finestra a una altra època",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-09-26T09:00:00+02:00",
+      "original_url": "https://www.elsoller.cat/soller/reportatges/2026/09/26/354575/festival-bandes-mortes-finestra-altra-epoca.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/a4af2bcc4500adbd045d.jpg"
+    }
+  ]
 }
