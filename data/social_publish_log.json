@@ -2097,6 +2097,62 @@
       "post_url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-c2459797403a7627.html",
       "recorded_at": "2026-09-25T14:37:05.487988+00:00",
       "error": ""
+    },
+    {
+      "post_id": "a9d75239fa5488ceb1a8",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122115025221467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122115025221467310",
+      "title": "Nadal descarta convertir Isabel II en via d’entrada a Sóller i desvincula les cues a la reforma del trànsit",
+      "post_url": "https://saveu.cat/noticies/nadal-descarta-convertir-isabel-ii-en-via-dentrada-a-soller-i-desvincula-les-cues-a-la-reforma-del-transit/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-26T07:19:43.913515+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "a9d75239fa5488ceb1a8",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18000300560808948",
+      "remote_url": "https://www.instagram.com/p/Ddve74qDEV-/",
+      "title": "Nadal descarta convertir Isabel II en via d’entrada a Sóller i desvincula les cues a la reforma del trànsit",
+      "post_url": "https://saveu.cat/noticies/nadal-descarta-convertir-isabel-ii-en-via-dentrada-a-soller-i-desvincula-les-cues-a-la-reforma-del-transit/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-26T07:19:55.845245+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "a4af2bcc4500adbd045d",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122115025419467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122115025419467310",
+      "title": "El Festival de Bandes Mortes, una finestra a una altra època",
+      "post_url": "https://www.elsoller.cat/soller/reportatges/2026/09/26/354575/festival-bandes-mortes-finestra-altra-epoca.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-26T07:20:00.208060+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "a4af2bcc4500adbd045d",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18129369763688667",
+      "remote_url": "https://www.instagram.com/p/Ddve92YDADD/",
+      "title": "El Festival de Bandes Mortes, una finestra a una altra època",
+      "post_url": "https://www.elsoller.cat/soller/reportatges/2026/09/26/354575/festival-bandes-mortes-finestra-altra-epoca.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-26T07:20:12.929727+00:00",
+      "error": ""
     }
   ]
 }
