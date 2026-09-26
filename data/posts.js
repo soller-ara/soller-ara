@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-25T23:18:35.881984+00:00",
+  "fetched_at": "2026-09-26T00:26:37.550567+00:00",
   "source_count": 31,
   "source_status": [
     {
