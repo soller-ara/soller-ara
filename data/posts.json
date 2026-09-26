@@ -1,7 +1,7 @@
 {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-26T21:20:16.519326+00:00",
+  "fetched_at": "2026-09-26T22:19:54.459656+00:00",
   "source_count": 31,
   "source_status": [
     {
@@ -127,7 +127,7 @@
       "source_type": "official",
       "method": "html_listing_regex",
       "ok": true,
-      "count": 3,
+      "count": 2,
       "error": null
     },
     {
@@ -285,7 +285,7 @@
     }
   ],
   "social_integration_status": [],
-  "post_count": 131,
+  "post_count": 130,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
@@ -1401,26 +1401,6 @@
       "media_type": null,
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "caf94b41a032507a5f12",
-      "category": "alerts",
-      "source_id": "tib-avisos-soller",
-      "source": "TIB · Avisos",
-      "source_type": "official",
-      "language": "ca",
-      "locality": "Sóller / Port de Sóller / Fornalutx",
-      "published_at": "2026-09-18T12:00:00+00:00",
-      "title": "26 de septiembre: Supresión de servicio en la línea 203",
-      "summary": "Debido a la celebración del RAL·LI VALL DE SANT PERE el sábado 26 de septiembre, la línea 203 suprime el servicio entre las paradas de Ma-10, Valldemossa y Ma-10, Sóller hasta las 14.30 h . En esta franja horaria, el…",
-      "url": "https://www.tib.org/es/w/avis-ral-li-vall-de-sant-pere-l203",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "short_factual_excerpt",
-      "rights_status": "official_public_source",
       "image_allowed": false,
       "related_sources": []
     },
