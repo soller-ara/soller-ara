@@ -2181,6 +2181,34 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-09-26T08:22:33.062732+00:00",
       "error": ""
+    },
+    {
+      "post_id": "7c106b6504ecd254bb3e",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122115109659467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122115109659467310",
+      "title": "Les demandes de Sóller encallen la reforma de la carretera de Desviament",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/09/26/354585/les-demandes-soller-encallen-reforma-carretera-desviament.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-26T11:19:41.528243+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "7c106b6504ecd254bb3e",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18080618711514108",
+      "remote_url": "https://www.instagram.com/p/Ddv6Zc7AA08/",
+      "title": "Les demandes de Sóller encallen la reforma de la carretera de Desviament",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/09/26/354585/les-demandes-soller-encallen-reforma-carretera-desviament.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-26T11:19:51.236767+00:00",
+      "error": ""
     }
   ]
 }
