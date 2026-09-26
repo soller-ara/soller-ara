@@ -1,26 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-09-26T08:21:59.133453+00:00",
-  "entries": [
-    {
-      "post_id": "b283f4012802751d30ff",
-      "title": "El curtmetratge de Martí Arbona participa al festival de Berlín",
-      "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-09-26T09:30:00+02:00",
-      "original_url": "https://www.elsoller.cat/soller/societat-i-cultura/2026/09/26/354577/curtmetratge-marti-arbona-participa-festival-berlin.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/b283f4012802751d30ff.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
