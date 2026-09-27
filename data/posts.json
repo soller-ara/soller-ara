@@ -1,8 +1,8 @@
 {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-27T13:20:03.193954+00:00",
-  "source_count": 31,
+  "fetched_at": "2026-09-27T13:49:03.426881+00:00",
+  "source_count": 35,
   "source_status": [
     {
       "source_id": "ajuntament-soller-noticies",
@@ -275,6 +275,42 @@
       "error": null
     },
     {
+      "source_id": "ajuntament-fornalutx-noticies",
+      "name": "Ajuntament de Fornalutx",
+      "source_type": "official",
+      "method": "rss",
+      "ok": true,
+      "count": 4,
+      "error": null
+    },
+    {
+      "source_id": "futbol-balear-cf-soller",
+      "name": "Futbol Balear · CF Sóller",
+      "source_type": "media",
+      "method": "rss",
+      "ok": true,
+      "count": 1,
+      "error": null
+    },
+    {
+      "source_id": "mancomunitat-tramuntana-soller",
+      "name": "Mancomunitat de Tramuntana",
+      "source_type": "official",
+      "method": "rss",
+      "ok": true,
+      "count": 0,
+      "error": null
+    },
+    {
+      "source_id": "youtube-sus-mallorca-soller",
+      "name": "SUS Mallorca · YouTube",
+      "source_type": "social",
+      "method": "youtube_channel",
+      "ok": true,
+      "count": 0,
+      "error": null
+    },
+    {
       "source_id": "soller-ara",
       "name": "Sóller Ara",
       "source_type": "own",
@@ -285,7 +321,7 @@
     }
   ],
   "social_integration_status": [],
-  "post_count": 130,
+  "post_count": 135,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
@@ -1306,6 +1342,26 @@
       "related_sources": []
     },
     {
+      "id": "3e48a1824d31ecc3f28b",
+      "category": "agenda",
+      "source_id": "ajuntament-fornalutx-noticies",
+      "source": "Ajuntament de Fornalutx",
+      "source_type": "official",
+      "language": "ca",
+      "locality": "Fornalutx / Vall de Sóller",
+      "published_at": "2026-09-21T07:24:28+00:00",
+      "title": "Segona convocatòria d'ajuts a l'estudi 2025-2026",
+      "summary": "sarrom dl., 21/09/2026 - 09:24 21-Setembre-2026 Concedir les subvencions en matèria de ajuts a l’estudi curs 2025-2026 a les sol·licituds presentades que figuren a la taula, per l'import que s'indica i per a l'activitat…",
+      "url": "https://ajfornalutx.net/ca/noticies/segona-convocatoria-dajuts-lestudi-2025-2026",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "official_public_source",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
       "id": "bffea3084c17558b1611",
       "category": "culture",
       "source_id": "setmanari-soller",
@@ -1905,6 +1961,26 @@
       "related_sources": []
     },
     {
+      "id": "c095f325c8a245fe0a38",
+      "category": "sports",
+      "source_id": "futbol-balear-cf-soller",
+      "source": "Futbol Balear · CF Sóller",
+      "source_type": "media",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-09-05T13:30:01+00:00",
+      "title": "Crónica Final Four Copa Illes Balears(1ª semifinal): CE Alaior 1-0 CF Soller",
+      "summary": "",
+      "url": "https://www.futbolbalear.es/2026/09/05/cronica-final-four-copa-illes-balears1a-semifinal-ce-alaior-1-cf-soller/",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
       "id": "5689e882aac9e6f723a0",
       "category": "culture",
       "source_id": "mucbo-noticies",
@@ -2173,6 +2249,66 @@
       "media_type": null,
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
+      "id": "96a51a7c9c796dea26c6",
+      "category": "culture",
+      "source_id": "ajuntament-fornalutx-noticies",
+      "source": "Ajuntament de Fornalutx",
+      "source_type": "official",
+      "language": "ca",
+      "locality": "Fornalutx / Vall de Sóller",
+      "published_at": "2026-08-24T08:14:46+00:00",
+      "title": "15 ANYS DE LA SERRA DE TRAMUNTANA COM A PATRIMONI MUNDIAL",
+      "summary": "sarrom dl., 24/08/2026 - 10:14 02-Juliol-2026 Des de l'Ajuntament de Fornalutx ens sumam a la commeració del 15è aniversari de la declaració de la Serra de Tramuntana com a Patrimoni Mundial de la UNESCO en la categoria…",
+      "url": "https://ajfornalutx.net/ca/noticies/15-anys-de-la-serra-de-tramuntana-com-patrimoni-mundial",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "official_public_source",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
+      "id": "9a386d64f1fd2fba9ea8",
+      "category": "culture",
+      "source_id": "ajuntament-fornalutx-noticies",
+      "source": "Ajuntament de Fornalutx",
+      "source_type": "official",
+      "language": "ca",
+      "locality": "Fornalutx / Vall de Sóller",
+      "published_at": "2026-08-24T08:13:04+00:00",
+      "title": "Ja s'atraca la Nit de l'Art de 2026",
+      "summary": "sarrom dl., 24/08/2026 - 10:13 27-Juliol-2026 Si voleu participar amb alguna activitat, exposició, un foodtruck o proposant alguna cosa diferent, podeu enviar un missatge al 628 91 37 29.",
+      "url": "https://ajfornalutx.net/ca/noticies/ja-satraca-la-nit-de-lart-de-2026",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "official_public_source",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
+      "id": "74ef04db2b9223343e38",
+      "category": "culture",
+      "source_id": "ajuntament-fornalutx-noticies",
+      "source": "Ajuntament de Fornalutx",
+      "source_type": "official",
+      "language": "ca",
+      "locality": "Fornalutx / Vall de Sóller",
+      "published_at": "2026-08-24T08:07:43+00:00",
+      "title": "Festes de Fornalutx 2026",
+      "summary": "sarrom dl., 24/08/2026 - 10:07 24-Agost-2026",
+      "url": "https://ajfornalutx.net/ca/noticies/festes-de-fornalutx-2026",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "official_public_source",
       "image_allowed": false,
       "related_sources": []
     },
