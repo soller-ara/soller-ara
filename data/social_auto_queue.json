@@ -1,6 +1,45 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-09-27T07:20:46.107373+00:00",
+  "entries": [
+    {
+      "post_id": "3156c9aaa24c32d1c2db",
+      "title": "Més exigeix la reobertura al públicde la Torre Picada",
+      "summary": "",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-09-27T07:00:00+00:00",
+      "original_url": "https://saveu.cat/noticies/mes-exigeix-la-reobertura-al-publicde-la-torre-picada/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/3156c9aaa24c32d1c2db.jpg"
+    },
+    {
+      "post_id": "e6ffb442e9d7279250bf",
+      "title": "Sóller Solidari dona més de 5.000 euros per a les víctimes del terratrèmol de Colòmbia",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-09-27T09:00:00+02:00",
+      "original_url": "https://www.elsoller.cat/soller/societat-i-cultura/2026/09/27/354579/soller-solidari-dona-mes-5000-euros-per-les-victimes-del-terratremol-colombia.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/e6ffb442e9d7279250bf.jpg"
+    }
+  ]
 }
