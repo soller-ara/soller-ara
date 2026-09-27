@@ -1,5 +1,5 @@
 {
-  "version": 33,
+  "version": 34,
   "sources": [
     {
       "id": "ajuntament-soller-noticies",
@@ -140,7 +140,8 @@
         "Soller",
         "Port de Sóller",
         "Port de Soller",
-        "Serra de Tramuntana"
+        "Serra de Tramuntana",
+        "Biniaraix"
       ],
       "enabled": true,
       "image_policy": "disabled_until_rights_verified",
@@ -183,7 +184,8 @@
         "Ferrocarril de Sóller",
         "Tren de Sóller",
         "Túnel de Sóller",
-        "Serra de Tramuntana"
+        "Serra de Tramuntana",
+        "Biniaraix"
       ],
       "enabled": true,
       "image_policy": "disabled_until_rights_verified",
@@ -810,7 +812,8 @@
         "C.F. Sóller",
         "C.F. Soller",
         "Sóller",
-        "Soller"
+        "Soller",
+        "Biniaraix"
       ],
       "force_category": "sports",
       "enabled": true,
