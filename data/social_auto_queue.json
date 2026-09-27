@@ -1,6 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-09-27T19:18:00.795256+00:00",
+  "entries": [
+    {
+      "post_id": "cdbebcadc109215a9602",
+      "title": "Sóller tendrà a partir d'aquest curs una delegació de l'Escola Oficial d'Idiomes de Palma",
+      "summary": "Vídeo publicat per IB3 Notícies · YouTube.",
+      "source": "IB3 Notícies · YouTube",
+      "source_id": "youtube-ib3-noticies-soller",
+      "source_type": "social",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-09-27T19:05:08+00:00",
+      "original_url": "https://www.youtube.com/watch?v=I_CbY7X7hSw",
+      "content_policy": "generated_social_summary",
+      "rights_status": "platform_embed",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/cdbebcadc109215a9602.jpg"
+    }
+  ]
 }
