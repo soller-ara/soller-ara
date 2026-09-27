@@ -1,5 +1,5 @@
 {
-  "version": 32,
+  "version": 33,
   "sources": [
     {
       "id": "ajuntament-soller-noticies",
@@ -778,6 +778,110 @@
         "Túnel de Sóller",
         "Tunel de Soller"
       ]
+    },
+    {
+      "id": "ajuntament-fornalutx-noticies",
+      "name": "Ajuntament de Fornalutx",
+      "type": "rss",
+      "url": "https://ajfornalutx.net/ca/noticies/rss.xml",
+      "language": "ca",
+      "locality": "Fornalutx / Vall de Sóller",
+      "source_type": "official",
+      "max_items": 30,
+      "max_age_days": 60,
+      "enabled": true,
+      "image_policy": "disabled_until_rights_verified",
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "official_public_source"
+    },
+    {
+      "id": "futbol-balear-cf-soller",
+      "name": "Futbol Balear · CF Sóller",
+      "type": "rss",
+      "url": "https://www.futbolbalear.es/tema/soller/feed/",
+      "language": "ca",
+      "locality": "Sóller",
+      "source_type": "media",
+      "max_items": 20,
+      "max_age_days": 60,
+      "include_keywords": [
+        "CF Sóller",
+        "CF Soller",
+        "C.F. Sóller",
+        "C.F. Soller",
+        "Sóller",
+        "Soller"
+      ],
+      "force_category": "sports",
+      "enabled": true,
+      "image_policy": "disabled_until_rights_verified",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending"
+    },
+    {
+      "id": "mancomunitat-tramuntana-soller",
+      "name": "Mancomunitat de Tramuntana",
+      "type": "rss",
+      "url": "https://mancomunitatdetramuntana.net/ca/noticies/rss.xml",
+      "language": "ca",
+      "locality": "Sóller / Fornalutx / Vall de Sóller",
+      "source_type": "official",
+      "max_items": 30,
+      "max_age_days": 60,
+      "include_keywords": [
+        "Sóller",
+        "Soller",
+        "Port de Sóller",
+        "Port de Soller",
+        "Vall de Sóller",
+        "Vall de Soller",
+        "Fornalutx",
+        "Biniaraix",
+        "Ferrocarril de Sóller",
+        "Tren de Sóller",
+        "Túnel de Sóller",
+        "Tunel de Soller"
+      ],
+      "enabled": true,
+      "image_policy": "disabled_until_rights_verified",
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "official_public_source"
+    },
+    {
+      "id": "youtube-sus-mallorca-soller",
+      "name": "SUS Mallorca · YouTube",
+      "type": "youtube_channel",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCpynWNiWU0Z_PIP4yTSodfw",
+      "language": "ca",
+      "locality": "Sóller / Port de Sóller / Fornalutx / Serra de Tramuntana",
+      "source_type": "social",
+      "platform": "YouTube",
+      "account": "@susmallorca",
+      "entity_type": "media",
+      "max_items": 15,
+      "max_age_days": 60,
+      "include_keywords": [
+        "Sóller",
+        "Soller",
+        "Port de Sóller",
+        "Port de Soller",
+        "Vall de Sóller",
+        "Vall de Soller",
+        "Fornalutx",
+        "Biniaraix",
+        "Ferrocarril de Sóller",
+        "Tren de Sóller",
+        "Túnel de Sóller",
+        "Tunel de Soller",
+        "Serra de Tramuntana"
+      ],
+      "enabled": true,
+      "image_policy": "embed_only",
+      "content_policy": "generated_social_summary",
+      "rights_status": "platform_embed",
+      "verification_url": "https://www.youtube.com/@susmallorca",
+      "verification_method": "channel_profile_and_public_rss",
+      "verified_at": "2026-09-27"
     }
   ]
 }
