@@ -1,7 +1,7 @@
 {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-27T01:19:49.600479+00:00",
+  "fetched_at": "2026-09-27T02:21:02.470518+00:00",
   "source_count": 31,
   "source_status": [
     {
@@ -63,9 +63,9 @@
       "name": "IB3 Notícies · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "error": null
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "goib-noticies-soller",
@@ -290,6 +290,10 @@
   "errors": [
     {
       "source_id": "youtube-ajuntament-soller",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "source_id": "youtube-ib3-noticies-soller",
       "error": "HTTP Error 404: Not Found"
     },
     {
