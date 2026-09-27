@@ -2265,6 +2265,34 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-09-27T07:21:38.935822+00:00",
       "error": ""
+    },
+    {
+      "post_id": "cdbebcadc109215a9602",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122115769041467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122115769041467310",
+      "title": "Sóller tendrà a partir d'aquest curs una delegació de l'Escola Oficial d'Idiomes de Palma",
+      "post_url": "https://www.youtube.com/watch?v=I_CbY7X7hSw",
+      "source": "IB3 Notícies · YouTube",
+      "source_id": "youtube-ib3-noticies-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-27T19:18:17.335178+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "cdbebcadc109215a9602",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "17953273002339291",
+      "remote_url": "https://www.instagram.com/p/DdzV9pfD_-V/",
+      "title": "Sóller tendrà a partir d'aquest curs una delegació de l'Escola Oficial d'Idiomes de Palma",
+      "post_url": "https://www.youtube.com/watch?v=I_CbY7X7hSw",
+      "source": "IB3 Notícies · YouTube",
+      "source_id": "youtube-ib3-noticies-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-27T19:18:35.441876+00:00",
+      "error": ""
     }
   ]
 }
