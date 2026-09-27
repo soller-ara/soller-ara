@@ -1,5 +1,5 @@
 {
-  "version": 5,
+  "version": 6,
   "enabled": true,
   "platforms": {
     "facebook": true,
@@ -135,6 +135,22 @@
       "instagram": true
     },
     "tren-soller-noticies": {
+      "facebook": true,
+      "instagram": true
+    },
+    "ajuntament-fornalutx-noticies": {
+      "facebook": true,
+      "instagram": true
+    },
+    "futbol-balear-cf-soller": {
+      "facebook": true,
+      "instagram": true
+    },
+    "mancomunitat-tramuntana-soller": {
+      "facebook": true,
+      "instagram": true
+    },
+    "youtube-sus-mallorca-soller": {
       "facebook": true,
       "instagram": true
     }
