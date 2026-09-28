@@ -341,7 +341,7 @@ window.SOLLER_ARA_DATA = {
   "posts": [
     {
       "id": "20ea96159fce1d04e40a",
-      "category": "services",
+      "category": "alerts",
       "source_id": "sa-veu-soller",
       "source": "Sa Veu de Sóller",
       "source_type": "media",

@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "eca98b3ec4d47793",
+      "timestamp": "2026-09-28T13:53:43.756817+00:00",
+      "action": "reclassify",
+      "area": "moderation",
+      "target_id": "20ea96159fce1d04e40a",
+      "title": "Les zones verdes d’aparcament arriben al carrer de Sa Mar",
+      "detail": "Acción de moderación completada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "9beeb01e2a1fbb79",
       "timestamp": "2026-09-28T09:15:37.056702+00:00",
       "action": "publish",
