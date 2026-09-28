@@ -445,7 +445,7 @@ window.SOLLER_ARA_DATA = {
     },
     {
       "id": "616376346ef34dde394b",
-      "category": "culture",
+      "category": "services",
       "source_id": "setmanari-soller",
       "source": "Setmanari Sóller",
       "source_type": "media",

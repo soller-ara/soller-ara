@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "39fde83b86670529",
+      "timestamp": "2026-09-28T13:57:18.918263+00:00",
+      "action": "reclassify",
+      "area": "moderation",
+      "target_id": "616376346ef34dde394b",
+      "title": "Els pisos del Fantasio tendran entre 33 i 64 metres quadrats",
+      "detail": "Acción de moderación completada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "49a9a7dea65b3d67",
       "timestamp": "2026-09-28T13:54:23.688751+00:00",
       "action": "reclassify",
