@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "cbee6beca95b4883",
+      "timestamp": "2026-09-28T13:57:53.883964+00:00",
+      "action": "reclassify",
+      "area": "moderation",
+      "target_id": "d31ed0d339054f48b3d5",
+      "title": "IB3N | Sóller tendrà a partir d’aquest curs una delegació de l’Escola Oficial d’Idiomes de Palma",
+      "detail": "Acción de moderación completada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "39fde83b86670529",
       "timestamp": "2026-09-28T13:57:18.918263+00:00",
       "action": "reclassify",

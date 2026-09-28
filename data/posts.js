@@ -405,7 +405,7 @@ window.SOLLER_ARA_DATA = {
     },
     {
       "id": "d31ed0d339054f48b3d5",
-      "category": "news",
+      "category": "services",
       "source_id": "ib3-noticies-soller",
       "source": "IB3 Notícies",
       "source_type": "media",
