@@ -1,61 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-09-28T21:22:11.430660+00:00",
-  "entries": [
-    {
-      "post_id": "82ec71692b9c7abcafc5",
-      "title": "L'Escola Oficial d'Idiomes estrena l'activitat a Sóller",
-      "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-09-28T18:03:00+02:00",
-      "original_url": "https://www.elsoller.cat/soller/local/2026/09/28/354591/escola-oficial-idiomes-estrena-activitat-soller.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/82ec71692b9c7abcafc5.jpg"
-    },
-    {
-      "post_id": "8d39d8b64d1b4877225d",
-      "title": "L’Escola Oficial d’Idiomes inicia la seva activitat a Sóller",
-      "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
-      "source_type": "media",
-      "category": "services",
-      "language": "ca",
-      "published_at": "2026-09-28T15:33:45+00:00",
-      "original_url": "https://saveu.cat/noticies/lescola-oficial-didiomes-inicia-la-seva-activitat-a-soller/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/8d39d8b64d1b4877225d.jpg"
-    },
-    {
-      "post_id": "ceee3f66083f83b07142",
-      "title": "La gastronomía como poética del instante",
-      "summary": "",
-      "source": "Can Prunera · Actualitat",
-      "source_id": "can-prunera-noticies",
-      "source_type": "institution",
-      "category": "culture",
-      "language": "es",
-      "published_at": "2026-09-28T15:27:55+00:00",
-      "original_url": "https://canprunera.com/la-gastronomia-como-poetica-del-instante/?utm_source=rss&utm_medium=rss&utm_campaign=la-gastronomia-como-poetica-del-instante",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "link_only_no_media_license",
-      "platforms": [
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/ceee3f66083f83b07142.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
