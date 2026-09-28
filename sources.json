@@ -1,5 +1,5 @@
 {
-  "version": 34,
+  "version": 35,
   "sources": [
     {
       "id": "ajuntament-soller-noticies",
@@ -885,6 +885,28 @@
       "verification_url": "https://www.youtube.com/@susmallorca",
       "verification_method": "channel_profile_and_public_rss",
       "verified_at": "2026-09-27"
+    },
+    {
+      "id": "partido-popular-soller",
+      "name": "Partido Popular · Sóller",
+      "type": "html_listing_regex",
+      "url": "https://www.pp.es/lugar/soller/",
+      "allowed_host": "pp.es",
+      "article_url_regex": "^/actualidad/articulos/[^/?#]+/$",
+      "language": "es",
+      "locality": "Sóller",
+      "source_type": "political",
+      "entity_type": "political_party",
+      "force_category": "politics",
+      "max_items": 20,
+      "max_age_days": 60,
+      "enabled": true,
+      "image_policy": "disabled_until_rights_verified",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "verification_url": "https://www.pp.es/lugar/soller/",
+      "verification_method": "official_location_archive",
+      "verified_at": "2026-09-28"
     }
   ]
 }

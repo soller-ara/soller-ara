@@ -1,5 +1,5 @@
 {
-  "version": 6,
+  "version": 7,
   "enabled": true,
   "platforms": {
     "facebook": true,
@@ -153,6 +153,10 @@
     "youtube-sus-mallorca-soller": {
       "facebook": true,
       "instagram": true
+    },
+    "partido-popular-soller": {
+      "facebook": false,
+      "instagram": false
     }
   }
 }
