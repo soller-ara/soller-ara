@@ -2367,6 +2367,34 @@
       "post_url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-a21c7de245f7274b.html",
       "recorded_at": "2026-09-28T09:15:59.255525+00:00",
       "error": ""
+    },
+    {
+      "post_id": "616376346ef34dde394b",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122116057263467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122116057263467310",
+      "title": "Els pisos del Fantasio tendran entre 33 i 64 metres quadrats",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/09/28/354587/els-pisos-del-fantasio-tendran-entre-metres-quadrats.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-28T11:21:40.241167+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "616376346ef34dde394b",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18133017112710196",
+      "remote_url": "https://www.instagram.com/p/Dd1ENmNlykc/",
+      "title": "Els pisos del Fantasio tendran entre 33 i 64 metres quadrats",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/09/28/354587/els-pisos-del-fantasio-tendran-entre-metres-quadrats.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-28T11:21:53.347541+00:00",
+      "error": ""
     }
   ]
 }
