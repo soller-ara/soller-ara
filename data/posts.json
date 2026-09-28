@@ -1,7 +1,7 @@
 {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-28T07:24:23.257113+00:00",
+  "fetched_at": "2026-09-28T08:25:56.482148+00:00",
   "source_count": 35,
   "source_status": [
     {
@@ -325,28 +325,6 @@
   "related_pair_count": 0,
   "errors": [],
   "posts": [
-    {
-      "id": "9a4849bdc2aa695e5690",
-      "category": "culture",
-      "source_id": "mucbo-noticies",
-      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
-      "source_type": "institution",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-09-28T07:09:12+00:00",
-      "title": "Del Jardí Botànic a la cuina: Farines i blats",
-      "summary": "",
-      "url": "https://mucbo.org/del-jardi-botanic-a-la-cuina-blats-i-farines/",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "link_only_no_media_license",
-      "image_allowed": false,
-      "embed_type": "official_oembed",
-      "embed_url": "https://mucbo.org/del-jardi-botanic-a-la-cuina-blats-i-farines/embed/",
-      "related_sources": []
-    },
     {
       "id": "cb2acdaa5ab33012d19e",
       "category": "culture",
@@ -946,7 +924,7 @@
       "related_sources": []
     },
     {
-      "id": "bea0a842e5ec060d79a5",
+      "id": "9a4849bdc2aa695e5690",
       "category": "culture",
       "source_id": "mucbo-noticies",
       "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
@@ -956,7 +934,7 @@
       "published_at": "2026-09-24T10:20:59+00:00",
       "title": "Del Jardí Botànic a la cuina: Farines i blats",
       "summary": "",
-      "url": "https://mucbo.org/del-jardi-botanic-a-la-cuina-blats-i-farines-old/",
+      "url": "https://mucbo.org/del-jardi-botanic-a-la-cuina-blats-i-farines/",
       "platform": null,
       "account": null,
       "media_type": null,
@@ -964,7 +942,7 @@
       "rights_status": "link_only_no_media_license",
       "image_allowed": false,
       "embed_type": "official_oembed",
-      "embed_url": "https://mucbo.org/del-jardi-botanic-a-la-cuina-blats-i-farines-old/embed/",
+      "embed_url": "https://mucbo.org/del-jardi-botanic-a-la-cuina-blats-i-farines/embed/",
       "related_sources": []
     },
     {
@@ -2106,6 +2084,28 @@
       "image_allowed": false,
       "embed_type": "official_oembed",
       "embed_url": "https://mucbo.org/el-mucbo-rep-una-valuosa-donacio-per-a-la-conservacio-de-les-seves-colleccions/embed/",
+      "related_sources": []
+    },
+    {
+      "id": "262cb27b721d87bf89ec",
+      "category": "culture",
+      "source_id": "mucbo-noticies",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_type": "institution",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-09-03T12:35:00+00:00",
+      "title": "Bolma rugosa",
+      "summary": "",
+      "url": "https://mucbo.org/bolma-rugosa/",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "image_allowed": false,
+      "embed_type": "official_oembed",
+      "embed_url": "https://mucbo.org/bolma-rugosa/embed/",
       "related_sources": []
     },
     {
