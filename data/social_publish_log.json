@@ -2829,6 +2829,48 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-09-28T18:29:56.068255+00:00",
       "error": "Application request limit reached [code=4, subcode=2207051]"
+    },
+    {
+      "post_id": "82ec71692b9c7abcafc5",
+      "platform": "instagram",
+      "status": "error",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "L'Escola Oficial d'Idiomes estrena l'activitat a Sóller",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/09/28/354591/escola-oficial-idiomes-estrena-activitat-soller.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-28T19:20:50.983115+00:00",
+      "error": "Application request limit reached [code=4, subcode=2207051]"
+    },
+    {
+      "post_id": "8d39d8b64d1b4877225d",
+      "platform": "instagram",
+      "status": "error",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "L’Escola Oficial d’Idiomes inicia la seva activitat a Sóller",
+      "post_url": "https://saveu.cat/noticies/lescola-oficial-didiomes-inicia-la-seva-activitat-a-soller/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-28T19:21:06.433355+00:00",
+      "error": "Application request limit reached [code=4, subcode=2207051]"
+    },
+    {
+      "post_id": "ceee3f66083f83b07142",
+      "platform": "instagram",
+      "status": "error",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "La gastronomía como poética del instante",
+      "post_url": "https://canprunera.com/la-gastronomia-como-poetica-del-instante/?utm_source=rss&utm_medium=rss&utm_campaign=la-gastronomia-como-poetica-del-instante",
+      "source": "Can Prunera · Actualitat",
+      "source_id": "can-prunera-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-28T19:21:15.949958+00:00",
+      "error": "Application request limit reached [code=4, subcode=2207051]"
     }
   ]
 }
