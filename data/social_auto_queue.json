@@ -1,6 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-09-28T06:30:03.032654+00:00",
+  "entries": [
+    {
+      "post_id": "cb2acdaa5ab33012d19e",
+      "title": "La familia Obrador abre Cas Don a los vecinos de Biniaraix con un concierto",
+      "summary": "",
+      "source": "Última Hora",
+      "source_id": "ultima-hora-soller",
+      "source_type": "media",
+      "category": "culture",
+      "language": "es",
+      "published_at": "2026-09-28T07:30:00+02:00",
+      "original_url": "https://www.ultimahora.es/noticias/part-forana/2026/09/28/2717595/familia-obrador-abre-cas-don-vecinos-biniaraix-concierto.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/cb2acdaa5ab33012d19e.jpg"
+    }
+  ]
 }
