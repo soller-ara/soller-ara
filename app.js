@@ -306,9 +306,7 @@ function isNowPost(post) {
   const ageHours = (Date.now() - publishedAt) / (60 * 60 * 1000);
   if (ageHours < 0) return false;
 
-  if (post.category === "alerts") return ageHours <= 168;
-  if (post.category === "services") return ageHours <= 120;
-  return ageHours <= 24;
+  return ageHours <= 168;
 }
 
 function nowPriority(post) {
