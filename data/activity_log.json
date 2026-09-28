@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "9beeb01e2a1fbb79",
+      "timestamp": "2026-09-28T09:15:37.056702+00:00",
+      "action": "publish",
+      "area": "publications",
+      "target_id": "soller-ara-a21c7de245f7274b",
+      "title": "Policia Local de Sóller: Previsió de reserves d'estacionament i ocupacions viàries (28 set - 2 oct de 2026)",
+      "detail": "Publicación propia creada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "0c5776cf88edf7f9",
       "timestamp": "2026-09-28T09:06:46.608772+00:00",
       "action": "publish",

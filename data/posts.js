@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-28T09:06:46.508611+00:00",
+  "fetched_at": "2026-09-28T09:15:36.887431+00:00",
   "source_count": 35,
   "source_status": [
     {
@@ -321,10 +321,29 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 137,
+  "post_count": 138,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "soller-ara-a21c7de245f7274b",
+      "category": "alerts",
+      "source_id": "manual-13e44f9445ef",
+      "source": "Policia Local de Sóller",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-09-28T09:15:36.887431+00:00",
+      "title": "Policia Local de Sóller: Previsió de reserves d'estacionament i ocupacions viàries (28 set - 2 oct de 2026)",
+      "summary": "La Policia Local de Sóller ha publicat la previsió de tancaments, reserves d'estacionament i ocupacions de la via pública del 28 de setembre al 2 d'octubre de 2026. La planificació recull afectacions puntuals per treballs i instal·lacions en diversos carrers del municipi, amb el llistat complet disponible en el següent accés.",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-a21c7de245f7274b.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": true,
+      "original_url": "https://www.facebook.com/share/18MkiYQPXT/?mibextid=wwXIfr",
+      "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-a21c7de245f7274b.jpg",
+      "media_type": "image"
+    },
     {
       "id": "soller-ara-7976cbf50a08e01c",
       "category": "news",
