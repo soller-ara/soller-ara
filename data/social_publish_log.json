@@ -2423,6 +2423,62 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-09-28T12:29:19.494625+00:00",
       "error": ""
+    },
+    {
+      "post_id": "20ea96159fce1d04e40a",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122116102365467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122116102365467310",
+      "title": "Les zones verdes d’aparcament arriben al carrer de Sa Mar",
+      "post_url": "https://saveu.cat/noticies/les-zones-verdes-daparcament-arriben-al-carrer-de-sa-mar/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-28T13:23:37.150737+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "20ea96159fce1d04e40a",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18430113748198595",
+      "remote_url": "https://www.instagram.com/p/Dd1SKx8l-rs/",
+      "title": "Les zones verdes d’aparcament arriben al carrer de Sa Mar",
+      "post_url": "https://saveu.cat/noticies/les-zones-verdes-daparcament-arriben-al-carrer-de-sa-mar/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-28T13:23:51.457105+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "07926301fc5eaaf55c53",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122116102581467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122116102581467310",
+      "title": "Cas Don se abre a los vecinos de Biniaraix para un concierto de música",
+      "post_url": "https://www.ultimahora.es/noticias/part-forana/2026/09/28/2717595/familia-obrador-abre-cas-don-vecinos-biniaraix-concierto.html",
+      "source": "Última Hora",
+      "source_id": "ultima-hora-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-28T13:23:54.959637+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "07926301fc5eaaf55c53",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18098008391101775",
+      "remote_url": "https://www.instagram.com/p/Dd1SM93FyCr/",
+      "title": "Cas Don se abre a los vecinos de Biniaraix para un concierto de música",
+      "post_url": "https://www.ultimahora.es/noticias/part-forana/2026/09/28/2717595/familia-obrador-abre-cas-don-vecinos-biniaraix-concierto.html",
+      "source": "Última Hora",
+      "source_id": "ultima-hora-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-28T13:24:10.544352+00:00",
+      "error": ""
     }
   ]
 }
