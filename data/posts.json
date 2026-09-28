@@ -1,8 +1,8 @@
 {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-28T09:24:51.175519+00:00",
-  "source_count": 35,
+  "fetched_at": "2026-09-28T09:51:55.208915+00:00",
+  "source_count": 36,
   "source_status": [
     {
       "source_id": "ajuntament-soller-noticies",
@@ -306,6 +306,15 @@
       "name": "SUS Mallorca · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
+      "ok": true,
+      "count": 0,
+      "error": null
+    },
+    {
+      "source_id": "partido-popular-soller",
+      "name": "Partido Popular · Sóller",
+      "source_type": "political",
+      "method": "html_listing_regex",
       "ok": true,
       "count": 0,
       "error": null
