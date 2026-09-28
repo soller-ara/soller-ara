@@ -1,7 +1,7 @@
 {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-28T01:20:45.045652+00:00",
+  "fetched_at": "2026-09-28T02:21:49.416200+00:00",
   "source_count": 35,
   "source_status": [
     {
@@ -63,9 +63,9 @@
       "name": "IB3 Notícies · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
-      "count": 1,
-      "error": null
+      "ok": false,
+      "count": 0,
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "goib-noticies-soller",
@@ -144,9 +144,9 @@
       "name": "Can Prunera · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "error": null
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "youtube-aires-sollerics",
@@ -171,9 +171,9 @@
       "name": "Club Vòlei Sóller · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "error": null
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "youtube-ballades-mallorca-soller",
@@ -198,9 +198,9 @@
       "name": "GOB Mallorca · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "error": null
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "youtube-museu-maritim-soller",
@@ -321,11 +321,19 @@
     }
   ],
   "social_integration_status": [],
-  "post_count": 134,
+  "post_count": 133,
   "related_pair_count": 0,
   "errors": [
     {
       "source_id": "youtube-ajuntament-soller",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "source_id": "youtube-ib3-noticies-soller",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "source_id": "youtube-can-prunera",
       "error": "HTTP Error 404: Not Found"
     },
     {
@@ -337,11 +345,19 @@
       "error": "HTTP Error 404: Not Found"
     },
     {
+      "source_id": "youtube-club-volei-soller",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
       "source_id": "youtube-ballades-mallorca-soller",
       "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "youtube-tramuntana-xxi",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "source_id": "youtube-gob-mallorca-soller",
       "error": "HTTP Error 404: Not Found"
     },
     {
@@ -363,22 +379,22 @@
   ],
   "posts": [
     {
-      "id": "cdbebcadc109215a9602",
+      "id": "96700e88acd2a8211dbf",
       "category": "news",
-      "source_id": "youtube-ib3-noticies-soller",
-      "source": "IB3 Notícies · YouTube",
-      "source_type": "social",
-      "language": "ca",
-      "locality": "Sóller / Fornalutx / Serra de Tramuntana",
-      "published_at": "2026-09-27T19:05:08+00:00",
-      "title": "Sóller tendrà a partir d'aquest curs una delegació de l'Escola Oficial d'Idiomes de Palma",
-      "summary": "Vídeo publicat per IB3 Notícies · YouTube.",
-      "url": "https://www.youtube.com/watch?v=I_CbY7X7hSw",
-      "platform": "YouTube",
-      "account": "@NoticiesIB3",
-      "media_type": "video",
-      "content_policy": "generated_social_summary",
-      "rights_status": "platform_embed",
+      "source_id": "ultima-hora-soller",
+      "source": "Última Hora",
+      "source_type": "media",
+      "language": "es",
+      "locality": "Sóller",
+      "published_at": "2026-09-28T03:48:02+02:00",
+      "title": "El Ibavi ordena desalojar el antiguo Hospici de Sóller por riesgo de derrumbe",
+      "summary": "",
+      "url": "https://www.ultimahora.es/noticias/part-forana/2026/09/28/2717539/ibavi-ordena-desalojar-antiguo-hospici-soller-por-riesgo-derrumbe.html",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
       "image_allowed": false,
       "related_sources": []
     },
@@ -2985,26 +3001,6 @@
       "title": "Denuncian vertidos fecales en la primera línea de Port de Sóller",
       "summary": "",
       "url": "https://www.diariodemallorca.es/part-forana/2026/08/02/denuncian-vertidos-fecales-primera-linea-133021830.html",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "23c5217a9822a7d8a6b8",
-      "category": "commerce",
-      "source_id": "ultima-hora-soller",
-      "source": "Última Hora",
-      "source_type": "media",
-      "language": "es",
-      "locality": "Sóller",
-      "published_at": "2026-08-02T03:48:01+02:00",
-      "title": "Cierra la última mercería de Sóller tras casi 40 años y agrava la desaparición del comercio tradicional",
-      "summary": "",
-      "url": "https://www.ultimahora.es/noticias/part-forana/2026/08/02/2681639/cierra-ultima-merceria-soller-tras-casi-anos-agrava-desaparicion-del-comercio-tradicional.html",
       "platform": null,
       "account": null,
       "media_type": null,
