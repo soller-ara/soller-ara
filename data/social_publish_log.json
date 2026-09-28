@@ -2321,6 +2321,34 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-09-28T02:22:17.785412+00:00",
       "error": ""
+    },
+    {
+      "post_id": "cb2acdaa5ab33012d19e",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122115961923467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122115961923467310",
+      "title": "La familia Obrador abre Cas Don a los vecinos de Biniaraix con un concierto",
+      "post_url": "https://www.ultimahora.es/noticias/part-forana/2026/09/28/2717595/familia-obrador-abre-cas-don-vecinos-biniaraix-concierto.html",
+      "source": "Última Hora",
+      "source_id": "ultima-hora-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-28T06:30:20.645548+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "cb2acdaa5ab33012d19e",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "17907101883483145",
+      "remote_url": "https://www.instagram.com/p/Dd0i4MpGzmo/",
+      "title": "La familia Obrador abre Cas Don a los vecinos de Biniaraix con un concierto",
+      "post_url": "https://www.ultimahora.es/noticias/part-forana/2026/09/28/2717595/familia-obrador-abre-cas-don-vecinos-biniaraix-concierto.html",
+      "source": "Última Hora",
+      "source_id": "ultima-hora-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-28T06:30:39.914655+00:00",
+      "error": ""
     }
   ]
 }
