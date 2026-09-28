@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-28T03:22:51.287820+00:00",
+  "fetched_at": "2026-09-28T04:23:29.894077+00:00",
   "source_count": 35,
   "source_status": [
     {
@@ -100,7 +100,7 @@ window.SOLLER_ARA_DATA = {
       "source_type": "media",
       "method": "freenewsapi_search",
       "ok": true,
-      "count": 12,
+      "count": 11,
       "error": null
     },
     {
@@ -171,9 +171,9 @@ window.SOLLER_ARA_DATA = {
       "name": "Club Vòlei Sóller · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "error": null
     },
     {
       "source_id": "youtube-ballades-mallorca-soller",
@@ -321,7 +321,7 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 133,
+  "post_count": 132,
   "related_pair_count": 0,
   "errors": [
     {
@@ -342,10 +342,6 @@ window.SOLLER_ARA_DATA = {
     },
     {
       "source_id": "youtube-xeremiers-soller",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-club-volei-soller",
       "error": "HTTP Error 404: Not Found"
     },
     {
@@ -3041,26 +3037,6 @@ window.SOLLER_ARA_DATA = {
       "title": "El eclipse del 12 de agosto restringirá el acceso a Sóller y al Port",
       "summary": "",
       "url": "https://mallorcadirecto.com/comarca-de-ponent/soller/eclipse-soller-restricciones-trafico-agosto",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "258975cb7794e96bb8d4",
-      "category": "news",
-      "source_id": "diario-mallorca-soller",
-      "source": "Diario de Mallorca",
-      "source_type": "media",
-      "language": "es",
-      "locality": "Sóller / Serra de Tramuntana",
-      "published_at": "2026-07-30T04:01:37+00:00",
-      "title": "Comerciantes de Sóller alertan del riesgo de la manifestación contra la turistificación",
-      "summary": "",
-      "url": "https://www.diariodemallorca.es/part-forana/2026/07/30/comerciantes-soller-alertan-riesgo-manifestacion-132927165.html",
       "platform": null,
       "account": null,
       "media_type": null,
