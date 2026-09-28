@@ -2395,6 +2395,34 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-09-28T11:21:53.347541+00:00",
       "error": ""
+    },
+    {
+      "post_id": "d31ed0d339054f48b3d5",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122116084137467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122116084137467310",
+      "title": "IB3N | Sóller tendrà a partir d’aquest curs una delegació de l’Escola Oficial d’Idiomes de Palma",
+      "post_url": "https://ib3.org/soller-tendra-a-partir-daquest-curs-una-delegacio-de-lescola-oficial-didiomes-de-palma",
+      "source": "IB3 Notícies",
+      "source_id": "ib3-noticies-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-28T12:28:00.871683+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "d31ed0d339054f48b3d5",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "17913627075285824",
+      "remote_url": "https://www.instagram.com/p/Dd1L7fRly3X/",
+      "title": "IB3N | Sóller tendrà a partir d’aquest curs una delegació de l’Escola Oficial d’Idiomes de Palma",
+      "post_url": "https://ib3.org/soller-tendra-a-partir-daquest-curs-una-delegacio-de-lescola-oficial-didiomes-de-palma",
+      "source": "IB3 Notícies",
+      "source_id": "ib3-noticies-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-28T12:29:19.494625+00:00",
+      "error": ""
     }
   ]
 }
