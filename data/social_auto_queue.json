@@ -1,26 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-09-28T11:21:24.951967+00:00",
+  "generated_at": "2026-09-28T12:27:45.894132+00:00",
   "entries": [
     {
-      "post_id": "616376346ef34dde394b",
-      "title": "Els pisos del Fantasio tendran entre 33 i 64 metres quadrats",
+      "post_id": "d31ed0d339054f48b3d5",
+      "title": "IB3N | Sóller tendrà a partir d’aquest curs una delegació de l’Escola Oficial d’Idiomes de Palma",
       "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
+      "source": "IB3 Notícies",
+      "source_id": "ib3-noticies-soller",
       "source_type": "media",
-      "category": "culture",
+      "category": "news",
       "language": "ca",
-      "published_at": "2026-09-28T13:08:00+02:00",
-      "original_url": "https://www.elsoller.cat/soller/local/2026/09/28/354587/els-pisos-del-fantasio-tendran-entre-metres-quadrats.html",
+      "published_at": "2026-09-28T12:00:00+00:00",
+      "original_url": "https://ib3.org/soller-tendra-a-partir-daquest-curs-una-delegacio-de-lescola-oficial-didiomes-de-palma",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/616376346ef34dde394b.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/d31ed0d339054f48b3d5.jpg"
     }
   ]
 }
