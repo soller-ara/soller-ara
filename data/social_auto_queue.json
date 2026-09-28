@@ -1,27 +1,8 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-09-28T14:25:51.104768+00:00",
+  "generated_at": "2026-09-28T14:44:40.291293+00:00",
   "entries": [
-    {
-      "post_id": "6ff172fc0a4121d02d3b",
-      "title": "Sóller reviu algunes de les \"Bandes mortes\" més històriques del municipi",
-      "summary": "Vídeo publicat per IB3 Notícies · YouTube.",
-      "source": "IB3 Notícies · YouTube",
-      "source_id": "youtube-ib3-noticies-soller",
-      "source_type": "social",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-09-28T13:26:37+00:00",
-      "original_url": "https://www.youtube.com/watch?v=0SLoAeZ8AK0",
-      "content_policy": "generated_social_summary",
-      "rights_status": "platform_embed",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/6ff172fc0a4121d02d3b.jpg"
-    },
     {
       "post_id": "652cc1fafc917e3117ea",
       "title": "Campins es queda a les portes de la victòria al Ral·li Vall de Sant Pere",
@@ -36,7 +17,6 @@
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
-        "facebook",
         "instagram"
       ],
       "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/652cc1fafc917e3117ea.jpg"
@@ -55,7 +35,6 @@
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
-        "facebook",
         "instagram"
       ],
       "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/aeb8d8f6c1a2a6512666.jpg"

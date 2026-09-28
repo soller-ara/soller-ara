@@ -1,7 +1,7 @@
 {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-28T14:25:50.931560+00:00",
+  "fetched_at": "2026-09-28T14:44:40.140600+00:00",
   "source_count": 36,
   "source_status": [
     {
@@ -564,7 +564,7 @@
       "related_sources": []
     },
     {
-      "id": "3156c9aaa24c32d1c2db",
+      "id": "f8d692ec39cf0d5777e9",
       "category": "news",
       "source_id": "sa-veu-soller",
       "source": "Sa Veu de Sóller",
@@ -572,7 +572,7 @@
       "language": "ca",
       "locality": "Sóller",
       "published_at": "2026-09-27T07:00:00+00:00",
-      "title": "Més exigeix la reobertura al públicde la Torre Picada",
+      "title": "Més exigeix la reobertura al públic de la Torre Picada",
       "summary": "",
       "url": "https://saveu.cat/noticies/mes-exigeix-la-reobertura-al-publicde-la-torre-picada/",
       "platform": null,
