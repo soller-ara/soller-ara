@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "0c5776cf88edf7f9",
+      "timestamp": "2026-09-28T09:06:46.608772+00:00",
+      "action": "publish",
+      "area": "publications",
+      "target_id": "soller-ara-7976cbf50a08e01c",
+      "title": "Jornada intensa de la Policia Local amb diverses actuacions per alteronis, delictes viaris i un cas de violència de gènere.",
+      "detail": "Publicación propia creada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "22910ebba0f2f602",
       "timestamp": "2026-09-25T16:39:43.918388+00:00",
       "action": "edit",

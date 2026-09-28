@@ -1,7 +1,7 @@
 {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-28T08:25:56.482148+00:00",
+  "fetched_at": "2026-09-28T09:06:46.508611+00:00",
   "source_count": 35,
   "source_status": [
     {
@@ -321,10 +321,29 @@
     }
   ],
   "social_integration_status": [],
-  "post_count": 136,
+  "post_count": 137,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "soller-ara-7976cbf50a08e01c",
+      "category": "news",
+      "source_id": "manual-13e44f9445ef",
+      "source": "Policia Local de Sóller",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-09-28T09:06:46.508611+00:00",
+      "title": "Jornada intensa de la Policia Local amb diverses actuacions per alteronis, delictes viaris i un cas de violència de gènere.",
+      "summary": "El cos policial ha fet públic el balanç de les seves darreres actuacions, destacant la detenció d'un home per un presumpte delicte de violència de gènere. Així mateix, els agents han intervingut en diverses incidències ciutadanes relacionades amb alteracions de l'ordre públic, assistències sanitàries, infraccions de trànsit i danys al mobiliari urbà",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-7976cbf50a08e01c.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": true,
+      "original_url": "https://www.facebook.com/share/1Ayq4zfiL8/?mibextid=wwXIfr",
+      "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-7976cbf50a08e01c.jpg",
+      "media_type": "image"
+    },
     {
       "id": "cb2acdaa5ab33012d19e",
       "category": "culture",
