@@ -1,26 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-09-28T02:21:49.548965+00:00",
-  "entries": [
-    {
-      "post_id": "96700e88acd2a8211dbf",
-      "title": "El Ibavi ordena desalojar el antiguo Hospici de Sóller por riesgo de derrumbe",
-      "summary": "",
-      "source": "Última Hora",
-      "source_id": "ultima-hora-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "es",
-      "published_at": "2026-09-28T03:48:02+02:00",
-      "original_url": "https://www.ultimahora.es/noticias/part-forana/2026/09/28/2717539/ibavi-ordena-desalojar-antiguo-hospici-soller-por-riesgo-derrumbe.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/96700e88acd2a8211dbf.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
