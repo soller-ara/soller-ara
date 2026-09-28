@@ -1,6 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-09-28T11:21:24.951967+00:00",
+  "entries": [
+    {
+      "post_id": "616376346ef34dde394b",
+      "title": "Els pisos del Fantasio tendran entre 33 i 64 metres quadrats",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "culture",
+      "language": "ca",
+      "published_at": "2026-09-28T13:08:00+02:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/09/28/354587/els-pisos-del-fantasio-tendran-entre-metres-quadrats.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/616376346ef34dde394b.jpg"
+    }
+  ]
 }
