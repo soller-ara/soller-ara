@@ -1,26 +1,45 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-09-28T12:27:45.894132+00:00",
+  "generated_at": "2026-09-28T13:23:18.627208+00:00",
   "entries": [
     {
-      "post_id": "d31ed0d339054f48b3d5",
-      "title": "IB3N | Sóller tendrà a partir d’aquest curs una delegació de l’Escola Oficial d’Idiomes de Palma",
+      "post_id": "20ea96159fce1d04e40a",
+      "title": "Les zones verdes d’aparcament arriben al carrer de Sa Mar",
       "summary": "",
-      "source": "IB3 Notícies",
-      "source_id": "ib3-noticies-soller",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
       "source_type": "media",
-      "category": "news",
+      "category": "services",
       "language": "ca",
-      "published_at": "2026-09-28T12:00:00+00:00",
-      "original_url": "https://ib3.org/soller-tendra-a-partir-daquest-curs-una-delegacio-de-lescola-oficial-didiomes-de-palma",
+      "published_at": "2026-09-28T13:18:51+00:00",
+      "original_url": "https://saveu.cat/noticies/les-zones-verdes-daparcament-arriben-al-carrer-de-sa-mar/",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/d31ed0d339054f48b3d5.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/20ea96159fce1d04e40a.jpg"
+    },
+    {
+      "post_id": "07926301fc5eaaf55c53",
+      "title": "Cas Don se abre a los vecinos de Biniaraix para un concierto de música",
+      "summary": "",
+      "source": "Última Hora",
+      "source_id": "ultima-hora-soller",
+      "source_type": "media",
+      "category": "culture",
+      "language": "es",
+      "published_at": "2026-09-28T14:33:35+02:00",
+      "original_url": "https://www.ultimahora.es/noticias/part-forana/2026/09/28/2717595/familia-obrador-abre-cas-don-vecinos-biniaraix-concierto.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/07926301fc5eaaf55c53.jpg"
     }
   ]
 }
