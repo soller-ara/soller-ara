@@ -1,45 +1,64 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-09-28T13:23:18.627208+00:00",
+  "generated_at": "2026-09-28T14:25:51.104768+00:00",
   "entries": [
     {
-      "post_id": "20ea96159fce1d04e40a",
-      "title": "Les zones verdes d’aparcament arriben al carrer de Sa Mar",
+      "post_id": "6ff172fc0a4121d02d3b",
+      "title": "Sóller reviu algunes de les \"Bandes mortes\" més històriques del municipi",
+      "summary": "Vídeo publicat per IB3 Notícies · YouTube.",
+      "source": "IB3 Notícies · YouTube",
+      "source_id": "youtube-ib3-noticies-soller",
+      "source_type": "social",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-09-28T13:26:37+00:00",
+      "original_url": "https://www.youtube.com/watch?v=0SLoAeZ8AK0",
+      "content_policy": "generated_social_summary",
+      "rights_status": "platform_embed",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/6ff172fc0a4121d02d3b.jpg"
+    },
+    {
+      "post_id": "652cc1fafc917e3117ea",
+      "title": "Campins es queda a les portes de la victòria al Ral·li Vall de Sant Pere",
       "summary": "",
       "source": "Sa Veu de Sóller",
       "source_id": "sa-veu-soller",
       "source_type": "media",
-      "category": "services",
+      "category": "sports",
       "language": "ca",
-      "published_at": "2026-09-28T13:18:51+00:00",
-      "original_url": "https://saveu.cat/noticies/les-zones-verdes-daparcament-arriben-al-carrer-de-sa-mar/",
+      "published_at": "2026-09-28T13:16:59+00:00",
+      "original_url": "https://saveu.cat/noticies/campins-es-queda-a-les-portes-de-la-victoria-al-ralli-vall-de-sant-pere/",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/20ea96159fce1d04e40a.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/652cc1fafc917e3117ea.jpg"
     },
     {
-      "post_id": "07926301fc5eaaf55c53",
-      "title": "Cas Don se abre a los vecinos de Biniaraix para un concierto de música",
+      "post_id": "aeb8d8f6c1a2a6512666",
+      "title": "IB3N | Sóller reviu algunes de les “Bandes mortes” més històriques del municipi",
       "summary": "",
-      "source": "Última Hora",
-      "source_id": "ultima-hora-soller",
+      "source": "IB3 Notícies",
+      "source_id": "ib3-noticies-soller",
       "source_type": "media",
-      "category": "culture",
-      "language": "es",
-      "published_at": "2026-09-28T14:33:35+02:00",
-      "original_url": "https://www.ultimahora.es/noticias/part-forana/2026/09/28/2717595/familia-obrador-abre-cas-don-vecinos-biniaraix-concierto.html",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-09-28T12:00:00+00:00",
+      "original_url": "https://ib3.org/soller-reviu-algunes-de-les-bandes-mortes-mes-historiques-del-municipi",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/07926301fc5eaaf55c53.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/aeb8d8f6c1a2a6512666.jpg"
     }
   ]
 }

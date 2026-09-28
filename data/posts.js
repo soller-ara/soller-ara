@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-28T13:23:18.473689+00:00",
+  "fetched_at": "2026-09-28T14:25:50.931560+00:00",
   "source_count": 36,
   "source_status": [
     {
@@ -64,7 +64,7 @@ window.SOLLER_ARA_DATA = {
       "source_type": "social",
       "method": "youtube_channel",
       "ok": true,
-      "count": 0,
+      "count": 1,
       "error": null
     },
     {
@@ -82,7 +82,7 @@ window.SOLLER_ARA_DATA = {
       "source_type": "media",
       "method": "html_search",
       "ok": true,
-      "count": 11,
+      "count": 12,
       "error": null
     },
     {
@@ -330,7 +330,7 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 137,
+  "post_count": 139,
   "related_pair_count": 0,
   "errors": [
     {
@@ -339,6 +339,26 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "posts": [
+    {
+      "id": "6ff172fc0a4121d02d3b",
+      "category": "news",
+      "source_id": "youtube-ib3-noticies-soller",
+      "source": "IB3 Notícies · YouTube",
+      "source_type": "social",
+      "language": "ca",
+      "locality": "Sóller / Fornalutx / Serra de Tramuntana",
+      "published_at": "2026-09-28T13:26:37+00:00",
+      "title": "Sóller reviu algunes de les \"Bandes mortes\" més històriques del municipi",
+      "summary": "Vídeo publicat per IB3 Notícies · YouTube.",
+      "url": "https://www.youtube.com/watch?v=0SLoAeZ8AK0",
+      "platform": "YouTube",
+      "account": "@NoticiesIB3",
+      "media_type": "video",
+      "content_policy": "generated_social_summary",
+      "rights_status": "platform_embed",
+      "image_allowed": false,
+      "related_sources": []
+    },
     {
       "id": "20ea96159fce1d04e40a",
       "category": "alerts",
@@ -395,6 +415,26 @@ window.SOLLER_ARA_DATA = {
       "title": "Cas Don se abre a los vecinos de Biniaraix para un concierto de música",
       "summary": "",
       "url": "https://www.ultimahora.es/noticias/part-forana/2026/09/28/2717595/familia-obrador-abre-cas-don-vecinos-biniaraix-concierto.html",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
+      "id": "aeb8d8f6c1a2a6512666",
+      "category": "news",
+      "source_id": "ib3-noticies-soller",
+      "source": "IB3 Notícies",
+      "source_type": "media",
+      "language": "ca",
+      "locality": "Sóller / Serra de Tramuntana",
+      "published_at": "2026-09-28T12:00:00+00:00",
+      "title": "IB3N | Sóller reviu algunes de les “Bandes mortes” més històriques del municipi",
+      "summary": "",
+      "url": "https://ib3.org/soller-reviu-algunes-de-les-bandes-mortes-mes-historiques-del-municipi",
       "platform": null,
       "account": null,
       "media_type": null,
