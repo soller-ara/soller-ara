@@ -301,7 +301,7 @@ function formatDate(value) {
 }
 
 function isFreshPost(post) {
-  if (!["alerts", "news"].includes(post.category) || !post.published_at) return false;
+  if (!post.published_at) return false;
   const publishedAt = new Date(post.published_at).getTime();
   if (Number.isNaN(publishedAt)) return false;
   const ageHours = (Date.now() - publishedAt) / (60 * 60 * 1000);
