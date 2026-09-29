@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "52e093f2a4ee6f52",
+      "timestamp": "2026-09-29T11:13:02.096415+00:00",
+      "action": "reclassify",
+      "area": "moderation",
+      "target_id": "soller-ara-5f2acf241b88ca71",
+      "title": "Noves normes de circulació a partir d'octubre de 2026: Claus per a patinets, ciclistes i motoristes",
+      "detail": "Acción de moderación completada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "2ca4d83793ed63bf",
       "timestamp": "2026-09-29T10:31:11.213615+00:00",
       "action": "publish",
