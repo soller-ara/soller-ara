@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-29T17:21:01.365467+00:00",
+  "fetched_at": "2026-09-29T18:22:40.046933+00:00",
   "source_count": 36,
   "source_status": [
     {
@@ -330,10 +330,29 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 144,
+  "post_count": 145,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "soller-ara-7336bc63739fbc39",
+      "category": "news",
+      "source_id": "manual-1dfd089021d9",
+      "source": "IES Guillem Colom Casasnovas",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-09-29T18:22:40.046933+00:00",
+      "title": "Excel·lència fogonera a Xangai: Àngela Font firma un cinquè lloc mundial de cuina",
+      "summary": "Protagonista: Àngela Font Ochogavía, del IES Guillem Colom Casasnovas, corona el seu esforç amb una flamant medalla d'excel·lència i un top 5 planetari en cuina a WorldSkills Shanghai 2026 enfront de participants de 45 països",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-7336bc63739fbc39.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": true,
+      "original_url": "https://www.facebook.com/share/19NRj9RHmH/?mibextid=wwXIfr",
+      "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-7336bc63739fbc39.jpg",
+      "media_type": "image"
+    },
     {
       "id": "soller-ara-9da2d7b514d6f57b",
       "category": "services",

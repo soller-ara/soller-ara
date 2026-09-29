@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "6bac7680a3b3e86f",
+      "timestamp": "2026-09-29T18:22:40.148928+00:00",
+      "action": "publish",
+      "area": "publications",
+      "target_id": "soller-ara-7336bc63739fbc39",
+      "title": "Excel·lència fogonera a Xangai: Àngela Font firma un cinquè lloc mundial de cuina",
+      "detail": "Publicación propia creada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "3456ed9826b25f92",
       "timestamp": "2026-09-29T16:45:56.769884+00:00",
       "action": "publish",
