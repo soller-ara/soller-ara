@@ -973,3 +973,20 @@ a { color: inherit; }
   font-weight: 800;
   text-shadow: 0 1px 0 rgba(255,255,255,.65);
 }
+
+
+/* Indicador visual: no cambia el orden, filtros ni contenido de las publicaciones. */
+.new-badge {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 7px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: #fff3cd;
+  color: #8a5700;
+  border: 1px solid #f2d487;
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+}

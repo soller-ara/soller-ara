@@ -79,6 +79,7 @@ const translations = {
     "card.original": "Veure original",
     "card.share": "Compartir",
     "card.related": "Contingut relacionat",
+    "card.new": "Nou",
     "empty": "No hi ha publicacions que coincideixin amb la cerca.",
     categories: { now: "Ara", news: "Notícies", agenda: "Agenda", alerts: "Avisos", services: "Serveis", culture: "Cultura", sports: "Esports", commerce: "Comerç", politics: "Política", social: "Xarxes" }
   },
@@ -162,6 +163,7 @@ const translations = {
     "card.original": "Ver original",
     "card.share": "Compartir",
     "card.related": "Contenido relacionado",
+    "card.new": "Nuevo",
     "empty": "No hay publicaciones que coincidan con la búsqueda.",
     categories: { now: "Ahora", news: "Noticias", agenda: "Agenda", alerts: "Avisos", services: "Servicios", culture: "Cultura", sports: "Deportes", commerce: "Comercio", politics: "Política", social: "Redes" }
   },
@@ -245,6 +247,7 @@ const translations = {
     "card.original": "View original",
     "card.share": "Share",
     "card.related": "Related content",
+    "card.new": "New",
     "empty": "No posts match your search.",
     categories: { now: "Now", news: "News", agenda: "Events", alerts: "Alerts", services: "Services", culture: "Culture", sports: "Sports", commerce: "Local business", politics: "Politics", social: "Social" }
   }
@@ -295,6 +298,14 @@ function formatDate(value) {
   if (Number.isNaN(date.getTime())) return value;
   const locale = currentLanguage === "ca" ? "ca-ES" : currentLanguage === "es" ? "es-ES" : "en-GB";
   return new Intl.DateTimeFormat(locale, { day: "2-digit", month: "short", year: "numeric" }).format(date);
+}
+
+function isFreshPost(post) {
+  if (!["alerts", "news"].includes(post.category) || !post.published_at) return false;
+  const publishedAt = new Date(post.published_at).getTime();
+  if (Number.isNaN(publishedAt)) return false;
+  const ageHours = (Date.now() - publishedAt) / (60 * 60 * 1000);
+  return ageHours >= 0 && ageHours <= 24;
 }
 
 function isNowPost(post) {
@@ -474,7 +485,7 @@ function renderFeed() {
             <span class="source-wrap">${post.source_type === "official" ? '<span class="official-dot" aria-hidden="true"></span>' : ""}<span class="source-name">${escapeHtml(post.source || "")}</span>${post.account ? `<span class="social-account">${escapeHtml(post.account)}</span>` : ""}${socialLabel}</span>
             <span>${formatDate(post.published_at)}</span>
           </div>
-          <span class="badge">${escapeHtml(categoryLabel)}</span>
+          <span class="badge">${escapeHtml(categoryLabel)}</span>${isFreshPost(post) ? `<span class="new-badge">${t("card.new")}</span>` : ""}
           <h3>${escapeHtml(post.title || "")}</h3>
           ${post.summary ? `<p${post.source_type === "own" && post.original_url ? ' class="manual-link-summary"' : ""}>${escapeHtml(post.summary)}</p>` : ""}
           ${officialPreview}
