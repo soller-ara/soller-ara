@@ -1,6 +1,45 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-09-29T08:24:57.305090+00:00",
+  "entries": [
+    {
+      "post_id": "6ad59d05697e8097b32d",
+      "title": "OBERT EL PERÍODE VOLUNTARI DE PAGAMENT DELS REBUTS",
+      "summary": "De l’1 d’octubre a l’1 de desembre de 2026 es poden pagar els rebuts corresponents a l’exercici 2026. Quins rebuts es poden pagar? — Impost sobre béns immobles (IBI) — Impost sobre activitats econòmiques (IAE) — Impost…",
+      "source": "Ajuntament de Sóller",
+      "source_id": "ajuntament-soller-noticies",
+      "source_type": "official",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-09-29T08:16:33+00:00",
+      "original_url": "https://ajsoller.net/ca/noticies/obert-el-periode-voluntari-de-pagament-dels-rebuts",
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "public_source_reviewed",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/6ad59d05697e8097b32d.jpg"
+    },
+    {
+      "post_id": "8b8434ef4f3e03e90f12",
+      "title": "Convocatòria de Bases específiques que regiran la convocatòria per a constituir una borsa de Treball per un agent d'Igualtat",
+      "summary": "sarrom dt., 29/09/2026 - 09:32 29-Setembre-2026 Decret d'admissió i estimació de recursos i modificació de bases a la Convocatòria de bases específiques que regiran la convocatòria per a constituir una borsa de treball…",
+      "source": "Ajuntament de Fornalutx",
+      "source_id": "ajuntament-fornalutx-noticies",
+      "source_type": "official",
+      "category": "agenda",
+      "language": "ca",
+      "published_at": "2026-09-29T07:32:48+00:00",
+      "original_url": "https://ajfornalutx.net/ca/noticies/convocatoria-de-bases-especifiques-que-regiran-la-convocatoria-constituir-una-borsa-de",
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "official_public_source",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/8b8434ef4f3e03e90f12.jpg"
+    }
+  ]
 }

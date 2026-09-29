@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-29T07:23:24.411646+00:00",
+  "fetched_at": "2026-09-29T08:24:57.074795+00:00",
   "source_count": 36,
   "source_status": [
     {
@@ -118,7 +118,7 @@ window.SOLLER_ARA_DATA = {
       "source_type": "media",
       "method": "html_listing_regex",
       "ok": true,
-      "count": 6,
+      "count": 5,
       "error": null
     },
     {
@@ -126,9 +126,9 @@ window.SOLLER_ARA_DATA = {
       "name": "TIB · Avisos",
       "source_type": "official",
       "method": "html_listing_regex",
-      "ok": false,
-      "count": 0,
-      "error": "<urlopen error [Errno -3] Temporary failure in name resolution>"
+      "ok": true,
+      "count": 2,
+      "error": null
     },
     {
       "source_id": "consell-mallorca-soller",
@@ -280,7 +280,7 @@ window.SOLLER_ARA_DATA = {
       "source_type": "official",
       "method": "rss",
       "ok": true,
-      "count": 4,
+      "count": 5,
       "error": null
     },
     {
@@ -330,19 +330,55 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 136,
+  "post_count": 138,
   "related_pair_count": 0,
   "errors": [
-    {
-      "source_id": "tib-avisos-soller",
-      "error": "<urlopen error [Errno -3] Temporary failure in name resolution>"
-    },
     {
       "source_id": "consell-mallorca-soller",
       "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>"
     }
   ],
   "posts": [
+    {
+      "id": "6ad59d05697e8097b32d",
+      "category": "news",
+      "source_id": "ajuntament-soller-noticies",
+      "source": "Ajuntament de Sóller",
+      "source_type": "official",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-09-29T08:16:33+00:00",
+      "title": "OBERT EL PERÍODE VOLUNTARI DE PAGAMENT DELS REBUTS",
+      "summary": "De l’1 d’octubre a l’1 de desembre de 2026 es poden pagar els rebuts corresponents a l’exercici 2026. Quins rebuts es poden pagar? — Impost sobre béns immobles (IBI) — Impost sobre activitats econòmiques (IAE) — Impost…",
+      "url": "https://ajsoller.net/ca/noticies/obert-el-periode-voluntari-de-pagament-dels-rebuts",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "public_source_reviewed",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
+      "id": "8b8434ef4f3e03e90f12",
+      "category": "agenda",
+      "source_id": "ajuntament-fornalutx-noticies",
+      "source": "Ajuntament de Fornalutx",
+      "source_type": "official",
+      "language": "ca",
+      "locality": "Fornalutx / Vall de Sóller",
+      "published_at": "2026-09-29T07:32:48+00:00",
+      "title": "Convocatòria de Bases específiques que regiran la convocatòria per a constituir una borsa de Treball per un agent d'Igualtat",
+      "summary": "sarrom dt., 29/09/2026 - 09:32 29-Setembre-2026 Decret d'admissió i estimació de recursos i modificació de bases a la Convocatòria de bases específiques que regiran la convocatòria per a constituir una borsa de treball…",
+      "url": "https://ajfornalutx.net/ca/noticies/convocatoria-de-bases-especifiques-que-regiran-la-convocatoria-constituir-una-borsa-de",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "official_public_source",
+      "image_allowed": false,
+      "related_sources": []
+    },
     {
       "id": "82ec71692b9c7abcafc5",
       "category": "news",
@@ -1314,6 +1350,26 @@ window.SOLLER_ARA_DATA = {
       "related_sources": []
     },
     {
+      "id": "0a41bed88a15266b3b3a",
+      "category": "alerts",
+      "source_id": "tib-avisos-soller",
+      "source": "TIB · Avisos",
+      "source_type": "official",
+      "language": "ca",
+      "locality": "Sóller / Port de Sóller / Fornalutx",
+      "published_at": "2026-09-23T12:00:00+00:00",
+      "title": "1 de octubre: Cambio de dársena de la línea 204 en la Estación Intermodal",
+      "summary": "A partir del jueves 1 de octubre, la línea 204 Port de Sóller - Palma modifica su dársena de salida de la Estación Intermodal y pasa a salir desde la dársena 28 .",
+      "url": "https://www.tib.org/es/w/avis-canvi-darsenes-l204",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "official_public_source",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
       "id": "748889245d0535ddbbcc",
       "category": "culture",
       "source_id": "mucbo-noticies",
@@ -1792,26 +1848,6 @@ window.SOLLER_ARA_DATA = {
       "title": "Avui celebram Mallorca",
       "summary": "La Mallorca que hem heretat i la que continuam construint cada dia. Una terra feta d’història i de cultura, però, sobretot, de les persones que l’estimen i la cuiden. Enguany, la Diada té també una música especial…",
       "url": "https://ajsoller.net/ca/noticies/avui-celebram-mallorca",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "short_factual_excerpt",
-      "rights_status": "public_source_reviewed",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "1d8d857127689b19bb60",
-      "category": "news",
-      "source_id": "ajuntament-soller-noticies",
-      "source": "Ajuntament de Sóller",
-      "source_type": "official",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-09-15T08:00:41+00:00",
-      "title": "Una temporada per recordar. Un club per reconèixer",
-      "summary": "L’Ajuntament de Sóller ha retut avui homenatge al Club Aquàtics Sóller pels grans resultats aconseguits durant la temporada 2025-2026: - L’equip aleví, campió de Balears - L’equip infantil, campió de Balears - L’equip…",
-      "url": "https://ajsoller.net/ca/noticies/una-temporada-recordar-un-club-reconeixer",
       "platform": null,
       "account": null,
       "media_type": null,
@@ -3097,22 +3133,22 @@ window.SOLLER_ARA_DATA = {
       "related_sources": []
     },
     {
-      "id": "ce20805351176c09b823",
-      "category": "news",
-      "source_id": "mallorca-directo-soller",
-      "source": "Mallorca Directo",
-      "source_type": "media",
-      "language": "es",
-      "locality": "Sóller",
-      "published_at": "2026-07-31T07:25:36.923000+00:00",
-      "title": "El eclipse del 12 de agosto restringirá el acceso a Sóller y al Port",
-      "summary": "",
-      "url": "https://mallorcadirecto.com/comarca-de-ponent/soller/eclipse-soller-restricciones-trafico-agosto",
+      "id": "73e29e0bc47f531405ce",
+      "category": "alerts",
+      "source_id": "tib-avisos-soller",
+      "source": "TIB · Avisos",
+      "source_type": "official",
+      "language": "ca",
+      "locality": "Sóller / Port de Sóller / Fornalutx",
+      "published_at": "2026-06-26T12:00:00+00:00",
+      "title": "Prueba piloto: reserva de plaza línea 203 Port de Sóller–Deià–Valldemossa–Palma",
+      "summary": "Reserva de plaza en la línea 203 Port de Sóller–Deià–Valldemossa–Palma para la salida de las 15 h desde el Puerto de Sóller .",
+      "url": "https://www.tib.org/es/w/avis-prova-pilot-203",
       "platform": null,
       "account": null,
       "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "official_public_source",
       "image_allowed": false,
       "related_sources": []
     }
