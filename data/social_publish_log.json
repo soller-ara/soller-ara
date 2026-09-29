@@ -3127,6 +3127,15 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-09-29T15:25:14.323034+00:00",
       "error": ""
+    },
+    {
+      "post_id": "soller-ara-9da2d7b514d6f57b",
+      "platform": "instagram",
+      "status": "error",
+      "remote_id": "",
+      "post_url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-9da2d7b514d6f57b.html",
+      "recorded_at": "2026-09-29T16:46:27.092887+00:00",
+      "error": "Application request limit reached [code=4, subcode=2207051]"
     }
   ],
   "cooldowns": {
