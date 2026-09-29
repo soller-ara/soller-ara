@@ -76,9 +76,14 @@ CATEGORY_KEYWORDS = {
         ("taller", 5), ("jornada", 5), ("programació", 5), ("programacio", 5),
         ("ple ordinari", 6), ("ple extraordinari", 6),
     ],
+    "politics": [
+        ("moció", 8), ("mocion", 8), ("grup municipal", 8), ("regidor", 7),
+        ("regidora", 7), ("batle", 7), ("batlessa", 7), ("equip de govern", 7),
+        ("oposició", 6), ("oposicion", 6),
+    ],
 }
 
-CATEGORY_PRIORITY = ["alerts", "services", "culture", "sports", "commerce", "agenda", "news"]
+CATEGORY_PRIORITY = ["alerts", "services", "culture", "sports", "commerce", "politics", "agenda", "news"]
 
 NEWS_TITLE_PATTERNS = [
     "detingut", "detenido", "detenida", "detenció", "detencion",
@@ -89,6 +94,21 @@ NEWS_TITLE_PATTERNS = [
     "massificació", "masificacion", "masificación", "turistificació",
     "turistificacion", "turistificación", "pintades", "pintadas",
 ]
+
+TITLE_CATEGORY_PATTERNS = {
+    # Només indicadors inequívocs en el titular: eviten que una paraula
+    # secundària del resum desplaci avisos i serveis a una categoria errònia.
+    "alerts": ["avís urgent", "avis urgent", "alerta meteorològica", "alerta meteorologica",
+        "tall de trànsit", "tall de transit", "tall de carretera", "carretera tallada",
+        "carrer tallat", "restricció de trànsit", "restriccio de transit"],
+    "services": ["farmàcia de guàrdia", "farmacia de guardia", "oferta de feina",
+        "oferta de trabajo", "ofertes de feina", "ofertas de empleo", "borsa de treball",
+        "bolsa de trabajo", "recollida selectiva", "porta a porta", "servei d'aigua", "servicio de agua"],
+    "politics": ["moció", "mocion", "grup municipal", "regidor", "regidora",
+        "batle", "batlessa", "equip de govern", "equipo de gobierno"],
+    "sports": ["club esportiu", "club deportivo", "partit de futbol", "partido de fútbol",
+        "partido de futbol", "cursa popular", "competició esportiva", "competicion deportiva", "torneig", "torneo"],
+}
 
 CULTURE_TITLE_PATTERNS = [
     "art sóller", "art soller", "artista", "artistes", "artistas",
@@ -186,6 +206,9 @@ def categorize(title: str, summary: str) -> str:
         return "news"
     if any(pattern in title_folded for pattern in CULTURE_TITLE_PATTERNS):
         return "culture"
+    for category in ("alerts", "services", "politics", "sports"):
+        if any(pattern in title_folded for pattern in TITLE_CATEGORY_PATTERNS[category]):
+            return category
 
     combined = f"{title} {summary}"
     scores = {
@@ -1499,7 +1522,7 @@ def load_hidden_post_ids() -> set[str]:
 
 def load_category_overrides() -> dict[str, str]:
     raw = load_moderation().get("category_overrides") or {}
-    allowed = {"news", "agenda", "alerts", "services", "culture", "sports", "commerce"}
+    allowed = {"news", "agenda", "alerts", "services", "culture", "sports", "commerce", "politics", "social"}
     return {str(post_id): str(category) for post_id, category in raw.items() if str(post_id).strip() and str(category) in allowed}
 
 

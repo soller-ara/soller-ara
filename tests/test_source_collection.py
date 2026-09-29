@@ -14,6 +14,20 @@ spec.loader.exec_module(collector)
 
 
 class SourceCollectionTests(unittest.TestCase):
+    def test_clear_title_category_prevents_summary_misclassification(self):
+        self.assertEqual(collector.categorize("Tall de trànsit al carrer de la Lluna", "Cursa i concert"), "alerts")
+        self.assertEqual(collector.categorize("Ofertes de feina a Sóller", "Agenda cultural i esportiva"), "services")
+        self.assertEqual(collector.categorize("El regidor explica la moció presentada", "Jornada i concert"), "politics")
+        self.assertEqual(collector.categorize("Torneig de bàsquet a Son Angelats", "Exposició i tallers"), "sports")
+
+    def test_category_override_accepts_politics_and_social(self):
+        old_file = collector.MODERATION_FILE
+        with tempfile.TemporaryDirectory() as temp:
+            collector.MODERATION_FILE = Path(temp) / "moderation.json"
+            collector.MODERATION_FILE.write_text(json.dumps({"category_overrides": {"p": "politics", "s": "social", "bad": "other"}}), encoding="utf-8")
+            self.assertEqual(collector.load_category_overrides(), {"p": "politics", "s": "social"})
+        collector.MODERATION_FILE = old_file
+
     def test_youtube_local_filter_does_not_match_author_or_generated_summary(self):
         source = {"type": "youtube_channel", "include_keywords": ["Sóller", "Fornalutx"]}
         posts = [
