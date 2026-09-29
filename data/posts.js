@@ -400,7 +400,7 @@ window.SOLLER_ARA_DATA = {
     },
     {
       "id": "c81a528c6c7bdabf2389",
-      "category": "news",
+      "category": "services",
       "source_id": "mallorca-directo-soller",
       "source": "Mallorca Directo",
       "source_type": "media",
