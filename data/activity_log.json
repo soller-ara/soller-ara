@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "2ca4d83793ed63bf",
+      "timestamp": "2026-09-29T10:31:11.213615+00:00",
+      "action": "publish",
+      "area": "publications",
+      "target_id": "soller-ara-6100e933676a2d28",
+      "title": "Deià s'acull a les subvencions del Consell de Mallorca per reforçar la ciberseguretat i la digitalització municipal",
+      "detail": "Publicación propia creada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "54e38e0ae72db2fb",
       "timestamp": "2026-09-29T10:16:56.155054+00:00",
       "action": "publish",
