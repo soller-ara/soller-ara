@@ -3039,6 +3039,23 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-09-29T09:24:59.518874+00:00",
       "error": "Application request limit reached [code=4, subcode=2207051]"
+    },
+    {
+      "post_id": "7a53b1fa4b87c9ce4add",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122116550901467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122116550901467310",
+      "title": "Sóller escalfa motors per a la 63a Pujada al Puig Major",
+      "post_url": "https://saveu.cat/noticies/soller-escalfa-motors-per-a-la-63a-pujada-al-puig-major/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-29T10:14:44.483398+00:00",
+      "error": ""
     }
-  ]
+  ],
+  "cooldowns": {
+    "instagram_until": "2026-09-29T12:14:57.571018+00:00"
+  }
 }
