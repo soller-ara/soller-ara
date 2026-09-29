@@ -3136,6 +3136,20 @@
       "post_url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-9da2d7b514d6f57b.html",
       "recorded_at": "2026-09-29T16:46:27.092887+00:00",
       "error": "Application request limit reached [code=4, subcode=2207051]"
+    },
+    {
+      "post_id": "848591e13321d3d0e990",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122116713615467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122116713615467310",
+      "title": "De la Serra de Tramuntana al Parlamento Europeo: las protagonistas de Sacar pecho alzan la voz frente al cáncer de mama",
+      "post_url": "https://www.conselldemallorca.es/es/todas-las-noticias/-/asset_publisher/bqOupoVYvgPA/content/de-la-serra-de-tramuntana-al-parlament-europeu-les-protagonistes-de-sacar-pecho-alcen-la-veu-davant-el-c%C3%A0ncer-de-mama/695139",
+      "source": "Consell de Mallorca",
+      "source_id": "consell-mallorca-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-29T17:21:25.298771+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
