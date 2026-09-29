@@ -1,8 +1,46 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-09-29T13:25:52.187417+00:00",
+  "generated_at": "2026-09-29T14:23:49.736120+00:00",
   "entries": [
+    {
+      "post_id": "06882d13cd31a611d2c5",
+      "title": "Un hombre ebrio provoca hasta tres actuaciones de la Policía Local de Sóller",
+      "summary": "",
+      "source": "Última Hora",
+      "source_id": "ultima-hora-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "es",
+      "published_at": "2026-09-29T16:19:00+02:00",
+      "original_url": "https://www.ultimahora.es/sucesos/ultimas/2026/09/29/2718777/hombre-ebrio-provoca-hasta-tres-actuaciones-policia-local-soller.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/06882d13cd31a611d2c5.jpg"
+    },
+    {
+      "post_id": "3bb61891fa9a8d664df3",
+      "title": "Un total de 200 sollerics han renovat el seu DNI a Sóller en només dues setmanes",
+      "summary": "",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-09-29T14:12:14+00:00",
+      "original_url": "https://saveu.cat/noticies/un-total-de-200-sollerics-han-renovat-el-seu-dni-a-soller-en-nomes-dues-setmanes/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/3bb61891fa9a8d664df3.jpg"
+    },
     {
       "post_id": "a26800eeae81fa9b8a9e",
       "title": "Arriba aquest cap de setmana la 63ª edició de la Pujada al Puig Major amb marcat accent internacional",
@@ -20,42 +58,6 @@
         "instagram"
       ],
       "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/a26800eeae81fa9b8a9e.jpg"
-    },
-    {
-      "post_id": "7a53b1fa4b87c9ce4add",
-      "title": "Sóller escalfa motors per a la 63a Pujada al Puig Major",
-      "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
-      "source_type": "media",
-      "category": "sports",
-      "language": "ca",
-      "published_at": "2026-09-29T09:44:56+00:00",
-      "original_url": "https://saveu.cat/noticies/soller-escalfa-motors-per-a-la-63a-pujada-al-puig-major/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/7a53b1fa4b87c9ce4add.jpg"
-    },
-    {
-      "post_id": "6ad59d05697e8097b32d",
-      "title": "OBERT EL PERÍODE VOLUNTARI DE PAGAMENT DELS REBUTS",
-      "summary": "De l’1 d’octubre a l’1 de desembre de 2026 es poden pagar els rebuts corresponents a l’exercici 2026. Quins rebuts es poden pagar? — Impost sobre béns immobles (IBI) — Impost sobre activitats econòmiques (IAE) — Impost…",
-      "source": "Ajuntament de Sóller",
-      "source_id": "ajuntament-soller-noticies",
-      "source_type": "official",
-      "category": "agenda",
-      "language": "ca",
-      "published_at": "2026-09-29T08:16:33+00:00",
-      "original_url": "https://ajsoller.net/ca/noticies/obert-el-periode-voluntari-de-pagament-dels-rebuts",
-      "content_policy": "short_factual_excerpt",
-      "rights_status": "public_source_reviewed",
-      "platforms": [
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/6ad59d05697e8097b32d.jpg"
     }
   ]
 }
