@@ -227,6 +227,25 @@
       "original_url": "https://www.facebook.com/share/18MkiYQPXT/?mibextid=wwXIfr",
       "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-a21c7de245f7274b.jpg",
       "media_type": "image"
+    },
+    {
+      "id": "soller-ara-5f2acf241b88ca71",
+      "category": "news",
+      "source_id": "manual-992ab061df7c",
+      "source": "Policia Tutor Sóller",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-09-29T10:16:56.080756+00:00",
+      "title": "Noves normes de circulació a partir d'octubre de 2026: Claus per a patinets, ciclistes i motoristes",
+      "summary": "La infografia detalla els canvis del Reglament General de Circulació per protegir els usuaris vulnerables. Les mesures inclouen l'ús obligatori de cascos i llums en VMP, nova normativa de distàncies per a ciclistes, i l'obligatorietat de guants i calçat tancat per a motoristes, amb entrada en vigor el 1 d'octubre de 2026.",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-5f2acf241b88ca71.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": true,
+      "original_url": "https://www.facebook.com/share/18LmeGbcR2/?mibextid=wwXIfr",
+      "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-5f2acf241b88ca71.jpg",
+      "media_type": "image"
     }
   ]
 }
