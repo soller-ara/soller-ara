@@ -1,8 +1,27 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-09-29T09:24:22.373735+00:00",
+  "generated_at": "2026-09-29T10:14:24.001010+00:00",
   "entries": [
+    {
+      "post_id": "7a53b1fa4b87c9ce4add",
+      "title": "Sóller escalfa motors per a la 63a Pujada al Puig Major",
+      "summary": "",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-09-29T09:44:56+00:00",
+      "original_url": "https://saveu.cat/noticies/soller-escalfa-motors-per-a-la-63a-pujada-al-puig-major/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/7a53b1fa4b87c9ce4add.jpg"
+    },
     {
       "post_id": "6ad59d05697e8097b32d",
       "title": "OBERT EL PERÍODE VOLUNTARI DE PAGAMENT DELS REBUTS",
