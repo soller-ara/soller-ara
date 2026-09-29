@@ -1,7 +1,7 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-09-29T16:24:55.084191+00:00",
+  "generated_at": "2026-09-29T17:21:01.535296+00:00",
   "entries": [
     {
       "post_id": "f9cd934881d6553113f5",
@@ -28,7 +28,7 @@
       "source": "Sa Veu de Sóller",
       "source_id": "sa-veu-soller",
       "source_type": "media",
-      "category": "news",
+      "category": "services",
       "language": "ca",
       "published_at": "2026-09-29T14:12:14+00:00",
       "original_url": "https://saveu.cat/noticies/un-total-de-200-sollerics-han-renovat-el-seu-dni-a-soller-en-nomes-dues-setmanes/",
@@ -40,22 +40,23 @@
       "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/3bb61891fa9a8d664df3.jpg"
     },
     {
-      "post_id": "a26800eeae81fa9b8a9e",
-      "title": "Arriba aquest cap de setmana la 63ª edició de la Pujada al Puig Major amb marcat accent internacional",
+      "post_id": "848591e13321d3d0e990",
+      "title": "De la Serra de Tramuntana al Parlamento Europeo: las protagonistas de Sacar pecho alzan la voz frente al cáncer de mama",
       "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
-      "source_type": "media",
-      "category": "sports",
+      "source": "Consell de Mallorca",
+      "source_id": "consell-mallorca-soller",
+      "source_type": "official",
+      "category": "news",
       "language": "ca",
-      "published_at": "2026-09-29T13:07:00+02:00",
-      "original_url": "https://www.elsoller.cat/soller/esports/2026/09/29/354593/arriba-aquest-cap-setmana-edicio-pujada-puig-major-amb-marcat-accent-internacional.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
+      "published_at": "2026-09-29T12:00:00+00:00",
+      "original_url": "https://www.conselldemallorca.es/es/todas-las-noticias/-/asset_publisher/bqOupoVYvgPA/content/de-la-serra-de-tramuntana-al-parlament-europeu-les-protagonistes-de-sacar-pecho-alcen-la-veu-davant-el-c%C3%A0ncer-de-mama/695139",
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "official_public_source",
       "platforms": [
+        "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/a26800eeae81fa9b8a9e.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/848591e13321d3d0e990.jpg"
     }
   ]
 }
