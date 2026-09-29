@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-29T08:24:57.074795+00:00",
+  "fetched_at": "2026-09-29T09:24:21.976068+00:00",
   "source_count": 36,
   "source_status": [
     {
@@ -135,9 +135,9 @@ window.SOLLER_ARA_DATA = {
       "name": "Consell de Mallorca",
       "source_type": "official",
       "method": "html_listing_regex",
-      "ok": false,
-      "count": 0,
-      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>"
+      "ok": true,
+      "count": 2,
+      "error": null
     },
     {
       "source_id": "youtube-can-prunera",
@@ -330,14 +330,9 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 138,
+  "post_count": 140,
   "related_pair_count": 0,
-  "errors": [
-    {
-      "source_id": "consell-mallorca-soller",
-      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>"
-    }
-  ],
+  "errors": [],
   "posts": [
     {
       "id": "6ad59d05697e8097b32d",
@@ -564,6 +559,26 @@ window.SOLLER_ARA_DATA = {
       "media_type": null,
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
+      "id": "38a195c391c230ba6072",
+      "category": "news",
+      "source_id": "consell-mallorca-soller",
+      "source": "Consell de Mallorca",
+      "source_type": "official",
+      "language": "ca",
+      "locality": "Sóller / Fornalutx / Serra de Tramuntana",
+      "published_at": "2026-09-28T12:00:00+00:00",
+      "title": "El Consell de Mallorca recuperará el histórico campamento juvenil de Cala Murta para difundir los valores de la Serra de Tramuntana",
+      "summary": "",
+      "url": "https://www.conselldemallorca.es/es/todas-las-noticias/-/asset_publisher/bqOupoVYvgPA/content/el-consell-de-mallorca-recuperar%C3%A0-l-hist%C3%B2ric-campament-juvenil-de-cala-murta-per-difondre-els-valors-de-la-serra-de-tramuntana/695139",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "official_public_source",
       "image_allowed": false,
       "related_sources": []
     },
@@ -829,6 +844,26 @@ window.SOLLER_ARA_DATA = {
       "original_url": "https://www.facebook.com/share/p/1DMLrJwrpA/?mibextid=wwXIfr",
       "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-934624476dd3043e.jpg",
       "media_type": "image",
+      "related_sources": []
+    },
+    {
+      "id": "d67233b53b81a741dabb",
+      "category": "news",
+      "source_id": "consell-mallorca-soller",
+      "source": "Consell de Mallorca",
+      "source_type": "official",
+      "language": "ca",
+      "locality": "Sóller / Fornalutx / Serra de Tramuntana",
+      "published_at": "2026-09-25T12:00:00+00:00",
+      "title": "Sacar Pecho lleva al Parlamento Europeo la voz de las mujeres con cáncer de mama y una mirada única de la Serra de Tramuntana",
+      "summary": "",
+      "url": "https://www.conselldemallorca.es/es/todas-las-noticias/-/asset_publisher/bqOupoVYvgPA/content/sacar-pecho-duu-al-parlament-europeu-la-veu-de-les-dones-amb-c%C3%A0ncer-de-mama-i-una-mirada-%C3%BAnica-de-la-serra-de-tramuntana/695139",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "official_public_source",
+      "image_allowed": false,
       "related_sources": []
     },
     {
