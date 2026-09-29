@@ -122,6 +122,29 @@ class SocialDistributionTests(unittest.TestCase):
             ig.assert_called_once()
         self.assertEqual(json.loads(self.publish.LOG_FILE.read_text())["entries"][-1]["status"], "success")
 
+    def test_instagram_rate_limit_pauses_only_instagram(self):
+        self.prepare_posts([self.post("a1"), self.post("b1", source="b")])
+        rate_limit = RuntimeError("Application request limit reached [code=4, subcode=2207051]")
+        with patch.object(self.publish, "TOKEN", "test-only"), \
+             patch.object(self.publish, "discover_accounts", return_value=("page", "test-only", "ig", "soller.ara")), \
+             patch.object(self.publish, "publish_facebook", return_value="page_post") as fb, \
+             patch.object(self.publish, "publish_instagram", side_effect=rate_limit):
+            self.assertEqual(self.publish.main(), 0)
+            self.assertEqual(fb.call_count, 2)
+
+        log = json.loads(self.publish.LOG_FILE.read_text())
+        self.assertIn("instagram_until", log["cooldowns"])
+        self.assertFalse(any(x["platform"] == "instagram" and x["status"] == "error" for x in log["entries"]))
+
+        with patch.object(self.publish, "TOKEN", "test-only"), \
+             patch.object(self.publish, "discover_accounts") as accounts, \
+             patch.object(self.publish, "publish_facebook") as fb, \
+             patch.object(self.publish, "publish_instagram") as ig:
+            self.assertEqual(self.publish.main(), 0)
+            accounts.assert_called_once()
+            fb.assert_not_called()
+            ig.assert_not_called()
+
     def test_missing_token_records_error_without_publishing(self):
         self.prepare_posts([self.post("a1")])
         with patch.object(self.publish, "TOKEN", ""), patch.object(self.publish, "graph") as graph:

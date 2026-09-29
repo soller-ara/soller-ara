@@ -48,6 +48,38 @@ def save_log(log: dict) -> None:
     LOG_FILE.write_text(json.dumps(log, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
+
+
+INSTAGRAM_COOLDOWN_HOURS = 2
+
+
+def instagram_cooldown_until(log: dict) -> datetime | None:
+    value = str((log.get("cooldowns") or {}).get("instagram_until") or "").strip()
+    if not value:
+        return None
+    try:
+        until = datetime.fromisoformat(value.replace("Z", "+00:00"))
+        return until if until.tzinfo else until.replace(tzinfo=timezone.utc)
+    except ValueError:
+        return None
+
+
+def instagram_is_paused(log: dict, now: datetime | None = None) -> bool:
+    until = instagram_cooldown_until(log)
+    return bool(until and (now or datetime.now(timezone.utc)) < until)
+
+
+def defer_instagram(log: dict) -> datetime:
+    until = datetime.now(timezone.utc) + timedelta(hours=INSTAGRAM_COOLDOWN_HOURS)
+    log.setdefault("cooldowns", {})["instagram_until"] = until.isoformat()
+    save_log(log)
+    return until
+
+
+def is_instagram_rate_limit(error: Exception) -> bool:
+    message = str(error).casefold()
+    return "application request limit" in message and "code=4" in message
+
 def already_published(log: dict, post_id: str, platform: str) -> bool:
     return any(
         entry.get("post_id") == post_id and entry.get("platform") == platform
@@ -321,11 +353,18 @@ def main() -> int:
         return 1
 
     errors = 0
+    instagram_paused = instagram_is_paused(log)
+    if instagram_paused:
+        until = instagram_cooldown_until(log)
+        print(f"INSTAGRAM_DEFERRED until={until.isoformat() if until else '?'}")
     for item in entries:
         post_id = str(item.get("post_id") or "")
         for platform in item.get("platforms") or []:
             if already_published(log, post_id, platform):
                 print(f"{platform.upper()}_SKIP post={post_id}")
+                continue
+            if platform == "instagram" and instagram_paused:
+                print(f"INSTAGRAM_DEFERRED post={post_id}")
                 continue
             try:
                 if platform == "facebook":
@@ -343,6 +382,15 @@ def main() -> int:
                         pass  # Un error de lectura no convierte un envío confirmado en fallido.
                 record(log, item, platform, "success", remote_id=remote_id, remote_url=remote_url)
             except Exception as exc:
+                if platform == "instagram" and is_instagram_rate_limit(exc):
+                    until = defer_instagram(log)
+                    instagram_paused = True
+                    print(
+                        f"INSTAGRAM_DEFERRED post={post_id} until={until.isoformat()} "
+                        f"(límit temporal de Meta)",
+                        file=sys.stderr,
+                    )
+                    continue
                 errors += 1
                 record(log, item, platform, "error", error=str(exc))
                 print(f"{platform.upper()}_ERROR post={post_id}: {exc}", file=sys.stderr)
