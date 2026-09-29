@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "ac4f85abd8066ce4",
+      "timestamp": "2026-09-29T11:56:52.215646+00:00",
+      "action": "reclassify",
+      "area": "moderation",
+      "target_id": "a26800eeae81fa9b8a9e",
+      "title": "Arriba aquest cap de setmana la 63ª edició de la Pujada al Puig Major amb marcat accent internacional",
+      "detail": "Acción de moderación completada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "df68f7918396572b",
       "timestamp": "2026-09-29T11:14:14.096152+00:00",
       "action": "reclassify",
