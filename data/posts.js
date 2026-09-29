@@ -376,7 +376,7 @@ window.SOLLER_ARA_DATA = {
     },
     {
       "id": "7a53b1fa4b87c9ce4add",
-      "category": "news",
+      "category": "sports",
       "source_id": "sa-veu-soller",
       "source": "Sa Veu de Sóller",
       "source_type": "media",

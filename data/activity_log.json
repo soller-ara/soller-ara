@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "1f0a8e2757081929",
+      "timestamp": "2026-09-29T11:13:37.028748+00:00",
+      "action": "reclassify",
+      "area": "moderation",
+      "target_id": "7a53b1fa4b87c9ce4add",
+      "title": "Sóller escalfa motors per a la 63a Pujada al Puig Major",
+      "detail": "Acción de moderación completada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "52e093f2a4ee6f52",
       "timestamp": "2026-09-29T11:13:02.096415+00:00",
       "action": "reclassify",
