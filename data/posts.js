@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-29T16:24:54.860003+00:00",
+  "fetched_at": "2026-09-29T16:45:56.704433+00:00",
   "source_count": 36,
   "source_status": [
     {
@@ -330,10 +330,29 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 142,
+  "post_count": 143,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "soller-ara-9da2d7b514d6f57b",
+      "category": "services",
+      "source_id": "manual-882b429dcbba",
+      "source": "Serveis Socials Ajuntament de Sóller",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-09-29T16:45:56.704433+00:00",
+      "title": "Torrnen els Patis Oberts de cara al curs 2026/2027 per a infants i famílies!",
+      "summary": "A partir de l'1 d'octubre de 2026 i fins al 30 de juny de 2027, els centres escolars obriran els seus patis de dilluns a divendres, de 16h a 19h, com a espais de convivència, joc i esport. La iniciativa compta amb programació a diferents col·legis i preveu alternatives al gimnàs en cas de pluja.",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-9da2d7b514d6f57b.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": true,
+      "original_url": "https://www.facebook.com/share/p/1FLBPMzucE/?mibextid=wwXIfr",
+      "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-9da2d7b514d6f57b.jpg",
+      "media_type": "image"
+    },
     {
       "id": "f9cd934881d6553113f5",
       "category": "news",

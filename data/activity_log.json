@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "3456ed9826b25f92",
+      "timestamp": "2026-09-29T16:45:56.769884+00:00",
+      "action": "publish",
+      "area": "publications",
+      "target_id": "soller-ara-9da2d7b514d6f57b",
+      "title": "Torrnen els Patis Oberts de cara al curs 2026/2027 per a infants i famílies!",
+      "detail": "Publicación propia creada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "b1d3f13b69ade8a6",
       "timestamp": "2026-09-29T16:39:53.203578+00:00",
       "action": "reclassify",
