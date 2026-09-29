@@ -3071,6 +3071,20 @@
       "post_url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-6100e933676a2d28.html",
       "recorded_at": "2026-09-29T10:32:28.633008+00:00",
       "error": "Application request limit reached [code=4, subcode=2207051]"
+    },
+    {
+      "post_id": "a26800eeae81fa9b8a9e",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122116574199467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122116574199467310",
+      "title": "Arriba aquest cap de setmana la 63ª edició de la Pujada al Puig Major amb marcat accent internacional",
+      "post_url": "https://www.elsoller.cat/soller/esports/2026/09/29/354593/arriba-aquest-cap-setmana-edicio-pujada-puig-major-amb-marcat-accent-internacional.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-29T11:22:34.160185+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
