@@ -3085,6 +3085,34 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-09-29T11:22:34.160185+00:00",
       "error": ""
+    },
+    {
+      "post_id": "06882d13cd31a611d2c5",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122116651131467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122116651131467310",
+      "title": "Un hombre ebrio provoca hasta tres actuaciones de la Policía Local de Sóller",
+      "post_url": "https://www.ultimahora.es/sucesos/ultimas/2026/09/29/2718777/hombre-ebrio-provoca-hasta-tres-actuaciones-policia-local-soller.html",
+      "source": "Última Hora",
+      "source_id": "ultima-hora-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-29T14:24:12.208567+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "3bb61891fa9a8d664df3",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122116651167467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122116651167467310",
+      "title": "Un total de 200 sollerics han renovat el seu DNI a Sóller en només dues setmanes",
+      "post_url": "https://saveu.cat/noticies/un-total-de-200-sollerics-han-renovat-el-seu-dni-a-soller-en-nomes-dues-setmanes/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-29T14:24:25.035385+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
