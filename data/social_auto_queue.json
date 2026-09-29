@@ -1,7 +1,7 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-09-29T17:21:01.535296+00:00",
+  "generated_at": "2026-09-29T18:27:24.249278+00:00",
   "entries": [
     {
       "post_id": "f9cd934881d6553113f5",
@@ -38,25 +38,6 @@
         "instagram"
       ],
       "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/3bb61891fa9a8d664df3.jpg"
-    },
-    {
-      "post_id": "848591e13321d3d0e990",
-      "title": "De la Serra de Tramuntana al Parlamento Europeo: las protagonistas de Sacar pecho alzan la voz frente al cáncer de mama",
-      "summary": "",
-      "source": "Consell de Mallorca",
-      "source_id": "consell-mallorca-soller",
-      "source_type": "official",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-09-29T12:00:00+00:00",
-      "original_url": "https://www.conselldemallorca.es/es/todas-las-noticias/-/asset_publisher/bqOupoVYvgPA/content/de-la-serra-de-tramuntana-al-parlament-europeu-les-protagonistes-de-sacar-pecho-alcen-la-veu-davant-el-c%C3%A0ncer-de-mama/695139",
-      "content_policy": "short_factual_excerpt",
-      "rights_status": "official_public_source",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/848591e13321d3d0e990.jpg"
     }
   ]
 }

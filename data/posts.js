@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-29T18:22:40.046933+00:00",
+  "fetched_at": "2026-09-29T18:27:24.046939+00:00",
   "source_count": 36,
   "source_status": [
     {
@@ -325,7 +325,7 @@ window.SOLLER_ARA_DATA = {
       "source_type": "own",
       "method": "manual",
       "ok": true,
-      "count": 15,
+      "count": 16,
       "error": null
     }
   ],
@@ -351,7 +351,8 @@ window.SOLLER_ARA_DATA = {
       "image_allowed": true,
       "original_url": "https://www.facebook.com/share/19NRj9RHmH/?mibextid=wwXIfr",
       "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-7336bc63739fbc39.jpg",
-      "media_type": "image"
+      "media_type": "image",
+      "related_sources": []
     },
     {
       "id": "soller-ara-9da2d7b514d6f57b",
@@ -2011,17 +2012,17 @@ window.SOLLER_ARA_DATA = {
       "related_sources": []
     },
     {
-      "id": "1d8d857127689b19bb60",
-      "category": "news",
+      "id": "0259a9ed37d9a0a9961d",
+      "category": "culture",
       "source_id": "ajuntament-soller-noticies",
       "source": "Ajuntament de Sóller",
       "source_type": "official",
       "language": "ca",
       "locality": "Sóller",
-      "published_at": "2026-09-15T08:00:41+00:00",
-      "title": "Una temporada per recordar. Un club per reconèixer",
-      "summary": "L’Ajuntament de Sóller ha retut avui homenatge al Club Aquàtics Sóller pels grans resultats aconseguits durant la temporada 2025-2026: - L’equip aleví, campió de Balears - L’equip infantil, campió de Balears - L’equip…",
-      "url": "https://ajsoller.net/ca/noticies/una-temporada-recordar-un-club-reconeixer",
+      "published_at": "2026-09-15T08:06:24+00:00",
+      "title": "Avui celebram Mallorca",
+      "summary": "La Mallorca que hem heretat i la que continuam construint cada dia. Una terra feta d’història i de cultura, però, sobretot, de les persones que l’estimen i la cuiden. Enguany, la Diada té també una música especial…",
+      "url": "https://ajsoller.net/ca/noticies/avui-celebram-mallorca",
       "platform": null,
       "account": null,
       "media_type": null,
