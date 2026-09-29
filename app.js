@@ -483,9 +483,9 @@ function renderFeed() {
         <div class="card-body">
           <div class="meta">
             <span class="source-wrap">${post.source_type === "official" ? '<span class="official-dot" aria-hidden="true"></span>' : ""}<span class="source-name">${escapeHtml(post.source || "")}</span>${post.account ? `<span class="social-account">${escapeHtml(post.account)}</span>` : ""}${socialLabel}</span>
-            <span>${formatDate(post.published_at)}</span>
+            <span class="post-meta-right">${isFreshPost(post) ? `<span class="new-badge">${t("card.new")}</span>` : ""}<span>${formatDate(post.published_at)}</span></span>
           </div>
-          <span class="badge">${escapeHtml(categoryLabel)}</span>${isFreshPost(post) ? `<span class="new-badge">${t("card.new")}</span>` : ""}
+          <span class="badge">${escapeHtml(categoryLabel)}</span>
           <h3>${escapeHtml(post.title || "")}</h3>
           ${post.summary ? `<p${post.source_type === "own" && post.original_url ? ' class="manual-link-summary"' : ""}>${escapeHtml(post.summary)}</p>` : ""}
           ${officialPreview}
