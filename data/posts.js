@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-29T10:34:01.677209+00:00",
+  "fetched_at": "2026-09-29T11:22:15.471124+00:00",
   "source_count": 36,
   "source_status": [
     {
@@ -334,6 +334,26 @@ window.SOLLER_ARA_DATA = {
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "a26800eeae81fa9b8a9e",
+      "category": "culture",
+      "source_id": "setmanari-soller",
+      "source": "Setmanari Sóller",
+      "source_type": "media",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-09-29T13:07:00+02:00",
+      "title": "Arriba aquest cap de setmana la 63ª edició de la Pujada al Puig Major amb marcat accent internacional",
+      "summary": "",
+      "url": "https://www.elsoller.cat/soller/esports/2026/09/29/354593/arriba-aquest-cap-setmana-edicio-pujada-puig-major-amb-marcat-accent-internacional.html",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "image_allowed": false,
+      "related_sources": []
+    },
     {
       "id": "soller-ara-6100e933676a2d28",
       "category": "news",
@@ -1783,26 +1803,6 @@ window.SOLLER_ARA_DATA = {
       "title": "Madrid iniciarà enguany la tramitació de la Reserva Marina",
       "summary": "",
       "url": "https://www.elsoller.cat/soller/local/2026/09/18/354555/madrid-iniciara-enguany-tramitacio-reseva-marina.html",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "5eaa266158ce7ec8eb8d",
-      "category": "culture",
-      "source_id": "setmanari-soller",
-      "source": "Setmanari Sóller",
-      "source_type": "media",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-09-18T10:38:00+02:00",
-      "title": "«Cal mantenir actes com les havaneres»",
-      "summary": "",
-      "url": "https://www.elsoller.cat/soller/societat-i-cultura/2026/09/18/354551/cal-mantenir-actes-com-les-havaneres.html",
       "platform": null,
       "account": null,
       "media_type": null,
