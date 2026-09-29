@@ -398,7 +398,7 @@ window.SOLLER_ARA_DATA = {
     },
     {
       "id": "6ad59d05697e8097b32d",
-      "category": "news",
+      "category": "agenda",
       "source_id": "ajuntament-soller-noticies",
       "source": "Ajuntament de Sóller",
       "source_type": "official",

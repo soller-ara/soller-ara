@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "df68f7918396572b",
+      "timestamp": "2026-09-29T11:14:14.096152+00:00",
+      "action": "reclassify",
+      "area": "moderation",
+      "target_id": "6ad59d05697e8097b32d",
+      "title": "OBERT EL PERÍODE VOLUNTARI DE PAGAMENT DELS REBUTS",
+      "detail": "Acción de moderación completada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "1f0a8e2757081929",
       "timestamp": "2026-09-29T11:13:37.028748+00:00",
       "action": "reclassify",
