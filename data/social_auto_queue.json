@@ -1,11 +1,11 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-09-29T14:23:49.736120+00:00",
+  "generated_at": "2026-09-29T15:24:53.621847+00:00",
   "entries": [
     {
-      "post_id": "06882d13cd31a611d2c5",
-      "title": "Un hombre ebrio provoca hasta tres actuaciones de la Policía Local de Sóller",
+      "post_id": "f9cd934881d6553113f5",
+      "title": "Un vecino ebrio provoca hasta tres actuaciones de la Policía Local de Sóller",
       "summary": "",
       "source": "Última Hora",
       "source_id": "ultima-hora-soller",
@@ -20,7 +20,7 @@
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/06882d13cd31a611d2c5.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/f9cd934881d6553113f5.jpg"
     },
     {
       "post_id": "3bb61891fa9a8d664df3",
@@ -36,7 +36,6 @@
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
-        "facebook",
         "instagram"
       ],
       "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/3bb61891fa9a8d664df3.jpg"

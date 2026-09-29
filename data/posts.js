@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-29T14:23:49.570008+00:00",
+  "fetched_at": "2026-09-29T15:24:53.398129+00:00",
   "source_count": 36,
   "source_status": [
     {
@@ -335,7 +335,7 @@ window.SOLLER_ARA_DATA = {
   "errors": [],
   "posts": [
     {
-      "id": "06882d13cd31a611d2c5",
+      "id": "f9cd934881d6553113f5",
       "category": "news",
       "source_id": "ultima-hora-soller",
       "source": "Última Hora",
@@ -343,7 +343,7 @@ window.SOLLER_ARA_DATA = {
       "language": "es",
       "locality": "Sóller",
       "published_at": "2026-09-29T16:19:00+02:00",
-      "title": "Un hombre ebrio provoca hasta tres actuaciones de la Policía Local de Sóller",
+      "title": "Un vecino ebrio provoca hasta tres actuaciones de la Policía Local de Sóller",
       "summary": "",
       "url": "https://www.ultimahora.es/sucesos/ultimas/2026/09/29/2718777/hombre-ebrio-provoca-hasta-tres-actuaciones-policia-local-soller.html",
       "platform": null,
