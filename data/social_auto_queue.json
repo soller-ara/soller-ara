@@ -1,7 +1,7 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-09-29T10:24:06.935613+00:00",
+  "generated_at": "2026-09-29T10:34:01.851538+00:00",
   "entries": [
     {
       "post_id": "7a53b1fa4b87c9ce4add",
@@ -46,7 +46,7 @@
       "source": "Ajuntament de Fornalutx",
       "source_id": "ajuntament-fornalutx-noticies",
       "source_type": "official",
-      "category": "agenda",
+      "category": "services",
       "language": "ca",
       "published_at": "2026-09-29T07:32:48+00:00",
       "original_url": "https://ajfornalutx.net/ca/noticies/convocatoria-de-bases-especifiques-que-regiran-la-convocatoria-constituir-una-borsa-de",

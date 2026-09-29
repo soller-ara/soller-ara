@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-29T10:31:11.132400+00:00",
+  "fetched_at": "2026-09-29T10:34:01.677209+00:00",
   "source_count": 36,
   "source_status": [
     {
@@ -82,7 +82,7 @@ window.SOLLER_ARA_DATA = {
       "source_type": "media",
       "method": "html_search",
       "ok": true,
-      "count": 12,
+      "count": 11,
       "error": null
     },
     {
@@ -325,12 +325,12 @@ window.SOLLER_ARA_DATA = {
       "source_type": "own",
       "method": "manual",
       "ok": true,
-      "count": 13,
+      "count": 14,
       "error": null
     }
   ],
   "social_integration_status": [],
-  "post_count": 142,
+  "post_count": 141,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
@@ -351,7 +351,8 @@ window.SOLLER_ARA_DATA = {
       "image_allowed": true,
       "original_url": "https://www.facebook.com/share/1MWBBBW7Gd/?mibextid=wwXIfr",
       "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-6100e933676a2d28.jpg",
-      "media_type": "image"
+      "media_type": "image",
+      "related_sources": []
     },
     {
       "id": "soller-ara-5f2acf241b88ca71",
@@ -417,7 +418,7 @@ window.SOLLER_ARA_DATA = {
     },
     {
       "id": "8b8434ef4f3e03e90f12",
-      "category": "agenda",
+      "category": "services",
       "source_id": "ajuntament-fornalutx-noticies",
       "source": "Ajuntament de Fornalutx",
       "source_type": "official",
@@ -2420,26 +2421,6 @@ window.SOLLER_ARA_DATA = {
       "image_allowed": false,
       "embed_type": "official_oembed",
       "embed_url": "https://canprunera.com/para-que-sirve-un-museo/embed/",
-      "related_sources": []
-    },
-    {
-      "id": "e7dcc5ec8a0ee426f538",
-      "category": "news",
-      "source_id": "ib3-noticies-soller",
-      "source": "IB3 Notícies",
-      "source_type": "media",
-      "language": "ca",
-      "locality": "Sóller / Serra de Tramuntana",
-      "published_at": "2026-08-24T12:00:00+00:00",
-      "title": "IB3 | Tauler d'anuncis",
-      "summary": "",
-      "url": "https://ib3.org/tauler-danuncis",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
       "related_sources": []
     },
     {
