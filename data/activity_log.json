@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "119a5ccda337e042",
+      "timestamp": "2026-09-29T16:39:18.380663+00:00",
+      "action": "reclassify",
+      "area": "moderation",
+      "target_id": "3bb61891fa9a8d664df3",
+      "title": "Un total de 200 sollerics han renovat el seu DNI a Sóller en només dues setmanes",
+      "detail": "Acción de moderación completada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "ac4f85abd8066ce4",
       "timestamp": "2026-09-29T11:56:52.215646+00:00",
       "action": "reclassify",

@@ -356,7 +356,7 @@ window.SOLLER_ARA_DATA = {
     },
     {
       "id": "3bb61891fa9a8d664df3",
-      "category": "news",
+      "category": "services",
       "source_id": "sa-veu-soller",
       "source": "Sa Veu de Sóller",
       "source_type": "media",
