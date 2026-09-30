@@ -1,26 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-09-30T09:23:36.524596+00:00",
+  "generated_at": "2026-09-30T10:23:44.209820+00:00",
   "entries": [
     {
-      "post_id": "6c83fb567b70bcd0d860",
-      "title": "Aviso. Nivel amarillo. Lluvias. Sierra Tramontana",
-      "summary": "Aviso de precipitación acumulada en una hora de nivel amarillo de 14:00 01-10-2026 CEST (UTC+2) a 20:59 01-10-2026 CEST (UTC+2).",
-      "source": "AEMET · Serra de Tramuntana",
-      "source_id": "aemet-avisos-mallorca",
-      "source_type": "official",
-      "category": "alerts",
-      "language": "es",
-      "published_at": "2026-09-30T09:13:03+00:00",
-      "original_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260930091303_AFAZ645401PRP10119.xml",
-      "content_policy": "short_factual_excerpt",
-      "rights_status": "reuse_authorized_with_attribution",
+      "post_id": "7dca3b47cfe4b3eda56b",
+      "title": "ARCHBOTANKA continua avançant!",
+      "summary": "",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "source_type": "institution",
+      "category": "culture",
+      "language": "ca",
+      "published_at": "2026-09-30T10:07:04+00:00",
+      "original_url": "https://mucbo.org/archbotanka-continua-avancant/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/6c83fb567b70bcd0d860.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/7dca3b47cfe4b3eda56b.jpg"
     }
   ]
 }
