@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-30T02:21:43.859272+00:00",
+  "fetched_at": "2026-09-30T03:22:32.924265+00:00",
   "source_count": 36,
   "source_status": [
     {
@@ -63,9 +63,9 @@ window.SOLLER_ARA_DATA = {
       "name": "IB3 Notícies · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "error": null
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "goib-noticies-soller",
@@ -162,9 +162,9 @@ window.SOLLER_ARA_DATA = {
       "name": "Xeremiers de Sóller · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "error": null
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "youtube-club-volei-soller",
@@ -315,9 +315,9 @@ window.SOLLER_ARA_DATA = {
       "name": "Partido Popular · Sóller",
       "source_type": "political",
       "method": "html_listing_regex",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "error": "HTTP Error 522: <none>"
+      "error": null
     },
     {
       "source_id": "soller-ara",
@@ -338,11 +338,19 @@ window.SOLLER_ARA_DATA = {
       "error": "HTTP Error 404: Not Found"
     },
     {
+      "source_id": "youtube-ib3-noticies-soller",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
       "source_id": "youtube-can-prunera",
       "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "youtube-aires-sollerics",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "source_id": "youtube-xeremiers-soller",
       "error": "HTTP Error 404: Not Found"
     },
     {
@@ -376,10 +384,6 @@ window.SOLLER_ARA_DATA = {
     {
       "source_id": "youtube-sus-mallorca-soller",
       "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "partido-popular-soller",
-      "error": "HTTP Error 522: <none>"
     }
   ],
   "posts": [
