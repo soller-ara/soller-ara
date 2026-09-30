@@ -3173,6 +3173,20 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-09-30T09:23:54.873383+00:00",
       "error": ""
+    },
+    {
+      "post_id": "7dca3b47cfe4b3eda56b",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122117046909467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122117046909467310",
+      "title": "ARCHBOTANKA continua avançant!",
+      "post_url": "https://mucbo.org/archbotanka-continua-avancant/",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-30T10:24:03.980798+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
