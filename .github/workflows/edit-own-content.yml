@@ -33,6 +33,20 @@ on:
         description: 'URL pública de la imatge (opcional)'
         required: false
         type: string
+      source_name:
+        description: 'Nom de la font original'
+        required: false
+        type: string
+      original_url:
+        description: 'Enllaç https original'
+        required: false
+        type: string
+      content_type:
+        description: 'Tipus de publicació'
+        required: false
+        default: 'social_link'
+        type: choice
+        options: [own, social_link, event_poster]
 
 permissions:
   contents: write
@@ -69,6 +83,9 @@ jobs:
           POST_CATEGORY: ${{ inputs.category }}
           POST_LANGUAGE: ${{ inputs.language }}
           POST_IMAGE_URL: ${{ inputs.image_url }}
+          POST_SOURCE_NAME: ${{ inputs.source_name }}
+          POST_ORIGINAL_URL: ${{ inputs.original_url }}
+          POST_CONTENT_TYPE: ${{ inputs.content_type }}
         run: python scripts/edit_own_post.py
 
       - name: Registrar activitat
