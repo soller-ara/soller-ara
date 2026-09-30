@@ -833,13 +833,6 @@ a { color: inherit; }
 .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
 
 @media (max-width: 760px) {
-  /*
-   * Alguns organismes ofereixen una vista prèvia oficial en un iframe amb
-   * amplada d'escriptori. El seu contingut no es pot remaquetar des d'aquí i
-   * acabava desbordant la targeta en mòbil. Es conserva la notícia, el resum i
-   * l'enllaç "Veure original"; només s'oculta aquesta finestra externa.
-   */
-  .source-link-preview { display: none; }
   .brand-wrap p { display: none; }
   .topbar { gap: 12px; }
   .topbar-actions { gap: 7px; }
