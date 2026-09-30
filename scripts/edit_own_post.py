@@ -27,6 +27,9 @@ BODY = os.environ.get("POST_BODY", "").strip()
 CATEGORY = os.environ.get("POST_CATEGORY", "news").strip() or "news"
 LANGUAGE = os.environ.get("POST_LANGUAGE", "ca").strip() or "ca"
 IMAGE_URL = os.environ.get("POST_IMAGE_URL", "").strip()
+SOURCE_NAME = os.environ.get("POST_SOURCE_NAME", "").strip()
+ORIGINAL_URL = os.environ.get("POST_ORIGINAL_URL", "").strip()
+CONTENT_TYPE = os.environ.get("POST_CONTENT_TYPE", "own").strip()
 CONFIRMATION = os.environ.get("EDIT_CONFIRMATION", "").strip()
 
 ALLOWED_CATEGORIES = {
@@ -215,6 +218,9 @@ def main() -> int:
     if CATEGORY not in ALLOWED_CATEGORIES or LANGUAGE not in ALLOWED_LANGUAGES:
         print("ERROR: categoria o idioma no vàlid.", file=sys.stderr)
         return 2
+    if CONTENT_TYPE not in {"own", "social_link", "event_poster"}:
+        print("ERROR: tipus de publicació no vàlid.", file=sys.stderr)
+        return 2
 
     manual = load_json(MANUAL_FILE, {"version": 1, "posts": []})
     manual_posts = manual.get("posts") or []
@@ -231,14 +237,19 @@ def main() -> int:
     else:
         final_image = old_media
 
+    final_source = SOURCE_NAME or target.get("source") or "Sóller Ara"
+    final_original = ORIGINAL_URL or target.get("original_url") or ""
     updated = dict(target)
     updated.update({
         "category": CATEGORY,
         "language": LANGUAGE,
         "title": TITLE,
         "summary": BODY,
-        "rights_status": "no_reuse_reference_only" if target.get("original_url") else "owned",
-        "content_policy": "manual_link_reference" if target.get("original_url") else "owned_content",
+        "source": final_source,
+        "original_url": final_original,
+        "content_type": CONTENT_TYPE,
+        "rights_status": "no_reuse_reference_only" if final_original else "owned",
+        "content_policy": "manual_link_reference" if final_original else "owned_content",
         "image_allowed": bool(final_image),
     })
 
