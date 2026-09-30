@@ -1,26 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-09-30T12:31:30.104823+00:00",
+  "generated_at": "2026-09-30T13:25:26.960177+00:00",
   "entries": [
     {
-      "post_id": "2fdce710f717cc8c8ae4",
-      "title": "Journées Modernistes: Tallers creatius inspirats en la natura",
+      "post_id": "107ee06ad6bade153b3f",
+      "title": "Una mirada jove a la fotografia de natura",
       "summary": "",
       "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
       "source_id": "mucbo-noticies",
       "source_type": "institution",
       "category": "culture",
       "language": "ca",
-      "published_at": "2026-09-30T12:06:26+00:00",
-      "original_url": "https://mucbo.org/journees-moderniestes-tallers-creatius-amb-natura/",
+      "published_at": "2026-09-30T13:07:36+00:00",
+      "original_url": "https://mucbo.org/aquestes-son-les-fotografies-dels-joves-naturalistes/",
       "content_policy": "headline_date_link_only",
       "rights_status": "link_only_no_media_license",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/2fdce710f717cc8c8ae4.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/107ee06ad6bade153b3f.jpg"
     },
     {
       "post_id": "e7dcc5ec8a0ee426f538",
@@ -36,7 +36,6 @@
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
-        "facebook",
         "instagram"
       ],
       "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/e7dcc5ec8a0ee426f538.jpg"
