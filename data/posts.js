@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-30T05:23:07.657233+00:00",
+  "fetched_at": "2026-09-30T06:27:27.803261+00:00",
   "source_count": 36,
   "source_status": [
     {
@@ -109,7 +109,7 @@ window.SOLLER_ARA_DATA = {
       "source_type": "media",
       "method": "html_listing_regex",
       "ok": true,
-      "count": 29,
+      "count": 30,
       "error": null
     },
     {
@@ -180,9 +180,9 @@ window.SOLLER_ARA_DATA = {
       "name": "Ballades A Mallorca · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "error": null
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "youtube-tramuntana-xxi",
@@ -330,7 +330,7 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 142,
+  "post_count": 143,
   "related_pair_count": 0,
   "errors": [
     {
@@ -355,6 +355,10 @@ window.SOLLER_ARA_DATA = {
     },
     {
       "source_id": "youtube-club-volei-soller",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "source_id": "youtube-ballades-mallorca-soller",
       "error": "HTTP Error 404: Not Found"
     },
     {
@@ -3188,6 +3192,26 @@ window.SOLLER_ARA_DATA = {
       "title": "Detenido en Sóller por fotografiar a una socorrista",
       "summary": "",
       "url": "https://mallorcadirecto.com/comarca-de-ponent/soller/detenido-soller-frances-fotografiar-socorrista",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
+      "id": "8b3599b8d3894971dc94",
+      "category": "news",
+      "source_id": "ultima-hora-soller",
+      "source": "Última Hora",
+      "source_type": "media",
+      "language": "es",
+      "locality": "Sóller",
+      "published_at": "2026-08-03T03:48:00+02:00",
+      "title": "Moviment Jove de Sóller: «La manifestación no es en contra de los turistas, sino contra el modelo económico»",
+      "summary": "",
+      "url": "https://www.ultimahora.es/noticias/part-forana/2026/08/03/2682191/manifestacion-contra-turistas-sino-contra-modelo-economico.html",
       "platform": null,
       "account": null,
       "media_type": null,
