@@ -93,16 +93,21 @@
           </div>
         </div>
         <form id="socialLinkForm" class="form-card">
-          <label>Fuente o cuenta oficial<input name="source_name" maxlength="120" required placeholder="Ej.: Partido Popular de Sóller" /></label>
-          <label>Enlace de la publicación original<input name="original_url" type="url" required placeholder="https://www.facebook.com/..." /></label>
-          <label>Titular propio<input name="title" maxlength="180" required /></label>
-          <label>Resumen propio y neutral<textarea name="body" rows="6" required></textarea></label>
+           <label>Fuente o cuenta oficial<input name="source_name" maxlength="120" required placeholder="Ej.: Partido Popular de Sóller" /></label>
+           <label>Enlace de la publicación original<input name="original_url" type="url" required placeholder="https://www.facebook.com/..." /></label>
+           <label>Tipo de publicación<select name="content_type"><option value="social_link" selected>Referencia de una red social</option><option value="event_poster">Anuncio o cartel de evento</option></select></label>
+           <label>Titular propio<input name="title" maxlength="180" required /></label>
+           <label>Resumen propio y neutral<textarea name="body" rows="6" required></textarea></label>
           <div class="form-row">
             <label>Categoría<select name="category"><option value="politics" selected>Política</option><option value="news">Noticias</option><option value="agenda">Agenda</option><option value="alerts">Avisos</option><option value="services">Servicios</option><option value="culture">Cultura</option><option value="sports">Deportes</option><option value="commerce">Comercio</option><option value="social">Redes</option></select></label>
             <label>Idioma<select name="language"><option value="ca">Català</option><option value="es">Español</option><option value="en">English</option></select></label>
-          </div>
-          <fieldset><legend>Destinos</legend><label class="check"><input type="checkbox" checked disabled /> Sóller Ara</label><label class="check"><input name="instagram" type="checkbox" /> Instagram</label></fieldset>
-          <p class="hint">No se descargan ni reutilizan fotografías, vídeos ni el texto completo de la fuente. El enlace original se muestra en la web y se incluye en el texto de Instagram.</p>
+           </div>
+           <div class="social-poster-fields" hidden>
+             <label>URL directa del cartel autorizado <span class="hint">(JPG, PNG o WebP; no una página web)</span><input name="image_url" type="url" placeholder="https://ejemplo.org/cartel.jpg" /></label>
+             <label class="check"><input name="image_authorized" type="checkbox" /> Tengo autorización o licencia para mostrar este cartel en Sóller Ara y, si lo marco, en Instagram.</label>
+           </div>
+           <fieldset><legend>Destinos</legend><label class="check"><input type="checkbox" checked disabled /> Sóller Ara</label><label class="check"><input name="instagram" type="checkbox" /> Instagram</label></fieldset>
+           <p class="hint">Las referencias usan un resumen propio y enlace original. Un cartel solo se muestra si tienes autorización o licencia; el enlace original se muestra en la web y se incluye en el texto de Instagram.</p>
           <div class="header-actions"><button id="socialLinkSubmitButton" type="submit">Publicar propuesta revisada</button><button id="cancelSocialLinkEditButton" class="button-secondary" type="button" hidden>Cancelar edición</button></div>
           <p id="socialLinkMessage" class="message" aria-live="polite"></p>
         </form>
@@ -128,4 +133,3 @@
   <script src="./admin.js?v=0.46"></script>
 </body>
 </html>
-
