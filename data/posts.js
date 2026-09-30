@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-30T17:24:20.356729+00:00",
+  "fetched_at": "2026-09-30T18:24:52.716279+00:00",
   "source_count": 36,
   "source_status": [
     {
@@ -36,9 +36,9 @@ window.SOLLER_ARA_DATA = {
       "name": "Sóller 2010",
       "source_type": "official",
       "method": "soller2010_news",
-      "ok": false,
-      "count": 0,
-      "error": "<urlopen error [Errno -3] Temporary failure in name resolution>"
+      "ok": true,
+      "count": 2,
+      "error": null
     },
     {
       "source_id": "aemet-avisos-mallorca",
@@ -270,9 +270,9 @@ window.SOLLER_ARA_DATA = {
       "name": "Tren de Sóller · Actualitat",
       "source_type": "institution",
       "method": "html_listing_regex",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "error": "<urlopen error [Errno -3] Temporary failure in name resolution>"
+      "error": null
     },
     {
       "source_id": "ajuntament-fornalutx-noticies",
@@ -330,18 +330,9 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 145,
+  "post_count": 147,
   "related_pair_count": 0,
-  "errors": [
-    {
-      "source_id": "soller-2010",
-      "error": "<urlopen error [Errno -3] Temporary failure in name resolution>"
-    },
-    {
-      "source_id": "tren-soller-noticies",
-      "error": "<urlopen error [Errno -3] Temporary failure in name resolution>"
-    }
-  ],
+  "errors": [],
   "posts": [
     {
       "id": "soller-ara-8fa74fd10f10800c",
@@ -1849,6 +1840,26 @@ window.SOLLER_ARA_DATA = {
       "related_sources": []
     },
     {
+      "id": "8a9804f88acb901a287d",
+      "category": "news",
+      "source_id": "soller-2010",
+      "source": "Sóller 2010",
+      "source_type": "official",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-09-22T12:00:00+00:00",
+      "title": "Avís de canvi d’ubicació de les oficines de Sóller 2010",
+      "summary": "",
+      "url": "https://soller2010.com/noticias/avis-de-canvi-de-ubicacio-de-les-oficines-de-soller-2010",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "public_source_reviewed",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
       "id": "ea3e7bc497430ad094d7",
       "category": "culture",
       "source_id": "mucbo-noticies",
@@ -2130,17 +2141,17 @@ window.SOLLER_ARA_DATA = {
       "related_sources": []
     },
     {
-      "id": "0259a9ed37d9a0a9961d",
-      "category": "culture",
+      "id": "1d8d857127689b19bb60",
+      "category": "news",
       "source_id": "ajuntament-soller-noticies",
       "source": "Ajuntament de Sóller",
       "source_type": "official",
       "language": "ca",
       "locality": "Sóller",
-      "published_at": "2026-09-15T08:06:24+00:00",
-      "title": "Avui celebram Mallorca",
-      "summary": "La Mallorca que hem heretat i la que continuam construint cada dia. Una terra feta d’història i de cultura, però, sobretot, de les persones que l’estimen i la cuiden. Enguany, la Diada té també una música especial…",
-      "url": "https://ajsoller.net/ca/noticies/avui-celebram-mallorca",
+      "published_at": "2026-09-15T08:00:41+00:00",
+      "title": "Una temporada per recordar. Un club per reconèixer",
+      "summary": "L’Ajuntament de Sóller ha retut avui homenatge al Club Aquàtics Sóller pels grans resultats aconseguits durant la temporada 2025-2026: - L’equip aleví, campió de Balears - L’equip infantil, campió de Balears - L’equip…",
+      "url": "https://ajsoller.net/ca/noticies/una-temporada-recordar-un-club-reconeixer",
       "platform": null,
       "account": null,
       "media_type": null,
@@ -3012,6 +3023,26 @@ window.SOLLER_ARA_DATA = {
       "media_type": null,
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
+      "id": "eddcd5ba76a780bc8525",
+      "category": "services",
+      "source_id": "soller-2010",
+      "source": "Sóller 2010",
+      "source_type": "official",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-08-06T12:00:00+00:00",
+      "title": "RECOLLIDA SELECTIVA Dies de recollida i com reciclar correctament",
+      "summary": "",
+      "url": "https://soller2010.com/noticias/recollida-selectiva-dies-de-recollida-i-com-reciclar-correctament",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "public_source_reviewed",
       "image_allowed": false,
       "related_sources": []
     },
