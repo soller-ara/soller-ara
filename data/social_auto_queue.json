@@ -1,26 +1,45 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-09-30T13:25:26.960177+00:00",
+  "generated_at": "2026-09-30T14:26:01.938907+00:00",
   "entries": [
     {
-      "post_id": "107ee06ad6bade153b3f",
-      "title": "Una mirada jove a la fotografia de natura",
+      "post_id": "6c11cea2f2b215c77e96",
+      "title": "El Defensora es transformarà en un espai cultural polivalent",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "culture",
+      "language": "ca",
+      "published_at": "2026-09-30T15:56:43+02:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/09/30/354595/defensora-transformara-espai-cultural-polivalent.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/6c11cea2f2b215c77e96.jpg"
+    },
+    {
+      "post_id": "62c622df51701e73f9a9",
+      "title": "Vols treballar amb nosaltres?",
       "summary": "",
       "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
       "source_id": "mucbo-noticies",
       "source_type": "institution",
       "category": "culture",
       "language": "ca",
-      "published_at": "2026-09-30T13:07:36+00:00",
-      "original_url": "https://mucbo.org/aquestes-son-les-fotografies-dels-joves-naturalistes/",
+      "published_at": "2026-09-30T13:25:39+00:00",
+      "original_url": "https://mucbo.org/vols-treballar-amb-nosaltres/",
       "content_policy": "headline_date_link_only",
       "rights_status": "link_only_no_media_license",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/107ee06ad6bade153b3f.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/62c622df51701e73f9a9.jpg"
     },
     {
       "post_id": "e7dcc5ec8a0ee426f538",
