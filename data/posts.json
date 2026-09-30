@@ -1,7 +1,7 @@
 {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-30T21:21:38.081230+00:00",
+  "fetched_at": "2026-09-30T22:22:41.051546+00:00",
   "source_count": 36,
   "source_status": [
     {
@@ -118,7 +118,7 @@
       "source_type": "media",
       "method": "html_listing_regex",
       "ok": true,
-      "count": 6,
+      "count": 5,
       "error": null
     },
     {
@@ -330,7 +330,7 @@
     }
   ],
   "social_integration_status": [],
-  "post_count": 147,
+  "post_count": 146,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
@@ -561,26 +561,6 @@
       "title": "IB3 | Tauler d'anuncis",
       "summary": "",
       "url": "https://ib3.org/tauler-danuncis",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "c81a528c6c7bdabf2389",
-      "category": "services",
-      "source_id": "mallorca-directo-soller",
-      "source": "Mallorca Directo",
-      "source_type": "media",
-      "language": "es",
-      "locality": "Sóller",
-      "published_at": "2026-09-30T12:00:00+00:00",
-      "title": "Gasolineras más baratas en Sóller hoy: precios actualizados | Mallorca Directo",
-      "summary": "",
-      "url": "https://mallorcadirecto.com/comarca-de-ponent/soller/gasolineras",
       "platform": null,
       "account": null,
       "media_type": null,
@@ -2141,17 +2121,17 @@
       "related_sources": []
     },
     {
-      "id": "0259a9ed37d9a0a9961d",
-      "category": "culture",
+      "id": "1d8d857127689b19bb60",
+      "category": "news",
       "source_id": "ajuntament-soller-noticies",
       "source": "Ajuntament de Sóller",
       "source_type": "official",
       "language": "ca",
       "locality": "Sóller",
-      "published_at": "2026-09-15T08:06:24+00:00",
-      "title": "Avui celebram Mallorca",
-      "summary": "La Mallorca que hem heretat i la que continuam construint cada dia. Una terra feta d’història i de cultura, però, sobretot, de les persones que l’estimen i la cuiden. Enguany, la Diada té també una música especial…",
-      "url": "https://ajsoller.net/ca/noticies/avui-celebram-mallorca",
+      "published_at": "2026-09-15T08:00:41+00:00",
+      "title": "Una temporada per recordar. Un club per reconèixer",
+      "summary": "L’Ajuntament de Sóller ha retut avui homenatge al Club Aquàtics Sóller pels grans resultats aconseguits durant la temporada 2025-2026: - L’equip aleví, campió de Balears - L’equip infantil, campió de Balears - L’equip…",
+      "url": "https://ajsoller.net/ca/noticies/una-temporada-recordar-un-club-reconeixer",
       "platform": null,
       "account": null,
       "media_type": null,
