@@ -3243,6 +3243,34 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-09-30T13:25:55.217020+00:00",
       "error": ""
+    },
+    {
+      "post_id": "6c11cea2f2b215c77e96",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122117141493467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122117141493467310",
+      "title": "El Defensora es transformarà en un espai cultural polivalent",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/09/30/354595/defensora-transformara-espai-cultural-polivalent.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-30T14:26:22.930391+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "62c622df51701e73f9a9",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122117141895467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122117141895467310",
+      "title": "Vols treballar amb nosaltres?",
+      "post_url": "https://mucbo.org/vols-treballar-amb-nosaltres/",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-30T14:26:31.889216+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
