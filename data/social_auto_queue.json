@@ -1,7 +1,7 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-09-30T19:22:34.830870+00:00",
+  "generated_at": "2026-09-30T20:22:08.339905+00:00",
   "entries": [
     {
       "post_id": "cbda1a199fdbf18133c7",
@@ -38,24 +38,6 @@
         "instagram"
       ],
       "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/1c1a41873092ae9b5237.jpg"
-    },
-    {
-      "post_id": "62c622df51701e73f9a9",
-      "title": "Vols treballar amb nosaltres?",
-      "summary": "",
-      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
-      "source_id": "mucbo-noticies",
-      "source_type": "institution",
-      "category": "culture",
-      "language": "ca",
-      "published_at": "2026-09-30T13:25:39+00:00",
-      "original_url": "https://mucbo.org/vols-treballar-amb-nosaltres/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "link_only_no_media_license",
-      "platforms": [
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/62c622df51701e73f9a9.jpg"
     }
   ]
 }
