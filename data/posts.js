@@ -344,14 +344,15 @@ window.SOLLER_ARA_DATA = {
       "locality": "Sóller",
       "published_at": "2026-09-30T15:46:11.498426+00:00",
       "title": "Volem aules climatitzades",
-      "summary": "Hi han aules a méscde 30 graus.",
+      "summary": "Hi han aules a més de 30 graus.",
       "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-8fa74fd10f10800c.html",
       "content_policy": "manual_link_reference",
       "rights_status": "no_reuse_reference_only",
       "image_allowed": true,
       "original_url": "https://www.facebook.com/share/p/1CFDBswToE/?mibextid=wwXIfr",
       "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-8fa74fd10f10800c.jpg",
-      "media_type": "image"
+      "media_type": "image",
+      "content_type": "social_link"
     },
     {
       "id": "cbda1a199fdbf18133c7",

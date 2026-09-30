@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "60056a1970c2ed30",
+      "timestamp": "2026-09-30T15:49:30.105589+00:00",
+      "action": "edit",
+      "area": "publications",
+      "target_id": "soller-ara-8fa74fd10f10800c",
+      "title": "Volem aules climatitzades",
+      "detail": "Publicación propia editada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "16cb6f121c7f3a6e",
       "timestamp": "2026-09-30T15:46:11.605398+00:00",
       "action": "publish",
