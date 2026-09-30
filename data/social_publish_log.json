@@ -3271,9 +3271,37 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-09-30T14:26:31.889216+00:00",
       "error": ""
+    },
+    {
+      "post_id": "cbda1a199fdbf18133c7",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122117161263467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122117161263467310",
+      "title": "«Sacar pecho» porta la veu de les pacients de càncer de mama fins a Brussel·les",
+      "post_url": "https://saveu.cat/noticies/sacar-pecho-porta-la-veu-de-les-pacients-de-cancer-de-mama-fins-a-brusselles/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-30T15:26:29.705296+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "1c1a41873092ae9b5237",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122117161311467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122117161311467310",
+      "title": "L’Ajuntament presenta la campanya «Sóller t’estim»",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/09/30/354597/ajuntament-presenta-campanya-soller-estim.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-30T15:26:52.842944+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
-    "instagram_until": "2026-09-30T14:32:10.511258+00:00"
+    "instagram_until": "2026-09-30T17:26:47.938768+00:00"
   }
 }
