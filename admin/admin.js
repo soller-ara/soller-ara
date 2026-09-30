@@ -401,11 +401,18 @@
     socialLinkEditNote.hidden = true;
     socialLinkSubmitButton.textContent = "Publicar propuesta revisada";
     cancelSocialLinkEditButton.hidden = true;
-    socialLinkForm.elements.source_name.readOnly = false;
-    socialLinkForm.elements.original_url.readOnly = false;
     socialLinkForm.elements.instagram.disabled = false;
     if (resetForm) socialLinkForm.reset();
+    updateSocialPosterFields();
     setMessage(socialLinkMessage, "");
+  }
+
+  function updateSocialPosterFields() {
+    const isPoster = socialLinkForm.elements.content_type.value === "event_poster";
+    const fields = socialLinkForm.querySelector(".social-poster-fields");
+    fields.hidden = !isPoster;
+    socialLinkForm.elements.image_url.required = isPoster;
+    socialLinkForm.elements.image_authorized.required = isPoster;
   }
 
   function startSocialLinkEdit(postId) {
@@ -422,10 +429,12 @@
     socialLinkForm.elements.body.value = post.summary || "";
     socialLinkForm.elements.category.value = post.category || "politics";
     socialLinkForm.elements.language.value = post.language || "ca";
+    socialLinkForm.elements.content_type.value = post.content_type === "event_poster" ? "event_poster" : "social_link";
+    socialLinkForm.elements.image_url.value = String(post.media_url || "");
+    socialLinkForm.elements.image_authorized.checked = Boolean(post.image_allowed);
     socialLinkForm.elements.instagram.checked = false;
-    socialLinkForm.elements.source_name.readOnly = true;
-    socialLinkForm.elements.original_url.readOnly = true;
     socialLinkForm.elements.instagram.disabled = true;
+    updateSocialPosterFields();
     socialLinkHeading.textContent = "Editar enlace de redes";
     socialLinkEditNote.hidden = false;
     socialLinkSubmitButton.textContent = "Guardar cambios";
@@ -644,11 +653,17 @@
       body: String(data.get("body") || "").trim(),
       category: String(data.get("category") || "politics"),
       language: String(data.get("language") || "ca"),
-      image_url: "",
+      content_type: String(data.get("content_type") || "social_link"),
+      image_url: String(data.get("image_url") || "").trim(),
+      image_authorized: data.get("image_authorized") === "on",
       facebook: false,
       instagram: data.get("instagram") === "on",
     };
     if (!payload.source_name || !payload.original_url || !payload.title || !payload.body) return;
+    if (payload.content_type === "event_poster" && (!payload.image_url || !payload.image_authorized)) {
+      setMessage(socialLinkMessage, "Para publicar un cartel indica su URL directa y confirma que tienes autorización.", "error");
+      return;
+    }
 
     const editing = Boolean(socialLinkEditPostId);
     if (editing) {
@@ -684,6 +699,8 @@
       socialLinkSubmitButton.disabled = false;
     }
   });
+
+  socialLinkForm.elements.content_type.addEventListener("change", updateSocialPosterFields);
 
   publishForm.addEventListener("input", () => {
     const data = new FormData(publishForm);
