@@ -1,7 +1,7 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-09-30T15:26:04.944348+00:00",
+  "generated_at": "2026-09-30T16:25:35.008492+00:00",
   "entries": [
     {
       "post_id": "cbda1a199fdbf18133c7",
@@ -17,7 +17,6 @@
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
-        "facebook",
         "instagram"
       ],
       "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/cbda1a199fdbf18133c7.jpg"
@@ -36,7 +35,6 @@
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
-        "facebook",
         "instagram"
       ],
       "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/1c1a41873092ae9b5237.jpg"
