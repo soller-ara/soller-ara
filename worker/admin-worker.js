@@ -354,6 +354,10 @@ async function publish(request, env, cors) {
   const language = allowedLanguages.has(body.language) ? body.language : "ca";
   const sourceName = String(body.source_name || "").trim();
   const originalUrl = String(body.original_url || "").trim();
+  const contentType = body.content_type === "event_poster"
+    ? "event_poster"
+    : (sourceName || originalUrl ? "social_link" : "own");
+  const imageUrl = String(body.image_url || "").trim();
 
   if ((sourceName && !originalUrl) || (!sourceName && originalUrl)) {
     return json({ error: "Indica la fuente y el enlace original juntos." }, 400, cors);
@@ -362,6 +366,12 @@ async function publish(request, env, cors) {
   if (originalUrl && !isSafeHttpsUrl(originalUrl)) {
     return json({ error: "El enlace original debe ser una URL https válida." }, 400, cors);
   }
+  if (imageUrl && !isSafeHttpsUrl(imageUrl)) {
+    return json({ error: "La imagen debe ser una URL https directa y válida." }, 400, cors);
+  }
+  if (contentType === "event_poster" && (!imageUrl || !Boolean(body.image_authorized))) {
+    return json({ error: "Un cartel requiere URL directa y autorización confirmada." }, 400, cors);
+  }
 
   await githubDispatch(env, "publish-own-content.yml", {
     confirmation: "PUBLICAR",
@@ -369,11 +379,12 @@ async function publish(request, env, cors) {
     body: text,
     category,
     language,
-    image_url: String(body.image_url || "").trim(),
+    image_url: imageUrl,
     facebook: Boolean(body.facebook),
     instagram: Boolean(body.instagram),
     source_name: sourceName,
     original_url: originalUrl,
+    content_type: contentType,
   });
 
   return json({ ok: true, workflow: "Sóller Ara · publicar contingut propi" }, 202, cors);
@@ -396,6 +407,24 @@ async function editOwn(request, env, cors) {
   const allowedLanguages = new Set(["ca", "es", "en"]);
   const category = allowedCategories.has(body.category) ? body.category : "news";
   const language = allowedLanguages.has(body.language) ? body.language : "ca";
+  const sourceName = String(body.source_name || "").trim();
+  const originalUrl = String(body.original_url || "").trim();
+  const contentType = body.content_type === "event_poster"
+    ? "event_poster"
+    : (sourceName || originalUrl ? "social_link" : "own");
+  const imageUrl = String(body.image_url || "").trim();
+  if ((sourceName && !originalUrl) || (!sourceName && originalUrl)) {
+    return json({ error: "Indica la fuente y el enlace original juntos." }, 400, cors);
+  }
+  if (sourceName.length > 120 || (originalUrl && !isSafeHttpsUrl(originalUrl))) {
+    return json({ error: "La fuente o el enlace original no son válidos." }, 400, cors);
+  }
+  if (imageUrl && !isSafeHttpsUrl(imageUrl)) {
+    return json({ error: "La imagen debe ser una URL https directa y válida." }, 400, cors);
+  }
+  if (contentType === "event_poster" && (!imageUrl || !Boolean(body.image_authorized))) {
+    return json({ error: "Un cartel requiere URL directa y autorización confirmada." }, 400, cors);
+  }
 
   await githubDispatch(env, "edit-own-content.yml", {
     confirmation: "GUARDAR",
@@ -404,7 +433,10 @@ async function editOwn(request, env, cors) {
     body: text,
     category,
     language,
-    image_url: String(body.image_url || "").trim(),
+    image_url: imageUrl,
+    source_name: sourceName,
+    original_url: originalUrl,
+    content_type: contentType,
   });
 
   return json({ ok: true, workflow: "Sóller Ara · editar contingut propi" }, 202, cors);
