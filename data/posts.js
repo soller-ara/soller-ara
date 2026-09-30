@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-30T08:25:56.676674+00:00",
+  "fetched_at": "2026-09-30T09:23:36.398049+00:00",
   "source_count": 36,
   "source_status": [
     {
@@ -46,7 +46,7 @@ window.SOLLER_ARA_DATA = {
       "source_type": "official",
       "method": "aemet_alerts",
       "ok": true,
-      "count": 0,
+      "count": 2,
       "error": null
     },
     {
@@ -330,10 +330,50 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 145,
+  "post_count": 147,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "6c83fb567b70bcd0d860",
+      "category": "alerts",
+      "source_id": "aemet-avisos-mallorca",
+      "source": "AEMET · Serra de Tramuntana",
+      "source_type": "official",
+      "language": "es",
+      "locality": "Sóller / Serra de Tramuntana",
+      "published_at": "2026-09-30T09:13:03+00:00",
+      "title": "Aviso. Nivel amarillo. Lluvias. Sierra Tramontana",
+      "summary": "Aviso de precipitación acumulada en una hora de nivel amarillo de 14:00 01-10-2026 CEST (UTC+2) a 20:59 01-10-2026 CEST (UTC+2).",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260930091303_AFAZ645401PRP10119.xml",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "reuse_authorized_with_attribution",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
+      "id": "b557d3f395fcb9544dbf",
+      "category": "alerts",
+      "source_id": "aemet-avisos-mallorca",
+      "source": "AEMET · Serra de Tramuntana",
+      "source_type": "official",
+      "language": "es",
+      "locality": "Sóller / Serra de Tramuntana",
+      "published_at": "2026-09-30T09:13:03+00:00",
+      "title": "Aviso. Nivel amarillo. Tormentas. Sierra Tramontana",
+      "summary": "Aviso de tormentas de nivel amarillo de 14:00 01-10-2026 CEST (UTC+2) a 20:59 01-10-2026 CEST (UTC+2).",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20260930091303_AFAZ645401TOTO0119.xml",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "reuse_authorized_with_attribution",
+      "image_allowed": false,
+      "related_sources": []
+    },
     {
       "id": "soller-ara-7336bc63739fbc39",
       "category": "news",
