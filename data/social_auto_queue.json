@@ -1,26 +1,45 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-09-30T11:22:00.436677+00:00",
+  "generated_at": "2026-09-30T12:31:30.104823+00:00",
   "entries": [
     {
-      "post_id": "01ff36c04e1bb2d6602e",
-      "title": "El MUCBO participa un any més en Les Journées del Modernisme de Sóller amb tallers infantils",
+      "post_id": "2fdce710f717cc8c8ae4",
+      "title": "Journées Modernistes: Tallers creatius inspirats en la natura",
       "summary": "",
       "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
       "source_id": "mucbo-noticies",
       "source_type": "institution",
       "category": "culture",
       "language": "ca",
-      "published_at": "2026-09-30T10:50:35+00:00",
-      "original_url": "https://mucbo.org/el-mucbo-participa-un-any-mes-en-les-journees-del-modernisme-de-soller-amb-tallers-infantils/",
+      "published_at": "2026-09-30T12:06:26+00:00",
+      "original_url": "https://mucbo.org/journees-moderniestes-tallers-creatius-amb-natura/",
       "content_policy": "headline_date_link_only",
       "rights_status": "link_only_no_media_license",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/01ff36c04e1bb2d6602e.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/2fdce710f717cc8c8ae4.jpg"
+    },
+    {
+      "post_id": "e7dcc5ec8a0ee426f538",
+      "title": "IB3 | Tauler d'anuncis",
+      "summary": "",
+      "source": "IB3 Notícies",
+      "source_id": "ib3-noticies-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-09-30T12:00:00+00:00",
+      "original_url": "https://ib3.org/tauler-danuncis",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/e7dcc5ec8a0ee426f538.jpg"
     }
   ]
 }
