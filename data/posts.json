@@ -1,7 +1,7 @@
 {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-09-30T16:25:34.841150+00:00",
+  "fetched_at": "2026-09-30T17:24:20.356729+00:00",
   "source_count": 36,
   "source_status": [
     {
@@ -36,9 +36,9 @@
       "name": "Sóller 2010",
       "source_type": "official",
       "method": "soller2010_news",
-      "ok": true,
-      "count": 2,
-      "error": null
+      "ok": false,
+      "count": 0,
+      "error": "<urlopen error [Errno -3] Temporary failure in name resolution>"
     },
     {
       "source_id": "aemet-avisos-mallorca",
@@ -270,9 +270,9 @@
       "name": "Tren de Sóller · Actualitat",
       "source_type": "institution",
       "method": "html_listing_regex",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "error": null
+      "error": "<urlopen error [Errno -3] Temporary failure in name resolution>"
     },
     {
       "source_id": "ajuntament-fornalutx-noticies",
@@ -330,9 +330,18 @@
     }
   ],
   "social_integration_status": [],
-  "post_count": 147,
+  "post_count": 145,
   "related_pair_count": 0,
-  "errors": [],
+  "errors": [
+    {
+      "source_id": "soller-2010",
+      "error": "<urlopen error [Errno -3] Temporary failure in name resolution>"
+    },
+    {
+      "source_id": "tren-soller-noticies",
+      "error": "<urlopen error [Errno -3] Temporary failure in name resolution>"
+    }
+  ],
   "posts": [
     {
       "id": "soller-ara-8fa74fd10f10800c",
@@ -1840,26 +1849,6 @@
       "related_sources": []
     },
     {
-      "id": "8a9804f88acb901a287d",
-      "category": "news",
-      "source_id": "soller-2010",
-      "source": "Sóller 2010",
-      "source_type": "official",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-09-22T12:00:00+00:00",
-      "title": "Avís de canvi d’ubicació de les oficines de Sóller 2010",
-      "summary": "",
-      "url": "https://soller2010.com/noticias/avis-de-canvi-de-ubicacio-de-les-oficines-de-soller-2010",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "short_factual_excerpt",
-      "rights_status": "public_source_reviewed",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
       "id": "ea3e7bc497430ad094d7",
       "category": "culture",
       "source_id": "mucbo-noticies",
@@ -3023,26 +3012,6 @@
       "media_type": null,
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "eddcd5ba76a780bc8525",
-      "category": "services",
-      "source_id": "soller-2010",
-      "source": "Sóller 2010",
-      "source_type": "official",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-08-06T12:00:00+00:00",
-      "title": "RECOLLIDA SELECTIVA Dies de recollida i com reciclar correctament",
-      "summary": "",
-      "url": "https://soller2010.com/noticias/recollida-selectiva-dies-de-recollida-i-com-reciclar-correctament",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "short_factual_excerpt",
-      "rights_status": "public_source_reviewed",
       "image_allowed": false,
       "related_sources": []
     },
