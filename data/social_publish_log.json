@@ -3229,6 +3229,20 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-09-30T12:32:14.549842+00:00",
       "error": ""
+    },
+    {
+      "post_id": "107ee06ad6bade153b3f",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122117117799467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122117117799467310",
+      "title": "Una mirada jove a la fotografia de natura",
+      "post_url": "https://mucbo.org/aquestes-son-les-fotografies-dels-joves-naturalistes/",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-30T13:25:55.217020+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
