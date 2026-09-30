@@ -3201,9 +3201,37 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-09-30T11:22:23.418580+00:00",
       "error": ""
+    },
+    {
+      "post_id": "2fdce710f717cc8c8ae4",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122117096013467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122117096013467310",
+      "title": "Journées Modernistes: Tallers creatius inspirats en la natura",
+      "post_url": "https://mucbo.org/journees-moderniestes-tallers-creatius-amb-natura/",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-30T12:31:50.617325+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "e7dcc5ec8a0ee426f538",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122117096229467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122117096229467310",
+      "title": "IB3 | Tauler d'anuncis",
+      "post_url": "https://ib3.org/tauler-danuncis",
+      "source": "IB3 Notícies",
+      "source_id": "ib3-noticies-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-30T12:32:14.549842+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
-    "instagram_until": "2026-09-30T11:24:08.840924+00:00"
+    "instagram_until": "2026-09-30T14:32:10.511258+00:00"
   }
 }
