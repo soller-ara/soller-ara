@@ -3187,6 +3187,20 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-09-30T10:24:03.980798+00:00",
       "error": ""
+    },
+    {
+      "post_id": "01ff36c04e1bb2d6602e",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122117066499467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122117066499467310",
+      "title": "El MUCBO participa un any més en Les Journées del Modernisme de Sóller amb tallers infantils",
+      "post_url": "https://mucbo.org/el-mucbo-participa-un-any-mes-en-les-journees-del-modernisme-de-soller-amb-tallers-infantils/",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-09-30T11:22:23.418580+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
