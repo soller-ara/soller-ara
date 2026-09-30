@@ -39,6 +39,12 @@ on:
         description: 'Enllaç https de la publicació original (opcional)'
         required: false
         type: string
+      content_type:
+        description: 'Tipus de publicació'
+        required: false
+        default: 'own'
+        type: choice
+        options: [own, social_link, event_poster]
       facebook:
         description: 'Publicar també a Facebook Sóller Ara'
         required: true
