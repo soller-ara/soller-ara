@@ -594,7 +594,9 @@ function getEmbeddablePlatform(url) {
     const path = parsed.pathname.toLowerCase();
 
     if ((host === "facebook.com" || host.endsWith(".facebook.com") || host === "fb.watch")
-        && (/\/(posts|permalink\.php|photo\.php|videos|reel|watch)\b/.test(path) || host === "fb.watch")) {
+        && (/\/(posts|permalink\.php|photo\.php|videos|reel|watch)\b/.test(path)
+          || (path === "/story.php" && parsed.searchParams.has("story_fbid") && parsed.searchParams.has("id"))
+          || host === "fb.watch")) {
       return "facebook";
     }
     if ((host === "instagram.com" || host.endsWith(".instagram.com"))
