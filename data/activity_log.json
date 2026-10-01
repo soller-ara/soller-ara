@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "179a25d875c2dc2d",
+      "timestamp": "2026-10-01T14:56:25.606295+00:00",
+      "action": "publish",
+      "area": "publications",
+      "target_id": "soller-ara-926b67502865e3b1",
+      "title": "Resum d’actuacions policials.",
+      "detail": "Publicación propia creada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "1b001aebdf5c43fa",
       "timestamp": "2026-10-01T08:10:22.624261+00:00",
       "action": "publish",

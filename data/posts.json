@@ -1,7 +1,7 @@
 {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-10-01T14:37:37.305412+00:00",
+  "fetched_at": "2026-10-01T14:56:25.500777+00:00",
   "source_count": 37,
   "source_status": [
     {
@@ -339,10 +339,29 @@
     }
   ],
   "social_integration_status": [],
-  "post_count": 152,
+  "post_count": 153,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "soller-ara-926b67502865e3b1",
+      "category": "services",
+      "source_id": "manual-13e44f9445ef",
+      "source": "Policia Local de Sóller",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-01T14:56:25.500777+00:00",
+      "title": "Resum d’actuacions policials.",
+      "summary": "Información de les actuacions policials més rellevant d’aquests darrers dies.",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-926b67502865e3b1.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": true,
+      "original_url": "https://www.facebook.com/share/p/19iVjRyAKK/?mibextid=wwXIfr",
+      "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-926b67502865e3b1.jpg",
+      "media_type": "image"
+    },
     {
       "id": "6bd42785323d1de28af8",
       "category": "services",
