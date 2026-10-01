@@ -1,7 +1,7 @@
 {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-10-01T07:24:52.428719+00:00",
+  "fetched_at": "2026-10-01T07:30:51.572927+00:00",
   "source_count": 36,
   "source_status": [
     {
@@ -100,7 +100,7 @@
       "source_type": "media",
       "method": "freenewsapi_search",
       "ok": true,
-      "count": 10,
+      "count": 11,
       "error": null
     },
     {
@@ -330,7 +330,7 @@
     }
   ],
   "social_integration_status": [],
-  "post_count": 146,
+  "post_count": 147,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
@@ -3118,6 +3118,26 @@
       "title": "Sóller retirará terrazas, puestos de venta y mercadillos por la manifestación contra la masificación turística",
       "summary": "",
       "url": "https://www.diariodemallorca.es/part-forana/2026/08/06/soller-retirara-terrazas-puestos-venta-133123566.html",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
+      "id": "a8f87c5bcbd7158927d2",
+      "category": "news",
+      "source_id": "diario-mallorca-soller",
+      "source": "Diario de Mallorca",
+      "source_type": "media",
+      "language": "es",
+      "locality": "Sóller / Serra de Tramuntana",
+      "published_at": "2026-08-06T04:01:03+00:00",
+      "title": "Un nuevo acto vandálico cubre de pintadas un antiguo ‘porxo’ en la carretera de Deià",
+      "summary": "",
+      "url": "https://www.diariodemallorca.es/part-forana/2026/08/06/nuevo-acto-vandalico-cubre-pintadas-133123033.html",
       "platform": null,
       "account": null,
       "media_type": null,
