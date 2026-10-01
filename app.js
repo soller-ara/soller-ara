@@ -39,6 +39,10 @@ const translations = {
     "quick.tib.stop": "Pròximes sortides · Sóller centre",
     "quick.pharmacy.title": "Farmàcia de guàrdia",
     "quick.pharmacy.body": "Consulta oficial de la guàrdia de Sóller",
+    "weather.frameTitle": "Previsió i avisos d'AEMET per a Sóller",
+    "weather.title": "El temps a Sóller",
+    "weather.body": "Previsió de dos dies i avisos oficials d'AEMET.",
+    "weather.source": "Veure la previsió completa a AEMET ↗",
     "mobility.title": "Mobilitat ara",
     "mobility.body": "Consulta incidències i avisos directament a les fonts oficials.",
     "mobility.visicar.title": "Carreteres · VISICAR",
@@ -123,6 +127,10 @@ const translations = {
     "quick.tib.stop": "Próximas salidas · Sóller centre",
     "quick.pharmacy.title": "Farmacia de guardia",
     "quick.pharmacy.body": "Consulta oficial de la guardia de Sóller",
+    "weather.frameTitle": "Previsión y avisos de AEMET para Sóller",
+    "weather.title": "El tiempo en Sóller",
+    "weather.body": "Previsión de dos días y avisos oficiales de AEMET.",
+    "weather.source": "Ver la previsión completa en AEMET ↗",
     "mobility.title": "Movilidad ahora",
     "mobility.body": "Consulta incidencias y avisos directamente en las fuentes oficiales.",
     "mobility.visicar.title": "Carreteras · VISICAR",
@@ -207,6 +215,10 @@ const translations = {
     "quick.tib.stop": "Next departures · Sóller centre",
     "quick.pharmacy.title": "On-duty pharmacy",
     "quick.pharmacy.body": "Official Sóller on-duty pharmacy lookup",
+    "weather.frameTitle": "AEMET forecast and warnings for Sóller",
+    "weather.title": "Weather in Sóller",
+    "weather.body": "Two-day forecast and official AEMET warnings.",
+    "weather.source": "View the full forecast on AEMET ↗",
     "mobility.title": "Mobility now",
     "mobility.body": "Check incidents and alerts directly from official sources.",
     "mobility.visicar.title": "Roads · VISICAR",
@@ -359,6 +371,16 @@ function applyTranslations() {
   document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
     element.placeholder = t(element.dataset.i18nPlaceholder);
   });
+
+  const aemetWidget = document.getElementById("aemetWidget");
+  if (aemetWidget) {
+    const widgetUrl = new URL(aemetWidget.src);
+    widgetUrl.pathname = widgetUrl.pathname.replace(/^\/(ca|es|en)\//, `/${currentLanguage}/`);
+    if (aemetWidget.src !== widgetUrl.href) aemetWidget.src = widgetUrl.href;
+    aemetWidget.title = t("weather.frameTitle");
+    const aemetLink = document.querySelector(".weather-source");
+    if (aemetLink) aemetLink.href = `https://www.aemet.es/${currentLanguage}/eltiempo/prediccion/municipios/soller-id07061`;
+  }
 
   populateSourceSelect();
   updateSourceHealth();
