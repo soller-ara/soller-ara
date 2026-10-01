@@ -1,8 +1,8 @@
 {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-10-01T14:25:52.097481+00:00",
-  "source_count": 36,
+  "fetched_at": "2026-10-01T14:37:37.305412+00:00",
+  "source_count": 37,
   "source_status": [
     {
       "source_id": "ajuntament-soller-noticies",
@@ -259,6 +259,15 @@
     {
       "source_id": "ara-balears-soller",
       "name": "ARA Balears",
+      "source_type": "media",
+      "method": "rss",
+      "ok": true,
+      "count": 0,
+      "error": null
+    },
+    {
+      "source_id": "fora-vila-soller",
+      "name": "Fora Vila",
       "source_type": "media",
       "method": "rss",
       "ok": true,
