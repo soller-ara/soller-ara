@@ -1,7 +1,7 @@
 {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-10-01T17:22:34.532496+00:00",
+  "fetched_at": "2026-10-01T17:30:40.236490+00:00",
   "source_count": 37,
   "source_status": [
     {
@@ -2507,6 +2507,8 @@
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "image_allowed": false,
+      "embed_type": "official_oembed",
+      "embed_url": "https://www.futbolbalear.es/2026/09/05/cronica-final-four-copa-illes-balears1a-semifinal-ce-alaior-1-cf-soller/embed/",
       "related_sources": []
     },
     {
