@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-10-01T17:30:40.236490+00:00",
+  "fetched_at": "2026-10-01T18:27:25.468819+00:00",
   "source_count": 37,
   "source_status": [
     {
@@ -100,7 +100,7 @@ window.SOLLER_ARA_DATA = {
       "source_type": "media",
       "method": "freenewsapi_search",
       "ok": true,
-      "count": 11,
+      "count": 10,
       "error": null
     },
     {
@@ -339,7 +339,7 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 151,
+  "post_count": 150,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
@@ -361,7 +361,8 @@ window.SOLLER_ARA_DATA = {
       "original_url": "https://www.facebook.com/story.php?story_fbid=1556607826509017&id=100064794426084&mibextid=wwXIfr&rdid=NxL8o8Y48Sp4ZOH0#",
       "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-926b67502865e3b1.jpg",
       "media_type": "image",
-      "content_type": "social_link"
+      "content_type": "social_link",
+      "related_sources": []
     },
     {
       "id": "6bd42785323d1de28af8",
@@ -3371,26 +3372,6 @@ window.SOLLER_ARA_DATA = {
       "title": "Moviment Jove de Sóller: «La manifestación no es en contra de los turistas, sino contra el modelo económico»",
       "summary": "",
       "url": "https://www.ultimahora.es/noticias/part-forana/2026/08/03/2682191/manifestacion-contra-turistas-sino-contra-modelo-economico.html",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "8dacecacad4722615d86",
-      "category": "news",
-      "source_id": "diario-mallorca-soller",
-      "source": "Diario de Mallorca",
-      "source_type": "media",
-      "language": "es",
-      "locality": "Sóller / Serra de Tramuntana",
-      "published_at": "2026-08-02T17:42:06+00:00",
-      "title": "Triunfos de Joan Navarro y Carme Cladera en la Pujada al Barranc de Biniaraix",
-      "summary": "",
-      "url": "https://www.diariodemallorca.es/deportes/2026/08/02/triunfos-joan-navarro-carme-cladera-133042699.html",
       "platform": null,
       "account": null,
       "media_type": null,

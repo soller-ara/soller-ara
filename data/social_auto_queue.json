@@ -1,7 +1,7 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-01T17:30:40.389157+00:00",
+  "generated_at": "2026-10-01T18:27:25.596448+00:00",
   "entries": [
     {
       "post_id": "6bd42785323d1de28af8",
@@ -20,42 +20,6 @@
         "instagram"
       ],
       "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/6bd42785323d1de28af8.jpg"
-    },
-    {
-      "post_id": "c89f4b58b55f6f0b153c",
-      "title": "📢 EPE SÓLLER 2010 | NOU CONVENI COL·LECTIU",
-      "summary": "",
-      "source": "Sóller 2010",
-      "source_id": "soller-2010",
-      "source_type": "official",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-10-01T12:00:00+00:00",
-      "original_url": "https://soller2010.com/noticias/epe-soller-2010-nou-conveni-col-middot-lectiu",
-      "content_policy": "short_factual_excerpt",
-      "rights_status": "public_source_reviewed",
-      "platforms": [
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/c89f4b58b55f6f0b153c.jpg"
-    },
-    {
-      "post_id": "ccb4e92f97c1783f568e",
-      "title": "La literatura mallorquina, protagonista de ‘Les Journées’",
-      "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-10-01T13:47:00+02:00",
-      "original_url": "https://www.elsoller.cat/soller/societat-i-cultura/2026/10/01/354599/literatura-mallorquina-protagonista-les-journees.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/ccb4e92f97c1783f568e.jpg"
     }
   ]
 }
