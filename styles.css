@@ -589,6 +589,54 @@ a { color: inherit; }
   text-decoration: underline;
 }
 
+.weather-now {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+}
+.weather-now-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.weather-now-head > span {
+  flex: 0 0 auto;
+  font-size: 1.25rem;
+}
+.weather-now-head > div {
+  display: grid;
+  gap: 3px;
+}
+.weather-now-head strong { color: var(--text); }
+.weather-now-head div > span {
+  color: var(--muted);
+  font-size: .86rem;
+}
+.weather-frame-wrap {
+  width: 100%;
+  max-width: 560px;
+  margin-top: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: white;
+}
+.weather-frame-wrap iframe {
+  display: block;
+  width: 100%;
+  height: 260px;
+  border: 0;
+}
+.weather-source {
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--primary);
+  font-size: .86rem;
+  font-weight: 750;
+  text-decoration: none;
+}
+.weather-source:hover { text-decoration: underline; }
+
 .social-sources {
   margin-top: 32px;
   padding: 24px;
