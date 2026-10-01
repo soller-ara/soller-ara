@@ -3480,6 +3480,20 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-01T12:30:26.183942+00:00",
       "error": ""
+    },
+    {
+      "post_id": "6bd42785323d1de28af8",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122117616771467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122117616771467310",
+      "title": "Podemos reclama desbloquejar la reforma de la carretera del desviament",
+      "post_url": "https://saveu.cat/noticies/podemos-reclama-desbloquejar-la-reforma-del-desviament/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-01T13:27:19.625496+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
