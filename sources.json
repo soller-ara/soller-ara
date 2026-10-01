@@ -1,5 +1,5 @@
 {
-  "version": 35,
+  "version": 36,
   "sources": [
     {
       "id": "ajuntament-soller-noticies",
@@ -780,6 +780,38 @@
         "Tren de Sóller",
         "Túnel de Sóller",
         "Tunel de Soller",
+        "Deià",
+        "Deia"
+      ]
+    },
+    {
+      "id": "fora-vila-soller",
+      "name": "Fora Vila",
+      "type": "rss",
+      "url": "https://www.foravila.net/feed/",
+      "language": "ca",
+      "locality": "Sóller / Serra de Tramuntana",
+      "source_type": "media",
+      "max_items": 30,
+      "max_age_days": 60,
+      "enabled": true,
+      "image_policy": "disabled_until_rights_verified",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "include_keywords": [
+        "Sóller",
+        "Soller",
+        "Port de Sóller",
+        "Port de Soller",
+        "Vall de Sóller",
+        "Vall de Soller",
+        "Fornalutx",
+        "Biniaraix",
+        "Ferrocarril de Sóller",
+        "Tren de Sóller",
+        "Túnel de Sóller",
+        "Tunel de Soller",
+        "Serra de Tramuntana",
         "Deià",
         "Deia"
       ]
