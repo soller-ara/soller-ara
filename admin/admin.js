@@ -659,7 +659,14 @@
       facebook: false,
       instagram: data.get("instagram") === "on",
     };
-    if (!payload.source_name || !payload.original_url || !payload.title || !payload.body) return;
+    if (!payload.original_url) {
+      setMessage(socialLinkMessage, "Indica el enlace original de la publicación.", "error");
+      return;
+    }
+    if (payload.instagram && (!payload.title || !payload.body)) {
+      setMessage(socialLinkMessage, "Para publicar también en Instagram añade un titular y resumen propios.", "error");
+      return;
+    }
     if (payload.content_type === "event_poster" && (!payload.image_url || !payload.image_authorized)) {
       setMessage(socialLinkMessage, "Para publicar un cartel indica su URL directa y confirma que tienes autorización.", "error");
       return;
