@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "1b001aebdf5c43fa",
+      "timestamp": "2026-10-01T08:10:22.624261+00:00",
+      "action": "publish",
+      "area": "publications",
+      "target_id": "soller-ara-5d6dc8c23b2feeae",
+      "title": "Oferta de feina al Port de Sóller",
+      "detail": "Publicación propia creada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "74fb6b582c198930",
       "timestamp": "2026-10-01T07:20:28.648832+00:00",
       "action": "publish",

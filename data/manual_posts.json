@@ -342,6 +342,25 @@
       "original_url": "https://www.facebook.com/share/p/19VnfqxR8g/?mibextid=wwXIfr",
       "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-f4d8dca9bf645a7e.jpg",
       "media_type": "image"
+    },
+    {
+      "id": "soller-ara-5d6dc8c23b2feeae",
+      "category": "services",
+      "source_id": "manual-4f785079a49c",
+      "source": "Som joves",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-01T08:10:22.526695+00:00",
+      "title": "Oferta de feina al Port de Sóller",
+      "summary": "Recepcionista d’Hotel.",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-5d6dc8c23b2feeae.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": true,
+      "original_url": "https://www.facebook.com/share/p/1HaRsXP1qj/?mibextid=wwXIfr",
+      "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-5d6dc8c23b2feeae.jpg",
+      "media_type": "image"
     }
   ]
 }
