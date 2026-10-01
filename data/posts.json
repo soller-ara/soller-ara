@@ -1,7 +1,7 @@
 {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-10-01T06:29:20.218608+00:00",
+  "fetched_at": "2026-10-01T07:20:28.575218+00:00",
   "source_count": 36,
   "source_status": [
     {
@@ -330,7 +330,7 @@
     }
   ],
   "social_integration_status": [],
-  "post_count": 143,
+  "post_count": 144,
   "related_pair_count": 0,
   "errors": [
     {
@@ -387,6 +387,25 @@
     }
   ],
   "posts": [
+    {
+      "id": "soller-ara-f4d8dca9bf645a7e",
+      "category": "services",
+      "source_id": "manual-4f785079a49c",
+      "source": "Som joves",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-01T07:20:28.575218+00:00",
+      "title": "OFERTA DE FEINA AL MUCBO Jardí Botànic de Sóller-Museu Balear de Ciències Naturals🧐🧐",
+      "summary": "Es necessita jardiner/a.",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-f4d8dca9bf645a7e.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": true,
+      "original_url": "https://www.facebook.com/share/p/19VnfqxR8g/?mibextid=wwXIfr",
+      "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-f4d8dca9bf645a7e.jpg",
+      "media_type": "image"
+    },
     {
       "id": "27669c3b6f0ab01f3441",
       "category": "services",

@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "74fb6b582c198930",
+      "timestamp": "2026-10-01T07:20:28.648832+00:00",
+      "action": "publish",
+      "area": "publications",
+      "target_id": "soller-ara-f4d8dca9bf645a7e",
+      "title": "OFERTA DE FEINA AL MUCBO Jardí Botànic de Sóller-Museu Balear de Ciències Naturals🧐🧐",
+      "detail": "Publicación propia creada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "60056a1970c2ed30",
       "timestamp": "2026-09-30T15:49:30.105589+00:00",
       "action": "edit",
