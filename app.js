@@ -493,6 +493,7 @@ function renderFeed() {
     const officialPreview = renderOfficialLinkPreview(post);
     const authorizedPoster = renderAuthorizedPoster(post);
     const originalEmbed = renderManualOriginalEmbed(post);
+    const usesOriginalEmbed = Boolean(originalEmbed);
     const socialEmbed = renderSocialEmbed(post);
     const socialLabel = post.source_type === "social" && post.platform
       ? `<span class="social-platform">${escapeHtml(post.platform)}</span>`
@@ -510,8 +511,8 @@ function renderFeed() {
             <span class="post-meta-right">${isFreshPost(post) ? `<span class="new-badge">${t("card.new")}</span>` : ""}<span>${formatDate(post.published_at)}</span></span>
           </div>
           <span class="badge">${escapeHtml(categoryLabel)}</span>
-          <h3>${escapeHtml(post.title || "")}</h3>
-          ${post.summary ? `<p${post.source_type === "own" && post.original_url ? ' class="manual-link-summary"' : ""}>${escapeHtml(post.summary)}</p>` : ""}
+          ${usesOriginalEmbed ? "" : `<h3>${escapeHtml(post.title || "")}</h3>`}
+          ${!usesOriginalEmbed && post.summary ? `<p${post.source_type === "own" && post.original_url ? ' class="manual-link-summary"' : ""}>${escapeHtml(post.summary)}</p>` : ""}
           ${officialPreview}
           ${authorizedPoster}
           ${originalEmbed}
