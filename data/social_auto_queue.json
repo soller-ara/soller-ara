@@ -1,26 +1,45 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-01T08:26:05.355924+00:00",
+  "generated_at": "2026-10-01T09:24:13.877593+00:00",
   "entries": [
     {
-      "post_id": "93b189416dfd75823824",
-      "title": "L’Ajuntament de Sóller impulsa «Joves amb la Natura» per apropar el jovent al coneixement i la protecció de l’entorn natural",
-      "summary": "El MUCBO ha acollit avui la presentació de «Joves amb la Natura», un nou projecte que combina temps lliure, aprenentatge i contacte directe amb l’entorn natural per fomentar la implicació activa del jovent en la seva…",
+      "post_id": "9223531a938599ea4925",
+      "title": "Aviso. Nivel amarillo. Lluvias. Sierra Tramontana",
+      "summary": "Aviso de precipitación acumulada en una hora de nivel amarillo de 10:00 02-10-2026 CEST (UTC+2) a 19:59 02-10-2026 CEST (UTC+2).",
+      "source": "AEMET · Serra de Tramuntana",
+      "source_id": "aemet-avisos-mallorca",
+      "source_type": "official",
+      "category": "alerts",
+      "language": "es",
+      "published_at": "2026-10-01T09:16:54+00:00",
+      "original_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261001091654_AFAZ645401PRP10218.xml",
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "reuse_authorized_with_attribution",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/9223531a938599ea4925.jpg"
+    },
+    {
+      "post_id": "29e204e68f72eb0197b2",
+      "title": "L’Ajuntament i l’equip redactor avancen en la definició del projecte del Teatre Defensora",
+      "summary": "L’Ajuntament de Sóller va acollir ahir una reunió de treball amb l’equip redactor del projecte de reconstrucció i rehabilitació del Teatre Defensora Sollerense, amb l’objectiu d’analitzar les consideracions tècniques…",
       "source": "Ajuntament de Sóller",
       "source_id": "ajuntament-soller-noticies",
       "source_type": "official",
-      "category": "news",
+      "category": "culture",
       "language": "ca",
-      "published_at": "2026-10-01T08:21:01+00:00",
-      "original_url": "https://ajsoller.net/ca/noticies/lajuntament-de-soller-impulsa-joves-amb-la-natura-apropar-el-jovent-al-coneixement-i-la",
+      "published_at": "2026-10-01T09:00:24+00:00",
+      "original_url": "https://ajsoller.net/ca/noticies/lajuntament-i-lequip-redactor-avancen-en-la-definicio-del-projecte-del-teatre-defensora",
       "content_policy": "short_factual_excerpt",
       "rights_status": "public_source_reviewed",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/93b189416dfd75823824.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/29e204e68f72eb0197b2.jpg"
     }
   ]
 }
