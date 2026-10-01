@@ -3452,9 +3452,37 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-01T11:23:35.277863+00:00",
       "error": ""
+    },
+    {
+      "post_id": "c89f4b58b55f6f0b153c",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122117595807467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122117595807467310",
+      "title": "📢 EPE SÓLLER 2010 | NOU CONVENI COL·LECTIU",
+      "post_url": "https://soller2010.com/noticias/epe-soller-2010-nou-conveni-col-middot-lectiu",
+      "source": "Sóller 2010",
+      "source_id": "soller-2010",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-01T12:30:07.411181+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "ccb4e92f97c1783f568e",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122117595885467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122117595885467310",
+      "title": "La literatura mallorquina, protagonista de ‘Les Journées’",
+      "post_url": "https://www.elsoller.cat/soller/societat-i-cultura/2026/10/01/354599/literatura-mallorquina-protagonista-les-journees.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-01T12:30:26.183942+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
-    "instagram_until": "2026-10-01T11:24:36.298321+00:00"
+    "instagram_until": "2026-10-01T14:30:22.193915+00:00"
   }
 }
