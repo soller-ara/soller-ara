@@ -121,7 +121,9 @@
         "Tren de Sóller",
         "Túnel de Sóller",
         "Tunel de Soller",
-        "Serra de Tramuntana"
+        "Serra de Tramuntana",
+        "Deià",
+        "Deia"
       ],
       "verification_url": "https://ib3.org/"
     },
@@ -141,7 +143,9 @@
         "Port de Sóller",
         "Port de Soller",
         "Serra de Tramuntana",
-        "Biniaraix"
+        "Biniaraix",
+        "Deià",
+        "Deia"
       ],
       "enabled": true,
       "image_policy": "disabled_until_rights_verified",
@@ -185,7 +189,9 @@
         "Tren de Sóller",
         "Túnel de Sóller",
         "Serra de Tramuntana",
-        "Biniaraix"
+        "Biniaraix",
+        "Deià",
+        "Deia"
       ],
       "enabled": true,
       "image_policy": "disabled_until_rights_verified",
@@ -211,7 +217,9 @@
         "Sóller",
         "Port de Sóller",
         "Fornalutx",
-        "Biniaraix"
+        "Biniaraix",
+        "Deià",
+        "Deia"
       ],
       "include_keywords": [
         "Sóller",
@@ -226,7 +234,9 @@
         "Tren de Sóller",
         "Túnel de Sóller",
         "Tunel de Soller",
-        "Serra de Tramuntana"
+        "Serra de Tramuntana",
+        "Deià",
+        "Deia"
       ]
     },
     {
@@ -257,7 +267,9 @@
         "Ferrocarril de Sóller",
         "Tren de Sóller",
         "Túnel de Sóller",
-        "Tunel de Soller"
+        "Tunel de Soller",
+        "Deià",
+        "Deia"
       ]
     },
     {
@@ -305,7 +317,9 @@
         "línia 231",
         "linia 231",
         "línia 232",
-        "linia 232"
+        "linia 232",
+        "Deià",
+        "Deia"
       ],
       "force_category": "alerts",
       "enabled": true,
@@ -334,7 +348,9 @@
         "Serra de Tramuntana",
         "Fàbrica Nova",
         "Fabrica Nova",
-        "Torre Picada"
+        "Torre Picada",
+        "Deià",
+        "Deia"
       ],
       "max_items": 30,
       "max_age_days": 180,
@@ -474,7 +490,9 @@
         "Biniaraix",
         "Vall de Sóller",
         "Vall de Soller",
-        "Serra de Tramuntana"
+        "Serra de Tramuntana",
+        "Deià",
+        "Deia"
       ],
       "force_category": "culture"
     },
@@ -508,7 +526,9 @@
         "Vall de Sóller",
         "Vall de Soller",
         "Serra de Tramuntana",
-        "Tramuntana"
+        "Tramuntana",
+        "Deià",
+        "Deia"
       ]
     },
     {
@@ -540,7 +560,9 @@
         "Biniaraix",
         "Vall de Sóller",
         "Vall de Soller",
-        "Serra de Tramuntana"
+        "Serra de Tramuntana",
+        "Deià",
+        "Deia"
       ]
     },
     {
@@ -573,7 +595,9 @@
         "Vall de Sóller",
         "Vall de Soller",
         "Serra de Tramuntana",
-        "Museu de la Mar"
+        "Museu de la Mar",
+        "Deià",
+        "Deia"
       ],
       "force_category": "culture"
     },
@@ -607,7 +631,9 @@
         "Vall de Sóller",
         "Vall de Soller",
         "Serra de Tramuntana",
-        "Tramuntana"
+        "Tramuntana",
+        "Deià",
+        "Deia"
       ]
     },
     {
@@ -642,7 +668,9 @@
         "Serra de Tramuntana",
         "Fàbrica Nova",
         "Fabrica Nova",
-        "Torre Picada"
+        "Torre Picada",
+        "Deià",
+        "Deia"
       ]
     },
     {
@@ -695,7 +723,9 @@
         "Sóller",
         "Port de Sóller",
         "Biniaraix",
-        "Fornalutx"
+        "Fornalutx",
+        "Deià",
+        "Deia"
       ],
       "language": "es",
       "locality": "Sóller / Serra de Tramuntana",
@@ -718,7 +748,9 @@
         "Ferrocarril de Sóller",
         "Tren de Sóller",
         "Túnel de Sóller",
-        "Tunel de Soller"
+        "Tunel de Soller",
+        "Deià",
+        "Deia"
       ]
     },
     {
@@ -747,7 +779,9 @@
         "Ferrocarril de Sóller",
         "Tren de Sóller",
         "Túnel de Sóller",
-        "Tunel de Soller"
+        "Tunel de Soller",
+        "Deià",
+        "Deia"
       ]
     },
     {
@@ -778,7 +812,9 @@
         "Ferrocarril de Sóller",
         "Tren de Sóller",
         "Túnel de Sóller",
-        "Tunel de Soller"
+        "Tunel de Soller",
+        "Deià",
+        "Deia"
       ]
     },
     {
@@ -813,7 +849,9 @@
         "C.F. Soller",
         "Sóller",
         "Soller",
-        "Biniaraix"
+        "Biniaraix",
+        "Deià",
+        "Deia"
       ],
       "force_category": "sports",
       "enabled": true,
@@ -843,7 +881,9 @@
         "Ferrocarril de Sóller",
         "Tren de Sóller",
         "Túnel de Sóller",
-        "Tunel de Soller"
+        "Tunel de Soller",
+        "Deià",
+        "Deia"
       ],
       "enabled": true,
       "image_policy": "disabled_until_rights_verified",
@@ -876,7 +916,9 @@
         "Tren de Sóller",
         "Túnel de Sóller",
         "Tunel de Soller",
-        "Serra de Tramuntana"
+        "Serra de Tramuntana",
+        "Deià",
+        "Deia"
       ],
       "enabled": true,
       "image_policy": "embed_only",
