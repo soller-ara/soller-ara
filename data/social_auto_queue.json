@@ -1,26 +1,45 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-01T10:23:54.378355+00:00",
+  "generated_at": "2026-10-01T11:22:58.353486+00:00",
   "entries": [
     {
-      "post_id": "78484fd5684ea52fb59f",
-      "title": "Blats i carxofes: Tornen els cursos per a adults de la Fundació Sa Nostra amb la participació del MUCBO",
+      "post_id": "3fe0f86d22e1f647e80c",
+      "title": "Donació d’una pell de vell marí (Monachus monachus) al MUCBO",
       "summary": "",
       "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
       "source_id": "mucbo-noticies",
       "source_type": "institution",
       "category": "culture",
       "language": "ca",
-      "published_at": "2026-10-01T10:02:14+00:00",
-      "original_url": "https://mucbo.org/blats-i-carxofes-tornen-els-cursos-per-a-adults-de-la-fundacio-sa-nostra-amb-la-participacio-del-mucbo/",
+      "published_at": "2026-10-01T11:02:52+00:00",
+      "original_url": "https://mucbo.org/donacio-duna-pell-de-vell-mari-monachus-monachus-al-mucbo/",
       "content_policy": "headline_date_link_only",
       "rights_status": "link_only_no_media_license",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/78484fd5684ea52fb59f.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/3fe0f86d22e1f647e80c.jpg"
+    },
+    {
+      "post_id": "e349a7ac477a7a358765",
+      "title": "Sóller innova en transparència. La ciutadania que dissenya el Pla ara en pot vigilar el compliment",
+      "summary": "L'Ajuntament de Sóller presenta la plataforma digital de seguiment del Pla d'Acció de Sóller, una eina pública i oberta que mostra en quin estat es troba cadascun dels compromisos del Pla, quina regidoria n'és…",
+      "source": "Ajuntament de Sóller",
+      "source_id": "ajuntament-soller-noticies",
+      "source_type": "official",
+      "category": "politics",
+      "language": "ca",
+      "published_at": "2026-10-01T10:27:44+00:00",
+      "original_url": "https://ajsoller.net/ca/noticies/soller-innova-en-transparencia-la-ciutadania-que-dissenya-el-pla-ara-en-pot-vigilar-el",
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "public_source_reviewed",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/e349a7ac477a7a358765.jpg"
     },
     {
       "post_id": "071fafc237d4c5526dc6",
@@ -36,29 +55,9 @@
       "content_policy": "short_factual_excerpt",
       "rights_status": "reuse_authorized_with_attribution",
       "platforms": [
-        "facebook",
         "instagram"
       ],
       "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/071fafc237d4c5526dc6.jpg"
-    },
-    {
-      "post_id": "9f2f3e9b7ce43715891e",
-      "title": "La Policia Local incorpora dos nous oficials",
-      "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-10-01T09:29:39+00:00",
-      "original_url": "https://saveu.cat/noticies/la-policia-local-incorpora-dos-nous-oficials/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/9f2f3e9b7ce43715891e.jpg"
     }
   ]
 }
