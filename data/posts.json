@@ -1,7 +1,7 @@
 {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-10-01T03:23:59.282734+00:00",
+  "fetched_at": "2026-10-01T04:24:07.430241+00:00",
   "source_count": 36,
   "source_status": [
     {
@@ -100,7 +100,7 @@
       "source_type": "media",
       "method": "freenewsapi_search",
       "ok": true,
-      "count": 11,
+      "count": 10,
       "error": null
     },
     {
@@ -330,7 +330,7 @@
     }
   ],
   "social_integration_status": [],
-  "post_count": 144,
+  "post_count": 143,
   "related_pair_count": 0,
   "errors": [
     {
@@ -2154,17 +2154,17 @@
       "related_sources": []
     },
     {
-      "id": "0259a9ed37d9a0a9961d",
-      "category": "culture",
+      "id": "1d8d857127689b19bb60",
+      "category": "news",
       "source_id": "ajuntament-soller-noticies",
       "source": "Ajuntament de Sóller",
       "source_type": "official",
       "language": "ca",
       "locality": "Sóller",
-      "published_at": "2026-09-15T08:06:24+00:00",
-      "title": "Avui celebram Mallorca",
-      "summary": "La Mallorca que hem heretat i la que continuam construint cada dia. Una terra feta d’història i de cultura, però, sobretot, de les persones que l’estimen i la cuiden. Enguany, la Diada té també una música especial…",
-      "url": "https://ajsoller.net/ca/noticies/avui-celebram-mallorca",
+      "published_at": "2026-09-15T08:00:41+00:00",
+      "title": "Una temporada per recordar. Un club per reconèixer",
+      "summary": "L’Ajuntament de Sóller ha retut avui homenatge al Club Aquàtics Sóller pels grans resultats aconseguits durant la temporada 2025-2026: - L’equip aleví, campió de Balears - L’equip infantil, campió de Balears - L’equip…",
+      "url": "https://ajsoller.net/ca/noticies/una-temporada-recordar-un-club-reconeixer",
       "platform": null,
       "account": null,
       "media_type": null,
@@ -3273,26 +3273,6 @@
       "title": "Triunfos de Joan Navarro y Carme Cladera en la Pujada al Barranc de Biniaraix",
       "summary": "",
       "url": "https://www.diariodemallorca.es/deportes/2026/08/02/triunfos-joan-navarro-carme-cladera-133042699.html",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "04ee3505a1e5fb5828c5",
-      "category": "news",
-      "source_id": "diario-mallorca-soller",
-      "source": "Diario de Mallorca",
-      "source_type": "media",
-      "language": "es",
-      "locality": "Sóller / Serra de Tramuntana",
-      "published_at": "2026-08-02T04:01:52+00:00",
-      "title": "Denuncian vertidos fecales en la primera línea de Port de Sóller",
-      "summary": "",
-      "url": "https://www.diariodemallorca.es/part-forana/2026/08/02/denuncian-vertidos-fecales-primera-linea-133021830.html",
       "platform": null,
       "account": null,
       "media_type": null,
