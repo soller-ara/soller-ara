@@ -1,7 +1,7 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-01T06:29:20.347709+00:00",
+  "generated_at": "2026-10-01T07:24:52.600464+00:00",
   "entries": [
     {
       "post_id": "27669c3b6f0ab01f3441",
@@ -17,7 +17,6 @@
       "content_policy": "short_factual_excerpt",
       "rights_status": "public_source_reviewed",
       "platforms": [
-        "facebook",
         "instagram"
       ],
       "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/27669c3b6f0ab01f3441.jpg"
