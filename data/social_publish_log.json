@@ -3382,6 +3382,48 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-01T09:24:43.958237+00:00",
       "error": ""
+    },
+    {
+      "post_id": "78484fd5684ea52fb59f",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122117544657467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122117544657467310",
+      "title": "Blats i carxofes: Tornen els cursos per a adults de la Fundació Sa Nostra amb la participació del MUCBO",
+      "post_url": "https://mucbo.org/blats-i-carxofes-tornen-els-cursos-per-a-adults-de-la-fundacio-sa-nostra-amb-la-participacio-del-mucbo/",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-01T10:24:21.236977+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "071fafc237d4c5526dc6",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122117544687467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122117544687467310",
+      "title": "Aviso. Nivel amarillo. Lluvias. Sierra Tramontana",
+      "post_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261001093106_AFAZ645401PRP10318.xml",
+      "source": "AEMET · Serra de Tramuntana",
+      "source_id": "aemet-avisos-mallorca",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-01T10:24:29.268265+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "9f2f3e9b7ce43715891e",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122117544729467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122117544729467310",
+      "title": "La Policia Local incorpora dos nous oficials",
+      "post_url": "https://saveu.cat/noticies/la-policia-local-incorpora-dos-nous-oficials/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-01T10:24:37.381025+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
