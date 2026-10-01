@@ -1,7 +1,7 @@
 {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-10-01T11:22:58.208706+00:00",
+  "fetched_at": "2026-10-01T12:29:45.082918+00:00",
   "source_count": 36,
   "source_status": [
     {
@@ -37,7 +37,7 @@
       "source_type": "official",
       "method": "soller2010_news",
       "ok": true,
-      "count": 2,
+      "count": 3,
       "error": null
     },
     {
@@ -118,7 +118,7 @@
       "source_type": "media",
       "method": "html_listing_regex",
       "ok": true,
-      "count": 5,
+      "count": 6,
       "error": null
     },
     {
@@ -330,10 +330,70 @@
     }
   ],
   "social_integration_status": [],
-  "post_count": 150,
+  "post_count": 152,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "c89f4b58b55f6f0b153c",
+      "category": "news",
+      "source_id": "soller-2010",
+      "source": "Sóller 2010",
+      "source_type": "official",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-01T12:00:00+00:00",
+      "title": "📢 EPE SÓLLER 2010 | NOU CONVENI COL·LECTIU",
+      "summary": "",
+      "url": "https://soller2010.com/noticias/epe-soller-2010-nou-conveni-col-middot-lectiu",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "public_source_reviewed",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
+      "id": "c81a528c6c7bdabf2389",
+      "category": "services",
+      "source_id": "mallorca-directo-soller",
+      "source": "Mallorca Directo",
+      "source_type": "media",
+      "language": "es",
+      "locality": "Sóller",
+      "published_at": "2026-10-01T12:00:00+00:00",
+      "title": "Gasolineras más baratas en Sóller hoy: precios actualizados | Mallorca Directo",
+      "summary": "",
+      "url": "https://mallorcadirecto.com/comarca-de-ponent/soller/gasolineras",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
+      "id": "ccb4e92f97c1783f568e",
+      "category": "news",
+      "source_id": "setmanari-soller",
+      "source": "Setmanari Sóller",
+      "source_type": "media",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-01T13:47:00+02:00",
+      "title": "La literatura mallorquina, protagonista de ‘Les Journées’",
+      "summary": "",
+      "url": "https://www.elsoller.cat/soller/societat-i-cultura/2026/10/01/354599/literatura-mallorquina-protagonista-les-journees.html",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "image_allowed": false,
+      "related_sources": []
+    },
     {
       "id": "3fe0f86d22e1f647e80c",
       "category": "culture",
@@ -2138,26 +2198,6 @@
       "image_allowed": true,
       "media_url": "https://soller-ara.github.io/soller-ara",
       "media_type": "image",
-      "related_sources": []
-    },
-    {
-      "id": "8e4ac5de499d63272960",
-      "category": "agenda",
-      "source_id": "setmanari-soller",
-      "source": "Setmanari Sóller",
-      "source_type": "media",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-09-18T17:00:00+02:00",
-      "title": "El CEIP Es Puig compleix mig segle d’educació",
-      "summary": "",
-      "url": "https://www.elsoller.cat/soller/reportatges/2026/09/18/354557/ceip-puig-compleix-mig-segle-educacio.html",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
       "related_sources": []
     },
     {
