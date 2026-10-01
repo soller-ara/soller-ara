@@ -3503,9 +3503,23 @@
       "post_url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-926b67502865e3b1.html",
       "recorded_at": "2026-10-01T14:56:59.248617+00:00",
       "error": "Application request limit reached [code=4, subcode=2207051]"
+    },
+    {
+      "post_id": "b8364203b22094670661",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122117736417467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122117736417467310",
+      "title": "El MUCBO de Sóller rep en donació una pell de vell marí",
+      "post_url": "https://www.foravila.net/foravilaverd/el-mucbo-de-soller-rep-en-donacio-una-pell-de-vell-mari/",
+      "source": "Fora Vila",
+      "source_id": "fora-vila-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-01T19:24:27.209056+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
-    "instagram_until": "2026-10-01T19:22:56.468371+00:00"
+    "instagram_until": "2026-10-01T21:24:41.779626+00:00"
   }
 }
