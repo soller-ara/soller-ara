@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "4143cff96ed0fb6b",
+      "timestamp": "2026-10-01T18:51:19.111954+00:00",
+      "action": "publish",
+      "area": "publications",
+      "target_id": "soller-ara-1a1810a721b7f094",
+      "title": "Mobilitat local",
+      "detail": "Publicación propia creada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "004ff1e5ddff22c0",
       "timestamp": "2026-10-01T18:02:07.811363+00:00",
       "action": "edit",
