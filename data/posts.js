@@ -358,10 +358,10 @@ window.SOLLER_ARA_DATA = {
       "content_policy": "manual_link_reference",
       "rights_status": "no_reuse_reference_only",
       "image_allowed": true,
-      "original_url": "https://www.facebook.com/share/p/19iVjRyAKK/?mibextid=wwXIfr",
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1556607826509017&id=100064794426084&mibextid=wwXIfr&rdid=NxL8o8Y48Sp4ZOH0#",
       "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-926b67502865e3b1.jpg",
       "media_type": "image",
-      "related_sources": []
+      "content_type": "social_link"
     },
     {
       "id": "6bd42785323d1de28af8",
