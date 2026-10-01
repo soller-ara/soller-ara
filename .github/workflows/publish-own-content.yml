@@ -8,12 +8,12 @@ on:
         required: true
         type: string
       title:
-        description: 'Títol'
-        required: true
+        description: 'Títol (opcional para enlace incrustado)'
+        required: false
         type: string
       body:
-        description: 'Text de la publicació'
-        required: true
+        description: 'Text de la publicació (opcional para enlace incrustado)'
+        required: false
         type: string
       category:
         description: 'Categoria'
