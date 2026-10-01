@@ -3424,6 +3424,34 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-01T10:24:37.381025+00:00",
       "error": ""
+    },
+    {
+      "post_id": "3fe0f86d22e1f647e80c",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122117571675467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122117571675467310",
+      "title": "Donació d’una pell de vell marí (Monachus monachus) al MUCBO",
+      "post_url": "https://mucbo.org/donacio-duna-pell-de-vell-mari-monachus-monachus-al-mucbo/",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-01T11:23:23.009805+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "e349a7ac477a7a358765",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122117571699467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122117571699467310",
+      "title": "Sóller innova en transparència. La ciutadania que dissenya el Pla ara en pot vigilar el compliment",
+      "post_url": "https://ajsoller.net/ca/noticies/soller-innova-en-transparencia-la-ciutadania-que-dissenya-el-pla-ara-en-pot-vigilar-el",
+      "source": "Ajuntament de Sóller",
+      "source_id": "ajuntament-soller-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-01T11:23:35.277863+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
