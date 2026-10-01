@@ -345,7 +345,6 @@ async function publish(request, env, cors) {
   const title = String(body.title || "").trim();
   const text = String(body.body || "").trim();
 
-  if (!title || !text) return json({ error: "Faltan título o texto." }, 400, cors);
   if (title.length > 180) return json({ error: "El título es demasiado largo." }, 400, cors);
 
   const allowedCategories = new Set(["news", "agenda", "alerts", "services", "culture", "sports", "commerce", "politics", "social"]);
@@ -359,8 +358,14 @@ async function publish(request, env, cors) {
     : (sourceName || originalUrl ? "social_link" : "own");
   const imageUrl = String(body.image_url || "").trim();
 
-  if ((sourceName && !originalUrl) || (!sourceName && originalUrl)) {
-    return json({ error: "Indica la fuente y el enlace original juntos." }, 400, cors);
+  if (sourceName && !originalUrl) {
+    return json({ error: "Indica un enlace original junto con la fuente." }, 400, cors);
+  }
+  if (contentType !== "social_link" && (!title || !text)) {
+    return json({ error: "Faltan título o texto." }, 400, cors);
+  }
+  if (Boolean(body.instagram) && (!title || !text)) {
+    return json({ error: "Para publicar también en Instagram añade título y texto propios." }, 400, cors);
   }
   if (sourceName.length > 120) return json({ error: "El nombre de la fuente es demasiado largo." }, 400, cors);
   if (originalUrl && !isSafeHttpsUrl(originalUrl)) {
@@ -396,8 +401,8 @@ async function editOwn(request, env, cors) {
   const title = String(body.title || "").trim();
   const text = String(body.body || "").trim();
 
-  if (!postId || !title || !text) {
-    return json({ error: "Faltan datos para editar la publicación." }, 400, cors);
+  if (!postId) {
+    return json({ error: "Falta la publicación que se debe editar." }, 400, cors);
   }
   if (title.length > 180) {
     return json({ error: "El título es demasiado largo." }, 400, cors);
@@ -413,8 +418,11 @@ async function editOwn(request, env, cors) {
     ? "event_poster"
     : (sourceName || originalUrl ? "social_link" : "own");
   const imageUrl = String(body.image_url || "").trim();
-  if ((sourceName && !originalUrl) || (!sourceName && originalUrl)) {
-    return json({ error: "Indica la fuente y el enlace original juntos." }, 400, cors);
+  if (sourceName && !originalUrl) {
+    return json({ error: "Indica un enlace original junto con la fuente." }, 400, cors);
+  }
+  if (contentType !== "social_link" && (!title || !text)) {
+    return json({ error: "Faltan título o texto para esta publicación." }, 400, cors);
   }
   if (sourceName.length > 120 || (originalUrl && !isSafeHttpsUrl(originalUrl))) {
     return json({ error: "La fuente o el enlace original no son válidos." }, 400, cors);
