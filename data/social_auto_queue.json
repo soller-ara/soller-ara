@@ -1,26 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-01T19:24:04.989871+00:00",
-  "entries": [
-    {
-      "post_id": "b8364203b22094670661",
-      "title": "El MUCBO de Sóller rep en donació una pell de vell marí",
-      "summary": "",
-      "source": "Fora Vila",
-      "source_id": "fora-vila-soller",
-      "source_type": "media",
-      "category": "culture",
-      "language": "ca",
-      "published_at": "2026-10-01T13:33:00+00:00",
-      "original_url": "https://www.foravila.net/foravilaverd/el-mucbo-de-soller-rep-en-donacio-una-pell-de-vell-mari/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/b8364203b22094670661.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
