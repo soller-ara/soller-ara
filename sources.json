@@ -1,5 +1,5 @@
 {
-  "version": 36,
+  "version": 37,
   "sources": [
     {
       "id": "ajuntament-soller-noticies",
@@ -795,7 +795,7 @@
       "max_items": 30,
       "max_age_days": 60,
       "enabled": true,
-      "image_policy": "disabled_until_rights_verified",
+      "image_policy": "official_oembed",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "include_keywords": [
@@ -887,7 +887,7 @@
       ],
       "force_category": "sports",
       "enabled": true,
-      "image_policy": "disabled_until_rights_verified",
+      "image_policy": "official_oembed",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending"
     },
