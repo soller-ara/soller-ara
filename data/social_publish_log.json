@@ -3354,9 +3354,37 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-01T08:26:27.429724+00:00",
       "error": ""
+    },
+    {
+      "post_id": "9223531a938599ea4925",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122117507457467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122117507457467310",
+      "title": "Aviso. Nivel amarillo. Lluvias. Sierra Tramontana",
+      "post_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261001091654_AFAZ645401PRP10218.xml",
+      "source": "AEMET · Serra de Tramuntana",
+      "source_id": "aemet-avisos-mallorca",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-01T09:24:28.736882+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "29e204e68f72eb0197b2",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122117507565467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122117507565467310",
+      "title": "L’Ajuntament i l’equip redactor avancen en la definició del projecte del Teatre Defensora",
+      "post_url": "https://ajsoller.net/ca/noticies/lajuntament-i-lequip-redactor-avancen-en-la-definicio-del-projecte-del-teatre-defensora",
+      "source": "Ajuntament de Sóller",
+      "source_id": "ajuntament-soller-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-01T09:24:43.958237+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
-    "instagram_until": "2026-10-01T08:29:46.985316+00:00"
+    "instagram_until": "2026-10-01T11:24:36.298321+00:00"
   }
 }
