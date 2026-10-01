@@ -1,45 +1,64 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-01T09:24:13.877593+00:00",
+  "generated_at": "2026-10-01T10:23:54.378355+00:00",
   "entries": [
     {
-      "post_id": "9223531a938599ea4925",
+      "post_id": "78484fd5684ea52fb59f",
+      "title": "Blats i carxofes: Tornen els cursos per a adults de la Fundació Sa Nostra amb la participació del MUCBO",
+      "summary": "",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "source_type": "institution",
+      "category": "culture",
+      "language": "ca",
+      "published_at": "2026-10-01T10:02:14+00:00",
+      "original_url": "https://mucbo.org/blats-i-carxofes-tornen-els-cursos-per-a-adults-de-la-fundacio-sa-nostra-amb-la-participacio-del-mucbo/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/78484fd5684ea52fb59f.jpg"
+    },
+    {
+      "post_id": "071fafc237d4c5526dc6",
       "title": "Aviso. Nivel amarillo. Lluvias. Sierra Tramontana",
-      "summary": "Aviso de precipitación acumulada en una hora de nivel amarillo de 10:00 02-10-2026 CEST (UTC+2) a 19:59 02-10-2026 CEST (UTC+2).",
+      "summary": "Aviso de precipitación acumulada en una hora de nivel amarillo de 12:00 03-10-2026 CEST (UTC+2) a 19:59 03-10-2026 CEST (UTC+2).",
       "source": "AEMET · Serra de Tramuntana",
       "source_id": "aemet-avisos-mallorca",
       "source_type": "official",
       "category": "alerts",
       "language": "es",
-      "published_at": "2026-10-01T09:16:54+00:00",
-      "original_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261001091654_AFAZ645401PRP10218.xml",
+      "published_at": "2026-10-01T09:31:06+00:00",
+      "original_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261001093106_AFAZ645401PRP10318.xml",
       "content_policy": "short_factual_excerpt",
       "rights_status": "reuse_authorized_with_attribution",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/9223531a938599ea4925.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/071fafc237d4c5526dc6.jpg"
     },
     {
-      "post_id": "29e204e68f72eb0197b2",
-      "title": "L’Ajuntament i l’equip redactor avancen en la definició del projecte del Teatre Defensora",
-      "summary": "L’Ajuntament de Sóller va acollir ahir una reunió de treball amb l’equip redactor del projecte de reconstrucció i rehabilitació del Teatre Defensora Sollerense, amb l’objectiu d’analitzar les consideracions tècniques…",
-      "source": "Ajuntament de Sóller",
-      "source_id": "ajuntament-soller-noticies",
-      "source_type": "official",
-      "category": "culture",
+      "post_id": "9f2f3e9b7ce43715891e",
+      "title": "La Policia Local incorpora dos nous oficials",
+      "summary": "",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "source_type": "media",
+      "category": "news",
       "language": "ca",
-      "published_at": "2026-10-01T09:00:24+00:00",
-      "original_url": "https://ajsoller.net/ca/noticies/lajuntament-i-lequip-redactor-avancen-en-la-definicio-del-projecte-del-teatre-defensora",
-      "content_policy": "short_factual_excerpt",
-      "rights_status": "public_source_reviewed",
+      "published_at": "2026-10-01T09:29:39+00:00",
+      "original_url": "https://saveu.cat/noticies/la-policia-local-incorpora-dos-nous-oficials/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/29e204e68f72eb0197b2.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/9f2f3e9b7ce43715891e.jpg"
     }
   ]
 }
