@@ -156,7 +156,8 @@ def main() -> int:
     post_id = stable_id_from_key(PUBLISH_KEY) if PUBLISH_KEY else stable_id(TITLE, now)
 
     post_url = f"{SITE_URL}/noticies/{post_id}.html"
-    final_image_url = IMAGE_URL or ("" if ORIGINAL_URL else generate_social_card(post_id, TITLE, CATEGORY))
+    # Las referencias incrustadas no muestran esta tarjeta en la web, pero se conserva para Instagram cuando hay título propio.
+    final_image_url = IMAGE_URL or (generate_social_card(post_id, TITLE, CATEGORY) if TITLE else "")
 
     display_source = SOURCE_NAME or ("Publicació de xarxa" if ORIGINAL_URL else "Sóller Ara")
     source_id = "soller-ara" if not SOURCE_NAME else "manual-" + hashlib.sha1(SOURCE_NAME.casefold().encode("utf-8")).hexdigest()[:12]
