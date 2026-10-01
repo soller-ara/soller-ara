@@ -131,17 +131,17 @@ def main() -> int:
     if CONFIRMATION != "PUBLICAR":
         print("ERROR: cal escriure PUBLICAR per confirmar.", file=sys.stderr)
         return 2
-    if not TITLE:
+    if not ORIGINAL_URL and not TITLE:
         print("ERROR: falta el títol.", file=sys.stderr)
         return 2
-    if not BODY:
+    if not ORIGINAL_URL and not BODY:
         print("ERROR: falta el text de la publicació.", file=sys.stderr)
         return 2
     if CATEGORY not in ALLOWED_CATEGORIES:
         print(f"ERROR: categoria no vàlida: {CATEGORY}", file=sys.stderr)
         return 2
-    if bool(SOURCE_NAME) != bool(ORIGINAL_URL):
-        print("ERROR: font i enllaç original s'han d'indicar junts.", file=sys.stderr)
+    if SOURCE_NAME and not ORIGINAL_URL:
+        print("ERROR: la font requereix un enllaç original.", file=sys.stderr)
         return 2
     if ORIGINAL_URL:
         parsed_original = urlparse(ORIGINAL_URL)
@@ -156,9 +156,9 @@ def main() -> int:
     post_id = stable_id_from_key(PUBLISH_KEY) if PUBLISH_KEY else stable_id(TITLE, now)
 
     post_url = f"{SITE_URL}/noticies/{post_id}.html"
-    final_image_url = IMAGE_URL or generate_social_card(post_id, TITLE, CATEGORY)
+    final_image_url = IMAGE_URL or ("" if ORIGINAL_URL else generate_social_card(post_id, TITLE, CATEGORY))
 
-    display_source = SOURCE_NAME or "Sóller Ara"
+    display_source = SOURCE_NAME or ("Publicació de xarxa" if ORIGINAL_URL else "Sóller Ara")
     source_id = "soller-ara" if not SOURCE_NAME else "manual-" + hashlib.sha1(SOURCE_NAME.casefold().encode("utf-8")).hexdigest()[:12]
     post = {
         "id": post_id,
@@ -183,7 +183,7 @@ def main() -> int:
         post["media_type"] = "image"
 
     DETAIL_DIR.mkdir(parents=True, exist_ok=True)
-    safe_title = html.escape(TITLE, quote=True)
+    safe_title = html.escape(TITLE or "Publicació de xarxa", quote=True)
     safe_body = html.escape(BODY, quote=True)
     body_html = "<br />".join(safe_body.splitlines())
     safe_url = html.escape(post_url, quote=True)
