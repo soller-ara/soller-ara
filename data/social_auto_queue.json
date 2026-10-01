@@ -1,6 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-10-01T06:29:20.347709+00:00",
+  "entries": [
+    {
+      "post_id": "27669c3b6f0ab01f3441",
+      "title": "L’Ajuntament de Sóller renova els convenis de col·laboració amb quatre entitats socials",
+      "summary": "L’Ajuntament de Sóller ha renovat, un any més, els convenis de col·laboració amb Acció Social, Creu Roja, Deixalles i la Fundació Miró Pastor, amb l’objectiu de donar continuïtat a la feina conjunta que es desenvolupa en…",
+      "source": "Ajuntament de Sóller",
+      "source_id": "ajuntament-soller-noticies",
+      "source_type": "official",
+      "category": "services",
+      "language": "ca",
+      "published_at": "2026-10-01T06:23:41+00:00",
+      "original_url": "https://ajsoller.net/ca/noticies/lajuntament-de-soller-renova-els-convenis-de-collaboracio-amb-quatre-entitats-socials",
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "public_source_reviewed",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/27669c3b6f0ab01f3441.jpg"
+    }
+  ]
 }
