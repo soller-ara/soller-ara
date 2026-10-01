@@ -131,7 +131,7 @@ def render_detail(post: dict) -> None:
     DETAIL_DIR.mkdir(parents=True, exist_ok=True)
 
     post_id = post["id"]
-    title = str(post.get("title") or "")
+    title = str(post.get("title") or "Publicació de xarxa")
     body = str(post.get("summary") or "")
     language = str(post.get("language") or "ca")
     published_at = str(post.get("published_at") or "")
@@ -212,7 +212,10 @@ def main() -> int:
     if CONFIRMATION != "GUARDAR":
         print("ERROR: cal escriure GUARDAR per confirmar.", file=sys.stderr)
         return 2
-    if not POST_ID or not TITLE or not BODY:
+    if not POST_ID:
+        print("ERROR: falta la publicació.", file=sys.stderr)
+        return 2
+    if CONTENT_TYPE != "social_link" and (not TITLE or not BODY):
         print("ERROR: falten dades obligatòries.", file=sys.stderr)
         return 2
     if CATEGORY not in ALLOWED_CATEGORIES or LANGUAGE not in ALLOWED_LANGUAGES:
@@ -232,12 +235,14 @@ def main() -> int:
     old_media = str(target.get("media_url") or "")
     if IMAGE_URL:
         final_image = IMAGE_URL
+    elif CONTENT_TYPE == "social_link" and ORIGINAL_URL:
+        final_image = ""
     elif is_generated_image(POST_ID, old_media):
         final_image = generate_social_card(POST_ID, TITLE, CATEGORY)
     else:
         final_image = old_media
 
-    final_source = SOURCE_NAME or target.get("source") or "Sóller Ara"
+    final_source = SOURCE_NAME or target.get("source") or ("Publicació de xarxa" if ORIGINAL_URL else "Sóller Ara")
     final_original = ORIGINAL_URL or target.get("original_url") or ""
     updated = dict(target)
     updated.update({
