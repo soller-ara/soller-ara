@@ -491,6 +491,8 @@ function renderFeed() {
     const safeUrl = post.url || "#";
     const originalUrl = post.original_url || "";
     const officialPreview = renderOfficialLinkPreview(post);
+    const authorizedPoster = renderAuthorizedPoster(post);
+    const originalEmbed = renderManualOriginalEmbed(post);
     const socialEmbed = renderSocialEmbed(post);
     const socialLabel = post.source_type === "social" && post.platform
       ? `<span class="social-platform">${escapeHtml(post.platform)}</span>`
@@ -511,6 +513,8 @@ function renderFeed() {
           <h3>${escapeHtml(post.title || "")}</h3>
           ${post.summary ? `<p${post.source_type === "own" && post.original_url ? ' class="manual-link-summary"' : ""}>${escapeHtml(post.summary)}</p>` : ""}
           ${officialPreview}
+          ${authorizedPoster}
+          ${originalEmbed}
           ${socialEmbed}
           ${relatedHtml}
           <div class="card-actions">
@@ -583,6 +587,53 @@ function renderOfficialLinkPreview(post) {
   }
 }
 
+function getEmbeddablePlatform(url) {
+  try {
+    const parsed = new URL(url);
+    const host = parsed.hostname.toLowerCase().replace(/^www\./, "");
+    const path = parsed.pathname.toLowerCase();
+
+    if ((host === "facebook.com" || host.endsWith(".facebook.com") || host === "fb.watch")
+        && (/\/(posts|permalink\.php|photo\.php|videos|reel|watch|share)\b/.test(path) || host === "fb.watch")) {
+      return "facebook";
+    }
+    if ((host === "instagram.com" || host.endsWith(".instagram.com"))
+        && /^\/(p|reel|tv)\//.test(path)) return "instagram";
+    if ((host === "x.com" || host.endsWith(".x.com") || host === "twitter.com" || host.endsWith(".twitter.com"))
+        && /\/status\//.test(path)) return "x";
+    if (host === "tiktok.com" || host.endsWith(".tiktok.com")) return "tiktok";
+    if (host === "youtu.be" || host.endsWith(".youtu.be") || host === "youtube.com" || host.endsWith(".youtube.com")) return "youtube";
+    if (host === "vimeo.com" || host.endsWith(".vimeo.com")) return "vimeo";
+  } catch (_) {}
+  return "";
+}
+
+function extractVimeoId(url) {
+  try {
+    const parts = new URL(url).pathname.split("/").filter(Boolean);
+    const id = [...parts].reverse().find((item) => /^\d+$/.test(item));
+    return id || "";
+  } catch (_) {
+    return "";
+  }
+}
+
+function renderAuthorizedPoster(post) {
+  if (post.source_type !== "own" || post.content_type !== "event_poster"
+      || post.media_type !== "image" || !post.image_allowed || !post.media_url) return "";
+  return `
+    <div class="social-embed social-embed-image own-post-image event-poster-image">
+      <img src="${escapeAttribute(post.media_url)}" alt="" loading="lazy" referrerpolicy="no-referrer" />
+    </div>`;
+}
+
+function renderManualOriginalEmbed(post) {
+  if (post.source_type !== "own" || !post.original_url || post.content_type === "event_poster") return "";
+  const platform = getEmbeddablePlatform(post.original_url);
+  if (!platform) return "";
+  return renderPlatformEmbed({ ...post, source_type: "social", platform, url: post.original_url });
+}
+
 function renderSocialEmbed(post) {
   if (post.source_type === "own" && !post.original_url && post.media_type === "image" && post.media_url) {
     return `
@@ -592,8 +643,37 @@ function renderSocialEmbed(post) {
   }
 
   if (post.source_type !== "social" || !post.url) return "";
+  return renderPlatformEmbed(post);
+}
 
+function renderPlatformEmbed(post) {
   const platform = String(post.platform || "").toLowerCase();
+
+  if (platform === "facebook") {
+    try {
+      const original = new URL(post.url);
+      const path = original.pathname.toLowerCase();
+      const isVideo = /\/(videos|reel|watch)\b/.test(path) || original.hostname.toLowerCase().replace(/^www\./, "") === "fb.watch";
+      const plugin = new URL(isVideo
+        ? "https://www.facebook.com/plugins/video.php"
+        : "https://www.facebook.com/plugins/post.php");
+      plugin.searchParams.set("href", original.href);
+      plugin.searchParams.set("show_text", "true");
+      plugin.searchParams.set("width", "500");
+      return `
+        <div class="social-embed social-embed-facebook">
+          <iframe
+            src="${escapeAttribute(plugin.href)}"
+            title="${escapeAttribute(post.title || "Publicació de Facebook")}"
+            loading="lazy"
+            scrolling="no"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>`;
+    } catch (_) {
+      return "";
+    }
+  }
 
   if (platform === "x" || platform === "twitter") {
     return `
@@ -638,6 +718,20 @@ function renderSocialEmbed(post) {
           title="${escapeAttribute(post.title || "YouTube")}"
           loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>`;
+  }
+
+  if (platform === "vimeo") {
+    const id = extractVimeoId(post.url);
+    if (!id) return "";
+    return `
+      <div class="social-embed social-embed-video">
+        <iframe
+          src="https://player.vimeo.com/video/${escapeAttribute(id)}"
+          title="${escapeAttribute(post.title || "Vimeo")}"
+          loading="lazy"
+          allow="autoplay; fullscreen; picture-in-picture"
           allowfullscreen></iframe>
       </div>`;
   }
