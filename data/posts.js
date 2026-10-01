@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-10-01T21:21:48.736399+00:00",
+  "fetched_at": "2026-10-01T22:20:12.647851+00:00",
   "source_count": 37,
   "source_status": [
     {
@@ -127,7 +127,7 @@ window.SOLLER_ARA_DATA = {
       "source_type": "official",
       "method": "html_listing_regex",
       "ok": true,
-      "count": 2,
+      "count": 1,
       "error": null
     },
     {
@@ -339,7 +339,7 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 152,
+  "post_count": 151,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
@@ -2028,26 +2028,6 @@ window.SOLLER_ARA_DATA = {
       "media_type": null,
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "0a41bed88a15266b3b3a",
-      "category": "alerts",
-      "source_id": "tib-avisos-soller",
-      "source": "TIB · Avisos",
-      "source_type": "official",
-      "language": "ca",
-      "locality": "Sóller / Port de Sóller / Fornalutx",
-      "published_at": "2026-09-23T12:00:00+00:00",
-      "title": "1 de octubre: Cambio de dársena de la línea 204 en la Estación Intermodal",
-      "summary": "A partir del jueves 1 de octubre, la línea 204 Port de Sóller - Palma modifica su dársena de salida de la Estación Intermodal y pasa a salir desde la dársena 28 .",
-      "url": "https://www.tib.org/es/w/avis-canvi-darsenes-l204",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "short_factual_excerpt",
-      "rights_status": "official_public_source",
       "image_allowed": false,
       "related_sources": []
     },
