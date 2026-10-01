@@ -12,12 +12,12 @@ on:
         required: true
         type: string
       title:
-        description: 'Títol'
-        required: true
+        description: 'Títol (opcional para enlace incrustado)'
+        required: false
         type: string
       body:
-        description: 'Text'
-        required: true
+        description: 'Text (opcional para enlace incrustado)'
+        required: false
         type: string
       category:
         description: 'Categoria'
