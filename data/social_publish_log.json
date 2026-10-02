@@ -3544,9 +3544,23 @@
       "post_url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-20b544a0b3168b6e.html",
       "recorded_at": "2026-10-02T07:08:51.395701+00:00",
       "error": "Application request limit reached [code=4, subcode=2207051]"
+    },
+    {
+      "post_id": "a2239e7d610ae8b95af0",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122117952993467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122117952993467310",
+      "title": "“Tornar a tocar junts és una manera de recuperar aquell ambient que hi havia abans»",
+      "post_url": "https://saveu.cat/entrevistes/tornar-a-tocar-junts-es-una-manera-de-recuperar-aquell-ambient-que-hi-havia-abans/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-02T07:24:19.938911+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
-    "instagram_until": "2026-10-01T21:24:41.779626+00:00"
+    "instagram_until": "2026-10-02T09:24:33.757068+00:00"
   }
 }
