@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "66f67f16f67b4930",
+      "timestamp": "2026-10-02T09:56:07.002633+00:00",
+      "action": "publish",
+      "area": "publications",
+      "target_id": "soller-ara-6b014b2344ba1428",
+      "title": "Oferta de feina",
+      "detail": "Publicación propia creada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "582e5ee20583d50f",
       "timestamp": "2026-10-02T08:53:17.045925+00:00",
       "action": "publish",

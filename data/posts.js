@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-10-02T09:24:26.719604+00:00",
+  "fetched_at": "2026-10-02T09:56:06.926982+00:00",
   "source_count": 37,
   "source_status": [
     {
@@ -339,10 +339,29 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 153,
+  "post_count": 154,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "soller-ara-6b014b2344ba1428",
+      "category": "services",
+      "source_id": "manual-4f785079a49c",
+      "source": "Som joves",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-02T09:56:06.926982+00:00",
+      "title": "Oferta de feina",
+      "summary": "OFERTA DE FEINA A SÓLLER 🧐 🧐\nLLOP GESTIÓ cerca 👉 SOCORRISTE per Poliesportiu Son Angelats.",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-6b014b2344ba1428.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": true,
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1562357782585958&id=100064352547067&hpir=1",
+      "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-6b014b2344ba1428.jpg",
+      "media_type": "image"
+    },
     {
       "id": "cec897ea4198ab89ac83",
       "category": "news",
