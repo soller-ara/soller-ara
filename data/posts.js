@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-10-02T06:58:35.709475+00:00",
+  "fetched_at": "2026-10-02T07:04:30.111494+00:00",
   "source_count": 37,
   "source_status": [
     {
@@ -339,7 +339,7 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 148,
+  "post_count": 149,
   "related_pair_count": 0,
   "errors": [
     {
@@ -388,6 +388,25 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "posts": [
+    {
+      "id": "soller-ara-b88e49826baa1d3c",
+      "category": "services",
+      "source_id": "manual-8af0f8a160aa",
+      "source": "Ajuntament de Deià",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-02T07:04:30.111494+00:00",
+      "title": "Ajuntament de Deià -",
+      "summary": "Recordatori recollida porta porta.",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-b88e49826baa1d3c.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": true,
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1525306532971069&id=100064752094509&hpir=1",
+      "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-b88e49826baa1d3c.jpg",
+      "media_type": "image"
+    },
     {
       "id": "soller-ara-b73b6be0b00a9022",
       "category": "politics",
