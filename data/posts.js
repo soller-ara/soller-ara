@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-10-02T14:25:23.280900+00:00",
+  "fetched_at": "2026-10-02T15:25:05.761785+00:00",
   "source_count": 37,
   "source_status": [
     {
@@ -100,7 +100,7 @@ window.SOLLER_ARA_DATA = {
       "source_type": "media",
       "method": "freenewsapi_search",
       "ok": true,
-      "count": 10,
+      "count": 9,
       "error": null
     },
     {
@@ -339,7 +339,7 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 157,
+  "post_count": 156,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
@@ -3497,26 +3497,6 @@ window.SOLLER_ARA_DATA = {
       "title": "Sóller se salva de la huelga de limpieza tras un acuerdo con los trabajadores",
       "summary": "",
       "url": "https://www.ultimahora.es/noticias/part-forana/2026/08/03/2682745/soller-salva-huelga-limpieza-tras-acuerdo-los-trabajadores.html",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "2fad0c8b304f5a2ed714",
-      "category": "news",
-      "source_id": "diario-mallorca-soller",
-      "source": "Diario de Mallorca",
-      "source_type": "media",
-      "language": "es",
-      "locality": "Sóller / Serra de Tramuntana",
-      "published_at": "2026-08-03T15:10:39+00:00",
-      "title": "Los restaurantes del Port de Sóller afrontan el eclipse con incertidumbre por las restricciones de tráfico",
-      "summary": "",
-      "url": "https://www.diariodemallorca.es/part-forana/2026/08/03/restaurantes-port-soller-afrontan-eclipse-133065764.html",
       "platform": null,
       "account": null,
       "media_type": null,
