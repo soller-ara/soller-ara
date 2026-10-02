@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-10-02T01:22:33.026318+00:00",
+  "fetched_at": "2026-10-02T02:21:56.401077+00:00",
   "source_count": 37,
   "source_status": [
     {
@@ -63,9 +63,9 @@ window.SOLLER_ARA_DATA = {
       "name": "IB3 Notícies · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "error": null
     },
     {
       "source_id": "goib-noticies-soller",
@@ -109,7 +109,7 @@ window.SOLLER_ARA_DATA = {
       "source_type": "media",
       "method": "html_listing_regex",
       "ok": true,
-      "count": 30,
+      "count": 29,
       "error": null
     },
     {
@@ -144,9 +144,9 @@ window.SOLLER_ARA_DATA = {
       "name": "Can Prunera · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "error": null
     },
     {
       "source_id": "youtube-aires-sollerics",
@@ -171,9 +171,9 @@ window.SOLLER_ARA_DATA = {
       "name": "Club Vòlei Sóller · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "error": null
     },
     {
       "source_id": "youtube-ballades-mallorca-soller",
@@ -189,36 +189,36 @@ window.SOLLER_ARA_DATA = {
       "name": "Tramuntana XXI · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "error": null
     },
     {
       "source_id": "youtube-gob-mallorca-soller",
       "name": "GOB Mallorca · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "error": null
     },
     {
       "source_id": "youtube-museu-maritim-soller",
       "name": "Museu Marítim de Mallorca · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "error": null
     },
     {
       "source_id": "youtube-serra-tramuntana",
       "name": "Serra de Tramuntana Patrimoni Mundial · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "error": null
     },
     {
       "source_id": "youtube-consell-mallorca-soller",
@@ -339,17 +339,9 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 150,
+  "post_count": 149,
   "related_pair_count": 0,
   "errors": [
-    {
-      "source_id": "youtube-ib3-noticies-soller",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-can-prunera",
-      "error": "HTTP Error 404: Not Found"
-    },
     {
       "source_id": "youtube-aires-sollerics",
       "error": "HTTP Error 404: Not Found"
@@ -359,27 +351,7 @@ window.SOLLER_ARA_DATA = {
       "error": "HTTP Error 404: Not Found"
     },
     {
-      "source_id": "youtube-club-volei-soller",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
       "source_id": "youtube-ballades-mallorca-soller",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-tramuntana-xxi",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-gob-mallorca-soller",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-museu-maritim-soller",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-serra-tramuntana",
       "error": "HTTP Error 404: Not Found"
     },
     {
@@ -3399,26 +3371,6 @@ window.SOLLER_ARA_DATA = {
       "title": "Detenido en Sóller por fotografiar a una socorrista",
       "summary": "",
       "url": "https://mallorcadirecto.com/comarca-de-ponent/soller/detenido-soller-frances-fotografiar-socorrista",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "8b3599b8d3894971dc94",
-      "category": "news",
-      "source_id": "ultima-hora-soller",
-      "source": "Última Hora",
-      "source_type": "media",
-      "language": "es",
-      "locality": "Sóller",
-      "published_at": "2026-08-03T03:48:00+02:00",
-      "title": "Moviment Jove de Sóller: «La manifestación no es en contra de los turistas, sino contra el modelo económico»",
-      "summary": "",
-      "url": "https://www.ultimahora.es/noticias/part-forana/2026/08/03/2682191/manifestacion-contra-turistas-sino-contra-modelo-economico.html",
       "platform": null,
       "account": null,
       "media_type": null,
