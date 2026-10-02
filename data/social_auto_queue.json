@@ -1,8 +1,46 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-02T10:21:59.142809+00:00",
+  "generated_at": "2026-10-02T11:22:23.444090+00:00",
   "entries": [
+    {
+      "post_id": "f969a237e9c26dd0239e",
+      "title": "El ‘tardeo’ per a majors de 60 anys, avui a partir de les 19 hores a Plaça amb música i balls",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "culture",
+      "language": "ca",
+      "published_at": "2026-10-02T12:48:00+02:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/10/02/354607/tardeo-per-majors-anys-avui-partir-les-hores-placa-amb-musica-balls.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/f969a237e9c26dd0239e.jpg"
+    },
+    {
+      "post_id": "cb049076edc66abf508b",
+      "title": "Beudanticeras revoili",
+      "summary": "",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "source_type": "institution",
+      "category": "culture",
+      "language": "ca",
+      "published_at": "2026-10-02T10:33:59+00:00",
+      "original_url": "https://mucbo.org/beudanticeras-revoili/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/cb049076edc66abf508b.jpg"
+    },
     {
       "post_id": "0c9b7b35be3ed999910f",
       "title": "Aviso. Nivel amarillo. Lluvias. Sierra Tramontana",
@@ -17,48 +55,9 @@
       "content_policy": "short_factual_excerpt",
       "rights_status": "reuse_authorized_with_attribution",
       "platforms": [
-        "facebook",
         "instagram"
       ],
       "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/0c9b7b35be3ed999910f.jpg"
-    },
-    {
-      "post_id": "26cce4caa3b3f8b7f5d8",
-      "title": "Arranca el desmuntatge del Fantasio abans de la demolició",
-      "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
-      "source_type": "media",
-      "category": "services",
-      "language": "ca",
-      "published_at": "2026-10-02T10:00:00+00:00",
-      "original_url": "https://saveu.cat/noticies/arranca-el-desmuntatge-del-fantasio-abans-de-la-demolicio/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/26cce4caa3b3f8b7f5d8.jpg"
-    },
-    {
-      "post_id": "f1e4cb879096bce177be",
-      "title": "Fins a set partits es presentaran a les elecciones municipals",
-      "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-10-02T11:19:00+02:00",
-      "original_url": "https://www.elsoller.cat/soller/local/2026/10/02/354605/fins-set-partits-presentaran-les-elecciones-municipals.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/f1e4cb879096bce177be.jpg"
     }
   ]
 }
