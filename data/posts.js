@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-10-02T07:08:22.871572+00:00",
+  "fetched_at": "2026-10-02T07:24:01.546853+00:00",
   "source_count": 37,
   "source_status": [
     {
@@ -54,18 +54,18 @@ window.SOLLER_ARA_DATA = {
       "name": "Ajuntament de Sóller · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
-      "count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "ok": true,
+      "count": 2,
+      "error": null
     },
     {
       "source_id": "youtube-ib3-noticies-soller",
       "name": "IB3 Notícies · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "error": null
     },
     {
       "source_id": "goib-noticies-soller",
@@ -144,45 +144,45 @@ window.SOLLER_ARA_DATA = {
       "name": "Can Prunera · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "error": null
     },
     {
       "source_id": "youtube-aires-sollerics",
       "name": "Aires Sollerics · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "error": null
     },
     {
       "source_id": "youtube-xeremiers-soller",
       "name": "Xeremiers de Sóller · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "error": null
     },
     {
       "source_id": "youtube-club-volei-soller",
       "name": "Club Vòlei Sóller · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "error": null
     },
     {
       "source_id": "youtube-ballades-mallorca-soller",
       "name": "Ballades A Mallorca · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "error": null
     },
     {
       "source_id": "youtube-tramuntana-xxi",
@@ -198,9 +198,9 @@ window.SOLLER_ARA_DATA = {
       "name": "GOB Mallorca · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "error": null
     },
     {
       "source_id": "youtube-museu-maritim-soller",
@@ -216,18 +216,18 @@ window.SOLLER_ARA_DATA = {
       "name": "Serra de Tramuntana Patrimoni Mundial · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "error": null
     },
     {
       "source_id": "youtube-consell-mallorca-soller",
       "name": "Consell de Mallorca · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "error": null
     },
     {
       "source_id": "mucbo-noticies",
@@ -315,9 +315,9 @@ window.SOLLER_ARA_DATA = {
       "name": "SUS Mallorca · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "error": null
     },
     {
       "source_id": "partido-popular-soller",
@@ -334,59 +334,14 @@ window.SOLLER_ARA_DATA = {
       "source_type": "own",
       "method": "manual",
       "ok": true,
-      "count": 21,
+      "count": 24,
       "error": null
     }
   ],
   "social_integration_status": [],
-  "post_count": 150,
+  "post_count": 152,
   "related_pair_count": 0,
-  "errors": [
-    {
-      "source_id": "youtube-ajuntament-soller",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-ib3-noticies-soller",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-can-prunera",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-aires-sollerics",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-xeremiers-soller",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-club-volei-soller",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-ballades-mallorca-soller",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-gob-mallorca-soller",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-serra-tramuntana",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-consell-mallorca-soller",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-sus-mallorca-soller",
-      "error": "HTTP Error 404: Not Found"
-    }
-  ],
+  "errors": [],
   "posts": [
     {
       "id": "soller-ara-20b544a0b3168b6e",
@@ -405,7 +360,8 @@ window.SOLLER_ARA_DATA = {
       "image_allowed": true,
       "original_url": "https://www.facebook.com/story.php?story_fbid=1527588922748491&id=100064921920770&hpir=1",
       "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-20b544a0b3168b6e.jpg",
-      "media_type": "image"
+      "media_type": "image",
+      "related_sources": []
     },
     {
       "id": "soller-ara-b88e49826baa1d3c",
@@ -424,7 +380,30 @@ window.SOLLER_ARA_DATA = {
       "image_allowed": true,
       "original_url": "https://www.facebook.com/story.php?story_fbid=1525306532971069&id=100064752094509&hpir=1",
       "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-b88e49826baa1d3c.jpg",
-      "media_type": "image"
+      "media_type": "image",
+      "related_sources": []
+    },
+    {
+      "id": "a2239e7d610ae8b95af0",
+      "category": "news",
+      "source_id": "sa-veu-soller",
+      "source": "Sa Veu de Sóller",
+      "source_type": "media",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-02T07:01:18+00:00",
+      "title": "“Tornar a tocar junts és una manera de recuperar aquell ambient que hi havia abans»",
+      "summary": "",
+      "url": "https://saveu.cat/entrevistes/tornar-a-tocar-junts-es-una-manera-de-recuperar-aquell-ambient-que-hi-havia-abans/",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "image_allowed": false,
+      "embed_type": "official_oembed",
+      "embed_url": "https://saveu.cat/entrevistes/tornar-a-tocar-junts-es-una-manera-de-recuperar-aquell-ambient-que-hi-havia-abans/embed/",
+      "related_sources": []
     },
     {
       "id": "soller-ara-b73b6be0b00a9022",
@@ -443,7 +422,8 @@ window.SOLLER_ARA_DATA = {
       "image_allowed": true,
       "original_url": "https://www.facebook.com/story.php?story_fbid=1549699917191902&id=100064557255473&hpir=1",
       "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-b73b6be0b00a9022.jpg",
-      "media_type": "image"
+      "media_type": "image",
+      "related_sources": []
     },
     {
       "id": "soller-ara-1a1810a721b7f094",
@@ -1510,28 +1490,6 @@ window.SOLLER_ARA_DATA = {
       "related_sources": []
     },
     {
-      "id": "20ea96159fce1d04e40a",
-      "category": "alerts",
-      "source_id": "sa-veu-soller",
-      "source": "Sa Veu de Sóller",
-      "source_type": "media",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-09-28T13:18:51+00:00",
-      "title": "Les zones verdes d’aparcament arriben al carrer de Sa Mar",
-      "summary": "",
-      "url": "https://saveu.cat/noticies/les-zones-verdes-daparcament-arriben-al-carrer-de-sa-mar/",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
-      "embed_type": "official_oembed",
-      "embed_url": "https://saveu.cat/noticies/les-zones-verdes-daparcament-arriben-al-carrer-de-sa-mar/embed/",
-      "related_sources": []
-    },
-    {
       "id": "07926301fc5eaaf55c53",
       "category": "culture",
       "source_id": "ultima-hora-soller",
@@ -2335,6 +2293,26 @@ window.SOLLER_ARA_DATA = {
       "related_sources": []
     },
     {
+      "id": "85f85df365d3bcdba1c3",
+      "category": "agenda",
+      "source_id": "youtube-ajuntament-soller",
+      "source": "Ajuntament de Sóller · YouTube",
+      "source_type": "social",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-09-16T13:08:28+00:00",
+      "title": "Ple ordinari de l'Ajuntament de Sóller, celebrada el 16/9/2026 (Part 2 de la sessió del 9/9/2026).",
+      "summary": "Vídeo publicat per Ajuntament de Sóller · YouTube relacionat amb una sessió plenària o activitat municipal.",
+      "url": "https://www.youtube.com/watch?v=-c349w_HKS4",
+      "platform": "YouTube",
+      "account": "@ajuntamentdesoller_",
+      "media_type": "video",
+      "content_policy": "generated_social_summary",
+      "rights_status": "platform_embed",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
       "id": "c2c81b2f37ad4b716814",
       "category": "news",
       "source_id": "diario-mallorca-soller",
@@ -2431,6 +2409,26 @@ window.SOLLER_ARA_DATA = {
       "media_type": null,
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
+      "id": "afc2f48c871c4c51a1c9",
+      "category": "news",
+      "source_id": "youtube-ajuntament-soller",
+      "source": "Ajuntament de Sóller · YouTube",
+      "source_type": "social",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-09-09T12:39:11+00:00",
+      "title": "Sessió plenària ordinària de l'Ajuntament de Sóller, celebrada el 9 de setembre de 2026.",
+      "summary": "Vídeo publicat per Ajuntament de Sóller · YouTube relacionat amb una sessió plenària o activitat municipal.",
+      "url": "https://www.youtube.com/watch?v=Ej0M-wttjM0",
+      "platform": "YouTube",
+      "account": "@ajuntamentdesoller_",
+      "media_type": "video",
+      "content_policy": "generated_social_summary",
+      "rights_status": "platform_embed",
       "image_allowed": false,
       "related_sources": []
     },
