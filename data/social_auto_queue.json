@@ -1,7 +1,7 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-02T15:25:05.934583+00:00",
+  "generated_at": "2026-10-02T16:23:13.744593+00:00",
   "entries": [
     {
       "post_id": "50c79ac0ba99a25582b5",
@@ -38,24 +38,6 @@
         "instagram"
       ],
       "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/cb049076edc66abf508b.jpg"
-    },
-    {
-      "post_id": "26cce4caa3b3f8b7f5d8",
-      "title": "Arranca el desmuntatge del Fantasio abans de la demolició",
-      "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
-      "source_type": "media",
-      "category": "services",
-      "language": "ca",
-      "published_at": "2026-10-02T10:00:00+00:00",
-      "original_url": "https://saveu.cat/noticies/arranca-el-desmuntatge-del-fantasio-abans-de-la-demolicio/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/26cce4caa3b3f8b7f5d8.jpg"
     }
   ]
 }
