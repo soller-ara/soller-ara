@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-10-02T07:24:01.546853+00:00",
+  "fetched_at": "2026-10-02T08:24:59.698813+00:00",
   "source_count": 37,
   "source_status": [
     {
@@ -343,6 +343,28 @@ window.SOLLER_ARA_DATA = {
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "1d30dc72229adf14a191",
+      "category": "services",
+      "source_id": "sa-veu-soller",
+      "source": "Sa Veu de Sóller",
+      "source_type": "media",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-02T08:00:00+00:00",
+      "title": "El Consell assumeix el manteniment de camins de muntanya de la vall",
+      "summary": "",
+      "url": "https://saveu.cat/noticies/el-consell-assumeix-el-manteniment-de-camins-de-muntanya-de-la-vall/",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "image_allowed": false,
+      "embed_type": "official_oembed",
+      "embed_url": "https://saveu.cat/noticies/el-consell-assumeix-el-manteniment-de-camins-de-muntanya-de-la-vall/embed/",
+      "related_sources": []
+    },
     {
       "id": "soller-ara-20b544a0b3168b6e",
       "category": "social",
@@ -1423,28 +1445,6 @@ window.SOLLER_ARA_DATA = {
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "8d39d8b64d1b4877225d",
-      "category": "services",
-      "source_id": "sa-veu-soller",
-      "source": "Sa Veu de Sóller",
-      "source_type": "media",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-09-28T15:33:45+00:00",
-      "title": "L’Escola Oficial d’Idiomes inicia la seva activitat a Sóller",
-      "summary": "",
-      "url": "https://saveu.cat/noticies/lescola-oficial-didiomes-inicia-la-seva-activitat-a-soller/",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
-      "embed_type": "official_oembed",
-      "embed_url": "https://saveu.cat/noticies/lescola-oficial-didiomes-inicia-la-seva-activitat-a-soller/embed/",
       "related_sources": []
     },
     {
