@@ -1,7 +1,7 @@
 {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-10-02T16:23:13.597817+00:00",
+  "fetched_at": "2026-10-02T17:22:40.131811+00:00",
   "source_count": 37,
   "source_status": [
     {
@@ -109,7 +109,7 @@
       "source_type": "media",
       "method": "html_listing_regex",
       "ok": true,
-      "count": 29,
+      "count": 28,
       "error": null
     },
     {
@@ -339,7 +339,7 @@
     }
   ],
   "social_integration_status": [],
-  "post_count": 156,
+  "post_count": 155,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
@@ -3477,26 +3477,6 @@
       "title": "Los olivares, el mejor refugio de los 'sollerics' para contemplar el eclipse lejos de la masificación",
       "summary": "",
       "url": "https://www.diariodemallorca.es/part-forana/2026/08/04/olivares-mejor-refugio-sollerics-contemplar-133068249.html",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "5617e4d33dfb54a1b7ee",
-      "category": "commerce",
-      "source_id": "ultima-hora-soller",
-      "source": "Última Hora",
-      "source_type": "media",
-      "language": "es",
-      "locality": "Sóller",
-      "published_at": "2026-08-03T18:22:20+02:00",
-      "title": "Sóller se salva de la huelga de limpieza tras un acuerdo con los trabajadores",
-      "summary": "",
-      "url": "https://www.ultimahora.es/noticias/part-forana/2026/08/03/2682745/soller-salva-huelga-limpieza-tras-acuerdo-los-trabajadores.html",
       "platform": null,
       "account": null,
       "media_type": null,

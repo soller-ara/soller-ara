@@ -1,7 +1,7 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-02T16:23:13.744593+00:00",
+  "generated_at": "2026-10-02T17:22:40.262208+00:00",
   "entries": [
     {
       "post_id": "50c79ac0ba99a25582b5",
@@ -20,24 +20,6 @@
         "instagram"
       ],
       "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/50c79ac0ba99a25582b5.jpg"
-    },
-    {
-      "post_id": "cb049076edc66abf508b",
-      "title": "Beudanticeras revoili",
-      "summary": "",
-      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
-      "source_id": "mucbo-noticies",
-      "source_type": "institution",
-      "category": "culture",
-      "language": "ca",
-      "published_at": "2026-10-02T10:33:59+00:00",
-      "original_url": "https://mucbo.org/beudanticeras-revoili/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "link_only_no_media_license",
-      "platforms": [
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/cb049076edc66abf508b.jpg"
     }
   ]
 }
