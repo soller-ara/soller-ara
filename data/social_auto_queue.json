@@ -1,64 +1,64 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-02T09:24:27.005234+00:00",
+  "generated_at": "2026-10-02T10:21:59.142809+00:00",
   "entries": [
     {
-      "post_id": "cec897ea4198ab89ac83",
-      "title": "Sóller celebra avui el Dia de la Gent Gran amb un horabauxa per als majors de 60 anys",
+      "post_id": "0c9b7b35be3ed999910f",
+      "title": "Aviso. Nivel amarillo. Lluvias. Sierra Tramontana",
+      "summary": "Aviso de precipitación acumulada en una hora de nivel amarillo de 12:00 04-10-2026 CEST (UTC+2) a 19:59 04-10-2026 CEST (UTC+2).",
+      "source": "AEMET · Serra de Tramuntana",
+      "source_id": "aemet-avisos-mallorca",
+      "source_type": "official",
+      "category": "alerts",
+      "language": "es",
+      "published_at": "2026-10-02T10:14:15+00:00",
+      "original_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261002101415_AFAZ645401PRP10418.xml",
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "reuse_authorized_with_attribution",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/0c9b7b35be3ed999910f.jpg"
+    },
+    {
+      "post_id": "26cce4caa3b3f8b7f5d8",
+      "title": "Arranca el desmuntatge del Fantasio abans de la demolició",
       "summary": "",
       "source": "Sa Veu de Sóller",
       "source_id": "sa-veu-soller",
       "source_type": "media",
-      "category": "news",
+      "category": "services",
       "language": "ca",
-      "published_at": "2026-10-02T09:18:14+00:00",
-      "original_url": "https://saveu.cat/noticies/soller-celebra-avui-el-dia-de-la-gent-gran-amb-un-horabauxa-per-als-majors-de-60-anys/",
+      "published_at": "2026-10-02T10:00:00+00:00",
+      "original_url": "https://saveu.cat/noticies/arranca-el-desmuntatge-del-fantasio-abans-de-la-demolicio/",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/cec897ea4198ab89ac83.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/26cce4caa3b3f8b7f5d8.jpg"
     },
     {
-      "post_id": "9c9e513e5805bd303a0f",
-      "title": "Un nou informe avala la creació d’una reserva marina a la costa de la Serra de Tramuntana",
-      "summary": "",
-      "source": "Fora Vila",
-      "source_id": "fora-vila-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-10-02T09:01:20+00:00",
-      "original_url": "https://www.foravila.net/area/serra-de-tramuntana/un-nou-informe-avala-la-creacio-duna-reserva-marina-a-la-costa-de-la-serra-de-tramuntana/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/9c9e513e5805bd303a0f.jpg"
-    },
-    {
-      "post_id": "fcc7ca2a839215bf9744",
-      "title": "«Un nedador feliç és un nedador ràpid»",
+      "post_id": "f1e4cb879096bce177be",
+      "title": "Fins a set partits es presentaran a les elecciones municipals",
       "summary": "",
       "source": "Setmanari Sóller",
       "source_id": "setmanari-soller",
       "source_type": "media",
-      "category": "sports",
+      "category": "news",
       "language": "ca",
-      "published_at": "2026-10-02T10:31:00+02:00",
-      "original_url": "https://www.elsoller.cat/soller/esports/2026/10/02/354601/nedador-felic-nedador-rapid.html",
+      "published_at": "2026-10-02T11:19:00+02:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/10/02/354605/fins-set-partits-presentaran-les-elecciones-municipals.html",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/fcc7ca2a839215bf9744.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/f1e4cb879096bce177be.jpg"
     }
   ]
 }
