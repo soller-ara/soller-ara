@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "f335d290feebd4b7",
+      "timestamp": "2026-10-02T07:08:22.957647+00:00",
+      "action": "publish",
+      "area": "publications",
+      "target_id": "soller-ara-20b544a0b3168b6e",
+      "title": "Amics Cans i Moixos Sóller",
+      "detail": "Publicación propia creada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "8ca0a1b0b83610ff",
       "timestamp": "2026-10-02T07:04:30.217024+00:00",
       "action": "publish",
