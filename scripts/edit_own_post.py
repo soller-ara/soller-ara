@@ -216,9 +216,6 @@ def generate_social_card(post_id: str, title: str, category: str) -> str:
 
     draw.text((310, 140), "SÓLLER ARA", font=category_font, fill=primary)
     draw.text((310, 200), category_label, font=footer_font, fill=accent)
-    draw_category_icon(draw, category, (790, 105, 970, 285), "#ffffff")
-    draw.rounded_rectangle((790, 105, 970, 285), radius=42, outline=accent, width=12)
-    # Redibuixem la icona damunt el fons de categoria per garantir contrast.
     draw.rounded_rectangle((790, 105, 970, 285), radius=42, fill=accent)
     draw_category_icon(draw, category, (790, 105, 970, 285), "#ffffff")
 
