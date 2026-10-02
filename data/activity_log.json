@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "9e055501a7ccf39f",
+      "timestamp": "2026-10-02T12:57:10.386604+00:00",
+      "action": "publish",
+      "area": "publications",
+      "target_id": "soller-ara-4e009d3424ac1d9c",
+      "title": "Tancament Carretera del Puig Major.",
+      "detail": "Publicación propia creada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "9e5cdf2140d14430",
       "timestamp": "2026-10-02T12:48:05.744975+00:00",
       "action": "edit",
