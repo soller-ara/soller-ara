@@ -3558,6 +3558,20 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-02T07:24:19.938911+00:00",
       "error": ""
+    },
+    {
+      "post_id": "1d30dc72229adf14a191",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122117974845467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122117974845467310",
+      "title": "El Consell assumeix el manteniment de camins de muntanya de la vall",
+      "post_url": "https://saveu.cat/noticies/el-consell-assumeix-el-manteniment-de-camins-de-muntanya-de-la-vall/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-02T08:25:19.082427+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
