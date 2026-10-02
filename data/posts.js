@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-10-02T08:39:37.542741+00:00",
+  "fetched_at": "2026-10-02T08:53:16.994489+00:00",
   "source_count": 37,
   "source_status": [
     {
@@ -339,10 +339,27 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 154,
+  "post_count": 155,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "soller-ara-ca6a0a53b4ebf9f1",
+      "category": "politics",
+      "source_id": "manual-6f5c15523a72",
+      "source": "Socialistes de Mallorca",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-02T08:53:16.994489+00:00",
+      "title": "",
+      "summary": "",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-ca6a0a53b4ebf9f1.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": false,
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1392419806337020&id=100067070424813&hpir=1"
+    },
     {
       "id": "soller-ara-65ff40bec3800e52",
       "category": "social",
