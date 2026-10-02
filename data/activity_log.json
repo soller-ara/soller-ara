@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "9e5cdf2140d14430",
+      "timestamp": "2026-10-02T12:48:05.744975+00:00",
+      "action": "edit",
+      "area": "publications",
+      "target_id": "soller-ara-d8b5c98dc2827f87",
+      "title": "Oferta de feina. Som joves.",
+      "detail": "Publicación propia editada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "723d3f79a43ead04",
       "timestamp": "2026-10-02T12:47:45.746299+00:00",
       "action": "publish",

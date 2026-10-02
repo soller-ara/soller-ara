@@ -364,7 +364,7 @@ window.SOLLER_ARA_DATA = {
     },
     {
       "id": "soller-ara-d8b5c98dc2827f87",
-      "category": "politics",
+      "category": "services",
       "source_id": "manual-4f785079a49c",
       "source": "Som joves",
       "source_type": "own",
@@ -379,7 +379,8 @@ window.SOLLER_ARA_DATA = {
       "image_allowed": true,
       "original_url": "https://www.facebook.com/story.php?story_fbid=1562525302569206&id=100064352547067&hpir=1",
       "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-d8b5c98dc2827f87.jpg",
-      "media_type": "image"
+      "media_type": "image",
+      "content_type": "social_link"
     },
     {
       "id": "50c79ac0ba99a25582b5",
