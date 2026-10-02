@@ -1,7 +1,7 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-02T12:27:18.388946+00:00",
+  "generated_at": "2026-10-02T13:23:56.565505+00:00",
   "entries": [
     {
       "post_id": "50c79ac0ba99a25582b5",
@@ -17,7 +17,6 @@
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
-        "facebook",
         "instagram"
       ],
       "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/50c79ac0ba99a25582b5.jpg"
@@ -41,22 +40,22 @@
       "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/cb049076edc66abf508b.jpg"
     },
     {
-      "post_id": "0c9b7b35be3ed999910f",
-      "title": "Aviso. Nivel amarillo. Lluvias. Sierra Tramontana",
-      "summary": "Aviso de precipitación acumulada en una hora de nivel amarillo de 12:00 04-10-2026 CEST (UTC+2) a 19:59 04-10-2026 CEST (UTC+2).",
-      "source": "AEMET · Serra de Tramuntana",
-      "source_id": "aemet-avisos-mallorca",
-      "source_type": "official",
-      "category": "alerts",
-      "language": "es",
-      "published_at": "2026-10-02T10:14:15+00:00",
-      "original_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261002101415_AFAZ645401PRP10418.xml",
-      "content_policy": "short_factual_excerpt",
-      "rights_status": "reuse_authorized_with_attribution",
+      "post_id": "26cce4caa3b3f8b7f5d8",
+      "title": "Arranca el desmuntatge del Fantasio abans de la demolició",
+      "summary": "",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "source_type": "media",
+      "category": "services",
+      "language": "ca",
+      "published_at": "2026-10-02T10:00:00+00:00",
+      "original_url": "https://saveu.cat/noticies/arranca-el-desmuntatge-del-fantasio-abans-de-la-demolicio/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
       "platforms": [
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/0c9b7b35be3ed999910f.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/26cce4caa3b3f8b7f5d8.jpg"
     }
   ]
 }

@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-10-02T12:57:10.302949+00:00",
+  "fetched_at": "2026-10-02T13:23:56.390195+00:00",
   "source_count": 37,
   "source_status": [
     {
@@ -46,7 +46,7 @@ window.SOLLER_ARA_DATA = {
       "source_type": "official",
       "method": "aemet_alerts",
       "ok": true,
-      "count": 1,
+      "count": 0,
       "error": null
     },
     {
@@ -118,7 +118,7 @@ window.SOLLER_ARA_DATA = {
       "source_type": "media",
       "method": "html_listing_regex",
       "ok": true,
-      "count": 6,
+      "count": 5,
       "error": null
     },
     {
@@ -334,12 +334,12 @@ window.SOLLER_ARA_DATA = {
       "source_type": "own",
       "method": "manual",
       "ok": true,
-      "count": 25,
+      "count": 28,
       "error": null
     }
   ],
   "social_integration_status": [],
-  "post_count": 159,
+  "post_count": 157,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
@@ -360,7 +360,8 @@ window.SOLLER_ARA_DATA = {
       "image_allowed": true,
       "original_url": "https://www.facebook.com/story.php?story_fbid=4746406702256496&id=100006616393336&hpir=1",
       "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-4e009d3424ac1d9c.jpg",
-      "media_type": "image"
+      "media_type": "image",
+      "related_sources": []
     },
     {
       "id": "soller-ara-c1d97d0c8ccd8278",
@@ -379,7 +380,8 @@ window.SOLLER_ARA_DATA = {
       "image_allowed": true,
       "original_url": "https://www.facebook.com/story.php?story_fbid=1562522722569464&id=100064352547067&hpir=1",
       "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-c1d97d0c8ccd8278.jpg",
-      "media_type": "image"
+      "media_type": "image",
+      "related_sources": []
     },
     {
       "id": "soller-ara-d8b5c98dc2827f87",
@@ -399,7 +401,8 @@ window.SOLLER_ARA_DATA = {
       "original_url": "https://www.facebook.com/story.php?story_fbid=1562525302569206&id=100064352547067&hpir=1",
       "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-d8b5c98dc2827f87.jpg",
       "media_type": "image",
-      "content_type": "social_link"
+      "content_type": "social_link",
+      "related_sources": []
     },
     {
       "id": "50c79ac0ba99a25582b5",
@@ -481,26 +484,6 @@ window.SOLLER_ARA_DATA = {
       "image_allowed": false,
       "embed_type": "official_oembed",
       "embed_url": "https://mucbo.org/beudanticeras-revoili/embed/",
-      "related_sources": []
-    },
-    {
-      "id": "0c9b7b35be3ed999910f",
-      "category": "alerts",
-      "source_id": "aemet-avisos-mallorca",
-      "source": "AEMET · Serra de Tramuntana",
-      "source_type": "official",
-      "language": "es",
-      "locality": "Sóller / Serra de Tramuntana",
-      "published_at": "2026-10-02T10:14:15+00:00",
-      "title": "Aviso. Nivel amarillo. Lluvias. Sierra Tramontana",
-      "summary": "Aviso de precipitación acumulada en una hora de nivel amarillo de 12:00 04-10-2026 CEST (UTC+2) a 19:59 04-10-2026 CEST (UTC+2).",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261002101415_AFAZ645401PRP10418.xml",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "short_factual_excerpt",
-      "rights_status": "reuse_authorized_with_attribution",
-      "image_allowed": false,
       "related_sources": []
     },
     {
@@ -3534,26 +3517,6 @@ window.SOLLER_ARA_DATA = {
       "title": "Los restaurantes del Port de Sóller afrontan el eclipse con incertidumbre por las restricciones de tráfico",
       "summary": "",
       "url": "https://www.diariodemallorca.es/part-forana/2026/08/03/restaurantes-port-soller-afrontan-eclipse-133065764.html",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "1e5083a6711701c71ed7",
-      "category": "news",
-      "source_id": "mallorca-directo-soller",
-      "source": "Mallorca Directo",
-      "source_type": "media",
-      "language": "es",
-      "locality": "Sóller",
-      "published_at": "2026-08-03T13:20:16.020000+00:00",
-      "title": "Detenido en Sóller por fotografiar a una socorrista",
-      "summary": "",
-      "url": "https://mallorcadirecto.com/comarca-de-ponent/soller/detenido-soller-frances-fotografiar-socorrista",
       "platform": null,
       "account": null,
       "media_type": null,
