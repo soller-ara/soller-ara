@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-10-02T20:21:59.849682+00:00",
+  "fetched_at": "2026-10-02T21:22:06.582851+00:00",
   "source_count": 37,
   "source_status": [
     {
@@ -252,9 +252,9 @@ window.SOLLER_ARA_DATA = {
       "name": "Crónica Balear",
       "source_type": "media",
       "method": "freenewsapi_search",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "error": "HTTP Error 502: Bad Gateway"
+      "error": null
     },
     {
       "source_id": "ara-balears-soller",
@@ -341,12 +341,7 @@ window.SOLLER_ARA_DATA = {
   "social_integration_status": [],
   "post_count": 155,
   "related_pair_count": 0,
-  "errors": [
-    {
-      "source_id": "cronica-balear-soller",
-      "error": "HTTP Error 502: Bad Gateway"
-    }
-  ],
+  "errors": [],
   "posts": [
     {
       "id": "soller-ara-4e009d3424ac1d9c",
