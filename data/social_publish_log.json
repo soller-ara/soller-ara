@@ -3665,6 +3665,34 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-02T10:22:38.051340+00:00",
       "error": ""
+    },
+    {
+      "post_id": "f969a237e9c26dd0239e",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122118050781467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122118050781467310",
+      "title": "El ‘tardeo’ per a majors de 60 anys, avui a partir de les 19 hores a Plaça amb música i balls",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/02/354607/tardeo-per-majors-anys-avui-partir-les-hores-placa-amb-musica-balls.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-02T11:22:44.845389+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "cb049076edc66abf508b",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122118050823467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122118050823467310",
+      "title": "Beudanticeras revoili",
+      "post_url": "https://mucbo.org/beudanticeras-revoili/",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-02T11:22:51.222055+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
