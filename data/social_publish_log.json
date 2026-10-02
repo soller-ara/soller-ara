@@ -3572,9 +3572,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-02T08:25:19.082427+00:00",
       "error": ""
+    },
+    {
+      "post_id": "cec897ea4198ab89ac83",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122117994237467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122117994237467310",
+      "title": "Sóller celebra avui el Dia de la Gent Gran amb un horabauxa per als majors de 60 anys",
+      "post_url": "https://saveu.cat/noticies/soller-celebra-avui-el-dia-de-la-gent-gran-amb-un-horabauxa-per-als-majors-de-60-anys/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-02T09:24:45.795281+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "9c9e513e5805bd303a0f",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122117994465467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122117994465467310",
+      "title": "Un nou informe avala la creació d’una reserva marina a la costa de la Serra de Tramuntana",
+      "post_url": "https://www.foravila.net/area/serra-de-tramuntana/un-nou-informe-avala-la-creacio-duna-reserva-marina-a-la-costa-de-la-serra-de-tramuntana/",
+      "source": "Fora Vila",
+      "source_id": "fora-vila-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-02T09:24:59.886347+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "fcc7ca2a839215bf9744",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122117994483467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122117994483467310",
+      "title": "«Un nedador feliç és un nedador ràpid»",
+      "post_url": "https://www.elsoller.cat/soller/esports/2026/10/02/354601/nedador-felic-nedador-rapid.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-02T09:25:03.626546+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
-    "instagram_until": "2026-10-02T09:24:33.757068+00:00"
+    "instagram_until": "2026-10-02T11:24:55.365937+00:00"
   }
 }
