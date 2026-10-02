@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-10-02T12:27:18.221704+00:00",
+  "fetched_at": "2026-10-02T12:45:35.311986+00:00",
   "source_count": 37,
   "source_status": [
     {
@@ -339,10 +339,29 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 156,
+  "post_count": 157,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "soller-ara-d8b5c98dc2827f87",
+      "category": "politics",
+      "source_id": "manual-4f785079a49c",
+      "source": "Som joves",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-02T12:45:35.311986+00:00",
+      "title": "Oferta de feina. Som joves.",
+      "summary": "Publicació d’oferta de feinad",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-d8b5c98dc2827f87.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": true,
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1562525302569206&id=100064352547067&hpir=1",
+      "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-d8b5c98dc2827f87.jpg",
+      "media_type": "image"
+    },
     {
       "id": "50c79ac0ba99a25582b5",
       "category": "news",
