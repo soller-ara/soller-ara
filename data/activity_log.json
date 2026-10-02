@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "723d3f79a43ead04",
+      "timestamp": "2026-10-02T12:47:45.746299+00:00",
+      "action": "publish",
+      "area": "publications",
+      "target_id": "soller-ara-c1d97d0c8ccd8278",
+      "title": "Oferta de feina a Deià",
+      "detail": "Publicación propia creada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "8a2034325b6a5428",
       "timestamp": "2026-10-02T12:45:35.408527+00:00",
       "action": "publish",
