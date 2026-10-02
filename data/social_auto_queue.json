@@ -1,26 +1,64 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-02T08:24:59.834919+00:00",
+  "generated_at": "2026-10-02T09:24:27.005234+00:00",
   "entries": [
     {
-      "post_id": "1d30dc72229adf14a191",
-      "title": "El Consell assumeix el manteniment de camins de muntanya de la vall",
+      "post_id": "cec897ea4198ab89ac83",
+      "title": "Sóller celebra avui el Dia de la Gent Gran amb un horabauxa per als majors de 60 anys",
       "summary": "",
       "source": "Sa Veu de Sóller",
       "source_id": "sa-veu-soller",
       "source_type": "media",
-      "category": "services",
+      "category": "news",
       "language": "ca",
-      "published_at": "2026-10-02T08:00:00+00:00",
-      "original_url": "https://saveu.cat/noticies/el-consell-assumeix-el-manteniment-de-camins-de-muntanya-de-la-vall/",
+      "published_at": "2026-10-02T09:18:14+00:00",
+      "original_url": "https://saveu.cat/noticies/soller-celebra-avui-el-dia-de-la-gent-gran-amb-un-horabauxa-per-als-majors-de-60-anys/",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/1d30dc72229adf14a191.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/cec897ea4198ab89ac83.jpg"
+    },
+    {
+      "post_id": "9c9e513e5805bd303a0f",
+      "title": "Un nou informe avala la creació d’una reserva marina a la costa de la Serra de Tramuntana",
+      "summary": "",
+      "source": "Fora Vila",
+      "source_id": "fora-vila-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-10-02T09:01:20+00:00",
+      "original_url": "https://www.foravila.net/area/serra-de-tramuntana/un-nou-informe-avala-la-creacio-duna-reserva-marina-a-la-costa-de-la-serra-de-tramuntana/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/9c9e513e5805bd303a0f.jpg"
+    },
+    {
+      "post_id": "fcc7ca2a839215bf9744",
+      "title": "«Un nedador feliç és un nedador ràpid»",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "sports",
+      "language": "ca",
+      "published_at": "2026-10-02T10:31:00+02:00",
+      "original_url": "https://www.elsoller.cat/soller/esports/2026/10/02/354601/nedador-felic-nedador-rapid.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/fcc7ca2a839215bf9744.jpg"
     }
   ]
 }
