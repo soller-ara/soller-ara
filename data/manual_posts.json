@@ -457,6 +457,23 @@
       "original_url": "https://www.facebook.com/story.php?story_fbid=1527588922748491&id=100064921920770&hpir=1",
       "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-20b544a0b3168b6e.jpg",
       "media_type": "image"
+    },
+    {
+      "id": "soller-ara-54fc14550237afe9",
+      "category": "social",
+      "source_id": "manual-b9c85f6d3406",
+      "source": "Setmanari Veu de Sóller",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-02T08:37:46.476165+00:00",
+      "title": "",
+      "summary": "",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-54fc14550237afe9.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": false,
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1645162604198832&id=100061153255693&hpir=1"
     }
   ]
 }
