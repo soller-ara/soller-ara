@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "228819d4681fd43b",
+      "timestamp": "2026-10-02T06:58:35.893741+00:00",
+      "action": "publish",
+      "area": "publications",
+      "target_id": "soller-ara-b73b6be0b00a9022",
+      "title": "Article setmanal.",
+      "detail": "Publicación propia creada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "4143cff96ed0fb6b",
       "timestamp": "2026-10-01T18:51:19.111954+00:00",
       "action": "publish",
