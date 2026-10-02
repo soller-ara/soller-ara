@@ -3623,6 +3623,48 @@
       "post_url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-6b014b2344ba1428.html",
       "recorded_at": "2026-10-02T09:56:33.953153+00:00",
       "error": "Application request limit reached [code=4, subcode=2207051]"
+    },
+    {
+      "post_id": "0c9b7b35be3ed999910f",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122118022845467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122118022845467310",
+      "title": "Aviso. Nivel amarillo. Lluvias. Sierra Tramontana",
+      "post_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261002101415_AFAZ645401PRP10418.xml",
+      "source": "AEMET · Serra de Tramuntana",
+      "source_id": "aemet-avisos-mallorca",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-02T10:22:18.563357+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "26cce4caa3b3f8b7f5d8",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122118022887467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122118022887467310",
+      "title": "Arranca el desmuntatge del Fantasio abans de la demolició",
+      "post_url": "https://saveu.cat/noticies/arranca-el-desmuntatge-del-fantasio-abans-de-la-demolicio/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-02T10:22:31.611588+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "f1e4cb879096bce177be",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122118022923467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122118022923467310",
+      "title": "Fins a set partits es presentaran a les elecciones municipals",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/02/354605/fins-set-partits-presentaran-les-elecciones-municipals.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-02T10:22:38.051340+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
