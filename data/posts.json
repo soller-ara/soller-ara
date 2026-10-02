@@ -1,7 +1,7 @@
 {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-10-02T09:59:04.401959+00:00",
+  "fetched_at": "2026-10-02T10:09:04.856227+00:00",
   "source_count": 37,
   "source_status": [
     {
@@ -339,10 +339,27 @@
     }
   ],
   "social_integration_status": [],
-  "post_count": 155,
+  "post_count": 156,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "soller-ara-0fb3a9b47c46a335",
+      "category": "politics",
+      "source_id": "soller-ara",
+      "source": "Publicació de xarxa",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-02T10:09:04.856227+00:00",
+      "title": "",
+      "summary": "",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-0fb3a9b47c46a335.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": false,
+      "original_url": "https://www.facebook.com/groups/treballinfojove/posts/1459477266028165/?hpir=1"
+    },
     {
       "id": "soller-ara-dec9134c7b827cbc",
       "category": "agenda",
