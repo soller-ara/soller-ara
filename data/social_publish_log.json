@@ -3693,9 +3693,23 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-02T11:22:51.222055+00:00",
       "error": ""
+    },
+    {
+      "post_id": "50c79ac0ba99a25582b5",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122118080241467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122118080241467310",
+      "title": "Un informe situa la Reserva Marina de la Tramuntana com una oportunitat per protegir el litoral",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/02/354613/informe-situa-reserva-marina-tramuntana-com-oportunitat-per-protegir-litoral.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-02T12:27:35.154033+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
-    "instagram_until": "2026-10-02T11:24:55.365937+00:00"
+    "instagram_until": "2026-10-02T14:27:48.646164+00:00"
   }
 }
