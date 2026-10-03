@@ -3813,9 +3813,23 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-03T10:21:01.201905+00:00",
       "error": ""
+    },
+    {
+      "post_id": "f7f66c33ba3ad4f26e1a",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122118573489467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122118573489467310",
+      "title": "Aviso. Nivel naranja. Lluvias. Sierra Tramontana",
+      "post_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261003115438_AFAZ645401PRP10318.xml",
+      "source": "AEMET · Serra de Tramuntana",
+      "source_id": "aemet-avisos-mallorca",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-03T13:29:34.352640+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
-    "instagram_until": "2026-10-03T12:21:17.067320+00:00"
+    "instagram_until": "2026-10-03T15:29:42.126702+00:00"
   }
 }
