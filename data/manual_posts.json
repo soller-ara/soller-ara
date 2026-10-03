@@ -619,6 +619,24 @@
       "original_url": "https://www.facebook.com/story.php?story_fbid=4746406702256496&id=100006616393336&hpir=1",
       "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-4e009d3424ac1d9c.jpg",
       "media_type": "image"
+    },
+    {
+      "id": "soller-ara-19eec11ed4d1033a",
+      "category": "news",
+      "source_id": "soller-ara",
+      "source": "Sóller Ara",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-03T07:48:54.114711+00:00",
+      "title": "Prova de cartell automàtic per a Instagram",
+      "summary": "Aquesta és una publicació de prova per comprovar com queda el nou cartell automàtic de la categoria Xarxes a Instagram. No és una publicació definitiva.",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-19eec11ed4d1033a.html",
+      "content_policy": "owned_content",
+      "rights_status": "owned",
+      "image_allowed": true,
+      "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-19eec11ed4d1033a.jpg",
+      "media_type": "image"
     }
   ]
 }
