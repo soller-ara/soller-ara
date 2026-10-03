@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-10-03T12:29:34.690851+00:00",
+  "fetched_at": "2026-10-03T13:29:20.930812+00:00",
   "source_count": 40,
   "source_status": [
     {
@@ -46,7 +46,7 @@ window.SOLLER_ARA_DATA = {
       "source_type": "official",
       "method": "aemet_alerts",
       "ok": true,
-      "count": 0,
+      "count": 2,
       "error": null
     },
     {
@@ -118,7 +118,7 @@ window.SOLLER_ARA_DATA = {
       "source_type": "media",
       "method": "html_listing_regex",
       "ok": true,
-      "count": 4,
+      "count": 5,
       "error": null
     },
     {
@@ -366,10 +366,70 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 165,
+  "post_count": 168,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "c81a528c6c7bdabf2389",
+      "category": "services",
+      "source_id": "mallorca-directo-soller",
+      "source": "Mallorca Directo",
+      "source_type": "media",
+      "language": "es",
+      "locality": "Sóller",
+      "published_at": "2026-10-03T12:00:00+00:00",
+      "title": "Gasolineras más baratas en Sóller hoy: precios actualizados | Mallorca Directo",
+      "summary": "",
+      "url": "https://mallorcadirecto.com/comarca-de-ponent/soller/gasolineras",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
+      "id": "f7f66c33ba3ad4f26e1a",
+      "category": "alerts",
+      "source_id": "aemet-avisos-mallorca",
+      "source": "AEMET · Serra de Tramuntana",
+      "source_type": "official",
+      "language": "es",
+      "locality": "Sóller / Serra de Tramuntana",
+      "published_at": "2026-10-03T11:54:38+00:00",
+      "title": "Aviso. Nivel naranja. Lluvias. Sierra Tramontana",
+      "summary": "Aviso de precipitación acumulada en una hora de nivel naranja de 13:00 03-10-2026 CEST (UTC+2) a 19:59 03-10-2026 CEST (UTC+2).",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261003115438_AFAZ645401PRP10318.xml",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "reuse_authorized_with_attribution",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
+      "id": "8c980af86416312d1cac",
+      "category": "alerts",
+      "source_id": "aemet-avisos-mallorca",
+      "source": "AEMET · Serra de Tramuntana",
+      "source_type": "official",
+      "language": "es",
+      "locality": "Sóller / Serra de Tramuntana",
+      "published_at": "2026-10-03T11:54:38+00:00",
+      "title": "Aviso. Nivel naranja. Tormentas. Sierra Tramontana",
+      "summary": "Aviso de tormentas de nivel naranja de 13:00 03-10-2026 CEST (UTC+2) a 19:59 03-10-2026 CEST (UTC+2).",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261003115438_AFAZ645401TOTO0318.xml",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "reuse_authorized_with_attribution",
+      "image_allowed": false,
+      "related_sources": []
+    },
     {
       "id": "soller-ara-a203f9768fbe0125",
       "category": "social",
