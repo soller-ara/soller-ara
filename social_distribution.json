@@ -1,5 +1,5 @@
 {
-  "version": 9,
+  "version": 10,
   "enabled": true,
   "platforms": {
     "facebook": true,
@@ -159,6 +159,18 @@
       "instagram": true
     },
     "fora-vila-soller": {
+      "facebook": true,
+      "instagram": true
+    },
+    "ports-ib-port-soller": {
+      "facebook": true,
+      "instagram": true
+    },
+    "mes-per-soller": {
+      "facebook": true,
+      "instagram": true
+    },
+    "psib-psoe-soller": {
       "facebook": true,
       "instagram": true
     }
