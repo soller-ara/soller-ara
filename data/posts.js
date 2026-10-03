@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-10-03T10:02:49.393442+00:00",
+  "fetched_at": "2026-10-03T10:20:43.437140+00:00",
   "source_count": 37,
   "source_status": [
     {
@@ -271,7 +271,7 @@ window.SOLLER_ARA_DATA = {
       "source_type": "media",
       "method": "rss",
       "ok": true,
-      "count": 2,
+      "count": 1,
       "error": null
     },
     {
@@ -334,12 +334,12 @@ window.SOLLER_ARA_DATA = {
       "source_type": "own",
       "method": "manual",
       "ok": true,
-      "count": 28,
+      "count": 29,
       "error": null
     }
   ],
   "social_integration_status": [],
-  "post_count": 157,
+  "post_count": 155,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
@@ -361,25 +361,28 @@ window.SOLLER_ARA_DATA = {
       "image_allowed": true,
       "original_url": "https://www.facebook.com/story.php?story_fbid=1400643748942525&id=100069907391489&hpir=1",
       "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-a203f9768fbe0125.jpg",
-      "media_type": "image"
+      "media_type": "image",
+      "related_sources": []
     },
     {
-      "id": "soller-ara-301ef2fdbffe098b",
-      "category": "politics",
-      "source_id": "manual-76948c3843fb",
-      "source": "Mes per Sóller",
-      "source_type": "own",
+      "id": "617c51d07c5b8d66babf",
+      "category": "news",
+      "source_id": "setmanari-soller",
+      "source": "Setmanari Sóller",
+      "source_type": "media",
       "language": "ca",
       "locality": "Sóller",
-      "published_at": "2026-10-03T09:53:00.467743+00:00",
-      "show_in_now": true,
-      "title": "",
+      "published_at": "2026-10-03T12:00:00+02:00",
+      "title": "Propietaris no residents del Barranc demanen aparcar a la ZAR quan van als seus olivars",
       "summary": "",
-      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-301ef2fdbffe098b.html",
-      "content_policy": "manual_link_reference",
-      "rights_status": "no_reuse_reference_only",
+      "url": "https://www.elsoller.cat/soller/local/2026/10/03/354611/propietaris-residents-del-barranc-demanen-aparcar-zar-quan-van-als-seus-olivars.html",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
       "image_allowed": false,
-      "original_url": "https://www.facebook.com/story.php?story_fbid=1550871483741412&id=100064557255473&hpir=1"
+      "related_sources": []
     },
     {
       "id": "ed658475ca55fd30c224",
@@ -855,28 +858,6 @@ window.SOLLER_ARA_DATA = {
       "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-926b67502865e3b1.jpg",
       "media_type": "image",
       "content_type": "social_link",
-      "related_sources": []
-    },
-    {
-      "id": "b8364203b22094670661",
-      "category": "culture",
-      "source_id": "fora-vila-soller",
-      "source": "Fora Vila",
-      "source_type": "media",
-      "language": "ca",
-      "locality": "Sóller / Serra de Tramuntana",
-      "published_at": "2026-10-01T13:33:00+00:00",
-      "title": "El MUCBO de Sóller rep en donació una pell de vell marí",
-      "summary": "",
-      "url": "https://www.foravila.net/foravilaverd/el-mucbo-de-soller-rep-en-donacio-una-pell-de-vell-mari/",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
-      "embed_type": "official_oembed",
-      "embed_url": "https://www.foravila.net/foravilaverd/el-mucbo-de-soller-rep-en-donacio-una-pell-de-vell-mari/embed/",
       "related_sources": []
     },
     {
@@ -2312,26 +2293,6 @@ window.SOLLER_ARA_DATA = {
       "original_url": "https://www.facebook.com/share/p/1EvKWu3c3i/?mibextid=wwXIfr",
       "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-4b240950c08e60ba.jpg",
       "media_type": "image",
-      "related_sources": []
-    },
-    {
-      "id": "17a4b7d4bdfdb3f5281e",
-      "category": "services",
-      "source_id": "setmanari-soller",
-      "source": "Setmanari Sóller",
-      "source_type": "media",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-09-23T17:40:00+02:00",
-      "title": "Deià posa en marxa dilluns la recollida porta a porta i una nova web informativa del servei",
-      "summary": "",
-      "url": "https://www.elsoller.cat/soller/local/2026/09/23/354569/deia-posa-marxa-dilluns-recollida-porta-porta-nova-web-informativa-del-servei.html",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
       "related_sources": []
     },
     {
