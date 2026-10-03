@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-10-03T03:27:38.123890+00:00",
+  "fetched_at": "2026-10-03T04:23:25.154054+00:00",
   "source_count": 37,
   "source_status": [
     {
@@ -100,7 +100,7 @@ window.SOLLER_ARA_DATA = {
       "source_type": "media",
       "method": "freenewsapi_search",
       "ok": true,
-      "count": 9,
+      "count": 8,
       "error": null
     },
     {
@@ -339,7 +339,7 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 152,
+  "post_count": 151,
   "related_pair_count": 0,
   "errors": [
     {
@@ -3456,26 +3456,6 @@ window.SOLLER_ARA_DATA = {
       "image_allowed": false,
       "embed_type": "official_oembed",
       "embed_url": "https://canprunera.com/leonora-carrington-en-can-prunera-una-revelacion/embed/",
-      "related_sources": []
-    },
-    {
-      "id": "262a11618dab0644d5df",
-      "category": "news",
-      "source_id": "diario-mallorca-soller",
-      "source": "Diario de Mallorca",
-      "source_type": "media",
-      "language": "es",
-      "locality": "Sóller / Serra de Tramuntana",
-      "published_at": "2026-08-04T04:00:58+00:00",
-      "title": "Los olivares, el mejor refugio de los 'sollerics' para contemplar el eclipse lejos de la masificación",
-      "summary": "",
-      "url": "https://www.diariodemallorca.es/part-forana/2026/08/04/olivares-mejor-refugio-sollerics-contemplar-133068249.html",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
       "related_sources": []
     },
     {
