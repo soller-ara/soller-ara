@@ -366,28 +366,10 @@
     }
   ],
   "social_integration_status": [],
-  "post_count": 166,
+  "post_count": 165,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
-    {
-      "id": "soller-ara-4f4f4ee8981d0d24",
-      "category": "agenda",
-      "source_id": "soller-ara",
-      "source": "Publicació de xarxa",
-      "source_type": "own",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-10-03T12:29:34.690851+00:00",
-      "show_in_now": true,
-      "title": "",
-      "summary": "",
-      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-4f4f4ee8981d0d24.html",
-      "content_policy": "manual_link_reference",
-      "rights_status": "no_reuse_reference_only",
-      "image_allowed": false,
-      "original_url": "https://www.facebook.com/turismeSOLLER/photos/postposatseguint-la-decisi%C3%B3-dels-comerciants-conjuntament-amb-la-regidoria-de-pr/1649939676917869/?set=a.598847998693714&hpir=1"
-    },
     {
       "id": "soller-ara-a203f9768fbe0125",
       "category": "social",
