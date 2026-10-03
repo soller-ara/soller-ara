@@ -3762,6 +3762,20 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-03T07:24:05.597230+00:00",
       "error": ""
+    },
+    {
+      "post_id": "4c19a8312dc0cb748ada",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122118467463467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122118467463467310",
+      "title": "Espectacular accidente entre dos motos en Sóller en la víspera de la Pujada al Puig Major",
+      "post_url": "https://www.ultimahora.es/sucesos/ultimas/2026/10/03/2721569/espectacular-accidente-entre-dos-motos-soller-vispera-pujada-puig-major.html",
+      "source": "Última Hora",
+      "source_id": "ultima-hora-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-03T08:23:46.392959+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
