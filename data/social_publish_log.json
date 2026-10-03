@@ -3734,9 +3734,37 @@
       "post_url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-4e009d3424ac1d9c.html",
       "recorded_at": "2026-10-02T12:57:31.001591+00:00",
       "error": "Application request limit reached [code=4, subcode=2207051]"
+    },
+    {
+      "post_id": "67deffcb8a316012aa7e",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122118450693467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122118450693467310",
+      "title": "El PSOE reclama equipar els centres educatius públics amb sistemes de climatització",
+      "post_url": "https://saveu.cat/noticies/el-psoe-reclama-equipar-els-centres-educatius-publics-amb-sistemes-de-climatitzacio/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-03T07:23:45.252289+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "38069c0f7516ddda5bec",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122118450999467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122118450999467310",
+      "title": "Can Tambora tanca després de més de 130 anys d’història",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/03/354609/can-tambora-tanca-despres-mes-130-anys-historia.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-03T07:24:05.597230+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
-    "instagram_until": "2026-10-02T17:25:33.470768+00:00"
+    "instagram_until": "2026-10-03T09:24:01.116599+00:00"
   }
 }
