@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-10-03T09:23:25.587232+00:00",
+  "fetched_at": "2026-10-03T09:53:00.467743+00:00",
   "source_count": 37,
   "source_status": [
     {
@@ -339,10 +339,28 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 155,
+  "post_count": 156,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "soller-ara-301ef2fdbffe098b",
+      "category": "politics",
+      "source_id": "manual-76948c3843fb",
+      "source": "Mes per Sóller",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-03T09:53:00.467743+00:00",
+      "show_in_now": true,
+      "title": "",
+      "summary": "",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-301ef2fdbffe098b.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": false,
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1550871483741412&id=100064557255473&hpir=1"
+    },
     {
       "id": "ed658475ca55fd30c224",
       "category": "news",
