@@ -1,7 +1,7 @@
 {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-10-03T08:23:28.843128+00:00",
+  "fetched_at": "2026-10-03T09:23:25.587232+00:00",
   "source_count": 37,
   "source_status": [
     {
@@ -64,7 +64,7 @@
       "source_type": "social",
       "method": "youtube_channel",
       "ok": true,
-      "count": 0,
+      "count": 1,
       "error": null
     },
     {
@@ -339,10 +339,30 @@
     }
   ],
   "social_integration_status": [],
-  "post_count": 154,
+  "post_count": 155,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "ed658475ca55fd30c224",
+      "category": "news",
+      "source_id": "youtube-ib3-noticies-soller",
+      "source": "IB3 Notícies · YouTube",
+      "source_type": "social",
+      "language": "ca",
+      "locality": "Sóller / Fornalutx / Serra de Tramuntana",
+      "published_at": "2026-10-03T08:24:53+00:00",
+      "title": "Accident de moto a Fornalutx durant una cursa il·legal",
+      "summary": "Vídeo publicat per IB3 Notícies · YouTube.",
+      "url": "https://www.youtube.com/shorts/aGRvT_MCR_E",
+      "platform": "YouTube",
+      "account": "@NoticiesIB3",
+      "media_type": "video",
+      "content_policy": "generated_social_summary",
+      "rights_status": "platform_embed",
+      "image_allowed": false,
+      "related_sources": []
+    },
     {
       "id": "4c19a8312dc0cb748ada",
       "category": "news",

@@ -1,8 +1,27 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-03T08:23:29.124435+00:00",
+  "generated_at": "2026-10-03T09:23:25.776365+00:00",
   "entries": [
+    {
+      "post_id": "ed658475ca55fd30c224",
+      "title": "Accident de moto a Fornalutx durant una cursa il·legal",
+      "summary": "Vídeo publicat per IB3 Notícies · YouTube.",
+      "source": "IB3 Notícies · YouTube",
+      "source_id": "youtube-ib3-noticies-soller",
+      "source_type": "social",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-10-03T08:24:53+00:00",
+      "original_url": "https://www.youtube.com/shorts/aGRvT_MCR_E",
+      "content_policy": "generated_social_summary",
+      "rights_status": "platform_embed",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/ed658475ca55fd30c224.jpg"
+    },
     {
       "post_id": "4c19a8312dc0cb748ada",
       "title": "Espectacular accidente entre dos motos en Sóller en la víspera de la Pujada al Puig Major",
@@ -17,7 +36,6 @@
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
-        "facebook",
         "instagram"
       ],
       "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/4c19a8312dc0cb748ada.jpg"
@@ -39,24 +57,6 @@
         "instagram"
       ],
       "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/67deffcb8a316012aa7e.jpg"
-    },
-    {
-      "post_id": "38069c0f7516ddda5bec",
-      "title": "Can Tambora tanca després de més de 130 anys d’història",
-      "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
-      "source_type": "media",
-      "category": "commerce",
-      "language": "ca",
-      "published_at": "2026-10-03T09:00:00+02:00",
-      "original_url": "https://www.elsoller.cat/soller/local/2026/10/03/354609/can-tambora-tanca-despres-mes-130-anys-historia.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/38069c0f7516ddda5bec.jpg"
     }
   ]
 }
