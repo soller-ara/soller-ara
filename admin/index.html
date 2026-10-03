@@ -76,7 +76,8 @@
             <label>Idioma<select name="language"><option value="ca">Català</option><option value="es">Español</option><option value="en">English</option></select></label>
           </div>
           <label>URL directa de una imagen <span class="hint">(JPG, PNG o WebP; no una página web. No permite subir archivos. Si queda vacía, se genera una tarjeta automática.)</span><input name="image_url" type="url" placeholder="https://ejemplo.org/imagen.jpg" /></label>
-          <fieldset><legend>Destinos</legend><label class="check"><input type="checkbox" checked disabled /> Sóller Ara</label><label class="check"><input name="facebook" type="checkbox" /> Facebook</label><label class="check"><input name="instagram" type="checkbox" /> Instagram</label></fieldset>
+          <label class="check"><input name="show_in_now" type="checkbox" checked /> Mostrar también en Ara <span class="hint">(si lo desmarcas, se verá en su sección y en «Tot»)</span></label>
+        <fieldset><legend>Destinos</legend><label class="check"><input type="checkbox" checked disabled /> Sóller Ara</label><label class="check"><input name="facebook" type="checkbox" /> Facebook</label><label class="check"><input name="instagram" type="checkbox" /> Instagram</label></fieldset>
           <div class="publish-preview"><strong>Vista previa</strong><h3 id="previewTitle">Título de la publicación</h3><p id="previewBody">El texto aparecerá aquí.</p></div>
           <div class="header-actions"><button id="publishSubmitButton" type="submit">Publicar</button><button id="cancelEditButton" class="button-secondary" type="button" hidden>Cancelar edición</button></div>
           <p id="publishMessage" class="message" aria-live="polite"></p>
@@ -106,7 +107,8 @@
              <label>URL directa del cartel autorizado <span class="hint">(JPG, PNG o WebP; no una página web)</span><input name="image_url" type="url" placeholder="https://ejemplo.org/cartel.jpg" /></label>
              <label class="check"><input name="image_authorized" type="checkbox" /> Tengo autorización o licencia para mostrar este cartel en Sóller Ara y, si lo marco, en Instagram.</label>
            </div>
-           <fieldset><legend>Destinos</legend><label class="check"><input type="checkbox" checked disabled /> Sóller Ara</label><label class="check"><input name="instagram" type="checkbox" /> Instagram</label></fieldset>
+           <label class="check"><input name="show_in_now" type="checkbox" checked /> Mostrar también en Ara <span class="hint">(si lo desmarcas, se verá en su sección y en «Tot»)</span></label>
+        <fieldset><legend>Destinos</legend><label class="check"><input type="checkbox" checked disabled /> Sóller Ara</label><label class="check"><input name="instagram" type="checkbox" /> Instagram</label></fieldset>
            <p class="hint">Para una incrustación basta el enlace original. Si también quieres publicarlo en Instagram, añade un titular y resumen propios. Un cartel solo se muestra con autorización o licencia.</p>
           <div class="header-actions"><button id="socialLinkSubmitButton" type="submit">Publicar propuesta revisada</button><button id="cancelSocialLinkEditButton" class="button-secondary" type="button" hidden>Cancelar edición</button></div>
           <p id="socialLinkMessage" class="message" aria-live="polite"></p>

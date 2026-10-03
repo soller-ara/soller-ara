@@ -45,6 +45,11 @@ on:
         default: 'own'
         type: choice
         options: [own, social_link, event_poster]
+      show_in_now:
+        description: 'Mostrar també a Ara'
+        required: false
+        default: true
+        type: boolean
       facebook:
         description: 'Publicar també a Facebook Sóller Ara'
         required: true
@@ -95,6 +100,7 @@ jobs:
           POST_IMAGE_URL: ${{ inputs.image_url }}
           POST_SOURCE_NAME: ${{ inputs.source_name }}
           POST_ORIGINAL_URL: ${{ inputs.original_url }}
+          PUBLISH_SHOW_IN_NOW: ${{ inputs.show_in_now }}
         run: python scripts/add_own_post.py
 
       - name: Registrar activitat

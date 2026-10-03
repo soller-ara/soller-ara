@@ -36,6 +36,7 @@ IMAGE_URL = os.environ.get("POST_IMAGE_URL", "").strip()
 SOURCE_NAME = os.environ.get("POST_SOURCE_NAME", "").strip()
 ORIGINAL_URL = os.environ.get("POST_ORIGINAL_URL", "").strip()
 CONFIRMATION = os.environ.get("PUBLISH_CONFIRMATION", "").strip()
+SHOW_IN_NOW = os.environ.get("PUBLISH_SHOW_IN_NOW", "true").strip().lower() not in {"false", "0", "no", "off"}
 PUBLISH_KEY = (os.environ.get("PUBLISH_KEY", "").strip() or os.environ.get("GITHUB_RUN_ID", "").strip())
 
 ALLOWED_CATEGORIES = {
@@ -292,6 +293,7 @@ def main() -> int:
         "language": LANGUAGE,
         "locality": "Sóller",
         "published_at": now,
+        "show_in_now": SHOW_IN_NOW,
         "title": TITLE,
         "summary": BODY,
         "url": post_url,

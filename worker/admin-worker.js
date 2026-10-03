@@ -357,6 +357,7 @@ async function publish(request, env, cors) {
     ? "event_poster"
     : (sourceName || originalUrl ? "social_link" : "own");
   const imageUrl = String(body.image_url || "").trim();
+  const showInNow = body.show_in_now !== false;
 
   if (sourceName && !originalUrl) {
     return json({ error: "Indica un enlace original junto con la fuente." }, 400, cors);
@@ -390,6 +391,7 @@ async function publish(request, env, cors) {
     source_name: sourceName,
     original_url: originalUrl,
     content_type: contentType,
+    show_in_now: showInNow,
   });
 
   return json({ ok: true, workflow: "Sóller Ara · publicar contingut propi" }, 202, cors);
@@ -418,6 +420,7 @@ async function editOwn(request, env, cors) {
     ? "event_poster"
     : (sourceName || originalUrl ? "social_link" : "own");
   const imageUrl = String(body.image_url || "").trim();
+  const showInNow = body.show_in_now !== false;
   if (sourceName && !originalUrl) {
     return json({ error: "Indica un enlace original junto con la fuente." }, 400, cors);
   }
@@ -445,6 +448,7 @@ async function editOwn(request, env, cors) {
     source_name: sourceName,
     original_url: originalUrl,
     content_type: contentType,
+    show_in_now: showInNow,
   });
 
   return json({ ok: true, workflow: "Sóller Ara · editar contingut propi" }, 202, cors);

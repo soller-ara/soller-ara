@@ -321,6 +321,7 @@ function isFreshPost(post) {
 }
 
 function isNowPost(post) {
+  if (post.show_in_now === false) return false;
   if (!post.published_at) return false;
 
   const publishedAt = new Date(post.published_at).getTime();

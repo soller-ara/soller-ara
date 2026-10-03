@@ -377,6 +377,7 @@
     publishForm.elements.body.value = post.summary || "";
     publishForm.elements.category.value = post.category || "news";
     publishForm.elements.language.value = post.language || "ca";
+    publishForm.elements.show_in_now.checked = post.show_in_now !== false;
     const mediaUrl = String(post.media_url || "");
     publishForm.elements.image_url.value = mediaUrl.includes("/assets/generated/") ? "" : mediaUrl;
     facebookInput.checked = false;
@@ -429,6 +430,7 @@
     socialLinkForm.elements.body.value = post.summary || "";
     socialLinkForm.elements.category.value = post.category || "politics";
     socialLinkForm.elements.language.value = post.language || "ca";
+    socialLinkForm.elements.show_in_now.checked = post.show_in_now !== false;
     socialLinkForm.elements.content_type.value = post.content_type === "event_poster" ? "event_poster" : "social_link";
     socialLinkForm.elements.image_url.value = String(post.media_url || "");
     socialLinkForm.elements.image_authorized.checked = Boolean(post.image_allowed);
@@ -454,7 +456,8 @@
         post.title === expected.title &&
         post.summary === expected.body &&
         post.category === expected.category &&
-        post.language === expected.language
+        post.language === expected.language &&
+        (post.show_in_now !== false) === Boolean(expected.show_in_now)
       ) {
         return true;
       }
@@ -656,6 +659,7 @@
       content_type: String(data.get("content_type") || "social_link"),
       image_url: String(data.get("image_url") || "").trim(),
       image_authorized: data.get("image_authorized") === "on",
+      show_in_now: data.get("show_in_now") === "on",
       facebook: false,
       instagram: data.get("instagram") === "on",
     };
@@ -724,6 +728,7 @@
       category: String(data.get("category") || "news"),
       language: String(data.get("language") || "ca"),
       image_url: String(data.get("image_url") || "").trim(),
+      show_in_now: data.get("show_in_now") === "on",
       facebook: data.get("facebook") === "on",
       instagram: data.get("instagram") === "on",
     };

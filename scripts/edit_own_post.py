@@ -31,6 +31,7 @@ SOURCE_NAME = os.environ.get("POST_SOURCE_NAME", "").strip()
 ORIGINAL_URL = os.environ.get("POST_ORIGINAL_URL", "").strip()
 CONTENT_TYPE = os.environ.get("POST_CONTENT_TYPE", "own").strip()
 CONFIRMATION = os.environ.get("EDIT_CONFIRMATION", "").strip()
+SHOW_IN_NOW = os.environ.get("EDIT_SHOW_IN_NOW", "true").strip().lower() not in {"false", "0", "no", "off"}
 
 ALLOWED_CATEGORIES = {
     "news", "agenda", "alerts", "services", "culture", "sports", "commerce", "politics", "social"
@@ -372,6 +373,7 @@ def main() -> int:
         "source": final_source,
         "original_url": final_original,
         "content_type": CONTENT_TYPE,
+        "show_in_now": SHOW_IN_NOW,
         "rights_status": "no_reuse_reference_only" if final_original else "owned",
         "content_policy": "manual_link_reference" if final_original else "owned_content",
         "image_allowed": bool(final_image),

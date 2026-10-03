@@ -41,6 +41,11 @@ on:
         description: 'Enllaç https original'
         required: false
         type: string
+      show_in_now:
+        description: 'Mostrar també a Ara'
+        required: false
+        default: true
+        type: boolean
       content_type:
         description: 'Tipus de publicació'
         required: false
@@ -86,6 +91,7 @@ jobs:
           POST_SOURCE_NAME: ${{ inputs.source_name }}
           POST_ORIGINAL_URL: ${{ inputs.original_url }}
           POST_CONTENT_TYPE: ${{ inputs.content_type }}
+          EDIT_SHOW_IN_NOW: ${{ inputs.show_in_now }}
         run: python scripts/edit_own_post.py
 
       - name: Registrar activitat
