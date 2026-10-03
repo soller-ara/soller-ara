@@ -657,6 +657,24 @@
       "original_url": "https://www.facebook.com/story.php?story_fbid=1400643748942525&id=100069907391489&hpir=1",
       "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-a203f9768fbe0125.jpg",
       "media_type": "image"
+    },
+    {
+      "id": "soller-ara-1b9c9aee5cbc39b7",
+      "category": "politics",
+      "source_id": "manual-8af0f8a160aa",
+      "source": "Ajuntament de Deià",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-03T21:21:24.028250+00:00",
+      "show_in_now": true,
+      "title": "",
+      "summary": "",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-1b9c9aee5cbc39b7.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": false,
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1526664189501970&id=100064752094509&hpir=1"
     }
   ]
 }
