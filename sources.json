@@ -1,5 +1,5 @@
 {
-  "version": 37,
+  "version": 38,
   "sources": [
     {
       "id": "ajuntament-soller-noticies",
@@ -981,6 +981,79 @@
       "verification_url": "https://www.pp.es/lugar/soller/",
       "verification_method": "official_location_archive",
       "verified_at": "2026-09-28"
+    },
+    {
+      "id": "ports-ib-port-soller",
+      "name": "Ports IB · Port de Sóller",
+      "type": "rss",
+      "url": "https://www.portsib.es/feed/",
+      "language": "ca",
+      "locality": "Port de Sóller / Sóller",
+      "source_type": "official",
+      "max_items": 100,
+      "max_age_days": 60,
+      "include_keywords": [
+        "Sóller",
+        "Soller",
+        "Port de Sóller",
+        "Port de Soller",
+        "Vall de Sóller",
+        "Vall de Soller",
+        "Fornalutx",
+        "Biniaraix",
+        "Serra de Tramuntana",
+        "Deià",
+        "Deia"
+      ],
+      "enabled": true,
+      "image_policy": "disabled_until_rights_verified",
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "official_public_source"
+    },
+    {
+      "id": "mes-per-soller",
+      "name": "MÉS per Sóller",
+      "type": "rss",
+      "url": "https://mespersoller.cat/feed/",
+      "language": "ca",
+      "locality": "Sóller",
+      "source_type": "political_party",
+      "max_items": 40,
+      "max_age_days": 60,
+      "enabled": true,
+      "force_category": "politics",
+      "image_policy": "disabled_until_rights_verified",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "official_party_source"
+    },
+    {
+      "id": "psib-psoe-soller",
+      "name": "PSIB-PSOE · Sóller",
+      "type": "rss",
+      "url": "https://www.psib-psoe.org/mallorca/feed/",
+      "language": "ca",
+      "locality": "Sóller / Port de Sóller",
+      "source_type": "political_party",
+      "max_items": 100,
+      "max_age_days": 60,
+      "include_keywords": [
+        "Sóller",
+        "Soller",
+        "Port de Sóller",
+        "Port de Soller",
+        "Vall de Sóller",
+        "Vall de Soller",
+        "Fornalutx",
+        "Biniaraix",
+        "Serra de Tramuntana",
+        "Deià",
+        "Deia"
+      ],
+      "enabled": true,
+      "force_category": "politics",
+      "image_policy": "disabled_until_rights_verified",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "official_party_source"
     }
   ]
 }

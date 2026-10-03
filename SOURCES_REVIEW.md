@@ -1,4 +1,4 @@
-# Revisió de fonts — v0.53
+# Revisió de fonts — v0.54
 
 Revisió feta el 17 de setembre de 2026. Les fonts incorporades es consulten amb el workflow existent de recopilació. No s'han afegit permisos de Meta ni còpies de fotografies o vídeos.
 
@@ -32,6 +32,20 @@ La comprovació de perfil i autoria no equival a una insígnia de verificació d
 - Una font pot respondre correctament i aportar zero publicacions: els seus últims vídeos poden ser antics o no complir el filtre. Això no autoritza a ampliar l'antiguitat ni a omplir la web amb contingut general.
 - El feed de YouTube ofereix les darreres entrades; la incorporació no és una cerca exhaustiva de tot l'arxiu del canal.
 - Les noves fonts s'incorporen a la web. L'enviament automàtic a Facebook i Instagram continua subjecte a la llista pròpia de `social_distribution.json`.
+
+## Fonts incorporades — 3 d'octubre de 2026
+
+| Font | Entitat | Via | Selecció i tractament |
+| --- | --- | --- | --- |
+| Ports IB · Port de Sóller | Ens públic portuari | RSS oficial | Només entrades amb referència a Port de Sóller, Sóller, la Vall, Fornalutx, Biniaraix o la Serra. Titular, data, enllaç i extracte factual breu; sense imatges. |
+| MÉS per Sóller | Agrupació política local | RSS oficial | Activitat pròpia de l'agrupació local. Classificació fixa a Política; titular, data i enllaç, sense imatges ni extracte reproduït. |
+| PSIB-PSOE · Sóller | Agrupació política, via web oficial de Mallorca | RSS oficial | Només entrades amb referència territorial local. Classificació fixa a Política; titular, data i enllaç, sense imatges ni extracte reproduït. |
+
+Aquestes fonts queden excloses de la distribució automàtica a Facebook i Instagram. L'Ajuntament, PP, MÉS per Sóller i PSIB-PSOE es mostren com a fonts atribuïdes; Sóller Ara no presenta les seves publicacions com a informació neutral ni les amplifica a xarxes automàticament.
+
+### Candidat no activat
+
+El Club Nàutic Sóller manté una web oficial amb actualitat local, però la seva estructura actual no ofereix de manera fiable una URL individual i data original per a cada entrada. Per respectar el criteri editorial de data i enllaç verificables, es reserva de moment per a selecció manual a «Enlaces de redes».
 
 ## Primera comprovació
 
