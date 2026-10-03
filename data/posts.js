@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-10-03T09:53:00.467743+00:00",
+  "fetched_at": "2026-10-03T10:02:49.393442+00:00",
   "source_count": 37,
   "source_status": [
     {
@@ -339,10 +339,30 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 156,
+  "post_count": 157,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "soller-ara-a203f9768fbe0125",
+      "category": "social",
+      "source_id": "manual-c671fec4a9a6",
+      "source": "Ajuntament de Sóller",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-03T10:02:49.393442+00:00",
+      "show_in_now": true,
+      "title": "Homenatge a la gent gran de Sóller: memòria i cor del poble",
+      "summary": "Una emotiva trobada al Tardeo +60 reconeix la saviesa, el llegat i el paper essencial dels nostres majors en la identitat local.",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-a203f9768fbe0125.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": true,
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1400643748942525&id=100069907391489&hpir=1",
+      "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-a203f9768fbe0125.jpg",
+      "media_type": "image"
+    },
     {
       "id": "soller-ara-301ef2fdbffe098b",
       "category": "politics",

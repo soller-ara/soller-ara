@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "d4c4bca64452def9",
+      "timestamp": "2026-10-03T10:02:49.510543+00:00",
+      "action": "publish",
+      "area": "publications",
+      "target_id": "soller-ara-a203f9768fbe0125",
+      "title": "Homenatge a la gent gran de Sóller: memòria i cor del poble",
+      "detail": "Publicación propia creada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "84895f75fee1fdd9",
       "timestamp": "2026-10-03T09:53:00.532587+00:00",
       "action": "publish",
