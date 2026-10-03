@@ -3776,6 +3776,20 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-03T08:23:46.392959+00:00",
       "error": ""
+    },
+    {
+      "post_id": "ed658475ca55fd30c224",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122118488673467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122118488673467310",
+      "title": "Accident de moto a Fornalutx durant una cursa il·legal",
+      "post_url": "https://www.youtube.com/shorts/aGRvT_MCR_E",
+      "source": "IB3 Notícies · YouTube",
+      "source_id": "youtube-ib3-noticies-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-03T09:23:44.133419+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
