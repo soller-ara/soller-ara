@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "e608a9812276a56c",
+      "timestamp": "2026-10-03T07:54:36.064569+00:00",
+      "action": "publish",
+      "area": "publications",
+      "target_id": "soller-ara-7553c9e053739f06",
+      "title": "Prova de cartell automàtic per a Instagram",
+      "detail": "Publicación propia creada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "c6a67c5801b43d56",
       "timestamp": "2026-10-03T07:51:29.418117+00:00",
       "action": "delete-own",
