@@ -372,7 +372,7 @@
   "posts": [
     {
       "id": "soller-ara-1b9c9aee5cbc39b7",
-      "category": "politics",
+      "category": "agenda",
       "source_id": "manual-8af0f8a160aa",
       "source": "Ajuntament de Deià",
       "source_type": "own",
@@ -386,7 +386,8 @@
       "content_policy": "manual_link_reference",
       "rights_status": "no_reuse_reference_only",
       "image_allowed": false,
-      "original_url": "https://www.facebook.com/story.php?story_fbid=1526664189501970&id=100064752094509&hpir=1"
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1526664189501970&id=100064752094509&hpir=1",
+      "content_type": "social_link"
     },
     {
       "id": "7263dc53d0847b46ae63",
