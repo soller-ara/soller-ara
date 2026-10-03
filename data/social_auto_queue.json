@@ -1,8 +1,27 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-03T08:11:04.005869+00:00",
+  "generated_at": "2026-10-03T08:23:29.124435+00:00",
   "entries": [
+    {
+      "post_id": "4c19a8312dc0cb748ada",
+      "title": "Espectacular accidente entre dos motos en Sóller en la víspera de la Pujada al Puig Major",
+      "summary": "",
+      "source": "Última Hora",
+      "source_id": "ultima-hora-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "es",
+      "published_at": "2026-10-03T10:17:51+02:00",
+      "original_url": "https://www.ultimahora.es/sucesos/ultimas/2026/10/03/2721569/espectacular-accidente-entre-dos-motos-soller-vispera-pujada-puig-major.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/4c19a8312dc0cb748ada.jpg"
+    },
     {
       "post_id": "67deffcb8a316012aa7e",
       "title": "El PSOE reclama equipar els centres educatius públics amb sistemes de climatització",

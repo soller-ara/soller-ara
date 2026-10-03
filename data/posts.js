@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-10-03T08:11:03.843912+00:00",
+  "fetched_at": "2026-10-03T08:23:28.843128+00:00",
   "source_count": 37,
   "source_status": [
     {
@@ -109,7 +109,7 @@ window.SOLLER_ARA_DATA = {
       "source_type": "media",
       "method": "html_listing_regex",
       "ok": true,
-      "count": 28,
+      "count": 29,
       "error": null
     },
     {
@@ -334,15 +334,35 @@ window.SOLLER_ARA_DATA = {
       "source_type": "own",
       "method": "manual",
       "ok": true,
-      "count": 29,
+      "count": 28,
       "error": null
     }
   ],
   "social_integration_status": [],
-  "post_count": 153,
+  "post_count": 154,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "4c19a8312dc0cb748ada",
+      "category": "news",
+      "source_id": "ultima-hora-soller",
+      "source": "Última Hora",
+      "source_type": "media",
+      "language": "es",
+      "locality": "Sóller",
+      "published_at": "2026-10-03T10:17:51+02:00",
+      "title": "Espectacular accidente entre dos motos en Sóller en la víspera de la Pujada al Puig Major",
+      "summary": "",
+      "url": "https://www.ultimahora.es/sucesos/ultimas/2026/10/03/2721569/espectacular-accidente-entre-dos-motos-soller-vispera-pujada-puig-major.html",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "image_allowed": false,
+      "related_sources": []
+    },
     {
       "id": "67deffcb8a316012aa7e",
       "category": "news",
