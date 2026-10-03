@@ -241,8 +241,8 @@ def generate_social_card(post_id: str, title: str, category: str) -> str:
         box = draw.textbbox((0, 0), line_text, font=title_font)
         y += (box[3] - box[1]) + line_gap
 
-    draw.line((110, height - 240, width - 110, height - 240), fill=accent, width=5)
-    draw.text((110, height - 190), "soller-ara · Informació local", font=footer_font, fill=muted)
+    draw.line((110, height - 310, width - 110, height - 310), fill=accent, width=5)
+    draw.text((110, height - 255), "soller-ara · Informació local", font=footer_font, fill=muted)
 
     path = GENERATED_DIR / f"{post_id}.jpg"
     image.save(path, "JPEG", quality=92, optimize=True)
