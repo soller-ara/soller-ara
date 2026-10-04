@@ -1,26 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-03T18:35:12.812891+00:00",
-  "entries": [
-    {
-      "post_id": "7263dc53d0847b46ae63",
-      "title": "Sóller-Alcúdia B (diumenge, 17.30 h) retorn a Can Maiol cercant sumar els tres punts",
-      "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-10-03T16:00:00+02:00",
-      "original_url": "https://www.elsoller.cat/soller/esports/2026/10/03/354603/soller-alcudia-diumenge-1730-retorn-can-maiol-cercant-sumar-els-tres-punts.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/7263dc53d0847b46ae63.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }

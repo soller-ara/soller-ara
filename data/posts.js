@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-10-03T21:21:24.028250+00:00",
+  "fetched_at": "2026-10-04T02:34:48.313306+00:00",
   "source_count": 40,
   "source_status": [
     {
@@ -54,18 +54,18 @@ window.SOLLER_ARA_DATA = {
       "name": "Ajuntament de Sóller · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
-      "count": 2,
-      "error": null
+      "ok": false,
+      "count": 0,
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "youtube-ib3-noticies-soller",
       "name": "IB3 Notícies · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "error": null
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "goib-noticies-soller",
@@ -118,7 +118,7 @@ window.SOLLER_ARA_DATA = {
       "source_type": "media",
       "method": "html_listing_regex",
       "ok": true,
-      "count": 5,
+      "count": 4,
       "error": null
     },
     {
@@ -144,90 +144,90 @@ window.SOLLER_ARA_DATA = {
       "name": "Can Prunera · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "error": null
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "youtube-aires-sollerics",
       "name": "Aires Sollerics · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "error": null
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "youtube-xeremiers-soller",
       "name": "Xeremiers de Sóller · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "error": null
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "youtube-club-volei-soller",
       "name": "Club Vòlei Sóller · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "error": null
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "youtube-ballades-mallorca-soller",
       "name": "Ballades A Mallorca · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "error": null
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "youtube-tramuntana-xxi",
       "name": "Tramuntana XXI · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "error": null
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "youtube-gob-mallorca-soller",
       "name": "GOB Mallorca · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "error": null
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "youtube-museu-maritim-soller",
       "name": "Museu Marítim de Mallorca · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "error": null
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "youtube-serra-tramuntana",
       "name": "Serra de Tramuntana Patrimoni Mundial · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "error": null
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "youtube-consell-mallorca-soller",
       "name": "Consell de Mallorca · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "error": null
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "mucbo-noticies",
@@ -315,9 +315,9 @@ window.SOLLER_ARA_DATA = {
       "name": "SUS Mallorca · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "error": null
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "partido-popular-soller",
@@ -366,29 +366,63 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 166,
+  "post_count": 162,
   "related_pair_count": 0,
-  "errors": [],
-  "posts": [
+  "errors": [
     {
-      "id": "soller-ara-1b9c9aee5cbc39b7",
-      "category": "agenda",
-      "source_id": "manual-8af0f8a160aa",
-      "source": "Ajuntament de Deià",
-      "source_type": "own",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-10-03T21:21:24.028250+00:00",
-      "show_in_now": true,
-      "title": "",
-      "summary": "",
-      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-1b9c9aee5cbc39b7.html",
-      "content_policy": "manual_link_reference",
-      "rights_status": "no_reuse_reference_only",
-      "image_allowed": false,
-      "original_url": "https://www.facebook.com/story.php?story_fbid=1526664189501970&id=100064752094509&hpir=1",
-      "content_type": "social_link"
+      "source_id": "youtube-ajuntament-soller",
+      "error": "HTTP Error 404: Not Found"
     },
+    {
+      "source_id": "youtube-ib3-noticies-soller",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "source_id": "youtube-can-prunera",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "source_id": "youtube-aires-sollerics",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "source_id": "youtube-xeremiers-soller",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "source_id": "youtube-club-volei-soller",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "source_id": "youtube-ballades-mallorca-soller",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "source_id": "youtube-tramuntana-xxi",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "source_id": "youtube-gob-mallorca-soller",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "source_id": "youtube-museu-maritim-soller",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "source_id": "youtube-serra-tramuntana",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "source_id": "youtube-consell-mallorca-soller",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "source_id": "youtube-sus-mallorca-soller",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ],
+  "posts": [
     {
       "id": "7263dc53d0847b46ae63",
       "category": "news",
@@ -401,26 +435,6 @@ window.SOLLER_ARA_DATA = {
       "title": "Sóller-Alcúdia B (diumenge, 17.30 h) retorn a Can Maiol cercant sumar els tres punts",
       "summary": "",
       "url": "https://www.elsoller.cat/soller/esports/2026/10/03/354603/soller-alcudia-diumenge-1730-retorn-can-maiol-cercant-sumar-els-tres-punts.html",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "c81a528c6c7bdabf2389",
-      "category": "services",
-      "source_id": "mallorca-directo-soller",
-      "source": "Mallorca Directo",
-      "source_type": "media",
-      "language": "es",
-      "locality": "Sóller",
-      "published_at": "2026-10-03T12:00:00+00:00",
-      "title": "Gasolineras más baratas en Sóller hoy: precios actualizados | Mallorca Directo",
-      "summary": "",
-      "url": "https://mallorcadirecto.com/comarca-de-ponent/soller/gasolineras",
       "platform": null,
       "account": null,
       "media_type": null,
@@ -2541,26 +2555,6 @@ window.SOLLER_ARA_DATA = {
       "related_sources": []
     },
     {
-      "id": "85f85df365d3bcdba1c3",
-      "category": "agenda",
-      "source_id": "youtube-ajuntament-soller",
-      "source": "Ajuntament de Sóller · YouTube",
-      "source_type": "social",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-09-16T13:08:28+00:00",
-      "title": "Ple ordinari de l'Ajuntament de Sóller, celebrada el 16/9/2026 (Part 2 de la sessió del 9/9/2026).",
-      "summary": "Vídeo publicat per Ajuntament de Sóller · YouTube relacionat amb una sessió plenària o activitat municipal.",
-      "url": "https://www.youtube.com/watch?v=-c349w_HKS4",
-      "platform": "YouTube",
-      "account": "@ajuntamentdesoller_",
-      "media_type": "video",
-      "content_policy": "generated_social_summary",
-      "rights_status": "platform_embed",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
       "id": "c2c81b2f37ad4b716814",
       "category": "news",
       "source_id": "diario-mallorca-soller",
@@ -2697,26 +2691,6 @@ window.SOLLER_ARA_DATA = {
       "media_type": null,
       "content_policy": "headline_date_link_only",
       "rights_status": "official_party_source",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "afc2f48c871c4c51a1c9",
-      "category": "news",
-      "source_id": "youtube-ajuntament-soller",
-      "source": "Ajuntament de Sóller · YouTube",
-      "source_type": "social",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-09-09T12:39:11+00:00",
-      "title": "Sessió plenària ordinària de l'Ajuntament de Sóller, celebrada el 9 de setembre de 2026.",
-      "summary": "Vídeo publicat per Ajuntament de Sóller · YouTube relacionat amb una sessió plenària o activitat municipal.",
-      "url": "https://www.youtube.com/watch?v=Ej0M-wttjM0",
-      "platform": "YouTube",
-      "account": "@ajuntamentdesoller_",
-      "media_type": "video",
-      "content_policy": "generated_social_summary",
-      "rights_status": "platform_embed",
       "image_allowed": false,
       "related_sources": []
     },
