@@ -3869,9 +3869,18 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-04T08:19:00.855127+00:00",
       "error": ""
+    },
+    {
+      "post_id": "soller-ara-b0de5d170e94bfc4",
+      "platform": "instagram",
+      "status": "deferred",
+      "remote_id": "",
+      "post_url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-b0de5d170e94bfc4.html",
+      "recorded_at": "2026-10-04T10:36:47.226412+00:00",
+      "error": "Pausa temporal de Meta fins a 2026-10-04T12:36:47.226382+00:00. Reintenta després."
     }
   ],
   "cooldowns": {
-    "instagram_until": "2026-10-04T10:18:56.926034+00:00"
+    "instagram_until": "2026-10-04T12:36:47.226382+00:00"
   }
 }
