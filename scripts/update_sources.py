@@ -1537,8 +1537,13 @@ def load_manual_posts() -> list[dict]:
 
     posts = []
     for item in payload.get("posts") or []:
-        if not item.get("id") or not item.get("title") or not item.get("published_at"):
+        if not item.get("id") or not item.get("published_at"):
             continue
+        # Enllaços de xarxes poden publicar-se sense títol ni resum propi.
+        if not item.get("title"):
+            original = urlparse(str(item.get("original_url") or ""))
+            if original.scheme != "https" or not original.netloc:
+                continue
         post = dict(item)
         post.setdefault("source_id", "soller-ara")
         post.setdefault("source", "Sóller Ara")

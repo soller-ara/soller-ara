@@ -14,6 +14,39 @@ spec.loader.exec_module(collector)
 
 
 class SourceCollectionTests(unittest.TestCase):
+    def test_manual_link_without_title_survives_automatic_refresh(self):
+        link = {
+            "id": "manual-link", "title": "", "summary": "",
+            "published_at": datetime.now(timezone.utc).isoformat(),
+            "original_url": "https://www.facebook.com/story.php?story_fbid=123&id=456",
+            "category": "agenda", "show_in_now": False,
+            "content_policy": "manual_link_reference",
+        }
+        with tempfile.TemporaryDirectory() as temp:
+            folder = Path(temp)
+            manual = folder / "manual_posts.json"
+            sources = folder / "sources.json"
+            output = folder / "posts.json"
+            manual.write_text(json.dumps({"posts": [
+                link,
+                {**link, "id": "empty-own", "original_url": ""},
+                {**link, "id": "invalid-link", "original_url": "javascript:alert(1)"},
+            ]}), encoding="utf-8")
+            sources.write_text(json.dumps({"sources": []}), encoding="utf-8")
+            with patch.multiple(collector, MANUAL_POSTS_FILE=manual,
+                                SOURCES_FILE=sources, OUTPUT_FILE=output,
+                                JS_OUTPUT_FILE=folder / "posts.js",
+                                MODERATION_FILE=folder / "moderation.json"), \
+                 patch.object(collector, "fetch_optional_meta_social_sources",
+                              return_value=([], [], [])):
+                self.assertEqual(collector.main(), 0)
+            posts = json.loads(output.read_text(encoding="utf-8"))["posts"]
+            self.assertEqual([post["id"] for post in posts], ["manual-link"])
+            self.assertEqual(posts[0]["original_url"], link["original_url"])
+            self.assertEqual(posts[0]["title"], "")
+            self.assertEqual(posts[0]["category"], "agenda")
+            self.assertFalse(posts[0]["show_in_now"])
+
     def test_clear_title_category_prevents_summary_misclassification(self):
         self.assertEqual(collector.categorize("Tall de trànsit al carrer de la Lluna", "Cursa i concert"), "alerts")
         self.assertEqual(collector.categorize("Ofertes de feina a Sóller", "Agenda cultural i esportiva"), "services")
