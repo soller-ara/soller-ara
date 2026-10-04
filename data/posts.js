@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-10-04T10:36:27.939626+00:00",
+  "fetched_at": "2026-10-04T11:37:37.068886+00:00",
   "source_count": 40,
   "source_status": [
     {
@@ -244,7 +244,7 @@ window.SOLLER_ARA_DATA = {
       "source_type": "institution",
       "method": "rss",
       "ok": true,
-      "count": 5,
+      "count": 4,
       "error": null
     },
     {
@@ -361,12 +361,12 @@ window.SOLLER_ARA_DATA = {
       "source_type": "own",
       "method": "manual",
       "ok": true,
-      "count": 36,
+      "count": 37,
       "error": null
     }
   ],
   "social_integration_status": [],
-  "post_count": 172,
+  "post_count": 171,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
@@ -389,7 +389,8 @@ window.SOLLER_ARA_DATA = {
       "image_allowed": true,
       "original_url": "https://www.facebook.com/story.php?story_fbid=1543427494497567&id=100064909921419&hpir=1",
       "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-b0de5d170e94bfc4.jpg",
-      "media_type": "image"
+      "media_type": "image",
+      "related_sources": []
     },
     {
       "id": "a45d1d123d139b2c0aa6",
@@ -3817,28 +3818,6 @@ window.SOLLER_ARA_DATA = {
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "0c72850e73ecfc7f7962",
-      "category": "culture",
-      "source_id": "can-prunera-noticies",
-      "source": "Can Prunera · Actualitat",
-      "source_type": "institution",
-      "language": "es",
-      "locality": "Sóller",
-      "published_at": "2026-08-05T10:00:24+00:00",
-      "title": "Leonora Carrington en Can Prunera: una revelación",
-      "summary": "",
-      "url": "https://canprunera.com/leonora-carrington-en-can-prunera-una-revelacion/?utm_source=rss&utm_medium=rss&utm_campaign=leonora-carrington-en-can-prunera-una-revelacion",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "link_only_no_media_license",
-      "image_allowed": false,
-      "embed_type": "official_oembed",
-      "embed_url": "https://canprunera.com/leonora-carrington-en-can-prunera-una-revelacion/embed/",
       "related_sources": []
     },
     {
