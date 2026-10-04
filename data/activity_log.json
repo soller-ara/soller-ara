@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "e2d8e04bc5262297",
+      "timestamp": "2026-10-04T10:36:28.087074+00:00",
+      "action": "publish",
+      "area": "publications",
+      "target_id": "soller-ara-b0de5d170e94bfc4",
+      "title": "Camí a la mar. Activitat Policia Tutor Sóller",
+      "detail": "Publicación propia creada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "e35666a366f9e9bc",
       "timestamp": "2026-10-03T21:22:45.079536+00:00",
       "action": "edit",

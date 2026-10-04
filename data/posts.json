@@ -1,7 +1,7 @@
 {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-10-04T08:57:05.751025+00:00",
+  "fetched_at": "2026-10-04T10:36:27.939626+00:00",
   "source_count": 40,
   "source_status": [
     {
@@ -366,10 +366,31 @@
     }
   ],
   "social_integration_status": [],
-  "post_count": 171,
+  "post_count": 172,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "soller-ara-b0de5d170e94bfc4",
+      "category": "culture",
+      "source_id": "manual-992ab061df7c",
+      "source": "Policia Tutor Sóller",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-04T10:36:27.939626+00:00",
+      "show_in_now": true,
+      "content_type": "social_link",
+      "title": "Camí a la mar. Activitat Policia Tutor Sóller",
+      "summary": "Bones tardes!!\n🫶💪  Camí a la Mar.\nAmb els alumnes dels Sagrats Cors de Sóller varem realitzar la neteja d'un petit tram del Torrent dels Montreals que passa per sa zona de Son Puça. Es un petit acte de gran valor que preten conscienciar de la importància de reduir la utilització dels envasos i sobre tot fer una correcta gestió posterior dels mateixos i no llençar-los a sa via pública. Significar que aquest tram de torrent ja es va netejar l'any passat i enguany hem tornat a treure una quantitat exagerada de brutícia. A les fotografies en teniu una mostra del que es va recollir. Molt bona feina dels alumnes!!!",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-b0de5d170e94bfc4.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": true,
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1543427494497567&id=100064909921419&hpir=1",
+      "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-b0de5d170e94bfc4.jpg",
+      "media_type": "image"
+    },
     {
       "id": "a45d1d123d139b2c0aa6",
       "category": "agenda",
