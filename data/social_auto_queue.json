@@ -1,6 +1,45 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-10-04T08:15:08.560702+00:00",
+  "entries": [
+    {
+      "post_id": "a45d1d123d139b2c0aa6",
+      "title": "Les candidatures a la batlia hauran de presentar llistes cremallera per primera vegada",
+      "summary": "",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "source_type": "media",
+      "category": "agenda",
+      "language": "ca",
+      "published_at": "2026-10-04T07:00:00+00:00",
+      "original_url": "https://saveu.cat/noticies/les-candidatures-a-la-batlia-hauran-de-presentar-llistes-cremallera-per-primera-vegada/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/a45d1d123d139b2c0aa6.jpg"
+    },
+    {
+      "post_id": "27fef3eda4e2d8586bdb",
+      "title": "El Museu Marítim documenta el patrimoni en risc de submergir-se",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "culture",
+      "language": "ca",
+      "published_at": "2026-10-04T09:00:00+02:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/10/04/354615/museu-maritim-documenta-patrimoni-risc-submergir-se.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/27fef3eda4e2d8586bdb.jpg"
+    }
+  ]
 }
