@@ -1,7 +1,7 @@
 {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-10-04T08:18:31.185304+00:00",
+  "fetched_at": "2026-10-04T08:25:24.015607+00:00",
   "source_count": 40,
   "source_status": [
     {
@@ -361,12 +361,12 @@
       "source_type": "own",
       "method": "manual",
       "ok": true,
-      "count": 29,
+      "count": 36,
       "error": null
     }
   ],
   "social_integration_status": [],
-  "post_count": 164,
+  "post_count": 171,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
@@ -410,6 +410,26 @@
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "image_allowed": false,
+      "related_sources": []
+    },
+    {
+      "id": "soller-ara-1b9c9aee5cbc39b7",
+      "category": "agenda",
+      "source_id": "manual-8af0f8a160aa",
+      "source": "Ajuntament de Deià",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-03T21:21:24.028250+00:00",
+      "show_in_now": true,
+      "title": "",
+      "summary": "",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-1b9c9aee5cbc39b7.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": false,
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1526664189501970&id=100064752094509&hpir=1",
+      "content_type": "social_link",
       "related_sources": []
     },
     {
@@ -471,6 +491,25 @@
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "image_allowed": false,
+      "related_sources": []
+    },
+    {
+      "id": "soller-ara-301ef2fdbffe098b",
+      "category": "politics",
+      "source_id": "manual-76948c3843fb",
+      "source": "Mes per Sóller",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-03T09:53:00.467743+00:00",
+      "show_in_now": true,
+      "title": "",
+      "summary": "",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-301ef2fdbffe098b.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": false,
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1550871483741412&id=100064557255473&hpir=1",
       "related_sources": []
     },
     {
@@ -679,6 +718,24 @@
       "related_sources": []
     },
     {
+      "id": "soller-ara-0fb3a9b47c46a335",
+      "category": "politics",
+      "source_id": "soller-ara",
+      "source": "Publicació de xarxa",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-02T10:09:04.856227+00:00",
+      "title": "",
+      "summary": "",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-0fb3a9b47c46a335.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": false,
+      "original_url": "https://www.facebook.com/groups/treballinfojove/posts/1459477266028165/?hpir=1",
+      "related_sources": []
+    },
+    {
       "id": "26cce4caa3b3f8b7f5d8",
       "category": "services",
       "source_id": "sa-veu-soller",
@@ -698,6 +755,24 @@
       "image_allowed": false,
       "embed_type": "official_oembed",
       "embed_url": "https://saveu.cat/noticies/arranca-el-desmuntatge-del-fantasio-abans-de-la-demolicio/embed/",
+      "related_sources": []
+    },
+    {
+      "id": "soller-ara-dec9134c7b827cbc",
+      "category": "agenda",
+      "source_id": "manual-c671fec4a9a6",
+      "source": "Ajuntament de Sóller",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-02T09:59:04.401959+00:00",
+      "title": "",
+      "summary": "",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-dec9134c7b827cbc.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": false,
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1399681089038791&id=100069907391489&hpir=1",
       "related_sources": []
     },
     {
@@ -782,6 +857,60 @@
       "image_allowed": false,
       "embed_type": "official_oembed",
       "embed_url": "https://www.foravila.net/area/serra-de-tramuntana/un-nou-informe-avala-la-creacio-duna-reserva-marina-a-la-costa-de-la-serra-de-tramuntana/embed/",
+      "related_sources": []
+    },
+    {
+      "id": "soller-ara-ca6a0a53b4ebf9f1",
+      "category": "politics",
+      "source_id": "manual-6f5c15523a72",
+      "source": "Socialistes de Mallorca",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-02T08:53:16.994489+00:00",
+      "title": "",
+      "summary": "",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-ca6a0a53b4ebf9f1.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": false,
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1392419806337020&id=100067070424813&hpir=1",
+      "related_sources": []
+    },
+    {
+      "id": "soller-ara-65ff40bec3800e52",
+      "category": "social",
+      "source_id": "manual-03faee61d62f",
+      "source": "Setmanari Sóller",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-02T08:39:37.542741+00:00",
+      "title": "",
+      "summary": "",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-65ff40bec3800e52.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": false,
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1991246486334422&id=100063472693673&hpir=1",
+      "related_sources": []
+    },
+    {
+      "id": "soller-ara-54fc14550237afe9",
+      "category": "social",
+      "source_id": "manual-b9c85f6d3406",
+      "source": "Setmanari Veu de Sóller",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-02T08:37:46.476165+00:00",
+      "title": "",
+      "summary": "",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-54fc14550237afe9.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": false,
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1645162604198832&id=100061153255693&hpir=1",
       "related_sources": []
     },
     {
