@@ -3841,9 +3841,37 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-03T18:35:33.001565+00:00",
       "error": ""
+    },
+    {
+      "post_id": "a45d1d123d139b2c0aa6",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122118954621467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122118954621467310",
+      "title": "Les candidatures a la batlia hauran de presentar llistes cremallera per primera vegada",
+      "post_url": "https://saveu.cat/noticies/les-candidatures-a-la-batlia-hauran-de-presentar-llistes-cremallera-per-primera-vegada/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-04T08:18:48.127883+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "27fef3eda4e2d8586bdb",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122118954675467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122118954675467310",
+      "title": "El Museu Marítim documenta el patrimoni en risc de submergir-se",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/04/354615/museu-maritim-documenta-patrimoni-risc-submergir-se.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-04T08:19:00.855127+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
-    "instagram_until": "2026-10-03T20:35:42.161695+00:00"
+    "instagram_until": "2026-10-04T10:18:56.926034+00:00"
   }
 }
