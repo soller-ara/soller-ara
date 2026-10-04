@@ -1,7 +1,7 @@
 {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-10-04T18:20:22.294594+00:00",
+  "fetched_at": "2026-10-04T21:26:14.366985+00:00",
   "source_count": 40,
   "source_status": [
     {
@@ -109,7 +109,7 @@
       "source_type": "media",
       "method": "html_listing_regex",
       "ok": true,
-      "count": 29,
+      "count": 28,
       "error": null
     },
     {
@@ -366,7 +366,7 @@
     }
   ],
   "social_integration_status": [],
-  "post_count": 172,
+  "post_count": 171,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
@@ -3812,26 +3812,6 @@
       "title": "Un nuevo acto vandálico cubre de pintadas un antiguo ‘porxo’ en la carretera de Deià",
       "summary": "",
       "url": "https://www.diariodemallorca.es/part-forana/2026/08/06/nuevo-acto-vandalico-cubre-pintadas-133123033.html",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "3d1f4f253c78d7b2dd00",
-      "category": "news",
-      "source_id": "ultima-hora-soller",
-      "source": "Última Hora",
-      "source_type": "media",
-      "language": "es",
-      "locality": "Sóller",
-      "published_at": "2026-08-05T21:13:00+02:00",
-      "title": "La manifestación de Sóller contra la saturación obliga a cerrar terrazas, expositores y mercadillos",
-      "summary": "",
-      "url": "https://www.ultimahora.es/noticias/part-forana/2026/08/05/2684161/protesta-soller-contra-saturacion-obliga-cerrar-terrazas-expositores-mercadillos.html",
       "platform": null,
       "account": null,
       "media_type": null,
