@@ -35,6 +35,7 @@ LANGUAGE = os.environ.get("POST_LANGUAGE", "ca").strip() or "ca"
 IMAGE_URL = os.environ.get("POST_IMAGE_URL", "").strip()
 SOURCE_NAME = os.environ.get("POST_SOURCE_NAME", "").strip()
 ORIGINAL_URL = os.environ.get("POST_ORIGINAL_URL", "").strip()
+CONTENT_TYPE = os.environ.get("POST_CONTENT_TYPE", "").strip() or ("social_link" if ORIGINAL_URL else "own")
 CONFIRMATION = os.environ.get("PUBLISH_CONFIRMATION", "").strip()
 SHOW_IN_NOW = os.environ.get("PUBLISH_SHOW_IN_NOW", "true").strip().lower() not in {"false", "0", "no", "off"}
 PUBLISH_KEY = (os.environ.get("PUBLISH_KEY", "").strip() or os.environ.get("GITHUB_RUN_ID", "").strip())
@@ -260,6 +261,18 @@ def main() -> int:
     if not ORIGINAL_URL and not BODY:
         print("ERROR: falta el text de la publicació.", file=sys.stderr)
         return 2
+    if LANGUAGE not in {"ca", "es", "en"} or CONTENT_TYPE not in {"own", "social_link", "event_poster"}:
+        print("ERROR: idioma o tipus no vàlid.", file=sys.stderr)
+        return 2
+    if CONTENT_TYPE == "event_poster" and not IMAGE_URL:
+        print("ERROR: falta la imatge del cartell.", file=sys.stderr)
+        return 2
+    if CONTENT_TYPE == "social_link" and not ORIGINAL_URL:
+        print("ERROR: falta l'enllaç original.", file=sys.stderr)
+        return 2
+    if IMAGE_URL and (urlparse(IMAGE_URL).scheme != "https" or not urlparse(IMAGE_URL).netloc or urlparse(IMAGE_URL).username):
+        print("ERROR: URL d'imatge no vàlida.", file=sys.stderr)
+        return 2
     if CATEGORY not in ALLOWED_CATEGORIES:
         print(f"ERROR: categoria no vàlida: {CATEGORY}", file=sys.stderr)
         return 2
@@ -268,7 +281,7 @@ def main() -> int:
         return 2
     if ORIGINAL_URL:
         parsed_original = urlparse(ORIGINAL_URL)
-        if parsed_original.scheme != "https" or not parsed_original.netloc:
+        if parsed_original.scheme != "https" or not parsed_original.netloc or parsed_original.username:
             print("ERROR: l'enllaç original ha de ser https.", file=sys.stderr)
             return 2
     if len(SOURCE_NAME) > 120:
@@ -277,6 +290,24 @@ def main() -> int:
 
     now = datetime.now(timezone.utc).isoformat()
     post_id = stable_id_from_key(PUBLISH_KEY) if PUBLISH_KEY else stable_id(TITLE, now)
+
+    manual = json.loads(MANUAL_FILE.read_text(encoding="utf-8")) if MANUAL_FILE.exists() else {"version": 1, "posts": []}
+    if not isinstance(manual, dict) or not isinstance(manual.get("posts"), list):
+        raise ValueError("Format de publicacions pròpies no vàlid.")
+    if any(not isinstance(post, dict) for post in manual["posts"]):
+        raise ValueError("Format de publicacions pròpies no vàlid.")
+    if POSTS_FILE.exists():
+        payload = json.loads(POSTS_FILE.read_text(encoding="utf-8"))
+        if not isinstance(payload, dict) or not isinstance(payload.get("posts"), list) or any(not isinstance(post, dict) for post in payload["posts"]):
+            raise ValueError("Format del feed no vàlid.")
+    existing = next((post for post in manual["posts"] if post.get("id") == post_id), None)
+    if existing:
+        github_env = os.environ.get("GITHUB_ENV")
+        if github_env:
+            with open(github_env, "a", encoding="utf-8") as env_file:
+                env_file.write(f"OWN_POST_ID={post_id}\nOWN_POST_URL={existing['url']}\nOWN_IMAGE_URL={existing.get('media_url', '')}\n")
+        print(f"OWN_SKIP: publicació ja creada: {post_id}")
+        return 0
 
     post_url = f"{SITE_URL}/noticies/{post_id}.html"
     # Las referencias incrustadas no muestran esta tarjeta en la web, pero se conserva para Instagram cuando hay título propio.
@@ -294,6 +325,7 @@ def main() -> int:
         "locality": "Sóller",
         "published_at": now,
         "show_in_now": SHOW_IN_NOW,
+        "content_type": CONTENT_TYPE,
         "title": TITLE,
         "summary": BODY,
         "url": post_url,

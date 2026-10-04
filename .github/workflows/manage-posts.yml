@@ -16,7 +16,7 @@ on:
         description: 'Tipus nou (només per reclassify)'
         required: false
         type: choice
-        options: [news, agenda, alerts, services, culture, sports, commerce]
+        options: [news, agenda, alerts, services, culture, sports, commerce, politics, social]
       note:
         description: 'Compatibilitat API (no es desa)'
         required: false
@@ -95,8 +95,11 @@ jobs:
       - name: Upload site
         uses: actions/upload-pages-artifact@v4
         with:
+          name: github-pages-${{ github.run_attempt }}
           path: "."
 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          artifact_name: github-pages-${{ github.run_attempt }}

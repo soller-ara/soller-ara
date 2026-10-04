@@ -141,7 +141,7 @@ class SocialDistributionTests(unittest.TestCase):
              patch.object(self.publish, "publish_facebook") as fb, \
              patch.object(self.publish, "publish_instagram") as ig:
             self.assertEqual(self.publish.main(), 0)
-            accounts.assert_called_once()
+            accounts.assert_not_called()
             fb.assert_not_called()
             ig.assert_not_called()
 

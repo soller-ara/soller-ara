@@ -3,7 +3,7 @@
   const LIVE_REPO_API = "https://api.github.com/repos/soller-ara/soller-ara/contents/";
   const TOKEN_KEY = "sollerAraAdminSession";
   const repoJson = window.SOLLER_ARA_READ_JSON;
-  const categoryNames = {news: "Noticias", agenda: "Agenda", alerts: "Avisos", services: "Servicios", culture: "Cultura", sports: "Deportes", commerce: "Comercio"};
+  const categoryNames = {news: "Noticias", agenda: "Agenda", alerts: "Avisos", services: "Servicios", culture: "Cultura", sports: "Deportes", commerce: "Comercio", politics: "Política", social: "Redes"};
   let rendering = false;
   let state = null;
 
@@ -55,7 +55,7 @@
     return `<div class="status-row"><span><strong>${esc(title)}</strong><small>${detail}</small></span><strong class="${kind}">${esc(status)}</strong></div>`;
   }
 
-  function platformRow(config, entries, platform, logAvailable) {
+  function platformRow(config, entries, platform, logAvailable, cooldowns = {}) {
     const name = platform === "facebook" ? "Facebook" : "Instagram";
     const enabled = config.platforms?.[platform] === true;
     const count = Object.values(config.sources || {}).filter((item) => item?.[platform] === true).length;
@@ -88,6 +88,12 @@
       }
     } else if (enabled && config.enabled) {
       detail += "<br>A la espera de contenido reciente que cumpla los filtros.";
+    }
+    const pauseUntil = new Date(cooldowns.instagram_until || "");
+    if (platform === "instagram" && enabled && config.enabled && pauseUntil > new Date()) {
+      status = "EN PAUSA · META";
+      kind = "pending";
+      detail += `<br>Límite temporal de Meta hasta ${esc(pauseUntil.toLocaleString("es-ES"))}. Facebook continúa activo.`;
     }
     return row(name, detail, status, kind);
   }
@@ -234,8 +240,8 @@
         && !Object.prototype.hasOwnProperty.call(config.sources || {}, source.id));
       const categories = Object.entries(config.categories || {}).filter(([, enabled]) => enabled === true).map(([key]) => categoryNames[key] || key);
       target.innerHTML = `<div class="status-list">${row("Automatización", config.enabled ? "Revisión programada cada hora; los envíos se confirman debajo." : "La publicación automática está pausada.", config.enabled ? "ACTIVA" : "EN PAUSA", config.enabled ? "ok" : "pending")
-        + platformRow(config, entries, "facebook", logResult.status === "fulfilled")
-        + platformRow(config, entries, "instagram", logResult.status === "fulfilled")
+        + platformRow(config, entries, "facebook", logResult.status === "fulfilled", logResult.status === "fulfilled" ? logResult.value.cooldowns || {} : {})
+        + platformRow(config, entries, "instagram", logResult.status === "fulfilled", logResult.status === "fulfilled" ? logResult.value.cooldowns || {} : {})
         + row("Ritmo máximo", `Contenido de las últimas ${esc(config.max_age_hours || 6)} h, sin repetir envíos confirmados.`, `${config.max_posts_per_run || 3} noticias / ejecución`)}</div>
       <div class="social-settings"><div class="social-settings-heading"><div><h4>Control de envíos</h4><p class="hint">La pausa no detiene la recopilación de la web. Las casillas solo autorizan la distribución a cada red.</p></div>
         <label class="switch-label"><input id="socialAutomationEnabled" type="checkbox" ${config.enabled ? "checked" : ""}/><span>${config.enabled ? "Automatización activa" : "Automatización en pausa"}</span></label></div>

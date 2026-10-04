@@ -1504,12 +1504,10 @@ def filter_by_max_age(source: dict, posts: list[dict]) -> list[dict]:
 def load_moderation() -> dict:
     if not MODERATION_FILE.exists():
         return {}
-    try:
-        payload = json.loads(MODERATION_FILE.read_text(encoding="utf-8"))
-        return payload if isinstance(payload, dict) else {}
-    except Exception as exc:
-        print(f"ERROR moderació: {exc}", file=sys.stderr)
-        return {}
+    payload = json.loads(MODERATION_FILE.read_text(encoding="utf-8"))
+    if not isinstance(payload, dict) or not isinstance(payload.get("hidden_post_ids", []), list) or not isinstance(payload.get("category_overrides", {}), dict):
+        raise ValueError("El fitxer de moderació no té un format vàlid.")
+    return payload
 
 
 def load_hidden_post_ids() -> set[str]:
@@ -1529,11 +1527,9 @@ def load_category_overrides() -> dict[str, str]:
 def load_manual_posts() -> list[dict]:
     if not MANUAL_POSTS_FILE.exists():
         return []
-    try:
-        payload = json.loads(MANUAL_POSTS_FILE.read_text(encoding="utf-8"))
-    except Exception as exc:
-        print(f"ERROR publicacions pròpies: {exc}", file=sys.stderr)
-        return []
+    payload = json.loads(MANUAL_POSTS_FILE.read_text(encoding="utf-8"))
+    if not isinstance(payload, dict) or not isinstance(payload.get("posts"), list) or any(not isinstance(post, dict) for post in payload["posts"]):
+        raise ValueError("El fitxer de publicacions pròpies no té un format vàlid.")
 
     posts = []
     for item in payload.get("posts") or []:
@@ -1558,9 +1554,8 @@ def load_manual_posts() -> list[dict]:
 
 
 def load_disabled_source_posts(sources: list[dict]) -> list[dict]:
-    """Conserva entrades ja recopilades, sense consultar les fonts desactivades."""
-    disabled = [source for source in sources if not source.get("enabled", True)]
-    if not disabled or not OUTPUT_FILE.exists():
+    """Recupera entrades anteriors d'aquestes fonts amb els mateixos filtres."""
+    if not sources or not OUTPUT_FILE.exists():
         return []
 
     # Si el fitxer anterior és il·legible, aturam abans de sobreescriure'l.
@@ -1570,17 +1565,23 @@ def load_disabled_source_posts(sources: list[dict]) -> list[dict]:
         raise ValueError("El fitxer anterior de publicacions no té un format vàlid.")
 
     retained: list[dict] = []
-    for source in disabled:
+    for source in sources:
         source_posts = [post for post in previous if post.get("source_id") == source.get("id")]
         source_posts = filter_by_keywords(source, source_posts)
-        retention = {"max_age_days": source.get("max_age_days", 60)}
+        retention = source if source.get("enabled", True) else {"max_age_days": source.get("max_age_days", 60)}
         retained.extend(filter_by_max_age(retention, source_posts))
     return retained
 
 
 def main() -> int:
     config = json.loads(SOURCES_FILE.read_text(encoding="utf-8"))
-    posts = load_disabled_source_posts(config.get("sources", []))
+    sources = config.get("sources", [])
+    previous = load_disabled_source_posts(sources)
+    posts = [post for post in previous if any(source.get("id") == post.get("source_id") and not source.get("enabled", True) for source in sources)]
+    # Valida dades persistents abans de consultar fonts o escriure el feed.
+    manual_posts = load_manual_posts()
+    hidden_post_ids = load_hidden_post_ids()
+    category_overrides = load_category_overrides()
     errors: list[dict] = []
     source_status: list[dict] = []
     social_integration_status: list[dict] = []
@@ -1604,6 +1605,8 @@ def main() -> int:
             })
             print(f"OK {source['name']}: {len(source_posts)} publicacions")
         except Exception as exc:  # Es registra l'error sense impedir altres fonts.
+            retained = [post for post in previous if post.get("source_id") == source.get("id")]
+            posts.extend(retained)
             errors.append({"source_id": source.get("id"), "error": str(exc)})
             source_status.append({
                 "source_id": source.get("id"),
@@ -1611,12 +1614,12 @@ def main() -> int:
                 "source_type": source.get("source_type", "publisher"),
                 "method": source.get("type"),
                 "ok": False,
-                "count": 0,
+                "count": len(retained),
+                "retained_count": len(retained),
                 "error": str(exc),
             })
             print(f"ERROR {source.get('name', source.get('id'))}: {exc}", file=sys.stderr)
 
-    manual_posts = load_manual_posts()
     posts.extend(manual_posts)
     if manual_posts:
         source_status.append({
@@ -1638,8 +1641,6 @@ def main() -> int:
     source_status.extend(status for status in meta_source_status if status.get("ok"))
 
     # Només elimina duplicats exactes de la mateixa entrada. Mai elimina una publicació d'una altra font.
-    hidden_post_ids = load_hidden_post_ids()
-    category_overrides = load_category_overrides()
     for post in posts:
         override = category_overrides.get(str(post.get("id") or ""))
         if override:

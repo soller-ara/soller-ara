@@ -32,7 +32,18 @@ ALLOWED_CATEGORIES = {"news", "agenda", "alerts", "services", "culture", "sports
 def load_json(path: Path, fallback: dict) -> dict:
     if not path.exists():
         return fallback
-    return json.loads(path.read_text(encoding="utf-8"))
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(payload, dict):
+        raise ValueError(f"Format JSON no vàlid: {path.name}")
+    for key in ("posts", "hidden_post_ids"):
+        if key in payload and not isinstance(payload[key], list):
+            raise ValueError(f"Format no vàlid: {path.name}/{key}")
+    for key in ("category_overrides", "notes", "hidden_posts"):
+        if key in payload and not isinstance(payload[key], dict):
+            raise ValueError(f"Format no vàlid: {path.name}/{key}")
+    if any(not isinstance(post, dict) for post in payload.get("posts", [])):
+        raise ValueError(f"Format de publicacions no vàlid: {path.name}")
+    return payload
 
 
 def save_json(path: Path, payload: dict) -> None:
@@ -92,7 +103,7 @@ def delete_own() -> None:
     if media_url:
         media_name = Path(urlparse(media_url).path).name
         generated = ROOT / "assets" / "generated" / media_name
-        if generated.exists() and generated.name.startswith("soller-ara-"):
+        if generated.exists() and generated.name == f"{POST_ID}.jpg" and "/assets/generated/" in urlparse(media_url).path:
             generated.unlink()
 
     moderation = load_json(MODERATION_FILE, {"version": 1, "hidden_post_ids": [], "notes": {}})
@@ -102,6 +113,7 @@ def delete_own() -> None:
     notes = moderation.setdefault("notes", {})
     notes.pop(POST_ID, None)
     moderation.setdefault("hidden_posts", {}).pop(POST_ID, None)
+    moderation.setdefault("category_overrides", {}).pop(POST_ID, None)
     save_json(MODERATION_FILE, moderation)
 
     refresh_generated_feed()
@@ -166,7 +178,12 @@ def unhide() -> None:
     save_json(MODERATION_FILE, moderation)
 
     if archived is not None:
-        restore_archived_post(archived)
+        if archived.get("source_type") == "own":
+            manual = load_json(MANUAL_FILE, {"posts": []})
+            archived = next((post for post in manual.get("posts", []) if post.get("id") == POST_ID), None)
+        if archived is not None:
+            restore_archived_post(archived)
+            refresh_generated_feed()
         print(f"RESULTAT: publicació restaurada immediatament: {POST_ID}")
     else:
         print(f"RESULTAT: publicació reactivada: {POST_ID}. Es recuperarà de la font a la pròxima actualització.")
@@ -195,6 +212,9 @@ def main() -> int:
         return 2
 
     try:
+        load_json(MANUAL_FILE, {"posts": []})
+        load_json(POSTS_FILE, {"posts": []})
+        load_json(MODERATION_FILE, {"hidden_post_ids": []})
         if ACTION == "delete-own":
             delete_own()
         elif ACTION == "hide":

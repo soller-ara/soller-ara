@@ -46,12 +46,17 @@
         .replaceAll('"', "&quot;");
     }
 
+    function safeUrl(value) {
+      try { const url = new URL(value); return url.protocol === "https:" && !url.username && !url.password ? url.href : ""; }
+      catch (_) { return ""; }
+    }
+
     async function loadOwnPosts() {
       try {
-        const response = await fetch("data/manual_posts.json?v=" + Date.now(), { cache: "no-store" });
+        const response = await fetch("data/posts.json?v=" + Date.now(), { cache: "no-store" });
         if (!response.ok) throw new Error("HTTP " + response.status);
         const payload = await response.json();
-        const posts = Array.isArray(payload.posts) ? [...payload.posts] : [];
+        const posts = Array.isArray(payload.posts) ? payload.posts.filter((post) => post.source_type === "own") : [];
         posts.sort((a, b) => new Date(b.published_at) - new Date(a.published_at));
 
         if (!posts.length) {
@@ -60,11 +65,11 @@
         }
 
         container.innerHTML = posts.slice(0, 20).map((post) => `
-          <a class="own-link-card" href="${esc(post.url)}">
-            ${post.media_url ? `<img src="${esc(post.media_url)}" alt="" loading="lazy" />` : ""}
+          <a class="own-link-card" href="${esc(safeUrl(post.url) || "#")}">
+            ${safeUrl(post.media_url) ? `<img src="${esc(safeUrl(post.media_url))}" alt="" loading="lazy" />` : ""}
             <span class="own-link-content">
               <small>${esc(post.category || "news")}</small>
-              <strong>${esc(post.title)}</strong>
+              <strong>${esc(post.title || post.source || "Publicació de xarxa")}</strong>
               <span>${esc(post.summary || "")}</span>
             </span>
           </a>

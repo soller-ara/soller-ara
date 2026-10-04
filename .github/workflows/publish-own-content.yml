@@ -100,6 +100,8 @@ jobs:
           POST_IMAGE_URL: ${{ inputs.image_url }}
           POST_SOURCE_NAME: ${{ inputs.source_name }}
           POST_ORIGINAL_URL: ${{ inputs.original_url }}
+          POST_CONTENT_TYPE: ${{ inputs.content_type }}
+          PUBLISH_KEY: ${{ github.run_id }}
           PUBLISH_SHOW_IN_NOW: ${{ inputs.show_in_now }}
         run: python scripts/add_own_post.py
 
@@ -128,11 +130,14 @@ jobs:
       - name: Upload site
         uses: actions/upload-pages-artifact@v4
         with:
+          name: github-pages-${{ github.run_attempt }}
           path: "."
 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          artifact_name: github-pages-${{ github.run_attempt }}
 
       - name: Comprovar que la notícia ja és pública
         if: ${{ inputs.facebook || inputs.instagram }}

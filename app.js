@@ -283,7 +283,11 @@ const demoPosts = [
 let posts = [];
 let fetchedAt = null;
 let usingDemoData = false;
-let currentLanguage = localStorage.getItem("sollerAraLanguage") || "ca";
+let currentLanguage = "ca";
+try {
+  const savedLanguage = localStorage.getItem("sollerAraLanguage");
+  if (["ca", "es", "en"].includes(savedLanguage)) currentLanguage = savedLanguage;
+} catch (_) {}
 let currentCategory = "now";
 let currentSource = "all";
 let currentSearch = "";
@@ -489,8 +493,8 @@ function renderFeed() {
 
   feed.innerHTML = visiblePosts.map((post) => {
     const categoryLabel = translations[currentLanguage].categories[post.category] || post.category;
-    const safeUrl = post.url || "#";
-    const originalUrl = post.original_url || "";
+    const safeUrl = safeLinkUrl(post.url) || "#";
+    const originalUrl = safeLinkUrl(post.original_url);
     const officialPreview = renderOfficialLinkPreview(post);
     const authorizedPoster = renderAuthorizedPoster(post);
     const originalEmbed = renderManualOriginalEmbed(post);
@@ -501,7 +505,7 @@ function renderFeed() {
       : "";
     const relatedSources = Array.isArray(post.related_sources) ? post.related_sources : [];
     const relatedHtml = relatedSources.length
-      ? `<div class="related-sources"><span>${t("card.related")}:</span>${relatedSources.map((item) => `<a href="${escapeAttribute(item.url || "#")}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.source || "")}</a>`).join("")}</div>`
+      ? `<div class="related-sources"><span>${t("card.related")}:</span>${relatedSources.map((item) => `<a href="${escapeAttribute(safeLinkUrl(item.url) || "#")}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.source || "")}</a>`).join("")}</div>`
       : "";
     return `
       <article class="card">
@@ -533,6 +537,13 @@ function renderFeed() {
 
   ensureXWidgets();
   ensureInstagramWidgets();
+}
+
+function safeLinkUrl(value) {
+  try {
+    const url = new URL(value);
+    return ["http:", "https:"].includes(url.protocol) && !url.username && !url.password ? url.href : "";
+  } catch (_) { return ""; }
 }
 
 function escapeHtml(value) {
@@ -592,6 +603,7 @@ function renderOfficialLinkPreview(post) {
 function getEmbeddablePlatform(url) {
   try {
     const parsed = new URL(url);
+    if (parsed.protocol !== "https:" || parsed.username || parsed.password) return "";
     const host = parsed.hostname.toLowerCase().replace(/^www\./, "");
     const path = parsed.pathname.toLowerCase();
 
@@ -652,6 +664,7 @@ function renderSocialEmbed(post) {
 
 function renderPlatformEmbed(post) {
   const platform = String(post.platform || "").toLowerCase();
+  if (!safeLinkUrl(post.url)) return "";
 
   if (platform === "facebook") {
     try {
@@ -872,7 +885,7 @@ sourceSelect.addEventListener("change", (event) => {
 
 languageSelect.addEventListener("change", (event) => {
   currentLanguage = event.target.value;
-  localStorage.setItem("sollerAraLanguage", currentLanguage);
+  try { localStorage.setItem("sollerAraLanguage", currentLanguage); } catch (_) {}
   applyTranslations();
 });
 

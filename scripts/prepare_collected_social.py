@@ -30,10 +30,18 @@ IMAGE_BASE = "https://soller-ara.github.io/soller-ara/assets/generated/social"
 def load_json(path: Path, fallback: dict) -> dict:
     if not path.exists():
         return fallback
-    try:
-        return json.loads(path.read_text(encoding="utf-8"))
-    except Exception:
-        return fallback
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(payload, dict):
+        raise ValueError(f"Format JSON no vàlid: {path.name}")
+    for key in ("entries", "posts", "hidden_post_ids"):
+        if key in payload and not isinstance(payload[key], list):
+            raise ValueError(f"Format no vàlid: {path.name}/{key}")
+    for key in ("entries", "posts"):
+        if any(not isinstance(item, dict) for item in payload.get(key, [])):
+            raise ValueError(f"Format no vàlid: {path.name}/{key}")
+    if "entries" in fallback and "entries" not in payload:
+        raise ValueError(f"Falta el registre d'entrades: {path.name}")
+    return payload
 
 
 def parse_date(value: str | None) -> datetime | None:

@@ -151,7 +151,7 @@ class SourceCollectionTests(unittest.TestCase):
 
         configured = json.loads((ROOT / "sources.json").read_text(encoding="utf-8"))["sources"]
         enabled = {item["id"] for item in configured if item.get("image_policy") == "official_oembed"}
-        self.assertEqual(enabled, {"sa-veu-soller", "mucbo-noticies", "can-prunera-noticies"})
+        self.assertEqual(enabled, {'mucbo-noticies', 'can-prunera-noticies', 'futbol-balear-cf-soller', 'fora-vila-soller', 'sa-veu-soller'})
 
 
 class SourceLifecycleTests(unittest.TestCase):
@@ -223,6 +223,42 @@ class SourceLifecycleTests(unittest.TestCase):
         result = self.collect()
         self.assertEqual([post["id"] for post in result["posts"]], ["fresh", "resumed", "kept"])
         self.assertEqual([call.args[0]["id"] for call in self.fetch.call_args_list], ["paused", "active"])
+
+    def test_active_source_failure_retains_recent_data_and_reports_error(self):
+        self.write(collector.OUTPUT_FILE, {"posts": [self.kept, self.fresh,
+            self.post("old", "active", 61), self.post("hidden", "active", 1)]})
+        self.write(collector.MODERATION_FILE, {"hidden_post_ids": ["hidden"],
+            "category_overrides": {"fresh": "culture"}})
+        self.fetch.side_effect = RuntimeError("HTTP 404")
+        result = self.collect()
+        self.assertEqual([post["id"] for post in result["posts"]], ["fresh", "kept"])
+        self.assertEqual(result["posts"][0]["published_at"], self.fresh["published_at"])
+        self.assertEqual(result["posts"][0]["category"], "culture")
+        self.assertFalse(result["source_status"][0]["ok"])
+        self.assertEqual(result["source_status"][0]["error"], "HTTP 404")
+        self.assertEqual(result["source_status"][0]["retained_count"], 2)
+        self.fetch.side_effect = None
+        self.fetch.return_value = [self.fresh]
+        self.assertEqual([post["id"] for post in self.collect()["posts"]], ["fresh", "kept"])
+
+    def test_successful_empty_source_does_not_retain_stale_cache(self):
+        self.write(collector.OUTPUT_FILE, {"posts": [self.fresh]})
+        self.fetch.return_value = []
+        result = self.collect()
+        self.assertEqual(result["posts"], [])
+        self.assertTrue(result["source_status"][0]["ok"])
+
+    def test_invalid_manual_or_moderation_file_preserves_existing_feed(self):
+        for path in [collector.MANUAL_POSTS_FILE, collector.MODERATION_FILE]:
+            with self.subTest(file=path.name):
+                self.write(collector.OUTPUT_FILE, {"posts": [self.fresh]})
+                before = collector.OUTPUT_FILE.read_text()
+                path.write_text("broken JSON")
+                with self.assertRaises(json.JSONDecodeError):
+                    collector.main()
+                self.assertEqual(collector.OUTPUT_FILE.read_text(), before)
+                self.fetch.assert_not_called()
+                path.unlink()
 
     def test_invalid_cache_is_not_overwritten_when_preservation_is_required(self):
         collector.OUTPUT_FILE.write_text("invalid JSON", encoding="utf-8")

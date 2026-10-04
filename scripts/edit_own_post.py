@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import html
 import json
 import os
@@ -14,6 +15,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parents[1]
 MANUAL_FILE = ROOT / "data" / "manual_posts.json"
+MODERATION_FILE = ROOT / "data" / "moderation.json"
 POSTS_FILE = ROOT / "data" / "posts.json"
 POSTS_JS_FILE = ROOT / "data" / "posts.js"
 DETAIL_DIR = ROOT / "noticies"
@@ -42,7 +44,18 @@ ALLOWED_LANGUAGES = {"ca", "es", "en"}
 def load_json(path: Path, fallback: dict) -> dict:
     if not path.exists():
         return fallback
-    return json.loads(path.read_text(encoding="utf-8"))
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(payload, dict):
+        raise ValueError(f"Format JSON no vàlid: {path.name}")
+    for key in ("posts", "hidden_post_ids"):
+        if key in payload and not isinstance(payload[key], list):
+            raise ValueError(f"Format no vàlid: {path.name}/{key}")
+    for key in ("category_overrides", "notes", "hidden_posts"):
+        if key in payload and not isinstance(payload[key], dict):
+            raise ValueError(f"Format no vàlid: {path.name}/{key}")
+    if any(not isinstance(post, dict) for post in payload.get("posts", [])):
+        raise ValueError(f"Format de publicacions no vàlid: {path.name}")
+    return payload
 
 
 def load_font(size: int, bold: bool = False):
@@ -352,18 +365,30 @@ def main() -> int:
         print("ERROR: no s'ha trobat aquesta publicació pròpia.", file=sys.stderr)
         return 1
 
+    payload = load_json(POSTS_FILE, {"posts": []})
+    moderation = load_json(MODERATION_FILE, {"hidden_post_ids": [], "category_overrides": {}})
+    if CONTENT_TYPE == "social_link" and not ORIGINAL_URL:
+        print("ERROR: falta l'enllaç original.", file=sys.stderr)
+        return 2
+    for value in (ORIGINAL_URL, IMAGE_URL):
+        if value and (urlparse(value).scheme != "https" or not urlparse(value).netloc or urlparse(value).username):
+            print("ERROR: URL https no vàlida.", file=sys.stderr)
+            return 2
+    if CONTENT_TYPE == "event_poster" and not IMAGE_URL:
+        print("ERROR: falta la imatge del cartell.", file=sys.stderr)
+        return 2
     old_media = str(target.get("media_url") or "")
     if IMAGE_URL:
         final_image = IMAGE_URL
-    elif CONTENT_TYPE == "social_link" and ORIGINAL_URL:
-        final_image = ""
-    elif is_generated_image(POST_ID, old_media):
+    elif CONTENT_TYPE == "social_link" and not TITLE:
+        final_image = "" if is_generated_image(POST_ID, old_media) else old_media
+    elif is_generated_image(POST_ID, old_media) or (CONTENT_TYPE == "social_link" and TITLE and not old_media):
         final_image = generate_social_card(POST_ID, TITLE, CATEGORY)
     else:
         final_image = old_media
 
-    final_source = SOURCE_NAME or target.get("source") or ("Publicació de xarxa" if ORIGINAL_URL else "Sóller Ara")
-    final_original = ORIGINAL_URL or target.get("original_url") or ""
+    final_original = ORIGINAL_URL if CONTENT_TYPE != "own" else ""
+    final_source = (SOURCE_NAME or "Publicació de xarxa") if final_original else "Sóller Ara"
     updated = dict(target)
     updated.update({
         "category": CATEGORY,
@@ -371,6 +396,7 @@ def main() -> int:
         "title": TITLE,
         "summary": BODY,
         "source": final_source,
+        "source_id": "manual-" + hashlib.sha1(SOURCE_NAME.casefold().encode("utf-8")).hexdigest()[:12] if final_original and SOURCE_NAME else "soller-ara",
         "original_url": final_original,
         "content_type": CONTENT_TYPE,
         "show_in_now": SHOW_IN_NOW,
@@ -389,7 +415,8 @@ def main() -> int:
     manual["posts"] = [updated if item.get("id") == POST_ID else item for item in manual_posts]
     MANUAL_FILE.write_text(json.dumps(manual, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
-    payload = load_json(POSTS_FILE, {"posts": []})
+    moderation.setdefault("category_overrides", {}).pop(POST_ID, None)
+    MODERATION_FILE.write_text(json.dumps(moderation, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     posts = payload.get("posts") or []
     payload["posts"] = [updated if item.get("id") == POST_ID else item for item in posts]
     payload["post_count"] = len(payload["posts"])

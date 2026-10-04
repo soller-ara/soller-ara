@@ -11,7 +11,7 @@ import json
 import os
 import sys
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from urllib.error import HTTPError
 from urllib.parse import urlencode
@@ -37,19 +37,17 @@ POST_URL = (os.environ.get("OWN_POST_URL", "").strip() or os.environ.get("POST_U
 def load_publish_log() -> dict:
     if not LOG_FILE.exists():
         return {"version": 1, "entries": []}
-    try:
-        return json.loads(LOG_FILE.read_text(encoding="utf-8"))
-    except Exception:
-        return {"version": 1, "entries": []}
+    payload = json.loads(LOG_FILE.read_text(encoding="utf-8"))
+    if not isinstance(payload, dict) or not isinstance(payload.get("entries"), list) or any(not isinstance(entry, dict) for entry in payload["entries"]):
+        raise ValueError("El registre social no té un format vàlid; no es publica res.")
+    return payload
 
 
 def already_published(log: dict, platform: str) -> bool:
     if not POST_ID:
         return False
-    for entry in reversed(log.get("entries") or []):
-        if entry.get("post_id") == POST_ID and entry.get("platform") == platform:
-            return entry.get("status") == "success"
-    return False
+    return any(entry.get("post_id") == POST_ID and entry.get("platform") == platform
+               and entry.get("status") == "success" for entry in log.get("entries") or [])
 
 
 def record_result(log: dict, platform: str, status: str, remote_id: str = "", error: str = "") -> None:
@@ -125,24 +123,18 @@ def discover_accounts() -> tuple[str, str, str, str]:
                 )
             )
 
-    chosen = None
-    for item in candidates:
-        if item[0].casefold() in {"soller ara", "sóller ara"}:
-            chosen = item
-            break
-    if chosen is None and len(candidates) == 1:
-        chosen = candidates[0]
-    if chosen is None:
+    matches = [item for item in candidates if item[0].casefold() in {"soller ara", "sóller ara"}]
+    if len(matches) != 1:
         raise RuntimeError("No s'ha pogut identificar de forma única la pàgina Sóller Ara.")
 
-    page_name, page_id, page_token, ig_id, ig_username, tasks = chosen
+    page_name, page_id, page_token, ig_id, ig_username, tasks = matches[0]
     if DO_FACEBOOK and "CREATE_CONTENT" not in tasks:
         raise RuntimeError("La pàgina Sóller Ara no retorna la tasca CREATE_CONTENT.")
     return page_id, page_token, ig_id, ig_username
 
 
 def source_reference() -> str:
-    return f"\n\nFont original ({SOURCE_NAME}): {ORIGINAL_URL}" if SOURCE_NAME and ORIGINAL_URL else ""
+    return f"\n\nFont original ({SOURCE_NAME or 'Publicació de xarxa'}): {ORIGINAL_URL}" if ORIGINAL_URL else ""
 
 
 def publish_facebook(page_id: str, page_token: str) -> str:
@@ -164,6 +156,8 @@ def publish_facebook(page_id: str, page_token: str) -> str:
 
 
 def publish_instagram(ig_id: str, ig_username: str, page_token: str) -> str:
+    if ig_username.casefold() != "soller.ara":
+        raise RuntimeError("El compte Instagram vinculat no és soller.ara.")
     if not ig_id:
         raise RuntimeError("No s'ha trobat el compte Instagram vinculat a Sóller Ara.")
     if not IMAGE_URL:
@@ -220,19 +214,28 @@ def main() -> int:
     if not TOKEN:
         print("ERROR: falta META_ACCESS_TOKEN.", file=sys.stderr)
         return 2
-    if not TITLE or not BODY:
+    if not ORIGINAL_URL and (not TITLE or not BODY):
         print("ERROR: falta títol o text.", file=sys.stderr)
         return 2
 
     log = load_publish_log()
+    pause_value = str((log.get("cooldowns") or {}).get("instagram_until") or "")
+    paused = bool(pause_value and datetime.fromisoformat(pause_value.replace("Z", "+00:00")) > datetime.now(timezone.utc))
+    facebook_needed = DO_FACEBOOK and not already_published(log, "facebook")
+    instagram_needed = DO_INSTAGRAM and not already_published(log, "instagram")
+    if instagram_needed and paused:
+        record_result(log, "instagram", "deferred", error=f"Pausa temporal de Meta fins a {pause_value}. Reintenta després.")
+        print(f"INSTAGRAM_DEFERRED until={pause_value}")
+    if not facebook_needed and (not instagram_needed or paused):
+        return 0
 
     try:
         page_id, page_token, ig_id, ig_username = discover_accounts()
     except Exception as exc:
         print(f"ERROR publicació social: {exc}", file=sys.stderr)
-        if DO_FACEBOOK:
+        if facebook_needed:
             record_result(log, "facebook", "error", error=str(exc))
-        if DO_INSTAGRAM:
+        if instagram_needed and not paused:
             record_result(log, "instagram", "error", error=str(exc))
         return 1
 
@@ -250,7 +253,7 @@ def main() -> int:
                 record_result(log, "facebook", "error", error=str(exc))
                 print(f"FACEBOOK_ERROR: {exc}", file=sys.stderr)
 
-    if DO_INSTAGRAM:
+    if DO_INSTAGRAM and not paused:
         if already_published(log, "instagram"):
             print("INSTAGRAM_SKIP: aquesta publicació ja consta com publicada.")
         else:
@@ -258,6 +261,12 @@ def main() -> int:
                 remote_id = publish_instagram(ig_id, ig_username, page_token)
                 record_result(log, "instagram", "success", remote_id=remote_id)
             except Exception as exc:
+                if "application request limit" in str(exc).casefold() and "code=4" in str(exc).casefold():
+                    until = datetime.now(timezone.utc) + timedelta(hours=2)
+                    log.setdefault("cooldowns", {})["instagram_until"] = until.isoformat()
+                    record_result(log, "instagram", "deferred", error=f"Pausa temporal de Meta fins a {until.isoformat()}. Reintenta després.")
+                    print(f"INSTAGRAM_DEFERRED until={until.isoformat()}")
+                    return 1 if failed else 0
                 failed = True
                 record_result(log, "instagram", "error", error=str(exc))
                 print(f"INSTAGRAM_ERROR: {exc}", file=sys.stderr)

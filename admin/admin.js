@@ -50,7 +50,14 @@
   }
 
 
-  async function readPublicState() {
+  async function readRepositoryState() {
+    if (window.SOLLER_ARA_READ_JSON) {
+      const [posts, moderation] = await Promise.all([
+        window.SOLLER_ARA_READ_JSON("data/posts.json"),
+        window.SOLLER_ARA_READ_JSON("data/moderation.json"),
+      ]);
+      return {posts, moderation};
+    }
     const stamp = Date.now();
     const [postsResponse, moderationResponse] = await Promise.all([
       fetch("../data/posts.json?v=" + stamp, { cache: "no-store" }),
@@ -71,12 +78,12 @@
 
   async function mergePublicState(data) {
     try {
-      const publicState = await readPublicState();
+      const publicState = await readRepositoryState();
       data.posts = publicState.posts;
       data.moderation = publicState.moderation;
     } catch (_) {
-      // Si GitHub Pages está desplegando todavía, conservamos temporalmente
-      // el estado recibido del backend y volveremos a intentarlo en el siguiente refresco.
+      // Conservamos el estado recibido del backend si falla la lectura pública.
+      // El siguiente refresco vuelve a consultar los datos guardados.
     }
     return data;
   }
@@ -249,8 +256,8 @@
               ${post.url ? `<a class="button-link" href="${escapeHtml(post.url)}" target="_blank" rel="noopener">Abrir</a>` : ""}
               <label>Tipo
                 <select id="post-category-${escapeHtml(post.id)}" data-category-select>
-                  ${["news", "agenda", "alerts", "services", "culture", "sports", "commerce", "politics"].map((category) =>
-                    `<option value="${category}"${post.category === category ? " selected" : ""}>${({news:"Noticias", agenda:"Agenda", alerts:"Avisos", services:"Servicios", culture:"Cultura", sports:"Deportes", commerce:"Comercio", politics:"Política"})[category]}</option>`
+                  ${["news", "agenda", "alerts", "services", "culture", "sports", "commerce", "politics", "social"].map((category) =>
+                    `<option value="${category}"${post.category === category ? " selected" : ""}>${({news:"Noticias", agenda:"Agenda", alerts:"Avisos", services:"Servicios", culture:"Cultura", sports:"Deportes", commerce:"Comercio", politics:"Política", social:"Redes"})[category]}</option>`
                   ).join("")}
                 </select>
               </label>
@@ -372,6 +379,10 @@
       return;
     }
 
+    if (post.original_url) {
+      startSocialLinkEdit(postId);
+      return;
+    }
     editPostId = postId;
     publishForm.elements.title.value = post.title || "";
     publishForm.elements.body.value = post.summary || "";
@@ -432,7 +443,8 @@
     socialLinkForm.elements.language.value = post.language || "ca";
     socialLinkForm.elements.show_in_now.checked = post.show_in_now !== false;
     socialLinkForm.elements.content_type.value = post.content_type === "event_poster" ? "event_poster" : "social_link";
-    socialLinkForm.elements.image_url.value = String(post.media_url || "");
+    const mediaUrl = String(post.media_url || "");
+    socialLinkForm.elements.image_url.value = post.content_type !== "event_poster" && mediaUrl.includes("/assets/generated/") ? "" : mediaUrl;
     socialLinkForm.elements.image_authorized.checked = Boolean(post.image_allowed);
     socialLinkForm.elements.instagram.checked = false;
     socialLinkForm.elements.instagram.disabled = true;
@@ -449,7 +461,7 @@
   async function waitForOwnEdit(postId, expected, messageElement = publishMessage) {
     for (let attempt = 1; attempt <= 15; attempt++) {
       await new Promise((resolve) => setTimeout(resolve, 2500));
-      const publicState = await readPublicState();
+      const publicState = await readRepositoryState();
       const post = (publicState.posts?.posts || []).find((item) => item.id === postId);
       if (
         post &&
@@ -457,7 +469,11 @@
         post.summary === expected.body &&
         post.category === expected.category &&
         post.language === expected.language &&
-        (post.show_in_now !== false) === Boolean(expected.show_in_now)
+        (post.show_in_now !== false) === Boolean(expected.show_in_now) &&
+        (post.original_url || "") === (expected.original_url || "") &&
+        (!expected.source_name || post.source === expected.source_name) &&
+        (!expected.image_url || post.media_url === expected.image_url) &&
+        (!expected.content_type || post.content_type === expected.content_type)
       ) {
         return true;
       }
@@ -761,7 +777,7 @@
           setMessage(publishMessage, "Los cambios están tardando más de lo previsto. Actualiza en unos segundos.", "error");
           return;
         }
-        setMessage(publishMessage, "Publicación actualizada correctamente.", "success");
+        setMessage(publishMessage, "Cambios guardados. La web se actualizará al terminar el despliegue.", "success");
         resetEditMode(true);
         await loadStatus();
         openModule("moderation");

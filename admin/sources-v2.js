@@ -108,6 +108,7 @@
         <header><h4>${esc(source.name || source.id)}</h4></header>
         <div class="post-meta">${esc(typeLabel(source))} · ${esc(source.type || "")} · ${esc(source.language || "")} · ${esc(count)} publicaciones${enabled ? "" : " conservadas"}</div>
         <div class="post-meta">${esc(source.locality || "Sóller")}</div>
+        ${enabled && current?.ok === false ? `<p class="message error">${esc(current.error || "La fuente no responde.")}</p><p class="hint">${esc(current.retained_count || 0)} publicaciones anteriores conservadas. Última revisión: ${esc(posts.fetched_at ? new Date(posts.fetched_at).toLocaleString("es-ES") : "sin datos")}.</p>` : ""}
         ${enabled && current?.ok === true && current.count === 0 ? '<p class="hint">La fuente responde; no hay publicaciones recientes que cumplan los filtros.</p>' : ""}
         <div class="post-actions"><span class="${cls}">${label}</span><button type="button" data-source-id="${esc(source.id)}" data-source-enabled="${enabled}">${enabled ? "Desactivar" : "Activar"}</button></div>
       </article>`;

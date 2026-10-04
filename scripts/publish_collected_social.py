@@ -35,15 +35,24 @@ GRAPH_VERSION = os.environ.get("META_GRAPH_VERSION", "v26.0").strip() or "v26.0"
 def load_json(path: Path, fallback: dict) -> dict:
     if not path.exists():
         return fallback
-    try:
-        return json.loads(path.read_text(encoding="utf-8"))
-    except Exception:
-        return fallback
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(payload, dict):
+        raise ValueError(f"Format JSON no vàlid: {path.name}")
+    for key in ("entries", "posts", "hidden_post_ids"):
+        if key in payload and not isinstance(payload[key], list):
+            raise ValueError(f"Format no vàlid: {path.name}/{key}")
+    for key in ("entries", "posts"):
+        if any(not isinstance(item, dict) for item in payload.get(key, [])):
+            raise ValueError(f"Format no vàlid: {path.name}/{key}")
+    if "entries" in fallback and "entries" not in payload:
+        raise ValueError(f"Falta el registre d'entrades: {path.name}")
+    return payload
 
 
 def save_log(log: dict) -> None:
     entries = log.get("entries") or []
-    log["entries"] = entries[-1000:]
+    log["entries"] = [entry for index, entry in enumerate(entries)
+                      if index >= len(entries) - 1000 or entry.get("status") == "success"]
     LOG_FILE.parent.mkdir(parents=True, exist_ok=True)
     LOG_FILE.write_text(json.dumps(log, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
@@ -334,6 +343,9 @@ def main() -> int:
     entries = eligible_entries(config, queue.get("entries") or [], log)
     if not entries:
         print("SOCIAL_AUTO: cua buida.")
+        return 0
+    if instagram_is_paused(log) and all(item["platforms"] == ["instagram"] for item in entries):
+        print("INSTAGRAM_DEFERRED: pausa temporal de Meta; no es consulta la API.")
         return 0
     if not TOKEN:
         print("SOCIAL_AUTO_ERROR: falta META_ACCESS_TOKEN.", file=sys.stderr)

@@ -5,31 +5,14 @@ on:
     branches:
       - main
     paths:
+      - "app.js"
+      - "analytics.js"
       - "admin/**"
       - "worker/**"
-      - "social_distribution.json"
-      - "scripts/activity_log.py"
-      - "scripts/log_admin_action.py"
-      - "scripts/edit_own_post.py"
-      - "scripts/add_own_post.py"
-      - "scripts/publish_own_social.py"
-      - "scripts/manage_sources.py"
-      - "scripts/manage_social_settings.py"
-      - "scripts/update_sources.py"
-      - "sources.json"
-      - "scripts/prepare_collected_social.py"
-      - "scripts/publish_collected_social.py"
-      - "tests/test_social_distribution.py"
-      - "tests/test_source_collection.py"
-      - "tests/test_social_settings.py"
-      - "tests/test_admin_analytics.mjs"
-      - ".github/workflows/publish-own-content.yml"
-      - ".github/workflows/edit-own-content.yml"
-      - ".github/workflows/manage-posts.yml"
-      - ".github/workflows/manage-sources.yml"
-      - ".github/workflows/manage-social-settings.yml"
-      - ".github/workflows/update-sources.yml"
-      - ".github/workflows/validate-admin.yml"
+      - "scripts/**"
+      - "tests/**"
+      - "*.json"
+      - ".github/workflows/**"
   workflow_dispatch:
 
 permissions:
@@ -54,6 +37,10 @@ jobs:
 
       - name: Validar JavaScript
         run: |
+          node --check app.js
+          node --check analytics.js
+          node tests/test_public_ui.mjs
+          node tests/test_admin_routes.mjs
           node --check admin/public-data.js
           node --check admin/admin.js
           node --check admin/sources-v2.js
@@ -66,6 +53,7 @@ jobs:
 
       - name: Validar scripts de Administración y redes
         run: |
+          python -m compileall -q scripts
           python -m py_compile scripts/add_own_post.py
           python -m py_compile scripts/edit_own_post.py
           python -m py_compile scripts/publish_own_social.py
