@@ -4016,9 +4016,33 @@
       "recorded_at": "2026-10-05T11:40:34.743777+00:00",
       "error": "Pausa temporal de Meta fins a 2026-10-05T12:25:56.363314+00:00. Reintent automàtic pendent.",
       "retry_requested": true
+    },
+    {
+      "post_id": "soller-ara-ce3feda8c0a51520",
+      "platform": "instagram",
+      "status": "deferred",
+      "remote_id": "",
+      "post_url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-ce3feda8c0a51520.html",
+      "recorded_at": "2026-10-05T12:29:40.870137+00:00",
+      "error": "Pausa temporal de Meta fins a 2026-10-05T14:29:40.870109+00:00. Reintent automàtic pendent.",
+      "retry_requested": true
+    },
+    {
+      "post_id": "683bbb20051a0f0e5938",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122119581213467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122119581213467310",
+      "title": "Els nous guies del MUCBO",
+      "post_url": "https://mucbo.org/els-nous-guies-del-mucbo/",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-05T12:29:47.592693+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
-    "instagram_until": "2026-10-05T12:25:56.363314+00:00"
+    "instagram_until": "2026-10-05T14:29:40.870109+00:00"
   }
 }
