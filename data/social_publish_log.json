@@ -3968,9 +3968,33 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-05T09:00:19.240593+00:00",
       "error": ""
+    },
+    {
+      "post_id": "soller-ara-f40083871318b8d6",
+      "platform": "instagram",
+      "status": "deferred",
+      "remote_id": "",
+      "post_url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-f40083871318b8d6.html",
+      "recorded_at": "2026-10-05T10:25:56.363343+00:00",
+      "error": "Pausa temporal de Meta fins a 2026-10-05T12:25:56.363314+00:00. Reintent automàtic pendent.",
+      "retry_requested": true
+    },
+    {
+      "post_id": "d512c8e30e10a9500554",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122119538559467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122119538559467310",
+      "title": "Joseba Iraola tornà a ser el més ràpid a la Pujada al Puig Major",
+      "post_url": "https://www.elsoller.cat/soller/esports/2026/10/05/354619/joseba-iraola-torna-ser-mes-rapid-pujada-puig-major.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-05T10:26:00.174745+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
-    "instagram_until": "2026-10-05T10:23:27.881143+00:00"
+    "instagram_until": "2026-10-05T12:25:56.363314+00:00"
   }
 }
