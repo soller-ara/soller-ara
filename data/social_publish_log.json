@@ -3878,9 +3878,23 @@
       "post_url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-b0de5d170e94bfc4.html",
       "recorded_at": "2026-10-04T10:36:47.226412+00:00",
       "error": "Pausa temporal de Meta fins a 2026-10-04T12:36:47.226382+00:00. Reintenta després."
+    },
+    {
+      "post_id": "6d2ca3756f12203a3fc7",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122119392831467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122119392831467310",
+      "title": "Aviso. Nivel amarillo. Lluvias. Sierra Tramontana",
+      "post_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261005031305_AFAZ645401PRP10507.xml",
+      "source": "AEMET · Serra de Tramuntana",
+      "source_id": "aemet-avisos-mallorca",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-05T03:24:46.293986+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
-    "instagram_until": "2026-10-04T12:36:47.226382+00:00"
+    "instagram_until": "2026-10-05T05:24:57.278054+00:00"
   }
 }
