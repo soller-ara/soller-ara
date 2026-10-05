@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "8722bbda7ef5da7f",
+      "timestamp": "2026-10-05T09:51:08.525507+00:00",
+      "action": "reclassify",
+      "area": "moderation",
+      "target_id": "7263dc53d0847b46ae63",
+      "title": "Sóller-Alcúdia B (diumenge, 17.30 h) retorn a Can Maiol cercant sumar els tres punts",
+      "detail": "Acción de moderación completada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "84c2b63d9ad65a72",
       "timestamp": "2026-10-05T09:50:26.112047+00:00",
       "action": "reclassify",
