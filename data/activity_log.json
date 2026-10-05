@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "375d9252f75c6c30",
+      "timestamp": "2026-10-05T06:23:23.906867+00:00",
+      "action": "publish",
+      "area": "publications",
+      "target_id": "soller-ara-ce3feda8c0a51520",
+      "title": "Situació actual del trànsit - Policia Local",
+      "detail": "Publicación propia creada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "c335b54cacff5eab",
       "timestamp": "2026-10-05T06:16:11.167938+00:00",
       "action": "publish",

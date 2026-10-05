@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-10-05T06:16:11.066508+00:00",
+  "fetched_at": "2026-10-05T06:23:23.810168+00:00",
   "source_count": 40,
   "source_status": [
     {
@@ -379,7 +379,7 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 171,
+  "post_count": 172,
   "related_pair_count": 0,
   "errors": [
     {
@@ -436,6 +436,27 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "posts": [
+    {
+      "id": "soller-ara-ce3feda8c0a51520",
+      "category": "agenda",
+      "source_id": "manual-13e44f9445ef",
+      "source": "Policia Local de Sóller",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-05T06:23:23.810168+00:00",
+      "show_in_now": true,
+      "content_type": "social_link",
+      "title": "Situació actual del trànsit - Policia Local",
+      "summary": "Previsió de Reserves d’estacionament🚫 / Tancaments ⛔️/ Ocupacions🚧\nPer els dies 05/10 al 11/10/2026.\nPolicia Local de Sóller",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-ce3feda8c0a51520.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": true,
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1561781755991624&id=100064794426084&hpir=1",
+      "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-ce3feda8c0a51520.jpg",
+      "media_type": "image"
+    },
     {
       "id": "soller-ara-f40083871318b8d6",
       "category": "news",
