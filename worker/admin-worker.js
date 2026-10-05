@@ -19,7 +19,7 @@ export default {
 
     try {
       if (url.pathname === "/health") {
-        return json({ ok: true, service: "soller-ara-admin", version: "0.70", capabilities: ["social_settings", "web_analytics", "manual_social_links"] }, 200, cors);
+        return json({ ok: true, service: "soller-ara-admin", version: "0.71", capabilities: ["social_settings", "web_analytics", "manual_social_links", "manual_collection"] }, 200, cors);
       }
 
       if (url.pathname === "/api/login" && request.method === "POST") {
@@ -51,6 +51,10 @@ export default {
 
       if (url.pathname === "/api/source" && request.method === "POST") {
         return await manageSource(request, env, cors);
+      }
+
+      if (url.pathname === "/api/collect" && ["GET", "POST"].includes(request.method)) {
+        return await collectNow(request, env, cors);
       }
 
       if (url.pathname === "/api/social-settings" && request.method === "POST") {
@@ -277,6 +281,7 @@ async function systemCheck(env, cors) {
     "manage-posts.yml",
     "manage-sources.yml",
     "manage-social-settings.yml",
+    "update-sources.yml",
   ];
   for (const workflow of workflows) {
     const response = await fetch(
@@ -338,6 +343,34 @@ async function githubDispatch(env, workflow, inputs) {
     console.error("GitHub dispatch error", response.status, text);
     throw new Error("GitHub no ha aceptado el workflow");
   }
+}
+
+async function collectNow(request, env, cors) {
+  if (!env.GITHUB_TOKEN) return json({ error: "GitHub no está configurado." }, 503, cors);
+  const { owner, repo, branch } = repoParts(env);
+  const runId = new URL(request.url).searchParams.get("run_id");
+  if (runId && !/^\d+$/.test(runId)) return json({ error: "Revisión no válida." }, 400, cors);
+  const tracking = request.method === "GET" && runId;
+  const path = tracking ? `actions/runs/${runId}`
+    : `actions/workflows/update-sources.yml/runs?branch=${encodeURIComponent(branch)}&per_page=5`;
+  const response = await fetch(
+    `https://api.github.com/repos/${owner}/${repo}/${path}`,
+    { headers: { Authorization: `Bearer ${env.GITHUB_TOKEN}`, Accept: "application/vnd.github+json", "User-Agent": "SollerAra-Admin/0.71" } }
+  );
+  if (!response.ok) return json({ error: "No se ha podido consultar la revisión. Prueba de nuevo." }, 503, cors);
+  const payload = await response.json();
+  if (tracking) {
+    if (!payload.id || !payload.status) return json({ error: "Respuesta de GitHub no válida." }, 503, cors);
+    return json({ ok: true, run: {id: payload.id, status: payload.status, conclusion: payload.conclusion, url: payload.html_url} }, 200, cors);
+  }
+  if (!Array.isArray(payload.workflow_runs)) return json({ error: "Respuesta de GitHub no válida." }, 503, cors);
+  const active = payload.workflow_runs.find((run) => run.status !== "completed");
+  const current = active || payload.workflow_runs[0];
+  const run = current ? { id: current.id, status: current.status, conclusion: current.conclusion, url: current.html_url } : null;
+  if (request.method === "GET") return json({ ok: true, run }, 200, cors);
+  if (active) return json({ ok: true, already_running: true, run }, 202, cors);
+  await githubDispatch(env, "update-sources.yml", {});
+  return json({ ok: true, already_running: false, previous_run_id: current?.id || null }, 202, cors);
 }
 
 async function publish(request, env, cors) {

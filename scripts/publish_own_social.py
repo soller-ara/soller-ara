@@ -60,6 +60,7 @@ def record_result(log: dict, platform: str, status: str, remote_id: str = "", er
         "post_url": POST_URL,
         "recorded_at": datetime.now(timezone.utc).isoformat(),
         "error": error,
+        **({"retry_requested": True} if platform == "instagram" and status == "deferred" else {}),
     })
     LOG_FILE.parent.mkdir(parents=True, exist_ok=True)
     LOG_FILE.write_text(json.dumps(log, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -224,7 +225,7 @@ def main() -> int:
     facebook_needed = DO_FACEBOOK and not already_published(log, "facebook")
     instagram_needed = DO_INSTAGRAM and not already_published(log, "instagram")
     if instagram_needed and paused:
-        record_result(log, "instagram", "deferred", error=f"Pausa temporal de Meta fins a {pause_value}. Reintenta després.")
+        record_result(log, "instagram", "deferred", error=f"Pausa temporal de Meta fins a {pause_value}. Reintent automàtic pendent.")
         print(f"INSTAGRAM_DEFERRED until={pause_value}")
     if not facebook_needed and (not instagram_needed or paused):
         return 0
@@ -264,7 +265,7 @@ def main() -> int:
                 if "application request limit" in str(exc).casefold() and "code=4" in str(exc).casefold():
                     until = datetime.now(timezone.utc) + timedelta(hours=2)
                     log.setdefault("cooldowns", {})["instagram_until"] = until.isoformat()
-                    record_result(log, "instagram", "deferred", error=f"Pausa temporal de Meta fins a {until.isoformat()}. Reintenta després.")
+                    record_result(log, "instagram", "deferred", error=f"Pausa temporal de Meta fins a {until.isoformat()}. Reintent automàtic pendent.")
                     print(f"INSTAGRAM_DEFERRED until={until.isoformat()}")
                     return 1 if failed else 0
                 failed = True

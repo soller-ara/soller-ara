@@ -13,7 +13,7 @@ async function request(path,body,token='',ip='test-client') {
  const response=await vm.runInContext('worker.fetch(req,env)',c);
  return {status:response.status,body:await response.json(),headers:response.headers};
 }
-for (const path of ['/api/status','/api/check','/api/publish','/api/edit','/api/moderate','/api/source','/api/social-settings']) {
+for (const path of ['/api/status','/api/check','/api/publish','/api/edit','/api/moderate','/api/source','/api/social-settings','/api/collect']) {
  assert.equal((await request(path,path.endsWith('status')||path.endsWith('check')?undefined:{})).status,401);
 }
 assert.equal(calls.length,0);
@@ -38,3 +38,36 @@ for(let i=0;i<5;i++)assert.equal((await request('/api/login',{password:'wrong'},
 assert.equal((await request('/api/login',{password:'test-only-password'},'','blocked-client')).status,429);
 assert.ok(!JSON.stringify(login.body).includes('test-only-password'));
 console.log('PASS: private routes require signed sessions; login and rate limit; URL and poster validation; blank references; Ara and content type reach workflows. No external requests.');
+
+const health=await request('/health');
+assert.ok(health.body.capabilities.includes('manual_collection'));
+let workflowRuns=[{id:1,status:'completed',conclusion:'success',html_url:'https://github.com/soller-ara/soller-ara/actions/runs/1'}];
+calls=[];
+c.fetch=async(url,opts)=>{
+ calls.push({url,opts});
+ if(url.includes('/runs?'))return new Response(JSON.stringify({workflow_runs:workflowRuns}),{status:200});
+ return new Response(null,{status:204});
+};
+let collection=await request('/api/collect',{},token);
+assert.equal(collection.status,202);assert.equal(collection.body.already_running,false);
+assert.equal(collection.body.previous_run_id,1);
+assert.ok(calls.at(-1).url.endsWith('/actions/workflows/update-sources.yml/dispatches'));
+dispatch=JSON.parse(calls.at(-1).opts.body);
+assert.equal(dispatch.ref,'main');assert.deepEqual(dispatch.inputs,{});
+workflowRuns=[{id:2,status:'in_progress',conclusion:null},...workflowRuns];
+calls=[];collection=await request('/api/collect',{},token);
+assert.equal(collection.status,202);assert.equal(collection.body.already_running,true);
+assert.equal(collection.body.run.id,2);assert.equal(calls.length,1);
+assert.equal((await request('/api/collect',undefined,token)).body.run.status,'in_progress');
+workflowRuns[0].status='completed';workflowRuns[0].conclusion='success';
+assert.equal((await request('/api/collect',undefined,token)).body.run.conclusion,'success');
+c.fetch=async(url,opts)=>{
+ calls.push({url,opts});
+ return new Response(JSON.stringify(workflowRuns[0]),{status:200});
+};
+assert.equal((await request('/api/collect?run_id=2',undefined,token)).body.run.id,2);
+assert.ok(calls.at(-1).url.endsWith('/actions/runs/2'));
+assert.equal((await request('/api/collect?run_id=invalid',undefined,token)).status,400);
+c.fetch=async()=>new Response('Provider failure',{status:503});
+assert.equal((await request('/api/collect',{},token)).status,503);
+console.log('PASS: authenticated manual source refresh dispatches the existing workflow, reuses active runs, reports completion and stops on provider failures.');

@@ -77,3 +77,13 @@ for (const [lang,label] of [['es','Aviso finalizado'],['ca','Avís finalitzat'],
  assert.ok(!nodes.get('feed').innerHTML.includes('class="new-badge"'));
 }
 console.log('PASS: expired AEMET alerts retain their original date and Ara visibility, show expiry in all languages and lose the New badge.');
+
+vm.runInContext(admin.slice(admin.indexOf('  function manualInstagramStatus('),admin.indexOf('  function renderSocialLinkPosts(')),c);
+run('statusPayload={socialLog:{entries:[{post_id:"manual",platform:"instagram",status:"deferred",retry_requested:true}]}}');
+c.post={id:'manual'};
+assert.ok(run('manualInstagramStatus(post)').includes('reintento automático'));
+run('statusPayload.socialLog.entries.push({post_id:"manual",platform:"instagram",status:"success"})');
+assert.equal(run('manualInstagramStatus(post)'),'Instagram: publicado');
+run('statusPayload.socialLog.entries.push({post_id:"manual",platform:"instagram",status:"error"})');
+assert.equal(run('manualInstagramStatus(post)'),'Instagram: publicado');
+console.log('PASS: manual Instagram links show pending retries and preserve confirmed success.');

@@ -12,6 +12,7 @@ on:
       - "social_distribution.json"
       - "scripts/update_sources.py"
       - "scripts/publication_state.py"
+      - "scripts/retry_manual_social.py"
       - "scripts/prepare_collected_social.py"
       - "scripts/publish_collected_social.py"
       - "social_sources.json"
@@ -23,7 +24,8 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "update-sources"
+  group: "soller-ara-social-publish"
+  queue: max
   cancel-in-progress: false
 
 jobs:
@@ -86,6 +88,14 @@ jobs:
         with:
           artifact_name: github-pages-${{ github.run_attempt }}
 
+      - name: Reintentar Instagram manual pendent
+        id: manual_retry
+        continue-on-error: true
+        env:
+          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+          META_GRAPH_VERSION: "v26.0"
+        run: python scripts/retry_manual_social.py
+
       - name: Publicar cua a Facebook i Instagram
         id: social_publish
         env:
@@ -94,7 +104,7 @@ jobs:
         run: python scripts/publish_collected_social.py
 
       - name: Guardar registre de distribució social
-        if: ${{ always() && steps.social_publish.outcome != 'skipped' }}
+        if: ${{ always() && (steps.social_publish.outcome == 'success' || steps.social_publish.outcome == 'failure' || steps.manual_retry.outcome == 'success' || steps.manual_retry.outcome == 'failure') }}
         run: |
           git add data/social_publish_log.json
           if git diff --cached --quiet; then

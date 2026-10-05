@@ -3900,7 +3900,8 @@
       "remote_id": "",
       "post_url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-f40083871318b8d6.html",
       "recorded_at": "2026-10-05T06:16:20.786539+00:00",
-      "error": "Pausa temporal de Meta fins a 2026-10-05T07:28:43.668220+00:00. Reintenta després."
+      "error": "Pausa temporal de Meta fins a 2026-10-05T07:28:43.668220+00:00. Reintenta després.",
+      "retry_requested": true
     },
     {
       "post_id": "soller-ara-ce3feda8c0a51520",
@@ -3909,7 +3910,8 @@
       "remote_id": "",
       "post_url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-ce3feda8c0a51520.html",
       "recorded_at": "2026-10-05T06:23:34.544116+00:00",
-      "error": "Pausa temporal de Meta fins a 2026-10-05T07:28:43.668220+00:00. Reintenta després."
+      "error": "Pausa temporal de Meta fins a 2026-10-05T07:28:43.668220+00:00. Reintenta després.",
+      "retry_requested": true
     },
     {
       "post_id": "5f71de3dc3e53e5388d2",

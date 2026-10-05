@@ -2,6 +2,7 @@
   const API = String(window.SOLLER_ARA_ADMIN_API || "").replace(/\/$/, "");
   const TOKEN_KEY = "sollerAraAdminSession";
   const repoJson = window.SOLLER_ARA_READ_JSON;
+  let collectionRunning = false;
 
   const esc = (v) => String(v ?? "")
     .replaceAll("&", "&amp;")
@@ -50,8 +51,11 @@
       <div class="module-heading">
         <div><p class="eyebrow">Recopilación</p><h2>Fuentes de Sóller Ara</h2>
         <p class="hint">Activa o desactiva las fuentes que alimentan automáticamente la web. Desactivar una fuente detiene nuevas recopilaciones; las publicaciones anteriores se conservan dentro del límite de antigüedad y pueden ocultarse desde Moderación.</p></div>
-        <button id="refreshSourcesButton" class="button-secondary" type="button">Actualizar</button>
+        <div class="post-actions"><button id="collectSourcesButton" type="button" disabled>Buscar y publicar ahora</button>
+        <button id="refreshSourcesButton" class="button-secondary" type="button">Actualizar estado</button></div>
       </div>
+      <p class="hint">Buscar y publicar ahora revisa las fuentes y realiza los envíos permitidos por la configuración actual. La revisión automática de cada hora continúa igual. Los envíos manuales de Instagram pendientes por una pausa de Meta se reintentan en estas revisiones.</p>
+      <p id="collectionMessage" class="message" aria-live="polite"></p>
       <div id="sourcesSummary" class="metrics"></div>
       <article class="panel-card"><h3>Fuentes de información</h3><div id="sourcesList" class="post-list"><p class="empty">Cargando fuentes…</p></div></article>
       <article class="panel-card" style="margin-top:18px"><h3>Fuentes sociales externas</h3><p class="hint">Su estado se muestra aquí. La activación depende de las APIs de cada plataforma.</p><div id="socialSourcesList" class="post-list"><p class="empty">Cargando…</p></div></article>
@@ -67,6 +71,7 @@
       load();
     });
     document.getElementById("refreshSourcesButton").addEventListener("click", load);
+    document.getElementById("collectSourcesButton").addEventListener("click", collect);
   }
 
   function statusMap(data) {
@@ -140,10 +145,52 @@
       else document.getElementById("socialSourcesList").innerHTML = '<p class="message error">No se han podido cargar las fuentes sociales. Pulsa Actualizar.</p>';
       const errors = [config, social, posts].filter((result) => result.status === "rejected");
       if (errors.length) message(errors.map((result) => result.reason.message).join(" "), "error");
+      if (!collectionRunning) {
+        const health = await api("/health");
+        const enabled = health.capabilities?.includes("manual_collection");
+        document.getElementById("collectSourcesButton").disabled = !enabled;
+        document.getElementById("collectionMessage").textContent = enabled ? "" : "La búsqueda inmediata está pendiente de activación.";
+      }
     } catch (error) {
       message(error.message, "error");
     } finally {
-      if (button) { button.disabled = false; button.textContent = "Actualizar"; }
+      if (button) { button.disabled = false; button.textContent = "Actualizar estado"; }
+    }
+  }
+
+  async function collect() {
+    if (collectionRunning) return;
+    const button = document.getElementById("collectSourcesButton");
+    const notice = document.getElementById("collectionMessage");
+    collectionRunning = true;
+    button.disabled = true;
+    button.textContent = "Revisando y publicando…";
+    try {
+      const result = await api("/api/collect", {method:"POST", body:"{}"});
+      notice.textContent = result.already_running
+        ? "Ya hay una revisión en marcha. Esperando a que termine…"
+        : "Búsqueda solicitada. GitHub revisará las fuentes y publicará según las opciones actuales.";
+      let runId = result.run?.id || null;
+      for (let attempt = 0; attempt < 120; attempt++) {
+        await new Promise((resolve) => setTimeout(resolve, 5000));
+        const state = await api("/api/collect" + (runId ? "?run_id=" + runId : ""));
+        const run = state.run;
+        if (!run || (result.already_running ? run.id !== result.run.id : run.id === result.previous_run_id)) continue;
+        runId = run.id;
+        if (run.status !== "completed") continue;
+        await load();
+        notice.textContent = run.conclusion === "success"
+          ? "Revisión terminada. La web está actualizada y se han procesado los envíos permitidos. Instagram puede seguir pendiente si Meta mantiene la pausa."
+          : "La revisión ha terminado con una incidencia. Consulta el estado de las fuentes y de los envíos.";
+        return;
+      }
+      notice.textContent = "La solicitud sigue en proceso. Puedes consultar su estado más tarde con Actualizar estado.";
+    } catch (error) {
+      notice.textContent = error.message;
+    } finally {
+      collectionRunning = false;
+      button.disabled = false;
+      button.textContent = "Buscar y publicar ahora";
     }
   }
 

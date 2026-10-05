@@ -8,6 +8,17 @@ from urllib.parse import urlparse
 ROOT=Path(__file__).resolve().parents[1]
 
 class ApplicationContractsTests(unittest.TestCase):
+    def test_manual_refresh_preserves_hourly_schedule_and_serializes_social_sends(self):
+        refresh=(ROOT/'.github/workflows/update-sources.yml').read_text()
+        manual=(ROOT/'.github/workflows/publish-own-content.yml').read_text()
+        self.assertIn('cron: "7 * * * *"',refresh)
+        self.assertIn('workflow_dispatch:',refresh)
+        self.assertIn('python scripts/retry_manual_social.py',refresh)
+        for workflow in (refresh,manual):
+            self.assertIn('group: "soller-ara-social-publish"',workflow)
+            self.assertIn('queue: max',workflow)
+            self.assertIn('cancel-in-progress: false',workflow)
+
     def test_public_feed_and_script_fallback_contain_the_same_data(self):
         payload=json.loads((ROOT/'data/posts.json').read_text())
         script=(ROOT/'data/posts.js').read_text()

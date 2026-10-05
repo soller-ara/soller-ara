@@ -287,6 +287,17 @@
     renderSocialLinkPosts();
   }
 
+  function manualInstagramStatus(post) {
+    const entries = (statusPayload?.socialLog?.entries || [])
+      .filter((entry) => entry.post_id === post.id && entry.platform === "instagram");
+    if (entries.some((entry) => entry.status === "success")) return "Instagram: publicado";
+    const latest = entries.at(-1);
+    if (latest?.status === "deferred" && latest.retry_requested) return "Instagram: pendiente · reintento automático cuando termine la pausa de Meta";
+    if (latest?.status === "error") return "Instagram: error de envío · revisar";
+    if (latest?.status === "deferred") return "Instagram: envío aplazado";
+    return "";
+  }
+
   function renderSocialLinkPosts() {
     const posts = Array.isArray(statusPayload?.posts?.posts) ? statusPayload.posts.posts : [];
     const links = posts.filter((post) => post.source_type === "own" && post.original_url);
@@ -298,6 +309,7 @@
       <article class="post-item">
         <header><h4>${escapeHtml(post.title || "Sin título")}</h4></header>
         <div class="post-meta">${escapeHtml(post.source || "")} · ${escapeHtml(post.category || "")} · ${escapeHtml(formatDate(post.published_at))}</div>
+        ${manualInstagramStatus(post) ? `<p class="hint">${escapeHtml(manualInstagramStatus(post))}</p>` : ""}
         <div class="post-actions">
           ${post.url ? `<a class="button-link" href="${escapeHtml(post.url)}" target="_blank" rel="noopener">Abrir en la web</a>` : ""}
           <a class="button-link" href="${escapeHtml(post.original_url)}" target="_blank" rel="noopener">Original</a>
