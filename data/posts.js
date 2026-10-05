@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.60",
-  "fetched_at": "2026-10-05T13:28:47.192720+00:00",
+  "fetched_at": "2026-10-05T14:22:14.734235+00:00",
   "source_count": 40,
   "source_status": [
     {
@@ -409,6 +409,28 @@ window.SOLLER_ARA_DATA = {
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "ac007e1447eb5f9c371a",
+      "category": "news",
+      "source_id": "sa-veu-soller",
+      "source": "Sa Veu de Sóller",
+      "source_type": "media",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-05T14:12:40+00:00",
+      "title": "En marxa la tafona de la Cooperativa",
+      "summary": "",
+      "url": "https://saveu.cat/noticies/en-marxa-la-tafona-de-la-cooperativa/",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "image_allowed": false,
+      "embed_type": "official_oembed",
+      "embed_url": "https://saveu.cat/noticies/en-marxa-la-tafona-de-la-cooperativa/embed/",
+      "related_sources": []
+    },
     {
       "id": "683bbb20051a0f0e5938",
       "category": "culture",
@@ -1567,28 +1589,6 @@ window.SOLLER_ARA_DATA = {
       "image_allowed": false,
       "embed_type": "official_oembed",
       "embed_url": "https://mucbo.org/blats-i-carxofes-tornen-els-cursos-per-a-adults-de-la-fundacio-sa-nostra-amb-la-participacio-del-mucbo/embed/",
-      "related_sources": []
-    },
-    {
-      "id": "9f2f3e9b7ce43715891e",
-      "category": "news",
-      "source_id": "sa-veu-soller",
-      "source": "Sa Veu de Sóller",
-      "source_type": "media",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-10-01T09:29:39+00:00",
-      "title": "La Policia Local incorpora dos nous oficials",
-      "summary": "",
-      "url": "https://saveu.cat/noticies/la-policia-local-incorpora-dos-nous-oficials/",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
-      "embed_type": "official_oembed",
-      "embed_url": "https://saveu.cat/noticies/la-policia-local-incorpora-dos-nous-oficials/embed/",
       "related_sources": []
     },
     {
