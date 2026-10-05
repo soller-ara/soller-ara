@@ -1,62 +1,25 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-05T10:25:31.136469+00:00",
+  "generated_at": "2026-10-05T11:23:04.166335+00:00",
   "entries": [
     {
-      "post_id": "d512c8e30e10a9500554",
-      "title": "Joseba Iraola tornà a ser el més ràpid a la Pujada al Puig Major",
+      "post_id": "6845df8f9e73fdd3fe44",
+      "title": "Pere Casasnovas, Dani Vidal i Pau Noguera s'imposen en relleus a la Mallorca 5000",
       "summary": "",
       "source": "Setmanari Sóller",
       "source_id": "setmanari-soller",
       "source_type": "media",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-10-05T11:48:00+02:00",
-      "original_url": "https://www.elsoller.cat/soller/esports/2026/10/05/354619/joseba-iraola-torna-ser-mes-rapid-pujada-puig-major.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/d512c8e30e10a9500554.jpg"
-    },
-    {
-      "post_id": "a74e463dc4a02a4cb8f7",
-      "title": "El MUCBO inaugura l’exposició «RADIOLARIS i ALTRES BITXOS» de Maria Abando",
-      "summary": "",
-      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
-      "source_id": "mucbo-noticies",
-      "source_type": "institution",
-      "category": "culture",
-      "language": "ca",
-      "published_at": "2026-10-05T08:55:51+00:00",
-      "original_url": "https://mucbo.org/el-mucbo-inaugura-lexposicio-radiolaris-i-altres-bitxos-de-maria-abando/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "link_only_no_media_license",
-      "platforms": [
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/a74e463dc4a02a4cb8f7.jpg"
-    },
-    {
-      "post_id": "1901aa629cadf937e002",
-      "title": "La Mallorca 5.000 té accent solleric",
-      "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
-      "source_type": "media",
       "category": "sports",
       "language": "ca",
-      "published_at": "2026-10-05T08:40:53+00:00",
-      "original_url": "https://saveu.cat/noticies/la-mallorca-5000-te-accent-solleric/",
+      "published_at": "2026-10-05T11:32:00+02:00",
+      "original_url": "https://www.elsoller.cat/soller/esports/2026/10/05/354617/pere-casasnovas-dani-vidal-pau-noguera-imposen-relleus-mallorca-5000.html",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
-        "instagram"
+        "facebook"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/1901aa629cadf937e002.jpg"
+      "image_url": ""
     }
   ]
 }
