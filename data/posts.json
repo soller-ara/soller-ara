@@ -1,7 +1,7 @@
 {
   "version": 41,
   "generator_version": "0.59",
-  "fetched_at": "2026-10-05T03:24:30.280677+00:00",
+  "fetched_at": "2026-10-05T04:25:11.503991+00:00",
   "source_count": 40,
   "source_status": [
     {
@@ -64,9 +64,10 @@
       "name": "IB3 Notícies · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "error": null
+      "retained_count": 0,
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "goib-noticies-soller",
@@ -101,7 +102,7 @@
       "source_type": "media",
       "method": "freenewsapi_search",
       "ok": true,
-      "count": 8,
+      "count": 6,
       "error": null
     },
     {
@@ -175,9 +176,10 @@
       "name": "Club Vòlei Sóller · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "error": null
+      "retained_count": 0,
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "youtube-ballades-mallorca-soller",
@@ -377,11 +379,15 @@
     }
   ],
   "social_integration_status": [],
-  "post_count": 172,
+  "post_count": 170,
   "related_pair_count": 0,
   "errors": [
     {
       "source_id": "youtube-ajuntament-soller",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "source_id": "youtube-ib3-noticies-soller",
       "error": "HTTP Error 404: Not Found"
     },
     {
@@ -394,6 +400,10 @@
     },
     {
       "source_id": "youtube-xeremiers-soller",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "source_id": "youtube-club-volei-soller",
       "error": "HTTP Error 404: Not Found"
     },
     {
@@ -3848,46 +3858,6 @@
       "title": "Sóller corta calles y retira terrazas por la manifestación",
       "summary": "",
       "url": "https://mallorcadirecto.com/comarca-de-ponent/soller/soller-cortes-manifestacion-sabado",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "e2c13a6fe70ba6fc437c",
-      "category": "news",
-      "source_id": "diario-mallorca-soller",
-      "source": "Diario de Mallorca",
-      "source_type": "media",
-      "language": "es",
-      "locality": "Sóller / Serra de Tramuntana",
-      "published_at": "2026-08-06T04:01:07+00:00",
-      "title": "Sóller retirará terrazas, puestos de venta y mercadillos por la manifestación contra la masificación turística",
-      "summary": "",
-      "url": "https://www.diariodemallorca.es/part-forana/2026/08/06/soller-retirara-terrazas-puestos-venta-133123566.html",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "a8f87c5bcbd7158927d2",
-      "category": "news",
-      "source_id": "diario-mallorca-soller",
-      "source": "Diario de Mallorca",
-      "source_type": "media",
-      "language": "es",
-      "locality": "Sóller / Serra de Tramuntana",
-      "published_at": "2026-08-06T04:01:03+00:00",
-      "title": "Un nuevo acto vandálico cubre de pintadas un antiguo ‘porxo’ en la carretera de Deià",
-      "summary": "",
-      "url": "https://www.diariodemallorca.es/part-forana/2026/08/06/nuevo-acto-vandalico-cubre-pintadas-133123033.html",
       "platform": null,
       "account": null,
       "media_type": null,
