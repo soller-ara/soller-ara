@@ -87,3 +87,10 @@ assert.equal(run('manualInstagramStatus(post)'),'Instagram: publicado');
 run('statusPayload.socialLog.entries.push({post_id:"manual",platform:"instagram",status:"error"})');
 assert.equal(run('manualInstagramStatus(post)'),'Instagram: publicado');
 console.log('PASS: manual Instagram links show pending retries and preserve confirmed success.');
+
+vm.runInContext(auto.slice(auto.indexOf('  function isAlreadySent('),auto.indexOf('  function nextPreview(')),c);
+c.state={posts:[{id:'new-title',source_id:'source',url:'https://example.test/same-article'}],
+ entries:[{post_id:'old-title',source_id:'source',post_url:'https://example.test/same-article',platform:'facebook',status:'success'}]};
+assert.equal(run('isAlreadySent("new-title","facebook")'),true);
+assert.equal(run('isAlreadySent("new-title","instagram")'),false);
+console.log('PASS: social preview does not propose resending a source URL after a headline edit.');

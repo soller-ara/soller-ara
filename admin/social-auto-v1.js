@@ -109,7 +109,10 @@
   }
 
   function isAlreadySent(postId, platform) {
-    return state.entries.some((item) => item.post_id === postId && item.platform === platform && item.status === "success");
+    const post = state.posts.find((item) => item.id === postId);
+    return state.entries.some((item) => item.platform === platform && item.status === "success"
+      && (item.post_id === postId || (post?.source_id && post?.url
+        && item.source_id === post.source_id && item.post_url === post.url)));
   }
 
   function nextPreview(rules) {

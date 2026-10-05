@@ -44,7 +44,7 @@ class SocialDistributionTests(unittest.TestCase):
     def post(self, identifier, source="a", age=1, **extra):
         return {"id": identifier, "source_id": source, "source": "Font de prova", "source_type": "media",
                 "title": "Notícia de prova", "published_at": (datetime.now(timezone.utc)-timedelta(hours=age)).isoformat(),
-                "category": "news", "url": "https://example.test/original", "content_policy": "headline_date_link_only",
+                "category": "news", "url": f"https://example.test/{identifier}", "content_policy": "headline_date_link_only",
                 "summary": "Aquest text no s'ha de reutilitzar.", **extra}
 
     def prepare_posts(self, posts):
@@ -62,7 +62,7 @@ class SocialDistributionTests(unittest.TestCase):
         self.assertEqual([p["post_id"] for p in selected], ["a1", "b1", "c1"])
         self.assertEqual(self.publish.safe_summary(selected[0]), "")
         self.assertIn("Font: Font de prova", self.publish.base_text(selected[0]))
-        self.assertIn("https://example.test/original", self.publish.base_text(selected[0]))
+        self.assertIn("https://example.test/a1", self.publish.base_text(selected[0]))
 
     def test_success_stays_deduplicated_after_later_error(self):
         log = {"entries": [{"post_id": "a1", "platform": "facebook", "status": status} for status in ["success", "error"]]}
@@ -70,6 +70,29 @@ class SocialDistributionTests(unittest.TestCase):
         selected = self.prepare_posts([self.post("a1")])
         self.assertEqual(selected[0]["platforms"], ["instagram"])
         self.assertTrue(self.publish.already_published(log, "a1", "facebook"))
+
+    def test_headline_change_does_not_resend_same_source_url(self):
+        old = self.post("old")
+        changed = self.post("new", title="Titular editat", url=old["url"])
+        log = {"entries": [{"post_id": "old", "source_id": "a", "post_url": old["url"],
+                            "platform": "facebook", "status": "success"}]}
+        self.write(self.prepare.LOG_FILE, log)
+        selected = self.prepare_posts([changed])
+        self.assertEqual(selected[0]["platforms"], ["instagram"])
+        stale = [{**selected[0], "platforms": ["facebook", "instagram"]}]
+        self.assertEqual(self.publish.eligible_entries(self.config, stale, log)[0]["platforms"], ["instagram"])
+        log["entries"].append({**log["entries"][0], "platform": "instagram"})
+        self.write(self.prepare.LOG_FILE, log)
+        self.assertEqual(self.prepare_posts([changed]), [])
+        self.assertEqual(self.publish.eligible_entries(self.config, stale, log), [])
+
+    def test_url_deduplication_is_specific_to_source_and_platform(self):
+        shared_url = "https://example.test/shared"
+        log = {"entries": [{"post_id": "old", "source_id": "a", "post_url": shared_url,
+                            "platform": "facebook", "status": "success"}]}
+        self.write(self.prepare.LOG_FILE, log)
+        queue = self.prepare_posts([self.post("different-source", source="b", url=shared_url)])
+        self.assertEqual(queue[0]["platforms"], ["facebook", "instagram"])
 
     def test_instagram_caption_keeps_full_original_url(self):
         item = self.post("a1")
@@ -90,7 +113,7 @@ class SocialDistributionTests(unittest.TestCase):
             self.assertEqual(self.publish.publish_instagram(item, "ig", "soller.ara", "token"), "media")
 
         caption = calls[0][1]["params"]["caption"]
-        self.assertIn("Informació original: https://example.test/original", caption)
+        self.assertIn(f"Informació original: {item['url']}", caption)
         self.assertLess(caption.index("Informació original:"), caption.index("Aquest text"))
 
     def test_changed_source_or_platform_is_rechecked_before_send(self):

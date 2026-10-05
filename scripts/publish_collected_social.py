@@ -23,9 +23,9 @@ from urllib.request import Request, urlopen
 
 
 try:
-    from publication_state import alert_can_be_published
+    from publication_state import alert_can_be_published, social_was_published
 except ModuleNotFoundError:
-    from scripts.publication_state import alert_can_be_published
+    from scripts.publication_state import alert_can_be_published, social_was_published
 
 ROOT = Path(__file__).resolve().parents[1]
 QUEUE_FILE = ROOT / "data" / "social_auto_queue.json"
@@ -99,12 +99,8 @@ def is_instagram_rate_limit(error: Exception) -> bool:
     message = str(error).casefold()
     return "application request limit" in message and "code=4" in message
 
-def already_published(log: dict, post_id: str, platform: str) -> bool:
-    return any(
-        entry.get("post_id") == post_id and entry.get("platform") == platform
-        and entry.get("status") == "success"
-        for entry in log.get("entries") or []
-    )
+def already_published(log: dict, post_id: str, platform: str, source_id: str = "", original_url: str = "") -> bool:
+    return social_was_published(log, post_id, platform, source_id, original_url)
 
 
 def record(log: dict, item: dict, platform: str, status: str, remote_id: str = "", error: str = "", remote_url: str = "") -> None:
@@ -333,7 +329,7 @@ def eligible_entries(config: dict, entries: list[dict], log: dict) -> list[dict]
         platforms = [p for p in ("facebook", "instagram") if p in entry.get("platforms", [])
                      and config.get("platforms", {}).get(p) and rules.get(p)
                      and (p != "instagram" or not instagram_is_paused(log, now))
-                     and not already_published(log, post_id, p)]
+                     and not already_published(log, post_id, p, source_id, str(entry.get("original_url") or ""))]
         if not platforms or (config.get("one_post_per_source_per_run", True) and source_id in used_sources):
             continue
         selected.append({**entry, "platforms": platforms})
@@ -368,7 +364,7 @@ def main() -> int:
         print(f"SOCIAL_AUTO_ERROR: {exc}", file=sys.stderr)
         for item in entries:
             for platform in item.get("platforms") or []:
-                if not already_published(log, str(item.get("post_id") or ""), platform):
+                if not already_published(log, str(item.get("post_id") or ""), platform, str(item.get("source_id") or ""), str(item.get("original_url") or "")):
                     record(log, item, platform, "error", error=str(exc))
         return 1
 
@@ -383,7 +379,7 @@ def main() -> int:
             if not alert_can_be_published(item):
                 print(f"ALERT_EXPIRED_OR_ARCHIVED post={post_id}; no es publica.")
                 break
-            if already_published(log, post_id, platform):
+            if already_published(log, post_id, platform, str(item.get("source_id") or ""), str(item.get("original_url") or "")):
                 print(f"{platform.upper()}_SKIP post={post_id}")
                 continue
             if platform == "instagram" and instagram_paused:

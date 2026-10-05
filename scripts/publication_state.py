@@ -74,3 +74,13 @@ def alert_can_be_published(post: dict, now: datetime | None = None) -> bool:
         return False
     end = parse_timestamp(post.get("alert_valid_until"))
     return not end or end > (now or datetime.now(timezone.utc))
+
+
+def social_was_published(log: dict, post_id: str, platform: str,
+                         source_id: str = "", original_url: str = "") -> bool:
+    """A headline edit must not make the same source URL a new social send."""
+    return any(entry.get("status") == "success" and entry.get("platform") == platform
+               and (entry.get("post_id") == post_id
+                    or (source_id and original_url and entry.get("source_id") == source_id
+                        and entry.get("post_url") == original_url))
+               for entry in log.get("entries", []))

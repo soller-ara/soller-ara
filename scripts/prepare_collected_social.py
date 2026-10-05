@@ -17,9 +17,9 @@ from PIL import Image, ImageDraw, ImageFont
 
 
 try:
-    from publication_state import alert_can_be_published, instagram_is_paused
+    from publication_state import alert_can_be_published, instagram_is_paused, social_was_published
 except ModuleNotFoundError:
-    from scripts.publication_state import alert_can_be_published, instagram_is_paused
+    from scripts.publication_state import alert_can_be_published, instagram_is_paused, social_was_published
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG_FILE = ROOT / "social_distribution.json"
@@ -290,7 +290,6 @@ def main() -> int:
         for item in (source_payload.get("sources") or [])
         if item.get("id") and item.get("enabled", True) is not False
     }
-    published = success_pairs(log)
 
     global_platforms = config.get("platforms") or {}
     categories = config.get("categories") or {}
@@ -326,7 +325,7 @@ def main() -> int:
             if platform == "instagram" and instagram_is_paused(log, now):
                 continue
             if global_platforms.get(platform, False) and rules.get(platform, False):
-                if (post_id, platform) not in published:
+                if not social_was_published(log, post_id, platform, source_id, str(post.get("url") or "")):
                     platforms.append(platform)
         if not platforms:
             continue
