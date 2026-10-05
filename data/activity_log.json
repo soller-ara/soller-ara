@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "0e28e1cb2b77eb11",
+      "timestamp": "2026-10-05T09:49:45.421531+00:00",
+      "action": "reclassify",
+      "area": "moderation",
+      "target_id": "1901aa629cadf937e002",
+      "title": "La Mallorca 5.000 té accent solleric",
+      "detail": "Acción de moderación completada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "375d9252f75c6c30",
       "timestamp": "2026-10-05T06:23:23.906867+00:00",
       "action": "publish",
