@@ -3892,6 +3892,15 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-05T03:24:46.293986+00:00",
       "error": ""
+    },
+    {
+      "post_id": "soller-ara-f40083871318b8d6",
+      "platform": "instagram",
+      "status": "deferred",
+      "remote_id": "",
+      "post_url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-f40083871318b8d6.html",
+      "recorded_at": "2026-10-05T06:16:20.786539+00:00",
+      "error": "Pausa temporal de Meta fins a 2026-10-05T07:28:43.668220+00:00. Reintenta després."
     }
   ],
   "cooldowns": {
