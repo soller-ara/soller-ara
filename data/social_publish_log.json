@@ -4054,6 +4054,20 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-05T13:29:12.254960+00:00",
       "error": ""
+    },
+    {
+      "post_id": "ac007e1447eb5f9c371a",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122119617441467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122119617441467310",
+      "title": "En marxa la tafona de la Cooperativa",
+      "post_url": "https://saveu.cat/noticies/en-marxa-la-tafona-de-la-cooperativa/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-05T14:22:39.459647+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
