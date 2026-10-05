@@ -24,6 +24,12 @@ from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 from xml.etree import ElementTree as ET
 
+
+try:
+    from publication_state import aemet_post_state
+except ModuleNotFoundError:
+    from scripts.publication_state import aemet_post_state
+
 ROOT = Path(__file__).resolve().parents[1]
 SOURCES_FILE = ROOT / "sources.json"
 SOCIAL_SOURCES_FILE = ROOT / "social_sources.json"
@@ -1319,8 +1325,16 @@ def fetch_aemet_alerts(source: dict) -> list[dict]:
         source["url"],
         "application/rss+xml, application/atom+xml, application/xml, text/xml;q=0.9, */*;q=0.8",
     )
-    posts = parse_rss(payload, source)
     zone_codes = [str(code) for code in source.get("filter_zone_codes", [])]
+    root = ET.fromstring(payload)
+    rss_items = root.findall(".//item")
+    entries = rss_items or root.findall(".//{*}entry")
+    local_root = ET.Element("rss" if rss_items else "feed")
+    container = ET.SubElement(local_root, "channel") if rss_items else local_root
+    for entry in entries:
+        if not zone_codes or any(code in ET.tostring(entry, encoding="unicode") for code in zone_codes):
+            container.append(entry)
+    posts = parse_rss(ET.tostring(local_root), source)
 
     filtered: list[dict] = []
     for post in posts:
@@ -1328,7 +1342,7 @@ def fetch_aemet_alerts(source: dict) -> list[dict]:
         if zone_codes and not any(code in haystack for code in zone_codes):
             continue
         post["category"] = "alerts"
-        filtered.append(post)
+        filtered.append(aemet_post_state(post, in_feed=True))
 
     return filtered
 
@@ -1593,6 +1607,13 @@ def main() -> int:
             source_posts = fetch_source(source)
             source_posts = filter_by_keywords(source, source_posts)
             source_posts = filter_by_max_age(source, source_posts)
+            archived_count = 0
+            if source.get("type") == "aemet_alerts":
+                current_ids = {post["id"] for post in source_posts}
+                archived = [aemet_post_state(post, in_feed=False) for post in previous
+                            if post.get("source_id") == source.get("id") and post["id"] not in current_ids]
+                archived_count = len(archived)
+                source_posts = [aemet_post_state(post, in_feed=True) for post in source_posts] + archived
             posts.extend(source_posts)
             source_status.append({
                 "source_id": source.get("id"),
@@ -1601,11 +1622,14 @@ def main() -> int:
                 "method": source.get("type"),
                 "ok": True,
                 "count": len(source_posts),
+                "archived_count": archived_count,
                 "error": None,
             })
             print(f"OK {source['name']}: {len(source_posts)} publicacions")
         except Exception as exc:  # Es registra l'error sense impedir altres fonts.
             retained = [post for post in previous if post.get("source_id") == source.get("id")]
+            if source.get("type") == "aemet_alerts":
+                retained = [aemet_post_state(post, in_feed=post.get("alert_in_feed", False), verified=False) for post in retained]
             posts.extend(retained)
             errors.append({"source_id": source.get("id"), "error": str(exc)})
             source_status.append({
@@ -1654,7 +1678,7 @@ def main() -> int:
 
     payload = {
         "version": 41,
-        "generator_version": "0.59",
+        "generator_version": "0.60",
         "fetched_at": datetime.now(timezone.utc).isoformat(),
         "source_count": len(source_status),
         "source_status": source_status,

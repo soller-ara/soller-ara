@@ -152,6 +152,57 @@ class SocialDistributionTests(unittest.TestCase):
             graph.assert_not_called()
         self.assertEqual(len(json.loads(self.publish.LOG_FILE.read_text())["entries"]), 2)
 
+    def test_instagram_pause_does_not_block_next_facebook_post_from_same_source(self):
+        first, second = self.post("first", age=0.5), self.post("second", age=1)
+        log = {"entries": [{"post_id": "first", "platform": "facebook", "status": "success"}],
+               "cooldowns": {"instagram_until": (datetime.now(timezone.utc)+timedelta(hours=1)).isoformat()}}
+        self.write(self.prepare.LOG_FILE, log)
+        queue = self.prepare_posts([first, second])
+        self.assertEqual([p["post_id"] for p in queue], ["second"])
+        self.assertEqual(queue[0]["platforms"], ["facebook"])
+        # Revalidate a queue built before the pause began, applying quotas afterwards.
+        stale = [{**first, "post_id": "first", "platforms": ["instagram"]},
+                 {**second, "post_id": "second", "platforms": ["facebook", "instagram"]}]
+        selected = self.publish.eligible_entries(self.config, stale, log)
+        self.assertEqual([p["post_id"] for p in selected], ["second"])
+        self.assertEqual(selected[0]["platforms"], ["facebook"])
+        log["cooldowns"]["instagram_until"] = (datetime.now(timezone.utc)-timedelta(seconds=1)).isoformat()
+        selected = self.publish.eligible_entries(self.config, stale, log)
+        self.assertEqual(selected[0]["post_id"], "first")
+        self.assertEqual(selected[0]["platforms"], ["instagram"])
+
+    def test_expired_archived_or_unverified_alerts_are_not_queued(self):
+        until = (datetime.now(timezone.utc)-timedelta(minutes=1)).isoformat()
+        posts = [self.post("expired", alert_status="expired", alert_valid_until=until),
+                 self.post("archived", alert_status="archived"),
+                 self.post("unverified", alert_status="unverified"),
+                 self.post("stale-active", alert_status="active", alert_valid_until=until)]
+        self.assertEqual(self.prepare_posts(posts), [])
+
+    def test_warning_expiring_after_preparation_is_not_published(self):
+        until = (datetime.now(timezone.utc)+timedelta(minutes=1)).isoformat()
+        queue = self.prepare_posts([self.post("warning", alert_status="active", alert_valid_until=until)])
+        self.assertEqual(queue[0]["alert_valid_until"], until)
+        queue[0]["alert_valid_until"] = (datetime.now(timezone.utc)-timedelta(seconds=1)).isoformat()
+        self.write(self.prepare.QUEUE_FILE, {"enabled": True, "entries": queue})
+        with patch.object(self.publish, "TOKEN", "test-only"), patch.object(self.publish, "discover_accounts") as accounts:
+            self.assertEqual(self.publish.main(), 0)
+            accounts.assert_not_called()
+
+    def test_warning_expiring_after_facebook_is_not_sent_to_instagram(self):
+        until = (datetime.now(timezone.utc)+timedelta(minutes=1)).isoformat()
+        self.prepare_posts([self.post("warning", alert_status="active", alert_valid_until=until)])
+        def facebook(item, *args):
+            item["alert_valid_until"] = (datetime.now(timezone.utc)-timedelta(seconds=1)).isoformat()
+            return "page_post"
+        with patch.object(self.publish, "TOKEN", "test-only"), \
+             patch.object(self.publish, "discover_accounts", return_value=("page", "test-only", "ig", "soller.ara")), \
+             patch.object(self.publish, "publish_facebook", side_effect=facebook) as fb, \
+             patch.object(self.publish, "publish_instagram") as ig:
+            self.assertEqual(self.publish.main(), 0)
+            fb.assert_called_once()
+            ig.assert_not_called()
+
 
 if __name__ == "__main__":
     unittest.main()

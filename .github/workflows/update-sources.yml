@@ -11,6 +11,7 @@ on:
       - "sources.json"
       - "social_distribution.json"
       - "scripts/update_sources.py"
+      - "scripts/publication_state.py"
       - "scripts/prepare_collected_social.py"
       - "scripts/publish_collected_social.py"
       - "social_sources.json"

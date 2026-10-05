@@ -21,6 +21,12 @@ from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
+
+try:
+    from publication_state import alert_can_be_published
+except ModuleNotFoundError:
+    from scripts.publication_state import alert_can_be_published
+
 ROOT = Path(__file__).resolve().parents[1]
 QUEUE_FILE = ROOT / "data" / "social_auto_queue.json"
 LOG_FILE = ROOT / "data" / "social_publish_log.json"
@@ -307,7 +313,7 @@ def eligible_entries(config: dict, entries: list[dict], log: dict) -> list[dict]
     for entry in entries:
         source_id = entry.get("source_id")
         post_id = entry.get("post_id")
-        if not post_id or post_id in hidden or source_id not in active_sources or entry.get("source_type") == "own":
+        if not post_id or post_id in hidden or source_id not in active_sources or entry.get("source_type") == "own" or not alert_can_be_published(entry, now):
             continue
         if config.get("categories", {}).get(entry.get("category") or "news", True) is False:
             continue
@@ -322,6 +328,7 @@ def eligible_entries(config: dict, entries: list[dict], log: dict) -> list[dict]
         rules = config.get("sources", {}).get(source_id) or {}
         platforms = [p for p in ("facebook", "instagram") if p in entry.get("platforms", [])
                      and config.get("platforms", {}).get(p) and rules.get(p)
+                     and (p != "instagram" or not instagram_is_paused(log, now))
                      and not already_published(log, post_id, p)]
         if not platforms or (config.get("one_post_per_source_per_run", True) and source_id in used_sources):
             continue
@@ -343,9 +350,6 @@ def main() -> int:
     entries = eligible_entries(config, queue.get("entries") or [], log)
     if not entries:
         print("SOCIAL_AUTO: cua buida.")
-        return 0
-    if instagram_is_paused(log) and all(item["platforms"] == ["instagram"] for item in entries):
-        print("INSTAGRAM_DEFERRED: pausa temporal de Meta; no es consulta la API.")
         return 0
     if not TOKEN:
         print("SOCIAL_AUTO_ERROR: falta META_ACCESS_TOKEN.", file=sys.stderr)
@@ -372,6 +376,9 @@ def main() -> int:
     for item in entries:
         post_id = str(item.get("post_id") or "")
         for platform in item.get("platforms") or []:
+            if not alert_can_be_published(item):
+                print(f"ALERT_EXPIRED_OR_ARCHIVED post={post_id}; no es publica.")
+                break
             if already_published(log, post_id, platform):
                 print(f"{platform.upper()}_SKIP post={post_id}")
                 continue

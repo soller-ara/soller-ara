@@ -317,11 +317,32 @@ function formatDate(value) {
 }
 
 function isFreshPost(post) {
+  if (post.alert_status && !["active", "scheduled"].includes(alertStatus(post))) return false;
   if (!post.published_at) return false;
   const publishedAt = new Date(post.published_at).getTime();
   if (Number.isNaN(publishedAt)) return false;
   const ageHours = (Date.now() - publishedAt) / (60 * 60 * 1000);
   return ageHours >= 0 && ageHours <= 24;
+}
+
+function alertStatus(post) {
+  if (!post.alert_status) return "";
+  const until = new Date(post.alert_valid_until || "").getTime();
+  if (!Number.isNaN(until) && until <= Date.now()) return "expired";
+  return post.alert_status;
+}
+
+function renderAlertStatus(post) {
+  const state = alertStatus(post);
+  if (!state || state === "active") return "";
+  const labels = {
+    ca: {expired:"Avís finalitzat", archived:"Avís arxivat", unverified:"Vigència no confirmada", scheduled:"Avís previst"},
+    es: {expired:"Aviso finalizado", archived:"Aviso archivado", unverified:"Vigencia sin confirmar", scheduled:"Aviso previsto"},
+    en: {expired:"Expired alert", archived:"Archived alert", unverified:"Validity unconfirmed", scheduled:"Scheduled alert"},
+  };
+  const label = labels[currentLanguage]?.[state];
+  if (!label) return "";
+  return `<span class="badge alert-state">${escapeHtml(label)}</span>`;
 }
 
 function isNowPost(post) {
@@ -516,6 +537,7 @@ function renderFeed() {
             <span class="post-meta-right">${isFreshPost(post) ? `<span class="new-badge">${t("card.new")}</span>` : ""}<span>${formatDate(post.published_at)}</span></span>
           </div>
           <span class="badge">${escapeHtml(categoryLabel)}</span>
+          ${renderAlertStatus(post)}
           ${usesOriginalEmbed ? "" : `<h3>${escapeHtml(post.title || "")}</h3>`}
           ${!usesOriginalEmbed && post.summary ? `<p${post.source_type === "own" && post.original_url ? ' class="manual-link-summary"' : ""}>${escapeHtml(post.summary)}</p>` : ""}
           ${officialPreview}

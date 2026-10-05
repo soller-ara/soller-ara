@@ -63,3 +63,17 @@ const state=await run('readRepositoryState()');
 assert.equal(state.posts.saved,'data/posts.json');
 assert.deepEqual(paths.sort(),['data/moderation.json','data/posts.json']);
 console.log('PASS: administration reads the saved repository state during deployment.');
+
+c.post={id:'aemet',source:'AEMET',source_id:'aemet',source_type:'official',category:'alerts',
+ title:'Aviso de lluvias',summary:'Horario original del aviso',published_at:new Date(now-3600000).toISOString(),
+ url:'https://www.aemet.es/original',alert_status:'active',alert_valid_until:new Date(now-60000).toISOString()};
+assert.equal(run('alertStatus(post)'),'expired');
+assert.equal(run('isFreshPost(post)'),false);
+assert.equal(run('isNowPost(post)'),true);
+for (const [lang,label] of [['es','Aviso finalizado'],['ca','Avís finalitzat'],['en','Expired alert']]) {
+ run(`currentLanguage="${lang}";posts=[post];currentCategory="now";renderFeed()`);
+ assert.ok(nodes.get('feed').innerHTML.includes(label));
+ assert.ok(nodes.get('feed').innerHTML.includes('Aviso de lluvias'));
+ assert.ok(!nodes.get('feed').innerHTML.includes('class="new-badge"'));
+}
+console.log('PASS: expired AEMET alerts retain their original date and Ara visibility, show expiry in all languages and lose the New badge.');

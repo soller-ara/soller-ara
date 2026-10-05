@@ -15,6 +15,12 @@ from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFont
 
+
+try:
+    from publication_state import alert_can_be_published, instagram_is_paused
+except ModuleNotFoundError:
+    from scripts.publication_state import alert_can_be_published, instagram_is_paused
+
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG_FILE = ROOT / "social_distribution.json"
 POSTS_FILE = ROOT / "data" / "posts.json"
@@ -300,7 +306,7 @@ def main() -> int:
         post_id = str(post.get("id") or "")
         source_id = str(post.get("source_id") or "")
         category = str(post.get("category") or "news")
-        if not post_id or post.get("source_type") == "own":
+        if not post_id or post.get("source_type") == "own" or not alert_can_be_published(post, now):
             continue
         if post_id in hidden or source_id not in active_sources:
             continue
@@ -317,6 +323,8 @@ def main() -> int:
 
         platforms: list[str] = []
         for platform in ("facebook", "instagram"):
+            if platform == "instagram" and instagram_is_paused(log, now):
+                continue
             if global_platforms.get(platform, False) and rules.get(platform, False):
                 if (post_id, platform) not in published:
                     platforms.append(platform)
@@ -356,6 +364,7 @@ def main() -> int:
             "category": post.get("category"),
             "language": post.get("language"),
             "published_at": post.get("published_at"),
+            **{key: post[key] for key in ("alert_status", "alert_valid_from", "alert_valid_until") if key in post},
             "original_url": post.get("url"),
             "content_policy": post.get("content_policy"),
             "rights_status": post.get("rights_status"),

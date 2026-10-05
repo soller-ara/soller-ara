@@ -1,6 +1,6 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
-  "generator_version": "0.59",
+  "generator_version": "0.60",
   "fetched_at": "2026-10-05T07:26:42.535927+00:00",
   "source_count": 40,
   "source_status": [
@@ -46,8 +46,9 @@ window.SOLLER_ARA_DATA = {
       "source_type": "official",
       "method": "aemet_alerts",
       "ok": true,
-      "count": 0,
-      "error": null
+      "count": 2,
+      "error": null,
+      "archived_count": 0
     },
     {
       "source_id": "youtube-ajuntament-soller",
@@ -366,7 +367,7 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 170,
+  "post_count": 172,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
@@ -413,6 +414,54 @@ window.SOLLER_ARA_DATA = {
       "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-f40083871318b8d6.jpg",
       "media_type": "image",
       "related_sources": []
+    },
+    {
+      "id": "6d2ca3756f12203a3fc7",
+      "category": "alerts",
+      "source_id": "aemet-avisos-mallorca",
+      "source": "AEMET · Serra de Tramuntana",
+      "source_type": "official",
+      "language": "es",
+      "locality": "Sóller / Serra de Tramuntana",
+      "published_at": "2026-10-05T03:13:05+00:00",
+      "title": "Aviso. Nivel amarillo. Lluvias. Sierra Tramontana",
+      "summary": "Aviso de precipitación acumulada en una hora de nivel amarillo de 06:00 05-10-2026 CEST (UTC+2) a 08:59 05-10-2026 CEST (UTC+2).",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261005031305_AFAZ645401PRP10507.xml",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "reuse_authorized_with_attribution",
+      "image_allowed": false,
+      "related_sources": [],
+      "alert_valid_from": "2026-10-05T04:00:00+00:00",
+      "alert_valid_until": "2026-10-05T06:59:00+00:00",
+      "alert_status": "expired",
+      "alert_in_feed": true
+    },
+    {
+      "id": "caf2c1fdea2d1cf09720",
+      "category": "alerts",
+      "source_id": "aemet-avisos-mallorca",
+      "source": "AEMET · Serra de Tramuntana",
+      "source_type": "official",
+      "language": "es",
+      "locality": "Sóller / Serra de Tramuntana",
+      "published_at": "2026-10-05T03:13:05+00:00",
+      "title": "Aviso. Nivel amarillo. Tormentas. Sierra Tramontana",
+      "summary": "Aviso de tormentas de nivel amarillo de 06:00 05-10-2026 CEST (UTC+2) a 08:59 05-10-2026 CEST (UTC+2).",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261005031305_AFAZ645401TOTO0507.xml",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "reuse_authorized_with_attribution",
+      "image_allowed": false,
+      "related_sources": [],
+      "alert_valid_from": "2026-10-05T04:00:00+00:00",
+      "alert_valid_until": "2026-10-05T06:59:00+00:00",
+      "alert_status": "expired",
+      "alert_in_feed": true
     },
     {
       "id": "soller-ara-b0de5d170e94bfc4",

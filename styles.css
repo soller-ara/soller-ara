@@ -1084,3 +1084,6 @@ a { color: inherit; }
   letter-spacing: .04em;
   box-shadow: none;
 }
+
+/* AEMET history must not look like a current weather warning. */
+.alert-state { background: #e8eef0; color: #334155; border: 1px solid #cbd5e1; margin-left: 6px; }

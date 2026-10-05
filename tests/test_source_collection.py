@@ -14,6 +14,19 @@ spec.loader.exec_module(collector)
 
 
 class SourceCollectionTests(unittest.TestCase):
+    def test_aemet_filters_zone_before_limiting_rss_items(self):
+        source = {"id": "aemet", "name": "AEMET", "type": "aemet_alerts",
+                  "url": "https://example.test/rss", "filter_zone_codes": ["645401"], "max_items": 2}
+        def item(code, number):
+            return f'<item><title>Aviso {number}</title><link>https://example.test/{code}/{number}</link><pubDate>Mon, 05 Oct 2026 03:13:05 GMT</pubDate></item>'
+        payload = ('<rss><channel>' + ''.join(item("999999", n) for n in range(98))
+                   + ''.join(item("645401", n) for n in range(3)) + '</channel></rss>').encode()
+        with patch.object(collector, "fetch_bytes", return_value=(payload, "utf-8")):
+            posts = collector.fetch_aemet_alerts(source)
+        self.assertEqual(len(posts), 2)
+        self.assertTrue(all("645401" in post["url"] for post in posts))
+        self.assertTrue(all(post["alert_status"] == "unverified" for post in posts))
+
     def test_manual_link_without_title_survives_automatic_refresh(self):
         link = {
             "id": "manual-link", "title": "", "summary": "",
@@ -247,6 +260,38 @@ class SourceLifecycleTests(unittest.TestCase):
         result = self.collect()
         self.assertEqual(result["posts"], [])
         self.assertTrue(result["source_status"][0]["ok"])
+
+    def test_aemet_empty_feed_retains_expired_history_without_changing_dates(self):
+        self.active["type"] = "aemet_alerts"
+        self.write(collector.SOURCES_FILE, {"sources": [self.active]})
+        original = {**self.fresh, "category": "alerts",
+                    "summary": "De 06:00 05-10-2026 CEST (UTC+2) a 08:59 05-10-2026 CEST (UTC+2)."}
+        self.write(collector.OUTPUT_FILE, {"posts": [original]})
+        self.fetch.return_value = []
+        for _ in range(2):
+            result = self.collect()
+            self.assertEqual(len(result["posts"]), 1)
+            post = result["posts"][0]
+            self.assertEqual(post["id"], original["id"])
+            self.assertEqual(post["published_at"], original["published_at"])
+            self.assertEqual(post["alert_valid_until"], "2026-10-05T06:59:00+00:00")
+            self.assertFalse(post["alert_in_feed"])
+            self.assertEqual(result["source_status"][0]["archived_count"], 1)
+        self.fetch.return_value = [original]
+        result = self.collect()
+        self.assertEqual(len(result["posts"]), 1)
+        self.assertTrue(result["posts"][0]["alert_in_feed"])
+        self.assertEqual(result["source_status"][0]["archived_count"], 0)
+
+    def test_aemet_fetch_failure_marks_future_warning_unverified(self):
+        self.active["type"] = "aemet_alerts"
+        self.write(collector.SOURCES_FILE, {"sources": [self.active]})
+        original = {**self.fresh, "alert_valid_until": (datetime.now(timezone.utc)+timedelta(hours=2)).isoformat()}
+        self.write(collector.OUTPUT_FILE, {"posts": [original]})
+        self.fetch.side_effect = RuntimeError("HTTP 503")
+        result = self.collect()
+        self.assertEqual(result["posts"][0]["alert_status"], "unverified")
+        self.assertFalse(result["source_status"][0]["ok"])
 
     def test_invalid_manual_or_moderation_file_preserves_existing_feed(self):
         for path in [collector.MANUAL_POSTS_FILE, collector.MODERATION_FILE]:
