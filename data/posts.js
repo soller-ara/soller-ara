@@ -455,7 +455,7 @@ window.SOLLER_ARA_DATA = {
     },
     {
       "id": "5f71de3dc3e53e5388d2",
-      "category": "agenda",
+      "category": "sports",
       "source_id": "sa-veu-soller",
       "source": "Sa Veu de Sóller",
       "source_type": "media",

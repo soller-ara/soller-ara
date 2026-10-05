@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "84c2b63d9ad65a72",
+      "timestamp": "2026-10-05T09:50:26.112047+00:00",
+      "action": "reclassify",
+      "area": "moderation",
+      "target_id": "5f71de3dc3e53e5388d2",
+      "title": "El motor solleric es fa notar al Puig Major",
+      "detail": "Acción de moderación completada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "0e28e1cb2b77eb11",
       "timestamp": "2026-10-05T09:49:45.421531+00:00",
       "action": "reclassify",
