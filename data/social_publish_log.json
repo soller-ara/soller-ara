@@ -3910,9 +3910,23 @@
       "post_url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-ce3feda8c0a51520.html",
       "recorded_at": "2026-10-05T06:23:34.544116+00:00",
       "error": "Pausa temporal de Meta fins a 2026-10-05T07:28:43.668220+00:00. Reintenta després."
+    },
+    {
+      "post_id": "5f71de3dc3e53e5388d2",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122119489767467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122119489767467310",
+      "title": "El motor solleric es fa notar al Puig Major",
+      "post_url": "https://saveu.cat/noticies/el-motor-solleric-es-fa-notar-al-puig-major/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-05T08:23:09.542852+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
-    "instagram_until": "2026-10-05T07:28:43.668220+00:00"
+    "instagram_until": "2026-10-05T10:23:27.881143+00:00"
   }
 }
