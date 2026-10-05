@@ -1,7 +1,7 @@
 {
   "version": 41,
   "generator_version": "0.60",
-  "fetched_at": "2026-10-05T08:50:58.423571+00:00",
+  "fetched_at": "2026-10-05T08:59:59.986595+00:00",
   "source_count": 40,
   "source_status": [
     {
@@ -409,6 +409,28 @@
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "a74e463dc4a02a4cb8f7",
+      "category": "culture",
+      "source_id": "mucbo-noticies",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_type": "institution",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-05T08:55:51+00:00",
+      "title": "El MUCBO inaugura l’exposició «RADIOLARIS i ALTRES BITXOS» de Maria Abando",
+      "summary": "",
+      "url": "https://mucbo.org/el-mucbo-inaugura-lexposicio-radiolaris-i-altres-bitxos-de-maria-abando/",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "image_allowed": false,
+      "embed_type": "official_oembed",
+      "embed_url": "https://mucbo.org/el-mucbo-inaugura-lexposicio-radiolaris-i-altres-bitxos-de-maria-abando/embed/",
+      "related_sources": []
+    },
     {
       "id": "1901aa629cadf937e002",
       "category": "news",
@@ -2560,28 +2582,6 @@
       "original_url": "https://www.facebook.com/share/1awh56xZSC/?mibextid=wwXIfr",
       "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-372b93382573b5a8.jpg",
       "media_type": "image",
-      "related_sources": []
-    },
-    {
-      "id": "9a4849bdc2aa695e5690",
-      "category": "culture",
-      "source_id": "mucbo-noticies",
-      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
-      "source_type": "institution",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-09-24T10:20:59+00:00",
-      "title": "Del Jardí Botànic a la cuina: Farines i blats",
-      "summary": "",
-      "url": "https://mucbo.org/del-jardi-botanic-a-la-cuina-blats-i-farines/",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "link_only_no_media_license",
-      "image_allowed": false,
-      "embed_type": "official_oembed",
-      "embed_url": "https://mucbo.org/del-jardi-botanic-a-la-cuina-blats-i-farines/embed/",
       "related_sources": []
     },
     {
