@@ -4040,6 +4040,20 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-05T12:29:47.592693+00:00",
       "error": ""
+    },
+    {
+      "post_id": "3fdccd95dfee575614a2",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122119601259467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122119601259467310",
+      "title": "Erica multiflora",
+      "post_url": "https://mucbo.org/erica-multiflora/",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-05T13:29:12.254960+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
