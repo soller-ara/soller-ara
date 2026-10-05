@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.60",
-  "fetched_at": "2026-10-05T14:22:14.734235+00:00",
+  "fetched_at": "2026-10-05T14:27:11.547509+00:00",
   "source_count": 40,
   "source_status": [
     {
@@ -409,6 +409,26 @@ window.SOLLER_ARA_DATA = {
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "7780bdb7724ccabed023",
+      "category": "news",
+      "source_id": "setmanari-soller",
+      "source": "Setmanari Sóller",
+      "source_type": "media",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-05T16:22:44+02:00",
+      "title": "Arrenca la campanya de l’oli a la Cooperativa de Sant Bartomeu",
+      "summary": "",
+      "url": "https://www.elsoller.cat/soller/local/2026/10/05/354621/arrenca-campanya-oli-cooperativa-sant-bartomeu.html",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "image_allowed": false,
+      "related_sources": []
+    },
     {
       "id": "ac007e1447eb5f9c371a",
       "category": "news",
@@ -2354,26 +2374,6 @@ window.SOLLER_ARA_DATA = {
       "title": "El Ibavi ordena desalojar el antiguo Hospici de Sóller por riesgo de derrumbe",
       "summary": "",
       "url": "https://www.ultimahora.es/noticias/part-forana/2026/09/28/2717539/ibavi-ordena-desalojar-antiguo-hospici-soller-por-riesgo-derrumbe.html",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "e6ffb442e9d7279250bf",
-      "category": "news",
-      "source_id": "setmanari-soller",
-      "source": "Setmanari Sóller",
-      "source_type": "media",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-09-27T09:00:00+02:00",
-      "title": "Sóller Solidari dona més de 5.000 euros per a les víctimes del terratrèmol de Colòmbia",
-      "summary": "",
-      "url": "https://www.elsoller.cat/soller/societat-i-cultura/2026/09/27/354579/soller-solidari-dona-mes-5000-euros-per-les-victimes-del-terratremol-colombia.html",
       "platform": null,
       "account": null,
       "media_type": null,
