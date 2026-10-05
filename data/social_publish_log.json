@@ -3992,6 +3992,20 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-05T10:26:00.174745+00:00",
       "error": ""
+    },
+    {
+      "post_id": "6845df8f9e73fdd3fe44",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122119557081467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122119557081467310",
+      "title": "Pere Casasnovas, Dani Vidal i Pau Noguera s'imposen en relleus a la Mallorca 5000",
+      "post_url": "https://www.elsoller.cat/soller/esports/2026/10/05/354617/pere-casasnovas-dani-vidal-pau-noguera-imposen-relleus-mallorca-5000.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-05T11:23:18.356538+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
