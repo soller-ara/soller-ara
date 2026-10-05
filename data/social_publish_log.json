@@ -3954,6 +3954,20 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-05T08:51:15.052189+00:00",
       "error": ""
+    },
+    {
+      "post_id": "a74e463dc4a02a4cb8f7",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122119506309467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122119506309467310",
+      "title": "El MUCBO inaugura l’exposició «RADIOLARIS i ALTRES BITXOS» de Maria Abando",
+      "post_url": "https://mucbo.org/el-mucbo-inaugura-lexposicio-radiolaris-i-altres-bitxos-de-maria-abando/",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-05T09:00:19.240593+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
