@@ -426,7 +426,7 @@ window.SOLLER_ARA_DATA = {
       "content_policy": "manual_link_reference",
       "rights_status": "no_reuse_reference_only",
       "image_allowed": true,
-      "original_url": "https://www.facebook.com/share/p/1FmKk3UTWt/?mibextid=wwXIfr",
+      "original_url": "https://www.facebook.com/groups/2168168493412761/posts/4668467036716215/?hpir=1",
       "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-4327669283c12d84.jpg",
       "media_type": "image"
     },

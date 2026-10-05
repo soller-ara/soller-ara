@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "57665283bb8c1191",
+      "timestamp": "2026-10-05T11:52:05.068728+00:00",
+      "action": "edit",
+      "area": "publications",
+      "target_id": "soller-ara-4327669283c12d84",
+      "title": "Personal per a tenda Beinetti",
+      "detail": "Publicación propia editada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "a58c66eef4163e2a",
       "timestamp": "2026-10-05T11:50:01.121063+00:00",
       "action": "edit",
