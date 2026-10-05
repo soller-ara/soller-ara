@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "c335b54cacff5eab",
+      "timestamp": "2026-10-05T06:16:11.167938+00:00",
+      "action": "publish",
+      "area": "publications",
+      "target_id": "soller-ara-f40083871318b8d6",
+      "title": "Recull de les darreres incidències de la Policia Local.",
+      "detail": "Publicación propia creada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "e2d8e04bc5262297",
       "timestamp": "2026-10-04T10:36:28.087074+00:00",
       "action": "publish",

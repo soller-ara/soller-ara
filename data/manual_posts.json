@@ -697,6 +697,27 @@
       "original_url": "https://www.facebook.com/story.php?story_fbid=1543427494497567&id=100064909921419&hpir=1",
       "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-b0de5d170e94bfc4.jpg",
       "media_type": "image"
+    },
+    {
+      "id": "soller-ara-f40083871318b8d6",
+      "category": "news",
+      "source_id": "manual-13e44f9445ef",
+      "source": "Policia Local de Sóller",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-05T06:16:11.066508+00:00",
+      "show_in_now": true,
+      "content_type": "social_link",
+      "title": "Recull de les darreres incidències de la Policia Local.",
+      "summary": "Faciliten un resum de les darreres actuacions rellevants de la Policia Local.",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-f40083871318b8d6.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": true,
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1561808772655589&id=100064794426084&hpir=1",
+      "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-f40083871318b8d6.jpg",
+      "media_type": "image"
     }
   ]
 }
