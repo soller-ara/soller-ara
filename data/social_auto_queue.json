@@ -1,62 +1,25 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-05T12:29:18.939112+00:00",
+  "generated_at": "2026-10-05T13:28:47.292841+00:00",
   "entries": [
     {
-      "post_id": "683bbb20051a0f0e5938",
-      "title": "Els nous guies del MUCBO",
+      "post_id": "3fdccd95dfee575614a2",
+      "title": "Erica multiflora",
       "summary": "",
       "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
       "source_id": "mucbo-noticies",
       "source_type": "institution",
       "category": "culture",
       "language": "ca",
-      "published_at": "2026-10-05T12:26:15+00:00",
-      "original_url": "https://mucbo.org/els-nous-guies-del-mucbo/",
+      "published_at": "2026-10-05T12:04:54+00:00",
+      "original_url": "https://mucbo.org/erica-multiflora/",
       "content_policy": "headline_date_link_only",
       "rights_status": "link_only_no_media_license",
       "platforms": [
-        "facebook",
-        "instagram"
+        "facebook"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/683bbb20051a0f0e5938.jpg"
-    },
-    {
-      "post_id": "d512c8e30e10a9500554",
-      "title": "Joseba Iraola tornà a ser el més ràpid a la Pujada al Puig Major",
-      "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
-      "source_type": "media",
-      "category": "sports",
-      "language": "ca",
-      "published_at": "2026-10-05T11:48:00+02:00",
-      "original_url": "https://www.elsoller.cat/soller/esports/2026/10/05/354619/joseba-iraola-torna-ser-mes-rapid-pujada-puig-major.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/d512c8e30e10a9500554.jpg"
-    },
-    {
-      "post_id": "1901aa629cadf937e002",
-      "title": "La Mallorca 5.000 té accent solleric",
-      "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
-      "source_type": "media",
-      "category": "sports",
-      "language": "ca",
-      "published_at": "2026-10-05T08:40:53+00:00",
-      "original_url": "https://saveu.cat/noticies/la-mallorca-5000-te-accent-solleric/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/1901aa629cadf937e002.jpg"
+      "image_url": ""
     }
   ]
 }
