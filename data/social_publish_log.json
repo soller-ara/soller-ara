@@ -4068,6 +4068,20 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-05T14:22:39.459647+00:00",
       "error": ""
+    },
+    {
+      "post_id": "7780bdb7724ccabed023",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122119619487467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122119619487467310",
+      "title": "Arrenca la campanya de l’oli a la Cooperativa de Sant Bartomeu",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/05/354621/arrenca-campanya-oli-cooperativa-sant-bartomeu.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-05T14:27:42.748709+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
