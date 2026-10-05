@@ -1,26 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-05T08:22:48.667267+00:00",
-  "entries": [
-    {
-      "post_id": "5f71de3dc3e53e5388d2",
-      "title": "El motor solleric es fa notar al Puig Major",
-      "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
-      "source_type": "media",
-      "category": "agenda",
-      "language": "ca",
-      "published_at": "2026-10-05T07:58:25+00:00",
-      "original_url": "https://saveu.cat/noticies/el-motor-solleric-es-fa-notar-al-puig-major/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/5f71de3dc3e53e5388d2.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
