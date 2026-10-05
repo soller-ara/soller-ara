@@ -9,6 +9,7 @@
   const setupMessage = document.getElementById("setupMessage");
   const logoutButton = document.getElementById("logoutButton");
   const refreshButton = document.getElementById("refreshButton");
+  const refreshAdminPageButton = document.getElementById("refreshAdminPageButton");
   const systemCheckButton = document.getElementById("systemCheckButton");
   const systemCheckResult = document.getElementById("systemCheckResult");
   const publishForm = document.getElementById("publishForm");
@@ -664,6 +665,12 @@
     showLogin();
   });
 
+  refreshAdminPageButton.addEventListener("click", () => {
+    refreshAdminPageButton.disabled = true;
+    const nextUrl = new URL(window.location.href);
+    nextUrl.searchParams.set("refresh", String(Date.now()));
+    window.location.replace(nextUrl.toString());
+  });
   refreshButton.addEventListener("click", loadStatus);
   refreshSocialLinkListButton.addEventListener("click", async () => {
     refreshSocialLinkListButton.disabled = true;

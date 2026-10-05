@@ -40,7 +40,8 @@
         </div>
         <div class="header-actions">
           <a class="public-link button-secondary" href="../index.html">Volver a Sóller Ara</a>
-          <span id="adminVersion" class="status-pill">v0.86</span>
+          <button id="refreshAdminPageButton" class="button-secondary" type="button" title="Actualizar la página de Administración"><span aria-hidden="true">↻</span> Actualizar</button>
+          <span id="adminVersion" class="status-pill">v0.91</span>
           <span id="connectionState" class="status-pill">Conectado</span>
           <button id="logoutButton" class="button-secondary" type="button">Salir</button>
         </div>
@@ -56,7 +57,7 @@
       <section id="dashboard" class="module active">
         <div class="module-heading">
           <div><p class="eyebrow">Resumen</p><h2>Estado de Sóller Ara</h2></div>
-          <div class="header-actions"><button id="systemCheckButton" class="button-secondary" type="button">Comprobar sistema</button><button id="refreshButton" class="button-secondary" type="button">Actualizar</button></div>
+          <div class="header-actions"><button id="systemCheckButton" class="button-secondary" type="button">Comprobar sistema</button><button id="refreshButton" class="button-secondary" type="button">Actualizar datos</button></div>
         </div>
         <div id="systemCheckResult" class="panel-card" hidden></div>
         <div id="metrics" class="metrics"></div>
@@ -131,7 +132,7 @@
   </main>
 
   <script src="./public-data.js?v=0.61"></script>
-  <script src="./config.js?v=0.90"></script>
-  <script src="./admin.js?v=0.90"></script>
+  <script src="./config.js?v=0.91"></script>
+  <script src="./admin.js?v=0.91"></script>
 </body>
 </html>
