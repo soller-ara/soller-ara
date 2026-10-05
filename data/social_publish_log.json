@@ -3926,6 +3926,20 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-05T08:23:09.542852+00:00",
       "error": ""
+    },
+    {
+      "post_id": "1d8981f4f80cb5cc9e88",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122119498641467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122119498641467310",
+      "title": "La Mallorca 5000 té accent solleric",
+      "post_url": "https://saveu.cat/noticies/la-mallorca-5000-te-accent-solleric/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-05T08:44:52.029792+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
