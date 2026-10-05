@@ -1,7 +1,7 @@
 {
   "version": 41,
   "generator_version": "0.60",
-  "fetched_at": "2026-10-05T08:47:50.763953+00:00",
+  "fetched_at": "2026-10-05T08:50:58.423571+00:00",
   "source_count": 40,
   "source_status": [
     {
@@ -410,7 +410,7 @@
   "errors": [],
   "posts": [
     {
-      "id": "1d8981f4f80cb5cc9e88",
+      "id": "1901aa629cadf937e002",
       "category": "news",
       "source_id": "sa-veu-soller",
       "source": "Sa Veu de Sóller",
@@ -418,7 +418,7 @@
       "language": "ca",
       "locality": "Sóller",
       "published_at": "2026-10-05T08:40:53+00:00",
-      "title": "La Mallorca 5000 té accent solleric",
+      "title": "La Mallorca 5.000 té accent solleric",
       "summary": "",
       "url": "https://saveu.cat/noticies/la-mallorca-5000-te-accent-solleric/",
       "platform": null,

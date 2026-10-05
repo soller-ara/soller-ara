@@ -1,6 +1,25 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-10-05T08:50:58.500924+00:00",
+  "entries": [
+    {
+      "post_id": "1901aa629cadf937e002",
+      "title": "La Mallorca 5.000 té accent solleric",
+      "summary": "",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-10-05T08:40:53+00:00",
+      "original_url": "https://saveu.cat/noticies/la-mallorca-5000-te-accent-solleric/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook"
+      ],
+      "image_url": ""
+    }
+  ]
 }
