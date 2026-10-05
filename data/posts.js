@@ -405,31 +405,10 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 171,
+  "post_count": 170,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
-    {
-      "id": "soller-ara-4327669283c12d84",
-      "category": "services",
-      "source_id": "manual-d930ccd82cdb",
-      "source": "Sóller, bolsa de trabajo",
-      "source_type": "own",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-10-05T11:40:23.501905+00:00",
-      "show_in_now": true,
-      "content_type": "social_link",
-      "title": "Personal per a tenda Beinetti",
-      "summary": "Oferta de feina a Sóller.",
-      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-4327669283c12d84.html",
-      "content_policy": "manual_link_reference",
-      "rights_status": "no_reuse_reference_only",
-      "image_allowed": true,
-      "original_url": "https://www.facebook.com/groups/2168168493412761/posts/4668467036716215/?hpir=1",
-      "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-4327669283c12d84.jpg",
-      "media_type": "image"
-    },
     {
       "id": "d512c8e30e10a9500554",
       "category": "sports",
