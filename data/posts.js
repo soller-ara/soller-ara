@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.60",
-  "fetched_at": "2026-10-05T08:26:44.390599+00:00",
+  "fetched_at": "2026-10-05T08:44:29.504802+00:00",
   "source_count": 40,
   "source_status": [
     {
@@ -409,6 +409,28 @@ window.SOLLER_ARA_DATA = {
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "1d8981f4f80cb5cc9e88",
+      "category": "news",
+      "source_id": "sa-veu-soller",
+      "source": "Sa Veu de Sóller",
+      "source_type": "media",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-05T08:40:53+00:00",
+      "title": "La Mallorca 5000 té accent solleric",
+      "summary": "",
+      "url": "https://saveu.cat/noticies/la-mallorca-5000-te-accent-solleric/",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "image_allowed": false,
+      "embed_type": "official_oembed",
+      "embed_url": "https://saveu.cat/noticies/la-mallorca-5000-te-accent-solleric/embed/",
+      "related_sources": []
+    },
     {
       "id": "5f71de3dc3e53e5388d2",
       "category": "agenda",
@@ -1684,28 +1706,6 @@ window.SOLLER_ARA_DATA = {
       "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-8fa74fd10f10800c.jpg",
       "media_type": "image",
       "content_type": "social_link",
-      "related_sources": []
-    },
-    {
-      "id": "cbda1a199fdbf18133c7",
-      "category": "news",
-      "source_id": "sa-veu-soller",
-      "source": "Sa Veu de Sóller",
-      "source_type": "media",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-09-30T14:50:02+00:00",
-      "title": "«Sacar pecho» porta la veu de les pacients de càncer de mama fins a Brussel·les",
-      "summary": "",
-      "url": "https://saveu.cat/noticies/sacar-pecho-porta-la-veu-de-les-pacients-de-cancer-de-mama-fins-a-brusselles/",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
-      "embed_type": "official_oembed",
-      "embed_url": "https://saveu.cat/noticies/sacar-pecho-porta-la-veu-de-les-pacients-de-cancer-de-mama-fins-a-brusselles/embed/",
       "related_sources": []
     },
     {
