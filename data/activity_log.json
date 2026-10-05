@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "2d65028316b3d027",
+      "timestamp": "2026-10-05T10:33:29.760157+00:00",
+      "action": "reclassify",
+      "area": "moderation",
+      "target_id": "d512c8e30e10a9500554",
+      "title": "Joseba Iraola tornà a ser el més ràpid a la Pujada al Puig Major",
+      "detail": "Acción de moderación completada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "8722bbda7ef5da7f",
       "timestamp": "2026-10-05T09:51:08.525507+00:00",
       "action": "reclassify",

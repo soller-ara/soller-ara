@@ -411,7 +411,7 @@ window.SOLLER_ARA_DATA = {
   "posts": [
     {
       "id": "d512c8e30e10a9500554",
-      "category": "news",
+      "category": "sports",
       "source_id": "setmanari-soller",
       "source": "Setmanari Sóller",
       "source_type": "media",
