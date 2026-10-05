@@ -431,7 +431,7 @@ window.SOLLER_ARA_DATA = {
     },
     {
       "id": "6845df8f9e73fdd3fe44",
-      "category": "news",
+      "category": "sports",
       "source_id": "setmanari-soller",
       "source": "Setmanari Sóller",
       "source_type": "media",

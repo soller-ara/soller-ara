@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "eeaa05e8c6ed4ff3",
+      "timestamp": "2026-10-05T10:34:10.736667+00:00",
+      "action": "reclassify",
+      "area": "moderation",
+      "target_id": "6845df8f9e73fdd3fe44",
+      "title": "Pere Casasnovas, Dani Vidal i Pau Noguera s'imposen en relleus a la Mallorca 5000",
+      "detail": "Acción de moderación completada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "2d65028316b3d027",
       "timestamp": "2026-10-05T10:33:29.760157+00:00",
       "action": "reclassify",
