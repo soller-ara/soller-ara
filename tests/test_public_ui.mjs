@@ -94,3 +94,48 @@ c.state={posts:[{id:'new-title',source_id:'source',url:'https://example.test/sam
 assert.equal(run('isAlreadySent("new-title","facebook")'),true);
 assert.equal(run('isAlreadySent("new-title","instagram")'),false);
 console.log('PASS: social preview does not propose resending a source URL after a headline edit.');
+
+// The corrected Facebook group permalink is recognized without altering the saved URL.
+c.post={id:'beinetti',source_type:'own',original_url:'https://www.facebook.com/groups/2168168493412761/posts/4668467036716215/?hpir=1',title:'Personal per a tenda Beinetti'};
+assert.equal(run('getEmbeddablePlatform(post.original_url)'),'facebook');
+assert.ok(run('renderManualOriginalEmbed(post)').includes(encodeURIComponent(c.post.original_url)));
+
+vm.runInContext(admin.slice(admin.indexOf('  function ownPostMatches('),admin.indexOf('  async function waitForOwnEdit(')),c);
+c.expected={source_name:'Sóller, bolsa de trabajo',original_url:c.post.original_url,title:c.post.title,
+ body:'Oferta de feina a Sóller.',category:'services',language:'ca',show_in_now:true,content_type:'social_link'};
+const saved={...c.post,source:c.expected.source_name,summary:c.expected.body,category:'services',language:'ca',show_in_now:true,content_type:'social_link'};
+c.previousIds=new Set(['already-saved']);c.message={};
+let reads=0;let renders=0;
+c.setTimeout=fn=>fn();
+c.setMessage=(element,text)=>{element.textContent=text};
+c.renderPosts=()=>{renders++};
+const readSaved=async()=>{
+ reads++;
+ if (reads===2) throw new Error('Temporary read failure');
+ const posts=[{...saved,id:'already-saved'}, {...saved,id:'foreign-source',source_type:'social'}];
+ if(reads>=4) posts.push(saved);
+ return {posts:{posts},moderation:{hidden_post_ids:[]}};
+};
+c.window.SOLLER_ARA_READ_JSON=async path=>{
+ if(path==='data/posts.json') return (await readSaved()).posts;
+ return {hidden_post_ids:[]};
+};
+assert.equal(await run('waitForOwnPublication(expected,previousIds,message)'),true);
+assert.equal(reads,4);assert.equal(renders,1);
+assert.ok(run('statusPayload.posts.posts.some(post=>post.id==="beinetti")'));
+
+// A request accepted by the backend is not a confirmed save.
+reads=0;renders=0;
+c.window.SOLLER_ARA_READ_JSON=async path=>path==='data/posts.json'
+ ? {posts:[{...saved,id:'already-saved'}]} : {hidden_post_ids:[]};
+assert.equal(await run('waitForOwnPublication(expected,previousIds,message)'),false);
+assert.equal(renders,0);
+assert.ok(c.message.textContent.includes('No vuelvas a enviarla'));
+assert.equal(run('ownPostMatches({...statusPayload.posts.posts.at(-1),original_url:"https://example.test/wrong"},expected)'),false);
+
+vm.runInContext(admin.slice(admin.indexOf('  function renderSocialLinkPosts('),admin.indexOf('  function renderHidden(')),c);
+c.socialLinkList=node('socialLinkList');
+run('statusPayload={posts:{posts:[statusPayload.posts.posts.at(-1)]},socialLog:{entries:[]}};renderSocialLinkPosts()');
+assert.ok(c.socialLinkList.innerHTML.includes('Personal per a tenda Beinetti'));
+assert.ok(c.socialLinkList.innerHTML.includes('data-social-link-edit-id="beinetti"'));
+console.log('PASS: corrected Facebook permalink, delayed save confirmation, transient read failure, existing-post exclusion, timeout without false success and editable social-link gallery.');

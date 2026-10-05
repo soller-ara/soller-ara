@@ -30,6 +30,7 @@
   const socialLinkSubmitButton = document.getElementById("socialLinkSubmitButton");
   const cancelSocialLinkEditButton = document.getElementById("cancelSocialLinkEditButton");
   const socialLinkList = document.getElementById("socialLinkList");
+  const refreshSocialLinkListButton = document.getElementById("refreshSocialLinkListButton");
 
   let statusPayload = null;
   let editPostId = "";
@@ -470,23 +471,43 @@
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
+  function ownPostMatches(post, expected) {
+    return Boolean(post && post.source_type === "own" &&
+      post.title === expected.title && post.summary === expected.body &&
+      post.category === expected.category && post.language === expected.language &&
+      (post.show_in_now !== false) === Boolean(expected.show_in_now) &&
+      (post.original_url || "") === (expected.original_url || "") &&
+      (!expected.source_name || post.source === expected.source_name) &&
+      (!expected.image_url || post.media_url === expected.image_url) &&
+      (!expected.content_type || post.content_type === expected.content_type));
+  }
+
+  async function waitForOwnPublication(expected, previousIds, messageElement) {
+    for (let attempt = 1; attempt <= 120; attempt++) {
+      await new Promise((resolve) => setTimeout(resolve, 5000));
+      try {
+        const publicState = await readRepositoryState();
+        const post = (publicState.posts?.posts || []).find((item) =>
+          !previousIds.has(item.id) && ownPostMatches(item, expected));
+        if (post) {
+          statusPayload = { ...statusPayload, posts: publicState.posts, moderation: publicState.moderation };
+          renderPosts();
+          return true;
+        }
+      } catch (_) {
+        // Un fallo temporal de lectura no significa que haya fallado el guardado.
+      }
+      setMessage(messageElement, "Publicación enviada. Esperando a que termine el guardado… " + attempt + "/120. No vuelvas a enviarla.");
+    }
+    return false;
+  }
+
   async function waitForOwnEdit(postId, expected, messageElement = publishMessage) {
     for (let attempt = 1; attempt <= 15; attempt++) {
       await new Promise((resolve) => setTimeout(resolve, 2500));
       const publicState = await readRepositoryState();
       const post = (publicState.posts?.posts || []).find((item) => item.id === postId);
-      if (
-        post &&
-        post.title === expected.title &&
-        post.summary === expected.body &&
-        post.category === expected.category &&
-        post.language === expected.language &&
-        (post.show_in_now !== false) === Boolean(expected.show_in_now) &&
-        (post.original_url || "") === (expected.original_url || "") &&
-        (!expected.source_name || post.source === expected.source_name) &&
-        (!expected.image_url || post.media_url === expected.image_url) &&
-        (!expected.content_type || post.content_type === expected.content_type)
-      ) {
+      if (ownPostMatches(post, expected)) {
         return true;
       }
       setMessage(messageElement, "Guardando cambios… " + attempt + "/15");
@@ -644,6 +665,15 @@
   });
 
   refreshButton.addEventListener("click", loadStatus);
+  refreshSocialLinkListButton.addEventListener("click", async () => {
+    refreshSocialLinkListButton.disabled = true;
+    refreshSocialLinkListButton.textContent = "Actualizando…";
+    try { await loadStatus(); }
+    finally {
+      refreshSocialLinkListButton.disabled = false;
+      refreshSocialLinkListButton.textContent = "Actualizar lista";
+    }
+  });
   systemCheckButton.addEventListener("click", runSystemCheck);
   postSearch.addEventListener("input", renderPosts);
 
@@ -727,10 +757,18 @@
         resetSocialLinkEditMode(true);
         await loadStatus();
       } else {
-        const result = await api("/api/publish", { method: "POST", body: JSON.stringify(payload) });
-        setMessage(socialLinkMessage, "Publicación enviada. Workflow: " + (result.workflow || "iniciado") + ".", "success");
+        const before = await readRepositoryState();
+        const previousIds = new Set((before.posts?.posts || []).map((post) => post.id));
+        await api("/api/publish", { method: "POST", body: JSON.stringify(payload) });
+        setMessage(socialLinkMessage, "Publicación enviada. Esperando a que termine el guardado… No vuelvas a enviarla.");
+        if (!await waitForOwnPublication(payload, previousIds, socialLinkMessage)) {
+          setMessage(socialLinkMessage, "La solicitud sigue sin confirmarse. Pulsa Actualizar lista para comprobarla antes de volver a enviarla.", "error");
+          return;
+        }
         socialLinkForm.reset();
-        setTimeout(loadStatus, 4500);
+        updateSocialPosterFields();
+        await loadStatus();
+        setMessage(socialLinkMessage, "Enlace guardado y disponible para editar. La web y los destinos seleccionados se actualizarán al terminar el proceso.", "success");
       }
     } catch (error) {
       setMessage(socialLinkMessage, error.message, "error");
@@ -794,15 +832,22 @@
         await loadStatus();
         openModule("moderation");
       } else {
-        const result = await api("/api/publish", {
+        const before = await readRepositoryState();
+        const previousIds = new Set((before.posts?.posts || []).map((post) => post.id));
+        await api("/api/publish", {
           method: "POST",
           body: JSON.stringify(payload),
         });
-        setMessage(publishMessage, "Publicación enviada. Workflow: " + (result.workflow || "iniciado") + ".", "success");
+        setMessage(publishMessage, "Publicación enviada. Esperando a que termine el guardado… No vuelvas a enviarla.");
+        if (!await waitForOwnPublication(payload, previousIds, publishMessage)) {
+          setMessage(publishMessage, "La solicitud sigue sin confirmarse. Pulsa Actualizar para comprobarla antes de volver a enviarla.", "error");
+          return;
+        }
         publishForm.reset();
         previewTitle.textContent = "Título de la publicación";
         previewBody.textContent = "El texto aparecerá aquí.";
-        setTimeout(loadStatus, 4500);
+        await loadStatus();
+        setMessage(publishMessage, "Publicación guardada y disponible para editar. La web y los destinos seleccionados se actualizarán al terminar el proceso.", "success");
       }
     } catch (error) {
       setMessage(publishMessage, error.message, "error");
