@@ -84,3 +84,15 @@ class ManualRetryTests(unittest.TestCase):
         self.write(retry.MANUAL_FILE,{'posts':self.posts})
         self.assertEqual(retry.main(),0)
         self.instagram.assert_called_once()
+
+    def test_log_trimming_preserves_pending_and_does_not_revive_stopped_retries(self):
+        from scripts import publish_collected_social as auto
+        other=[{'post_id':str(i),'platform':'instagram','status':'error'} for i in range(1001)]
+        with patch.object(auto,'LOG_FILE',self.publisher.LOG_FILE):
+            for stopped in (False,True):
+                entries=[dict(self.log['entries'][0])]
+                if stopped: entries.append({'post_id':'one','platform':'instagram','status':'error'})
+                log={'entries':entries+other}
+                auto.save_log(log)
+                pending=retry.pending_posts(log,self.posts,set())
+                self.assertEqual([post['id'] for post in pending],[] if stopped else ['one'])

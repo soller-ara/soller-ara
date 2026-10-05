@@ -38,7 +38,7 @@ Cloudflare. Els reintents funcionen des de GitHub independentment del Worker.
 
 ## Validació
 
-73 proves Python i quatre conjunts de proves JavaScript correctes. Proves amb
+74 proves Python i quatre conjunts de proves JavaScript correctes. Proves amb
 Meta i GitHub simulats: pausa, èxit, nou límit, moderació, eliminació, contingut
 editat, registre corrupte, deduplicació, autenticació del botó, seguiment d'una
 execució concreta, reutilització d'una execució activa i errors del proveïdor.

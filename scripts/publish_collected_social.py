@@ -57,8 +57,12 @@ def load_json(path: Path, fallback: dict) -> dict:
 
 def save_log(log: dict) -> None:
     entries = log.get("entries") or []
+    retry_pairs = {(entry.get("post_id"), entry.get("platform")) for entry in entries if entry.get("retry_requested") is True}
+    latest_retry = {(entry.get("post_id"), entry.get("platform")): index for index, entry in enumerate(entries)
+                    if (entry.get("post_id"), entry.get("platform")) in retry_pairs}
+    protected = set(latest_retry.values())
     log["entries"] = [entry for index, entry in enumerate(entries)
-                      if index >= len(entries) - 1000 or entry.get("status") == "success"]
+                      if index >= len(entries) - 1000 or index in protected or entry.get("status") == "success"]
     LOG_FILE.parent.mkdir(parents=True, exist_ok=True)
     LOG_FILE.write_text(json.dumps(log, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
