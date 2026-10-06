@@ -1,7 +1,7 @@
 {
   "version": 41,
   "generator_version": "0.60",
-  "fetched_at": "2026-10-06T10:23:33.530498+00:00",
+  "fetched_at": "2026-10-06T11:23:10.781405+00:00",
   "source_count": 40,
   "source_status": [
     {
@@ -120,7 +120,7 @@
       "source_type": "media",
       "method": "html_listing_regex",
       "ok": true,
-      "count": 24,
+      "count": 23,
       "archived_count": 0,
       "error": null
     },
@@ -405,7 +405,7 @@
     }
   ],
   "social_integration_status": [],
-  "post_count": 166,
+  "post_count": 165,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
@@ -3749,26 +3749,6 @@
       "title": "Sóller dice basta: 2.500 personas se movilizan contra la masificación turística",
       "summary": "",
       "url": "https://www.ultimahora.es/noticias/part-forana/2026/08/08/2685113/soller-moviliza-contra-masificacion-turistica.html",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "ddd08c6817a93c476172",
-      "category": "news",
-      "source_id": "ultima-hora-soller",
-      "source": "Última Hora",
-      "source_type": "media",
-      "language": "es",
-      "locality": "Sóller",
-      "published_at": "2026-08-07T12:29:00+02:00",
-      "title": "El GOB y ‘Menys Turisme més vida’ fletan buses para ir a la manifestación ‘Sóller al límit’ de este sábado",
-      "summary": "",
-      "url": "https://www.ultimahora.es/noticias/part-forana/2026/08/07/2685071/gob-menys-turisme-mes-vida-fletan-buses-para-manifestacion-soller-limit-este-sabado.html",
       "platform": null,
       "account": null,
       "media_type": null,
