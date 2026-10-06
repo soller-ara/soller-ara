@@ -1,7 +1,7 @@
 {
   "version": 41,
   "generator_version": "0.60",
-  "fetched_at": "2026-10-06T01:22:33.957784+00:00",
+  "fetched_at": "2026-10-06T02:21:53.598148+00:00",
   "source_count": 40,
   "source_status": [
     {
@@ -59,10 +59,10 @@
       "name": "Ajuntament de Sóller · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
+      "ok": false,
       "count": 2,
-      "archived_count": 0,
-      "error": null
+      "retained_count": 2,
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "youtube-ib3-noticies-soller",
@@ -120,7 +120,7 @@
       "source_type": "media",
       "method": "html_listing_regex",
       "ok": true,
-      "count": 27,
+      "count": 26,
       "archived_count": 0,
       "error": null
     },
@@ -169,10 +169,10 @@
       "name": "Aires Sollerics · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "archived_count": 0,
-      "error": null
+      "retained_count": 0,
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "youtube-xeremiers-soller",
@@ -405,15 +405,23 @@
     }
   ],
   "social_integration_status": [],
-  "post_count": 167,
+  "post_count": 166,
   "related_pair_count": 0,
   "errors": [
+    {
+      "source_id": "youtube-ajuntament-soller",
+      "error": "HTTP Error 404: Not Found"
+    },
     {
       "source_id": "youtube-ib3-noticies-soller",
       "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "youtube-can-prunera",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "source_id": "youtube-aires-sollerics",
       "error": "HTTP Error 404: Not Found"
     },
     {
@@ -3811,26 +3819,6 @@
       "media_type": null,
       "content_policy": "headline_date_link_only",
       "rights_status": "official_party_source",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "cba08a48e309a30959f0",
-      "category": "news",
-      "source_id": "ultima-hora-soller",
-      "source": "Última Hora",
-      "source_type": "media",
-      "language": "es",
-      "locality": "Sóller",
-      "published_at": "2026-08-07T03:48:00+02:00",
-      "title": "Propietarios de comercios y bares de Sóller respetan la manifestación del sábado, pero advierten de «pérdidas»",
-      "summary": "",
-      "url": "https://www.ultimahora.es/noticias/part-forana/2026/08/07/2684659/propietarios-comercios-bares-soller-respetan-manifestacion-del-sabado-pero-advierten-perdidas.html",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
       "image_allowed": false,
       "related_sources": []
     },
