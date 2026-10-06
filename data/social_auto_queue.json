@@ -1,6 +1,25 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-10-06T14:24:49.787727+00:00",
+  "entries": [
+    {
+      "post_id": "cbbb9ea96c8d2473ebbc",
+      "title": "El parc de l’estació disposarà del primer hort urbà de Sóller",
+      "summary": "",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-10-06T14:14:31+00:00",
+      "original_url": "https://saveu.cat/noticies/el-parc-de-lestacio-disposara-del-primer-hort-urba-de-soller/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook"
+      ],
+      "image_url": ""
+    }
+  ]
 }
