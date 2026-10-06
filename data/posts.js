@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.60",
-  "fetched_at": "2026-10-06T17:06:47.379955+00:00",
+  "fetched_at": "2026-10-06T17:21:10.396031+00:00",
   "source_count": 40,
   "source_status": [
     {
@@ -400,7 +400,7 @@ window.SOLLER_ARA_DATA = {
       "source_type": "own",
       "method": "manual",
       "ok": true,
-      "count": 41,
+      "count": 42,
       "error": null
     }
   ],
@@ -426,7 +426,8 @@ window.SOLLER_ARA_DATA = {
       "content_policy": "manual_link_reference",
       "rights_status": "no_reuse_reference_only",
       "image_allowed": false,
-      "original_url": "https://www.facebook.com/story.php?story_fbid=1529627362538986&id=100064752094509&hpir=1"
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1529627362538986&id=100064752094509&hpir=1",
+      "related_sources": []
     },
     {
       "id": "1ab90b1baa2614d35330",
