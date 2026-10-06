@@ -1,6 +1,43 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-10-06T12:28:06.807050+00:00",
+  "entries": [
+    {
+      "post_id": "e43a60f6cad4d894d077",
+      "title": "El Consell de Mallorca abre el plazo para solicitar las ayudas para el mantenimiento de la actividad agraria y marítima de la Serra de Tramuntana",
+      "summary": "",
+      "source": "Consell de Mallorca",
+      "source_id": "consell-mallorca-soller",
+      "source_type": "official",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-10-06T12:00:00+00:00",
+      "original_url": "https://www.conselldemallorca.es/es/todas-las-noticias/-/asset_publisher/bqOupoVYvgPA/content/el-consell-de-mallorca-obre-el-termini-per-sol%C2%B7licitar-els-ajuts-per-al-manteniment-de-l-activitat-agr%C3%A0ria-i-mar%C3%ADtima-de-la-serra-de-tramuntana/695139",
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "official_public_source",
+      "platforms": [
+        "facebook"
+      ],
+      "image_url": ""
+    },
+    {
+      "post_id": "eff27a72ac25bb6fdb05",
+      "title": "Més de 9.500 sollerics podran votar a les eleccions generals del 29 de novembre",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-10-06T13:33:56+02:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/10/06/354623/mes-9500-sollerics-podran-votar-les-eleccions-generals-del-novembre.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook"
+      ],
+      "image_url": ""
+    }
+  ]
 }
