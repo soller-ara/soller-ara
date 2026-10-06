@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.60",
-  "fetched_at": "2026-10-06T17:21:10.396031+00:00",
+  "fetched_at": "2026-10-06T18:01:14.989281+00:00",
   "source_count": 40,
   "source_status": [
     {
@@ -405,10 +405,29 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 169,
+  "post_count": 170,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "soller-ara-7032946808980dee",
+      "category": "politics",
+      "source_id": "manual-36731627c025",
+      "source": "Soller Trueque Alquiler y Trabajo",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-06T18:01:14.989281+00:00",
+      "show_in_now": false,
+      "content_type": "social_link",
+      "title": "",
+      "summary": "",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-7032946808980dee.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": false,
+      "original_url": "https://www.facebook.com/groups/800983156596878/posts/29492288323706312/?hpir=1"
+    },
     {
       "id": "soller-ara-388396372052bc53",
       "category": "services",
