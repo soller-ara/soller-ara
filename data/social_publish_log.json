@@ -4218,6 +4218,20 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-06T12:28:30.543393+00:00",
       "error": ""
+    },
+    {
+      "post_id": "cbbb9ea96c8d2473ebbc",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122120111925467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122120111925467310",
+      "title": "El parc de l’estació disposarà del primer hort urbà de Sóller",
+      "post_url": "https://saveu.cat/noticies/el-parc-de-lestacio-disposara-del-primer-hort-urba-de-soller/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-06T14:25:08.803068+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
