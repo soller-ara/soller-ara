@@ -4256,6 +4256,20 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-06T15:23:39.053317+00:00",
       "error": ""
+    },
+    {
+      "post_id": "c977ade2f8e71413af1e",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122120148423467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122120148423467310",
+      "title": "El MUCBO incorpora un equip de guies d’Amadip per reforçar les visites inclusives",
+      "post_url": "https://saveu.cat/noticies/el-mucbo-incorpora-un-equip-de-guies-damadip-per-reforcar-les-visites-inclusives/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-06T16:25:55.937803+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
