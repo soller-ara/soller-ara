@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.60",
-  "fetched_at": "2026-10-06T06:28:28.433589+00:00",
+  "fetched_at": "2026-10-06T07:24:35.562473+00:00",
   "source_count": 40,
   "source_status": [
     {
@@ -59,20 +59,20 @@ window.SOLLER_ARA_DATA = {
       "name": "Ajuntament de Sóller · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 2,
-      "retained_count": 2,
-      "error": "HTTP Error 404: Not Found"
+      "archived_count": 0,
+      "error": null
     },
     {
       "source_id": "youtube-ib3-noticies-soller",
       "name": "IB3 Notícies · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "retained_count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "archived_count": 0,
+      "error": null
     },
     {
       "source_id": "goib-noticies-soller",
@@ -120,7 +120,7 @@ window.SOLLER_ARA_DATA = {
       "source_type": "media",
       "method": "html_listing_regex",
       "ok": true,
-      "count": 26,
+      "count": 25,
       "archived_count": 0,
       "error": null
     },
@@ -159,100 +159,100 @@ window.SOLLER_ARA_DATA = {
       "name": "Can Prunera · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "retained_count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "archived_count": 0,
+      "error": null
     },
     {
       "source_id": "youtube-aires-sollerics",
       "name": "Aires Sollerics · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "retained_count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "archived_count": 0,
+      "error": null
     },
     {
       "source_id": "youtube-xeremiers-soller",
       "name": "Xeremiers de Sóller · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "retained_count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "archived_count": 0,
+      "error": null
     },
     {
       "source_id": "youtube-club-volei-soller",
       "name": "Club Vòlei Sóller · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "retained_count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "archived_count": 0,
+      "error": null
     },
     {
       "source_id": "youtube-ballades-mallorca-soller",
       "name": "Ballades A Mallorca · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "retained_count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "archived_count": 0,
+      "error": null
     },
     {
       "source_id": "youtube-tramuntana-xxi",
       "name": "Tramuntana XXI · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "retained_count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "archived_count": 0,
+      "error": null
     },
     {
       "source_id": "youtube-gob-mallorca-soller",
       "name": "GOB Mallorca · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "retained_count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "archived_count": 0,
+      "error": null
     },
     {
       "source_id": "youtube-museu-maritim-soller",
       "name": "Museu Marítim de Mallorca · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "retained_count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "archived_count": 0,
+      "error": null
     },
     {
       "source_id": "youtube-serra-tramuntana",
       "name": "Serra de Tramuntana Patrimoni Mundial · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "retained_count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "archived_count": 0,
+      "error": null
     },
     {
       "source_id": "youtube-consell-mallorca-soller",
       "name": "Consell de Mallorca · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "retained_count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "archived_count": 0,
+      "error": null
     },
     {
       "source_id": "mucbo-noticies",
@@ -349,10 +349,10 @@ window.SOLLER_ARA_DATA = {
       "name": "SUS Mallorca · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "retained_count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "archived_count": 0,
+      "error": null
     },
     {
       "source_id": "partido-popular-soller",
@@ -405,62 +405,9 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 165,
+  "post_count": 164,
   "related_pair_count": 0,
-  "errors": [
-    {
-      "source_id": "youtube-ajuntament-soller",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-ib3-noticies-soller",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-can-prunera",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-aires-sollerics",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-xeremiers-soller",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-club-volei-soller",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-ballades-mallorca-soller",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-tramuntana-xxi",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-gob-mallorca-soller",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-museu-maritim-soller",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-serra-tramuntana",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-consell-mallorca-soller",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-sus-mallorca-soller",
-      "error": "HTTP Error 404: Not Found"
-    }
-  ],
+  "errors": [],
   "posts": [
     {
       "id": "7780bdb7724ccabed023",
@@ -3774,26 +3721,6 @@ window.SOLLER_ARA_DATA = {
       "title": "Protesta contra la masificación turística en Sóller: cómo llegar, recorrido y recomendaciones",
       "summary": "",
       "url": "https://www.ultimahora.es/noticias/part-forana/2026/08/07/2685041/protesta-contra-masificacion-turistica-soller-como-llegar-recorrido-recomendaciones.html",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "e43fd7a8f511f4e4d2c5",
-      "category": "news",
-      "source_id": "ultima-hora-soller",
-      "source": "Última Hora",
-      "source_type": "media",
-      "language": "es",
-      "locality": "Sóller",
-      "published_at": "2026-08-07T08:48:00+02:00",
-      "title": "Sóller y Deià amanecen con pintadas a un día de la manifestación contra la masificación",
-      "summary": "",
-      "url": "https://www.ultimahora.es/noticias/part-forana/2026/08/07/2684913/inmobiliaria-tolo-oliver-soller-amanece-pintadas-dia-manifestacion-contra-masificacion.html",
       "platform": null,
       "account": null,
       "media_type": null,
