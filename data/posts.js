@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.60",
-  "fetched_at": "2026-10-06T05:23:01.104080+00:00",
+  "fetched_at": "2026-10-06T06:28:28.433589+00:00",
   "source_count": 40,
   "source_status": [
     {
@@ -380,7 +380,7 @@ window.SOLLER_ARA_DATA = {
       "source_type": "political_party",
       "method": "rss",
       "ok": true,
-      "count": 8,
+      "count": 7,
       "archived_count": 0,
       "error": null
     },
@@ -405,7 +405,7 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 166,
+  "post_count": 165,
   "related_pair_count": 0,
   "errors": [
     {
@@ -3799,26 +3799,6 @@ window.SOLLER_ARA_DATA = {
       "media_type": null,
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "58691b31662194a363c4",
-      "category": "politics",
-      "source_id": "mes-per-soller",
-      "source": "MÉS per Sóller",
-      "source_type": "political_party",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-08-07T06:10:09+00:00",
-      "title": "EL PROBLEMA NO ÉS EL QUE DIUEN, ÉS EL QUE FAN!",
-      "summary": "",
-      "url": "https://mespersoller.cat/el-problema-no-es-el-que-diuen-es-el-que-fan/",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "official_party_source",
       "image_allowed": false,
       "related_sources": []
     },
