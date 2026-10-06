@@ -1,7 +1,7 @@
 {
   "version": 41,
   "generator_version": "0.60",
-  "fetched_at": "2026-10-06T09:24:11.167315+00:00",
+  "fetched_at": "2026-10-06T10:23:33.530498+00:00",
   "source_count": 40,
   "source_status": [
     {
@@ -120,7 +120,7 @@
       "source_type": "media",
       "method": "html_listing_regex",
       "ok": true,
-      "count": 25,
+      "count": 24,
       "archived_count": 0,
       "error": null
     },
@@ -405,7 +405,7 @@
     }
   ],
   "social_integration_status": [],
-  "post_count": 167,
+  "post_count": 166,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
@@ -474,7 +474,8 @@
       "content_policy": "manual_link_reference",
       "rights_status": "no_reuse_reference_only",
       "image_allowed": false,
-      "original_url": "https://www.facebook.com/story.php?story_fbid=1546011747572475&id=100064909921419&hpir=1"
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1546011747572475&id=100064909921419&hpir=1",
+      "related_sources": []
     },
     {
       "id": "7780bdb7724ccabed023",
@@ -3768,26 +3769,6 @@
       "title": "El GOB y ‘Menys Turisme més vida’ fletan buses para ir a la manifestación ‘Sóller al límit’ de este sábado",
       "summary": "",
       "url": "https://www.ultimahora.es/noticias/part-forana/2026/08/07/2685071/gob-menys-turisme-mes-vida-fletan-buses-para-manifestacion-soller-limit-este-sabado.html",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "6a8298feb51e7279a8a7",
-      "category": "news",
-      "source_id": "ultima-hora-soller",
-      "source": "Última Hora",
-      "source_type": "media",
-      "language": "es",
-      "locality": "Sóller",
-      "published_at": "2026-08-07T12:12:00+02:00",
-      "title": "Protesta contra la masificación turística en Sóller: cómo llegar, recorrido y recomendaciones",
-      "summary": "",
-      "url": "https://www.ultimahora.es/noticias/part-forana/2026/08/07/2685041/protesta-contra-masificacion-turistica-soller-como-llegar-recorrido-recomendaciones.html",
       "platform": null,
       "account": null,
       "media_type": null,
