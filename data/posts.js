@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.60",
-  "fetched_at": "2026-10-06T11:23:10.781405+00:00",
+  "fetched_at": "2026-10-06T12:24:59.507273+00:00",
   "source_count": 40,
   "source_status": [
     {
@@ -405,10 +405,31 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 165,
+  "post_count": 166,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "soller-ara-c25effa43953af00",
+      "category": "alerts",
+      "source_id": "manual-13e44f9445ef",
+      "source": "Policia Local de Sóller",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-06T12:24:59.507273+00:00",
+      "show_in_now": true,
+      "content_type": "social_link",
+      "title": "Tancament Túnel de Sóller",
+      "summary": "🚧 ATENCIÓ!! TANCAMENT TÚNEL DE SÓLLER:\nDIJOUS 07 I DIVENDRES 08 D'OCTUBRE DE 23:30H A 04:00H",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-c25effa43953af00.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": true,
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1563153919187741&id=100064794426084&hpir=1",
+      "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-c25effa43953af00.jpg",
+      "media_type": "image"
+    },
     {
       "id": "ebb508d999c08ccfa1c5",
       "category": "alerts",

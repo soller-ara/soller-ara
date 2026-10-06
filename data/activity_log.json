@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "6cd3c244a83053ea",
+      "timestamp": "2026-10-06T12:24:59.652725+00:00",
+      "action": "publish",
+      "area": "publications",
+      "target_id": "soller-ara-c25effa43953af00",
+      "title": "Tancament Túnel de Sóller",
+      "detail": "Publicación propia creada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "b8df5b7e7a441e19",
       "timestamp": "2026-10-06T10:11:56.790153+00:00",
       "action": "edit",
