@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.60",
-  "fetched_at": "2026-10-06T14:24:49.716619+00:00",
+  "fetched_at": "2026-10-06T15:23:10.750420+00:00",
   "source_count": 40,
   "source_status": [
     {
@@ -409,6 +409,26 @@ window.SOLLER_ARA_DATA = {
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "1ab90b1baa2614d35330",
+      "category": "services",
+      "source_id": "setmanari-soller",
+      "source": "Setmanari Sóller",
+      "source_type": "media",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-06T17:17:00+02:00",
+      "title": "Sóller incrementa en 484 les places ZAR i redueix en 424 les d'ORA des del gener",
+      "summary": "",
+      "url": "https://www.elsoller.cat/soller/local/2026/10/06/354625/soller-incrementa-484-les-places-zar-redueix-424-les-ora-des-del-gener.html",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "image_allowed": false,
+      "related_sources": []
+    },
     {
       "id": "cbbb9ea96c8d2473ebbc",
       "category": "news",
@@ -2504,26 +2524,6 @@ window.SOLLER_ARA_DATA = {
       "title": "El Ibavi ordena desalojar el antiguo Hospici de Sóller por riesgo de derrumbe",
       "summary": "",
       "url": "https://www.ultimahora.es/noticias/part-forana/2026/09/28/2717539/ibavi-ordena-desalojar-antiguo-hospici-soller-por-riesgo-derrumbe.html",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "7c106b6504ecd254bb3e",
-      "category": "services",
-      "source_id": "setmanari-soller",
-      "source": "Setmanari Sóller",
-      "source_type": "media",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-09-26T12:30:00+02:00",
-      "title": "Les demandes de Sóller encallen la reforma de la carretera de Desviament",
-      "summary": "",
-      "url": "https://www.elsoller.cat/soller/local/2026/09/26/354585/les-demandes-soller-encallen-reforma-carretera-desviament.html",
       "platform": null,
       "account": null,
       "media_type": null,

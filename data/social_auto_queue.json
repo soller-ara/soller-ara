@@ -1,8 +1,27 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-06T14:24:49.787727+00:00",
+  "generated_at": "2026-10-06T15:23:10.941430+00:00",
   "entries": [
+    {
+      "post_id": "1ab90b1baa2614d35330",
+      "title": "Sóller incrementa en 484 les places ZAR i redueix en 424 les d'ORA des del gener",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "services",
+      "language": "ca",
+      "published_at": "2026-10-06T17:17:00+02:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/10/06/354625/soller-incrementa-484-les-places-zar-redueix-424-les-ora-des-del-gener.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/1ab90b1baa2614d35330.jpg"
+    },
     {
       "post_id": "cbbb9ea96c8d2473ebbc",
       "title": "El parc de l’estació disposarà del primer hort urbà de Sóller",
@@ -17,9 +36,27 @@
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
-        "facebook"
+        "instagram"
       ],
-      "image_url": ""
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/cbbb9ea96c8d2473ebbc.jpg"
+    },
+    {
+      "post_id": "e43a60f6cad4d894d077",
+      "title": "El Consell de Mallorca abre el plazo para solicitar las ayudas para el mantenimiento de la actividad agraria y marítima de la Serra de Tramuntana",
+      "summary": "",
+      "source": "Consell de Mallorca",
+      "source_id": "consell-mallorca-soller",
+      "source_type": "official",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-10-06T12:00:00+00:00",
+      "original_url": "https://www.conselldemallorca.es/es/todas-las-noticias/-/asset_publisher/bqOupoVYvgPA/content/el-consell-de-mallorca-obre-el-termini-per-sol%C2%B7licitar-els-ajuts-per-al-manteniment-de-l-activitat-agr%C3%A0ria-i-mar%C3%ADtima-de-la-serra-de-tramuntana/695139",
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "official_public_source",
+      "platforms": [
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/e43a60f6cad4d894d077.jpg"
     }
   ]
 }
