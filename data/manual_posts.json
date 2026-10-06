@@ -779,6 +779,25 @@
       "original_url": "https://www.facebook.com/story.php?story_fbid=1563153919187741&id=100064794426084&hpir=1",
       "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-c25effa43953af00.jpg",
       "media_type": "image"
+    },
+    {
+      "id": "soller-ara-388396372052bc53",
+      "category": "services",
+      "source_id": "manual-8af0f8a160aa",
+      "source": "Ajuntament de Deià",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-06T17:06:47.379955+00:00",
+      "show_in_now": true,
+      "content_type": "social_link",
+      "title": "",
+      "summary": "",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-388396372052bc53.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": false,
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1529627362538986&id=100064752094509&hpir=1"
     }
   ]
 }
