@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.60",
-  "fetched_at": "2026-10-06T07:24:35.562473+00:00",
+  "fetched_at": "2026-10-06T08:18:42.317922+00:00",
   "source_count": 40,
   "source_status": [
     {
@@ -405,10 +405,29 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 164,
+  "post_count": 165,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "soller-ara-7952140cdd434d61",
+      "category": "politics",
+      "source_id": "manual-992ab061df7c",
+      "source": "Policia Tutor Sóller",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-06T08:18:42.317922+00:00",
+      "show_in_now": true,
+      "content_type": "social_link",
+      "title": "",
+      "summary": "",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-7952140cdd434d61.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": false,
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1546011747572475&id=100064909921419&hpir=1"
+    },
     {
       "id": "7780bdb7724ccabed023",
       "category": "news",

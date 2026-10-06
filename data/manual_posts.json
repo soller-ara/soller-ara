@@ -739,6 +739,25 @@
       "original_url": "https://www.facebook.com/story.php?story_fbid=1561781755991624&id=100064794426084&hpir=1",
       "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-ce3feda8c0a51520.jpg",
       "media_type": "image"
+    },
+    {
+      "id": "soller-ara-7952140cdd434d61",
+      "category": "politics",
+      "source_id": "manual-992ab061df7c",
+      "source": "Policia Tutor Sóller",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-06T08:18:42.317922+00:00",
+      "show_in_now": true,
+      "content_type": "social_link",
+      "title": "",
+      "summary": "",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-7952140cdd434d61.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": false,
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1546011747572475&id=100064909921419&hpir=1"
     }
   ]
 }
