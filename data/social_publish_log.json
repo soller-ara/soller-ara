@@ -4232,9 +4232,33 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-06T14:25:08.803068+00:00",
       "error": ""
+    },
+    {
+      "post_id": "soller-ara-ce3feda8c0a51520",
+      "platform": "instagram",
+      "status": "deferred",
+      "remote_id": "",
+      "post_url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-ce3feda8c0a51520.html",
+      "recorded_at": "2026-10-06T15:23:33.544858+00:00",
+      "error": "Pausa temporal de Meta fins a 2026-10-06T17:23:33.544825+00:00. Reintent automàtic pendent.",
+      "retry_requested": true
+    },
+    {
+      "post_id": "1ab90b1baa2614d35330",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122120133015467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122120133015467310",
+      "title": "Sóller incrementa en 484 les places ZAR i redueix en 424 les d'ORA des del gener",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/06/354625/soller-incrementa-484-les-places-zar-redueix-424-les-ora-des-del-gener.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-06T15:23:39.053317+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
-    "instagram_until": "2026-10-06T14:25:17.855910+00:00"
+    "instagram_until": "2026-10-06T17:23:33.544825+00:00"
   }
 }
