@@ -4190,6 +4190,34 @@
       "recorded_at": "2026-10-06T12:25:17.855941+00:00",
       "error": "Pausa temporal de Meta fins a 2026-10-06T14:25:17.855910+00:00. Reintent automàtic pendent.",
       "retry_requested": true
+    },
+    {
+      "post_id": "e43a60f6cad4d894d077",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122120064477467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122120064477467310",
+      "title": "El Consell de Mallorca abre el plazo para solicitar las ayudas para el mantenimiento de la actividad agraria y marítima de la Serra de Tramuntana",
+      "post_url": "https://www.conselldemallorca.es/es/todas-las-noticias/-/asset_publisher/bqOupoVYvgPA/content/el-consell-de-mallorca-obre-el-termini-per-sol%C2%B7licitar-els-ajuts-per-al-manteniment-de-l-activitat-agr%C3%A0ria-i-mar%C3%ADtima-de-la-serra-de-tramuntana/695139",
+      "source": "Consell de Mallorca",
+      "source_id": "consell-mallorca-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-06T12:28:26.044811+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "eff27a72ac25bb6fdb05",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122120064573467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122120064573467310",
+      "title": "Més de 9.500 sollerics podran votar a les eleccions generals del 29 de novembre",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/06/354623/mes-9500-sollerics-podran-votar-les-eleccions-generals-del-novembre.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-06T12:28:30.543393+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
