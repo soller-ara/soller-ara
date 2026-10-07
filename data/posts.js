@@ -1,7 +1,7 @@
 window.SOLLER_ARA_DATA = {
   "version": 41,
   "generator_version": "0.60",
-  "fetched_at": "2026-10-07T06:29:46.040197+00:00",
+  "fetched_at": "2026-10-07T06:30:25.712504+00:00",
   "source_count": 40,
   "source_status": [
     {
@@ -405,7 +405,7 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 170,
+  "post_count": 171,
   "related_pair_count": 0,
   "errors": [
     {
@@ -462,6 +462,25 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "posts": [
+    {
+      "id": "soller-ara-25be2b958f550906",
+      "category": "agenda",
+      "source_id": "manual-8af0f8a160aa",
+      "source": "Ajuntament de Deià",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-07T06:30:25.712504+00:00",
+      "show_in_now": true,
+      "content_type": "social_link",
+      "title": "",
+      "summary": "",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-25be2b958f550906.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": false,
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1529717785863277&id=100064752094509&hpir=1"
+    },
     {
       "id": "d4f991ab0b05cf8f13f0",
       "category": "alerts",
