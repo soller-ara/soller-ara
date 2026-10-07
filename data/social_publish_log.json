@@ -4328,6 +4328,36 @@
       "recorded_at": "2026-10-07T10:59:01.169390+00:00",
       "error": "Pausa temporal de Meta fins a 2026-10-07T11:25:26.270246+00:00. Reintent automàtic pendent.",
       "retry_requested": true
+    },
+    {
+      "post_id": "soller-ara-f40083871318b8d6",
+      "platform": "instagram",
+      "status": "verification_required",
+      "remote_id": "",
+      "post_url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-f40083871318b8d6.html",
+      "recorded_at": "2026-10-07T11:13:29.986Z",
+      "retry_requested": false,
+      "error": "Publicació ja visible a Instagram segons la captura. Reenviament aturat fins a verificar els identificadors remots."
+    },
+    {
+      "post_id": "soller-ara-ce3feda8c0a51520",
+      "platform": "instagram",
+      "status": "verification_required",
+      "remote_id": "",
+      "post_url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-ce3feda8c0a51520.html",
+      "recorded_at": "2026-10-07T11:13:29.987Z",
+      "retry_requested": false,
+      "error": "Publicació ja visible a Instagram segons la captura. Reenviament aturat fins a verificar els identificadors remots."
+    },
+    {
+      "post_id": "soller-ara-c25effa43953af00",
+      "platform": "instagram",
+      "status": "verification_required",
+      "remote_id": "",
+      "post_url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-c25effa43953af00.html",
+      "recorded_at": "2026-10-07T11:13:29.987Z",
+      "retry_requested": false,
+      "error": "Publicació ja visible a Instagram segons la captura. Reenviament aturat fins a verificar els identificadors remots."
     }
   ],
   "cooldowns": {
