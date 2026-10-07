@@ -1,0 +1,35 @@
+name: Instagram · verificar enviaments sense publicar
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/verify_instagram_deliveries.py"
+      - "scripts/instagram_delivery.py"
+      - ".github/workflows/verify-instagram.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: "soller-ara-social-publish"
+  queue: max
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+      - name: Llegir publicacions existents a Instagram
+        env:
+          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+          META_GRAPH_VERSION: "v26.0"
+        run: python scripts/verify_instagram_deliveries.py
