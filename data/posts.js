@@ -444,7 +444,7 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 171,
+  "post_count": 170,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
@@ -490,26 +490,6 @@ window.SOLLER_ARA_DATA = {
       "alert_valid_until": "2026-10-09T09:59:00+00:00",
       "alert_status": "scheduled",
       "alert_in_feed": true,
-      "related_sources": []
-    },
-    {
-      "id": "a57e64e57bd13a6a8f85",
-      "category": "news",
-      "source_id": "youtube-ib3-noticies-soller",
-      "source": "IB3 Notícies · YouTube",
-      "source_type": "social",
-      "language": "ca",
-      "locality": "Sóller / Fornalutx / Serra de Tramuntana",
-      "published_at": "2026-10-06T19:05:04+00:00",
-      "title": "Denúncia davant la Fiscalia per una presumpta contaminació del torrent de Solleric",
-      "summary": "Vídeo publicat per IB3 Notícies · YouTube.",
-      "url": "https://www.youtube.com/watch?v=oMzABA7ZUsk",
-      "platform": "YouTube",
-      "account": "@NoticiesIB3",
-      "media_type": "video",
-      "content_policy": "generated_social_summary",
-      "rights_status": "platform_embed",
-      "image_allowed": false,
       "related_sources": []
     },
     {
@@ -3944,5 +3924,5 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "sources_checked_at": "2026-10-07T07:29:28.812888+00:00",
-  "fetched_at": "2026-10-07T07:29:28.812888+00:00"
+  "fetched_at": "2026-10-07T08:22:21.481886+00:00"
 };

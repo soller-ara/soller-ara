@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "a991f25d1bff0567",
+      "timestamp": "2026-10-07T08:22:21.551529+00:00",
+      "action": "hide",
+      "area": "moderation",
+      "target_id": "a57e64e57bd13a6a8f85",
+      "title": "Denúncia davant la Fiscalia per una presumpta contaminació del torrent de Solleric",
+      "detail": "Acción de moderación completada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "63a02395e46b9fca",
       "timestamp": "2026-10-07T06:38:12.306894+00:00",
       "action": "delete-own",
