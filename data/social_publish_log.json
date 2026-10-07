@@ -4448,6 +4448,26 @@
       "retry_requested": true,
       "stage": "media_publish",
       "container_id": "18116716285905740"
+    },
+    {
+      "post_id": "4aabbfab6ea446fa3f54",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18106128067979572",
+      "remote_url": "https://www.instagram.com/p/DeMQUBumAkE/",
+      "title": "Aviso. Nivel amarillo. Costeros. Sierra Tramontana",
+      "post_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261007093555_AFAZ645401COCO0910.xml",
+      "source": "AEMET · Serra de Tramuntana",
+      "source_id": "aemet-avisos-mallorca",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-07T11:35:57.079Z",
+      "error": "",
+      "retry_requested": false,
+      "stage": "verify",
+      "container_id": "18116716285905740",
+      "reconciled": true,
+      "remote_published_at": "2026-10-07T11:30:10+0000",
+      "verified_copies": 1
     }
   ],
   "cooldowns": {
