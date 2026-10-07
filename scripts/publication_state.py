@@ -19,6 +19,17 @@ def parse_timestamp(value: str | None) -> datetime | None:
         return None
 
 
+def mark_feed_updated(payload: dict, *, source_review: bool = False,
+                      now: datetime | None = None) -> None:
+    """Keep source-review time independent from edits to the public feed."""
+    at = (now or datetime.now(timezone.utc)).isoformat()
+    if source_review:
+        payload["sources_checked_at"] = at
+    elif "sources_checked_at" not in payload and payload.get("source_status"):
+        payload["sources_checked_at"] = payload.get("fetched_at")
+    payload["fetched_at"] = at
+
+
 def instagram_is_paused(log: dict, now: datetime | None = None) -> bool:
     until = parse_timestamp((log.get("cooldowns") or {}).get("instagram_until"))
     return bool(until and (now or datetime.now(timezone.utc)) < until)

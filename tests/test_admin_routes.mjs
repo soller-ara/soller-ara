@@ -13,7 +13,7 @@ async function request(path,body,token='',ip='test-client') {
  const response=await vm.runInContext('worker.fetch(req,env)',c);
  return {status:response.status,body:await response.json(),headers:response.headers};
 }
-for (const path of ['/api/status','/api/check','/api/publish','/api/edit','/api/moderate','/api/source','/api/social-settings','/api/collect']) {
+for (const path of ['/api/status','/api/check','/api/analytics','/api/publish','/api/edit','/api/moderate','/api/source','/api/social-settings','/api/collect']) {
  assert.equal((await request(path,path.endsWith('status')||path.endsWith('check')?undefined:{})).status,401);
 }
 assert.equal(calls.length,0);
@@ -21,6 +21,11 @@ assert.equal((await request('/api/login',{password:'wrong'})).status,401);
 let login=await request('/api/login',{password:'test-only-password'},'','successful-client');
 assert.equal(login.status,200);
 const token=login.body.token;assert.ok(token);
+const expiredPayload = Buffer.from(JSON.stringify({sub:'admin',exp:Math.floor(Date.now()/1000)-60})).toString('base64url');
+c.expiredPayload=expiredPayload;
+const expiredSignature=await vm.runInContext('(async () => base64urlBytes(await hmac(env.SESSION_SECRET, expiredPayload)))()',c);
+assert.equal((await request('/api/status',undefined,expiredPayload+'.'+expiredSignature)).status,401);
+assert.equal((await request('/api/status',undefined,'invalid.signature')).status,401);
 assert.equal((await request('/api/publish',{},token+'bad')).status,401);
 assert.equal((await request('/api/publish',{},token)).status,400);
 assert.equal((await request('/api/publish',{title:'A',body:'B',original_url:'javascript:alert(1)'},token)).status,400);
@@ -40,6 +45,8 @@ assert.ok(!JSON.stringify(login.body).includes('test-only-password'));
 console.log('PASS: private routes require signed sessions; login and rate limit; URL and poster validation; blank references; Ara and content type reach workflows. No external requests.');
 
 const health=await request('/health');
+assert.equal(health.headers.get('Access-Control-Allow-Origin'),'https://soller-ara.github.io');
+assert.equal(health.headers.get('Cache-Control'),'no-store');
 assert.ok(health.body.capabilities.includes('manual_collection'));
 let workflowRuns=[{id:1,status:'completed',conclusion:'success',html_url:'https://github.com/soller-ara/soller-ara/actions/runs/1'}];
 calls=[];

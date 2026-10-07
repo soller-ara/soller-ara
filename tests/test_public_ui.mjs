@@ -58,7 +58,7 @@ console.log('PASS: storage fallback, languages, Ara opt-out and date windows, sa
 const admin=await fs.readFile('admin/admin.js','utf8');
 vm.runInContext(admin.slice(admin.indexOf('  async function readRepositoryState()'),admin.indexOf('  async function mergePublicState(')),c);
 const paths=[];
-c.window.SOLLER_ARA_READ_JSON=async(path)=>{paths.push(path);return {saved:path}};
+c.window.SOLLER_ARA_READ_JSON=async(path)=>{paths.push(path);return path==='data/posts.json' ? {posts:[],saved:path} : {hidden_post_ids:[],saved:path}};
 const state=await run('readRepositoryState()');
 assert.equal(state.posts.saved,'data/posts.json');
 assert.deepEqual(paths.sort(),['data/moderation.json','data/posts.json']);
@@ -94,6 +94,32 @@ c.state={posts:[{id:'new-title',source_id:'source',url:'https://example.test/sam
 assert.equal(run('isAlreadySent("new-title","facebook")'),true);
 assert.equal(run('isAlreadySent("new-title","instagram")'),false);
 console.log('PASS: social preview does not propose resending a source URL after a headline edit.');
+
+vm.runInContext(auto.slice(auto.indexOf('  function nextPreview('),auto.indexOf('  function safeSummary(')),c);
+c.rules={source:{facebook:true,instagram:true}};
+c.state={config:{enabled:true,platforms:{facebook:true,instagram:true},max_age_hours:6},
+ sources:[{id:'source',enabled:true}], entries:[], cooldowns:{instagram_until:new Date(now+3600000).toISOString()},
+ posts:[{id:'weather',source_id:'source',source_type:'official',published_at:new Date(now-60000).toISOString(),
+   alert_status:'active',alert_valid_until:new Date(now+3600000).toISOString()}]};
+assert.equal(run('nextPreview(rules)?.id'),'weather');
+assert.deepEqual(Array.from(run('previewPlatforms(state.posts[0],rules)')),['facebook']);
+run('rules.source.facebook=false');
+assert.equal(run('nextPreview(rules)'),null);
+run('rules.source.facebook=true');
+for(const status of ['unverified','archived','expired']) {
+ c.state.posts[0].alert_status=status;
+ assert.equal(run('nextPreview(rules)'),null);
+}
+c.state.posts[0].alert_status='active';c.state.posts[0].alert_valid_until=new Date(now-1000).toISOString();
+assert.equal(run('nextPreview(rules)'),null);
+console.log('PASS: automatic preview respects Instagram cooldowns while preserving Facebook and excludes expired, archived or unverified warnings.');
+
+vm.runInContext(auto.slice(auto.indexOf('  function safeSummary('),auto.indexOf('  function sourceControls(')),c);
+c.categoryNames={alerts:'Avisos'};
+run('state.posts[0].alert_valid_until="";state.posts[0].url="javascript:alert(1)";state.posts[0].title="<img src=x>";currentRules=()=>rules;renderPreview()');
+assert.ok(!nodes.get('socialPreview').innerHTML.includes('href="javascript:'));
+assert.ok(nodes.get('socialPreview').innerHTML.includes('&lt;img'));
+console.log('PASS: automatic previews escape headlines and never create executable links.');
 
 // The corrected Facebook group permalink is recognized without altering the saved URL.
 c.post={id:'beinetti',source_type:'own',original_url:'https://www.facebook.com/groups/2168168493412761/posts/4668467036716215/?hpir=1',title:'Personal per a tenda Beinetti'};

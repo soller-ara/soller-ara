@@ -37,11 +37,18 @@ function scenario({states = [], dispatchError = '', pollError = '', confirm = tr
   let release;
   let postCalls = 0;
   let confirmations = 0;
-  let statusCalls = 0;
+  let repositoryReads = 0;
   const acknowledgement = new Promise(resolve => { release = resolve; });
   const window = {
     SOLLER_ARA_ADMIN_API: 'https://admin.test',
-    SOLLER_ARA_READ_JSON: async path => path === 'data/posts.json' ? state.posts : state.moderation,
+    SOLLER_ARA_READ_JSON: async path => {
+      if (path === 'data/posts.json') {
+        repositoryReads++;
+        if (pollError) throw new Error(pollError);
+        state = states.shift() || state;
+      }
+      return path === 'data/posts.json' ? state.posts : state.moderation;
+    },
   };
   const context = vm.createContext({window, Headers, URL, Intl, Date, console,
     sessionStorage: {getItem: () => 'test-only-token'},
@@ -55,10 +62,7 @@ function scenario({states = [], dispatchError = '', pollError = '', confirm = tr
         await acknowledgement;
         return {ok: true, status: 202, json: async () => ({ok: true})};
       }
-      statusCalls++;
-      if (pollError) throw new Error(pollError);
-      state = states.shift() || state;
-      return {ok: true, status: 200, json: async () => structuredClone(state)};
+      throw new Error('Moderation must confirm saved public data, not an API fallback');
     },
   });
   vm.runInContext(prefix + `
@@ -66,7 +70,7 @@ function scenario({states = [], dispatchError = '', pollError = '', confirm = tr
       setState(data) {statusPayload = data; renderPosts();}};
   })();`, context);
   window.test.setState(state);
-  return {nodes, window, release, counts: () => ({postCalls, confirmations, statusCalls}),
+  return {nodes, window, release, counts: () => ({postCalls, confirmations, repositoryReads}),
     click: () => getNode('socialLinkList').buttons.find(button => button.dataset.action === 'delete-own').listeners.click()};
 }
 
@@ -88,14 +92,14 @@ assert.equal(s.counts().postCalls, 1);
 assert.equal(s.counts().confirmations, 1);
 s.release();
 await pending;
-assert.equal(s.counts().statusCalls, 2);
+assert.equal(s.counts().repositoryReads, 2);
 assert.equal(s.nodes.get('socialLinkActionMessage').textContent, 'Publicación eliminada correctamente.');
 assert.equal(s.nodes.get('socialLinkActionMessage').className, 'message success');
 assert.equal(s.nodes.get('moderationMessage').textContent, '');
 assert.equal(s.nodes.get('socialLinkList').buttons.length, 0);
 assert.equal(s.window.test.pendingModerations.size, 0);
 
-for (const options of [{dispatchError: 'No se pudo enviar'}, {pollError: 'No se pudo confirmar'}]) {
+for (const options of [{dispatchError: 'No se pudo enviar'}]) {
   s = scenario(options);
   const result = s.click(); s.release(); await result;
   assert.equal(s.nodes.get('socialLinkActionMessage').textContent, options.dispatchError || options.pollError);
@@ -105,10 +109,15 @@ for (const options of [{dispatchError: 'No se pudo enviar'}, {pollError: 'No se 
 }
 s = scenario();
 let result = s.click(); s.release(); await result;
-assert.equal(s.counts().statusCalls, 12);
+assert.equal(s.counts().repositoryReads, 120);
 assert.match(s.nodes.get('socialLinkActionMessage').textContent, /todavía no se ha confirmado/);
 assert.equal(s.nodes.get('socialLinkActionMessage').className, 'message');
 assert.notEqual(s.nodes.get('socialLinkActionMessage').textContent, 'Publicación eliminada correctamente.');
+s = scenario({pollError: 'No se pudo confirmar'});
+result = s.click(); s.release(); await result;
+assert.equal(s.counts().repositoryReads, 120);
+assert.match(s.nodes.get('socialLinkActionMessage').textContent, /todavía no se ha confirmado/);
+assert.equal(s.nodes.get('socialLinkActionMessage').className, 'message');
 s = scenario({confirm: false});
 await s.click();
 assert.equal(s.counts().postCalls, 0);

@@ -1,6 +1,29 @@
 import unittest
 from datetime import datetime, timezone
-from scripts.publication_state import aemet_period, aemet_post_state, alert_can_be_published
+from scripts.publication_state import aemet_period, aemet_post_state, alert_can_be_published, mark_feed_updated
+
+
+class FeedTimestampTests(unittest.TestCase):
+    def test_manual_changes_preserve_source_review_time(self):
+        payload = {"fetched_at": "2026-10-06T08:00:00+00:00", "source_status": [{"ok": True}]}
+        now = datetime(2026, 10, 7, 8, tzinfo=timezone.utc)
+        mark_feed_updated(payload, now=now)
+        self.assertEqual(payload["sources_checked_at"], "2026-10-06T08:00:00+00:00")
+        self.assertEqual(payload["fetched_at"], now.isoformat())
+        mark_feed_updated(payload, now=datetime(2026, 10, 7, 9, tzinfo=timezone.utc))
+        self.assertEqual(payload["sources_checked_at"], "2026-10-06T08:00:00+00:00")
+
+    def test_only_a_source_review_advances_source_review_time(self):
+        payload = {"sources_checked_at": "old review", "fetched_at": "old update"}
+        now = datetime(2026, 10, 7, 8, tzinfo=timezone.utc)
+        mark_feed_updated(payload, source_review=True, now=now)
+        self.assertEqual(payload["sources_checked_at"], now.isoformat())
+        self.assertEqual(payload["fetched_at"], now.isoformat())
+
+    def test_initial_manual_feed_does_not_invent_a_source_review(self):
+        payload = {"posts": []}
+        mark_feed_updated(payload)
+        self.assertNotIn("sources_checked_at", payload)
 
 
 class AlertStateTests(unittest.TestCase):

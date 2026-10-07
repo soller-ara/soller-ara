@@ -70,6 +70,20 @@ class PublicationLifecycleTests(unittest.TestCase):
         self.card.assert_called_once()
         self.assertEqual((self.root/'env').read_text().count('OWN_POST_ID='), 2)
 
+    def test_manual_lifecycle_keeps_source_review_time_and_updates_feed_time(self):
+        review = '2026-10-06T08:00:00+00:00'
+        self.write(add.POSTS_FILE, {'posts': [], 'fetched_at': review, 'source_status': [{'ok': True}]})
+        self.create()
+        with patch.object(edit, 'generate_social_card', return_value='https://example.test/card.jpg'):
+            self.assertEqual(edit.main(), 0)
+        for operation in (lambda: None, manage.hide, manage.unhide, manage.delete_own):
+            operation()
+            payload = json.loads(add.POSTS_FILE.read_text())
+            self.assertEqual(payload['sources_checked_at'], review)
+            self.assertGreater(payload['fetched_at'], review)
+            fallback = json.loads(add.POSTS_JS_FILE.read_text().removeprefix('window.SOLLER_ARA_DATA = ').strip().removesuffix(';'))
+            self.assertEqual(fallback, payload)
+
     def test_create_persists_poster_type_and_its_authorized_image(self):
         with patch.multiple(add, CONTENT_TYPE='event_poster', IMAGE_URL='https://example.test/cartell.jpg'):
             post = self.create()

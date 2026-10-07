@@ -60,7 +60,7 @@
         window.SOLLER_ARA_READ_JSON("data/posts.json"),
         window.SOLLER_ARA_READ_JSON("data/moderation.json"),
       ]);
-      return {posts, moderation};
+      return validateRepositoryState(posts, moderation);
     }
     const stamp = Date.now();
     const [postsResponse, moderationResponse] = await Promise.all([
@@ -77,18 +77,25 @@
       moderationResponse.json(),
     ]);
 
+    return validateRepositoryState(posts, moderation);
+  }
+
+  function validateRepositoryState(posts, moderation) {
+    if (!Array.isArray(posts?.posts) || posts.posts.some((post) => !post || typeof post !== "object" || Array.isArray(post)
+          || typeof post.id !== "string" || !post.id.trim())
+        || new Set(posts.posts.map((post) => post.id)).size !== posts.posts.length
+        || ("post_count" in posts && posts.post_count !== posts.posts.length)
+        || !Array.isArray(moderation?.hidden_post_ids)
+        || moderation.hidden_post_ids.some((id) => typeof id !== "string" || !id.trim())) {
+      throw new Error("Los datos recibidos no son válidos. No se ha confirmado ningún cambio.");
+    }
     return { posts, moderation };
   }
 
   async function mergePublicState(data) {
-    try {
-      const publicState = await readRepositoryState();
-      data.posts = publicState.posts;
-      data.moderation = publicState.moderation;
-    } catch (_) {
-      // Conservamos el estado recibido del backend si falla la lectura pública.
-      // El siguiente refresco vuelve a consultar los datos guardados.
-    }
+    const publicState = await readRepositoryState();
+    data.posts = publicState.posts;
+    data.moderation = publicState.moderation;
     return data;
   }
 
@@ -142,6 +149,15 @@
       .replaceAll("'", "&#039;");
   }
 
+  function safeLinkUrl(value) {
+    try {
+      const url = new URL(String(value || ""));
+      return ["https:", "http:"].includes(url.protocol) && !url.username && !url.password ? url.href : "";
+    } catch (_) {
+      return "";
+    }
+  }
+
   function formatDate(value) {
     if (!value) return "—";
     try {
@@ -164,7 +180,7 @@
       ["Publicaciones", posts.length],
       ["Contenido propio", ownPosts],
       ["Fuentes con error", failedSources],
-      ["Última actualización", formatDate(data.posts?.fetched_at)],
+      ["Última revisión de fuentes", formatDate(data.posts?.sources_checked_at || data.posts?.fetched_at)],
     ].map(([label, value]) => `
       <div class="metric">
         <span>${escapeHtml(label)}</span>
@@ -257,7 +273,7 @@
             <header><h4>${escapeHtml(post.title || "Sin título")}</h4></header>
             <div class="post-meta">${escapeHtml(post.source || "")} · ${escapeHtml(post.category || "")} · ${escapeHtml(formatDate(post.published_at))}</div>
             <div class="post-actions">
-              ${post.url ? `<a class="button-link" href="${escapeHtml(post.url)}" target="_blank" rel="noopener">Abrir</a>` : ""}
+              ${safeLinkUrl(post.url) ? `<a class="button-link" href="${escapeHtml(safeLinkUrl(post.url))}" target="_blank" rel="noopener">Abrir</a>` : ""}
               <label>Tipo
                 <select id="post-category-${escapeHtml(post.id)}" data-category-select>
                   ${["news", "agenda", "alerts", "services", "culture", "sports", "commerce", "politics", "social"].map((category) =>
@@ -335,8 +351,8 @@
         <div class="post-meta">${escapeHtml(post.source || "")} · ${escapeHtml(post.category || "")} · ${escapeHtml(formatDate(post.published_at))}</div>
         ${manualInstagramStatus(post) ? `<p class="hint">${escapeHtml(manualInstagramStatus(post))}</p>` : ""}
         <div class="post-actions">
-          ${post.url ? `<a class="button-link" href="${escapeHtml(post.url)}" target="_blank" rel="noopener">Abrir en la web</a>` : ""}
-          <a class="button-link" href="${escapeHtml(post.original_url)}" target="_blank" rel="noopener">Original</a>
+          ${safeLinkUrl(post.url) ? `<a class="button-link" href="${escapeHtml(safeLinkUrl(post.url))}" target="_blank" rel="noopener">Abrir en la web</a>` : ""}
+          ${safeLinkUrl(post.original_url) ? `<a class="button-link" href="${escapeHtml(safeLinkUrl(post.original_url))}" target="_blank" rel="noopener">Original</a>` : ""}
           <button type="button" data-social-link-edit-id="${escapeHtml(post.id)}">Editar</button>
           <button class="danger" type="button" data-action="delete-own" data-post-id="${escapeHtml(post.id)}">Eliminar</button>
         </div>
@@ -408,6 +424,10 @@
   }
 
   function startEdit(postId) {
+    if (publishSubmitButton.disabled) {
+      setMessage(moderationMessage, "Espera a que termine el guardado de la publicación en curso.");
+      return;
+    }
     const posts = Array.isArray(statusPayload?.posts?.posts) ? statusPayload.posts.posts : [];
     const post = posts.find((item) => item.id === postId && item.source_type === "own");
     if (!post) {
@@ -464,6 +484,10 @@
   }
 
   function startSocialLinkEdit(postId) {
+    if (socialLinkSubmitButton.disabled) {
+      setMessage(socialLinkActionMessage, "Espera a que termine el guardado del enlace en curso.");
+      return;
+    }
     const posts = Array.isArray(statusPayload?.posts?.posts) ? statusPayload.posts.posts : [];
     const post = posts.find((item) => item.id === postId && item.source_type === "own" && item.original_url);
     if (!post) {
@@ -526,14 +550,20 @@
   }
 
   async function waitForOwnEdit(postId, expected, messageElement = publishMessage) {
-    for (let attempt = 1; attempt <= 15; attempt++) {
-      await new Promise((resolve) => setTimeout(resolve, 2500));
-      const publicState = await readRepositoryState();
-      const post = (publicState.posts?.posts || []).find((item) => item.id === postId);
-      if (ownPostMatches(post, expected)) {
-        return true;
+    for (let attempt = 1; attempt <= 120; attempt++) {
+      await new Promise((resolve) => setTimeout(resolve, 5000));
+      try {
+        const publicState = await readRepositoryState();
+        const post = publicState.posts.posts.find((item) => item.id === postId);
+        if (ownPostMatches(post, expected)) {
+          statusPayload = { ...statusPayload, posts: publicState.posts, moderation: publicState.moderation };
+          renderPosts();
+          return true;
+        }
+      } catch (_) {
+        // Un fallo de lectura temporal no confirma ni invalida el guardado.
       }
-      setMessage(messageElement, "Guardando cambios… " + attempt + "/15");
+      setMessage(messageElement, "Cambios enviados. Esperando a que se guarden… No vuelvas a enviarlos.");
     }
     return false;
   }
@@ -567,21 +597,23 @@
     }
   }
 
-  async function loadStatus() {
+  async function loadStatus(messageElement = moderationMessage) {
     const buttonText = refreshButton.textContent;
     refreshButton.disabled = true;
     refreshButton.textContent = "Actualizando…";
     try {
-      statusPayload = await api("/api/status");
-      statusPayload = await mergePublicState(statusPayload);
+      const data = await api("/api/status");
+      statusPayload = await mergePublicState(data);
       renderMetrics(statusPayload);
       renderSources(statusPayload);
       renderSocial(statusPayload);
       renderPosts();
+      return true;
     } catch (error) {
       document.getElementById("connectionState").textContent = "Error";
       document.getElementById("connectionState").className = "status-pill bad";
-      setMessage(moderationMessage, error.message, "error");
+      setMessage(messageElement, error.message, "error");
+      return false;
     } finally {
       refreshButton.disabled = false;
       refreshButton.textContent = buttonText;
@@ -605,18 +637,21 @@
   }
 
   async function waitForModeration(action, postId, category = "", messageElement = moderationMessage) {
-    const attempts = 12;
+    const attempts = 120;
     for (let attempt = 1; attempt <= attempts; attempt++) {
-      await new Promise((resolve) => setTimeout(resolve, 2500));
-      const data = await api("/api/status");
-      await mergePublicState(data);
-      statusPayload = data;
-      renderMetrics(data);
-      renderSources(data);
-      renderSocial(data);
-      renderPosts();
-
-      if (moderationApplied(data, action, postId, category)) return true;
+      await new Promise((resolve) => setTimeout(resolve, 5000));
+      try {
+        const publicState = await readRepositoryState();
+        const data = { ...statusPayload, posts: publicState.posts, moderation: publicState.moderation };
+        statusPayload = data;
+        renderMetrics(data);
+        renderSources(data);
+        renderSocial(data);
+        renderPosts();
+        if (moderationApplied(data, action, postId, category)) return true;
+      } catch (_) {
+        // Un feed vacío de respaldo no demuestra que se haya eliminado nada.
+      }
       setMessage(
         messageElement,
         "Solicitud enviada. Esperando a que se guarden los cambios… No vuelvas a enviarla."
@@ -698,11 +733,15 @@
     nextUrl.searchParams.set("refresh", String(Date.now()));
     window.location.replace(nextUrl.toString());
   });
-  refreshButton.addEventListener("click", loadStatus);
+  refreshButton.addEventListener("click", () => loadStatus());
   refreshSocialLinkListButton.addEventListener("click", async () => {
     refreshSocialLinkListButton.disabled = true;
     refreshSocialLinkListButton.textContent = "Actualizando…";
-    try { await loadStatus(); }
+    try {
+      if (await loadStatus(socialLinkActionMessage)) {
+        setMessage(socialLinkActionMessage, "Lista actualizada.", "success");
+      }
+    }
     finally {
       refreshSocialLinkListButton.disabled = false;
       refreshSocialLinkListButton.textContent = "Actualizar lista";
@@ -716,30 +755,30 @@
   });
 
   cancelEditButton.addEventListener("click", () => {
+    if (publishSubmitButton.disabled) return;
     resetEditMode(true);
     openModule("moderation");
   });
 
   cancelSocialLinkEditButton.addEventListener("click", () => {
+    if (socialLinkSubmitButton.disabled) return;
     resetSocialLinkEditMode(true);
   });
 
   async function manualLinksReady() {
     try {
       const response = await fetch(API + "/health", { cache: "no-store", mode: "cors" });
+      if (!response.ok) throw new Error("No se ha podido comprobar el servidor de Administración. Vuelve a intentarlo.");
       const health = await response.json();
       return Boolean(health?.capabilities?.includes("manual_social_links"));
     } catch (_) {
-      return false;
+      throw new Error("No se ha podido comprobar el servidor de Administración. Vuelve a intentarlo.");
     }
   }
 
   socialLinkForm.addEventListener("submit", async (event) => {
     event.preventDefault();
-    if (!await manualLinksReady()) {
-      setMessage(socialLinkMessage, "El módulo está listo en la web, pero falta desplegar el Worker actualizado en Cloudflare. No se ha publicado nada.", "error");
-      return;
-    }
+    if (socialLinkSubmitButton.disabled) return;
     const data = new FormData(socialLinkForm);
     const payload = {
       source_name: String(data.get("source_name") || "").trim(),
@@ -778,18 +817,23 @@
     }
 
     socialLinkSubmitButton.disabled = true;
+    cancelSocialLinkEditButton.disabled = true;
     setMessage(socialLinkMessage, editing ? "Enviando cambios…" : "Enviando publicación…");
     try {
+      if (!await manualLinksReady()) {
+        setMessage(socialLinkMessage, "El módulo está listo en la web, pero falta desplegar el Worker actualizado en Cloudflare. No se ha publicado nada.", "error");
+        return;
+      }
       if (editing) {
         await api("/api/edit", { method: "POST", body: JSON.stringify(payload) });
-        const applied = await waitForOwnEdit(socialLinkEditPostId, payload, socialLinkMessage);
+        const applied = await waitForOwnEdit(payload.post_id, payload, socialLinkMessage);
         if (!applied) {
-          setMessage(socialLinkMessage, "Los cambios están tardando más de lo previsto. Actualiza en unos segundos.", "error");
+          setMessage(socialLinkMessage, "Los cambios se han enviado y todavía no se han confirmado. Actualiza la lista antes de volver a enviarlos.");
           return;
         }
-        setMessage(socialLinkMessage, "Enlace actualizado correctamente en Sóller Ara.", "success");
         resetSocialLinkEditMode(true);
         await loadStatus();
+        setMessage(socialLinkMessage, "Enlace actualizado correctamente en Sóller Ara.", "success");
       } else {
         const before = await readRepositoryState();
         const previousIds = new Set((before.posts?.posts || []).map((post) => post.id));
@@ -808,6 +852,7 @@
       setMessage(socialLinkMessage, error.message, "error");
     } finally {
       socialLinkSubmitButton.disabled = false;
+      cancelSocialLinkEditButton.disabled = false;
     }
   });
 
@@ -821,6 +866,7 @@
 
   publishForm.addEventListener("submit", async (event) => {
     event.preventDefault();
+    if (publishSubmitButton.disabled) return;
     const data = new FormData(publishForm);
     const payload = {
       title: String(data.get("title") || "").trim(),
@@ -849,6 +895,7 @@
 
     setMessage(publishMessage, editing ? "Enviando cambios…" : "Enviando publicación…");
     publishSubmitButton.disabled = true;
+    cancelEditButton.disabled = true;
 
     try {
       if (editing) {
@@ -856,15 +903,15 @@
           method: "POST",
           body: JSON.stringify(payload),
         });
-        const applied = await waitForOwnEdit(editPostId, payload);
+        const applied = await waitForOwnEdit(payload.post_id, payload);
         if (!applied) {
-          setMessage(publishMessage, "Los cambios están tardando más de lo previsto. Actualiza en unos segundos.", "error");
+          setMessage(publishMessage, "Los cambios se han enviado y todavía no se han confirmado. Actualiza la lista antes de volver a enviarlos.");
           return;
         }
-        setMessage(publishMessage, "Cambios guardados. La web se actualizará al terminar el despliegue.", "success");
         resetEditMode(true);
         await loadStatus();
         openModule("moderation");
+        setMessage(moderationMessage, "Cambios guardados. La web se actualizará al terminar el despliegue.", "success");
       } else {
         const before = await readRepositoryState();
         const previousIds = new Set((before.posts?.posts || []).map((post) => post.id));
@@ -887,6 +934,7 @@
       setMessage(publishMessage, error.message, "error");
     } finally {
       publishSubmitButton.disabled = false;
+      cancelEditButton.disabled = false;
     }
   });
 

@@ -16,12 +16,10 @@ MAX_ENTRIES = 250
 def _load() -> dict:
     if not ACTIVITY_FILE.exists():
         return {"version": 1, "entries": []}
-    try:
-        payload = json.loads(ACTIVITY_FILE.read_text(encoding="utf-8"))
-    except (json.JSONDecodeError, OSError):
-        payload = {"version": 1, "entries": []}
-    if not isinstance(payload.get("entries"), list):
-        payload["entries"] = []
+    payload = json.loads(ACTIVITY_FILE.read_text(encoding="utf-8"))
+    if (not isinstance(payload, dict) or not isinstance(payload.get("entries"), list)
+            or any(not isinstance(item, dict) for item in payload["entries"])):
+        raise ValueError("El registre d'activitat no té un format vàlid; no es reemplaça.")
     payload.setdefault("version", 1)
     return payload
 

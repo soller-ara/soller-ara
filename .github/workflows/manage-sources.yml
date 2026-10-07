@@ -20,17 +20,20 @@ permissions:
   contents: write
 
 concurrency:
-  group: "soller-ara-manage-sources"
+  group: "soller-ara-social-publish"
+  queue: max
   cancel-in-progress: false
 
 jobs:
   manage:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - name: Checkout
         uses: actions/checkout@v6
         with:
           fetch-depth: 0
+          ref: main
 
       - name: Configurar Python
         uses: actions/setup-python@v6

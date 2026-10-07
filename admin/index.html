@@ -41,7 +41,7 @@
         <div class="header-actions">
           <a class="public-link button-secondary" href="../index.html">Volver a Sóller Ara</a>
           <button id="refreshAdminPageButton" class="button-secondary" type="button" title="Actualizar la página de Administración"><span aria-hidden="true">↻</span> Actualizar</button>
-          <span id="adminVersion" class="status-pill">v0.92</span>
+          <span id="adminVersion" class="status-pill">v0.93</span>
           <span id="connectionState" class="status-pill">Conectado</span>
           <button id="logoutButton" class="button-secondary" type="button">Salir</button>
         </div>
@@ -70,7 +70,7 @@
       <section id="publish" class="module">
         <div class="module-heading"><div><p class="eyebrow">Contenido propio</p><h2 id="publishHeading">Nueva publicación</h2><p id="editModeNote" class="hint" hidden>La edición modifica la web de Sóller Ara. No modifica publicaciones que ya existan en Facebook o Instagram.</p></div></div>
         <form id="publishForm" class="form-card">
-          <label>Título<input name="title" maxlength="180" /></label>
+          <label>Título<input name="title" maxlength="180" required /></label>
           <label>Texto<textarea name="body" rows="7" required></textarea></label>
           <div class="form-row">
             <label>Categoría<select name="category"><option value="news">Noticias</option><option value="agenda">Agenda</option><option value="alerts">Avisos</option><option value="services">Servicios</option><option value="culture">Cultura</option><option value="sports">Deportes</option><option value="commerce">Comercio</option><option value="politics">Política</option><option value="social">Redes</option></select></label>
@@ -133,7 +133,7 @@
   </main>
 
   <script src="./public-data.js?v=0.61"></script>
-  <script src="./config.js?v=0.92.1"></script>
-  <script src="./admin.js?v=0.92"></script>
+  <script src="./config.js?v=0.93"></script>
+  <script src="./admin.js?v=0.93"></script>
 </body>
 </html>

@@ -26,9 +26,9 @@ from xml.etree import ElementTree as ET
 
 
 try:
-    from publication_state import aemet_post_state
+    from publication_state import aemet_post_state, mark_feed_updated
 except ModuleNotFoundError:
-    from scripts.publication_state import aemet_post_state
+    from scripts.publication_state import aemet_post_state, mark_feed_updated
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCES_FILE = ROOT / "sources.json"
@@ -1678,8 +1678,7 @@ def main() -> int:
 
     payload = {
         "version": 41,
-        "generator_version": "0.60",
-        "fetched_at": datetime.now(timezone.utc).isoformat(),
+        "generator_version": "0.61",
         "source_count": len(source_status),
         "source_status": source_status,
         "social_integration_status": social_integration_status,
@@ -1689,6 +1688,9 @@ def main() -> int:
         "posts": ordered_posts,
     }
 
+    mark_feed_updated(payload, source_review=True)
+    for status in source_status:
+        status["checked_at"] = payload["sources_checked_at"]
     OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
     json_payload = json.dumps(payload, ensure_ascii=False, indent=2)
     OUTPUT_FILE.write_text(json_payload + "\n", encoding="utf-8")

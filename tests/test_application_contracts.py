@@ -4,6 +4,7 @@ import re
 import unittest
 from pathlib import Path
 from urllib.parse import urlparse
+from PIL import Image
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -39,6 +40,18 @@ class ApplicationContractsTests(unittest.TestCase):
                     relative=urlparse(url).path.removeprefix('/soller-ara/')
                     self.assertTrue((ROOT/relative).is_file(),(post['id'],field,relative))
 
+    def test_active_brand_and_manual_images_decode(self):
+        images={ROOT/'assets/brand'/name for name in (
+            'logo-soller-ara-web.png','favicon-48.png','icon-192.png','icon-512.png',
+            'apple-touch-icon.png','avatar-soller-ara-social.png')}
+        for post in json.loads((ROOT/'data/manual_posts.json').read_text())['posts']:
+            url=post.get('media_url') or ''
+            if url.startswith('https://soller-ara.github.io/soller-ara/'):
+                images.add(ROOT/urlparse(url).path.removeprefix('/soller-ara/'))
+        for path in images:
+            with self.subTest(path=path.name), Image.open(path) as image:
+                image.verify()
+
     def test_publish_workflow_forwards_poster_type_and_stable_request_identity(self):
         workflow=(ROOT/'.github/workflows/publish-own-content.yml').read_text()
         self.assertIn('POST_CONTENT_TYPE: ${{ inputs.content_type }}',workflow)
@@ -69,6 +82,21 @@ class ApplicationContractsTests(unittest.TestCase):
             self.assertIn('queue: max',group,path.name)
             self.assertIn('cancel-in-progress: false',group,path.name)
             self.assertIn('ref: main',text,path.name)
+
+    def test_every_repository_writer_preserves_and_serializes_pending_requests(self):
+        writers=0
+        for path in (ROOT/'.github/workflows').glob('*.yml'):
+            text=path.read_text()
+            if 'contents: write' not in text:
+                continue
+            writers+=1
+            concurrency=re.search(r'^concurrency:\n((?:  .+\n)+)',text,re.M)
+            self.assertIsNotNone(concurrency,path.name)
+            for setting in ('group: "soller-ara-social-publish"','queue: max','cancel-in-progress: false'):
+                self.assertIn(setting,concurrency.group(1),path.name)
+            self.assertIn('ref: main',text,path.name)
+            self.assertEqual(text.count('runs-on:'),text.count('timeout-minutes:'),path.name)
+        self.assertGreaterEqual(writers,6)
 
     def test_moderation_workflow_accepts_all_collector_categories(self):
         workflow=(ROOT/'.github/workflows/manage-posts.yml').read_text()

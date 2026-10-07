@@ -53,7 +53,10 @@ class SourceCollectionTests(unittest.TestCase):
                  patch.object(collector, "fetch_optional_meta_social_sources",
                               return_value=([], [], [])):
                 self.assertEqual(collector.main(), 0)
-            posts = json.loads(output.read_text(encoding="utf-8"))["posts"]
+            payload = json.loads(output.read_text(encoding="utf-8"))
+            self.assertEqual(payload["sources_checked_at"], payload["fetched_at"])
+            self.assertTrue(all(item["checked_at"] == payload["sources_checked_at"] for item in payload["source_status"]))
+            posts = payload["posts"]
             self.assertEqual([post["id"] for post in posts], ["manual-link"])
             self.assertEqual(posts[0]["original_url"], link["original_url"])
             self.assertEqual(posts[0]["title"], "")

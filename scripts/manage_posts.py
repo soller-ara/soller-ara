@@ -16,6 +16,11 @@ from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlparse
 
+try:
+    from publication_state import mark_feed_updated
+except ModuleNotFoundError:
+    from scripts.publication_state import mark_feed_updated
+
 ROOT = Path(__file__).resolve().parents[1]
 MANUAL_FILE = ROOT / "data" / "manual_posts.json"
 MODERATION_FILE = ROOT / "data" / "moderation.json"
@@ -78,6 +83,7 @@ def refresh_generated_feed() -> None:
 
     payload["posts"] = posts
     payload["post_count"] = len(posts)
+    mark_feed_updated(payload)
 
     json_payload = json.dumps(payload, ensure_ascii=False, indent=2)
     POSTS_FILE.write_text(json_payload + "\n", encoding="utf-8")
@@ -139,6 +145,7 @@ def restore_archived_post(post: dict) -> None:
         posts.sort(key=post_timestamp, reverse=True)
     payload["posts"] = posts
     payload["post_count"] = len(posts)
+    mark_feed_updated(payload)
 
     json_payload = json.dumps(payload, ensure_ascii=False, indent=2)
     POSTS_FILE.write_text(json_payload + "\n", encoding="utf-8")

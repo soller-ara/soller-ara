@@ -123,13 +123,30 @@
       const time = new Date(post.published_at).getTime();
       if (!post.id || post.source_type === "own" || !active.has(post.source_id) || !Number.isFinite(time) || time < oldest || time > now) return false;
       if (state.config.categories?.[post.category || "news"] === false) return false;
-      const rule = rules[post.source_id] || {};
-      return ["facebook", "instagram"].some((platform) => state.config.platforms?.[platform] && rule[platform] && !isAlreadySent(post.id, platform));
+      if (post.alert_status && !["active", "scheduled"].includes(post.alert_status)) return false;
+      if (post.alert_valid_until && new Date(post.alert_valid_until).getTime() <= now) return false;
+      return previewPlatforms(post, rules).length > 0;
     }).sort((a, b) => new Date(b.published_at) - new Date(a.published_at))[0] || null;
+  }
+
+  function previewPlatforms(post, rules) {
+    const instagramPaused = new Date(state.cooldowns?.instagram_until || "") > new Date();
+    return ["facebook", "instagram"].filter((platform) => state.config.platforms?.[platform]
+      && rules[post.source_id]?.[platform] && !isAlreadySent(post.id, platform)
+      && (platform !== "instagram" || !instagramPaused));
   }
 
   function safeSummary(post) {
     return post.content_policy === "headline_date_link_only" ? "" : String(post.summary || "").trim().slice(0, 500);
+  }
+
+  function safeLinkUrl(value) {
+    try {
+      const url = new URL(String(value || ""));
+      return ["https:", "http:"].includes(url.protocol) && !url.username && !url.password ? url.href : "";
+    } catch (_) {
+      return "";
+    }
   }
 
   function renderPreview() {
@@ -141,12 +158,12 @@
       target.innerHTML = '<p class="empty">Ahora no hay ninguna publicación pendiente de las últimas horas que cumpla la selección.</p>';
       return;
     }
-    const selected = ["facebook", "instagram"].filter((platform) => state.config.platforms?.[platform]
-      && rules[post.source_id]?.[platform] && !isAlreadySent(post.id, platform));
+    const selected = previewPlatforms(post, rules);
     const summary = safeSummary(post);
+    const link = safeLinkUrl(post.url);
     const text = [post.title, summary, `Fuente: ${post.source || "Fuente original"}`, `Información original: ${post.url || ""}`].filter(Boolean).join("\n\n");
     target.innerHTML = `<div class="social-preview-grid">
-      ${selected.includes("facebook") ? `<article class="network-preview"><strong>Facebook</strong><p>${esc(text)}</p><a href="${esc(post.url)}" target="_blank" rel="noopener noreferrer">${esc(post.url)}</a></article>` : ""}
+      ${selected.includes("facebook") ? `<article class="network-preview"><strong>Facebook</strong><p>${esc(text)}</p>${link ? `<a href="${esc(link)}" target="_blank" rel="noopener noreferrer">${esc(link)}</a>` : ""}</article>` : ""}
       ${selected.includes("instagram") ? `<article class="network-preview instagram"><strong>Instagram · tarjeta propia</strong><div class="instagram-card"><img src="../assets/brand/logo-soller-ara-web.png" width="54" height="54" alt="" /><small>SÓLLER ARA · ${esc(categoryNames[post.category] || "Actualidad")}</small><h4>${esc(post.title)}</h4><p>Fuente: ${esc(post.source || "Fuente original")}</p></div><p>${esc(text)}\n\n#Sóller #SollerAra</p></article>` : ""}
     </div><p class="hint">Vista previa de la siguiente candidata según la configuración mostrada. Revisarla no publica ni reserva la noticia.</p>`;
   }
@@ -238,7 +255,8 @@
       const sources = sourcesResult.value.sources || [];
       const posts = postsResult.value.posts || [];
       const settingsReady = healthResult.status === "fulfilled" && healthResult.value.capabilities?.includes("social_settings");
-      state = {config, entries, sources, posts, settingsReady};
+      state = {config, entries, sources, posts, settingsReady,
+        cooldowns: logResult.status === "fulfilled" ? logResult.value.cooldowns || {} : {}};
       const missingSources = sources.filter((source) => source.enabled !== false
         && !Object.prototype.hasOwnProperty.call(config.sources || {}, source.id));
       const categories = Object.entries(config.categories || {}).filter(([, enabled]) => enabled === true).map(([key]) => categoryNames[key] || key);

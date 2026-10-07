@@ -11,6 +11,11 @@ import sys
 from pathlib import Path
 from urllib.parse import urlparse
 
+try:
+    from publication_state import mark_feed_updated
+except ModuleNotFoundError:
+    from scripts.publication_state import mark_feed_updated
+
 from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -420,6 +425,7 @@ def main() -> int:
     posts = payload.get("posts") or []
     payload["posts"] = [updated if item.get("id") == POST_ID else item for item in posts]
     payload["post_count"] = len(payload["posts"])
+    mark_feed_updated(payload)
 
     json_payload = json.dumps(payload, ensure_ascii=False, indent=2)
     POSTS_FILE.write_text(json_payload + "\n", encoding="utf-8")
