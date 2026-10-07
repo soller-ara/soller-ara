@@ -464,8 +464,8 @@ window.SOLLER_ARA_DATA = {
   "posts": [
     {
       "id": "soller-ara-382ea4afe804715e",
-      "category": "politics",
-      "source_id": "soller-ara",
+      "category": "agenda",
+      "source_id": "manual-4bf706dacb80",
       "source": "Publicació de xarxa",
       "source_type": "own",
       "language": "ca",
