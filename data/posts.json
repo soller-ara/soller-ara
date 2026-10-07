@@ -444,29 +444,10 @@
     }
   ],
   "social_integration_status": [],
-  "post_count": 170,
+  "post_count": 169,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
-    {
-      "id": "soller-ara-5e965ed34e7dab8c",
-      "category": "politics",
-      "source_id": "manual-63131adac464",
-      "source": "Sóller, participació ciutadana.",
-      "source_type": "own",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-10-07T09:39:55.114791+00:00",
-      "show_in_now": false,
-      "content_type": "social_link",
-      "title": "",
-      "summary": "",
-      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-5e965ed34e7dab8c.html",
-      "content_policy": "manual_link_reference",
-      "rights_status": "no_reuse_reference_only",
-      "image_allowed": false,
-      "original_url": "https://www.facebook.com/groups/149864665060160/posts/28709310562022189/?hpir=1"
-    },
     {
       "id": "soller-ara-25be2b958f550906",
       "category": "agenda",
@@ -3923,5 +3904,5 @@
     }
   ],
   "sources_checked_at": "2026-10-07T09:24:57.871930+00:00",
-  "fetched_at": "2026-10-07T09:39:55.119582+00:00"
+  "fetched_at": "2026-10-07T09:45:50.879522+00:00"
 }
