@@ -4478,6 +4478,20 @@
       "recorded_at": "2026-10-07T11:48:48.898967+00:00",
       "error": "Pausa temporal de Meta fins a 2026-10-07T13:30:12.203164+00:00. Reintent automàtic pendent.",
       "retry_requested": true
+    },
+    {
+      "post_id": "bac2d428fffc79a3b6ef",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122120516061467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122120516061467310",
+      "title": "El MUCBO de Sóller incorpora nous guies d’Amadip Esment per oferir visites sensorials",
+      "post_url": "https://www.foravila.net/area/serra-de-tramuntana/el-mucbo-de-soller-incorpora-nous-guies-damadip-esment-per-oferir-visites-sensorials/",
+      "source": "Fora Vila",
+      "source_id": "fora-vila-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-07T12:31:10.841774+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
