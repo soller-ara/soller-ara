@@ -31,11 +31,13 @@
   const socialLinkSubmitButton = document.getElementById("socialLinkSubmitButton");
   const cancelSocialLinkEditButton = document.getElementById("cancelSocialLinkEditButton");
   const socialLinkList = document.getElementById("socialLinkList");
+  const socialLinkActionMessage = document.getElementById("socialLinkActionMessage");
   const refreshSocialLinkListButton = document.getElementById("refreshSocialLinkListButton");
 
   let statusPayload = null;
   let editPostId = "";
   let socialLinkEditPostId = "";
+  const pendingModerations = new Map();
 
   function getToken() {
     return sessionStorage.getItem(TOKEN_KEY) || "";
@@ -287,6 +289,26 @@
 
     renderHidden();
     renderSocialLinkPosts();
+    renderModerationProgress();
+  }
+
+  function renderModerationProgress() {
+    const labels = {
+      "delete-own": "Eliminando…",
+      "hide": "Ocultando…",
+      "unhide": "Restaurando…",
+      "reclassify": "Guardando…",
+    };
+    document.querySelectorAll("[data-post-id], [data-unhide-id], [data-edit-id], [data-social-link-edit-id]").forEach((button) => {
+      const postId = button.dataset.postId || button.dataset.unhideId || button.dataset.editId || button.dataset.socialLinkEditId;
+      const action = button.dataset.action || (button.dataset.unhideId ? "unhide" : "");
+      const pendingAction = pendingModerations.get(postId);
+      if (!button.dataset.idleLabel) button.dataset.idleLabel = button.textContent;
+      button.disabled = Boolean(pendingAction);
+      button.textContent = pendingAction && pendingAction === action
+        ? labels[action] || "Procesando…"
+        : button.dataset.idleLabel;
+    });
   }
 
   function manualInstagramStatus(post) {
@@ -324,7 +346,7 @@
       button.addEventListener("click", () => startSocialLinkEdit(button.dataset.socialLinkEditId));
     });
     socialLinkList.querySelectorAll("[data-action]").forEach((button) => {
-      button.addEventListener("click", () => moderate(button.dataset.action, button.dataset.postId));
+      button.addEventListener("click", () => moderate(button.dataset.action, button.dataset.postId, "", socialLinkActionMessage));
     });
   }
 
@@ -582,7 +604,7 @@
     return false;
   }
 
-  async function waitForModeration(action, postId, category = "") {
+  async function waitForModeration(action, postId, category = "", messageElement = moderationMessage) {
     const attempts = 12;
     for (let attempt = 1; attempt <= attempts; attempt++) {
       await new Promise((resolve) => setTimeout(resolve, 2500));
@@ -596,14 +618,15 @@
 
       if (moderationApplied(data, action, postId, category)) return true;
       setMessage(
-        moderationMessage,
-        "Procesando en GitHub… " + attempt + "/" + attempts
+        messageElement,
+        "Solicitud enviada. Esperando a que se guarden los cambios… No vuelvas a enviarla."
       );
     }
     return false;
   }
 
-  async function moderate(action, postId, category = "") {
+  async function moderate(action, postId, category = "", messageElement = moderationMessage) {
+    if (pendingModerations.has(postId)) return;
     const labels = {
       "delete-own": "eliminar definitivamente esta publicación propia",
       "hide": "ocultar esta publicación",
@@ -612,14 +635,16 @@
     };
     if (!confirm("¿Confirmas que quieres " + (labels[action] || "realizar esta acción") + "?")) return;
 
-    setMessage(moderationMessage, "Enviando acción…");
+    pendingModerations.set(postId, action);
+    renderModerationProgress();
+    setMessage(messageElement, "Enviando solicitud…");
     try {
       await api("/api/moderate", {
         method: "POST",
         body: JSON.stringify({ action, post_id: postId, category }),
       });
 
-      const applied = await waitForModeration(action, postId, category);
+      const applied = await waitForModeration(action, postId, category, messageElement);
       if (applied) {
         const doneLabels = {
           "hide": "Publicación ocultada correctamente.",
@@ -627,16 +652,18 @@
           "delete-own": "Publicación eliminada correctamente.",
           "reclassify": "Tipo de publicación actualizado correctamente.",
         };
-        setMessage(moderationMessage, doneLabels[action] || "Acción completada.", "success");
+        setMessage(messageElement, doneLabels[action] || "Acción completada.", "success");
       } else {
         setMessage(
-          moderationMessage,
-          "La acción se ha enviado, pero está tardando más de lo previsto. Pulsa Actualizar en unos segundos.",
-          "error"
+          messageElement,
+          "La solicitud se ha enviado y todavía no se ha confirmado. Actualiza la lista antes de volver a enviarla."
         );
       }
     } catch (error) {
-      setMessage(moderationMessage, error.message, "error");
+      setMessage(messageElement, error.message, "error");
+    } finally {
+      pendingModerations.delete(postId);
+      renderModerationProgress();
     }
   }
 
