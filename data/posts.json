@@ -1,7 +1,7 @@
 {
   "version": 41,
   "generator_version": "0.60",
-  "fetched_at": "2026-10-07T06:30:41.976038+00:00",
+  "fetched_at": "2026-10-07T07:26:34.364568+00:00",
   "source_count": 40,
   "source_status": [
     {
@@ -59,20 +59,20 @@
       "name": "Ajuntament de Sóller · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 2,
-      "retained_count": 2,
-      "error": "HTTP Error 404: Not Found"
+      "archived_count": 0,
+      "error": null
     },
     {
       "source_id": "youtube-ib3-noticies-soller",
       "name": "IB3 Notícies · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
-      "count": 0,
-      "retained_count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "ok": true,
+      "count": 1,
+      "archived_count": 0,
+      "error": null
     },
     {
       "source_id": "goib-noticies-soller",
@@ -159,100 +159,100 @@
       "name": "Can Prunera · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "retained_count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "archived_count": 0,
+      "error": null
     },
     {
       "source_id": "youtube-aires-sollerics",
       "name": "Aires Sollerics · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "retained_count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "archived_count": 0,
+      "error": null
     },
     {
       "source_id": "youtube-xeremiers-soller",
       "name": "Xeremiers de Sóller · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "retained_count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "archived_count": 0,
+      "error": null
     },
     {
       "source_id": "youtube-club-volei-soller",
       "name": "Club Vòlei Sóller · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "retained_count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "archived_count": 0,
+      "error": null
     },
     {
       "source_id": "youtube-ballades-mallorca-soller",
       "name": "Ballades A Mallorca · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "retained_count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "archived_count": 0,
+      "error": null
     },
     {
       "source_id": "youtube-tramuntana-xxi",
       "name": "Tramuntana XXI · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "retained_count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "archived_count": 0,
+      "error": null
     },
     {
       "source_id": "youtube-gob-mallorca-soller",
       "name": "GOB Mallorca · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "retained_count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "archived_count": 0,
+      "error": null
     },
     {
       "source_id": "youtube-museu-maritim-soller",
       "name": "Museu Marítim de Mallorca · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "retained_count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "archived_count": 0,
+      "error": null
     },
     {
       "source_id": "youtube-serra-tramuntana",
       "name": "Serra de Tramuntana Patrimoni Mundial · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "retained_count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "archived_count": 0,
+      "error": null
     },
     {
       "source_id": "youtube-consell-mallorca-soller",
       "name": "Consell de Mallorca · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "retained_count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "archived_count": 0,
+      "error": null
     },
     {
       "source_id": "mucbo-noticies",
@@ -349,10 +349,10 @@
       "name": "SUS Mallorca · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "retained_count": 0,
-      "error": "HTTP Error 404: Not Found"
+      "archived_count": 0,
+      "error": null
     },
     {
       "source_id": "partido-popular-soller",
@@ -390,7 +390,7 @@
       "source_type": "political_party",
       "method": "rss",
       "ok": true,
-      "count": 2,
+      "count": 1,
       "archived_count": 0,
       "error": null
     },
@@ -400,67 +400,14 @@
       "source_type": "own",
       "method": "manual",
       "ok": true,
-      "count": 42,
+      "count": 43,
       "error": null
     }
   ],
   "social_integration_status": [],
   "post_count": 171,
   "related_pair_count": 0,
-  "errors": [
-    {
-      "source_id": "youtube-ajuntament-soller",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-ib3-noticies-soller",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-can-prunera",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-aires-sollerics",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-xeremiers-soller",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-club-volei-soller",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-ballades-mallorca-soller",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-tramuntana-xxi",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-gob-mallorca-soller",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-museu-maritim-soller",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-serra-tramuntana",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-consell-mallorca-soller",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-sus-mallorca-soller",
-      "error": "HTTP Error 404: Not Found"
-    }
-  ],
+  "errors": [],
   "posts": [
     {
       "id": "soller-ara-25be2b958f550906",
@@ -479,7 +426,8 @@
       "content_policy": "manual_link_reference",
       "rights_status": "no_reuse_reference_only",
       "image_allowed": false,
-      "original_url": "https://www.facebook.com/story.php?story_fbid=1529717785863277&id=100064752094509&hpir=1"
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1529717785863277&id=100064752094509&hpir=1",
+      "related_sources": []
     },
     {
       "id": "d4f991ab0b05cf8f13f0",
@@ -503,6 +451,26 @@
       "alert_valid_until": "2026-10-09T09:59:00+00:00",
       "alert_status": "scheduled",
       "alert_in_feed": true,
+      "related_sources": []
+    },
+    {
+      "id": "a57e64e57bd13a6a8f85",
+      "category": "news",
+      "source_id": "youtube-ib3-noticies-soller",
+      "source": "IB3 Notícies · YouTube",
+      "source_type": "social",
+      "language": "ca",
+      "locality": "Sóller / Fornalutx / Serra de Tramuntana",
+      "published_at": "2026-10-06T19:05:04+00:00",
+      "title": "Denúncia davant la Fiscalia per una presumpta contaminació del torrent de Solleric",
+      "summary": "Vídeo publicat per IB3 Notícies · YouTube.",
+      "url": "https://www.youtube.com/watch?v=oMzABA7ZUsk",
+      "platform": "YouTube",
+      "account": "@NoticiesIB3",
+      "media_type": "video",
+      "content_policy": "generated_social_summary",
+      "rights_status": "platform_embed",
+      "image_allowed": false,
       "related_sources": []
     },
     {
@@ -703,7 +671,7 @@
       "locality": "Sóller / Serra de Tramuntana",
       "published_at": "2026-10-06T09:16:03+00:00",
       "title": "Aviso. Nivel amarillo. Lluvias. Sierra Tramontana",
-      "summary": "Aviso de precipitación acumulada en una hora de nivel amarillo de 06:00 07-10-2026 CEST (UTC+2) a 15:59 07-10-2026 CEST (UTC+2).",
+      "summary": "Aviso de precipitación acumulada en una hora de nivel amarillo de 08:00 07-10-2026 CEST (UTC+2) a 15:59 07-10-2026 CEST (UTC+2).",
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261006091603_AFAZ645401PRP10714.xml",
       "platform": null,
       "account": null,
@@ -711,7 +679,7 @@
       "content_policy": "short_factual_excerpt",
       "rights_status": "reuse_authorized_with_attribution",
       "image_allowed": false,
-      "alert_valid_from": "2026-10-07T04:00:00+00:00",
+      "alert_valid_from": "2026-10-07T06:00:00+00:00",
       "alert_valid_until": "2026-10-07T13:59:00+00:00",
       "alert_status": "active",
       "alert_in_feed": true,
@@ -727,7 +695,7 @@
       "locality": "Sóller / Serra de Tramuntana",
       "published_at": "2026-10-06T09:16:03+00:00",
       "title": "Aviso. Nivel amarillo. Tormentas. Sierra Tramontana",
-      "summary": "Aviso de tormentas de nivel amarillo de 06:00 07-10-2026 CEST (UTC+2) a 15:59 07-10-2026 CEST (UTC+2).",
+      "summary": "Aviso de tormentas de nivel amarillo de 08:00 07-10-2026 CEST (UTC+2) a 15:59 07-10-2026 CEST (UTC+2).",
       "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261006091603_AFAZ645401TOTO0714.xml",
       "platform": null,
       "account": null,
@@ -735,7 +703,7 @@
       "content_policy": "short_factual_excerpt",
       "rights_status": "reuse_authorized_with_attribution",
       "image_allowed": false,
-      "alert_valid_from": "2026-10-07T04:00:00+00:00",
+      "alert_valid_from": "2026-10-07T06:00:00+00:00",
       "alert_valid_until": "2026-10-07T13:59:00+00:00",
       "alert_status": "active",
       "alert_in_feed": true,
@@ -3144,26 +3112,6 @@
       "media_type": null,
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "4f79602e2b5ae27fc2b6",
-      "category": "politics",
-      "source_id": "psib-psoe-soller",
-      "source": "PSIB-PSOE · Sóller",
-      "source_type": "political_party",
-      "language": "ca",
-      "locality": "Sóller / Port de Sóller",
-      "published_at": "2026-09-10T12:07:03+00:00",
-      "title": "Els Socialistes de Sóller celebren que no hagi tirat endavant la pròrroga de la concessió d’Aquàlia i exigeixen al batle que recuperi la gestió pública de l’aigua",
-      "summary": "",
-      "url": "https://www.psib-psoe.org/mallorca/els-socialistes-de-soller-celebren-que-no-hagi-tirat-endavant-la-prorroga-de-la-concessio-daqualia-i-exigeixen-al-batle-que-recuperi-la-gestio-publica-de-laigua/",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "official_party_source",
       "image_allowed": false,
       "related_sources": []
     },
