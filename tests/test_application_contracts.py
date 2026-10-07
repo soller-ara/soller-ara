@@ -56,6 +56,20 @@ class ApplicationContractsTests(unittest.TestCase):
             self.assertIn('artifact_name: github-pages-${{ github.run_attempt }}',text,path.name)
         self.assertGreaterEqual(count,5)
 
+    def test_every_pages_publisher_uses_the_same_non_canceling_queue(self):
+        # GitHub Pages refuses a second deployment while another is in progress.
+        for path in (ROOT/'.github/workflows').glob('*.yml'):
+            text=path.read_text()
+            if 'actions/deploy-pages@' not in text:
+                continue
+            concurrency=re.search(r'^concurrency:\n((?:  .+\n)+)',text,re.M)
+            self.assertIsNotNone(concurrency,path.name)
+            group=concurrency.group(1)
+            self.assertIn('group: "soller-ara-social-publish"',group,path.name)
+            self.assertIn('queue: max',group,path.name)
+            self.assertIn('cancel-in-progress: false',group,path.name)
+            self.assertIn('ref: main',text,path.name)
+
     def test_moderation_workflow_accepts_all_collector_categories(self):
         workflow=(ROOT/'.github/workflows/manage-posts.yml').read_text()
         options=re.search(r'options: \[(news[^\]]+)\]',workflow).group(1).replace(' ','').split(',')
