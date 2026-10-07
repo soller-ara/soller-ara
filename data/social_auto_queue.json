@@ -1,28 +1,25 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-07T11:29:40.080314+00:00",
+  "generated_at": "2026-10-07T12:30:51.788157+00:00",
   "entries": [
     {
-      "post_id": "4aabbfab6ea446fa3f54",
-      "title": "Aviso. Nivel amarillo. Costeros. Sierra Tramontana",
-      "summary": "Aviso de costeros de nivel amarillo de 00:00 09-10-2026 CEST (UTC+2) a 11:59 09-10-2026 CEST (UTC+2).",
-      "source": "AEMET · Serra de Tramuntana",
-      "source_id": "aemet-avisos-mallorca",
-      "source_type": "official",
-      "category": "alerts",
-      "language": "es",
-      "published_at": "2026-10-07T09:35:55+00:00",
-      "alert_status": "scheduled",
-      "alert_valid_from": "2026-10-08T22:00:00+00:00",
-      "alert_valid_until": "2026-10-09T09:59:00+00:00",
-      "original_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261007093555_AFAZ645401COCO0910.xml",
-      "content_policy": "short_factual_excerpt",
-      "rights_status": "reuse_authorized_with_attribution",
+      "post_id": "bac2d428fffc79a3b6ef",
+      "title": "El MUCBO de Sóller incorpora nous guies d’Amadip Esment per oferir visites sensorials",
+      "summary": "",
+      "source": "Fora Vila",
+      "source_id": "fora-vila-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-10-07T08:54:00+00:00",
+      "original_url": "https://www.foravila.net/area/serra-de-tramuntana/el-mucbo-de-soller-incorpora-nous-guies-damadip-esment-per-oferir-visites-sensorials/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
       "platforms": [
-        "instagram"
+        "facebook"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/4aabbfab6ea446fa3f54.jpg"
+      "image_url": ""
     }
   ]
 }
