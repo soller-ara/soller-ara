@@ -444,31 +444,10 @@
     }
   ],
   "social_integration_status": [],
-  "post_count": 171,
+  "post_count": 170,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
-    {
-      "id": "soller-ara-94f7343980a66b46",
-      "category": "agenda",
-      "source_id": "manual-4f785079a49c",
-      "source": "Som joves",
-      "source_type": "own",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-10-07T10:58:50.965963+00:00",
-      "show_in_now": true,
-      "content_type": "social_link",
-      "title": "Nova sortida excursionista al Castell d'Alaró per a joves de 18 a 30 anys",
-      "summary": "El pròxim 18 d'octubre s'ha programat una ruta circular de 9,43 km amb sortida des de Can Repic fins al Castell d'Alaró. L'activitat, de dificultat moderada i ritme tranquil, té una durada estimada de cinc hores i mitja amb aturada per dinar inclosa.",
-      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-94f7343980a66b46.html",
-      "content_policy": "manual_link_reference",
-      "rights_status": "no_reuse_reference_only",
-      "image_allowed": true,
-      "original_url": "https://www.facebook.com/story.php?story_fbid=1567191538769249&id=100064352547067&hpir=1",
-      "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-94f7343980a66b46.jpg",
-      "media_type": "image"
-    },
     {
       "id": "4aabbfab6ea446fa3f54",
       "category": "alerts",
@@ -3949,5 +3928,5 @@
     }
   ],
   "sources_checked_at": "2026-10-07T10:24:41.967846+00:00",
-  "fetched_at": "2026-10-07T10:58:51.011930+00:00"
+  "fetched_at": "2026-10-07T11:02:58.154058+00:00"
 }
