@@ -444,10 +444,31 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 170,
+  "post_count": 171,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "soller-ara-a6fef3d366509b00",
+      "category": "alerts",
+      "source_id": "manual-c671fec4a9a6",
+      "source": "Ajuntament de Sóller",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-07T11:48:33.224478+00:00",
+      "show_in_now": true,
+      "content_type": "social_link",
+      "title": "Avísame meteorològic.",
+      "summary": "Previsió Taronja de l’AEMET",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-a6fef3d366509b00.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": true,
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1554465790056546&id=100064794188146&hpir=1",
+      "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-a6fef3d366509b00.jpg",
+      "media_type": "image"
+    },
     {
       "id": "4aabbfab6ea446fa3f54",
       "category": "alerts",
@@ -3928,5 +3949,5 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "sources_checked_at": "2026-10-07T11:29:39.939374+00:00",
-  "fetched_at": "2026-10-07T11:29:39.939374+00:00"
+  "fetched_at": "2026-10-07T11:48:33.262987+00:00"
 };

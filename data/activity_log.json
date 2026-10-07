@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "2aac545334417597",
+      "timestamp": "2026-10-07T11:48:33.317778+00:00",
+      "action": "publish",
+      "area": "publications",
+      "target_id": "soller-ara-a6fef3d366509b00",
+      "title": "Avísame meteorològic.",
+      "detail": "Publicación propia creada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "0a4fe615b33aa8dc",
       "timestamp": "2026-10-07T11:02:58.205608+00:00",
       "action": "delete-own",
