@@ -34,6 +34,7 @@ def read_list(path: Path, key: str) -> list:
 def pending_posts(log: dict, posts: list[dict], hidden: set[str]) -> list[dict]:
     latest = {}
     published = set()
+    uncertain = set()
     for entry in log.get("entries", []):
         if entry.get("platform") != "instagram":
             continue
@@ -41,8 +42,11 @@ def pending_posts(log: dict, posts: list[dict], hidden: set[str]) -> list[dict]:
         latest[identifier] = entry
         if entry.get("status") == "success":
             published.add(identifier)
+        if entry.get("status") in {"publishing", "verification_required"}:
+            uncertain.add(identifier)
     pending = {identifier: entry for identifier, entry in latest.items()
-               if entry.get("status") == "deferred" and entry.get("retry_requested") is True
+               if (entry.get("status") == "deferred" and entry.get("retry_requested") is True
+                   or identifier in uncertain)
                and identifier not in published and identifier not in hidden}
     return sorted([post for post in posts if post.get("id") in pending
                    and post.get("source_type") == "own"],

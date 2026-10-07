@@ -17,6 +17,13 @@ from urllib.error import HTTPError
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
+try:
+    from instagram_delivery import (InstagramPublishUncertain, InstagramVerificationUnavailable,
+                                    matching_media, read_account_media, unconfirmed_container)
+except ModuleNotFoundError:
+    from scripts.instagram_delivery import (InstagramPublishUncertain, InstagramVerificationUnavailable,
+                                            matching_media, read_account_media, unconfirmed_container)
+
 ROOT = Path(__file__).resolve().parents[1]
 LOG_FILE = ROOT / "data" / "social_publish_log.json"
 
@@ -50,7 +57,7 @@ def already_published(log: dict, platform: str) -> bool:
                and entry.get("status") == "success" for entry in log.get("entries") or [])
 
 
-def record_result(log: dict, platform: str, status: str, remote_id: str = "", error: str = "") -> None:
+def record_result(log: dict, platform: str, status: str, remote_id: str = "", error: str = "", **receipt) -> None:
     entries = log.setdefault("entries", [])
     entries.append({
         "post_id": POST_ID,
@@ -60,7 +67,9 @@ def record_result(log: dict, platform: str, status: str, remote_id: str = "", er
         "post_url": POST_URL,
         "recorded_at": datetime.now(timezone.utc).isoformat(),
         "error": error,
-        **({"retry_requested": True} if platform == "instagram" and status == "deferred" else {}),
+        **({"retry_requested": True} if platform == "instagram" and status in
+           {"deferred", "publishing", "verification_required"} else {}),
+        **receipt,
     })
     LOG_FILE.parent.mkdir(parents=True, exist_ok=True)
     LOG_FILE.write_text(json.dumps(log, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -161,6 +170,28 @@ def publish_instagram(ig_id: str, ig_username: str, page_token: str) -> str:
         raise RuntimeError("El compte Instagram vinculat no és soller.ara.")
     if not ig_id:
         raise RuntimeError("No s'ha trobat el compte Instagram vinculat a Sóller Ara.")
+
+    log = load_publish_log()
+    previous = [entry for entry in log["entries"]
+                if entry.get("post_id") == POST_ID and entry.get("platform") == "instagram"]
+    confirmed = next((entry for entry in previous
+                      if entry.get("status") == "success" and entry.get("remote_id")), None)
+    if confirmed:
+        return str(confirmed["remote_id"])
+    # Also check when the previous runner died before its local log was saved.
+    try:
+        matches = matching_media(read_account_media(graph, ig_id, TOKEN), POST_URL)
+    except Exception as exc:
+        raise InstagramVerificationUnavailable(str(exc)) from exc
+    if matches:
+        remote_id = str(matches[0]["id"])
+        print(f"INSTAGRAM_RECONCILED post={POST_ID} media_id={remote_id} copies={len(matches)}")
+        return remote_id
+    uncertain = unconfirmed_container(previous)
+    if uncertain:
+        raise InstagramPublishUncertain(
+            "Enviament anterior pendent de confirmació; no es crea una altra publicació.",
+            str(uncertain.get("container_id") or ""))
     if not IMAGE_URL:
         raise RuntimeError(
             "Instagram necessita una imatge pública. Afegeix POST_IMAGE_URL o desactiva Instagram."
@@ -192,15 +223,20 @@ def publish_instagram(ig_id: str, ig_username: str, page_token: str) -> str:
     else:
         raise RuntimeError("El contenidor Instagram no ha quedat preparat.")
 
-    result = graph(
-        f"{ig_id}/media_publish",
-        method="POST",
-        params={"creation_id": container_id},
-        token=page_token,
-    )
+    # Persist intent before the non-idempotent request, including runner crashes.
+    record_result(log, "instagram", "publishing", container_id=container_id, stage="media_publish")
+    try:
+        result = graph(
+            f"{ig_id}/media_publish",
+            method="POST",
+            params={"creation_id": container_id},
+            token=page_token,
+        )
+    except Exception as exc:
+        raise InstagramPublishUncertain(str(exc), container_id) from exc
     media_id = str(result.get("id") or "")
     if not media_id:
-        raise RuntimeError("Instagram no ha retornat identificador de publicació.")
+        raise InstagramPublishUncertain("Instagram no ha retornat identificador de publicació.", container_id)
     print(f"INSTAGRAM_OK account=@{ig_username or '?'} media_id={media_id}")
     return media_id
 
@@ -224,7 +260,9 @@ def main() -> int:
     paused = bool(pause_value and datetime.fromisoformat(pause_value.replace("Z", "+00:00")) > datetime.now(timezone.utc))
     facebook_needed = DO_FACEBOOK and not already_published(log, "facebook")
     instagram_needed = DO_INSTAGRAM and not already_published(log, "instagram")
-    if instagram_needed and paused:
+    previous_instagram = [entry for entry in log["entries"]
+                          if entry.get("post_id") == POST_ID and entry.get("platform") == "instagram"]
+    if instagram_needed and paused and not unconfirmed_container(previous_instagram):
         record_result(log, "instagram", "deferred", error=f"Pausa temporal de Meta fins a {pause_value}. Reintent automàtic pendent.")
         print(f"INSTAGRAM_DEFERRED until={pause_value}")
     if not facebook_needed and (not instagram_needed or paused):
@@ -260,12 +298,24 @@ def main() -> int:
         else:
             try:
                 remote_id = publish_instagram(ig_id, ig_username, page_token)
+                log = load_publish_log()
                 record_result(log, "instagram", "success", remote_id=remote_id)
             except Exception as exc:
-                if "application request limit" in str(exc).casefold() and "code=4" in str(exc).casefold():
+                log = load_publish_log()
+                rate_limited = "application request limit" in str(exc).casefold() and "code=4" in str(exc).casefold()
+                if isinstance(exc, (InstagramPublishUncertain, InstagramVerificationUnavailable)):
+                    if rate_limited:
+                        log.setdefault("cooldowns", {})["instagram_until"] = (datetime.now(timezone.utc) + timedelta(hours=2)).isoformat()
+                    uncertain = isinstance(exc, InstagramPublishUncertain)
+                    record_result(log, "instagram", "verification_required" if uncertain else "deferred",
+                                  error=str(exc), stage="media_publish" if uncertain else "verify",
+                                  **({"container_id": exc.container_id} if uncertain else {}))
+                    print(f"INSTAGRAM_VERIFY_PENDING post={POST_ID}: {exc}", file=sys.stderr)
+                    return 1 if failed or (uncertain and not rate_limited) else 0
+                if rate_limited:
                     until = datetime.now(timezone.utc) + timedelta(hours=2)
                     log.setdefault("cooldowns", {})["instagram_until"] = until.isoformat()
-                    record_result(log, "instagram", "deferred", error=f"Pausa temporal de Meta fins a {until.isoformat()}. Reintent automàtic pendent.")
+                    record_result(log, "instagram", "deferred", error=f"Pausa temporal de Meta fins a {until.isoformat()}. Reintent automàtic pendent. {exc}")
                     print(f"INSTAGRAM_DEFERRED until={until.isoformat()}")
                     return 1 if failed else 0
                 failed = True

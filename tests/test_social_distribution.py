@@ -109,7 +109,8 @@ class SocialDistributionTests(unittest.TestCase):
                 return {"status_code": "FINISHED"}
             return {"id": "media"}
 
-        with patch.object(self.publish, "wait_public_image"), patch.object(self.publish, "graph", side_effect=fake_graph):
+        with patch.object(self.publish, "read_account_media", return_value=[]), \
+             patch.object(self.publish, "wait_public_image"), patch.object(self.publish, "graph", side_effect=fake_graph):
             self.assertEqual(self.publish.publish_instagram(item, "ig", "soller.ara", "token"), "media")
 
         caption = calls[0][1]["params"]["caption"]

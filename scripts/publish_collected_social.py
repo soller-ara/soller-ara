@@ -24,8 +24,12 @@ from urllib.request import Request, urlopen
 
 try:
     from publication_state import alert_can_be_published, social_was_published
+    from instagram_delivery import (InstagramPublishUncertain, InstagramVerificationUnavailable,
+                                    matching_media, read_account_media, unconfirmed_container)
 except ModuleNotFoundError:
     from scripts.publication_state import alert_can_be_published, social_was_published
+    from scripts.instagram_delivery import (InstagramPublishUncertain, InstagramVerificationUnavailable,
+                                            matching_media, read_account_media, unconfirmed_container)
 
 ROOT = Path(__file__).resolve().parents[1]
 QUEUE_FILE = ROOT / "data" / "social_auto_queue.json"
@@ -61,6 +65,10 @@ def save_log(log: dict) -> None:
     latest_retry = {(entry.get("post_id"), entry.get("platform")): index for index, entry in enumerate(entries)
                     if (entry.get("post_id"), entry.get("platform")) in retry_pairs}
     protected = set(latest_retry.values())
+    successes = {(entry.get("post_id"), entry.get("platform")) for entry in entries if entry.get("status") == "success"}
+    protected.update(index for index, entry in enumerate(entries)
+                     if entry.get("status") in {"publishing", "verification_required"}
+                     and (entry.get("post_id"), entry.get("platform")) not in successes)
     log["entries"] = [entry for index, entry in enumerate(entries)
                       if index >= len(entries) - 1000 or index in protected or entry.get("status") == "success"]
     LOG_FILE.parent.mkdir(parents=True, exist_ok=True)
@@ -103,7 +111,7 @@ def already_published(log: dict, post_id: str, platform: str, source_id: str = "
     return social_was_published(log, post_id, platform, source_id, original_url)
 
 
-def record(log: dict, item: dict, platform: str, status: str, remote_id: str = "", error: str = "", remote_url: str = "") -> None:
+def record(log: dict, item: dict, platform: str, status: str, remote_id: str = "", error: str = "", remote_url: str = "", **receipt) -> None:
     log.setdefault("entries", []).append({
         "post_id": item.get("post_id"),
         "platform": platform,
@@ -117,6 +125,9 @@ def record(log: dict, item: dict, platform: str, status: str, remote_id: str = "
         "mode": "automatic_collected",
         "recorded_at": datetime.now(timezone.utc).isoformat(),
         "error": error,
+        **({"retry_requested": True} if platform == "instagram" and status in
+           {"deferred", "publishing", "verification_required"} else {}),
+        **receipt,
     })
     save_log(log)
 
@@ -259,6 +270,26 @@ def publish_instagram(item: dict, ig_id: str, ig_username: str, page_token: str)
         raise RuntimeError("No s'ha trobat el compte Instagram vinculat a Sóller Ara.")
     if ig_username.casefold() != "soller.ara":
         raise RuntimeError("El compte Instagram vinculat no és @soller.ara.")
+    log = load_json(LOG_FILE, {"version": 1, "entries": []})
+    previous = [entry for entry in log["entries"] if entry.get("platform") == "instagram"
+                and (entry.get("post_id") == item.get("post_id")
+                     or item.get("source_id") and item.get("original_url")
+                     and entry.get("source_id") == item["source_id"]
+                     and entry.get("post_url") == item["original_url"])]
+    try:
+        matches = matching_media(read_account_media(graph, ig_id, TOKEN), str(item.get("original_url") or ""),
+                                 str(item.get("source") or "Font original"))
+    except Exception as exc:
+        raise InstagramVerificationUnavailable(str(exc)) from exc
+    if matches:
+        remote_id = str(matches[0]["id"])
+        print(f"INSTAGRAM_RECONCILED post={item.get('post_id')} media_id={remote_id} copies={len(matches)}")
+        return remote_id
+    uncertain = unconfirmed_container(previous)
+    if uncertain:
+        raise InstagramPublishUncertain(
+            "Enviament anterior pendent de confirmació; no es crea una altra publicació.",
+            str(uncertain.get("container_id") or ""))
     image_url = str(item.get("image_url") or "")
     wait_public_image(image_url)
 
@@ -288,15 +319,19 @@ def publish_instagram(item: dict, ig_id: str, ig_username: str, page_token: str)
     else:
         raise RuntimeError("El contenidor Instagram no ha quedat preparat.")
 
-    result = graph(
-        f"{ig_id}/media_publish",
-        method="POST",
-        params={"creation_id": container_id},
-        token=page_token,
-    )
+    record(log, item, "instagram", "publishing", container_id=container_id, stage="media_publish")
+    try:
+        result = graph(
+            f"{ig_id}/media_publish",
+            method="POST",
+            params={"creation_id": container_id},
+            token=page_token,
+        )
+    except Exception as exc:
+        raise InstagramPublishUncertain(str(exc), container_id) from exc
     media_id = str(result.get("id") or "")
     if not media_id:
-        raise RuntimeError("Instagram no ha retornat identificador de publicació.")
+        raise InstagramPublishUncertain("Instagram no ha retornat identificador de publicació.", container_id)
     print(f"INSTAGRAM_OK account=@{ig_username or '?'} media_id={media_id}")
     return media_id
 
@@ -391,6 +426,7 @@ def main() -> int:
                     print(f"FACEBOOK_OK post={post_id} id={remote_id}")
                 elif platform == "instagram":
                     remote_id = publish_instagram(item, ig_id, ig_username, page_token)
+                    log = load_json(LOG_FILE, {"version": 1, "entries": []})
                 else:
                     continue
                 remote_url = f"https://www.facebook.com/{remote_id}" if platform == "facebook" else ""
@@ -401,9 +437,23 @@ def main() -> int:
                         pass  # Un error de lectura no convierte un envío confirmado en fallido.
                 record(log, item, platform, "success", remote_id=remote_id, remote_url=remote_url)
             except Exception as exc:
+                log = load_json(LOG_FILE, {"version": 1, "entries": []})
+                if platform == "instagram" and isinstance(exc, (InstagramPublishUncertain, InstagramVerificationUnavailable)):
+                    rate_limited = is_instagram_rate_limit(exc)
+                    if rate_limited:
+                        defer_instagram(log)
+                        instagram_paused = True
+                    uncertain = isinstance(exc, InstagramPublishUncertain)
+                    record(log, item, platform, "verification_required" if uncertain else "deferred", error=str(exc),
+                           stage="media_publish" if uncertain else "verify",
+                           **({"container_id": exc.container_id} if uncertain else {}))
+                    errors += bool(uncertain and not rate_limited)
+                    print(f"INSTAGRAM_VERIFY_PENDING post={post_id}: {exc}", file=sys.stderr)
+                    continue
                 if platform == "instagram" and is_instagram_rate_limit(exc):
                     until = defer_instagram(log)
                     instagram_paused = True
+                    record(log, item, platform, "deferred", error=str(exc))
                     print(
                         f"INSTAGRAM_DEFERRED post={post_id} until={until.isoformat()} "
                         f"(límit temporal de Meta)",

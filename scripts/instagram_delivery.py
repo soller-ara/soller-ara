@@ -4,6 +4,24 @@ from __future__ import annotations
 import re
 
 
+class InstagramPublishUncertain(RuntimeError):
+    """A publish request may have reached Meta; only read-back is safe."""
+    def __init__(self, message: str, container_id: str = ""):
+        super().__init__(message)
+        self.container_id = container_id
+
+
+class InstagramVerificationUnavailable(RuntimeError):
+    """Do not send while the existing Instagram media cannot be checked."""
+
+
+def unconfirmed_container(entries: list[dict]) -> dict | None:
+    if any(entry.get("status") == "success" for entry in entries):
+        return None
+    return next((entry for entry in reversed(entries)
+                 if entry.get("status") in {"publishing", "verification_required"}), None)
+
+
 def read_account_media(graph, ig_id: str, token: str, max_pages: int = 20) -> list[dict]:
     """Use only GETs. An incomplete/unreadable list is never proof of absence."""
     if not ig_id:
@@ -32,10 +50,12 @@ def read_account_media(graph, ig_id: str, token: str, max_pages: int = 20) -> li
     raise ValueError("La verificació Instagram ha quedat incompleta; no es reenvia res.")
 
 
-def matching_media(media: list[dict], post_url: str) -> list[dict]:
+def matching_media(media: list[dict], post_url: str, source_name: str | None = None) -> list[dict]:
     """Match the exact stable article link, never a shared title or URL prefix."""
     if not post_url or not post_url.startswith("https://"):
         raise ValueError("Falta l'enllaç únic de la notícia per verificar Instagram.")
     pattern = re.compile(r"(?<!\S)" + re.escape(post_url) + r"(?=$|\s)")
     return [item for item in media if item.get("id")
-            and pattern.search(str(item.get("caption") or ""))]
+            and pattern.search(str(item.get("caption") or ""))
+            and (source_name is None or f"Font: {source_name}" in
+                 str(item.get("caption") or "").splitlines())]
