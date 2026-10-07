@@ -4294,9 +4294,19 @@
       "recorded_at": "2026-10-07T06:30:10.726622+00:00",
       "error": "Pausa temporal de Meta fins a 2026-10-07T08:30:10.726593+00:00. Reintent automàtic pendent.",
       "retry_requested": true
+    },
+    {
+      "post_id": "soller-ara-c25effa43953af00",
+      "platform": "instagram",
+      "status": "deferred",
+      "remote_id": "",
+      "post_url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-c25effa43953af00.html",
+      "recorded_at": "2026-10-07T09:25:26.270276+00:00",
+      "error": "Pausa temporal de Meta fins a 2026-10-07T11:25:26.270246+00:00. Reintent automàtic pendent.",
+      "retry_requested": true
     }
   ],
   "cooldowns": {
-    "instagram_until": "2026-10-07T08:30:10.726593+00:00"
+    "instagram_until": "2026-10-07T11:25:26.270246+00:00"
   }
 }
