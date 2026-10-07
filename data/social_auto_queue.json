@@ -1,25 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-06T17:21:10.492164+00:00",
-  "entries": [
-    {
-      "post_id": "3089fb6afdf4a1887095",
-      "title": "La Vila retirarà vegetació a quatre torrents de la vall",
-      "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
-      "source_type": "media",
-      "category": "politics",
-      "language": "ca",
-      "published_at": "2026-10-06T14:05:29+00:00",
-      "original_url": "https://saveu.cat/noticies/la-vila-retirara-vegetacio-a-quatre-torrents-de-la-vall/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook"
-      ],
-      "image_url": ""
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
