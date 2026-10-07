@@ -81,6 +81,16 @@
             detail += ` <a href="${esc(url.href)}" target="_blank" rel="noopener noreferrer">Ver publicación</a>`;
           }
         } catch (_) {}
+      } else if (["publishing", "verification_required"].includes(last.status)) {
+        status = "PENDIENTE DE CONFIRMACIÓN";
+        kind = "pending";
+        detail += `<br>Se comprueba si Instagram recibió el envío para evitar una publicación duplicada. Último intento: ${esc(when)}.`;
+      } else if (last.status === "deferred") {
+        status = "PENDIENTE";
+        kind = "pending";
+        detail += last.stage === "verify"
+          ? "<br>La comprobación de las publicaciones existentes está temporalmente pendiente."
+          : "<br>Envío aplazado por Meta; se reintentará cuando termine la pausa.";
       } else {
         status = "ERROR";
         kind = "bad";

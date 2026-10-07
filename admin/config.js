@@ -1,5 +1,5 @@
 window.SOLLER_ARA_ADMIN_API = "https://soller-ara-admin.infosollerara.workers.dev";
-window.SOLLER_ARA_ADMIN_VERSION = "0.93";
+window.SOLLER_ARA_ADMIN_VERSION = "0.93.2";
 
 window.addEventListener("DOMContentLoaded", () => {
   const version = document.getElementById("adminVersion");
@@ -9,7 +9,7 @@ window.addEventListener("DOMContentLoaded", () => {
     "./sources-v2.js?v=0.93",
     "./activity-v1.js?v=0.69",
     "./visits-v1.js?v=0.69",
-    "./social-auto-v1.js?v=0.93",
+    "./social-auto-v1.js?v=0.93.2",
   ].forEach((src) => {
     const script = document.createElement("script");
     script.src = src;

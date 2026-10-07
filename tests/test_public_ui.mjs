@@ -82,11 +82,17 @@ vm.runInContext(admin.slice(admin.indexOf('  function manualInstagramStatus('),a
 run('statusPayload={socialLog:{entries:[{post_id:"manual",platform:"instagram",status:"deferred",retry_requested:true}]}}');
 c.post={id:'manual'};
 assert.ok(run('manualInstagramStatus(post)').includes('reintento automático'));
+run('statusPayload.socialLog.entries.push({post_id:"manual",platform:"instagram",status:"publishing"})');
+assert.ok(run('manualInstagramStatus(post)').includes('pendiente de confirmación'));
+run('statusPayload.socialLog.entries.push({post_id:"manual",platform:"instagram",status:"error"})');
+assert.ok(run('manualInstagramStatus(post)').includes('pendiente de confirmación'));
+run('statusPayload.socialLog.entries.push({post_id:"manual",platform:"instagram",status:"verification_required"})');
+assert.ok(run('manualInstagramStatus(post)').includes('evitar un envío duplicado'));
 run('statusPayload.socialLog.entries.push({post_id:"manual",platform:"instagram",status:"success"})');
 assert.equal(run('manualInstagramStatus(post)'),'Instagram: publicado');
 run('statusPayload.socialLog.entries.push({post_id:"manual",platform:"instagram",status:"error"})');
 assert.equal(run('manualInstagramStatus(post)'),'Instagram: publicado');
-console.log('PASS: manual Instagram links show pending retries and preserve confirmed success.');
+console.log('PASS: manual Instagram links distinguish pending verification, avoid offering blind retries and preserve confirmed success.');
 
 vm.runInContext(auto.slice(auto.indexOf('  function isAlreadySent('),auto.indexOf('  function nextPreview(')),c);
 c.state={posts:[{id:'new-title',source_id:'source',url:'https://example.test/same-article'}],

@@ -237,11 +237,14 @@
     }
 
     for (const [platform, entry] of Object.entries(latestByPlatform)) {
+      const pending = ["deferred", "publishing", "verification_required"].includes(entry.status);
+      const labels = {success: "PUBLICADO", error: "ERROR", deferred: "APLAZADO",
+        publishing: "COMPROBANDO", verification_required: "PENDIENTE DE CONFIRMACIÓN"};
       blocks.push(`
         <div class="status-line">
           <div><strong>Última publicación ${escapeHtml(platform)}</strong><br />
           <small>${escapeHtml(formatDate(entry.recorded_at))}</small></div>
-          <span class="${entry.status === "success" ? "ok" : "bad"}">${escapeHtml(entry.status || "")}</span>
+          <span class="${entry.status === "success" ? "ok" : pending ? "pending" : "bad"}">${escapeHtml(labels[entry.status] || entry.status || "")}</span>
         </div>
       `);
     }
@@ -331,7 +334,11 @@
     const entries = (statusPayload?.socialLog?.entries || [])
       .filter((entry) => entry.post_id === post.id && entry.platform === "instagram");
     if (entries.some((entry) => entry.status === "success")) return "Instagram: publicado";
+    if (entries.some((entry) => ["publishing", "verification_required"].includes(entry.status))) {
+      return "Instagram: pendiente de confirmación · se comprueba la cuenta para evitar un envío duplicado";
+    }
     const latest = entries.at(-1);
+    if (latest?.status === "deferred" && latest.stage === "verify") return "Instagram: pendiente · comprobación temporalmente no disponible";
     if (latest?.status === "deferred" && latest.retry_requested) return "Instagram: pendiente · reintento automático cuando termine la pausa de Meta";
     if (latest?.status === "error") return "Instagram: error de envío · revisar";
     if (latest?.status === "deferred") return "Instagram: envío aplazado";
