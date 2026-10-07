@@ -4558,6 +4558,20 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-07T14:19:46.324578+00:00",
       "error": ""
+    },
+    {
+      "post_id": "a02d2b9c98e85fd709b5",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122120554863467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122120554863467310",
+      "title": "El MUCBO rep la donació de la pell d’un vell marí",
+      "post_url": "https://saveu.cat/noticies/el-mucbo-rep-la-donacio-de-la-pell-dun-vell-mari/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-07T14:25:50.992876+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
