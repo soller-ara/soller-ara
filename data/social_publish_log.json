@@ -4304,6 +4304,20 @@
       "recorded_at": "2026-10-07T09:25:26.270276+00:00",
       "error": "Pausa temporal de Meta fins a 2026-10-07T11:25:26.270246+00:00. Reintent automàtic pendent.",
       "retry_requested": true
+    },
+    {
+      "post_id": "4aabbfab6ea446fa3f54",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122120470017467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122120470017467310",
+      "title": "Aviso. Nivel amarillo. Costeros. Sierra Tramontana",
+      "post_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261007093555_AFAZ645401COCO0910.xml",
+      "source": "AEMET · Serra de Tramuntana",
+      "source_id": "aemet-avisos-mallorca",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-07T10:25:06.147907+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
