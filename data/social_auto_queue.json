@@ -1,6 +1,43 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-10-07T19:23:58.821653+00:00",
+  "entries": [
+    {
+      "post_id": "d4fd83d94e27d3f8ea6e",
+      "title": "Una dotzena de restaurants arranquen les Jornades dels Bolets",
+      "summary": "",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-10-07T13:59:23+00:00",
+      "original_url": "https://saveu.cat/noticies/una-dotzena-de-restaurants-arranquen-les-jornades-dels-bolets/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/d4fd83d94e27d3f8ea6e.jpg"
+    },
+    {
+      "post_id": "741cf2996a72709b6a2e",
+      "title": "La VII edició de les Jornades Gastronòmiques del Bolet arriba a Sóller amb 12 restaurants participants",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-10-07T15:28:00+02:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/10/07/354627/vii-edicio-les-jornades-gastronomiques-del-bolet-arriba-soller-amb-restaurants-participants.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/741cf2996a72709b6a2e.jpg"
+    }
+  ]
 }
