@@ -524,7 +524,7 @@
       post.category === expected.category && post.language === expected.language &&
       (post.show_in_now !== false) === Boolean(expected.show_in_now) &&
       (post.original_url || "") === (expected.original_url || "") &&
-      (!expected.source_name || post.source === expected.source_name) &&
+      post.source === (expected.original_url ? expected.source_name || "Publicació de xarxa" : "Sóller Ara") &&
       (!expected.image_url || post.media_url === expected.image_url) &&
       (!expected.content_type || post.content_type === expected.content_type));
   }

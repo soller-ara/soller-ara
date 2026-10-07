@@ -92,6 +92,12 @@ class PublicationLifecycleTests(unittest.TestCase):
         self.assertEqual(post['media_url'], 'https://example.test/cartell.jpg')
         self.card.assert_not_called()
 
+    def test_new_detail_page_uses_the_current_brand_asset(self):
+        post = self.create()
+        html = (self.root/'noticies'/f'{post["id"]}.html').read_text()
+        self.assertIn('../assets/brand/logo-soller-ara-web.png', html)
+        self.assertNotIn('class="brand-mark" aria-hidden="true">SA', html)
+
     def test_edit_regenerates_card_and_clears_old_category_override(self):
         post = self.create()
         self.write(edit.MODERATION_FILE, {'hidden_post_ids':[], 'category_overrides':{post['id']:'sports','other':'culture'}})

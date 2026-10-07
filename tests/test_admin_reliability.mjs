@@ -54,13 +54,13 @@ function scenario({healthDelay = false, healthError = false, readFails = false, 
         dispatches++;
         const payload = JSON.parse(options.body);
         state.posts.posts = [{...payload, id: payload.post_id || 'saved', source_type: 'own',
-          summary: payload.body, source: payload.source_name}];
+          summary: payload.body, source: payload.original_url ? payload.source_name || 'Publicació de xarxa' : 'Sóller Ara'}];
       }
       return {ok: true, status: 200, json: async () => structuredClone(state)};
     },
   });
   vm.runInContext(source.replace(/\}\)\(\);\s*$/, `
-    window.test = {startEdit, startSocialLinkEdit, waitForModeration, loadStatus, renderPosts,
+    window.test = {startEdit, startSocialLinkEdit, waitForModeration, loadStatus, renderPosts, ownPostMatches,
       getState() {return statusPayload;}, setState(value) {statusPayload = value;}};
   })();`), context);
   context.window.test.setState(structuredClone(state));
@@ -96,6 +96,11 @@ s = scenario({storedPost: saved});
 s.context.window.test.startSocialLinkEdit('saved');
 await s.submit('socialLinkForm');
 assert.match(s.getNode('socialLinkMessage').textContent, /actualizado correctamente/);
+
+// Clearing a source label must not match its old value before the backend has saved it.
+const expected = {...saved, title:saved.title, body:saved.summary, source_name:'', show_in_now:true};
+assert.equal(s.context.window.test.ownPostMatches(saved, expected), false);
+assert.equal(s.context.window.test.ownPostMatches({...saved,source:'Publicació de xarxa'}, expected), true);
 
 s = scenario({storedPost: {...saved, original_url: '', content_type: 'own'}});
 s.context.window.test.startEdit('saved');

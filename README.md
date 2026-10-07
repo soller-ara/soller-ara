@@ -4,7 +4,16 @@ Projecte públic i sense ànim de lucre per reunir informació local de Sóller 
 
 ## Versió
 
-**v0.68**
+Les versions corresponen a components diferents:
+
+| Component | Versió |
+| --- | --- |
+| Administració | **0.93** |
+| Portada pública | 0.89 |
+| Worker de Cloudflare | 0.71 |
+| Recopilador | 0.61 |
+
+La revisió de fiabilitat, els errors corregits, les proves i l'estat de les fonts estan documentats a [REVISION-2026-10-07.md](docs/REVISION-2026-10-07.md).
 
 ## Publicacions pròpies i enllaç directe a xarxes
 
@@ -12,8 +21,8 @@ Projecte públic i sense ànim de lucre per reunir informació local de Sóller 
 - Aquesta pàgina inclou metadades Open Graph perquè Facebook pugui mostrar una previsualització amb el titular i la imatge.
 - Facebook publica l'entrada amb l'enllaç directe a la notícia individual, no a la portada.
 - Instagram rep la mateixa URL dins el text de la publicació. La capacitat que aquest URL sigui clicable depèn de les funcions disponibles al compte d'Instagram; Meta està provant enllaços clicables en captions per a determinats comptes Meta Verified.
-- Fins que s'instal·li el token nou a GitHub, els selectors de Facebook i Instagram queden desactivats per defecte al workflow manual.
-- Després de substituir `META_ACCESS_TOKEN`, cal executar primer les comprovacions de lectura/publicació abans d'activar la distribució simultània com a flux habitual.
+- Facebook i Instagram estan desmarcats per defecte al workflow manual: només s'envia als destins seleccionats expressament.
+- La distribució automàtica segueix la configuració de `social_distribution.json` i el registre conserva els enviaments confirmats i els reintents pendents d'Instagram.
 
 ### Enllaç estable per Instagram
 
