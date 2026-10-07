@@ -4492,9 +4492,75 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-07T12:31:10.841774+00:00",
       "error": ""
+    },
+    {
+      "post_id": "soller-ara-a6fef3d366509b00",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "post_url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-a6fef3d366509b00.html",
+      "recorded_at": "2026-10-07T14:19:30.690664+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18116751061905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "soller-ara-a6fef3d366509b00",
+      "platform": "instagram",
+      "status": "verification_required",
+      "remote_id": "",
+      "post_url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-a6fef3d366509b00.html",
+      "recorded_at": "2026-10-07T14:19:32.910743+00:00",
+      "error": "Application request limit reached [code=4, subcode=2207051]",
+      "retry_requested": true,
+      "stage": "media_publish",
+      "container_id": "18116751061905740"
+    },
+    {
+      "post_id": "d4fd83d94e27d3f8ea6e",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122120553459467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122120553459467310",
+      "title": "Una dotzena de restaurants arranquen les Jornades dels Bolets",
+      "post_url": "https://saveu.cat/noticies/una-dotzena-de-restaurants-arranquen-les-jornades-dels-bolets/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-07T14:19:39.937404+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "741cf2996a72709b6a2e",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122120553471467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122120553471467310",
+      "title": "La VII edició de les Jornades Gastronòmiques del Bolet arriba a Sóller amb 12 restaurants participants",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/07/354627/vii-edicio-les-jornades-gastronomiques-del-bolet-arriba-soller-amb-restaurants-participants.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-07T14:19:42.895289+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "85583b91f1810ed1e333",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122120553513467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122120553513467310",
+      "title": "IB3N | Denúncia davant la Fiscalia per una presumpta contaminació del torrent de Solleric",
+      "post_url": "https://ib3.org/denuncia-davant-la-fiscalia-per-una-presumpta-contaminacio-del-torrent-de-solleric",
+      "source": "IB3 Notícies",
+      "source_id": "ib3-noticies-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-07T14:19:46.324578+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
-    "instagram_until": "2026-10-07T13:30:12.203164+00:00"
+    "instagram_until": "2026-10-07T16:19:32.910711+00:00"
   }
 }
