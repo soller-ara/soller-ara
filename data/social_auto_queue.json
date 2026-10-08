@@ -1,25 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-08T08:26:48.164842+00:00",
-  "entries": [
-    {
-      "post_id": "81b55b5df8eb9d2c71b9",
-      "title": "Cierra Can Tambora, historia de Sóller y el Port desde hace casi dos siglos",
-      "summary": "",
-      "source": "Última Hora",
-      "source_id": "ultima-hora-soller",
-      "source_type": "media",
-      "category": "commerce",
-      "language": "es",
-      "published_at": "2026-10-08T04:48:01+02:00",
-      "original_url": "https://www.ultimahora.es/noticias/part-forana/2026/10/08/2724399/cierra-can-tambora-historia-soller-port-desde-hace-casi-dos-siglos.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/81b55b5df8eb9d2c71b9.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
