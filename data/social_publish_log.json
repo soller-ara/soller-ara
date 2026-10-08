@@ -4677,6 +4677,20 @@
       "retry_requested": true,
       "stage": "media_publish",
       "container_id": "18116881831905740"
+    },
+    {
+      "post_id": "d88bc2ee55d9b99c2d72",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122120853333467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122120853333467310",
+      "title": "Vivienda, buses saturados y exceso de tráfico, las principales preocupaciones de los sollerics",
+      "post_url": "https://www.ultimahora.es/noticias/part-forana/2026/10/08/2724531/vivienda-buses-saturados-exceso-trafico-principales-preocupaciones-sollerics.html",
+      "source": "Última Hora",
+      "source_id": "ultima-hora-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-08T04:24:04.623026+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
