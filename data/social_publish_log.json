@@ -4790,9 +4790,52 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-08T10:26:24.522906+00:00",
       "error": ""
+    },
+    {
+      "post_id": "soller-ara-aa0cd8ea9123f270",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18126323713856758",
+      "post_url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-aa0cd8ea9123f270.html",
+      "recorded_at": "2026-10-08T11:24:40.791614+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "77c9e8ad06c8ac755370",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Cas Manyo canvia el trispol de terra per un nou empedrat",
+      "post_url": "https://saveu.cat/noticies/cas-manyo-canvia-el-trispol-de-terra-per-un-nou-empedrat/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-08T11:24:53.490408+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18116948755905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "77c9e8ad06c8ac755370",
+      "platform": "instagram",
+      "status": "verification_required",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Cas Manyo canvia el trispol de terra per un nou empedrat",
+      "post_url": "https://saveu.cat/noticies/cas-manyo-canvia-el-trispol-de-terra-per-un-nou-empedrat/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-08T11:24:55.784028+00:00",
+      "error": "Application request limit reached [code=4, subcode=2207051]",
+      "retry_requested": true,
+      "stage": "media_publish",
+      "container_id": "18116948755905740"
     }
   ],
   "cooldowns": {
-    "instagram_until": "2026-10-08T10:58:18.645352+00:00"
+    "instagram_until": "2026-10-08T13:24:55.781387+00:00"
   }
 }
