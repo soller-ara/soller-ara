@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "756cefe1c2e3efbd",
+      "timestamp": "2026-10-08T08:57:46.312338+00:00",
+      "action": "publish",
+      "area": "publications",
+      "target_id": "soller-ara-aa0cd8ea9123f270",
+      "title": "Gran Bunyolada a Fornalutx: Tradició i solidaritat per a l'AFA",
+      "detail": "Publicación propia creada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "193a51a53a122327",
       "timestamp": "2026-10-08T06:11:17.130975+00:00",
       "action": "publish",

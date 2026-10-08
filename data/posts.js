@@ -444,10 +444,31 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 174,
+  "post_count": 175,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "soller-ara-aa0cd8ea9123f270",
+      "category": "agenda",
+      "source_id": "manual-aded7195ac4f",
+      "source": "Ajuntament de Fornalutx",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-08T08:57:46.204307+00:00",
+      "show_in_now": true,
+      "content_type": "social_link",
+      "title": "Gran Bunyolada a Fornalutx: Tradició i solidaritat per a l'AFA",
+      "summary": "El pròxim divendres 23 d'octubre a les 17:00 h, la plaça acollirà aquesta cita solidària amb bunyols i xocolata a benefici de l'escola.",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-aa0cd8ea9123f270.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": true,
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1422476160015853&id=100067604481291&hpir=1",
+      "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-aa0cd8ea9123f270.jpg",
+      "media_type": "image"
+    },
     {
       "id": "soller-ara-90f3d68f8eb3b792",
       "category": "alerts",
@@ -4014,5 +4035,5 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "sources_checked_at": "2026-10-08T08:26:48.024443+00:00",
-  "fetched_at": "2026-10-08T08:26:48.024443+00:00"
+  "fetched_at": "2026-10-08T08:57:46.248761+00:00"
 };
