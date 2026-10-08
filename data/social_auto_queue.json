@@ -1,6 +1,43 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-10-08T15:25:02.249607+00:00",
+  "entries": [
+    {
+      "post_id": "20ea5c5be822d457ec21",
+      "title": "El camí de Cas Jurat tornarà a obrir al trànsit",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "services",
+      "language": "ca",
+      "published_at": "2026-10-08T17:14:00+02:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/10/08/354629/cami-cas-jurat-tornara-obrir-transit.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook"
+      ],
+      "image_url": ""
+    },
+    {
+      "post_id": "c9b610b15cc305930ff2",
+      "title": "El camí de Cas Jurat es tornarà obrir al trànsit",
+      "summary": "",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "source_type": "media",
+      "category": "services",
+      "language": "ca",
+      "published_at": "2026-10-08T15:00:00+00:00",
+      "original_url": "https://saveu.cat/noticies/el-cami-de-cas-jurat-es-tornara-obrir-al-transit/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook"
+      ],
+      "image_url": ""
+    }
+  ]
 }
