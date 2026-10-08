@@ -4629,9 +4629,57 @@
       "retry_requested": true,
       "stage": "media_publish",
       "container_id": "18116784520905740"
+    },
+    {
+      "post_id": "81b55b5df8eb9d2c71b9",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122120826921467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122120826921467310",
+      "title": "Cierra Can Tambora, historia de Sóller y el Port desde hace casi dos siglos",
+      "post_url": "https://www.ultimahora.es/noticias/part-forana/2026/10/08/2724399/cierra-can-tambora-historia-soller-port-desde-hace-casi-dos-siglos.html",
+      "source": "Última Hora",
+      "source_id": "ultima-hora-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-08T03:23:48.765063+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "81b55b5df8eb9d2c71b9",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Cierra Can Tambora, historia de Sóller y el Port desde hace casi dos siglos",
+      "post_url": "https://www.ultimahora.es/noticias/part-forana/2026/10/08/2724399/cierra-can-tambora-historia-soller-port-desde-hace-casi-dos-siglos.html",
+      "source": "Última Hora",
+      "source_id": "ultima-hora-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-08T03:24:00.956127+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18116881831905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "81b55b5df8eb9d2c71b9",
+      "platform": "instagram",
+      "status": "verification_required",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Cierra Can Tambora, historia de Sóller y el Port desde hace casi dos siglos",
+      "post_url": "https://www.ultimahora.es/noticias/part-forana/2026/10/08/2724399/cierra-can-tambora-historia-soller-port-desde-hace-casi-dos-siglos.html",
+      "source": "Última Hora",
+      "source_id": "ultima-hora-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-08T03:24:03.684000+00:00",
+      "error": "Application request limit reached [code=4, subcode=2207051]",
+      "retry_requested": true,
+      "stage": "media_publish",
+      "container_id": "18116881831905740"
     }
   ],
   "cooldowns": {
-    "instagram_until": "2026-10-07T18:28:04.829681+00:00"
+    "instagram_until": "2026-10-08T05:24:03.681364+00:00"
   }
 }
