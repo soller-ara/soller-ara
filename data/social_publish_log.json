@@ -4715,6 +4715,29 @@
       "retry_requested": true,
       "stage": "media_publish",
       "container_id": "18116902852905740"
+    },
+    {
+      "post_id": "soller-ara-90f3d68f8eb3b792",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18129206830694827",
+      "post_url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-90f3d68f8eb3b792.html",
+      "recorded_at": "2026-10-08T08:27:03.177385+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "81b55b5df8eb9d2c71b9",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "17996191103835208",
+      "remote_url": "https://www.instagram.com/p/DeN9epTl3L9/",
+      "title": "Cierra Can Tambora, historia de Sóller y el Port desde hace casi dos siglos",
+      "post_url": "https://www.ultimahora.es/noticias/part-forana/2026/10/08/2724399/cierra-can-tambora-historia-soller-port-desde-hace-casi-dos-siglos.html",
+      "source": "Última Hora",
+      "source_id": "ultima-hora-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-08T08:27:06.667791+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
