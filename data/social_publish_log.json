@@ -4957,9 +4957,57 @@
       "retry_requested": true,
       "stage": "media_publish",
       "container_id": "18117012715905740"
+    },
+    {
+      "post_id": "20ea5c5be822d457ec21",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18088364624694926",
+      "remote_url": "https://www.instagram.com/p/DePXFmemNPf/",
+      "title": "El camí de Cas Jurat tornarà a obrir al trànsit",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/08/354629/cami-cas-jurat-tornara-obrir-transit.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-08T19:23:44.432217+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "c9b610b15cc305930ff2",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "El camí de Cas Jurat es tornarà obrir al trànsit",
+      "post_url": "https://saveu.cat/noticies/el-cami-de-cas-jurat-es-tornara-obrir-al-transit/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-08T19:23:57.986875+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18117054055905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "c9b610b15cc305930ff2",
+      "platform": "instagram",
+      "status": "verification_required",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "El camí de Cas Jurat es tornarà obrir al trànsit",
+      "post_url": "https://saveu.cat/noticies/el-cami-de-cas-jurat-es-tornara-obrir-al-transit/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-08T19:24:02.098077+00:00",
+      "error": "Application request limit reached [code=4, subcode=2207051]",
+      "retry_requested": true,
+      "stage": "media_publish",
+      "container_id": "18117054055905740"
     }
   ],
   "cooldowns": {
-    "instagram_until": "2026-10-08T18:27:05.725705+00:00"
+    "instagram_until": "2026-10-08T21:24:02.055537+00:00"
   }
 }
