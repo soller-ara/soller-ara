@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "193a51a53a122327",
+      "timestamp": "2026-10-08T06:11:17.130975+00:00",
+      "action": "publish",
+      "area": "publications",
+      "target_id": "soller-ara-90f3d68f8eb3b792",
+      "title": "Situació actual del trànsit local.",
+      "detail": "Publicación propia creada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "2aac545334417597",
       "timestamp": "2026-10-07T11:48:33.317778+00:00",
       "action": "publish",
