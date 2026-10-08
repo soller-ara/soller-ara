@@ -4847,9 +4847,57 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-08T12:31:09.867803+00:00",
       "error": ""
+    },
+    {
+      "post_id": "77c9e8ad06c8ac755370",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18098267969415940",
+      "remote_url": "https://www.instagram.com/p/DeO0gxYjIzF/",
+      "title": "Cas Manyo canvia el trispol de terra per un nou empedrat",
+      "post_url": "https://saveu.cat/noticies/cas-manyo-canvia-el-trispol-de-terra-per-un-nou-empedrat/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-08T13:28:04.322411+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "9ce70a28dbb2aea838bb",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Aviso. Nivel amarillo. Costeros. Sierra Tramontana",
+      "post_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261008091924_AFAZ645401COCO0908.xml",
+      "source": "AEMET · Serra de Tramuntana",
+      "source_id": "aemet-avisos-mallorca",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-08T13:28:20.355747+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18116973394905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "9ce70a28dbb2aea838bb",
+      "platform": "instagram",
+      "status": "verification_required",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Aviso. Nivel amarillo. Costeros. Sierra Tramontana",
+      "post_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261008091924_AFAZ645401COCO0908.xml",
+      "source": "AEMET · Serra de Tramuntana",
+      "source_id": "aemet-avisos-mallorca",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-08T13:28:22.715142+00:00",
+      "error": "Application request limit reached [code=4, subcode=2207051]",
+      "retry_requested": true,
+      "stage": "media_publish",
+      "container_id": "18116973394905740"
     }
   ],
   "cooldowns": {
-    "instagram_until": "2026-10-08T13:24:55.781387+00:00"
+    "instagram_until": "2026-10-08T15:28:22.712163+00:00"
   }
 }
