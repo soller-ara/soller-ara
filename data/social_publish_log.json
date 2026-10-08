@@ -4833,6 +4833,20 @@
       "retry_requested": true,
       "stage": "media_publish",
       "container_id": "18116948755905740"
+    },
+    {
+      "post_id": "6419298bcfd89150482d",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122121020529467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122121020529467310",
+      "title": "L’Horta també tendrà zones verdes d’aparcament",
+      "post_url": "https://saveu.cat/noticies/lhorta-tambe-tendra-zones-verdes-daparcament/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-08T12:31:09.867803+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
