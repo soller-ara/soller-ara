@@ -5399,6 +5399,20 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-09T15:23:30.027113+00:00",
       "error": ""
+    },
+    {
+      "post_id": "de71bbf91c4ba9200fcc",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122121522681467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122121522681467310",
+      "title": "Traffic chaos at Soller tunnel as queues build up on road into town",
+      "post_url": "https://www.majorcadailybulletin.com/news/local/2026/10/09/146471/long-queues-soller-tunnel-entrance-roundabout-cause-traffic-jams.html",
+      "source": "Majorca Daily Bulletin · Sóller",
+      "source_id": "majorca-daily-bulletin-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-09T16:12:18.395910+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
