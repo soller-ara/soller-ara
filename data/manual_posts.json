@@ -880,6 +880,25 @@
       "original_url": "https://www.facebook.com/story.php?story_fbid=1422476160015853&id=100067604481291&hpir=1",
       "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-aa0cd8ea9123f270.jpg",
       "media_type": "image"
+    },
+    {
+      "id": "soller-ara-f669e5615cbf4a45",
+      "category": "politics",
+      "source_id": "manual-76948c3843fb",
+      "source": "Mes per Sóller",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-09T08:16:08.343280+00:00",
+      "show_in_now": true,
+      "content_type": "social_link",
+      "title": "",
+      "summary": "",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-f669e5615cbf4a45.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": false,
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1556772066484687&id=100064557255473&hpir=1"
     }
   ]
 }

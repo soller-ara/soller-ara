@@ -444,10 +444,29 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 175,
+  "post_count": 176,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "soller-ara-f669e5615cbf4a45",
+      "category": "politics",
+      "source_id": "manual-76948c3843fb",
+      "source": "Mes per Sóller",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-09T08:16:08.343280+00:00",
+      "show_in_now": true,
+      "content_type": "social_link",
+      "title": "",
+      "summary": "",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-f669e5615cbf4a45.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": false,
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1556772066484687&id=100064557255473&hpir=1"
+    },
     {
       "id": "c4301d87ef3c188f339c",
       "category": "sports",
@@ -4040,5 +4059,5 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "sources_checked_at": "2026-10-09T07:24:35.837353+00:00",
-  "fetched_at": "2026-10-09T07:24:35.837353+00:00"
+  "fetched_at": "2026-10-09T08:16:08.348262+00:00"
 };
