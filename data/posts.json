@@ -495,7 +495,7 @@
     },
     {
       "id": "e5b9ccb39c8933a425da",
-      "category": "services",
+      "category": "news",
       "source_id": "setmanari-soller",
       "source": "Setmanari Sóller",
       "source_type": "media",
@@ -4063,5 +4063,5 @@
     }
   ],
   "sources_checked_at": "2026-10-09T09:26:06.032946+00:00",
-  "fetched_at": "2026-10-09T09:45:03.074865+00:00"
+  "fetched_at": "2026-10-09T09:45:47.842460+00:00"
 }

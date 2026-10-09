@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "ab7fa164e4e48f7c",
+      "timestamp": "2026-10-09T09:45:47.939238+00:00",
+      "action": "reclassify",
+      "area": "moderation",
+      "target_id": "e5b9ccb39c8933a425da",
+      "title": "Habitatge, mobilitat i turisme, les inquietuds del Moviment Jove de Sóller",
+      "detail": "Acción de moderación completada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "dc975fc9cf9e8cfd",
       "timestamp": "2026-10-09T09:45:03.159641+00:00",
       "action": "reclassify",
