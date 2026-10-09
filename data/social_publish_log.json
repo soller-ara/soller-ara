@@ -5337,6 +5337,20 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-09T12:28:16.746429+00:00",
       "error": ""
+    },
+    {
+      "post_id": "e822519c0bec85d637c6",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122121472503467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122121472503467310",
+      "title": "El MUCBO estrena audioguia",
+      "post_url": "https://mucbo.org/el-mucbo-estrena-audioguia/",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-09T13:26:42.592859+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
