@@ -1,21 +1,21 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-09T12:27:47.187521+00:00",
+  "generated_at": "2026-10-09T13:26:13.732927+00:00",
   "entries": [
     {
-      "post_id": "5ca5eec0af858e9e6521",
-      "title": "Arranca a Sóller la setena edició de les Jornades Gastronòmiques dels Bolets",
+      "post_id": "e822519c0bec85d637c6",
+      "title": "El MUCBO estrena audioguia",
       "summary": "",
-      "source": "Fora Vila",
-      "source_id": "fora-vila-soller",
-      "source_type": "media",
-      "category": "news",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "source_type": "institution",
+      "category": "culture",
       "language": "ca",
-      "published_at": "2026-10-09T11:23:23+00:00",
-      "original_url": "https://www.foravila.net/area/serra-de-tramuntana/arranca-a-soller-la-setena-edicio-de-les-jornades-gastronomiques-dels-bolets/",
+      "published_at": "2026-10-09T13:11:01+00:00",
+      "original_url": "https://mucbo.org/el-mucbo-estrena-audioguia/",
       "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
+      "rights_status": "link_only_no_media_license",
       "platforms": [
         "facebook"
       ],
