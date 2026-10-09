@@ -1,6 +1,45 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-10-09T07:24:36.002913+00:00",
+  "entries": [
+    {
+      "post_id": "c4301d87ef3c188f339c",
+      "title": "“En l’esport d’elit, tres dies poden ser determinants”",
+      "summary": "",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "source_type": "media",
+      "category": "sports",
+      "language": "ca",
+      "published_at": "2026-10-09T07:18:46+00:00",
+      "original_url": "https://saveu.cat/entrevistes/en-lesport-delit-tres-dies-poden-ser-determinants/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/c4301d87ef3c188f339c.jpg"
+    },
+    {
+      "post_id": "d907f7429bd3d8ea881e",
+      "title": "A Sóller ja no podem anar ni a peu",
+      "summary": "",
+      "source": "MÉS per Sóller",
+      "source_id": "mes-per-soller",
+      "source_type": "political_party",
+      "category": "politics",
+      "language": "ca",
+      "published_at": "2026-10-09T07:08:32+00:00",
+      "original_url": "https://mespersoller.cat/a-soller-ja-no-podem-anar-ni-a-peu/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "official_party_source",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/d907f7429bd3d8ea881e.jpg"
+    }
+  ]
 }
