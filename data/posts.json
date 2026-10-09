@@ -475,7 +475,7 @@
     },
     {
       "id": "e06fc308f372b1e61ab0",
-      "category": "news",
+      "category": "sports",
       "source_id": "setmanari-soller",
       "source": "Setmanari Sóller",
       "source_type": "media",
@@ -4063,5 +4063,5 @@
     }
   ],
   "sources_checked_at": "2026-10-09T09:26:06.032946+00:00",
-  "fetched_at": "2026-10-09T09:26:06.032946+00:00"
+  "fetched_at": "2026-10-09T09:45:03.074865+00:00"
 }

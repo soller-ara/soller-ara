@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "dc975fc9cf9e8cfd",
+      "timestamp": "2026-10-09T09:45:03.159641+00:00",
+      "action": "reclassify",
+      "area": "moderation",
+      "target_id": "e06fc308f372b1e61ab0",
+      "title": "Collera-Sóller (dissabte, 17 h), a la recerca dels punts a un dels camps més complicats de la categoria",
+      "detail": "Acción de moderación completada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "1ff6a06cfdf6a2b7",
       "timestamp": "2026-10-09T08:48:44.076895+00:00",
       "action": "reclassify",
