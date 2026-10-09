@@ -5053,6 +5053,20 @@
       "retry_requested": true,
       "stage": "media_publish",
       "container_id": "18117074608905740"
+    },
+    {
+      "post_id": "d3966bb4e1bbeb991575",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18097485671401166",
+      "remote_url": "https://www.instagram.com/p/DeP_1tdF4lt/",
+      "title": "Més demana una sanció per la penjada de diversos cartells de la correguda de toros de Muro al carrer Torre Picada",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/08/354631/mes-demana-sancio-per-penjada-diversos-cartells-correguda-toros-muro-carrer-torre-picada.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-09T00:36:16.639559+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
