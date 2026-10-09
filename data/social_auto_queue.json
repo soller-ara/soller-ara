@@ -1,61 +1,25 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-09T14:26:12.020222+00:00",
+  "generated_at": "2026-10-09T15:23:10.902441+00:00",
   "entries": [
     {
-      "post_id": "e822519c0bec85d637c6",
-      "title": "El MUCBO estrena audioguia",
-      "summary": "",
-      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
-      "source_id": "mucbo-noticies",
-      "source_type": "institution",
-      "category": "culture",
-      "language": "ca",
-      "published_at": "2026-10-09T13:11:01+00:00",
-      "original_url": "https://mucbo.org/el-mucbo-estrena-audioguia/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "link_only_no_media_license",
-      "platforms": [
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/e822519c0bec85d637c6.jpg"
-    },
-    {
-      "post_id": "016613a34c1e501a7019",
-      "title": "L’avaria d’un camió col·lapsa la circulació de Sóller",
-      "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
-      "source_type": "media",
-      "category": "services",
-      "language": "ca",
-      "published_at": "2026-10-09T12:05:35+00:00",
-      "original_url": "https://saveu.cat/noticies/lavaria-dun-camio-collapsa-la-circulacio-de-soller/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/016613a34c1e501a7019.jpg"
-    },
-    {
-      "post_id": "1d12616c36c5ae68af99",
-      "title": "Un vessament d'oli al carrer obliga a aturar el tramvia i a regular la circulació al centre",
+      "post_id": "e06fc308f372b1e61ab0",
+      "title": "Collera-Sóller (dissabte, 17 h), a la recerca dels punts a un dels camps més complicats de la categoria",
       "summary": "",
       "source": "Setmanari Sóller",
       "source_id": "setmanari-soller",
       "source_type": "media",
-      "category": "services",
+      "category": "sports",
       "language": "ca",
-      "published_at": "2026-10-09T13:27:00+02:00",
-      "original_url": "https://www.elsoller.cat/soller/local/2026/10/09/354649/vessament-oli-carrer-obliga-aturar-tramvia-regular-circulacio-centre.html",
+      "published_at": "2026-10-09T17:00:00+02:00",
+      "original_url": "https://www.elsoller.cat/soller/esports/2026/10/09/354641/collera-soller-dissabte-recerca-dels-punts-dels-camps-mes-complicats-categoria.html",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
-        "instagram"
+        "facebook"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/1d12616c36c5ae68af99.jpg"
+      "image_url": ""
     }
   ]
 }
