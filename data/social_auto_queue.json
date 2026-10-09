@@ -1,8 +1,46 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-09T11:23:18.657988+00:00",
+  "generated_at": "2026-10-09T12:20:59.446912+00:00",
   "entries": [
+    {
+      "post_id": "016613a34c1e501a7019",
+      "title": "L’avaria d’un camió col·lapsa la circulació de Sóller",
+      "summary": "",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "source_type": "media",
+      "category": "services",
+      "language": "ca",
+      "published_at": "2026-10-09T12:05:35+00:00",
+      "original_url": "https://saveu.cat/noticies/lavaria-dun-camio-collapsa-la-circulacio-de-soller/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/016613a34c1e501a7019.jpg"
+    },
+    {
+      "post_id": "1d12616c36c5ae68af99",
+      "title": "Un vessament d'oli al carrer obliga a aturar el tramvia i a regular la circulació al centre",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "services",
+      "language": "ca",
+      "published_at": "2026-10-09T13:27:00+02:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/10/09/354649/vessament-oli-carrer-obliga-aturar-tramvia-regular-circulacio-centre.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/1d12616c36c5ae68af99.jpg"
+    },
     {
       "post_id": "c55916dcc77c6839bc59",
       "title": "Largas colas en los accesos a Sóller con la rotonda de entrada al túnel atascada",
@@ -12,50 +50,14 @@
       "source_type": "media",
       "category": "news",
       "language": "es",
-      "published_at": "2026-10-09T13:03:31+02:00",
+      "published_at": "2026-10-09T13:03:00+02:00",
       "original_url": "https://www.ultimahora.es/noticias/part-forana/2026/10/09/2725795/largas-colas-accesos-soller-rotonda-entrada-tunel-atascada.html",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
-        "facebook"
+        "instagram"
       ],
-      "image_url": ""
-    },
-    {
-      "post_id": "c51b8886ab88ef74f6c5",
-      "title": "El Festival de Bandes Mortes desbloqueja infinitat de records musicals a Teixidores",
-      "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
-      "source_type": "media",
-      "category": "culture",
-      "language": "ca",
-      "published_at": "2026-10-09T12:30:00+02:00",
-      "original_url": "https://www.elsoller.cat/soller/reportatges/2026/10/09/354637/festival-bandes-mortes-desbloqueja-infinitat-records-musicals-teixidores.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook"
-      ],
-      "image_url": ""
-    },
-    {
-      "post_id": "6ecfc98be306a2c93577",
-      "title": "El mal temps enfonsa un veler en aigües del Port de Sóller",
-      "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-10-09T08:27:52+00:00",
-      "original_url": "https://saveu.cat/noticies/el-mal-temps-enfonsa-un-veler-en-aigues-del-port-de-soller/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook"
-      ],
-      "image_url": ""
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/c55916dcc77c6839bc59.jpg"
     }
   ]
 }
