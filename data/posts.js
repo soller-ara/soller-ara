@@ -444,10 +444,29 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 179,
+  "post_count": 180,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "soller-ara-b963d91f59fa03dd",
+      "category": "politics",
+      "source_id": "manual-86471f505308",
+      "source": "Socialistes de Sóller",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-09T11:47:04.467386+00:00",
+      "show_in_now": true,
+      "content_type": "social_link",
+      "title": "",
+      "summary": "",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-b963d91f59fa03dd.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": false,
+      "original_url": "https://www.facebook.com/share/p/1H3fA5sf94/?mibextid=wwXIfr"
+    },
     {
       "id": "soller-ara-28ee2c35dbc85fbc",
       "category": "politics",
@@ -4116,5 +4135,5 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "sources_checked_at": "2026-10-09T11:23:18.589230+00:00",
-  "fetched_at": "2026-10-09T11:45:26.431908+00:00"
+  "fetched_at": "2026-10-09T11:47:04.472532+00:00"
 };
