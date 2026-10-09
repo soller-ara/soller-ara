@@ -1,19 +1,19 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-09T10:24:51.569038+00:00",
+  "generated_at": "2026-10-09T11:23:18.657988+00:00",
   "entries": [
     {
-      "post_id": "7f829fa4fc1cb0c88912",
-      "title": "Una sentència obliga a pagar 27.000 euros a Sóller Recicla",
+      "post_id": "c55916dcc77c6839bc59",
+      "title": "Largas colas en los accesos a Sóller con la rotonda de entrada al túnel atascada",
       "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
+      "source": "Última Hora",
+      "source_id": "ultima-hora-soller",
       "source_type": "media",
-      "category": "commerce",
-      "language": "ca",
-      "published_at": "2026-10-09T10:00:00+00:00",
-      "original_url": "https://saveu.cat/noticies/una-sentencia-obliga-a-pagar-27-000-euros-a-soller-recicla/",
+      "category": "news",
+      "language": "es",
+      "published_at": "2026-10-09T13:03:31+02:00",
+      "original_url": "https://www.ultimahora.es/noticias/part-forana/2026/10/09/2725795/largas-colas-accesos-soller-rotonda-entrada-tunel-atascada.html",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
@@ -22,16 +22,34 @@
       "image_url": ""
     },
     {
-      "post_id": "e5b9ccb39c8933a425da",
-      "title": "Habitatge, mobilitat i turisme, les inquietuds del Moviment Jove de Sóller",
+      "post_id": "c51b8886ab88ef74f6c5",
+      "title": "El Festival de Bandes Mortes desbloqueja infinitat de records musicals a Teixidores",
       "summary": "",
       "source": "Setmanari Sóller",
       "source_id": "setmanari-soller",
       "source_type": "media",
+      "category": "culture",
+      "language": "ca",
+      "published_at": "2026-10-09T12:30:00+02:00",
+      "original_url": "https://www.elsoller.cat/soller/reportatges/2026/10/09/354637/festival-bandes-mortes-desbloqueja-infinitat-records-musicals-teixidores.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook"
+      ],
+      "image_url": ""
+    },
+    {
+      "post_id": "6ecfc98be306a2c93577",
+      "title": "El mal temps enfonsa un veler en aigües del Port de Sóller",
+      "summary": "",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "source_type": "media",
       "category": "news",
       "language": "ca",
-      "published_at": "2026-10-09T10:45:00+02:00",
-      "original_url": "https://www.elsoller.cat/soller/local/2026/10/09/354633/habitatge-mobilitat-turisme-les-inquietuds-del-moviment-jove-soller.html",
+      "published_at": "2026-10-09T08:27:52+00:00",
+      "original_url": "https://saveu.cat/noticies/el-mal-temps-enfonsa-un-veler-en-aigues-del-port-de-soller/",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
