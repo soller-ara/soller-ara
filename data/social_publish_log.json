@@ -5261,9 +5261,71 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-09T11:23:53.938794+00:00",
       "error": ""
+    },
+    {
+      "post_id": "016613a34c1e501a7019",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122121442743467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122121442743467310",
+      "title": "L’avaria d’un camió col·lapsa la circulació de Sóller",
+      "post_url": "https://saveu.cat/noticies/lavaria-dun-camio-collapsa-la-circulacio-de-soller/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-09T12:21:49.945739+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "016613a34c1e501a7019",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "L’avaria d’un camió col·lapsa la circulació de Sóller",
+      "post_url": "https://saveu.cat/noticies/lavaria-dun-camio-collapsa-la-circulacio-de-soller/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-09T12:22:02.487496+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18117191566905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "016613a34c1e501a7019",
+      "platform": "instagram",
+      "status": "verification_required",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "L’avaria d’un camió col·lapsa la circulació de Sóller",
+      "post_url": "https://saveu.cat/noticies/lavaria-dun-camio-collapsa-la-circulacio-de-soller/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-09T12:22:04.264512+00:00",
+      "error": "Application request limit reached [code=4, subcode=2207051]",
+      "retry_requested": true,
+      "stage": "media_publish",
+      "container_id": "18117191566905740"
+    },
+    {
+      "post_id": "1d12616c36c5ae68af99",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122121442809467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122121442809467310",
+      "title": "Un vessament d'oli al carrer obliga a aturar el tramvia i a regular la circulació al centre",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/09/354649/vessament-oli-carrer-obliga-aturar-tramvia-regular-circulacio-centre.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-09T12:22:08.324967+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
-    "instagram_until": "2026-10-09T11:26:40.491766+00:00"
+    "instagram_until": "2026-10-09T14:22:04.261708+00:00"
   }
 }
