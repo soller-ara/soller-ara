@@ -5129,9 +5129,71 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-09T07:25:19.840625+00:00",
       "error": ""
+    },
+    {
+      "post_id": "2e5409d2f7e263c17d0d",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122121387495467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122121387495467310",
+      "title": "«Les Journées són una festa de tot el poble»",
+      "post_url": "https://www.elsoller.cat/soller/societat-i-cultura/2026/10/09/354635/les-journees-son-festa-tot-poble.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-09T09:26:24.530851+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "2e5409d2f7e263c17d0d",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "«Les Journées són una festa de tot el poble»",
+      "post_url": "https://www.elsoller.cat/soller/societat-i-cultura/2026/10/09/354635/les-journees-son-festa-tot-poble.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-09T09:26:37.663545+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18117162901905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "2e5409d2f7e263c17d0d",
+      "platform": "instagram",
+      "status": "verification_required",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "«Les Journées són una festa de tot el poble»",
+      "post_url": "https://www.elsoller.cat/soller/societat-i-cultura/2026/10/09/354635/les-journees-son-festa-tot-poble.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-09T09:26:40.494590+00:00",
+      "error": "Application request limit reached [code=4, subcode=2207051]",
+      "retry_requested": true,
+      "stage": "media_publish",
+      "container_id": "18117162901905740"
+    },
+    {
+      "post_id": "5fee550e8d9fdf625aee",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122121387609467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122121387609467310",
+      "title": "Acaba la campanya de la garrova a la vall amb la recol.lecció de 125 tones de fruit",
+      "post_url": "https://saveu.cat/noticies/acaba-la-campanya-de-lagarrova-a-la-vall-amb-la-recol-leccio-de-125-tones-de-fruit/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-09T09:26:50.531685+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
-    "instagram_until": "2026-10-09T09:25:10.425860+00:00"
+    "instagram_until": "2026-10-09T11:26:40.491766+00:00"
   }
 }
