@@ -5351,9 +5351,43 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-09T13:26:42.592859+00:00",
       "error": ""
+    },
+    {
+      "post_id": "e822519c0bec85d637c6",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "El MUCBO estrena audioguia",
+      "post_url": "https://mucbo.org/el-mucbo-estrena-audioguia/",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-09T14:26:34.251248+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18117215569905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "e822519c0bec85d637c6",
+      "platform": "instagram",
+      "status": "verification_required",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "El MUCBO estrena audioguia",
+      "post_url": "https://mucbo.org/el-mucbo-estrena-audioguia/",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-09T14:26:38.047993+00:00",
+      "error": "Application request limit reached [code=4, subcode=2207051]",
+      "retry_requested": true,
+      "stage": "media_publish",
+      "container_id": "18117215569905740"
     }
   ],
   "cooldowns": {
-    "instagram_until": "2026-10-09T14:22:04.261708+00:00"
+    "instagram_until": "2026-10-09T16:26:38.045062+00:00"
   }
 }
