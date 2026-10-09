@@ -450,8 +450,8 @@ window.SOLLER_ARA_DATA = {
   "posts": [
     {
       "id": "soller-ara-621ba9508d6a5e96",
-      "category": "politics",
-      "source_id": "soller-ara",
+      "category": "agenda",
+      "source_id": "manual-4bf706dacb80",
       "source": "Publicació de xarxa",
       "source_type": "own",
       "language": "ca",
@@ -465,8 +465,7 @@ window.SOLLER_ARA_DATA = {
       "content_policy": "manual_link_reference",
       "rights_status": "no_reuse_reference_only",
       "image_allowed": false,
-      "original_url": "https://www.facebook.com/story.php?story_fbid=1655450116366825&id=100057055586523&hpir=1",
-      "related_sources": []
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1655450116366825&id=100057055586523&hpir=1"
     },
     {
       "id": "soller-ara-f669e5615cbf4a45",
@@ -4058,5 +4057,5 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "sources_checked_at": "2026-10-09T08:25:30.549924+00:00",
-  "fetched_at": "2026-10-09T08:25:30.549924+00:00"
+  "fetched_at": "2026-10-09T08:27:15.985120+00:00"
 };
