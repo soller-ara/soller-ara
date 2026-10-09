@@ -5323,6 +5323,20 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-09T12:22:08.324967+00:00",
       "error": ""
+    },
+    {
+      "post_id": "5ca5eec0af858e9e6521",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122121446955467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122121446955467310",
+      "title": "Arranca a Sóller la setena edició de les Jornades Gastronòmiques dels Bolets",
+      "post_url": "https://www.foravila.net/area/serra-de-tramuntana/arranca-a-soller-la-setena-edicio-de-les-jornades-gastronomiques-dels-bolets/",
+      "source": "Fora Vila",
+      "source_id": "fora-vila-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-09T12:28:16.746429+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
