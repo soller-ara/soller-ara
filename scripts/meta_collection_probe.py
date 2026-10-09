@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 """Prova de recopilació social per Sóller Ara (només lectura).
 
-Comprova dues vies que no depenen de Business Discovery d'un compte concret:
-1) cerca del hashtag #soller;
-2) publicacions on l'Instagram propi @soller.ara està etiquetat.
+Comprova permisos, Business Discovery de les fonts configurades, cerca de
+pàgines públiques de Facebook, el hashtag #soller i etiquetes a @soller.ara.
 
 No publica, modifica ni elimina contingut a Meta.
 """
@@ -12,7 +11,9 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import sys
+from pathlib import Path
 from urllib.error import HTTPError
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
@@ -133,6 +134,86 @@ def probe_tagged(ig_id: str, page_token: str) -> None:
         print(f"ETIQUETES @soller.ara: BLOQUEJAT · {exc}")
 
 
+def probe_permissions() -> None:
+    try:
+        payload = graph("me/permissions")
+        granted = {
+            item.get("permission")
+            for item in payload.get("data") or []
+            if item.get("status") == "granted"
+        }
+        for permission in (
+            "instagram_basic", "pages_read_engagement", "pages_show_list",
+            "instagram_content_publish", "pages_manage_posts",
+        ):
+            status = "CONCEDIT" if permission in granted else "NO CONCEDIT"
+            print(f"PERMÍS {permission}: {status}")
+    except Exception as exc:
+        print(f"PERMISOS: NO VERIFICATS · {exc}")
+
+
+def probe_business_discovery(ig_id: str, page_token: str) -> None:
+    config_path = Path(__file__).resolve().parents[1] / "social_sources.json"
+    config = json.loads(config_path.read_text(encoding="utf-8"))
+    for source in config.get("sources") or []:
+        if str(source.get("platform") or "").casefold() != "instagram":
+            continue
+        username = str(source.get("account") or "").lstrip("@")
+        if not re.fullmatch(r"[A-Za-z0-9._]{1,30}", username):
+            continue
+        credentials = [("sistema", TOKEN)]
+        if page_token != TOKEN:
+            credentials.append(("pàgina", page_token))
+        for label, token in credentials:
+            try:
+                payload = graph(
+                    ig_id,
+                    params={"fields": (
+                        f"business_discovery.username({username})"
+                        "{username,media.limit(1){id,permalink,timestamp}}"
+                    )},
+                    token=token,
+                )
+                business = payload.get("business_discovery")
+                if not isinstance(business, dict):
+                    print(f"BUSINESS_DISCOVERY @{username} [{label}]: SENSE DADES")
+                    break
+                items = (business.get("media") or {}).get("data") or []
+                print(f"BUSINESS_DISCOVERY @{username} [{label}]: OK · {len(items)} publicacions accessibles.")
+                break
+            except Exception as exc:
+                print(f"BUSINESS_DISCOVERY @{username} [{label}]: BLOQUEJAT · {exc}")
+                # Només contrastam el tipus de token quan Meta denega el permís.
+                if "code=10" not in str(exc):
+                    break
+
+
+def probe_facebook_public() -> None:
+    try:
+        payload = graph(
+            "pages/search",
+            params={"q": "Policia Tutor Sóller", "fields": "id,name", "limit": 3},
+        )
+        pages = payload.get("data") or []
+        print(f"FACEBOOK PÀGINES PÚBLIQUES: OK · {len(pages)} resultats accessibles.")
+        candidates = [
+            page for page in pages
+            if "soller" in str(page.get("name") or "").casefold().replace("ó", "o")
+            and "tutor" in str(page.get("name") or "").casefold()
+            and str(page.get("id") or "").isdigit()
+        ]
+        if len(candidates) != 1:
+            print("FACEBOOK POSTS PÚBLICS: NO VERIFICATS · pàgina no identificada de forma única.")
+            return
+        posts = graph(
+            f"{candidates[0]['id']}/posts",
+            params={"fields": "id,created_time,permalink_url", "limit": 1},
+        )
+        print(f"FACEBOOK POSTS PÚBLICS: OK · {len(posts.get('data') or [])} publicacions accessibles.")
+    except Exception as exc:
+        print(f"FACEBOOK PÀGINES/POSTS PÚBLICS: BLOQUEJAT · {exc}")
+
+
 def main() -> int:
     if not TOKEN:
         print("ERROR: falta META_ACCESS_TOKEN", file=sys.stderr)
@@ -141,6 +222,9 @@ def main() -> int:
     try:
         ig_id, username, page_token = discover()
         print(f"OK compte propi detectat: @{username or '?'}")
+        probe_permissions()
+        probe_business_discovery(ig_id, page_token)
+        probe_facebook_public()
         probe_hashtag(ig_id, page_token)
         probe_tagged(ig_id, page_token)
         print("RESULTAT: prova de recopilació completada. No s'ha publicat res.")
