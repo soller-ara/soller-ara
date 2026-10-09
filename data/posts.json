@@ -469,7 +469,7 @@
     },
     {
       "id": "soller-ara-28ee2c35dbc85fbc",
-      "category": "politics",
+      "category": "services",
       "source_id": "manual-4f785079a49c",
       "source": "Som joves",
       "source_type": "own",
@@ -4135,5 +4135,5 @@
     }
   ],
   "sources_checked_at": "2026-10-09T11:23:18.589230+00:00",
-  "fetched_at": "2026-10-09T11:47:04.472532+00:00"
+  "fetched_at": "2026-10-09T11:51:06.786773+00:00"
 }
