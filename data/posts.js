@@ -531,7 +531,7 @@ window.SOLLER_ARA_DATA = {
     },
     {
       "id": "d3966bb4e1bbeb991575",
-      "category": "services",
+      "category": "politics",
       "source_id": "setmanari-soller",
       "source": "Setmanari Sóller",
       "source_type": "media",
@@ -4057,5 +4057,5 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "sources_checked_at": "2026-10-09T08:25:30.549924+00:00",
-  "fetched_at": "2026-10-09T08:27:15.985120+00:00"
+  "fetched_at": "2026-10-09T08:48:44.011882+00:00"
 };

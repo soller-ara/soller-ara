@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "1ff6a06cfdf6a2b7",
+      "timestamp": "2026-10-09T08:48:44.076895+00:00",
+      "action": "reclassify",
+      "area": "moderation",
+      "target_id": "d3966bb4e1bbeb991575",
+      "title": "Més demana una sanció per la penjada de diversos cartells de la correguda de toros de Muro al carrer Torre Picada",
+      "detail": "Acción de moderación completada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "be4bbff9f042d64e",
       "timestamp": "2026-10-09T08:27:16.047076+00:00",
       "action": "edit",
