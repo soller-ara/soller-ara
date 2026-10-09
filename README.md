@@ -15,6 +15,12 @@ Les versions corresponen a components diferents:
 
 La revisió de fiabilitat, els errors corregits, les proves i l'estat de les fonts estan documentats a [REVISION-2026-10-07.md](docs/REVISION-2026-10-07.md).
 
+## Fonts incorporades el 9 d'octubre de 2026
+
+El catàleg passa de 39 a 49 fonts automàtiques: UEP! Mallorca, IES Guillem Colom Casasnoves, Ajuntament de Deià, Mallorcadiario, Fibwi Diario (web i YouTube), GOB (web), elDiario.es Illes Balears, Majorca Daily Bulletin i CEIP Es Puig. La [revisió de fonts](SOURCES_REVIEW.md) documenta els canals, la selecció territorial i les comprovacions.
+
+Es manté la recopilació de cada hora, el màxim de 60 dies i els controls socials vigents. Les fonts generals noves requereixen una referència local al titular original. La biblioteca municipal (Facebook i Instagram) i l'agenda del Consell s'afegeixen com a accessos oficials per a selecció manual.
+
 ## Publicacions pròpies i enllaç directe a xarxes
 
 - Cada publicació pròpia de Sóller Ara genera una pàgina individual a `/noticies/<id>.html`.

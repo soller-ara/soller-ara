@@ -1,5 +1,5 @@
 {
-  "version": 10,
+  "version": 11,
   "enabled": true,
   "platforms": {
     "facebook": true,
@@ -171,6 +171,46 @@
       "instagram": true
     },
     "psib-psoe-soller": {
+      "facebook": true,
+      "instagram": true
+    },
+    "uep-mallorca-soller": {
+      "facebook": true,
+      "instagram": true
+    },
+    "ies-guillem-colom-casasnoves": {
+      "facebook": true,
+      "instagram": true
+    },
+    "ajuntament-deia-noticies": {
+      "facebook": true,
+      "instagram": true
+    },
+    "mallorcadiario-soller": {
+      "facebook": true,
+      "instagram": true
+    },
+    "fibwi-diario-soller": {
+      "facebook": true,
+      "instagram": true
+    },
+    "youtube-fibwi-diario-soller": {
+      "facebook": true,
+      "instagram": true
+    },
+    "gob-mallorca-noticies": {
+      "facebook": true,
+      "instagram": true
+    },
+    "eldiario-balears-soller": {
+      "facebook": true,
+      "instagram": true
+    },
+    "majorca-daily-bulletin-soller": {
+      "facebook": true,
+      "instagram": true
+    },
+    "ceip-es-puig-soller": {
       "facebook": true,
       "instagram": true
     }

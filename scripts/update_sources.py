@@ -341,7 +341,8 @@ def text_of(parent: ET.Element, names: list[str]) -> str:
 
 
 def parse_rss(xml_bytes: bytes, source: dict) -> list[dict]:
-    root = ET.fromstring(xml_bytes)
+    # Alguns feeds de centres educatius anteposen espais a la declaració XML.
+    root = ET.fromstring(xml_bytes.lstrip(b"\xef\xbb\xbf \t\r\n"))
     items: list[dict] = []
 
     item_limit = int(source.get("max_items", MAX_POSTS_PER_SOURCE))
@@ -1046,6 +1047,7 @@ def fetch_html_search(source: dict) -> list[dict]:
 def fetch_html_listing_regex(source: dict) -> list[dict]:
     allowed_host = str(source.get("allowed_host") or urlparse(source["url"]).netloc).removeprefix("www.")
     article_url_regex = str(source.get("article_url_regex") or r".+")
+    strict_publication_date = source.get("strict_publication_date", False)
 
     listing_urls = [source["url"]]
     template = source.get("listing_url_template")
@@ -1112,7 +1114,7 @@ def fetch_html_listing_regex(source: dict) -> list[dict]:
     for url, listing_title in unique_links[:max_items]:
         title = listing_title
         summary = ""
-        published_at = date_from_article_url(url)
+        published_at = None if strict_publication_date else date_from_article_url(url)
 
         try:
             article_payload, article_charset = fetch_bytes(
@@ -1153,14 +1155,20 @@ def fetch_html_listing_regex(source: dict) -> list[dict]:
                 if body_parser.paragraph:
                     summary = clean_summary(title, body_parser.paragraph)
 
-            published_at = (
+            article_date = (
                 parse_date(meta.meta.get("article:published_time"))
                 or parse_date(meta.meta.get("datepublished"))
+            )
+            published_at = article_date if strict_publication_date else (
+                article_date
                 or parse_date(meta.meta.get("date"))
                 or published_at
                 or parse_numeric_date_from_text(clean_text(article_html))
             )
         except Exception as exc:
+            if strict_publication_date:
+                # Conserva el feed anterior si no es pot verificar una notícia.
+                raise RuntimeError(f"No s'ha pogut verificar la data original de {url}: {exc}") from exc
             print(f"AVÍS {source['name']} article {url}: {exc}", file=sys.stderr)
 
         if not title or not published_at:
@@ -1469,9 +1477,10 @@ def filter_by_keywords(source: dict, posts: list[dict]) -> list[dict]:
 
     filtered: list[dict] = []
     for post in posts:
-        # El resum de YouTube es genera amb el nom de la font. Aquest nom
-        # no pot convertir un vídeo aliè a Sóller en una coincidència local.
-        fields = ["title"] if source.get("type") == "youtube_channel" else ["title", "summary", "url"]
+        # El resum o la URL no han de convertir una peça d'un canal general
+        # en una coincidència local quan es requereix el titular original.
+        title_only = source.get("type") == "youtube_channel" or source.get("filter_title_only", False)
+        fields = ["title"] if title_only else ["title", "summary", "url"]
         haystack = unicodedata.normalize("NFC", " ".join(
             str(post.get(field) or "") for field in fields
         )).casefold()

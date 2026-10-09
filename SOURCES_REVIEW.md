@@ -60,3 +60,41 @@ Els 10 feeds de YouTube han respost correctament. Cap entrada dels seus feeds ac
 | [11 de Maig de 1561 - Sóller](https://www.youtube.com/channel/UCaHI6LQTWYoCFV6JFh0gs2A) | La cerca retorna una retransmissió completa atribuïda a IB3. No s'activa sense aclarir la procedència i autorització de les republicacions. |
 | [Govern Illes Balears](https://www.youtube.com/user/CanalIllesBalears) | Canal enllaçat pel web institucional i feed operatiu, però sense contingut local identificat en les darreres entrades. Ja es disposa del feed de notícies del Govern amb filtre local. |
 | Altres plataformes socials | No s'ha activat cap connector nou sense un compte local comprovat i un mecanisme públic adequat de recopilació. Les condicions pròpies de cada plataforma continuen aplicant-se. |
+
+## Incorporació de fonts — 9 d'octubre de 2026
+
+S'afegeixen deu fonts o canals automàtics a petició de l'usuari. El catàleg passa de 39 a 49 fonts configurades. Es manté el workflow de cada hora i no es modifiquen els permisos de Meta.
+
+| Font o canal | Via comprovada | Selecció |
+| --- | --- | --- |
+| UEP! Mallorca · Sóller i Fornalutx | RSS conjunt dels tags locals | Titular original amb referència territorial; cultura. El feed conjunt evita duplicar una notícia que pertanyi als dos tags. |
+| IES Guillem Colom Casasnoves | RSS del centre | Activitat pròpia del centre i avisos educatius; serveis. |
+| Ajuntament de Deià | RSS municipal | Informació municipal atribuïda; Deià ja forma part dels filtres territorials existents. |
+| Mallorcadiario · Sóller | RSS del mitjà | Només titulars originals amb referència territorial. |
+| Fibwi Diario · Sóller | RSS del mitjà | Només titulars originals amb referència territorial. |
+| Fibwi Diario · YouTube | Canal enllaçat per la web del mitjà i feed públic | Només títols originals amb referència territorial; reproductor oficial. |
+| GOB Mallorca · Actualitat | RSS de la web | Nou canal complementari al YouTube ja configurat; només titulars originals locals. Les posicions de l'associació queden atribuïdes al GOB. |
+| elDiario.es Illes Balears · Sóller | RSS de la delegació balear | Només titulars originals amb referència territorial. |
+| Majorca Daily Bulletin · Sóller | Web del mitjà i metadades de cada article | Titular original local i data explícita `article:published_time` o `datePublished`. No s'utilitza la data de modificació, del calendari ni de la URL com a substitut. |
+| CEIP Es Puig · Sóller | RSS del centre | Activitat pròpia del centre; serveis. |
+
+Totes les fonts noves tenen un màxim de 60 dies segons la data original. No es reprodueixen textos o imatges dels mitjans ni documents o fotografies dels centres educatius: només titular, data, font i enllaç. YouTube conserva el reproductor oficial i un text propi d'atribució, sense copiar la descripció, el vídeo ni la miniatura.
+
+Els feeds educatius anteposen espais a la declaració XML. El lector els normalitza abans de parsejar-los sense alterar-ne el titular, l'enllaç ni la data. El filtre de titular original és explícit per a les noves fonts generals i no modifica el comportament de les fonts anteriors.
+
+La primera prova real de les deu fonts és correcta i aporta 26 entrades que compleixen els filtres. Cinc canals responen correctament però no contenen actualment cap entrada local apta en el seu feed; es manté aquest resultat sense ampliar l'antiguitat ni relaxar la selecció.
+
+### Referències oficials per a selecció manual
+
+- Biblioteca Municipal de Sóller: [Instagram](https://www.instagram.com/bibliosoller/) i [Facebook](https://www.facebook.com/profile.php?id=61551625262957), enllaçats pel [directori oficial del Consell](https://esports.conselldemallorca.es/es/web/www/xarxa-de-biblioteques/-/asset_publisher/YOeQo0egFat5/content/biblioteca-municipal-soller-guillem-colom-ferra). Es registren com a accessos oficials, no com a consultes automàtiques de Meta.
+- [Agenda del Consell de Mallorca](https://www.conselldemallorca.es/agenda): conté activitats a Sóller i al Port, però les fitxes comprovades no exposen la data original de publicació. S'afegeix com a accés manual; la data de l'activitat no es presenta com a data de publicació.
+
+Aquests accessos figuren al catàleg social d'Administració i al bloc públic de fonts. Les publicacions concretes s'han de seleccionar amb «Enlaces de redes» i comprovar la data i l'enllaç individual.
+
+### Distribució social i validació
+
+Les deu fonts automàtiques disposen de regles explícites per a Facebook i Instagram, seguint l'activació automàtica actual de l'usuari. Es mantenen els límits de 6 hores, 3 publicacions per execució i una per font, així com la moderació, les pauses de Meta i la comprovació d'enviaments confirmats. Les entrades antigues que s'incorporen a l'històric no es reenviaran a les xarxes com si fossin noves.
+
+La descripció del 3 d'octubre documenta la configuració d'aquella data. Per a l'estat vigent de distribució, `social_distribution.json` és la referència; no s'han alterat les decisions de les fonts existents.
+
+Validació: 107 proves Python, 7 proves d'interfície JavaScript, comprovacions de sintaxi i compilació, i lectura real dels deu canals. Les proves cobreixen el XML amb espais/BOM, la data original davant la de modificació, el filtre de titular local i la conservació del feed anterior quan falla la verificació d'un article.

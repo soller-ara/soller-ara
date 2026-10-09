@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 5,
   "sources": [
     {
       "platform": "YouTube",
@@ -56,6 +56,51 @@
       "account": "Sollerserveissocials",
       "mode": "official_link",
       "status": "meta_review_required"
+    },
+    {
+      "platform": "Instagram",
+      "name": "Biblioteca Municipal de Sóller",
+      "account": "@bibliosoller",
+      "url": "https://www.instagram.com/bibliosoller/",
+      "mode": "official_link",
+      "status": "manual",
+      "verification_url": "https://esports.conselldemallorca.es/es/web/www/xarxa-de-biblioteques/-/asset_publisher/YOeQo0egFat5/content/biblioteca-municipal-soller-guillem-colom-ferra",
+      "verification_method": "social_accounts_linked_by_official_library_directory",
+      "verified_at": "2026-10-09"
+    },
+    {
+      "platform": "Facebook",
+      "name": "Biblioteca Municipal de Sóller",
+      "account": "profile.php?id=61551625262957",
+      "url": "https://www.facebook.com/profile.php?id=61551625262957",
+      "mode": "official_link",
+      "status": "manual",
+      "verification_url": "https://esports.conselldemallorca.es/es/web/www/xarxa-de-biblioteques/-/asset_publisher/YOeQo0egFat5/content/biblioteca-municipal-soller-guillem-colom-ferra",
+      "verification_method": "social_accounts_linked_by_official_library_directory",
+      "verified_at": "2026-10-09"
+    },
+    {
+      "platform": "Web",
+      "name": "Consell de Mallorca · Agenda",
+      "account": "https://www.conselldemallorca.es/agenda",
+      "url": "https://www.conselldemallorca.es/agenda",
+      "mode": "official_link",
+      "status": "manual",
+      "verification_url": "https://www.conselldemallorca.es/agenda",
+      "verification_method": "official_events_directory",
+      "automatic_collection_blocker": "original_publication_date_unverified",
+      "verified_at": "2026-10-09"
+    },
+    {
+      "platform": "YouTube",
+      "name": "Fibwi Diario",
+      "account": "@fibwidiario",
+      "url": "https://www.youtube.com/@fibwidiario",
+      "mode": "automatic_cards",
+      "status": "active",
+      "source_id": "youtube-fibwi-diario-soller",
+      "verification_url": "https://www.fibwidiario.com/",
+      "verified_at": "2026-10-09"
     }
   ]
 }

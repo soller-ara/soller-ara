@@ -170,6 +170,85 @@ class SourceCollectionTests(unittest.TestCase):
         self.assertEqual(enabled, {'mucbo-noticies', 'can-prunera-noticies', 'futbol-balear-cf-soller', 'fora-vila-soller', 'sa-veu-soller'})
 
 
+class NewPublicSourceTests(unittest.TestCase):
+    def test_rss_with_leading_whitespace_retains_original_metadata(self):
+        source = {"id": "school", "name": "Centre de Sóller", "type": "rss", "url": "https://school.test/feed/",
+                  "image_policy": "disabled_until_rights_verified",
+                  "content_policy": "headline_date_link_only"}
+        feed = '''\n \t<?xml version="1.0" encoding="UTF-8"?>
+          <rss><channel><item><title>Informació de l'EOI a Sóller</title>
+          <link>https://school.test/2026/10/06/eoi/</link>
+          <pubDate>Tue, 06 Oct 2026 06:51:25 +0000</pubDate>
+          <description>Descripció i fotografia que no s'han de reproduir.</description>
+          </item></channel></rss>'''.encode("utf-8")
+        with patch.object(collector, "fetch_bytes", return_value=(feed, "utf-8")):
+            post = collector.fetch_source(source)[0]
+        self.assertEqual(post["title"], "Informació de l'EOI a Sóller")
+        self.assertEqual(post["published_at"], "2026-10-06T06:51:25+00:00")
+        self.assertEqual(post["url"], "https://school.test/2026/10/06/eoi/")
+        self.assertEqual(post["summary"], "")
+        self.assertFalse(post["image_allowed"])
+
+    def test_prefixed_atom_uses_publication_date_before_update_date(self):
+        source = {"id": "video", "name": "Canal", "type": "youtube_channel"}
+        feed = b'\xef\xbb\xbf\n <?xml version="1.0" encoding="UTF-8"?>' + b'''
+          <feed xmlns="http://www.w3.org/2005/Atom"><entry>
+          <title>Concert a Soller</title><published>2026-08-01T10:00:00Z</published>
+          <updated>2026-10-09T10:00:00Z</updated>
+          <link rel="alternate" href="https://www.youtube.com/watch?v=abcdefghijk"/>
+          </entry></feed>'''
+        self.assertEqual(collector.parse_rss(feed, source)[0]["published_at"], "2026-08-01T10:00:00+00:00")
+
+    def test_general_source_requires_local_reference_in_original_title(self):
+        source = {"type": "rss", "include_keywords": ["Sóller", "Fornalutx"], "filter_title_only": True}
+        posts = [
+            {"title": "Concert a Palma", "summary": "Hi participa una entitat de Sóller",
+             "source": "Mitjà de Sóller", "url": "https://media.test/soller/concert-a-palma"},
+            {"title": "Concert a So\u0301ller", "summary": "", "url": "https://media.test/concert"},
+            {"title": "Festes a Fornalutx", "summary": "", "url": "https://media.test/festes"},
+        ]
+        self.assertEqual(collector.filter_by_keywords(source, posts), posts[1:])
+
+    def strict_source(self):
+        return {"id": "strict-media", "name": "Mitjà", "type": "html_listing_regex",
+                "url": "https://media.test/", "allowed_host": "media.test",
+                "article_url_regex": r"/\d{4}/\d{2}/\d{2}/\d+/[^/]+\.html$",
+                "strict_publication_date": True, "max_age_days": 60}
+
+    def test_strict_listing_does_not_use_modified_date_url_or_calendar(self):
+        source = self.strict_source()
+        urls = [f"https://media.test/2026/10/09/{n}/soller.html" for n in range(1, 4)]
+        pages = {
+            source["url"]: "".join(f'<a href="{url}">Notícia a Sóller</a>' for url in urls),
+            urls[0]: '<h1>Notícia a Sóller</h1><meta property="article:published_time" content="2026-10-08T10:00:00Z">',
+            urls[1]: '<h1>Notícia antiga a Sóller</h1><meta property="article:published_time" content="2026-08-01T10:00:00Z"><meta property="article:modified_time" content="2026-10-09T10:00:00Z">',
+            urls[2]: '<h1>Activitat a Sóller</h1><meta property="article:modified_time" content="2026-10-09T10:00:00Z"><p>Avui: 09/10/2026. Concert: 17/10/2026.</p>',
+        }
+        with patch.object(collector, "fetch_bytes", side_effect=lambda url, *_: (pages[url].encode(), "utf-8")):
+            posts = collector.fetch_source(source)
+        self.assertEqual([p["url"] for p in posts], urls[:2])
+        self.assertEqual(posts[1]["published_at"], "2026-08-01T10:00:00+00:00")
+        with patch.object(collector, "datetime", wraps=datetime) as clock:
+            clock.now.return_value = datetime(2026, 10, 9, 16, tzinfo=timezone.utc)
+            self.assertEqual(collector.filter_by_max_age(source, posts), posts[:1])
+
+    def test_strict_article_failure_is_reported_for_feed_retention(self):
+        source = self.strict_source()
+        url = "https://media.test/2026/10/09/1/soller.html"
+        def fetch(target, *_):
+            if target == source["url"]:
+                return f'<a href="{url}">Notícia a Sóller</a>'.encode(), "utf-8"
+            raise RuntimeError("HTTP 503")
+        with patch.object(collector, "fetch_bytes", side_effect=fetch):
+            with self.assertRaisesRegex(RuntimeError, "verificar la data original"):
+                collector.fetch_source(source)
+
+    def test_manual_directory_does_not_enable_meta_collection(self):
+        with patch.dict("os.environ", {"META_ACCESS_TOKEN": "", "META_IG_USER_ID": ""}):
+            posts, sources, integrations = collector.fetch_optional_meta_social_sources()
+        self.assertEqual((posts, sources, integrations), ([], [], []))
+
+
 class SourceLifecycleTests(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
