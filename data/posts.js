@@ -465,7 +465,7 @@ window.SOLLER_ARA_DATA = {
       "content_policy": "manual_link_reference",
       "rights_status": "no_reuse_reference_only",
       "image_allowed": false,
-      "original_url": "https://www.facebook.com/share/p/1H3fA5sf94/?mibextid=wwXIfr"
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1530759072422504&id=100064652770970&hpir=1"
     },
     {
       "id": "soller-ara-28ee2c35dbc85fbc",
@@ -4135,5 +4135,5 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "sources_checked_at": "2026-10-09T11:23:18.589230+00:00",
-  "fetched_at": "2026-10-09T11:51:06.786773+00:00"
+  "fetched_at": "2026-10-09T11:52:32.115944+00:00"
 };
