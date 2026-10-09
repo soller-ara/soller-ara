@@ -5219,6 +5219,48 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-09T10:25:17.715591+00:00",
       "error": ""
+    },
+    {
+      "post_id": "c55916dcc77c6839bc59",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122121425817467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122121425817467310",
+      "title": "Largas colas en los accesos a Sóller con la rotonda de entrada al túnel atascada",
+      "post_url": "https://www.ultimahora.es/noticias/part-forana/2026/10/09/2725795/largas-colas-accesos-soller-rotonda-entrada-tunel-atascada.html",
+      "source": "Última Hora",
+      "source_id": "ultima-hora-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-09T11:23:36.772340+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "c51b8886ab88ef74f6c5",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122121425925467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122121425925467310",
+      "title": "El Festival de Bandes Mortes desbloqueja infinitat de records musicals a Teixidores",
+      "post_url": "https://www.elsoller.cat/soller/reportatges/2026/10/09/354637/festival-bandes-mortes-desbloqueja-infinitat-records-musicals-teixidores.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-09T11:23:45.540257+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "6ecfc98be306a2c93577",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122121425997467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122121425997467310",
+      "title": "El mal temps enfonsa un veler en aigües del Port de Sóller",
+      "post_url": "https://saveu.cat/noticies/el-mal-temps-enfonsa-un-veler-en-aigues-del-port-de-soller/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-09T11:23:53.938794+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
