@@ -5191,6 +5191,34 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-09T09:26:50.531685+00:00",
       "error": ""
+    },
+    {
+      "post_id": "7f829fa4fc1cb0c88912",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122121409941467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122121409941467310",
+      "title": "Una sentència obliga a pagar 27.000 euros a Sóller Recicla",
+      "post_url": "https://saveu.cat/noticies/una-sentencia-obliga-a-pagar-27-000-euros-a-soller-recicla/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-09T10:25:14.037435+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "e5b9ccb39c8933a425da",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122121409959467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122121409959467310",
+      "title": "Habitatge, mobilitat i turisme, les inquietuds del Moviment Jove de Sóller",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/09/354633/habitatge-mobilitat-turisme-les-inquietuds-del-moviment-jove-soller.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-09T10:25:17.715591+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
