@@ -1,61 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-09T17:22:26.683692+00:00",
-  "entries": [
-    {
-      "post_id": "e06fc308f372b1e61ab0",
-      "title": "Collera-Sóller (dissabte, 17 h), a la recerca dels punts a un dels camps més complicats de la categoria",
-      "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
-      "source_type": "media",
-      "category": "sports",
-      "language": "ca",
-      "published_at": "2026-10-09T17:00:00+02:00",
-      "original_url": "https://www.elsoller.cat/soller/esports/2026/10/09/354641/collera-soller-dissabte-recerca-dels-punts-dels-camps-mes-complicats-categoria.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/e06fc308f372b1e61ab0.jpg"
-    },
-    {
-      "post_id": "e822519c0bec85d637c6",
-      "title": "El MUCBO estrena audioguia",
-      "summary": "",
-      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
-      "source_id": "mucbo-noticies",
-      "source_type": "institution",
-      "category": "culture",
-      "language": "ca",
-      "published_at": "2026-10-09T13:11:01+00:00",
-      "original_url": "https://mucbo.org/el-mucbo-estrena-audioguia/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "link_only_no_media_license",
-      "platforms": [
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/e822519c0bec85d637c6.jpg"
-    },
-    {
-      "post_id": "de71bbf91c4ba9200fcc",
-      "title": "Traffic chaos at Soller tunnel as queues build up on road into town",
-      "summary": "",
-      "source": "Majorca Daily Bulletin · Sóller",
-      "source_id": "majorca-daily-bulletin-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "en",
-      "published_at": "2026-10-09T14:42:02+02:00",
-      "original_url": "https://www.majorcadailybulletin.com/news/local/2026/10/09/146471/long-queues-soller-tunnel-entrance-roundabout-cause-traffic-jams.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "link_only_no_media_license",
-      "platforms": [
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/de71bbf91c4ba9200fcc.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
