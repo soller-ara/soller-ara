@@ -444,10 +444,29 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 178,
+  "post_count": 179,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "soller-ara-28ee2c35dbc85fbc",
+      "category": "politics",
+      "source_id": "manual-4f785079a49c",
+      "source": "Som joves",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-09T11:45:26.428205+00:00",
+      "show_in_now": true,
+      "content_type": "social_link",
+      "title": "",
+      "summary": "",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-28ee2c35dbc85fbc.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": false,
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1569194688568934&id=100064352547067&hpir=1"
+    },
     {
       "id": "soller-ara-9f577b0ab5369d66",
       "category": "politics",
@@ -4097,5 +4116,5 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "sources_checked_at": "2026-10-09T11:23:18.589230+00:00",
-  "fetched_at": "2026-10-09T11:24:08.341263+00:00"
+  "fetched_at": "2026-10-09T11:45:26.431908+00:00"
 };
