@@ -5447,6 +5447,20 @@
       "retry_requested": true,
       "stage": "media_publish",
       "container_id": "18117256465905740"
+    },
+    {
+      "post_id": "e06fc308f372b1e61ab0",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18116865934799658",
+      "remote_url": "https://www.instagram.com/p/DeSCRy1GD7l/",
+      "title": "Collera-Sóller (dissabte, 17 h), a la recerca dels punts a un dels camps més complicats de la categoria",
+      "post_url": "https://www.elsoller.cat/soller/esports/2026/10/09/354641/collera-soller-dissabte-recerca-dels-punts-dels-camps-mes-complicats-categoria.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-09T20:22:07.493841+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
