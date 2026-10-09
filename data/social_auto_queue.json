@@ -1,6 +1,63 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-10-09T09:26:06.219342+00:00",
+  "entries": [
+    {
+      "post_id": "2e5409d2f7e263c17d0d",
+      "title": "«Les Journées són una festa de tot el poble»",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "culture",
+      "language": "ca",
+      "published_at": "2026-10-09T11:15:00+02:00",
+      "original_url": "https://www.elsoller.cat/soller/societat-i-cultura/2026/10/09/354635/les-journees-son-festa-tot-poble.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/2e5409d2f7e263c17d0d.jpg"
+    },
+    {
+      "post_id": "5fee550e8d9fdf625aee",
+      "title": "Acaba la campanya de la garrova a la vall amb la recol.lecció de 125 tones de fruit",
+      "summary": "",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-10-09T08:30:00+00:00",
+      "original_url": "https://saveu.cat/noticies/acaba-la-campanya-de-lagarrova-a-la-vall-amb-la-recol-leccio-de-125-tones-de-fruit/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/5fee550e8d9fdf625aee.jpg"
+    },
+    {
+      "post_id": "d907f7429bd3d8ea881e",
+      "title": "A Sóller ja no podem anar ni a peu",
+      "summary": "",
+      "source": "MÉS per Sóller",
+      "source_id": "mes-per-soller",
+      "source_type": "political_party",
+      "category": "politics",
+      "language": "ca",
+      "published_at": "2026-10-09T07:08:32+00:00",
+      "original_url": "https://mespersoller.cat/a-soller-ja-no-podem-anar-ni-a-peu/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "official_party_source",
+      "platforms": [
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/d907f7429bd3d8ea881e.jpg"
+    }
+  ]
 }
