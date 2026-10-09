@@ -5067,9 +5067,71 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-09T00:36:16.639559+00:00",
       "error": ""
+    },
+    {
+      "post_id": "c4301d87ef3c188f339c",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122121346845467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122121346845467310",
+      "title": "“En l’esport d’elit, tres dies poden ser determinants”",
+      "post_url": "https://saveu.cat/entrevistes/en-lesport-delit-tres-dies-poden-ser-determinants/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-09T07:24:56.232000+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "c4301d87ef3c188f339c",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "“En l’esport d’elit, tres dies poden ser determinants”",
+      "post_url": "https://saveu.cat/entrevistes/en-lesport-delit-tres-dies-poden-ser-determinants/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-09T07:25:07.905677+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18117144712905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "c4301d87ef3c188f339c",
+      "platform": "instagram",
+      "status": "verification_required",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "“En l’esport d’elit, tres dies poden ser determinants”",
+      "post_url": "https://saveu.cat/entrevistes/en-lesport-delit-tres-dies-poden-ser-determinants/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-09T07:25:10.428665+00:00",
+      "error": "Application request limit reached [code=4, subcode=2207051]",
+      "retry_requested": true,
+      "stage": "media_publish",
+      "container_id": "18117144712905740"
+    },
+    {
+      "post_id": "d907f7429bd3d8ea881e",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122121347013467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122121347013467310",
+      "title": "A Sóller ja no podem anar ni a peu",
+      "post_url": "https://mespersoller.cat/a-soller-ja-no-podem-anar-ni-a-peu/",
+      "source": "MÉS per Sóller",
+      "source_id": "mes-per-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-09T07:25:19.840625+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
-    "instagram_until": "2026-10-09T00:23:08.202728+00:00"
+    "instagram_until": "2026-10-09T09:25:10.425860+00:00"
   }
 }
