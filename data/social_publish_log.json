@@ -5647,9 +5647,43 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-10T14:20:51.516012+00:00",
       "error": ""
+    },
+    {
+      "post_id": "91a3db74010e32ee57a8",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Pro Música Chorus fusiona les veus amb dues corals de Lisboa",
+      "post_url": "https://www.elsoller.cat/soller/societat-i-cultura/2026/10/10/354647/pro-musica-chorus-fusiona-les-veus-amb-dues-corals-lisboa.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-10T16:22:01.432204+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18117511444905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "91a3db74010e32ee57a8",
+      "platform": "instagram",
+      "status": "verification_required",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Pro Música Chorus fusiona les veus amb dues corals de Lisboa",
+      "post_url": "https://www.elsoller.cat/soller/societat-i-cultura/2026/10/10/354647/pro-musica-chorus-fusiona-les-veus-amb-dues-corals-lisboa.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-10T16:22:04.135769+00:00",
+      "error": "Application request limit reached [code=4, subcode=2207051]",
+      "retry_requested": true,
+      "stage": "media_publish",
+      "container_id": "18117511444905740"
     }
   ],
   "cooldowns": {
-    "instagram_until": "2026-10-10T15:22:47.080863+00:00"
+    "instagram_until": "2026-10-10T18:22:04.132615+00:00"
   }
 }
