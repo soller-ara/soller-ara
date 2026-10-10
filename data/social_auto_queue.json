@@ -1,43 +1,25 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-10T12:25:33.736465+00:00",
+  "generated_at": "2026-10-10T13:22:14.891047+00:00",
   "entries": [
     {
-      "post_id": "7bd1f3d3567301d1c30b",
-      "title": "Quatre lectures locals per a unes eleccions estatals",
+      "post_id": "67945e37c95b1d1474ec",
+      "title": "Pomar presenta un pressupost de 33,5 milions el darrer any de legislatura",
       "summary": "",
       "source": "Setmanari Sóller",
       "source_id": "setmanari-soller",
       "source_type": "media",
-      "category": "agenda",
-      "language": "ca",
-      "published_at": "2026-10-10T12:00:00+02:00",
-      "original_url": "https://www.elsoller.cat/soller/reportatges/2026/10/10/354643/quatre-lectures-locals-per-unes-eleccions-estatals.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/7bd1f3d3567301d1c30b.jpg"
-    },
-    {
-      "post_id": "ccdc4952e44d45b4e640",
-      "title": "Mig milió d’euros per dedicar a millores d’edificis, centre de dia, comprar un piano i càmeres",
-      "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
-      "source_type": "media",
       "category": "news",
       "language": "ca",
-      "published_at": "2026-10-10T07:00:00+00:00",
-      "original_url": "https://saveu.cat/noticies/mig-milio-deuros-per-dedicar-a-millores-dedificis-centre-de-dia-comprar-un-piano-i-cameres/",
+      "published_at": "2026-10-10T10:00:00+02:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/10/10/354639/pomar-presenta-pressupost-milions-darrer-any-legislatura.html",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/ccdc4952e44d45b4e640.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/67945e37c95b1d1474ec.jpg"
     }
   ]
 }
