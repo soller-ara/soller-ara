@@ -5461,9 +5461,57 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-09T20:22:07.493841+00:00",
       "error": ""
+    },
+    {
+      "post_id": "ccdc4952e44d45b4e640",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122121779673467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122121779673467310",
+      "title": "Mig milió d’euros per dedicar a millores d’edificis, centre de dia, comprar un piano i càmeres",
+      "post_url": "https://saveu.cat/noticies/mig-milio-deuros-per-dedicar-a-millores-dedificis-centre-de-dia-comprar-un-piano-i-cameres/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-10T07:22:51.632541+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "ccdc4952e44d45b4e640",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Mig milió d’euros per dedicar a millores d’edificis, centre de dia, comprar un piano i càmeres",
+      "post_url": "https://saveu.cat/noticies/mig-milio-deuros-per-dedicar-a-millores-dedificis-centre-de-dia-comprar-un-piano-i-cameres/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-10T07:23:39.995957+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18117392884905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "ccdc4952e44d45b4e640",
+      "platform": "instagram",
+      "status": "verification_required",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Mig milió d’euros per dedicar a millores d’edificis, centre de dia, comprar un piano i càmeres",
+      "post_url": "https://saveu.cat/noticies/mig-milio-deuros-per-dedicar-a-millores-dedificis-centre-de-dia-comprar-un-piano-i-cameres/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-10T07:23:43.020848+00:00",
+      "error": "Application request limit reached [code=4, subcode=2207051]",
+      "retry_requested": true,
+      "stage": "media_publish",
+      "container_id": "18117392884905740"
     }
   ],
   "cooldowns": {
-    "instagram_until": "2026-10-09T19:22:53.253621+00:00"
+    "instagram_until": "2026-10-10T09:23:43.018151+00:00"
   }
 }
