@@ -5509,6 +5509,20 @@
       "retry_requested": true,
       "stage": "media_publish",
       "container_id": "18117392884905740"
+    },
+    {
+      "post_id": "67945e37c95b1d1474ec",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122121795489467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122121795489467310",
+      "title": "Pomar presenta un pressupost de 33,5 milions el darrer any de legislatura",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/10/354639/pomar-presenta-pressupost-milions-darrer-any-legislatura.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-10T08:23:46.730274+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
