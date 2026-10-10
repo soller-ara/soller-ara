@@ -1,6 +1,25 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-10-10T16:21:33.361019+00:00",
+  "entries": [
+    {
+      "post_id": "91a3db74010e32ee57a8",
+      "title": "Pro Música Chorus fusiona les veus amb dues corals de Lisboa",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "culture",
+      "language": "ca",
+      "published_at": "2026-10-10T16:00:00+02:00",
+      "original_url": "https://www.elsoller.cat/soller/societat-i-cultura/2026/10/10/354647/pro-musica-chorus-fusiona-les-veus-amb-dues-corals-lisboa.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/91a3db74010e32ee57a8.jpg"
+    }
+  ]
 }
