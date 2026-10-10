@@ -5523,9 +5523,57 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-10T08:23:46.730274+00:00",
       "error": ""
+    },
+    {
+      "post_id": "7bd1f3d3567301d1c30b",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122121827337467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122121827337467310",
+      "title": "Quatre lectures locals per a unes eleccions estatals",
+      "post_url": "https://www.elsoller.cat/soller/reportatges/2026/10/10/354643/quatre-lectures-locals-per-unes-eleccions-estatals.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-10T10:22:10.158077+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "7bd1f3d3567301d1c30b",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Quatre lectures locals per a unes eleccions estatals",
+      "post_url": "https://www.elsoller.cat/soller/reportatges/2026/10/10/354643/quatre-lectures-locals-per-unes-eleccions-estatals.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-10T10:22:19.661584+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18117424621905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "7bd1f3d3567301d1c30b",
+      "platform": "instagram",
+      "status": "verification_required",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Quatre lectures locals per a unes eleccions estatals",
+      "post_url": "https://www.elsoller.cat/soller/reportatges/2026/10/10/354643/quatre-lectures-locals-per-unes-eleccions-estatals.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-10T10:22:22.407876+00:00",
+      "error": "Application request limit reached [code=4, subcode=2207051]",
+      "retry_requested": true,
+      "stage": "media_publish",
+      "container_id": "18117424621905740"
     }
   ],
   "cooldowns": {
-    "instagram_until": "2026-10-10T09:23:43.018151+00:00"
+    "instagram_until": "2026-10-10T12:22:22.405153+00:00"
   }
 }
