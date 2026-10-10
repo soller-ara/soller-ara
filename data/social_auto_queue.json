@@ -1,6 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-10-10T07:22:32.995134+00:00",
+  "entries": [
+    {
+      "post_id": "ccdc4952e44d45b4e640",
+      "title": "Mig milió d’euros per dedicar a millores d’edificis, centre de dia, comprar un piano i càmeres",
+      "summary": "",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-10-10T07:00:00+00:00",
+      "original_url": "https://saveu.cat/noticies/mig-milio-deuros-per-dedicar-a-millores-dedificis-centre-de-dia-comprar-un-piano-i-cameres/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/ccdc4952e44d45b4e640.jpg"
+    }
+  ]
 }
