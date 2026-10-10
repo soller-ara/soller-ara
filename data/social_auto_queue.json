@@ -1,26 +1,25 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-10T07:22:32.995134+00:00",
+  "generated_at": "2026-10-10T08:23:29.749920+00:00",
   "entries": [
     {
-      "post_id": "ccdc4952e44d45b4e640",
-      "title": "Mig milió d’euros per dedicar a millores d’edificis, centre de dia, comprar un piano i càmeres",
+      "post_id": "67945e37c95b1d1474ec",
+      "title": "Pomar presenta un pressupost de 33,5 milions el darrer any de legislatura",
       "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
       "source_type": "media",
       "category": "news",
       "language": "ca",
-      "published_at": "2026-10-10T07:00:00+00:00",
-      "original_url": "https://saveu.cat/noticies/mig-milio-deuros-per-dedicar-a-millores-dedificis-centre-de-dia-comprar-un-piano-i-cameres/",
+      "published_at": "2026-10-10T10:00:00+02:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/10/10/354639/pomar-presenta-pressupost-milions-darrer-any-legislatura.html",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
-        "facebook",
-        "instagram"
+        "facebook"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/ccdc4952e44d45b4e640.jpg"
+      "image_url": ""
     }
   ]
 }
