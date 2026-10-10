@@ -1,25 +1,25 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-10T13:22:14.891047+00:00",
+  "generated_at": "2026-10-10T14:20:36.073784+00:00",
   "entries": [
     {
-      "post_id": "67945e37c95b1d1474ec",
-      "title": "Pomar presenta un pressupost de 33,5 milions el darrer any de legislatura",
+      "post_id": "91a3db74010e32ee57a8",
+      "title": "Pro Música Chorus fusiona les veus amb dues corals de Lisboa",
       "summary": "",
       "source": "Setmanari Sóller",
       "source_id": "setmanari-soller",
       "source_type": "media",
-      "category": "news",
+      "category": "culture",
       "language": "ca",
-      "published_at": "2026-10-10T10:00:00+02:00",
-      "original_url": "https://www.elsoller.cat/soller/local/2026/10/10/354639/pomar-presenta-pressupost-milions-darrer-any-legislatura.html",
+      "published_at": "2026-10-10T16:00:00+02:00",
+      "original_url": "https://www.elsoller.cat/soller/societat-i-cultura/2026/10/10/354647/pro-musica-chorus-fusiona-les-veus-amb-dues-corals-lisboa.html",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
-        "instagram"
+        "facebook"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/67945e37c95b1d1474ec.jpg"
+      "image_url": ""
     }
   ]
 }
