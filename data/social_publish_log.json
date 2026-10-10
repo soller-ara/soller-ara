@@ -5571,6 +5571,34 @@
       "retry_requested": true,
       "stage": "media_publish",
       "container_id": "18117424621905740"
+    },
+    {
+      "post_id": "7bd1f3d3567301d1c30b",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18095562362127684",
+      "remote_url": "https://www.instagram.com/p/DeT28vEGBSC/",
+      "title": "Quatre lectures locals per a unes eleccions estatals",
+      "post_url": "https://www.elsoller.cat/soller/reportatges/2026/10/10/354643/quatre-lectures-locals-per-unes-eleccions-estatals.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-10T12:25:45.736085+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "ccdc4952e44d45b4e640",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18123451844481014",
+      "remote_url": "https://www.instagram.com/p/DeTifpFlxFk/",
+      "title": "Mig milió d’euros per dedicar a millores d’edificis, centre de dia, comprar un piano i càmeres",
+      "post_url": "https://saveu.cat/noticies/mig-milio-deuros-per-dedicar-a-millores-dedificis-centre-de-dia-comprar-un-piano-i-cameres/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-10T12:25:47.711974+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
