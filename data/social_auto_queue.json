@@ -1,43 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-11T12:26:27.375669+00:00",
-  "entries": [
-    {
-      "post_id": "e89e4afc2ad1a91fefaf",
-      "title": "Nous capcers més sostenibles per pescar la llampuga",
-      "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-10-11T12:00:00+02:00",
-      "original_url": "https://www.elsoller.cat/soller/local/2026/10/11/354645/nous-capcers-mes-sostenibles-per-pescar-llampuga.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/e89e4afc2ad1a91fefaf.jpg"
-    },
-    {
-      "post_id": "83c3a7c96bb840ca1e40",
-      "title": "La temporada de caça arranca dilluns marcada per la falta d’aus abatibles",
-      "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-10-11T07:00:00+00:00",
-      "original_url": "https://saveu.cat/noticies/la-temporada-de-caca-arranca-dilluns-marcada-per-la-falta-daus-abatibles/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/83c3a7c96bb840ca1e40.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
