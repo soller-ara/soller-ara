@@ -5791,6 +5791,34 @@
       "retry_requested": true,
       "stage": "media_publish",
       "container_id": "18117682804905740"
+    },
+    {
+      "post_id": "e89e4afc2ad1a91fefaf",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "17922855315440274",
+      "remote_url": "https://www.instagram.com/p/DeWbs2-jMdf/",
+      "title": "Nous capcers més sostenibles per pescar la llampuga",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/11/354645/nous-capcers-mes-sostenibles-per-pescar-llampuga.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-11T12:26:40.189806+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "83c3a7c96bb840ca1e40",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18115333469015232",
+      "remote_url": "https://www.instagram.com/p/DeWHSIBF8CU/",
+      "title": "La temporada de caça arranca dilluns marcada per la falta d’aus abatibles",
+      "post_url": "https://saveu.cat/noticies/la-temporada-de-caca-arranca-dilluns-marcada-per-la-falta-daus-abatibles/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-11T12:26:42.859905+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
