@@ -5695,9 +5695,57 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-10T18:24:09.385154+00:00",
       "error": ""
+    },
+    {
+      "post_id": "83c3a7c96bb840ca1e40",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122122211055467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122122211055467310",
+      "title": "La temporada de caça arranca dilluns marcada per la falta d’aus abatibles",
+      "post_url": "https://saveu.cat/noticies/la-temporada-de-caca-arranca-dilluns-marcada-per-la-falta-daus-abatibles/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-11T07:23:24.134404+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "83c3a7c96bb840ca1e40",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "La temporada de caça arranca dilluns marcada per la falta d’aus abatibles",
+      "post_url": "https://saveu.cat/noticies/la-temporada-de-caca-arranca-dilluns-marcada-per-la-falta-daus-abatibles/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-11T07:23:38.277473+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18117652033905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "83c3a7c96bb840ca1e40",
+      "platform": "instagram",
+      "status": "verification_required",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "La temporada de caça arranca dilluns marcada per la falta d’aus abatibles",
+      "post_url": "https://saveu.cat/noticies/la-temporada-de-caca-arranca-dilluns-marcada-per-la-falta-daus-abatibles/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-11T07:23:43.054066+00:00",
+      "error": "Application request limit reached [code=4, subcode=2207051]",
+      "retry_requested": true,
+      "stage": "media_publish",
+      "container_id": "18117652033905740"
     }
   ],
   "cooldowns": {
-    "instagram_until": "2026-10-10T18:22:04.132615+00:00"
+    "instagram_until": "2026-10-11T09:23:43.050947+00:00"
   }
 }
