@@ -5743,9 +5743,57 @@
       "retry_requested": true,
       "stage": "media_publish",
       "container_id": "18117652033905740"
+    },
+    {
+      "post_id": "e89e4afc2ad1a91fefaf",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122122264497467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122122264497467310",
+      "title": "Nous capcers més sostenibles per pescar la llampuga",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/11/354645/nous-capcers-mes-sostenibles-per-pescar-llampuga.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-11T10:21:49.111469+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "e89e4afc2ad1a91fefaf",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Nous capcers més sostenibles per pescar la llampuga",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/11/354645/nous-capcers-mes-sostenibles-per-pescar-llampuga.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-11T10:22:00.652602+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18117682804905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "e89e4afc2ad1a91fefaf",
+      "platform": "instagram",
+      "status": "verification_required",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Nous capcers més sostenibles per pescar la llampuga",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/11/354645/nous-capcers-mes-sostenibles-per-pescar-llampuga.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-11T10:22:03.902314+00:00",
+      "error": "Application request limit reached [code=4, subcode=2207051]",
+      "retry_requested": true,
+      "stage": "media_publish",
+      "container_id": "18117682804905740"
     }
   ],
   "cooldowns": {
-    "instagram_until": "2026-10-11T09:23:43.050947+00:00"
+    "instagram_until": "2026-10-11T12:22:03.899008+00:00"
   }
 }
