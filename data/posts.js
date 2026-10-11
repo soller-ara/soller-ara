@@ -554,7 +554,7 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 205,
+  "post_count": 206,
   "related_pair_count": 0,
   "errors": [
     {
@@ -615,6 +615,25 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "posts": [
+    {
+      "id": "soller-ara-760d50eeab75f52f",
+      "category": "politics",
+      "source_id": "manual-76948c3843fb",
+      "source": "Mes per Sóller",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-11T07:17:58.073292+00:00",
+      "show_in_now": true,
+      "content_type": "social_link",
+      "title": "",
+      "summary": "",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-760d50eeab75f52f.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": false,
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1558309069664320&id=100064557255473&hpir=1"
+    },
     {
       "id": "91a3db74010e32ee57a8",
       "category": "culture",
@@ -4807,5 +4826,5 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "sources_checked_at": "2026-10-11T06:28:09.603070+00:00",
-  "fetched_at": "2026-10-11T06:28:09.603070+00:00"
+  "fetched_at": "2026-10-11T07:17:58.079087+00:00"
 };
