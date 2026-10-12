@@ -554,7 +554,7 @@
     }
   ],
   "social_integration_status": [],
-  "post_count": 205,
+  "post_count": 204,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
@@ -658,28 +658,6 @@
       "image_allowed": false,
       "embed_type": "official_oembed",
       "embed_url": "https://saveu.cat/noticies/futbol-para-la-igualdad-celebra-deu-anys-de-labor-social/embed/",
-      "related_sources": []
-    },
-    {
-      "id": "25d28367d7df7edce288",
-      "category": "news",
-      "source_id": "sa-veu-soller",
-      "source": "Sa Veu de Sóller",
-      "source_type": "media",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-10-12T09:32:15+00:00",
-      "title": "El Mallorca tria Raixa per a la foto oficial i reivindica la pedra en sec com a símbol d’identitat",
-      "summary": "",
-      "url": "https://saveu.cat/noticies/el-mallorca-tria-raixa-per-a-la-foto-oficial-i-reivindica-la-pedra-en-sec-com-a-simbol-didentitat/",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
-      "embed_type": "official_oembed",
-      "embed_url": "https://saveu.cat/noticies/el-mallorca-tria-raixa-per-a-la-foto-oficial-i-reivindica-la-pedra-en-sec-com-a-simbol-didentitat/embed/",
       "related_sources": []
     },
     {
@@ -4750,5 +4728,5 @@
     }
   ],
   "sources_checked_at": "2026-10-12T14:29:46.873989+00:00",
-  "fetched_at": "2026-10-12T15:09:33.979975+00:00"
+  "fetched_at": "2026-10-12T15:11:27.002016+00:00"
 }

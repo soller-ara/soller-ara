@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "dc9608cb9d5977cd",
+      "timestamp": "2026-10-12T15:11:27.091678+00:00",
+      "action": "hide",
+      "area": "moderation",
+      "target_id": "25d28367d7df7edce288",
+      "title": "El Mallorca tria Raixa per a la foto oficial i reivindica la pedra en sec com a símbol d’identitat",
+      "detail": "Acción de moderación completada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "af46fb06bc0706d3",
       "timestamp": "2026-10-12T15:09:34.041234+00:00",
       "action": "hide",

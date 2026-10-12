@@ -2,7 +2,8 @@
   "version": 1,
   "hidden_post_ids": [
     "a57e64e57bd13a6a8f85",
-    "e786162f3a68426e418f"
+    "e786162f3a68426e418f",
+    "25d28367d7df7edce288"
   ],
   "notes": {},
   "hidden_posts": {
@@ -44,6 +45,28 @@
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "image_allowed": false,
+      "related_sources": []
+    },
+    "25d28367d7df7edce288": {
+      "id": "25d28367d7df7edce288",
+      "category": "news",
+      "source_id": "sa-veu-soller",
+      "source": "Sa Veu de Sóller",
+      "source_type": "media",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-12T09:32:15+00:00",
+      "title": "El Mallorca tria Raixa per a la foto oficial i reivindica la pedra en sec com a símbol d’identitat",
+      "summary": "",
+      "url": "https://saveu.cat/noticies/el-mallorca-tria-raixa-per-a-la-foto-oficial-i-reivindica-la-pedra-en-sec-com-a-simbol-didentitat/",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "image_allowed": false,
+      "embed_type": "official_oembed",
+      "embed_url": "https://saveu.cat/noticies/el-mallorca-tria-raixa-per-a-la-foto-oficial-i-reivindica-la-pedra-en-sec-com-a-simbol-didentitat/embed/",
       "related_sources": []
     }
   },
