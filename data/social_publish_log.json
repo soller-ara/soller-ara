@@ -5819,9 +5819,57 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-11T12:26:42.859905+00:00",
       "error": ""
+    },
+    {
+      "post_id": "e786162f3a68426e418f",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122122760601467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122122760601467310",
+      "title": "Cinquanta autores expliquen set dècades de còmic espanyol al casal Solleric",
+      "post_url": "https://www.arabalears.cat/cultura/cinquanta-autores-expliquen-set-decades-comic-espanyol-casal-solleric_1_5876694.html",
+      "source": "ARA Balears",
+      "source_id": "ara-balears-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-12T09:27:34.848696+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "e786162f3a68426e418f",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Cinquanta autores expliquen set dècades de còmic espanyol al casal Solleric",
+      "post_url": "https://www.arabalears.cat/cultura/cinquanta-autores-expliquen-set-decades-comic-espanyol-casal-solleric_1_5876694.html",
+      "source": "ARA Balears",
+      "source_id": "ara-balears-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-12T09:27:49.862976+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18117906100905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "e786162f3a68426e418f",
+      "platform": "instagram",
+      "status": "verification_required",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Cinquanta autores expliquen set dècades de còmic espanyol al casal Solleric",
+      "post_url": "https://www.arabalears.cat/cultura/cinquanta-autores-expliquen-set-decades-comic-espanyol-casal-solleric_1_5876694.html",
+      "source": "ARA Balears",
+      "source_id": "ara-balears-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-12T09:27:52.775529+00:00",
+      "error": "Application request limit reached [code=4, subcode=2207051]",
+      "retry_requested": true,
+      "stage": "media_publish",
+      "container_id": "18117906100905740"
     }
   ],
   "cooldowns": {
-    "instagram_until": "2026-10-11T12:22:03.899008+00:00"
+    "instagram_until": "2026-10-12T11:27:52.772702+00:00"
   }
 }
