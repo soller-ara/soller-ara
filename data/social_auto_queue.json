@@ -1,6 +1,43 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-10-12T15:25:59.468170+00:00",
+  "entries": [
+    {
+      "post_id": "ad33c8702c7e0b36919b",
+      "title": "Aires Sollerics. Sòller. 11.10.2026",
+      "summary": "Vídeo publicat per Ballades A Mallorca · YouTube.",
+      "source": "Ballades A Mallorca · YouTube",
+      "source_id": "youtube-ballades-mallorca-soller",
+      "source_type": "social",
+      "category": "culture",
+      "language": "ca",
+      "published_at": "2026-10-12T12:08:51+00:00",
+      "original_url": "https://www.youtube.com/watch?v=AitG-R2rhTs",
+      "content_policy": "generated_social_summary",
+      "rights_status": "platform_embed",
+      "platforms": [
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/ad33c8702c7e0b36919b.jpg"
+    },
+    {
+      "post_id": "6839f597f44ead8a1311",
+      "title": "Fútbol para la Igualdad celebra deu anys de labor social",
+      "summary": "",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "source_type": "media",
+      "category": "sports",
+      "language": "ca",
+      "published_at": "2026-10-12T09:36:03+00:00",
+      "original_url": "https://saveu.cat/noticies/futbol-para-la-igualdad-celebra-deu-anys-de-labor-social/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/6839f597f44ead8a1311.jpg"
+    }
+  ]
 }
