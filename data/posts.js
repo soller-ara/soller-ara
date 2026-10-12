@@ -554,10 +554,29 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 205,
+  "post_count": 206,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "soller-ara-52527d0cebdd11d0",
+      "category": "politics",
+      "source_id": "manual-2c8d8b791093",
+      "source": "Partit Popular Sóller",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-12T13:33:29.943989+00:00",
+      "show_in_now": true,
+      "content_type": "social_link",
+      "title": "",
+      "summary": "",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-52527d0cebdd11d0.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": false,
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1607739411381969&id=100064377771793&hpir=1"
+    },
     {
       "id": "soller-ara-641c2c476a4ebfb8",
       "category": "politics",
@@ -4749,5 +4768,5 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "sources_checked_at": "2026-10-12T12:39:22.277520+00:00",
-  "fetched_at": "2026-10-12T13:27:02.678940+00:00"
+  "fetched_at": "2026-10-12T13:33:29.949711+00:00"
 };
