@@ -554,10 +554,29 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 204,
+  "post_count": 205,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "soller-ara-641c2c476a4ebfb8",
+      "category": "politics",
+      "source_id": "manual-fac4dffa0d31",
+      "source": "Sent i Sentit",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-12T13:27:02.675517+00:00",
+      "show_in_now": true,
+      "content_type": "social_link",
+      "title": "",
+      "summary": "",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-641c2c476a4ebfb8.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": false,
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1448585530738866&id=100067622984661&hpir=1"
+    },
     {
       "id": "ad33c8702c7e0b36919b",
       "category": "culture",
@@ -4730,5 +4749,5 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "sources_checked_at": "2026-10-12T12:39:22.277520+00:00",
-  "fetched_at": "2026-10-12T12:39:22.277520+00:00"
+  "fetched_at": "2026-10-12T13:27:02.678940+00:00"
 };
