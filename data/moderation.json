@@ -1,7 +1,8 @@
 {
   "version": 1,
   "hidden_post_ids": [
-    "a57e64e57bd13a6a8f85"
+    "a57e64e57bd13a6a8f85",
+    "e786162f3a68426e418f"
   ],
   "notes": {},
   "hidden_posts": {
@@ -22,6 +23,26 @@
       "media_type": "video",
       "content_policy": "generated_social_summary",
       "rights_status": "platform_embed",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    "e786162f3a68426e418f": {
+      "id": "e786162f3a68426e418f",
+      "category": "culture",
+      "source_id": "ara-balears-soller",
+      "source": "ARA Balears",
+      "source_type": "media",
+      "language": "ca",
+      "locality": "Sóller / Serra de Tramuntana",
+      "published_at": "2026-10-12T08:31:07+00:00",
+      "title": "Cinquanta autores expliquen set dècades de còmic espanyol al casal Solleric",
+      "summary": "",
+      "url": "https://www.arabalears.cat/cultura/cinquanta-autores-expliquen-set-decades-comic-espanyol-casal-solleric_1_5876694.html",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
       "image_allowed": false,
       "related_sources": []
     }

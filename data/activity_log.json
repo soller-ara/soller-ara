@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "af46fb06bc0706d3",
+      "timestamp": "2026-10-12T15:09:34.041234+00:00",
+      "action": "hide",
+      "area": "moderation",
+      "target_id": "e786162f3a68426e418f",
+      "title": "Cinquanta autores expliquen set dècades de còmic espanyol al casal Solleric",
+      "detail": "Acción de moderación completada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "7da2324189d1ae24",
       "timestamp": "2026-10-12T13:33:30.013237+00:00",
       "action": "publish",

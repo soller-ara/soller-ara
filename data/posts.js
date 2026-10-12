@@ -554,7 +554,7 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 206,
+  "post_count": 205,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
@@ -680,26 +680,6 @@ window.SOLLER_ARA_DATA = {
       "image_allowed": false,
       "embed_type": "official_oembed",
       "embed_url": "https://saveu.cat/noticies/el-mallorca-tria-raixa-per-a-la-foto-oficial-i-reivindica-la-pedra-en-sec-com-a-simbol-didentitat/embed/",
-      "related_sources": []
-    },
-    {
-      "id": "e786162f3a68426e418f",
-      "category": "culture",
-      "source_id": "ara-balears-soller",
-      "source": "ARA Balears",
-      "source_type": "media",
-      "language": "ca",
-      "locality": "Sóller / Serra de Tramuntana",
-      "published_at": "2026-10-12T08:31:07+00:00",
-      "title": "Cinquanta autores expliquen set dècades de còmic espanyol al casal Solleric",
-      "summary": "",
-      "url": "https://www.arabalears.cat/cultura/cinquanta-autores-expliquen-set-decades-comic-espanyol-casal-solleric_1_5876694.html",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
       "related_sources": []
     },
     {
@@ -4770,5 +4750,5 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "sources_checked_at": "2026-10-12T14:29:46.873989+00:00",
-  "fetched_at": "2026-10-12T14:29:46.873989+00:00"
+  "fetched_at": "2026-10-12T15:09:33.979975+00:00"
 };
