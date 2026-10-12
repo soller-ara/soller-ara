@@ -5943,9 +5943,57 @@
       "retry_requested": true,
       "stage": "media_publish",
       "container_id": "18117936520905740"
+    },
+    {
+      "post_id": "ad33c8702c7e0b36919b",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18101994497052537",
+      "remote_url": "https://www.instagram.com/p/DeZQSFCjME4/",
+      "title": "Aires Sollerics. Sòller. 11.10.2026",
+      "post_url": "https://www.youtube.com/watch?v=AitG-R2rhTs",
+      "source": "Ballades A Mallorca · YouTube",
+      "source_id": "youtube-ballades-mallorca-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-12T15:26:15.290163+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "6839f597f44ead8a1311",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Fútbol para la Igualdad celebra deu anys de labor social",
+      "post_url": "https://saveu.cat/noticies/futbol-para-la-igualdad-celebra-deu-anys-de-labor-social/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-12T15:26:24.711034+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18117973402905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "6839f597f44ead8a1311",
+      "platform": "instagram",
+      "status": "verification_required",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Fútbol para la Igualdad celebra deu anys de labor social",
+      "post_url": "https://saveu.cat/noticies/futbol-para-la-igualdad-celebra-deu-anys-de-labor-social/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-12T15:26:27.536494+00:00",
+      "error": "Application request limit reached [code=4, subcode=2207051]",
+      "retry_requested": true,
+      "stage": "media_publish",
+      "container_id": "18117973402905740"
     }
   ],
   "cooldowns": {
-    "instagram_until": "2026-10-12T14:39:56.768571+00:00"
+    "instagram_until": "2026-10-12T17:26:27.533625+00:00"
   }
 }
