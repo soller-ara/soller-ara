@@ -5881,6 +5881,20 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-12T10:26:52.950098+00:00",
       "error": ""
+    },
+    {
+      "post_id": "25d28367d7df7edce288",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122122799265467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122122799265467310",
+      "title": "El Mallorca tria Raixa per a la foto oficial i reivindica la pedra en sec com a símbol d’identitat",
+      "post_url": "https://saveu.cat/noticies/el-mallorca-tria-raixa-per-a-la-foto-oficial-i-reivindica-la-pedra-en-sec-com-a-simbol-didentitat/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-12T11:25:04.114914+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
