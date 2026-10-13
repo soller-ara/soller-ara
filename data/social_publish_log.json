@@ -6087,6 +6087,34 @@
       "retry_requested": true,
       "stage": "media_publish",
       "container_id": "18118151908905740"
+    },
+    {
+      "post_id": "dcc5d25d416d2de079b0",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122123237469467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122123237469467310",
+      "title": "Els sollerics ja poden consultar si formen part del cens electoral per a les eleccions del 29 de novembre",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/13/354651/els-sollerics-poden-consultar-cens-electoral-per-les-eleccions-del-novembre-ajuntament.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-13T11:28:05.132129+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "df97b7caccb7a0cee690",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122123237499467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122123237499467310",
+      "title": "Tornen les Jornades Gastronòmiques dels Bolets de Sóller",
+      "post_url": "https://ajsoller.net/ca/noticies/tornen-les-jornades-gastronomiques-dels-bolets-de-soller",
+      "source": "Ajuntament de Sóller",
+      "source_id": "ajuntament-soller-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-13T11:28:12.520237+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
