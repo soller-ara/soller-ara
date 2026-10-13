@@ -6211,6 +6211,34 @@
       "retry_requested": true,
       "stage": "media_publish",
       "container_id": "18118201912905740"
+    },
+    {
+      "post_id": "2355f90b738f726b557f",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122123323863467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122123323863467310",
+      "title": "Comprar un habitatge a Sóller és un 23,5% més car que fa un any",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/13/354653/comprar-habitatge-soller-mes-car-any.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-13T16:27:50.717792+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "038e30a39b79022cf752",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122123323893467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122123323893467310",
+      "title": "Tancats dos trams de platja per temor a vessaments del veler naufragat",
+      "post_url": "https://saveu.cat/noticies/tancats-dos-trams-de-platja-per-temor-a-vessaments-del-veler-naufragat/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-13T16:27:59.559648+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
