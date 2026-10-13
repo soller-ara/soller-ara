@@ -6039,6 +6039,20 @@
       "retry_requested": true,
       "stage": "media_publish",
       "container_id": "18118126933905740"
+    },
+    {
+      "post_id": "0bdd64b4c70c99ddde9c",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122123204757467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122123204757467310",
+      "title": "Passes solidàries per continuar avançant cap a la igualtat",
+      "post_url": "https://ajsoller.net/ca/noticies/passes-solidaries-continuar-avancant-cap-la-igualtat",
+      "source": "Ajuntament de Sóller",
+      "source_id": "ajuntament-soller-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-13T09:27:06.320024+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
