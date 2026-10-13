@@ -1,26 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-13T07:28:27.302170+00:00",
-  "entries": [
-    {
-      "post_id": "429f25024f942943fc01",
-      "title": "BIBLIOTECA MUNICIPAL DE DEIÀ JOAN GRAVES",
-      "summary": "",
-      "source": "Ajuntament de Deià",
-      "source_id": "ajuntament-deia-noticies",
-      "source_type": "official",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-10-13T07:08:54+00:00",
-      "original_url": "https://ajdeia.net/ca/noticies/biblioteca-municipal-de-deia-joan-graves-1",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "official_public_source",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/429f25024f942943fc01.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
