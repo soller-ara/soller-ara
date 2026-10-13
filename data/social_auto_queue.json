@@ -1,7 +1,7 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-13T11:27:50.493364+00:00",
+  "generated_at": "2026-10-13T12:32:01.948762+00:00",
   "entries": [
     {
       "post_id": "dcc5d25d416d2de079b0",
@@ -17,27 +17,45 @@
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
-        "facebook"
+        "instagram"
       ],
-      "image_url": ""
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/dcc5d25d416d2de079b0.jpg"
     },
     {
-      "post_id": "df97b7caccb7a0cee690",
-      "title": "Tornen les Jornades Gastronòmiques dels Bolets de Sóller",
-      "summary": "A partir del 10 d’octubre, molts establiments de la Vall oferiran menús i plats especials elaborats amb bolets, combinant el producte local amb la creativitat dels nostres restauradors. Hi participen: Es Canyís, Sa Cuina…",
+      "post_id": "0bdd64b4c70c99ddde9c",
+      "title": "Passes solidàries per continuar avançant cap a la igualtat",
+      "summary": "Sóller se suma a la tercera edició de la campanya «Zapatillas Solidarias», una iniciativa de Asociación Deporte para la Igualdad que enguany celebra deu anys de compromís amb la igualtat entre dones i homes, tant dins…",
       "source": "Ajuntament de Sóller",
       "source_id": "ajuntament-soller-noticies",
       "source_type": "official",
-      "category": "news",
+      "category": "sports",
       "language": "ca",
-      "published_at": "2026-10-13T08:59:46+00:00",
-      "original_url": "https://ajsoller.net/ca/noticies/tornen-les-jornades-gastronomiques-dels-bolets-de-soller",
+      "published_at": "2026-10-13T09:02:36+00:00",
+      "original_url": "https://ajsoller.net/ca/noticies/passes-solidaries-continuar-avancant-cap-la-igualtat",
       "content_policy": "short_factual_excerpt",
       "rights_status": "public_source_reviewed",
       "platforms": [
-        "facebook"
+        "instagram"
       ],
-      "image_url": ""
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/0bdd64b4c70c99ddde9c.jpg"
+    },
+    {
+      "post_id": "429f25024f942943fc01",
+      "title": "BIBLIOTECA MUNICIPAL DE DEIÀ JOAN GRAVES",
+      "summary": "",
+      "source": "Ajuntament de Deià",
+      "source_id": "ajuntament-deia-noticies",
+      "source_type": "official",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-10-13T07:08:54+00:00",
+      "original_url": "https://ajdeia.net/ca/noticies/biblioteca-municipal-de-deia-joan-graves-1",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "official_public_source",
+      "platforms": [
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/429f25024f942943fc01.jpg"
     }
   ]
 }
