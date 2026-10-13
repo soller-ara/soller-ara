@@ -1,61 +1,43 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-13T15:26:47.485199+00:00",
+  "generated_at": "2026-10-13T16:27:34.808294+00:00",
   "entries": [
     {
-      "post_id": "199aca5d24454ffffb01",
-      "title": "Investiguen un motorista per provocar un accident i atropellar un menor a la Ma-10",
+      "post_id": "2355f90b738f726b557f",
+      "title": "Comprar un habitatge a Sóller és un 23,5% més car que fa un any",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-10-13T17:47:30+02:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/10/13/354653/comprar-habitatge-soller-mes-car-any.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook"
+      ],
+      "image_url": ""
+    },
+    {
+      "post_id": "038e30a39b79022cf752",
+      "title": "Tancats dos trams de platja per temor a vessaments del veler naufragat",
       "summary": "",
       "source": "Sa Veu de Sóller",
       "source_id": "sa-veu-soller",
       "source_type": "media",
       "category": "news",
       "language": "ca",
-      "published_at": "2026-10-13T14:10:17+00:00",
-      "original_url": "https://saveu.cat/noticies/investiguen-un-motorista-per-provocar-un-accident-i-atropellar-un-menor-a-la-ma-10/",
+      "published_at": "2026-10-13T14:07:06+00:00",
+      "original_url": "https://saveu.cat/noticies/tancats-dos-trams-de-platja-per-temor-a-vessaments-del-veler-naufragat/",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
-        "instagram"
+        "facebook"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/199aca5d24454ffffb01.jpg"
-    },
-    {
-      "post_id": "36a1e7587c270b7c8620",
-      "title": "Observació d’aus a S’Albufera: Cicle d’Ornitologia 2026",
-      "summary": "",
-      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
-      "source_id": "mucbo-noticies",
-      "source_type": "institution",
-      "category": "culture",
-      "language": "ca",
-      "published_at": "2026-10-13T13:00:20+00:00",
-      "original_url": "https://mucbo.org/observacio-daus-a-salbufera-cloenda-del-cicle-dornitologia-2026/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "link_only_no_media_license",
-      "platforms": [
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/36a1e7587c270b7c8620.jpg"
-    },
-    {
-      "post_id": "dcc5d25d416d2de079b0",
-      "title": "Els sollerics ja poden consultar si formen part del cens electoral per a les eleccions del 29 de novembre",
-      "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
-      "source_type": "media",
-      "category": "agenda",
-      "language": "ca",
-      "published_at": "2026-10-13T13:05:00+02:00",
-      "original_url": "https://www.elsoller.cat/soller/local/2026/10/13/354651/els-sollerics-poden-consultar-cens-electoral-per-les-eleccions-del-novembre-ajuntament.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/dcc5d25d416d2de079b0.jpg"
+      "image_url": ""
     }
   ]
 }
