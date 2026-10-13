@@ -1,6 +1,25 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-10-13T09:26:19.198068+00:00",
+  "entries": [
+    {
+      "post_id": "0bdd64b4c70c99ddde9c",
+      "title": "Passes solidàries per continuar avançant cap a la igualtat",
+      "summary": "Sóller se suma a la tercera edició de la campanya «Zapatillas Solidarias», una iniciativa de Asociación Deporte para la Igualdad que enguany celebra deu anys de compromís amb la igualtat entre dones i homes, tant dins…",
+      "source": "Ajuntament de Sóller",
+      "source_id": "ajuntament-soller-noticies",
+      "source_type": "official",
+      "category": "sports",
+      "language": "ca",
+      "published_at": "2026-10-13T09:02:36+00:00",
+      "original_url": "https://ajsoller.net/ca/noticies/passes-solidaries-continuar-avancant-cap-la-igualtat",
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "public_source_reviewed",
+      "platforms": [
+        "facebook"
+      ],
+      "image_url": ""
+    }
+  ]
 }
