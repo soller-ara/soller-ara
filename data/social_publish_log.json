@@ -6253,9 +6253,43 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-13T17:24:09.871707+00:00",
       "error": ""
+    },
+    {
+      "post_id": "2355f90b738f726b557f",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Comprar un habitatge a Sóller és un 23,5% més car que fa un any",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/13/354653/comprar-habitatge-soller-mes-car-any.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-13T18:30:28.915861+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18118236181905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "2355f90b738f726b557f",
+      "platform": "instagram",
+      "status": "verification_required",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Comprar un habitatge a Sóller és un 23,5% més car que fa un any",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/13/354653/comprar-habitatge-soller-mes-car-any.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-13T18:30:31.074907+00:00",
+      "error": "Application request limit reached [code=4, subcode=2207051]",
+      "retry_requested": true,
+      "stage": "media_publish",
+      "container_id": "18118236181905740"
     }
   ],
   "cooldowns": {
-    "instagram_until": "2026-10-13T17:27:22.684343+00:00"
+    "instagram_until": "2026-10-13T20:30:31.071982+00:00"
   }
 }
