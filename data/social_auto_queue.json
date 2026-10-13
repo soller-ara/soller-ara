@@ -1,61 +1,25 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-13T12:32:01.948762+00:00",
+  "generated_at": "2026-10-13T13:31:14.240837+00:00",
   "entries": [
     {
-      "post_id": "dcc5d25d416d2de079b0",
-      "title": "Els sollerics ja poden consultar si formen part del cens electoral per a les eleccions del 29 de novembre",
+      "post_id": "36a1e7587c270b7c8620",
+      "title": "Observació d’aus a S’Albufera: Cicle d’Ornitologia 2026",
       "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
-      "source_type": "media",
-      "category": "agenda",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "source_type": "institution",
+      "category": "culture",
       "language": "ca",
-      "published_at": "2026-10-13T13:05:00+02:00",
-      "original_url": "https://www.elsoller.cat/soller/local/2026/10/13/354651/els-sollerics-poden-consultar-cens-electoral-per-les-eleccions-del-novembre-ajuntament.html",
+      "published_at": "2026-10-13T13:00:20+00:00",
+      "original_url": "https://mucbo.org/observacio-daus-a-salbufera-cloenda-del-cicle-dornitologia-2026/",
       "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
+      "rights_status": "link_only_no_media_license",
       "platforms": [
-        "instagram"
+        "facebook"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/dcc5d25d416d2de079b0.jpg"
-    },
-    {
-      "post_id": "0bdd64b4c70c99ddde9c",
-      "title": "Passes solidàries per continuar avançant cap a la igualtat",
-      "summary": "Sóller se suma a la tercera edició de la campanya «Zapatillas Solidarias», una iniciativa de Asociación Deporte para la Igualdad que enguany celebra deu anys de compromís amb la igualtat entre dones i homes, tant dins…",
-      "source": "Ajuntament de Sóller",
-      "source_id": "ajuntament-soller-noticies",
-      "source_type": "official",
-      "category": "sports",
-      "language": "ca",
-      "published_at": "2026-10-13T09:02:36+00:00",
-      "original_url": "https://ajsoller.net/ca/noticies/passes-solidaries-continuar-avancant-cap-la-igualtat",
-      "content_policy": "short_factual_excerpt",
-      "rights_status": "public_source_reviewed",
-      "platforms": [
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/0bdd64b4c70c99ddde9c.jpg"
-    },
-    {
-      "post_id": "429f25024f942943fc01",
-      "title": "BIBLIOTECA MUNICIPAL DE DEIÀ JOAN GRAVES",
-      "summary": "",
-      "source": "Ajuntament de Deià",
-      "source_id": "ajuntament-deia-noticies",
-      "source_type": "official",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-10-13T07:08:54+00:00",
-      "original_url": "https://ajdeia.net/ca/noticies/biblioteca-municipal-de-deia-joan-graves-1",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "official_public_source",
-      "platforms": [
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/429f25024f942943fc01.jpg"
+      "image_url": ""
     }
   ]
 }
