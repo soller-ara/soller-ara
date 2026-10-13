@@ -1,37 +1,19 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-13T16:27:34.808294+00:00",
+  "generated_at": "2026-10-13T17:23:49.144293+00:00",
   "entries": [
     {
-      "post_id": "2355f90b738f726b557f",
-      "title": "Comprar un habitatge a Sóller és un 23,5% més car que fa un any",
-      "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-10-13T17:47:30+02:00",
-      "original_url": "https://www.elsoller.cat/soller/local/2026/10/13/354653/comprar-habitatge-soller-mes-car-any.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook"
-      ],
-      "image_url": ""
-    },
-    {
-      "post_id": "038e30a39b79022cf752",
-      "title": "Tancats dos trams de platja per temor a vessaments del veler naufragat",
+      "post_id": "844c1ad7a9db16636deb",
+      "title": "El Consell esbuca un habitatge per a ampliar la rotonda de Son Castelló",
       "summary": "",
       "source": "Sa Veu de Sóller",
       "source_id": "sa-veu-soller",
       "source_type": "media",
-      "category": "news",
+      "category": "services",
       "language": "ca",
-      "published_at": "2026-10-13T14:07:06+00:00",
-      "original_url": "https://saveu.cat/noticies/tancats-dos-trams-de-platja-per-temor-a-vessaments-del-veler-naufragat/",
+      "published_at": "2026-10-13T14:01:23+00:00",
+      "original_url": "https://saveu.cat/noticies/el-consell-esbuca-un-habitatge-per-a-ampliar-la-rotonda-de-de-son-castello/",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
