@@ -6163,6 +6163,20 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-13T13:31:35.702494+00:00",
       "error": ""
+    },
+    {
+      "post_id": "199aca5d24454ffffb01",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122123296521467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122123296521467310",
+      "title": "Investiguen un motorista per provocar un accident i atropellar un menor a la Ma-10",
+      "post_url": "https://saveu.cat/noticies/investiguen-un-motorista-per-provocar-un-accident-i-atropellar-un-menor-a-la-ma-10/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-13T14:29:21.988188+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
