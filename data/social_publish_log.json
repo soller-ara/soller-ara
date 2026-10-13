@@ -6239,6 +6239,20 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-13T16:27:59.559648+00:00",
       "error": ""
+    },
+    {
+      "post_id": "844c1ad7a9db16636deb",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122123339613467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122123339613467310",
+      "title": "El Consell esbuca un habitatge per a ampliar la rotonda de Son Castelló",
+      "post_url": "https://saveu.cat/noticies/el-consell-esbuca-un-habitatge-per-a-ampliar-la-rotonda-de-de-son-castello/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-13T17:24:09.871707+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
