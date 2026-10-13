@@ -6149,6 +6149,20 @@
       "retry_requested": true,
       "stage": "media_publish",
       "container_id": "18118169905905740"
+    },
+    {
+      "post_id": "36a1e7587c270b7c8620",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122123271471467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122123271471467310",
+      "title": "Observació d’aus a S’Albufera: Cicle d’Ornitologia 2026",
+      "post_url": "https://mucbo.org/observacio-daus-a-salbufera-cloenda-del-cicle-dornitologia-2026/",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-13T13:31:35.702494+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
