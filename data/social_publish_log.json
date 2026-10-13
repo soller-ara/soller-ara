@@ -6301,9 +6301,43 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-13T19:34:47.688257+00:00",
       "error": ""
+    },
+    {
+      "post_id": "950c0048fdab58ba5399",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Patadas y manotazos contra los agentes en un «after» de la carretera de Sóller",
+      "post_url": "https://www.fibwidiario.com/articulo/sucesos/detenido-lanzar-patadas-manotazos-policias-junto-after-ilegal-palma/20261013210401326401.html",
+      "source": "Fibwi Diario · Sóller",
+      "source_id": "fibwi-diario-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-13T20:35:59.364916+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18118253578905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "950c0048fdab58ba5399",
+      "platform": "instagram",
+      "status": "verification_required",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Patadas y manotazos contra los agentes en un «after» de la carretera de Sóller",
+      "post_url": "https://www.fibwidiario.com/articulo/sucesos/detenido-lanzar-patadas-manotazos-policias-junto-after-ilegal-palma/20261013210401326401.html",
+      "source": "Fibwi Diario · Sóller",
+      "source_id": "fibwi-diario-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-13T20:36:02.065852+00:00",
+      "error": "Application request limit reached [code=4, subcode=2207051]",
+      "retry_requested": true,
+      "stage": "media_publish",
+      "container_id": "18118253578905740"
     }
   ],
   "cooldowns": {
-    "instagram_until": "2026-10-13T20:30:31.071982+00:00"
+    "instagram_until": "2026-10-13T22:36:02.062472+00:00"
   }
 }
