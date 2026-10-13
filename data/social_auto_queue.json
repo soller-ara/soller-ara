@@ -1,7 +1,7 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-13T19:34:29.612280+00:00",
+  "generated_at": "2026-10-13T20:35:27.760092+00:00",
   "entries": [
     {
       "post_id": "950c0048fdab58ba5399",
@@ -17,9 +17,27 @@
       "content_policy": "headline_date_link_only",
       "rights_status": "link_only_no_media_license",
       "platforms": [
-        "facebook"
+        "instagram"
       ],
-      "image_url": ""
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/950c0048fdab58ba5399.jpg"
+    },
+    {
+      "post_id": "2355f90b738f726b557f",
+      "title": "Comprar un habitatge a Sóller és un 23,5% més car que fa un any",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-10-13T17:47:30+02:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/10/13/354653/comprar-habitatge-soller-mes-car-any.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/2355f90b738f726b557f.jpg"
     }
   ]
 }
