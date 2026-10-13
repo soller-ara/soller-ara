@@ -1,21 +1,21 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-13T13:31:14.240837+00:00",
+  "generated_at": "2026-10-13T14:27:37.825722+00:00",
   "entries": [
     {
-      "post_id": "36a1e7587c270b7c8620",
-      "title": "Observació d’aus a S’Albufera: Cicle d’Ornitologia 2026",
+      "post_id": "199aca5d24454ffffb01",
+      "title": "Investiguen un motorista per provocar un accident i atropellar un menor a la Ma-10",
       "summary": "",
-      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
-      "source_id": "mucbo-noticies",
-      "source_type": "institution",
-      "category": "culture",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "source_type": "media",
+      "category": "news",
       "language": "ca",
-      "published_at": "2026-10-13T13:00:20+00:00",
-      "original_url": "https://mucbo.org/observacio-daus-a-salbufera-cloenda-del-cicle-dornitologia-2026/",
+      "published_at": "2026-10-13T14:10:17+00:00",
+      "original_url": "https://saveu.cat/noticies/investiguen-un-motorista-per-provocar-un-accident-i-atropellar-un-menor-a-la-ma-10/",
       "content_policy": "headline_date_link_only",
-      "rights_status": "link_only_no_media_license",
+      "rights_status": "permission_pending",
       "platforms": [
         "facebook"
       ],
