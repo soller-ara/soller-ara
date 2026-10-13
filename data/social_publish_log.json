@@ -6053,9 +6053,43 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-13T09:27:06.320024+00:00",
       "error": ""
+    },
+    {
+      "post_id": "0bdd64b4c70c99ddde9c",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Passes solidàries per continuar avançant cap a la igualtat",
+      "post_url": "https://ajsoller.net/ca/noticies/passes-solidaries-continuar-avancant-cap-la-igualtat",
+      "source": "Ajuntament de Sóller",
+      "source_id": "ajuntament-soller-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-13T10:27:41.294010+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18118151908905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "0bdd64b4c70c99ddde9c",
+      "platform": "instagram",
+      "status": "verification_required",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Passes solidàries per continuar avançant cap a la igualtat",
+      "post_url": "https://ajsoller.net/ca/noticies/passes-solidaries-continuar-avancant-cap-la-igualtat",
+      "source": "Ajuntament de Sóller",
+      "source_id": "ajuntament-soller-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-13T10:27:44.766272+00:00",
+      "error": "Application request limit reached [code=4, subcode=2207051]",
+      "retry_requested": true,
+      "stage": "media_publish",
+      "container_id": "18118151908905740"
     }
   ],
   "cooldowns": {
-    "instagram_until": "2026-10-13T09:29:05.436727+00:00"
+    "instagram_until": "2026-10-13T12:27:44.764045+00:00"
   }
 }
