@@ -3,7 +3,8 @@
   "hidden_post_ids": [
     "a57e64e57bd13a6a8f85",
     "e786162f3a68426e418f",
-    "25d28367d7df7edce288"
+    "25d28367d7df7edce288",
+    "353ec93257e658c713b1"
   ],
   "notes": {},
   "hidden_posts": {
@@ -67,6 +68,26 @@
       "image_allowed": false,
       "embed_type": "official_oembed",
       "embed_url": "https://saveu.cat/noticies/el-mallorca-tria-raixa-per-a-la-foto-oficial-i-reivindica-la-pedra-en-sec-com-a-simbol-didentitat/embed/",
+      "related_sources": []
+    },
+    "353ec93257e658c713b1": {
+      "id": "353ec93257e658c713b1",
+      "category": "news",
+      "source_id": "youtube-ib3-noticies-soller",
+      "source": "IB3 Notícies · YouTube",
+      "source_type": "social",
+      "language": "ca",
+      "locality": "Sóller / Fornalutx / Serra de Tramuntana",
+      "published_at": "2026-10-14T13:15:06+00:00",
+      "title": "50 autores dibuixen la història del còmic al Casal Solleric",
+      "summary": "Vídeo publicat per IB3 Notícies · YouTube.",
+      "url": "https://www.youtube.com/watch?v=TsrkJApbg74",
+      "platform": "YouTube",
+      "account": "@NoticiesIB3",
+      "media_type": "video",
+      "content_policy": "generated_social_summary",
+      "rights_status": "platform_embed",
+      "image_allowed": false,
       "related_sources": []
     }
   },

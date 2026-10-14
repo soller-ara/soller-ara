@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "acd25be618ac7d01",
+      "timestamp": "2026-10-14T14:10:12.893767+00:00",
+      "action": "hide",
+      "area": "moderation",
+      "target_id": "353ec93257e658c713b1",
+      "title": "50 autores dibuixen la història del còmic al Casal Solleric",
+      "detail": "Acción de moderación completada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "dc9608cb9d5977cd",
       "timestamp": "2026-10-12T15:11:27.091678+00:00",
       "action": "hide",

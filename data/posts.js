@@ -554,30 +554,10 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 205,
+  "post_count": 204,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
-    {
-      "id": "353ec93257e658c713b1",
-      "category": "news",
-      "source_id": "youtube-ib3-noticies-soller",
-      "source": "IB3 Notícies · YouTube",
-      "source_type": "social",
-      "language": "ca",
-      "locality": "Sóller / Fornalutx / Serra de Tramuntana",
-      "published_at": "2026-10-14T13:15:06+00:00",
-      "title": "50 autores dibuixen la història del còmic al Casal Solleric",
-      "summary": "Vídeo publicat per IB3 Notícies · YouTube.",
-      "url": "https://www.youtube.com/watch?v=TsrkJApbg74",
-      "platform": "YouTube",
-      "account": "@NoticiesIB3",
-      "media_type": "video",
-      "content_policy": "generated_social_summary",
-      "rights_status": "platform_embed",
-      "image_allowed": false,
-      "related_sources": []
-    },
     {
       "id": "308ef354a154e1d7e6cb",
       "category": "news",
@@ -4746,5 +4726,5 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "sources_checked_at": "2026-10-14T13:39:27.948886+00:00",
-  "fetched_at": "2026-10-14T13:39:27.948886+00:00"
+  "fetched_at": "2026-10-14T14:10:12.824312+00:00"
 };
