@@ -6397,6 +6397,20 @@
       "retry_requested": true,
       "stage": "media_publish",
       "container_id": "18118349551905740"
+    },
+    {
+      "post_id": "3b64b156f2d241377206",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18017668496745871",
+      "remote_url": "https://www.instagram.com/p/DeeE73IoGMC/",
+      "title": "Ple extraordinari de l'Ajuntament de Sóller, celebrada el 14/10/2026",
+      "post_url": "https://www.youtube.com/watch?v=4qXYULRSZBI",
+      "source": "Ajuntament de Sóller · YouTube",
+      "source_id": "youtube-ajuntament-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-14T12:42:22.283332+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
