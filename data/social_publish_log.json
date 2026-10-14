@@ -6487,6 +6487,20 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-14T13:40:14.377683+00:00",
       "error": ""
+    },
+    {
+      "post_id": "0d60de60a38264e3c4f9",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122123594193467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122123594193467310",
+      "title": "La UE qüestiona els criteris de residència de Sóller per accedir a l’habitatge social públic",
+      "post_url": "https://saveu.cat/noticies/la-ue-questiona-els-criteris-de-residencia-de-soller-per-accedir-a-lhabitatge-social-public/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-14T14:35:40.499551+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
