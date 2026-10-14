@@ -1,64 +1,25 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-14T13:39:28.106291+00:00",
+  "generated_at": "2026-10-14T14:35:16.354350+00:00",
   "entries": [
     {
-      "post_id": "353ec93257e658c713b1",
-      "title": "50 autores dibuixen la història del còmic al Casal Solleric",
-      "summary": "Vídeo publicat per IB3 Notícies · YouTube.",
-      "source": "IB3 Notícies · YouTube",
-      "source_id": "youtube-ib3-noticies-soller",
-      "source_type": "social",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-10-14T13:15:06+00:00",
-      "original_url": "https://www.youtube.com/watch?v=TsrkJApbg74",
-      "content_policy": "generated_social_summary",
-      "rights_status": "platform_embed",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/353ec93257e658c713b1.jpg"
-    },
-    {
-      "post_id": "308ef354a154e1d7e6cb",
-      "title": "La Vila rebaixarà l’IBI el proper any en un 0’02%",
+      "post_id": "0d60de60a38264e3c4f9",
+      "title": "La UE qüestiona els criteris de residència de Sóller per accedir a l’habitatge social públic",
       "summary": "",
       "source": "Sa Veu de Sóller",
       "source_id": "sa-veu-soller",
       "source_type": "media",
       "category": "news",
       "language": "ca",
-      "published_at": "2026-10-14T13:14:28+00:00",
-      "original_url": "https://saveu.cat/noticies/la-vila-rebaixara-libi-el-proper-any-en-un-002/",
+      "published_at": "2026-10-14T13:04:13+00:00",
+      "original_url": "https://saveu.cat/noticies/la-ue-questiona-els-criteris-de-residencia-de-soller-per-accedir-a-lhabitatge-social-public/",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
-        "facebook",
-        "instagram"
+        "facebook"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/308ef354a154e1d7e6cb.jpg"
-    },
-    {
-      "post_id": "53518279c195d89793a1",
-      "title": "IB3N | 50 autores dibuixen la història del còmic al Casal Solleric",
-      "summary": "",
-      "source": "IB3 Notícies",
-      "source_id": "ib3-noticies-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-10-14T12:00:00+00:00",
-      "original_url": "https://ib3.org/50-autores-dibuixen-la-historia-del-comic-al-casal-solleric",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/53518279c195d89793a1.jpg"
+      "image_url": ""
     }
   ]
 }
