@@ -6549,6 +6549,20 @@
       "retry_requested": true,
       "stage": "media_publish",
       "container_id": "18118429738905740"
+    },
+    {
+      "post_id": "308ef354a154e1d7e6cb",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18117790291999312",
+      "remote_url": "https://www.instagram.com/p/Dee1IS3lAs7/",
+      "title": "La Vila rebaixarà l’IBI el proper any en un 0’02%",
+      "post_url": "https://saveu.cat/noticies/la-vila-rebaixara-libi-el-proper-any-en-un-002/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-14T18:41:37.194395+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
