@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "f0a726077797b521",
+      "timestamp": "2026-10-14T14:10:49.894425+00:00",
+      "action": "hide",
+      "area": "moderation",
+      "target_id": "53518279c195d89793a1",
+      "title": "IB3N | 50 autores dibuixen la història del còmic al Casal Solleric",
+      "detail": "Acción de moderación completada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "acd25be618ac7d01",
       "timestamp": "2026-10-14T14:10:12.893767+00:00",
       "action": "hide",

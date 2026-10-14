@@ -554,7 +554,7 @@
     }
   ],
   "social_integration_status": [],
-  "post_count": 204,
+  "post_count": 203,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
@@ -622,26 +622,6 @@
       "image_allowed": false,
       "embed_type": "official_oembed",
       "embed_url": "https://saveu.cat/noticies/el-cami-de-cas-jurat-es-prepara-per-reobrir-se-al-transit/embed/",
-      "related_sources": []
-    },
-    {
-      "id": "53518279c195d89793a1",
-      "category": "news",
-      "source_id": "ib3-noticies-soller",
-      "source": "IB3 Notícies",
-      "source_type": "media",
-      "language": "ca",
-      "locality": "Sóller / Serra de Tramuntana",
-      "published_at": "2026-10-14T12:00:00+00:00",
-      "title": "IB3N | 50 autores dibuixen la història del còmic al Casal Solleric",
-      "summary": "",
-      "url": "https://ib3.org/50-autores-dibuixen-la-historia-del-comic-al-casal-solleric",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
       "related_sources": []
     },
     {
@@ -4726,5 +4706,5 @@
     }
   ],
   "sources_checked_at": "2026-10-14T13:39:27.948886+00:00",
-  "fetched_at": "2026-10-14T14:10:12.824312+00:00"
+  "fetched_at": "2026-10-14T14:10:49.827678+00:00"
 }
