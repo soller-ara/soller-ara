@@ -1,25 +1,25 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-14T15:39:12.820653+00:00",
+  "generated_at": "2026-10-14T16:37:43.779673+00:00",
   "entries": [
     {
-      "post_id": "b0d5df73c6059f40bd01",
-      "title": "El camí de Cas Jurat es prepara per reobrir-se al trànsit",
+      "post_id": "308ef354a154e1d7e6cb",
+      "title": "La Vila rebaixarà l’IBI el proper any en un 0’02%",
       "summary": "",
       "source": "Sa Veu de Sóller",
       "source_id": "sa-veu-soller",
       "source_type": "media",
-      "category": "services",
+      "category": "news",
       "language": "ca",
-      "published_at": "2026-10-14T12:59:04+00:00",
-      "original_url": "https://saveu.cat/noticies/el-cami-de-cas-jurat-es-prepara-per-reobrir-se-al-transit/",
+      "published_at": "2026-10-14T13:14:28+00:00",
+      "original_url": "https://saveu.cat/noticies/la-vila-rebaixara-libi-el-proper-any-en-un-002/",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
-        "facebook"
+        "instagram"
       ],
-      "image_url": ""
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/308ef354a154e1d7e6cb.jpg"
     }
   ]
 }
