@@ -6411,9 +6411,85 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-14T12:42:22.283332+00:00",
       "error": ""
+    },
+    {
+      "post_id": "353ec93257e658c713b1",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122123581425467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122123581425467310",
+      "title": "50 autores dibuixen la història del còmic al Casal Solleric",
+      "post_url": "https://www.youtube.com/watch?v=TsrkJApbg74",
+      "source": "IB3 Notícies · YouTube",
+      "source_id": "youtube-ib3-noticies-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-14T13:39:45.203019+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "353ec93257e658c713b1",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "50 autores dibuixen la història del còmic al Casal Solleric",
+      "post_url": "https://www.youtube.com/watch?v=TsrkJApbg74",
+      "source": "IB3 Notícies · YouTube",
+      "source_id": "youtube-ib3-noticies-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-14T13:39:59.830418+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18118390609905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "353ec93257e658c713b1",
+      "platform": "instagram",
+      "status": "verification_required",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "50 autores dibuixen la història del còmic al Casal Solleric",
+      "post_url": "https://www.youtube.com/watch?v=TsrkJApbg74",
+      "source": "IB3 Notícies · YouTube",
+      "source_id": "youtube-ib3-noticies-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-14T13:40:02.360903+00:00",
+      "error": "Application request limit reached [code=4, subcode=2207051]",
+      "retry_requested": true,
+      "stage": "media_publish",
+      "container_id": "18118390609905740"
+    },
+    {
+      "post_id": "308ef354a154e1d7e6cb",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122123581551467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122123581551467310",
+      "title": "La Vila rebaixarà l’IBI el proper any en un 0’02%",
+      "post_url": "https://saveu.cat/noticies/la-vila-rebaixara-libi-el-proper-any-en-un-002/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-14T13:40:09.589357+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "53518279c195d89793a1",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122123581629467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122123581629467310",
+      "title": "IB3N | 50 autores dibuixen la història del còmic al Casal Solleric",
+      "post_url": "https://ib3.org/50-autores-dibuixen-la-historia-del-comic-al-casal-solleric",
+      "source": "IB3 Notícies",
+      "source_id": "ib3-noticies-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-14T13:40:14.377683+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
-    "instagram_until": "2026-10-14T11:37:05.470230+00:00"
+    "instagram_until": "2026-10-14T15:40:02.357853+00:00"
   }
 }
