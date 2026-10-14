@@ -1,6 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-10-14T09:36:29.072202+00:00",
+  "entries": [
+    {
+      "post_id": "3b64b156f2d241377206",
+      "title": "Ple extraordinari de l'Ajuntament de Sóller, celebrada el 14/10/2026",
+      "summary": "Vídeo publicat per Ajuntament de Sóller · YouTube relacionat amb una sessió plenària o activitat municipal.",
+      "source": "Ajuntament de Sóller · YouTube",
+      "source_id": "youtube-ajuntament-soller",
+      "source_type": "social",
+      "category": "agenda",
+      "language": "ca",
+      "published_at": "2026-10-14T08:48:13+00:00",
+      "original_url": "https://www.youtube.com/watch?v=4qXYULRSZBI",
+      "content_policy": "generated_social_summary",
+      "rights_status": "platform_embed",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/3b64b156f2d241377206.jpg"
+    }
+  ]
 }
