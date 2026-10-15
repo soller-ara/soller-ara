@@ -1,61 +1,25 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-15T17:08:07.664573+00:00",
+  "generated_at": "2026-10-15T17:32:41.817651+00:00",
   "entries": [
     {
-      "post_id": "73e319bca65616ff505a",
-      "title": "Font Sorda, Font Major i Font Teix obtenen el Distintiu Serra de Tramuntana",
-      "summary": "",
-      "source": "Fora Vila",
-      "source_id": "fora-vila-soller",
-      "source_type": "media",
-      "category": "services",
-      "language": "ca",
-      "published_at": "2026-10-15T14:10:12+00:00",
-      "original_url": "https://www.foravila.net/foravilaverd/font-sorda-font-major-i-font-teix-obtenen-el-distintiu-serra-de-tramuntana/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/73e319bca65616ff505a.jpg"
-    },
-    {
-      "post_id": "7afcc6f6de4a895334ff",
-      "title": "El carrer de Sant Jaume tancarà dilluns i dimarts pel muntatge de les bastides del Fantasio",
-      "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
-      "source_type": "media",
-      "category": "services",
-      "language": "ca",
-      "published_at": "2026-10-15T15:54:00+02:00",
-      "original_url": "https://www.elsoller.cat/soller/local/2026/10/15/354657/carrer-sant-jaume-tancara-dilluns-dimarts-pel-muntatge-les-bastides-del-fantasio.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/7afcc6f6de4a895334ff.jpg"
-    },
-    {
-      "post_id": "21cfcc0b02799365c82b",
-      "title": "La Font des Teix obté el distintiu Serra de Tramuntana",
+      "post_id": "fdb61d9c0902bccefe75",
+      "title": "Refloten el veler naufragat prop del Través",
       "summary": "",
       "source": "Sa Veu de Sóller",
       "source_id": "sa-veu-soller",
       "source_type": "media",
-      "category": "culture",
+      "category": "news",
       "language": "ca",
-      "published_at": "2026-10-15T13:34:33+00:00",
-      "original_url": "https://saveu.cat/noticies/la-font-des-teix-obte-el-distintiu-serra-de-tramuntana/",
+      "published_at": "2026-10-15T13:03:34+00:00",
+      "original_url": "https://saveu.cat/noticies/refloten-el-veler-naufragat-prop-del-traves/",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
-        "instagram"
+        "facebook"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/21cfcc0b02799365c82b.jpg"
+      "image_url": ""
     }
   ]
 }
