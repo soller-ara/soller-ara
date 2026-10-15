@@ -6673,6 +6673,34 @@
       "retry_requested": true,
       "stage": "media_publish",
       "container_id": "18118597441905740"
+    },
+    {
+      "post_id": "026b592c05d61d25ad85",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122123901177467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122123901177467310",
+      "title": "Las tres aguas de la Serra de Tramuntana ya cuentan con el Distintiu Serra de Tramuntana del Consell de Mallorca",
+      "post_url": "https://www.conselldemallorca.es/es/todas-las-noticias/-/asset_publisher/bqOupoVYvgPA/content/les-tres-aig%C3%BCes-de-la-serra-de-tramuntana-ja-compten-amb-el-distintiu-serra-de-tramuntana-del-consell-de-mallorca/695139",
+      "source": "Consell de Mallorca",
+      "source_id": "consell-mallorca-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-15T12:42:38.547315+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "e306a5d6366084e2215a",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122123901213467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122123901213467310",
+      "title": "Triplica la tasa de alcohol y acaba estrellado contra una valla en la carretera de Sóller",
+      "post_url": "https://www.mallorcadiario.com/triplica-alcohol-accidente-carretera-soller",
+      "source": "Mallorcadiario · Sóller",
+      "source_id": "mallorcadiario-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-15T12:42:44.596724+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
