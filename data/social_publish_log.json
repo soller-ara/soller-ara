@@ -6701,9 +6701,57 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-15T12:42:44.596724+00:00",
       "error": ""
+    },
+    {
+      "post_id": "2bfc95be3a8589b9aadb",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122123914923467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122123914923467310",
+      "title": "Sant Jaume es tancarà al trànsit dilluns i dimarts per iniciar les obres del cine Fantasio",
+      "post_url": "https://saveu.cat/noticies/sant-jaume-es-tancara-al-transit-dilluns-i-dimarts-per-iniciar-les-obres-del-cine-fantasio/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-15T13:46:21.338150+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "2bfc95be3a8589b9aadb",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Sant Jaume es tancarà al trànsit dilluns i dimarts per iniciar les obres del cine Fantasio",
+      "post_url": "https://saveu.cat/noticies/sant-jaume-es-tancara-al-transit-dilluns-i-dimarts-per-iniciar-les-obres-del-cine-fantasio/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-15T13:46:36.908462+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18118627195905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "2bfc95be3a8589b9aadb",
+      "platform": "instagram",
+      "status": "verification_required",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Sant Jaume es tancarà al trànsit dilluns i dimarts per iniciar les obres del cine Fantasio",
+      "post_url": "https://saveu.cat/noticies/sant-jaume-es-tancara-al-transit-dilluns-i-dimarts-per-iniciar-les-obres-del-cine-fantasio/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-15T13:46:39.099083+00:00",
+      "error": "Application request limit reached [code=4, subcode=2207051]",
+      "retry_requested": true,
+      "stage": "media_publish",
+      "container_id": "18118627195905740"
     }
   ],
   "cooldowns": {
-    "instagram_until": "2026-10-15T13:35:30.918544+00:00"
+    "instagram_until": "2026-10-15T15:46:39.095734+00:00"
   }
 }
