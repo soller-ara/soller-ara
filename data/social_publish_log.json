@@ -6881,6 +6881,20 @@
       "retry_requested": true,
       "stage": "media_publish",
       "container_id": "18118671970905740"
+    },
+    {
+      "post_id": "fdb61d9c0902bccefe75",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122123962779467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122123962779467310",
+      "title": "Refloten el veler naufragat prop del Través",
+      "post_url": "https://saveu.cat/noticies/refloten-el-veler-naufragat-prop-del-traves/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-15T17:33:35.953301+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
