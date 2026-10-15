@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "c65f3961b079e660",
+      "timestamp": "2026-10-15T19:26:15.796734+00:00",
+      "action": "delete-own",
+      "area": "moderation",
+      "target_id": "soller-ara-5a403a26bc5046ef",
+      "title": "soller-ara-5a403a26bc5046ef",
+      "detail": "Acción de moderación completada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "5667eeec1b59b7ae",
       "timestamp": "2026-10-15T17:14:16.242186+00:00",
       "action": "edit",
