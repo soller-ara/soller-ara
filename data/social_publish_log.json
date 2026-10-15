@@ -6749,6 +6749,48 @@
       "retry_requested": true,
       "stage": "media_publish",
       "container_id": "18118627195905740"
+    },
+    {
+      "post_id": "73e319bca65616ff505a",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122123927349467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122123927349467310",
+      "title": "Font Sorda, Font Major i Font Teix obtenen el Distintiu Serra de Tramuntana",
+      "post_url": "https://www.foravila.net/foravilaverd/font-sorda-font-major-i-font-teix-obtenen-el-distintiu-serra-de-tramuntana/",
+      "source": "Fora Vila",
+      "source_id": "fora-vila-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-15T14:37:59.969113+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "7afcc6f6de4a895334ff",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122123927367467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122123927367467310",
+      "title": "El carrer de Sant Jaume tancarà dilluns i dimarts pel muntatge de les bastides del Fantasio",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/15/354657/carrer-sant-jaume-tancara-dilluns-dimarts-pel-muntatge-les-bastides-del-fantasio.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-15T14:38:04.583752+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "21cfcc0b02799365c82b",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122123927397467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122123927397467310",
+      "title": "La Font des Teix obté el distintiu Serra de Tramuntana",
+      "post_url": "https://saveu.cat/noticies/la-font-des-teix-obte-el-distintiu-serra-de-tramuntana/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-15T14:38:10.701413+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
