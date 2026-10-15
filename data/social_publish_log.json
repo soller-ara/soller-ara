@@ -6611,6 +6611,20 @@
       "retry_requested": true,
       "stage": "media_publish",
       "container_id": "18118548670905740"
+    },
+    {
+      "post_id": "0be4402d5a805625a3ad",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18034695161666324",
+      "remote_url": "https://www.instagram.com/p/DegVtF_oLYj/",
+      "title": "Ajudes Erasmus FP 2026-27",
+      "post_url": "https://iessoller.com/2026/10/15/ajudes-erasmus-fp-2026-27/",
+      "source": "IES Guillem Colom Casasnoves",
+      "source_id": "ies-guillem-colom-casasnoves",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-15T09:37:32.049685+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
