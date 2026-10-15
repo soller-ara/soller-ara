@@ -1,25 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-15T09:37:12.961831+00:00",
-  "entries": [
-    {
-      "post_id": "0be4402d5a805625a3ad",
-      "title": "Ajudes Erasmus FP 2026-27",
-      "summary": "",
-      "source": "IES Guillem Colom Casasnoves",
-      "source_id": "ies-guillem-colom-casasnoves",
-      "source_type": "institution",
-      "category": "services",
-      "language": "ca",
-      "published_at": "2026-10-15T06:24:19+00:00",
-      "original_url": "https://iessoller.com/2026/10/15/ajudes-erasmus-fp-2026-27/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "link_only_no_media_license",
-      "platforms": [
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/0be4402d5a805625a3ad.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
