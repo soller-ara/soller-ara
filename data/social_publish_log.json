@@ -6847,9 +6847,43 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-15T16:39:12.846705+00:00",
       "error": ""
+    },
+    {
+      "post_id": "73e319bca65616ff505a",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Font Sorda, Font Major i Font Teix obtenen el Distintiu Serra de Tramuntana",
+      "post_url": "https://www.foravila.net/foravilaverd/font-sorda-font-major-i-font-teix-obtenen-el-distintiu-serra-de-tramuntana/",
+      "source": "Fora Vila",
+      "source_id": "fora-vila-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-15T17:08:38.800034+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18118671970905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "73e319bca65616ff505a",
+      "platform": "instagram",
+      "status": "verification_required",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Font Sorda, Font Major i Font Teix obtenen el Distintiu Serra de Tramuntana",
+      "post_url": "https://www.foravila.net/foravilaverd/font-sorda-font-major-i-font-teix-obtenen-el-distintiu-serra-de-tramuntana/",
+      "source": "Fora Vila",
+      "source_id": "fora-vila-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-15T17:08:41.948932+00:00",
+      "error": "Application request limit reached [code=4, subcode=2207051]",
+      "retry_requested": true,
+      "stage": "media_publish",
+      "container_id": "18118671970905740"
     }
   ],
   "cooldowns": {
-    "instagram_until": "2026-10-15T15:46:39.095734+00:00"
+    "instagram_until": "2026-10-15T19:08:41.944816+00:00"
   }
 }
