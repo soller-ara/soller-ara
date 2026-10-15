@@ -6563,9 +6563,57 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-14T18:41:37.194395+00:00",
       "error": ""
+    },
+    {
+      "post_id": "0be4402d5a805625a3ad",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122123838639467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122123838639467310",
+      "title": "Ajudes Erasmus FP 2026-27",
+      "post_url": "https://iessoller.com/2026/10/15/ajudes-erasmus-fp-2026-27/",
+      "source": "IES Guillem Colom Casasnoves",
+      "source_id": "ies-guillem-colom-casasnoves",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-15T06:41:46.672392+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "0be4402d5a805625a3ad",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Ajudes Erasmus FP 2026-27",
+      "post_url": "https://iessoller.com/2026/10/15/ajudes-erasmus-fp-2026-27/",
+      "source": "IES Guillem Colom Casasnoves",
+      "source_id": "ies-guillem-colom-casasnoves",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-15T06:42:03.106021+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18118548670905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "0be4402d5a805625a3ad",
+      "platform": "instagram",
+      "status": "verification_required",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Ajudes Erasmus FP 2026-27",
+      "post_url": "https://iessoller.com/2026/10/15/ajudes-erasmus-fp-2026-27/",
+      "source": "IES Guillem Colom Casasnoves",
+      "source_id": "ies-guillem-colom-casasnoves",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-15T06:42:06.084565+00:00",
+      "error": "Application request limit reached [code=4, subcode=2207051]",
+      "retry_requested": true,
+      "stage": "media_publish",
+      "container_id": "18118548670905740"
     }
   ],
   "cooldowns": {
-    "instagram_until": "2026-10-14T18:38:11.192980+00:00"
+    "instagram_until": "2026-10-15T08:42:06.082446+00:00"
   }
 }
