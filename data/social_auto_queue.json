@@ -1,25 +1,61 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-15T15:38:05.798918+00:00",
+  "generated_at": "2026-10-15T16:35:50.662132+00:00",
   "entries": [
     {
-      "post_id": "5a4e2b6d28d9310d6cbc",
-      "title": "Primer temporal de tardor amb molta pluja i arribada del fred",
+      "post_id": "73e319bca65616ff505a",
+      "title": "Font Sorda, Font Major i Font Teix obtenen el Distintiu Serra de Tramuntana",
+      "summary": "",
+      "source": "Fora Vila",
+      "source_id": "fora-vila-soller",
+      "source_type": "media",
+      "category": "services",
+      "language": "ca",
+      "published_at": "2026-10-15T14:10:12+00:00",
+      "original_url": "https://www.foravila.net/foravilaverd/font-sorda-font-major-i-font-teix-obtenen-el-distintiu-serra-de-tramuntana/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/73e319bca65616ff505a.jpg"
+    },
+    {
+      "post_id": "7afcc6f6de4a895334ff",
+      "title": "El carrer de Sant Jaume tancarà dilluns i dimarts pel muntatge de les bastides del Fantasio",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "services",
+      "language": "ca",
+      "published_at": "2026-10-15T15:54:00+02:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/10/15/354657/carrer-sant-jaume-tancara-dilluns-dimarts-pel-muntatge-les-bastides-del-fantasio.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/7afcc6f6de4a895334ff.jpg"
+    },
+    {
+      "post_id": "2bfc95be3a8589b9aadb",
+      "title": "Sant Jaume es tancarà al trànsit dilluns i dimarts per iniciar les obres del cine Fantasio",
       "summary": "",
       "source": "Sa Veu de Sóller",
       "source_id": "sa-veu-soller",
       "source_type": "media",
-      "category": "news",
+      "category": "services",
       "language": "ca",
-      "published_at": "2026-10-15T13:30:25+00:00",
-      "original_url": "https://saveu.cat/noticies/primer-temporal-de-tardor-amb-molta-pluja-i-arribada-del-fred/",
+      "published_at": "2026-10-15T13:40:41+00:00",
+      "original_url": "https://saveu.cat/noticies/sant-jaume-es-tancara-al-transit-dilluns-i-dimarts-per-iniciar-les-obres-del-cine-fantasio/",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
-        "facebook"
+        "instagram"
       ],
-      "image_url": ""
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/2bfc95be3a8589b9aadb.jpg"
     }
   ]
 }
