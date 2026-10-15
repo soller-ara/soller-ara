@@ -1,26 +1,43 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-15T11:34:20.775015+00:00",
+  "generated_at": "2026-10-15T12:42:14.905039+00:00",
   "entries": [
     {
-      "post_id": "83cef012e530168ca854",
-      "title": "Font des Teix rep el Distintiu Serra de Tramuntana juntament amb Font Sorda i Font Major",
+      "post_id": "026b592c05d61d25ad85",
+      "title": "Las tres aguas de la Serra de Tramuntana ya cuentan con el Distintiu Serra de Tramuntana del Consell de Mallorca",
       "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
-      "source_type": "media",
+      "source": "Consell de Mallorca",
+      "source_id": "consell-mallorca-soller",
+      "source_type": "official",
       "category": "news",
       "language": "ca",
-      "published_at": "2026-10-15T13:21:09+02:00",
-      "original_url": "https://www.elsoller.cat/soller/local/2026/10/15/354655/font-des-teix-rep-distintiu-serra-tramuntana-juntament-amb-font-sorda-font-major.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
+      "published_at": "2026-10-15T12:00:00+00:00",
+      "original_url": "https://www.conselldemallorca.es/es/todas-las-noticias/-/asset_publisher/bqOupoVYvgPA/content/les-tres-aig%C3%BCes-de-la-serra-de-tramuntana-ja-compten-amb-el-distintiu-serra-de-tramuntana-del-consell-de-mallorca/695139",
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "official_public_source",
       "platforms": [
-        "facebook",
-        "instagram"
+        "facebook"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/83cef012e530168ca854.jpg"
+      "image_url": ""
+    },
+    {
+      "post_id": "e306a5d6366084e2215a",
+      "title": "Triplica la tasa de alcohol y acaba estrellado contra una valla en la carretera de Sóller",
+      "summary": "",
+      "source": "Mallorcadiario · Sóller",
+      "source_id": "mallorcadiario-soller",
+      "source_type": "media",
+      "category": "services",
+      "language": "es",
+      "published_at": "2026-10-15T11:19:23+00:00",
+      "original_url": "https://www.mallorcadiario.com/triplica-alcohol-accidente-carretera-soller",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "platforms": [
+        "facebook"
+      ],
+      "image_url": ""
     }
   ]
 }
