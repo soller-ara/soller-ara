@@ -6791,6 +6791,20 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-15T14:38:10.701413+00:00",
       "error": ""
+    },
+    {
+      "post_id": "5a4e2b6d28d9310d6cbc",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122123940873467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122123940873467310",
+      "title": "Primer temporal de tardor amb molta pluja i arribada del fred",
+      "post_url": "https://saveu.cat/noticies/primer-temporal-de-tardor-amb-molta-pluja-i-arribada-del-fred/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-15T15:38:22.827521+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
