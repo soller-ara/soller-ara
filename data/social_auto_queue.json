@@ -1,55 +1,19 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-15T14:37:38.719561+00:00",
+  "generated_at": "2026-10-15T15:38:05.798918+00:00",
   "entries": [
     {
-      "post_id": "73e319bca65616ff505a",
-      "title": "Font Sorda, Font Major i Font Teix obtenen el Distintiu Serra de Tramuntana",
-      "summary": "",
-      "source": "Fora Vila",
-      "source_id": "fora-vila-soller",
-      "source_type": "media",
-      "category": "services",
-      "language": "ca",
-      "published_at": "2026-10-15T14:10:12+00:00",
-      "original_url": "https://www.foravila.net/foravilaverd/font-sorda-font-major-i-font-teix-obtenen-el-distintiu-serra-de-tramuntana/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook"
-      ],
-      "image_url": ""
-    },
-    {
-      "post_id": "7afcc6f6de4a895334ff",
-      "title": "El carrer de Sant Jaume tancarà dilluns i dimarts pel muntatge de les bastides del Fantasio",
-      "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
-      "source_type": "media",
-      "category": "services",
-      "language": "ca",
-      "published_at": "2026-10-15T15:54:49+02:00",
-      "original_url": "https://www.elsoller.cat/soller/local/2026/10/15/354657/carrer-sant-jaume-tancara-dilluns-dimarts-pel-muntatge-les-bastides-del-fantasio.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook"
-      ],
-      "image_url": ""
-    },
-    {
-      "post_id": "21cfcc0b02799365c82b",
-      "title": "La Font des Teix obté el distintiu Serra de Tramuntana",
+      "post_id": "5a4e2b6d28d9310d6cbc",
+      "title": "Primer temporal de tardor amb molta pluja i arribada del fred",
       "summary": "",
       "source": "Sa Veu de Sóller",
       "source_id": "sa-veu-soller",
       "source_type": "media",
-      "category": "culture",
+      "category": "news",
       "language": "ca",
-      "published_at": "2026-10-15T13:34:33+00:00",
-      "original_url": "https://saveu.cat/noticies/la-font-des-teix-obte-el-distintiu-serra-de-tramuntana/",
+      "published_at": "2026-10-15T13:30:25+00:00",
+      "original_url": "https://saveu.cat/noticies/primer-temporal-de-tardor-amb-molta-pluja-i-arribada-del-fred/",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
