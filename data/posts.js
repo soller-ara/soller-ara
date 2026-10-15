@@ -561,7 +561,7 @@ window.SOLLER_ARA_DATA = {
     {
       "id": "soller-ara-3e2c44d87b8b2e0b",
       "category": "culture",
-      "source_id": "soller-ara",
+      "source_id": "manual-4bf706dacb80",
       "source": "Publicació de xarxa",
       "source_type": "own",
       "language": "ca",
@@ -575,7 +575,7 @@ window.SOLLER_ARA_DATA = {
       "content_policy": "manual_link_reference",
       "rights_status": "no_reuse_reference_only",
       "image_allowed": false,
-      "original_url": "https://www.facebook.com/100057562715334/photos/d41d8cd9/1575130031082406/?set=a.741768077751943&hpir=1"
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1575130741082335&id=100057562715334&hpir=1"
     },
     {
       "id": "soller-ara-25fec1655ddb7f95",
@@ -4724,5 +4724,5 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "sources_checked_at": "2026-10-15T10:36:27.704082+00:00",
-  "fetched_at": "2026-10-15T10:38:18.832115+00:00"
+  "fetched_at": "2026-10-15T10:46:24.657804+00:00"
 };
