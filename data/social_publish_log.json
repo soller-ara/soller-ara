@@ -6625,9 +6625,57 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-15T09:37:32.049685+00:00",
       "error": ""
+    },
+    {
+      "post_id": "83cef012e530168ca854",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122123883285467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122123883285467310",
+      "title": "Font des Teix rep el Distintiu Serra de Tramuntana juntament amb Font Sorda i Font Major",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/15/354655/font-des-teix-rep-distintiu-serra-tramuntana-juntament-amb-font-sorda-font-major.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-15T11:35:19.666675+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "83cef012e530168ca854",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Font des Teix rep el Distintiu Serra de Tramuntana juntament amb Font Sorda i Font Major",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/15/354655/font-des-teix-rep-distintiu-serra-tramuntana-juntament-amb-font-sorda-font-major.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-15T11:35:28.025702+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18118597441905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "83cef012e530168ca854",
+      "platform": "instagram",
+      "status": "verification_required",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Font des Teix rep el Distintiu Serra de Tramuntana juntament amb Font Sorda i Font Major",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/15/354655/font-des-teix-rep-distintiu-serra-tramuntana-juntament-amb-font-sorda-font-major.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-15T11:35:30.922056+00:00",
+      "error": "Application request limit reached [code=4, subcode=2207051]",
+      "retry_requested": true,
+      "stage": "media_publish",
+      "container_id": "18118597441905740"
     }
   ],
   "cooldowns": {
-    "instagram_until": "2026-10-15T08:42:06.082446+00:00"
+    "instagram_until": "2026-10-15T13:35:30.918544+00:00"
   }
 }
