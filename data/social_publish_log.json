@@ -6805,6 +6805,48 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-15T15:38:22.827521+00:00",
       "error": ""
+    },
+    {
+      "post_id": "73e319bca65616ff505a",
+      "platform": "instagram",
+      "status": "error",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Font Sorda, Font Major i Font Teix obtenen el Distintiu Serra de Tramuntana",
+      "post_url": "https://www.foravila.net/foravilaverd/font-sorda-font-major-i-font-teix-obtenen-el-distintiu-serra-de-tramuntana/",
+      "source": "Fora Vila",
+      "source_id": "fora-vila-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-15T16:37:36.007960+00:00",
+      "error": "La targeta d'Instagram encara no és pública. HTTP Error 404: Not Found"
+    },
+    {
+      "post_id": "7afcc6f6de4a895334ff",
+      "platform": "instagram",
+      "status": "error",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "El carrer de Sant Jaume tancarà dilluns i dimarts pel muntatge de les bastides del Fantasio",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/15/354657/carrer-sant-jaume-tancara-dilluns-dimarts-pel-muntatge-les-bastides-del-fantasio.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-15T16:39:09.700317+00:00",
+      "error": "La targeta d'Instagram encara no és pública. HTTP Error 404: Not Found"
+    },
+    {
+      "post_id": "2bfc95be3a8589b9aadb",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "17938043562398365",
+      "remote_url": "https://www.instagram.com/p/DehGSrOF9Sv/",
+      "title": "Sant Jaume es tancarà al trànsit dilluns i dimarts per iniciar les obres del cine Fantasio",
+      "post_url": "https://saveu.cat/noticies/sant-jaume-es-tancara-al-transit-dilluns-i-dimarts-per-iniciar-les-obres-del-cine-fantasio/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-15T16:39:12.846705+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
