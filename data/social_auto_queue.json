@@ -1,8 +1,46 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-16T11:34:42.979660+00:00",
+  "generated_at": "2026-10-16T12:41:32.136968+00:00",
   "entries": [
+    {
+      "post_id": "8042af96558967454299",
+      "title": "El túnel de Sóller estará cerrado durante la noche del 19 de octubre al 19 de noviembre para poder sustituir los paneles y realizar el mantenimiento",
+      "summary": "",
+      "source": "Consell de Mallorca",
+      "source_id": "consell-mallorca-soller",
+      "source_type": "official",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-10-16T12:00:00+00:00",
+      "original_url": "https://www.conselldemallorca.es/es/todas-las-noticias/-/asset_publisher/bqOupoVYvgPA/content/el-t%C3%BAnel-de-s%C3%B3ller-romandr%C3%A0-tancat-els-vespres-del-19-d-octubre-al-19-de-novembre-per-poder-substituir-els-panells-i-fer-hi-el-manteniment/695139",
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "official_public_source",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/8042af96558967454299.jpg"
+    },
+    {
+      "post_id": "4561efad2238f0e6c15e",
+      "title": "El túnel de Sóller cerrará todas las noches durante un mes",
+      "summary": "",
+      "source": "Mallorcadiario · Sóller",
+      "source_id": "mallorcadiario-soller",
+      "source_type": "media",
+      "category": "alerts",
+      "language": "es",
+      "published_at": "2026-10-16T11:41:43+00:00",
+      "original_url": "https://www.mallorcadiario.com/el-tunel-de-soller-cerrara-por-las-noches-de-lunes-a-jueves-del-19-de-octubre-al-19-de-noviembre",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/4561efad2238f0e6c15e.jpg"
+    },
     {
       "post_id": "5ff0e679a42f74f7451f",
       "title": "La Vila apuja un 18% el rebut dels fems per la manca de reciclatge",
@@ -17,45 +55,9 @@
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
-        "facebook"
+        "instagram"
       ],
-      "image_url": ""
-    },
-    {
-      "post_id": "2cf8b157f7b94c3bf53d",
-      "title": "Soller Tunnel will be closed at night until 19 November for maintenance",
-      "summary": "",
-      "source": "Majorca Daily Bulletin · Sóller",
-      "source_id": "majorca-daily-bulletin-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "en",
-      "published_at": "2026-10-16T12:58:57+02:00",
-      "original_url": "https://www.majorcadailybulletin.com/news/local/2026/10/16/146629/soller-tunnel-will-closed-night-until-november-for-maintenance.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "link_only_no_media_license",
-      "platforms": [
-        "facebook"
-      ],
-      "image_url": ""
-    },
-    {
-      "post_id": "ee2f561514f041ef405a",
-      "title": "El túnel de Sóller cerrará de noche del 19 de octubre al 19 de noviembre por mantenimiento, excepto los fines de semana",
-      "summary": "",
-      "source": "Última Hora",
-      "source_id": "ultima-hora-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "es",
-      "published_at": "2026-10-16T12:54:00+02:00",
-      "original_url": "https://www.ultimahora.es/noticias/part-forana/2026/10/16/2730083/tunel-soller-cerrara-noche-del-octubre-noviembre-por-mantenimiento-excepto-fines-semana.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook"
-      ],
-      "image_url": ""
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/5ff0e679a42f74f7451f.jpg"
     }
   ]
 }
