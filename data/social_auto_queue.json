@@ -1,43 +1,29 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-16T18:37:36.339850+00:00",
+  "generated_at": "2026-10-16T22:03:44.792869+00:00",
   "entries": [
     {
-      "post_id": "684bfae7f1c476fc9a4f",
-      "title": "CVS Salsa Picante Martínez - Ttes. Gamitruk Portol. Cadete Femení 2°B. Jornada 2",
-      "summary": "Vídeo publicat per Club Vòlei Sóller · YouTube.",
-      "source": "Club Vòlei Sóller · YouTube",
-      "source_id": "youtube-club-volei-soller",
-      "source_type": "social",
-      "category": "sports",
-      "language": "ca",
-      "published_at": "2026-10-16T15:10:59+00:00",
-      "original_url": "https://www.youtube.com/watch?v=0RpcIFuctrA",
-      "content_policy": "generated_social_summary",
-      "rights_status": "platform_embed",
+      "post_id": "8b1be84a99c24bb8861e",
+      "title": "Aviso. Nivel amarillo. Lluvias. Sierra Tramontana",
+      "summary": "Aviso de precipitación acumulada en una hora de nivel amarillo de 00:00 19-10-2026 CEST (UTC+2) a 23:59 19-10-2026 CEST (UTC+2).",
+      "source": "AEMET · Serra de Tramuntana",
+      "source_id": "aemet-avisos-mallorca",
+      "source_type": "official",
+      "category": "alerts",
+      "language": "es",
+      "published_at": "2026-10-16T21:50:01+00:00",
+      "alert_status": "scheduled",
+      "alert_valid_from": "2026-10-18T22:00:00+00:00",
+      "alert_valid_until": "2026-10-19T21:59:00+00:00",
+      "original_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261016215001_AFAZ645401PRP11922.xml",
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "reuse_authorized_with_attribution",
       "platforms": [
+        "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/684bfae7f1c476fc9a4f.jpg"
-    },
-    {
-      "post_id": "606a4d0d7bf65e47065e",
-      "title": "Nou reglament circulatori per millorar la protecció dels usuaris vulnerables",
-      "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-10-16T17:00:00+02:00",
-      "original_url": "https://www.elsoller.cat/soller/local/2026/10/16/354663/nou-reglament-circulatori-per-millorar-proteccio-dels-usuaris-vulnerables.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/606a4d0d7bf65e47065e.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/8b1be84a99c24bb8861e.jpg"
     }
   ]
 }
