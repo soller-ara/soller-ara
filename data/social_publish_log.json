@@ -7233,6 +7233,34 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-16T08:36:24.073498+00:00",
       "error": ""
+    },
+    {
+      "post_id": "dcabb2e959f61d564c58",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122124164271467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122124164271467310",
+      "title": "Una nova vida per al pinyol que s’obté de la molturació de l’oliva",
+      "post_url": "https://saveu.cat/noticies/una-nova-vida-per-al-pinyol-que-sobte-de-la-molturacio-de-loliva/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-16T09:35:51.846579+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "e61f2bd95282521b16fb",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122124164307467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122124164307467310",
+      "title": "«Cap al 2030 tot el que ens fa humans pot desaparèixer per culpa de la IA»",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/16/354659/cap-2030-tot-ens-humans-pot-desapareixer-per-culpa.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-16T09:35:57.166027+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
