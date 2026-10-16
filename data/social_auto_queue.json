@@ -1,64 +1,61 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-16T07:40:42.444643+00:00",
+  "generated_at": "2026-10-16T08:35:53.734776+00:00",
   "entries": [
     {
-      "post_id": "6fef1a93a42673533b72",
-      "title": "Una nova mirada al nostre patrimoni: «Sóller Modernista»",
-      "summary": "Vos convidam a descobrir-les amb la projecció del documental «Sóller Modernista», una oportunitat per acostar-nos al nostre patrimoni i mirar amb uns altres ulls els espais que formen part del nostre dia a dia. Dimarts…",
-      "source": "Ajuntament de Sóller",
-      "source_id": "ajuntament-soller-noticies",
-      "source_type": "official",
-      "category": "culture",
-      "language": "ca",
-      "published_at": "2026-10-16T07:35:21+00:00",
-      "original_url": "https://ajsoller.net/ca/noticies/una-nova-mirada-al-nostre-patrimoni-soller-modernista",
-      "content_policy": "short_factual_excerpt",
-      "rights_status": "public_source_reviewed",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/6fef1a93a42673533b72.jpg"
-    },
-    {
-      "post_id": "2d5bc03ab14e10fb39a3",
-      "title": "“Volem que la gent d’aquí senti que la Mallorca byUTMB és seva i que hi participi”",
+      "post_id": "80e63310ba569287bfd6",
+      "title": "La Unidad Básica de Salud Port de Sóller traslada provisionalmente su actividad al centro de salud Serra Nord",
       "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
+      "source": "Última Hora",
+      "source_id": "ultima-hora-soller",
       "source_type": "media",
       "category": "news",
-      "language": "ca",
-      "published_at": "2026-10-16T07:01:05+00:00",
-      "original_url": "https://saveu.cat/entrevistes/volem-que-la-gent-daqui-senti-que-la-mallorca-byutmb-es-seva-i-que-hi-participi/",
+      "language": "es",
+      "published_at": "2026-10-16T10:31:35+02:00",
+      "original_url": "https://www.ultimahora.es/noticias/part-forana/2026/10/16/2729931/unidad-basica-salud-port-soller-traslada-provisionalmente-actividad-centro-salud-serra-nord.html",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
-        "facebook",
-        "instagram"
+        "facebook"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/2d5bc03ab14e10fb39a3.jpg"
+      "image_url": ""
     },
     {
-      "post_id": "9f3793e4ae94ecf93ef9",
-      "title": "Bases ajuts llibres i ajudes esportives 2026-2027",
-      "summary": "sarrom dv., 16/10/2026 - 08:39 16-Octubre-2026 El termini de presentació de les sol·licituds és de 19 a 31 d'octubre.",
-      "source": "Ajuntament de Fornalutx",
-      "source_id": "ajuntament-fornalutx-noticies",
-      "source_type": "official",
-      "category": "sports",
+      "post_id": "ed95fcb0406705104c8e",
+      "title": "La Unitat Bàsica de Salut del Port deixa el local per les goteres i trasllada l'activitat al PAC de Sóller",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "services",
       "language": "ca",
-      "published_at": "2026-10-16T06:39:31+00:00",
-      "original_url": "https://ajfornalutx.net/ca/noticies/bases-ajuts-llibres-i-ajudes-esportives-2026-2027",
-      "content_policy": "short_factual_excerpt",
-      "rights_status": "official_public_source",
+      "published_at": "2026-10-16T10:19:00+02:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/10/16/354661/unitat-basica-salut-del-port-deixa-local-actual-per-les-goteres-trasllada-activitat-pac-soller.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
       "platforms": [
-        "facebook",
-        "instagram"
+        "facebook"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/9f3793e4ae94ecf93ef9.jpg"
+      "image_url": ""
+    },
+    {
+      "post_id": "cdb42d4d675e498f209d",
+      "title": "ELECCIONS AL CONSELL ESCOLAR 2026",
+      "summary": "",
+      "source": "IES Guillem Colom Casasnoves",
+      "source_id": "ies-guillem-colom-casasnoves",
+      "source_type": "institution",
+      "category": "services",
+      "language": "ca",
+      "published_at": "2026-10-16T08:06:10+00:00",
+      "original_url": "https://iessoller.com/2026/10/16/eleccions-al-consell-escolar-2026/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "platforms": [
+        "facebook"
+      ],
+      "image_url": ""
     }
   ]
 }
