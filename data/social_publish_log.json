@@ -7115,9 +7115,85 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-16T06:40:59.968356+00:00",
       "error": ""
+    },
+    {
+      "post_id": "6fef1a93a42673533b72",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122124137415467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122124137415467310",
+      "title": "Una nova mirada al nostre patrimoni: «Sóller Modernista»",
+      "post_url": "https://ajsoller.net/ca/noticies/una-nova-mirada-al-nostre-patrimoni-soller-modernista",
+      "source": "Ajuntament de Sóller",
+      "source_id": "ajuntament-soller-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-16T07:41:00.930826+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "6fef1a93a42673533b72",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Una nova mirada al nostre patrimoni: «Sóller Modernista»",
+      "post_url": "https://ajsoller.net/ca/noticies/una-nova-mirada-al-nostre-patrimoni-soller-modernista",
+      "source": "Ajuntament de Sóller",
+      "source_id": "ajuntament-soller-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-16T07:41:14.098598+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18118806913905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "6fef1a93a42673533b72",
+      "platform": "instagram",
+      "status": "verification_required",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Una nova mirada al nostre patrimoni: «Sóller Modernista»",
+      "post_url": "https://ajsoller.net/ca/noticies/una-nova-mirada-al-nostre-patrimoni-soller-modernista",
+      "source": "Ajuntament de Sóller",
+      "source_id": "ajuntament-soller-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-16T07:41:16.336478+00:00",
+      "error": "Application request limit reached [code=4, subcode=2207051]",
+      "retry_requested": true,
+      "stage": "media_publish",
+      "container_id": "18118806913905740"
+    },
+    {
+      "post_id": "2d5bc03ab14e10fb39a3",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122124137601467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122124137601467310",
+      "title": "“Volem que la gent d’aquí senti que la Mallorca byUTMB és seva i que hi participi”",
+      "post_url": "https://saveu.cat/entrevistes/volem-que-la-gent-daqui-senti-que-la-mallorca-byutmb-es-seva-i-que-hi-participi/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-16T07:41:19.085688+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "9f3793e4ae94ecf93ef9",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122124137679467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122124137679467310",
+      "title": "Bases ajuts llibres i ajudes esportives 2026-2027",
+      "post_url": "https://ajfornalutx.net/ca/noticies/bases-ajuts-llibres-i-ajudes-esportives-2026-2027",
+      "source": "Ajuntament de Fornalutx",
+      "source_id": "ajuntament-fornalutx-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-16T07:41:24.624752+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
-    "instagram_until": "2026-10-16T06:33:41.585880+00:00"
+    "instagram_until": "2026-10-16T09:41:16.332645+00:00"
   }
 }
