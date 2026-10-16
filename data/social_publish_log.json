@@ -7101,6 +7101,20 @@
       "retry_requested": true,
       "stage": "media_publish",
       "container_id": "18118777468905740"
+    },
+    {
+      "post_id": "674cae4d5b2b9f788ea3",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18106225454624531",
+      "remote_url": "https://www.instagram.com/p/Deir0YslI_6/",
+      "title": "PODRIA EL TREN AJUDAR A MILLORAR SÓLLER?",
+      "post_url": "https://mespersoller.cat/podria-el-tren-ajudar-a-millorar-soller/",
+      "source": "MÉS per Sóller",
+      "source_id": "mes-per-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-16T06:40:59.968356+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
