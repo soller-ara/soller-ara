@@ -7053,9 +7053,57 @@
       "retry_requested": true,
       "stage": "media_publish",
       "container_id": "18118743766905740"
+    },
+    {
+      "post_id": "674cae4d5b2b9f788ea3",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122124099267467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122124099267467310",
+      "title": "PODRIA EL TREN AJUDAR A MILLORAR SÓLLER?",
+      "post_url": "https://mespersoller.cat/podria-el-tren-ajudar-a-millorar-soller/",
+      "source": "MÉS per Sóller",
+      "source_id": "mes-per-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-16T04:33:31.455912+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "674cae4d5b2b9f788ea3",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "PODRIA EL TREN AJUDAR A MILLORAR SÓLLER?",
+      "post_url": "https://mespersoller.cat/podria-el-tren-ajudar-a-millorar-soller/",
+      "source": "MÉS per Sóller",
+      "source_id": "mes-per-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-16T04:33:39.580060+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18118777468905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "674cae4d5b2b9f788ea3",
+      "platform": "instagram",
+      "status": "verification_required",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "PODRIA EL TREN AJUDAR A MILLORAR SÓLLER?",
+      "post_url": "https://mespersoller.cat/podria-el-tren-ajudar-a-millorar-soller/",
+      "source": "MÉS per Sóller",
+      "source_id": "mes-per-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-16T04:33:41.589588+00:00",
+      "error": "Application request limit reached [code=4, subcode=2207051]",
+      "retry_requested": true,
+      "stage": "media_publish",
+      "container_id": "18118777468905740"
     }
   ],
   "cooldowns": {
-    "instagram_until": "2026-10-16T03:34:12.959835+00:00"
+    "instagram_until": "2026-10-16T06:33:41.585880+00:00"
   }
 }
