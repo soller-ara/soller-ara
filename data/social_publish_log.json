@@ -7531,6 +7531,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-16T15:35:18.931987+00:00",
       "error": ""
+    },
+    {
+      "post_id": "684bfae7f1c476fc9a4f",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18124620055917929",
+      "remote_url": "https://www.instagram.com/p/Dej3hJKDaHy/",
+      "title": "CVS Salsa Picante Martínez - Ttes. Gamitruk Portol. Cadete Femení 2°B. Jornada 2",
+      "post_url": "https://www.youtube.com/watch?v=0RpcIFuctrA",
+      "source": "Club Vòlei Sóller · YouTube",
+      "source_id": "youtube-club-volei-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-16T18:37:54.351082+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "606a4d0d7bf65e47065e",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Nou reglament circulatori per millorar la protecció dels usuaris vulnerables",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/16/354663/nou-reglament-circulatori-per-millorar-proteccio-dels-usuaris-vulnerables.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-16T18:38:06.110741+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18118932379905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "606a4d0d7bf65e47065e",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "17989620384065834",
+      "remote_url": "https://www.instagram.com/p/DekMdKTD8Fr/",
+      "title": "Nou reglament circulatori per millorar la protecció dels usuaris vulnerables",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/16/354663/nou-reglament-circulatori-per-millorar-proteccio-dels-usuaris-vulnerables.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-16T18:38:10.056950+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
