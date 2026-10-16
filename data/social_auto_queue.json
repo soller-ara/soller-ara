@@ -1,6 +1,25 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-10-16T06:40:39.967608+00:00",
+  "entries": [
+    {
+      "post_id": "674cae4d5b2b9f788ea3",
+      "title": "PODRIA EL TREN AJUDAR A MILLORAR SÓLLER?",
+      "summary": "",
+      "source": "MÉS per Sóller",
+      "source_id": "mes-per-soller",
+      "source_type": "political_party",
+      "category": "politics",
+      "language": "ca",
+      "published_at": "2026-10-16T04:27:40+00:00",
+      "original_url": "https://mespersoller.cat/podria-el-tren-ajudar-a-millorar-soller/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "official_party_source",
+      "platforms": [
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/674cae4d5b2b9f788ea3.jpg"
+    }
+  ]
 }
