@@ -7441,6 +7441,34 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-16T12:42:07.091525+00:00",
       "error": ""
+    },
+    {
+      "post_id": "be96b980c4f11a3ed973",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122124219177467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122124219177467310",
+      "title": "El trànsit fa malbé el passeig marítim",
+      "post_url": "https://saveu.cat/noticies/el-transit-fa-malbe-el-passeig-maritim/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-16T13:42:35.079321+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "d987ffa10325f55aa222",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122124219207467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122124219207467310",
+      "title": "Aviso. Nivel amarillo. Costeros. Sierra Tramontana",
+      "post_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261016093111_AFAZ645401COCO1822.xml",
+      "source": "AEMET · Serra de Tramuntana",
+      "source_id": "aemet-avisos-mallorca",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-16T13:42:40.142697+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
