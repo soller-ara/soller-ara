@@ -1,63 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-16T15:34:20.381656+00:00",
-  "entries": [
-    {
-      "post_id": "684bfae7f1c476fc9a4f",
-      "title": "CVS Salsa Picante Martínez - Ttes. Gamitruk Portol. Cadete Femení 2°B. Jornada 2",
-      "summary": "Vídeo publicat per Club Vòlei Sóller · YouTube.",
-      "source": "Club Vòlei Sóller · YouTube",
-      "source_id": "youtube-club-volei-soller",
-      "source_type": "social",
-      "category": "sports",
-      "language": "ca",
-      "published_at": "2026-10-16T15:10:59+00:00",
-      "original_url": "https://www.youtube.com/watch?v=0RpcIFuctrA",
-      "content_policy": "generated_social_summary",
-      "rights_status": "platform_embed",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/684bfae7f1c476fc9a4f.jpg"
-    },
-    {
-      "post_id": "606a4d0d7bf65e47065e",
-      "title": "Nou reglament circulatori per millorar la protecció dels usuaris vulnerables",
-      "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-10-16T17:00:00+02:00",
-      "original_url": "https://www.elsoller.cat/soller/local/2026/10/16/354663/nou-reglament-circulatori-per-millorar-proteccio-dels-usuaris-vulnerables.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/606a4d0d7bf65e47065e.jpg"
-    },
-    {
-      "post_id": "8042af96558967454299",
-      "title": "El túnel de Sóller estará cerrado durante la noche del 19 de octubre al 19 de noviembre para poder sustituir los paneles y realizar el mantenimiento",
-      "summary": "",
-      "source": "Consell de Mallorca",
-      "source_id": "consell-mallorca-soller",
-      "source_type": "official",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-10-16T12:00:00+00:00",
-      "original_url": "https://www.conselldemallorca.es/es/todas-las-noticias/-/asset_publisher/bqOupoVYvgPA/content/el-t%C3%BAnel-de-s%C3%B3ller-romandr%C3%A0-tancat-els-vespres-del-19-d-octubre-al-19-de-novembre-per-poder-substituir-els-panells-i-fer-hi-el-manteniment/695139",
-      "content_policy": "short_factual_excerpt",
-      "rights_status": "official_public_source",
-      "platforms": [
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/8042af96558967454299.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
