@@ -7469,9 +7469,71 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-16T13:42:40.142697+00:00",
       "error": ""
+    },
+    {
+      "post_id": "684bfae7f1c476fc9a4f",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122124243441467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122124243441467310",
+      "title": "CVS Salsa Picante Martínez - Ttes. Gamitruk Portol. Cadete Femení 2°B. Jornada 2",
+      "post_url": "https://www.youtube.com/watch?v=0RpcIFuctrA",
+      "source": "Club Vòlei Sóller · YouTube",
+      "source_id": "youtube-club-volei-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-16T15:34:40.031171+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "684bfae7f1c476fc9a4f",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "CVS Salsa Picante Martínez - Ttes. Gamitruk Portol. Cadete Femení 2°B. Jornada 2",
+      "post_url": "https://www.youtube.com/watch?v=0RpcIFuctrA",
+      "source": "Club Vòlei Sóller · YouTube",
+      "source_id": "youtube-club-volei-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-16T15:35:08.585036+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18118894447905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "684bfae7f1c476fc9a4f",
+      "platform": "instagram",
+      "status": "verification_required",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "CVS Salsa Picante Martínez - Ttes. Gamitruk Portol. Cadete Femení 2°B. Jornada 2",
+      "post_url": "https://www.youtube.com/watch?v=0RpcIFuctrA",
+      "source": "Club Vòlei Sóller · YouTube",
+      "source_id": "youtube-club-volei-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-16T15:35:12.654236+00:00",
+      "error": "Application request limit reached [code=4, subcode=2207051]",
+      "retry_requested": true,
+      "stage": "media_publish",
+      "container_id": "18118894447905740"
+    },
+    {
+      "post_id": "606a4d0d7bf65e47065e",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122124243519467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122124243519467310",
+      "title": "Nou reglament circulatori per millorar la protecció dels usuaris vulnerables",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/16/354663/nou-reglament-circulatori-per-millorar-proteccio-dels-usuaris-vulnerables.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-16T15:35:18.931987+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
-    "instagram_until": "2026-10-16T14:42:03.072667+00:00"
+    "instagram_until": "2026-10-16T17:35:12.651376+00:00"
   }
 }
