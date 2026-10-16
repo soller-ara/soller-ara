@@ -1,67 +1,61 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-16T10:35:25.317022+00:00",
+  "generated_at": "2026-10-16T11:34:42.979660+00:00",
   "entries": [
     {
-      "post_id": "678c878b6e63210617ca",
-      "title": "El túnel de Sóller tancarà un mes seguit de vespre per renovar la senyalització",
+      "post_id": "5ff0e679a42f74f7451f",
+      "title": "La Vila apuja un 18% el rebut dels fems per la manca de reciclatge",
       "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
       "source_type": "media",
-      "category": "alerts",
+      "category": "services",
       "language": "ca",
-      "published_at": "2026-10-16T10:22:36+00:00",
-      "original_url": "https://saveu.cat/noticies/el-tunel-de-soller-tancara-un-mes-seguit-de-vespre-per-renovar-la-senyalitzacio/",
+      "published_at": "2026-10-16T13:00:00+02:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/10/16/354667/vila-apuja-rebut-dels-fems-per-manca-reciclatge.html",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
-        "facebook",
-        "instagram"
+        "facebook"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/678c878b6e63210617ca.jpg"
+      "image_url": ""
     },
     {
-      "post_id": "b65e37cdda547702698a",
-      "title": "La Unitat Bàsica de Salut Port de Sóller trasllada provisionalment l’activitat al Centre de Salut Serra Nord",
-      "summary": "El consistori valora i ja treballa amb la possibilitat de disposar d’un nou emplaçament per reubicar la UBS A partir d’avui, la Unitat Bàsica de Salut (UBS) Port de Sóller trasllada provisionalment l’activitat…",
-      "source": "Ajuntament de Sóller",
-      "source_id": "ajuntament-soller-noticies",
-      "source_type": "official",
+      "post_id": "2cf8b157f7b94c3bf53d",
+      "title": "Soller Tunnel will be closed at night until 19 November for maintenance",
+      "summary": "",
+      "source": "Majorca Daily Bulletin · Sóller",
+      "source_id": "majorca-daily-bulletin-soller",
+      "source_type": "media",
       "category": "news",
-      "language": "ca",
-      "published_at": "2026-10-16T09:55:40+00:00",
-      "original_url": "https://ajsoller.net/ca/noticies/la-unitat-basica-de-salut-port-de-soller-trasllada-provisionalment-lactivitat-al-centre-de",
-      "content_policy": "short_factual_excerpt",
-      "rights_status": "public_source_reviewed",
+      "language": "en",
+      "published_at": "2026-10-16T12:58:57+02:00",
+      "original_url": "https://www.majorcadailybulletin.com/news/local/2026/10/16/146629/soller-tunnel-will-closed-night-until-november-for-maintenance.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
       "platforms": [
-        "facebook",
-        "instagram"
+        "facebook"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/b65e37cdda547702698a.jpg"
+      "image_url": ""
     },
     {
-      "post_id": "f7e51001b74402db8445",
-      "title": "Aviso. Nivel amarillo. Lluvias. Sierra Tramontana",
-      "summary": "Aviso de precipitación acumulada en una hora de nivel amarillo de 10:00 18-10-2026 CEST (UTC+2) a 23:59 18-10-2026 CEST (UTC+2).",
-      "source": "AEMET · Serra de Tramuntana",
-      "source_id": "aemet-avisos-mallorca",
-      "source_type": "official",
-      "category": "alerts",
+      "post_id": "ee2f561514f041ef405a",
+      "title": "El túnel de Sóller cerrará de noche del 19 de octubre al 19 de noviembre por mantenimiento, excepto los fines de semana",
+      "summary": "",
+      "source": "Última Hora",
+      "source_id": "ultima-hora-soller",
+      "source_type": "media",
+      "category": "news",
       "language": "es",
-      "published_at": "2026-10-16T09:31:11+00:00",
-      "alert_status": "scheduled",
-      "alert_valid_from": "2026-10-18T08:00:00+00:00",
-      "alert_valid_until": "2026-10-18T21:59:00+00:00",
-      "original_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261016093111_AFAZ645401PRP11822.xml",
-      "content_policy": "short_factual_excerpt",
-      "rights_status": "reuse_authorized_with_attribution",
+      "published_at": "2026-10-16T12:54:00+02:00",
+      "original_url": "https://www.ultimahora.es/noticias/part-forana/2026/10/16/2730083/tunel-soller-cerrara-noche-del-octubre-noviembre-por-mantenimiento-excepto-fines-semana.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
       "platforms": [
-        "facebook",
-        "instagram"
+        "facebook"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/f7e51001b74402db8445.jpg"
+      "image_url": ""
     }
   ]
 }
