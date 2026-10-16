@@ -7261,9 +7261,85 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-16T09:35:57.166027+00:00",
       "error": ""
+    },
+    {
+      "post_id": "678c878b6e63210617ca",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122124178815467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122124178815467310",
+      "title": "El túnel de Sóller tancarà un mes seguit de vespre per renovar la senyalització",
+      "post_url": "https://saveu.cat/noticies/el-tunel-de-soller-tancara-un-mes-seguit-de-vespre-per-renovar-la-senyalitzacio/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-16T10:35:44.184802+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "678c878b6e63210617ca",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "El túnel de Sóller tancarà un mes seguit de vespre per renovar la senyalització",
+      "post_url": "https://saveu.cat/noticies/el-tunel-de-soller-tancara-un-mes-seguit-de-vespre-per-renovar-la-senyalitzacio/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-16T10:36:01.659102+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18118833739905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "678c878b6e63210617ca",
+      "platform": "instagram",
+      "status": "verification_required",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "El túnel de Sóller tancarà un mes seguit de vespre per renovar la senyalització",
+      "post_url": "https://saveu.cat/noticies/el-tunel-de-soller-tancara-un-mes-seguit-de-vespre-per-renovar-la-senyalitzacio/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-16T10:36:05.960921+00:00",
+      "error": "Application request limit reached [code=4, subcode=2207051]",
+      "retry_requested": true,
+      "stage": "media_publish",
+      "container_id": "18118833739905740"
+    },
+    {
+      "post_id": "b65e37cdda547702698a",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122124178935467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122124178935467310",
+      "title": "La Unitat Bàsica de Salut Port de Sóller trasllada provisionalment l’activitat al Centre de Salut Serra Nord",
+      "post_url": "https://ajsoller.net/ca/noticies/la-unitat-basica-de-salut-port-de-soller-trasllada-provisionalment-lactivitat-al-centre-de",
+      "source": "Ajuntament de Sóller",
+      "source_id": "ajuntament-soller-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-16T10:36:14.324107+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "f7e51001b74402db8445",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122124179019467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122124179019467310",
+      "title": "Aviso. Nivel amarillo. Lluvias. Sierra Tramontana",
+      "post_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261016093111_AFAZ645401PRP11822.xml",
+      "source": "AEMET · Serra de Tramuntana",
+      "source_id": "aemet-avisos-mallorca",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-16T10:36:18.335752+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
-    "instagram_until": "2026-10-16T09:41:16.332645+00:00"
+    "instagram_until": "2026-10-16T12:36:05.958242+00:00"
   }
 }
