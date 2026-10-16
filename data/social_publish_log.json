@@ -7337,6 +7337,48 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-16T10:36:18.335752+00:00",
       "error": ""
+    },
+    {
+      "post_id": "5ff0e679a42f74f7451f",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122124189627467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122124189627467310",
+      "title": "La Vila apuja un 18% el rebut dels fems per la manca de reciclatge",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/16/354667/vila-apuja-rebut-dels-fems-per-manca-reciclatge.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-16T11:35:02.942134+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "2cf8b157f7b94c3bf53d",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122124189669467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122124189669467310",
+      "title": "Soller Tunnel will be closed at night until 19 November for maintenance",
+      "post_url": "https://www.majorcadailybulletin.com/news/local/2026/10/16/146629/soller-tunnel-will-closed-night-until-november-for-maintenance.html",
+      "source": "Majorca Daily Bulletin · Sóller",
+      "source_id": "majorca-daily-bulletin-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-16T11:35:08.190224+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "ee2f561514f041ef405a",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122124189723467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122124189723467310",
+      "title": "El túnel de Sóller cerrará de noche del 19 de octubre al 19 de noviembre por mantenimiento, excepto los fines de semana",
+      "post_url": "https://www.ultimahora.es/noticias/part-forana/2026/10/16/2730083/tunel-soller-cerrara-noche-del-octubre-noviembre-por-mantenimiento-excepto-fines-semana.html",
+      "source": "Última Hora",
+      "source_id": "ultima-hora-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-16T11:35:12.558543+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
