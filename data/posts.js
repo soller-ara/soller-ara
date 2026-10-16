@@ -554,10 +554,29 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 218,
+  "post_count": 219,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "soller-ara-84eaca038aa80a17",
+      "category": "culture",
+      "source_id": "manual-8af0f8a160aa",
+      "source": "Ajuntament de Deià",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-16T17:39:44.313345+00:00",
+      "show_in_now": true,
+      "content_type": "social_link",
+      "title": "",
+      "summary": "",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-84eaca038aa80a17.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": false,
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1539227961578926&id=100064752094509&hpir=1"
+    },
     {
       "id": "684bfae7f1c476fc9a4f",
       "category": "sports",
@@ -5024,5 +5043,5 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "sources_checked_at": "2026-10-16T17:30:44.047873+00:00",
-  "fetched_at": "2026-10-16T17:30:44.047873+00:00"
+  "fetched_at": "2026-10-16T17:39:44.319325+00:00"
 };

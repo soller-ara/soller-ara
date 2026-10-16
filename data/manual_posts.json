@@ -1146,6 +1146,25 @@
       "rights_status": "no_reuse_reference_only",
       "image_allowed": false,
       "original_url": "https://www.facebook.com/story.php?story_fbid=4762394840657682&id=100006616393336&hpir=1"
+    },
+    {
+      "id": "soller-ara-84eaca038aa80a17",
+      "category": "culture",
+      "source_id": "manual-8af0f8a160aa",
+      "source": "Ajuntament de Deià",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-16T17:39:44.313345+00:00",
+      "show_in_now": true,
+      "content_type": "social_link",
+      "title": "",
+      "summary": "",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-84eaca038aa80a17.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": false,
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1539227961578926&id=100064752094509&hpir=1"
     }
   ]
 }
