@@ -1,43 +1,67 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-16T09:35:32.368630+00:00",
+  "generated_at": "2026-10-16T10:35:25.317022+00:00",
   "entries": [
     {
-      "post_id": "dcabb2e959f61d564c58",
-      "title": "Una nova vida per al pinyol que s’obté de la molturació de l’oliva",
+      "post_id": "678c878b6e63210617ca",
+      "title": "El túnel de Sóller tancarà un mes seguit de vespre per renovar la senyalització",
       "summary": "",
       "source": "Sa Veu de Sóller",
       "source_id": "sa-veu-soller",
       "source_type": "media",
-      "category": "news",
+      "category": "alerts",
       "language": "ca",
-      "published_at": "2026-10-16T09:00:00+00:00",
-      "original_url": "https://saveu.cat/noticies/una-nova-vida-per-al-pinyol-que-sobte-de-la-molturacio-de-loliva/",
+      "published_at": "2026-10-16T10:22:36+00:00",
+      "original_url": "https://saveu.cat/noticies/el-tunel-de-soller-tancara-un-mes-seguit-de-vespre-per-renovar-la-senyalitzacio/",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
-        "facebook"
+        "facebook",
+        "instagram"
       ],
-      "image_url": ""
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/678c878b6e63210617ca.jpg"
     },
     {
-      "post_id": "e61f2bd95282521b16fb",
-      "title": "«Cap al 2030 tot el que ens fa humans pot desaparèixer per culpa de la IA»",
-      "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
-      "source_type": "media",
+      "post_id": "b65e37cdda547702698a",
+      "title": "La Unitat Bàsica de Salut Port de Sóller trasllada provisionalment l’activitat al Centre de Salut Serra Nord",
+      "summary": "El consistori valora i ja treballa amb la possibilitat de disposar d’un nou emplaçament per reubicar la UBS A partir d’avui, la Unitat Bàsica de Salut (UBS) Port de Sóller trasllada provisionalment l’activitat…",
+      "source": "Ajuntament de Sóller",
+      "source_id": "ajuntament-soller-noticies",
+      "source_type": "official",
       "category": "news",
       "language": "ca",
-      "published_at": "2026-10-16T09:52:00+02:00",
-      "original_url": "https://www.elsoller.cat/soller/local/2026/10/16/354659/cap-2030-tot-ens-humans-pot-desapareixer-per-culpa.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
+      "published_at": "2026-10-16T09:55:40+00:00",
+      "original_url": "https://ajsoller.net/ca/noticies/la-unitat-basica-de-salut-port-de-soller-trasllada-provisionalment-lactivitat-al-centre-de",
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "public_source_reviewed",
       "platforms": [
-        "facebook"
+        "facebook",
+        "instagram"
       ],
-      "image_url": ""
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/b65e37cdda547702698a.jpg"
+    },
+    {
+      "post_id": "f7e51001b74402db8445",
+      "title": "Aviso. Nivel amarillo. Lluvias. Sierra Tramontana",
+      "summary": "Aviso de precipitación acumulada en una hora de nivel amarillo de 10:00 18-10-2026 CEST (UTC+2) a 23:59 18-10-2026 CEST (UTC+2).",
+      "source": "AEMET · Serra de Tramuntana",
+      "source_id": "aemet-avisos-mallorca",
+      "source_type": "official",
+      "category": "alerts",
+      "language": "es",
+      "published_at": "2026-10-16T09:31:11+00:00",
+      "alert_status": "scheduled",
+      "alert_valid_from": "2026-10-18T08:00:00+00:00",
+      "alert_valid_until": "2026-10-18T21:59:00+00:00",
+      "original_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261016093111_AFAZ645401PRP11822.xml",
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "reuse_authorized_with_attribution",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/f7e51001b74402db8445.jpg"
     }
   ]
 }
