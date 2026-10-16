@@ -7191,6 +7191,48 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-16T07:41:24.624752+00:00",
       "error": ""
+    },
+    {
+      "post_id": "80e63310ba569287bfd6",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122124149259467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122124149259467310",
+      "title": "La Unidad Básica de Salud Port de Sóller traslada provisionalmente su actividad al centro de salud Serra Nord",
+      "post_url": "https://www.ultimahora.es/noticias/part-forana/2026/10/16/2729931/unidad-basica-salud-port-soller-traslada-provisionalmente-actividad-centro-salud-serra-nord.html",
+      "source": "Última Hora",
+      "source_id": "ultima-hora-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-16T08:36:11.089654+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "ed95fcb0406705104c8e",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122124149271467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122124149271467310",
+      "title": "La Unitat Bàsica de Salut del Port deixa el local per les goteres i trasllada l'activitat al PAC de Sóller",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/16/354661/unitat-basica-salut-del-port-deixa-local-actual-per-les-goteres-trasllada-activitat-pac-soller.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-16T08:36:15.912975+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "cdb42d4d675e498f209d",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122124149403467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122124149403467310",
+      "title": "ELECCIONS AL CONSELL ESCOLAR 2026",
+      "post_url": "https://iessoller.com/2026/10/16/eleccions-al-consell-escolar-2026/",
+      "source": "IES Guillem Colom Casasnoves",
+      "source_id": "ies-guillem-colom-casasnoves",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-16T08:36:24.073498+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
