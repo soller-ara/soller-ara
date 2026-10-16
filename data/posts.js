@@ -554,10 +554,29 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 210,
+  "post_count": 211,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
+    {
+      "id": "soller-ara-0a8de4ef2af09ec2",
+      "category": "alerts",
+      "source_id": "manual-39890d84eea8",
+      "source": "Policia Local de Fornalutx",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-16T08:26:15.028309+00:00",
+      "show_in_now": true,
+      "content_type": "social_link",
+      "title": "",
+      "summary": "",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-0a8de4ef2af09ec2.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": false,
+      "original_url": "https://www.facebook.com/story.php?story_fbid=4762394840657682&id=100006616393336&hpir=1"
+    },
     {
       "id": "6fef1a93a42673533b72",
       "category": "culture",
@@ -4858,5 +4877,5 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "sources_checked_at": "2026-10-16T07:40:42.227280+00:00",
-  "fetched_at": "2026-10-16T07:40:42.227280+00:00"
+  "fetched_at": "2026-10-16T08:26:15.033388+00:00"
 };
