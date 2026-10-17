@@ -554,7 +554,7 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 221,
+  "post_count": 222,
   "related_pair_count": 0,
   "errors": [
     {
@@ -615,6 +615,25 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "posts": [
+    {
+      "id": "soller-ara-e8d7862c426f4be3",
+      "category": "news",
+      "source_id": "soller-ara",
+      "source": "Publicació de xarxa",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-17T06:54:19.820761+00:00",
+      "show_in_now": true,
+      "content_type": "social_link",
+      "title": "",
+      "summary": "",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-e8d7862c426f4be3.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": false,
+      "original_url": "https://www.facebook.com/PartForanaDM/photos/la-normativa-municipal-de-s%C3%B3ller-permite-que-los-accesos-reiterados-a-la-zona-re/1740175381229209/?set=a.763492092230881&hpir=1"
+    },
     {
       "id": "8b1be84a99c24bb8861e",
       "category": "alerts",
@@ -5153,5 +5172,5 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "sources_checked_at": "2026-10-17T05:33:30.896577+00:00",
-  "fetched_at": "2026-10-17T05:33:30.896577+00:00"
+  "fetched_at": "2026-10-17T06:54:19.827468+00:00"
 };
