@@ -4,12 +4,18 @@ on:
   push:
     branches:
       - main
+    # Estas modificaciones ya despliegan desde el flujo de recopilación.
+    paths-ignore:
+      - "sources.json"
+      - "social_distribution.json"
+      - "scripts/update_sources.py"
+      - "scripts/publication_state.py"
+      - "scripts/retry_manual_social.py"
+      - "scripts/prepare_collected_social.py"
+      - "scripts/publish_collected_social.py"
+      - "social_sources.json"
+      - ".github/workflows/update-sources.yml"
   workflow_dispatch:
-  workflow_run:
-    workflows:
-      - "Actualitzar fonts de Sóller Ara"
-    types:
-      - completed
 
 permissions:
   contents: read
@@ -23,7 +29,6 @@ concurrency:
 
 jobs:
   deploy:
-    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' || github.event.workflow_run.conclusion == 'failure' }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -47,6 +52,6 @@ jobs:
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: ./.github/actions/deploy-pages-reliable
         with:
           artifact_name: github-pages-${{ github.run_attempt }}

@@ -91,6 +91,7 @@
   }
 
   function render(config, posts) {
+    window.SOLLER_ARA_RENDER_COLLECTION_HEALTH?.(posts);
     const sources = Array.isArray(config.sources) ? config.sources : [];
     const active = sources.filter((x) => x.enabled !== false).length;
     document.getElementById("sourcesSummary").innerHTML = [

@@ -171,6 +171,7 @@
   }
 
   function renderMetrics(data) {
+    window.SOLLER_ARA_RENDER_COLLECTION_HEALTH?.(data.posts);
     const posts = Array.isArray(data.posts?.posts) ? data.posts.posts : [];
     const sources = Array.isArray(data.posts?.source_status) ? data.posts.source_status : [];
     const failedSources = sources.filter((item) => item.ok === false).length;
@@ -180,7 +181,7 @@
       ["Publicaciones", posts.length],
       ["Contenido propio", ownPosts],
       ["Fuentes con error", failedSources],
-      ["Última revisión de fuentes", formatDate(data.posts?.sources_checked_at || data.posts?.fetched_at)],
+      ["Última revisión de fuentes", formatDate(data.posts?.sources_checked_at)],
     ].map(([label, value]) => `
       <div class="metric">
         <span>${escapeHtml(label)}</span>

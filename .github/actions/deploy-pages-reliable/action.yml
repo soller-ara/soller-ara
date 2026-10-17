@@ -1,0 +1,50 @@
+name: Desplegar Pages con reintentos limitados
+description: Reintenta únicamente el despliegue; no repite recopilaciones ni envíos sociales.
+inputs:
+  artifact_name:
+    description: Artefacto del sitio ya preparado
+    required: true
+outputs:
+  page_url:
+    description: URL del despliegue confirmado
+    value: ${{ steps.first.outputs.page_url || steps.second.outputs.page_url || steps.third.outputs.page_url }}
+runs:
+  using: composite
+  steps:
+    - name: Primer intento de despliegue
+      id: first
+      uses: actions/deploy-pages@v4
+      continue-on-error: true
+      with:
+        artifact_name: ${{ inputs.artifact_name }}
+        timeout: '240000'
+    - name: Esperar antes del segundo intento
+      if: ${{ steps.first.outcome == 'failure' }}
+      shell: bash
+      run: sleep 20
+    - name: Segundo intento de despliegue
+      id: second
+      if: ${{ steps.first.outcome == 'failure' }}
+      uses: actions/deploy-pages@v4
+      continue-on-error: true
+      with:
+        artifact_name: ${{ inputs.artifact_name }}
+        timeout: '240000'
+    - name: Esperar antes del último intento
+      if: ${{ steps.second.outcome == 'failure' }}
+      shell: bash
+      run: sleep 40
+    - name: Último intento de despliegue
+      id: third
+      if: ${{ steps.second.outcome == 'failure' }}
+      uses: actions/deploy-pages@v4
+      continue-on-error: true
+      with:
+        artifact_name: ${{ inputs.artifact_name }}
+        timeout: '240000'
+    - name: Comprobar resultado definitivo
+      if: ${{ steps.first.outcome != 'success' && steps.second.outcome != 'success' && steps.third.outcome != 'success' }}
+      shell: bash
+      run: |
+        echo '::error::No se ha podido desplegar la web después de tres intentos. No se ejecutarán los envíos que dependan de este despliegue.'
+        exit 1
