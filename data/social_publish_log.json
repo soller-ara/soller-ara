@@ -8146,6 +8146,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-17T16:58:16.862288+00:00",
       "error": ""
+    },
+    {
+      "post_id": "b7314244f821e9002ad9",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122124757479467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122124757479467310",
+      "title": "Estol de Tramuntana. Sòller. 16.10.2026",
+      "post_url": "https://www.youtube.com/watch?v=8wEuz6CuP24",
+      "source": "Ballades A Mallorca · YouTube",
+      "source_id": "youtube-ballades-mallorca-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-17T23:03:23.685034+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "b7314244f821e9002ad9",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Estol de Tramuntana. Sòller. 16.10.2026",
+      "post_url": "https://www.youtube.com/watch?v=8wEuz6CuP24",
+      "source": "Ballades A Mallorca · YouTube",
+      "source_id": "youtube-ballades-mallorca-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-17T23:03:37.389069+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18119220313905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "b7314244f821e9002ad9",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "17908679505571666",
+      "remote_url": "https://www.instagram.com/p/DenPoH5jAOP/",
+      "title": "Estol de Tramuntana. Sòller. 16.10.2026",
+      "post_url": "https://www.youtube.com/watch?v=8wEuz6CuP24",
+      "source": "Ballades A Mallorca · YouTube",
+      "source_id": "youtube-ballades-mallorca-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-17T23:03:40.778955+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
