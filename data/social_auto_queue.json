@@ -1,6 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-10-17T23:03:07.044313+00:00",
+  "entries": [
+    {
+      "post_id": "b7314244f821e9002ad9",
+      "title": "Estol de Tramuntana. Sòller. 16.10.2026",
+      "summary": "Vídeo publicat per Ballades A Mallorca · YouTube.",
+      "source": "Ballades A Mallorca · YouTube",
+      "source_id": "youtube-ballades-mallorca-soller",
+      "source_type": "social",
+      "category": "culture",
+      "language": "ca",
+      "published_at": "2026-10-17T21:38:13+00:00",
+      "original_url": "https://www.youtube.com/watch?v=8wEuz6CuP24",
+      "content_policy": "generated_social_summary",
+      "rights_status": "platform_embed",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/b7314244f821e9002ad9.jpg"
+    }
+  ]
 }
