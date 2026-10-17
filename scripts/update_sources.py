@@ -1475,6 +1475,18 @@ def filter_by_keywords(source: dict, posts: list[dict]) -> list[dict]:
     if not keywords:
         return posts
 
+    has_soller_keyword = any(keyword in {"soller", "sóller", "sòller"} for keyword in keywords)
+    if has_soller_keyword:
+        # Conservam els gentilicis: «els sollerics» i «Aires Sollerics» són locals.
+        keywords.extend(["sòller", "solleric", "sollerica", "sollerics", "solleriques"])
+    # Noms complets, sense confondre municipis amb fragments d'altres paraules.
+    locality_pattern = re.compile(
+        r"(?<!\w)(?:" + "|".join(re.escape(keyword) for keyword in keywords) + r")(?!\w)"
+    )
+    nonlocal_solleric = re.compile(
+        r"\b(?:casal|torrent(?:e)?)[\s_-]+(?:(?:de|del)[\s_-]+)?solleric\b"
+    )
+
     filtered: list[dict] = []
     for post in posts:
         # El resum o la URL no han de convertir una peça d'un canal general
@@ -1484,7 +1496,11 @@ def filter_by_keywords(source: dict, posts: list[dict]) -> list[dict]:
         haystack = unicodedata.normalize("NFC", " ".join(
             str(post.get(field) or "") for field in fields
         )).casefold()
-        if any(keyword in haystack for keyword in keywords):
+        if has_soller_keyword:
+            # Només retiram el nom ambigu; una altra referència real a Sóller
+            # dins el mateix titular continua sent una coincidència vàlida.
+            haystack = nonlocal_solleric.sub(" ", haystack)
+        if locality_pattern.search(haystack):
             filtered.append(post)
     return filtered
 

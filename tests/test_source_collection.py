@@ -92,6 +92,44 @@ class SourceCollectionTests(unittest.TestCase):
         self.assertEqual(collector.filter_by_keywords(
             {"type": "rss", "include_keywords": ["Soller"]}, [post]), [post])
 
+    def test_local_filter_rejects_solleric_without_rejecting_soller(self):
+        source = {"type": "rss", "include_keywords": ["Sóller", "Soller"],
+                  "filter_title_only": True}
+        posts = [
+            {"title": "Una exposició al Casal Solleric de Palma", "summary": "", "url": ""},
+            {"title": "Una actuació al torrent de Solleric", "summary": "", "url": ""},
+            {"title": "Una exposició a Sóller", "summary": "", "url": ""},
+            {"title": "Millores a Soller", "summary": "", "url": ""},
+            {"title": "Artistes de Sóller exposen al Casal Solleric", "summary": "", "url": ""},
+        ]
+        self.assertEqual(collector.filter_by_keywords(source, posts), posts[2:])
+
+    def test_local_filter_keeps_accents_case_and_punctuation(self):
+        source = {"type": "youtube_channel", "include_keywords": ["Sóller", "Fornalutx"]}
+        posts = [{"title": title} for title in [
+            "AVÍS A SÓLLER", "Concert a So\u0301ller", "Avís (Sóller)",
+            "Port de Sóller: nou servei", "Ruta Sóller/Fornalutx",
+        ]]
+        self.assertEqual(collector.filter_by_keywords(source, posts), posts)
+
+    def test_local_filter_keeps_demonyms_and_aires_sollerics(self):
+        source = {"type": "rss", "include_keywords": ["Sóller", "Soller"],
+                  "filter_title_only": True}
+        posts = [{"title": title} for title in [
+            "Les preocupacions dels sollerics", "Aires Sollerics. Sòller. 11.10.2026",
+            "Un esportista solleric guanya la prova", "Les atletes solleriques",
+        ]]
+        self.assertEqual(collector.filter_by_keywords(source, posts), posts)
+
+    def test_rss_url_filter_requires_the_complete_locality_name(self):
+        source = {"type": "rss", "include_keywords": ["Soller"]}
+        posts = [
+            {"title": "Exposició", "url": "https://example.test/noticies/casal-solleric"},
+            {"title": "Avís", "url": "https://example.test/noticies/soller/avis"},
+            {"title": "Servei", "url": "https://example.test/noticies/soller-nou-servei"},
+        ]
+        self.assertEqual(collector.filter_by_keywords(source, posts), posts[1:])
+
     def test_video_dates_exclude_old_future_and_undated_posts(self):
         now = datetime.now(timezone.utc)
         posts = [
