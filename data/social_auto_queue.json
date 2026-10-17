@@ -1,48 +1,29 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-17T10:34:24.342159+00:00",
+  "generated_at": "2026-10-17T12:43:50.609887+00:00",
   "entries": [
     {
-      "post_id": "0994d1cb2f2fc452e4cf",
-      "title": "El folk solleric arriba amb gran èxit a Barcelona",
-      "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-10-17T12:00:00+02:00",
-      "original_url": "https://www.elsoller.cat/soller/societat-i-cultura/2026/10/17/354665/folk-solleric-arriba-amb-gran-exit-barcelona.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/0994d1cb2f2fc452e4cf.jpg"
-    },
-    {
-      "post_id": "94812aa14b62dbd86584",
+      "post_id": "8c3c4da62ffbf8865949",
       "title": "Aviso. Nivel amarillo. Costeros. Sierra Tramontana",
-      "summary": "Aviso de costeros de nivel amarillo de 00:00 19-10-2026 CEST (UTC+2) a 05:59 19-10-2026 CEST (UTC+2).",
+      "summary": "Aviso de costeros de nivel amarillo de 15:00 18-10-2026 CEST (UTC+2) a 23:59 18-10-2026 CEST (UTC+2).",
       "source": "AEMET · Serra de Tramuntana",
       "source_id": "aemet-avisos-mallorca",
       "source_type": "official",
       "category": "alerts",
       "language": "es",
-      "published_at": "2026-10-17T09:39:00+00:00",
+      "published_at": "2026-10-17T09:14:19+00:00",
       "alert_status": "scheduled",
-      "alert_valid_from": "2026-10-18T22:00:00+00:00",
-      "alert_valid_until": "2026-10-19T03:59:00+00:00",
-      "original_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261017093900_AFAZ645401COCO1904.xml",
+      "alert_valid_from": "2026-10-18T13:00:00+00:00",
+      "alert_valid_until": "2026-10-18T21:59:00+00:00",
+      "original_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261017091419_AFAZ645401COCO1822.xml",
       "content_policy": "short_factual_excerpt",
       "rights_status": "reuse_authorized_with_attribution",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/94812aa14b62dbd86584.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/8c3c4da62ffbf8865949.jpg"
     }
   ]
 }
