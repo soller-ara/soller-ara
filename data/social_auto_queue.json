@@ -1,29 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-17T00:21:19.946078+00:00",
-  "entries": [
-    {
-      "post_id": "13abb4409c2251c54ede",
-      "title": "Aviso. Nivel amarillo. Tormentas. Sierra Tramontana",
-      "summary": "Aviso de tormentas de nivel amarillo de 00:00 19-10-2026 CEST (UTC+2) a 23:59 19-10-2026 CEST (UTC+2).",
-      "source": "AEMET · Serra de Tramuntana",
-      "source_id": "aemet-avisos-mallorca",
-      "source_type": "official",
-      "category": "alerts",
-      "language": "es",
-      "published_at": "2026-10-16T21:50:01+00:00",
-      "alert_status": "scheduled",
-      "alert_valid_from": "2026-10-18T22:00:00+00:00",
-      "alert_valid_until": "2026-10-19T21:59:00+00:00",
-      "original_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261016215001_AFAZ645401TOTO1922.xml",
-      "content_policy": "short_factual_excerpt",
-      "rights_status": "reuse_authorized_with_attribution",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/13abb4409c2251c54ede.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
