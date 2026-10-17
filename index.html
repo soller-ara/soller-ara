@@ -17,7 +17,7 @@
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="sitemap" type="application/xml" href="sitemap.xml" />
   <link rel="preload" as="image" href="assets/brand/logo-soller-ara-web.png" />
-  <link rel="stylesheet" href="styles.css?v=0.87" />
+  <link rel="stylesheet" href="styles.css?v=0.90" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="ca_ES" />
   <meta property="og:site_name" content="Sóller Ara" />
@@ -123,23 +123,31 @@
     <section class="hero">
       <div>
         <span class="eyebrow" data-i18n="hero.eyebrow">Avui a Sóller</span>
-        <h2 data-i18n="hero.title">La informació local, ordenada i accessible.</h2>
-        <p data-i18n="hero.body">Una portada única per descobrir avisos, serveis, notícies, agenda, cultura, esport, comerç i publicacions de fonts locals.</p>
+        <h2 data-i18n="hero.title">L’actualitat de Sóller, a prop teu.</h2>
+        <p data-i18n="hero.body">Notícies, avisos i vida local.</p>
       </div>
       <div class="status-card">
-        <strong id="sourceHealthTitle" data-i18n="hero.statusTitle">6 fonts reals connectades</strong>
+        <strong id="sourceHealthTitle" data-i18n="hero.statusTitle">Fonts locals connectades</strong>
         <span id="sourceHealthBody" data-i18n="hero.statusBody">Fonts locals + AEMET + YouTube</span>
       </div>
     </section>
     <p class="hero-credit">Imatge de portada adaptada de <a href="https://commons.wikimedia.org/wiki/File:Paisaje_de_S%C3%B3ller_(Mallorca).jpg" target="_blank" rel="noopener noreferrer">José Luis Filpo Cabana · CC BY 3.0</a>.</p>
 
     <section class="quick-access" aria-labelledby="quickAccessTitle">
-      <div class="quick-access-head">
-        <p class="eyebrow" data-i18n="quick.eyebrow">Accessos útils</p>
-        <h2 id="quickAccessTitle" data-i18n="quick.title">Mobilitat i serveis oficials</h2>
-        <p data-i18n="quick.body">Enllaços directes a serveis oficials, sense copiar horaris, tarifes ni continguts protegits.</p>
+      <div class="quick-overview">
+        <h2 id="quickAccessTitle" data-i18n="quick.eyebrow">Accessos útils</h2>
+        <div class="quick-shortcuts">
+          <a href="https://www.cofib.es/ca/Guardies.aspx?municipi=SOLLER" target="_blank" rel="noopener noreferrer"><span class="pharmacy-symbol" aria-hidden="true">✚</span><span data-i18n="quick.pharmacy.title">Farmàcia de guàrdia</span></a>
+          <a href="https://www.tib.org/ca/parades/-/parada/61031" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">🚌</span><span data-i18n="quick.bus">Autobusos TIB</span></a>
+          <a href="https://trendesoller.com/cat/horaris" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">🚋</span><span data-i18n="quick.train.title">Tren i tramvia</span></a>
+        </div>
       </div>
 
+      <details class="services-disclosure">
+        <summary><span data-i18n="quick.more">Tots els serveis, mobilitat i temps</span><span class="disclosure-arrow" aria-hidden="true">⌄</span></summary>
+        <div class="quick-access-head">
+          <p data-i18n="quick.body">Enllaços directes a serveis oficials, sense copiar horaris, tarifes ni continguts protegits.</p>
+        </div>
       <div class="quick-grid">
         <a class="quick-link" href="https://trendesoller.com/cat/horaris" target="_blank" rel="noopener noreferrer">
           <span class="quick-icon" aria-hidden="true">🚋</span>
@@ -242,6 +250,7 @@
         </div>
         <a class="weather-source" href="https://www.aemet.es/ca/eltiempo/prediccion/municipios/soller-id07061" target="_blank" rel="noopener noreferrer" data-i18n="weather.source">Veure la previsió completa a AEMET ↗</a>
       </div>
+      </details>
     </section>
 
     <section id="socialSources" class="social-sources" hidden aria-labelledby="socialSourcesTitle">
@@ -365,11 +374,11 @@
   </main>
 
   <footer class="footer">
-    <p>© 2026 Sóller Ara · <span data-i18n="footer.nonprofit">Projecte sense ànim de lucre</span> · Recopilació assistida per IA i supervisió humana · <a href="mailto:infosollerara@gmail.com">infosollerara@gmail.com</a> · <a href="https://www.instagram.com/soller.ara/" target="_blank" rel="noopener noreferrer">Instagram</a> · <a href="https://www.facebook.com/profile.php?id=1384755221378998" target="_blank" rel="noopener noreferrer">Facebook</a> · <a href="privacy.html">Privacitat</a> · <a href="transparency.html">Transparència</a> · <a href="data-deletion.html">Eliminació de dades</a> · <a href="admin/">Administració</a> · <span id="siteVersion">v0.89</span></p>
+    <p>© 2026 Sóller Ara · <span data-i18n="footer.nonprofit">Projecte sense ànim de lucre</span> · Recopilació assistida per IA i supervisió humana · <a href="mailto:infosollerara@gmail.com">infosollerara@gmail.com</a> · <a href="https://www.instagram.com/soller.ara/" target="_blank" rel="noopener noreferrer">Instagram</a> · <a href="https://www.facebook.com/profile.php?id=1384755221378998" target="_blank" rel="noopener noreferrer">Facebook</a> · <a href="privacy.html">Privacitat</a> · <a href="transparency.html">Transparència</a> · <a href="data-deletion.html">Eliminació de dades</a> · <a href="admin/">Administració</a> · <span id="siteVersion">v0.90</span></p>
   </footer>
 
   <script src="data/posts.js?v=0.39" defer></script>
-  <script src="app.js?v=0.87" defer></script>
+  <script src="app.js?v=0.90" defer></script>
   <script src="analytics.js?v=1" defer></script>
 </body>
 </html>
