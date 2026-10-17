@@ -13,6 +13,7 @@ on:
       - "scripts/update_sources.py"
       - "scripts/publication_state.py"
       - "scripts/retry_manual_social.py"
+      - "scripts/reconcile_instagram_deliveries.py"
       - "scripts/prepare_collected_social.py"
       - "scripts/publish_collected_social.py"
       - "social_sources.json"
@@ -89,6 +90,14 @@ jobs:
         with:
           artifact_name: github-pages-${{ github.run_attempt }}
 
+      - name: Confirmar envíos existentes de Instagram sin publicar
+        id: instagram_reconcile
+        continue-on-error: true
+        env:
+          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+          META_GRAPH_VERSION: "v26.0"
+        run: python scripts/reconcile_instagram_deliveries.py
+
       - name: Reintentar Instagram manual pendent
         id: manual_retry
         continue-on-error: true
@@ -105,7 +114,7 @@ jobs:
         run: python scripts/publish_collected_social.py
 
       - name: Guardar registre de distribució social
-        if: ${{ always() && (steps.social_publish.outcome == 'success' || steps.social_publish.outcome == 'failure' || steps.manual_retry.outcome == 'success' || steps.manual_retry.outcome == 'failure') }}
+        if: ${{ always() && (steps.instagram_reconcile.outcome == 'success' || steps.instagram_reconcile.outcome == 'failure' || steps.social_publish.outcome == 'success' || steps.social_publish.outcome == 'failure' || steps.manual_retry.outcome == 'success' || steps.manual_retry.outcome == 'failure') }}
         run: |
           git add data/social_publish_log.json
           if git diff --cached --quiet; then
