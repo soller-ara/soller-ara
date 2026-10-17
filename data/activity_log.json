@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "f8af08a7180a1630",
+      "timestamp": "2026-10-17T07:01:08.997364+00:00",
+      "action": "edit",
+      "area": "publications",
+      "target_id": "soller-ara-e8d7862c426f4be3",
+      "title": "Set denúncies amb un trajecte.",
+      "detail": "Publicación propia editada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "e9563ab418d9803e",
       "timestamp": "2026-10-17T06:54:19.890430+00:00",
       "action": "publish",

@@ -618,7 +618,7 @@ window.SOLLER_ARA_DATA = {
     {
       "id": "soller-ara-e8d7862c426f4be3",
       "category": "news",
-      "source_id": "soller-ara",
+      "source_id": "manual-4bf706dacb80",
       "source": "Publicació de xarxa",
       "source_type": "own",
       "language": "ca",
@@ -626,13 +626,15 @@ window.SOLLER_ARA_DATA = {
       "published_at": "2026-10-17T06:54:19.820761+00:00",
       "show_in_now": true,
       "content_type": "social_link",
-      "title": "",
-      "summary": "",
+      "title": "Set denúncies amb un trajecte.",
+      "summary": "Un conductor denúncia que ha rebut set notificacions d’infraccions en un trajecte per la ZBE de Sóller",
       "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-e8d7862c426f4be3.html",
       "content_policy": "manual_link_reference",
       "rights_status": "no_reuse_reference_only",
-      "image_allowed": false,
-      "original_url": "https://www.facebook.com/PartForanaDM/photos/la-normativa-municipal-de-s%C3%B3ller-permite-que-los-accesos-reiterados-a-la-zona-re/1740175381229209/?set=a.763492092230881&hpir=1"
+      "image_allowed": true,
+      "original_url": "https://www.facebook.com/PartForanaDM/photos/la-normativa-municipal-de-s%C3%B3ller-permite-que-los-accesos-reiterados-a-la-zona-re/1740175381229209/?set=a.763492092230881&hpir=1",
+      "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-e8d7862c426f4be3.jpg",
+      "media_type": "image"
     },
     {
       "id": "8b1be84a99c24bb8861e",
@@ -5172,5 +5174,5 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "sources_checked_at": "2026-10-17T05:33:30.896577+00:00",
-  "fetched_at": "2026-10-17T06:54:19.827468+00:00"
+  "fetched_at": "2026-10-17T07:01:08.937461+00:00"
 };
