@@ -8101,6 +8101,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-17T14:13:26.944987+00:00",
       "error": ""
+    },
+    {
+      "post_id": "27d7c5e36c45faa28878",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122124611229467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122124611229467310",
+      "title": "Sóller-Ferrioler (diumenge, 18 h), a la recerca dels tres punts davant un dels rivals més complicats",
+      "post_url": "https://www.elsoller.cat/soller/esports/2026/10/17/354669/soller-ferrioler-diumenge-recerca-dels-tres-punts-davant-dels-rivals-mes-complicats.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-17T16:58:02.873244+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "27d7c5e36c45faa28878",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Sóller-Ferrioler (diumenge, 18 h), a la recerca dels tres punts davant un dels rivals més complicats",
+      "post_url": "https://www.elsoller.cat/soller/esports/2026/10/17/354669/soller-ferrioler-diumenge-recerca-dels-tres-punts-davant-dels-rivals-mes-complicats.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-17T16:58:13.672963+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18119157049905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "27d7c5e36c45faa28878",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18396631696166990",
+      "remote_url": "https://www.instagram.com/p/Deml0bMnboa/",
+      "title": "Sóller-Ferrioler (diumenge, 18 h), a la recerca dels tres punts davant un dels rivals més complicats",
+      "post_url": "https://www.elsoller.cat/soller/esports/2026/10/17/354669/soller-ferrioler-diumenge-recerca-dels-tres-punts-davant-dels-rivals-mes-complicats.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-17T16:58:16.862288+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
