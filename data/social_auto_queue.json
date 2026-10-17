@@ -1,29 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-17T14:12:49.812953+00:00",
+  "generated_at": "2026-10-17T16:57:41.985088+00:00",
   "entries": [
     {
-      "post_id": "59f380ea736042c9c298",
-      "title": "Aviso. Nivel amarillo. Lluvias. Sierra Tramontana",
-      "summary": "Aviso de precipitación acumulada en una hora de nivel amarillo de 18:00 18-10-2026 CEST (UTC+2) a 23:59 18-10-2026 CEST (UTC+2).",
-      "source": "AEMET · Serra de Tramuntana",
-      "source_id": "aemet-avisos-mallorca",
-      "source_type": "official",
-      "category": "alerts",
-      "language": "es",
-      "published_at": "2026-10-17T09:14:19+00:00",
-      "alert_status": "scheduled",
-      "alert_valid_from": "2026-10-18T16:00:00+00:00",
-      "alert_valid_until": "2026-10-18T21:59:00+00:00",
-      "original_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261017091419_AFAZ645401PRP11822.xml",
-      "content_policy": "short_factual_excerpt",
-      "rights_status": "reuse_authorized_with_attribution",
+      "post_id": "27d7c5e36c45faa28878",
+      "title": "Sóller-Ferrioler (diumenge, 18 h), a la recerca dels tres punts davant un dels rivals més complicats",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-10-17T17:00:00+02:00",
+      "original_url": "https://www.elsoller.cat/soller/esports/2026/10/17/354669/soller-ferrioler-diumenge-recerca-dels-tres-punts-davant-dels-rivals-mes-complicats.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/59f380ea736042c9c298.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/27d7c5e36c45faa28878.jpg"
     }
   ]
 }
