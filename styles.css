@@ -1071,6 +1071,9 @@ a { color: inherit; }
 /* Pharmacy quick access: clear visual identification without implying live availability. */
 @media (max-width: 359px) {
   .brand-wrap h1 { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; }
+  .quick-shortcuts a { flex-direction:column; gap:4px; padding:8px 4px; }
+  .quick-shortcuts a > span:first-child { height:20px; display:grid; place-items:center; }
+  .quick-shortcuts a > span:last-child { overflow-wrap:normal; word-break:normal; }
 }
 
 .quick-icon.pharmacy-cross {
