@@ -1,0 +1,108 @@
+name: Còpia de seguretat de Sóller Ara
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "37 5 * * 6"
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/backup.yml"
+      - "docs/COPIAS-DE-SEGURIDAD.md"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: soller-ara-backup
+  cancel-in-progress: false
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+
+      - name: Crear y comprobar copia del repositorio
+        shell: bash
+        env:
+          REPOSITORY_URL: ${{ github.server_url }}/${{ github.repository }}.git
+        run: |
+          set -euo pipefail
+          backup_dir="$RUNNER_TEMP/soller-ara-backup"
+          mirror_dir="$RUNNER_TEMP/soller-ara-mirror.git"
+          restored_dir="$RUNNER_TEMP/soller-ara-restore.git"
+          mkdir -p "$backup_dir"
+          git clone --mirror "$REPOSITORY_URL" "$mirror_dir"
+          git --git-dir="$mirror_dir" fsck --full
+          git --git-dir="$mirror_dir" show-ref > "$backup_dir/referencias.txt"
+          git --git-dir="$mirror_dir" rev-parse HEAD > "$backup_dir/commit.txt"
+          git --git-dir="$mirror_dir" bundle create "$backup_dir/soller-ara.bundle" --all
+          git --git-dir="$mirror_dir" archive --format=zip --output="$backup_dir/archivos-actuales.zip" HEAD
+          git init --bare "$restored_dir"
+          git --git-dir="$restored_dir" bundle verify "$backup_dir/soller-ara.bundle"
+          git --git-dir="$restored_dir" fetch "$backup_dir/soller-ara.bundle" '+refs/*:refs/*'
+          git --git-dir="$restored_dir" symbolic-ref HEAD "$(git --git-dir="$mirror_dir" symbolic-ref HEAD)"
+          git --git-dir="$restored_dir" fsck --full
+          git --git-dir="$restored_dir" show-ref > "$RUNNER_TEMP/restored-refs.txt"
+          diff -u "$backup_dir/referencias.txt" "$RUNNER_TEMP/restored-refs.txt"
+          test "$(cat "$backup_dir/commit.txt")" = "$(git --git-dir="$restored_dir" rev-parse HEAD)"
+          git --git-dir="$restored_dir" archive HEAD > "$RUNNER_TEMP/restored-files.tar"
+          cp docs/COPIAS-DE-SEGURIDAD.md "$backup_dir/LEEME-RECUPERACION.md"
+
+      - name: Guardar metadatos e inventario sin secretos
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          backup_dir="$RUNNER_TEMP/soller-ara-backup"
+          gh api "repos/$GITHUB_REPOSITORY" > "$backup_dir/repositorio.json"
+          python - <<'PY'
+          import json, os
+          from datetime import datetime, timezone
+          from pathlib import Path
+          folder = Path(os.environ['RUNNER_TEMP']) / 'soller-ara-backup'
+          manifest = {
+              'repository': os.environ['GITHUB_REPOSITORY'],
+              'created_at': datetime.now(timezone.utc).isoformat(),
+              'head': (folder / 'commit.txt').read_text().strip(),
+              'run_id': os.environ['GITHUB_RUN_ID'],
+              'restore_test': 'passed: bundle verified, restored refs and HEAD match, fsck and archive passed',
+              'includes': ['Git history and advertised refs', 'current tracked files', 'repository metadata', 'recovery instructions'],
+              'excludes': ['secret values', 'private GitHub service settings', 'Cloudflare and Meta service settings', 'issues and pull-request discussions', 'Actions logs and artifacts', 'external LFS objects or submodule repositories'],
+              'retention_days': 90,
+          }
+          (folder / 'manifiesto.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n')
+          PY
+          cd "$backup_dir"
+          sha256sum soller-ara.bundle archivos-actuales.zip referencias.txt commit.txt repositorio.json manifiesto.json LEEME-RECUPERACION.md > SHA256SUMS.txt
+          sha256sum --check SHA256SUMS.txt
+
+      - name: Guardar copia descargable durante 90 días
+        id: artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Soller-Ara-copia-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/soller-ara-backup/
+          if-no-files-found: error
+          retention-days: 90
+          compression-level: 0
+
+      - name: Mostrar enlace e información de la copia
+        shell: bash
+        env:
+          ARTIFACT_URL: ${{ steps.artifact.outputs.artifact-url }}
+        run: |
+          {
+            echo '## Copia del repositorio verificada'
+            echo "[Descargar copia]($ARTIFACT_URL)"
+            echo ''
+            echo 'Archivos, historial, ramas y etiquetas. Recuperación comprobada sin modificar la aplicación.'
+            echo 'Disponible durante 90 días. Guardar otra copia fuera de GitHub.'
+            echo 'No incluye secretos ni ajustes privados externos. Véase LEEME-RECUPERACION.md.'
+          } >> "$GITHUB_STEP_SUMMARY"
