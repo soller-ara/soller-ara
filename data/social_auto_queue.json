@@ -1,26 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-17T16:57:41.985088+00:00",
-  "entries": [
-    {
-      "post_id": "27d7c5e36c45faa28878",
-      "title": "Sóller-Ferrioler (diumenge, 18 h), a la recerca dels tres punts davant un dels rivals més complicats",
-      "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-10-17T17:00:00+02:00",
-      "original_url": "https://www.elsoller.cat/soller/esports/2026/10/17/354669/soller-ferrioler-diumenge-recerca-dels-tres-punts-davant-dels-rivals-mes-complicats.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/27d7c5e36c45faa28878.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
