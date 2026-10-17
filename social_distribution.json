@@ -1,5 +1,5 @@
 {
-  "version": 11,
+  "version": 12,
   "enabled": true,
   "platforms": {
     "facebook": true,
@@ -211,6 +211,18 @@
       "instagram": true
     },
     "ceip-es-puig-soller": {
+      "facebook": true,
+      "instagram": true
+    },
+    "sagrats-cors-soller": {
+      "facebook": true,
+      "instagram": true
+    },
+    "europa-press-balears-soller": {
+      "facebook": true,
+      "instagram": true
+    },
+    "mallorca-confidencial-soller": {
       "facebook": true,
       "instagram": true
     }

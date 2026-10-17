@@ -1,5 +1,5 @@
 {
-  "version": 39,
+  "version": 40,
   "sources": [
     {
       "id": "ajuntament-soller-noticies",
@@ -1352,6 +1352,90 @@
       "verification_method": "public_feed_and_original_dated_entries",
       "entity_type": "institution",
       "force_category": "services"
+    },
+    {
+      "max_age_days": 60,
+      "enabled": true,
+      "image_policy": "disabled_until_rights_verified",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "verified_at": "2026-10-17",
+      "verification_method": "public_feed_and_original_dated_entries",
+      "type": "rss",
+      "max_items": 40,
+      "id": "sagrats-cors-soller",
+      "name": "Col·legi Sagrats Cors · Sóller",
+      "url": "https://www.sagratscors.es/feed/",
+      "language": "ca",
+      "locality": "Sóller",
+      "source_type": "institution",
+      "entity_type": "institution",
+      "force_category": "services",
+      "verification_url": "https://www.sagratscors.es/"
+    },
+    {
+      "max_age_days": 60,
+      "enabled": true,
+      "image_policy": "disabled_until_rights_verified",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "verified_at": "2026-10-17",
+      "verification_method": "public_feed_and_original_dated_entries",
+      "type": "rss",
+      "max_items": 40,
+      "id": "europa-press-balears-soller",
+      "name": "Europa Press Illes Balears · Sóller",
+      "url": "https://www.europapress.es/rss/rss.aspx?ch=288",
+      "language": "es",
+      "locality": "Sóller / Port de Sóller / Fornalutx / Biniaraix / Deià / Serra de Tramuntana",
+      "source_type": "media",
+      "verification_url": "https://www.europapress.es/illes-balears/",
+      "include_keywords": [
+        "Sóller",
+        "Soller",
+        "Port de Sóller",
+        "Port de Soller",
+        "Vall de Sóller",
+        "Vall de Soller",
+        "Fornalutx",
+        "Biniaraix",
+        "Deià",
+        "Deia",
+        "Serra de Tramuntana"
+      ],
+      "filter_title_only": true
+    },
+    {
+      "max_age_days": 60,
+      "enabled": true,
+      "image_policy": "disabled_until_rights_verified",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "verified_at": "2026-10-17",
+      "verification_method": "public_feed_and_original_dated_entries",
+      "type": "rss",
+      "max_items": 40,
+      "id": "mallorca-confidencial-soller",
+      "name": "Mallorca Confidencial · Sóller",
+      "url": "https://www.mallorcaconfidencial.com/rss/",
+      "language": "es",
+      "locality": "Sóller / Port de Sóller / Fornalutx / Biniaraix / Deià / Serra de Tramuntana",
+      "source_type": "media",
+      "verification_url": "https://www.mallorcaconfidencial.com/rss/listado/",
+      "include_keywords": [
+        "Sóller",
+        "Soller",
+        "Port de Sóller",
+        "Port de Soller",
+        "Vall de Sóller",
+        "Vall de Soller",
+        "Fornalutx",
+        "Biniaraix",
+        "Deià",
+        "Deia",
+        "Serra de Tramuntana"
+      ],
+      "filter_title_only": true
     }
   ]
 }
