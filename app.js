@@ -30,6 +30,7 @@ const translations = {
     "search.placeholder": "Cercar...",
     "source.label": "Font",
     "source.all": "Totes les fonts",
+    "source.unknown": "Font no indicada",
     "quick.eyebrow": "Accessos útils",
     "quick.more": "Tots els serveis, mobilitat i temps",
     "quick.bus": "Autobusos TIB",
@@ -120,6 +121,7 @@ const translations = {
     "search.placeholder": "Buscar...",
     "source.label": "Fuente",
     "source.all": "Todas las fuentes",
+    "source.unknown": "Fuente no indicada",
     "quick.eyebrow": "Accesos útiles",
     "quick.more": "Todos los servicios, movilidad y tiempo",
     "quick.bus": "Autobuses TIB",
@@ -210,6 +212,7 @@ const translations = {
     "search.placeholder": "Search...",
     "source.label": "Source",
     "source.all": "All sources",
+    "source.unknown": "Source not specified",
     "quick.eyebrow": "Useful links",
     "quick.more": "All services, transport and weather",
     "quick.bus": "TIB buses",
@@ -463,27 +466,59 @@ function updateLastUpdated() {
   lastUpdated.textContent = `${t("feed.updated")}: ${formatted}`;
 }
 
+// Sólo organiza el selector: nunca reescribe las atribuciones de las tarjetas.
+const SOURCE_FILTER_ALIASES = new Map([
+  ["ies guillem colom casasnovas", "IES Guillem Colom Casasnoves"],
+  ["partit popular soller", "Partido Popular · Sóller"],
+  ["setmanari veu de soller", "Sa Veu de Sóller"],
+  ["veu de soller", "Sa Veu de Sóller"],
+  ["socialistes de soller", "PSIB-PSOE · Sóller"],
+]);
+
+function normalizedSourceName(value) {
+  return String(value || "").normalize("NFKD").replace(/\p{M}/gu, "")
+    .toLowerCase().replace(/[·•]/g, " ").replace(/[’‘]/g, "'")
+    .replace(/\s+/g, " ").trim();
+}
+
+function sourceFilterName(value) {
+  const name = String(value || "").trim().replace(/\s+/g, " ");
+  return SOURCE_FILTER_ALIASES.get(normalizedSourceName(name)) || name;
+}
+
+function sourceFilterKey(name) {
+  const normalized = normalizedSourceName(sourceFilterName(name));
+  return normalized ? "name:" + normalized : "unattributed";
+}
+
+function sourceNameForFilter(post) {
+  const configured = post.source_type !== "own"
+    ? configuredSources.find(source => source.id === post.source_id) : null;
+  return configured?.name || post.source || "";
+}
+
 function populateSourceSelect() {
   const currentValue = currentSource;
-  const uniqueSources = new Map(
-    configuredSources
-      .filter((source) => source && source.id && source.name)
-      .map((source) => [source.id, { id: source.id, name: source.name }])
-  );
-  posts
-    .filter((post) => post.source_id && post.source)
-    .forEach((post) => uniqueSources.set(post.source_id, { id: post.source_id, name: post.source }));
+  const groups = new Map();
+  function add(name) {
+    const key = sourceFilterKey(name);
+    if (!groups.has(key)) groups.set(key, {
+      id: key, name: sourceFilterName(name) || t("source.unknown"),
+    });
+  }
+  configuredSources.filter(source => source && source.id && source.name)
+    .forEach(source => add(source.name));
+  posts.forEach(post => add(sourceNameForFilter(post)));
 
-  const options = [...uniqueSources.values()]
+  const options = [...groups.values()]
     .sort((a, b) => a.name.localeCompare(b.name, currentLanguage));
 
   sourceSelect.innerHTML = `<option value="all">${t("source.all")}</option>`
-    + options.map((source) => `<option value="${escapeAttribute(source.id)}">${escapeHtml(source.name)}</option>`).join("");
+    + options.map(source => `<option value="${escapeAttribute(source.id)}">${escapeHtml(source.name)}</option>`).join("");
 
-  sourceSelect.value = options.some((source) => source.id === currentValue) ? currentValue : "all";
+  sourceSelect.value = options.some(source => source.id === currentValue) ? currentValue : "all";
   currentSource = sourceSelect.value;
 }
-
 
 function renderFeed() {
   if (socialSources) {
@@ -498,7 +533,7 @@ function renderFeed() {
         : currentCategory === "social"
           ? (post.source_type === "social" || post.category === "social")
           : post.category === currentCategory);
-    const sourceMatches = currentSource === "all" || post.source_id === currentSource;
+    const sourceMatches = currentSource === "all" || sourceFilterKey(sourceNameForFilter(post)) === currentSource;
     const relatedText = Array.isArray(post.related_sources) ? post.related_sources.map((item) => `${item.source || ""} ${item.title || ""}`).join(" ") : "";
     const haystack = `${post.title || ""} ${post.summary || ""} ${post.source || ""} ${relatedText}`.toLocaleLowerCase(currentLanguage);
     const searchMatches = !normalizedSearch || haystack.includes(normalizedSearch);
