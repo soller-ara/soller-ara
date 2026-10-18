@@ -1,6 +1,48 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-10-18T10:56:30.363611+00:00",
+  "entries": [
+    {
+      "post_id": "636246f32705f6b9a25b",
+      "title": "Aviso. Nivel amarillo. Lluvias. Sierra Tramontana",
+      "summary": "Aviso de precipitación acumulada en una hora de nivel amarillo de 00:00 20-10-2026 CEST (UTC+2) a 11:59 20-10-2026 CEST (UTC+2).",
+      "source": "AEMET · Serra de Tramuntana",
+      "source_id": "aemet-avisos-mallorca",
+      "source_type": "official",
+      "category": "alerts",
+      "language": "es",
+      "published_at": "2026-10-18T09:50:24+00:00",
+      "alert_status": "scheduled",
+      "alert_valid_from": "2026-10-19T22:00:00+00:00",
+      "alert_valid_until": "2026-10-20T09:59:00+00:00",
+      "original_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261018095024_AFAZ645401PRP12010.xml",
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "reuse_authorized_with_attribution",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/636246f32705f6b9a25b.jpg"
+    },
+    {
+      "post_id": "45cb1c22195e1bda2514",
+      "title": "Juli Ramis, un circuit per a carreres il.legals i maniobres perilloses",
+      "summary": "",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "source_type": "media",
+      "category": "services",
+      "language": "ca",
+      "published_at": "2026-10-18T07:00:00+00:00",
+      "original_url": "https://saveu.cat/noticies/juli-ramis-un-circuit-per-a-carreres-il-legals-i-maniobres-perilloses/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/45cb1c22195e1bda2514.jpg"
+    }
+  ]
 }
