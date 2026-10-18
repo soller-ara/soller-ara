@@ -1,26 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-18T18:02:13.361977+00:00",
-  "entries": [
-    {
-      "post_id": "c670f9d1da65b564eabc",
-      "title": "SUSPENSIÓ DE LES CLASSES – DILLUNS 19 D’OCTUBRE",
-      "summary": "",
-      "source": "IES Guillem Colom Casasnoves",
-      "source_id": "ies-guillem-colom-casasnoves",
-      "source_type": "institution",
-      "category": "services",
-      "language": "ca",
-      "published_at": "2026-10-18T17:53:48+00:00",
-      "original_url": "https://iessoller.com/2026/10/18/suspensio-de-les-classes-dilluns-19-doctubre/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "link_only_no_media_license",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/c670f9d1da65b564eabc.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
