@@ -1,29 +1,45 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-18T14:31:35.780383+00:00",
+  "generated_at": "2026-10-18T17:33:39.738467+00:00",
   "entries": [
     {
-      "post_id": "56a4f4686811013ae207",
-      "title": "Aviso. Nivel amarillo. Tormentas. Sierra Tramontana",
-      "summary": "Aviso de tormentas de nivel amarillo de 00:00 20-10-2026 CEST (UTC+2) a 11:59 20-10-2026 CEST (UTC+2).",
-      "source": "AEMET · Serra de Tramuntana",
-      "source_id": "aemet-avisos-mallorca",
-      "source_type": "official",
+      "post_id": "fd8dc6541378a1e9208d",
+      "title": "Un ES-Alert adverteix de risc de pluja abundant i de la suspensió de les classes",
+      "summary": "",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "source_type": "media",
       "category": "alerts",
-      "language": "es",
-      "published_at": "2026-10-18T09:50:24+00:00",
-      "alert_status": "scheduled",
-      "alert_valid_from": "2026-10-19T22:00:00+00:00",
-      "alert_valid_until": "2026-10-20T09:59:00+00:00",
-      "original_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261018095024_AFAZ645401TOTO2010.xml",
-      "content_policy": "short_factual_excerpt",
-      "rights_status": "reuse_authorized_with_attribution",
+      "language": "ca",
+      "published_at": "2026-10-18T17:16:09+00:00",
+      "original_url": "https://saveu.cat/noticies/un-es-alert-adverteix-de-risc-de-pluja-abundant-i-de-la-suspensio-de-les-classes/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/56a4f4686811013ae207.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/fd8dc6541378a1e9208d.jpg"
+    },
+    {
+      "post_id": "d7233051893632bdc690",
+      "title": "Suspeses les classes de demà per la DANA",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "alerts",
+      "language": "ca",
+      "published_at": "2026-10-18T18:54:39+02:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/10/18/354671/suspeses-les-classes-dema-per-dana.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/d7233051893632bdc690.jpg"
     }
   ]
 }
