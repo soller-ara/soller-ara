@@ -8461,6 +8461,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-18T17:35:00.311799+00:00",
       "error": ""
+    },
+    {
+      "post_id": "c670f9d1da65b564eabc",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122125025889467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122125025889467310",
+      "title": "SUSPENSIÓ DE LES CLASSES – DILLUNS 19 D’OCTUBRE",
+      "post_url": "https://iessoller.com/2026/10/18/suspensio-de-les-classes-dilluns-19-doctubre/",
+      "source": "IES Guillem Colom Casasnoves",
+      "source_id": "ies-guillem-colom-casasnoves",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-18T18:02:57.068113+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "c670f9d1da65b564eabc",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "SUSPENSIÓ DE LES CLASSES – DILLUNS 19 D’OCTUBRE",
+      "post_url": "https://iessoller.com/2026/10/18/suspensio-de-les-classes-dilluns-19-doctubre/",
+      "source": "IES Guillem Colom Casasnoves",
+      "source_id": "ies-guillem-colom-casasnoves",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-18T18:03:06.373942+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18119432368905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "c670f9d1da65b564eabc",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18080866820410236",
+      "remote_url": "https://www.instagram.com/p/DepSCngm5JZ/",
+      "title": "SUSPENSIÓ DE LES CLASSES – DILLUNS 19 D’OCTUBRE",
+      "post_url": "https://iessoller.com/2026/10/18/suspensio-de-les-classes-dilluns-19-doctubre/",
+      "source": "IES Guillem Colom Casasnoves",
+      "source_id": "ies-guillem-colom-casasnoves",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-18T18:03:10.615051+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
