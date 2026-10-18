@@ -8326,6 +8326,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-18T10:58:10.640776+00:00",
       "error": ""
+    },
+    {
+      "post_id": "56a4f4686811013ae207",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122124960027467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122124960027467310",
+      "title": "Aviso. Nivel amarillo. Tormentas. Sierra Tramontana",
+      "post_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261018095024_AFAZ645401TOTO2010.xml",
+      "source": "AEMET · Serra de Tramuntana",
+      "source_id": "aemet-avisos-mallorca",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-18T14:32:06.315541+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "56a4f4686811013ae207",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Aviso. Nivel amarillo. Tormentas. Sierra Tramontana",
+      "post_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261018095024_AFAZ645401TOTO2010.xml",
+      "source": "AEMET · Serra de Tramuntana",
+      "source_id": "aemet-avisos-mallorca",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-18T14:32:23.989078+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18119379931905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "56a4f4686811013ae207",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "17962668657213734",
+      "remote_url": "https://www.instagram.com/p/Deo56rll8em/",
+      "title": "Aviso. Nivel amarillo. Tormentas. Sierra Tramontana",
+      "post_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261018095024_AFAZ645401TOTO2010.xml",
+      "source": "AEMET · Serra de Tramuntana",
+      "source_id": "aemet-avisos-mallorca",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-18T14:32:27.036693+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
