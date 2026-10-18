@@ -8191,6 +8191,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-17T23:03:40.778955+00:00",
       "error": ""
+    },
+    {
+      "post_id": "a244fddcec21bff32d1b",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122124774021467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122124774021467310",
+      "title": "Ball de l'ós. Estol de Tramuntana. Sòller. 16.10.2026",
+      "post_url": "https://www.youtube.com/shorts/7Lu0aef0684",
+      "source": "Ballades A Mallorca · YouTube",
+      "source_id": "youtube-ballades-mallorca-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-18T00:55:03.847997+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "a244fddcec21bff32d1b",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Ball de l'ós. Estol de Tramuntana. Sòller. 16.10.2026",
+      "post_url": "https://www.youtube.com/shorts/7Lu0aef0684",
+      "source": "Ballades A Mallorca · YouTube",
+      "source_id": "youtube-ballades-mallorca-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-18T00:55:21.399819+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18119236945905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "a244fddcec21bff32d1b",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18106392881457988",
+      "remote_url": "https://www.instagram.com/p/DencaSlmKj1/",
+      "title": "Ball de l'ós. Estol de Tramuntana. Sòller. 16.10.2026",
+      "post_url": "https://www.youtube.com/shorts/7Lu0aef0684",
+      "source": "Ballades A Mallorca · YouTube",
+      "source_id": "youtube-ballades-mallorca-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-18T00:55:25.420033+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
