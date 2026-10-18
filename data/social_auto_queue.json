@@ -1,26 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-18T00:54:43.029537+00:00",
-  "entries": [
-    {
-      "post_id": "a244fddcec21bff32d1b",
-      "title": "Ball de l'ós. Estol de Tramuntana. Sòller. 16.10.2026",
-      "summary": "Vídeo publicat per Ballades A Mallorca · YouTube.",
-      "source": "Ballades A Mallorca · YouTube",
-      "source_id": "youtube-ballades-mallorca-soller",
-      "source_type": "social",
-      "category": "culture",
-      "language": "ca",
-      "published_at": "2026-10-17T21:35:31+00:00",
-      "original_url": "https://www.youtube.com/shorts/7Lu0aef0684",
-      "content_policy": "generated_social_summary",
-      "rights_status": "platform_embed",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/a244fddcec21bff32d1b.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
