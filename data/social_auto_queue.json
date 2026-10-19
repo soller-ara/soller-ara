@@ -1,6 +1,48 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-10-19T06:05:48.722536+00:00",
+  "entries": [
+    {
+      "post_id": "249a0766583130903379",
+      "title": "OFICI LOCAL I MESA ELECTORAL ELECCIONS GENERALS DEL 29 DE NOVEMBRE DE 2026",
+      "summary": "",
+      "source": "Ajuntament de Deià",
+      "source_id": "ajuntament-deia-noticies",
+      "source_type": "official",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-10-19T05:20:39+00:00",
+      "original_url": "https://ajdeia.net/ca/noticies/ofici-local-i-mesa-electoral-eleccions-generals-del-29-de-novembre-de-2026",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "official_public_source",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/249a0766583130903379.jpg"
+    },
+    {
+      "post_id": "9cb87a4f22a19560dade",
+      "title": "Aviso. Nivel naranja. Tormentas. Sierra Tramontana",
+      "summary": "Aviso de tormentas de nivel naranja de 07:00 19-10-2026 CEST (UTC+2) a 11:59 19-10-2026 CEST (UTC+2).",
+      "source": "AEMET · Serra de Tramuntana",
+      "source_id": "aemet-avisos-mallorca",
+      "source_type": "official",
+      "category": "alerts",
+      "language": "es",
+      "published_at": "2026-10-19T02:21:56+00:00",
+      "alert_status": "active",
+      "alert_valid_from": "2026-10-19T05:00:00+00:00",
+      "alert_valid_until": "2026-10-19T09:59:00+00:00",
+      "original_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261019022156_AFAZ645401TOTO1910.xml",
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "reuse_authorized_with_attribution",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/9cb87a4f22a19560dade.jpg"
+    }
+  ]
 }
