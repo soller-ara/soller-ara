@@ -2,6 +2,12 @@ name: Actualitzar fonts de Sóller Ara
 
 on:
   workflow_dispatch:
+    inputs:
+      watchdog:
+        description: Respaldo externo; volver a comprobar antigüedad antes de ejecutar
+        type: boolean
+        required: false
+        default: false
   schedule:
     - cron: "7 * * * *"
   push:
@@ -30,7 +36,24 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  watchdog-guard:
+    if: ${{ inputs.watchdog == true }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    outputs:
+      collect: ${{ steps.freshness.outputs.collect }}
+    steps:
+      - name: Leer el main actual bajo el bloqueo compartido
+        uses: actions/checkout@v6
+        with:
+          ref: main
+      - name: Volver a comprobar la última revisión real
+        id: freshness
+        run: python3 scripts/check_collection_watchdog.py
+
   update:
+    needs: watchdog-guard
+    if: ${{ !cancelled() && (needs['watchdog-guard'].result == 'skipped' || (needs['watchdog-guard'].result == 'success' && needs['watchdog-guard'].outputs.collect == 'true')) }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

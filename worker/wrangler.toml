@@ -2,6 +2,9 @@ name = "soller-ara-admin"
 main = "admin-worker.js"
 compatibility_date = "2026-09-16"
 
+[triggers]
+crons = ["*/15 * * * *"]
+
 [vars]
 ALLOWED_ORIGIN = "https://soller-ara.github.io"
 GITHUB_OWNER = "soller-ara"

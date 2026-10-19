@@ -5,8 +5,23 @@ const DEFAULT_BRANCH = "main";
 const SESSION_SECONDS = 8 * 60 * 60;
 
 const failedLogins = new Map();
+const watchdogDispatches = new Map();
+let watchdogInFlight = null;
 
 export default {
+  async scheduled(controller, env) {
+    // The workflow checks freshness again under its existing global lock.
+    // That second check also protects against separate Worker instances racing.
+    if (watchdogInFlight) return watchdogInFlight;
+    watchdogInFlight = collectionWatchdog(env).then((result) => {
+      console.log("COLLECTION_WATCHDOG " + JSON.stringify(result));
+      return result;
+    }).catch(() => {
+      console.error("COLLECTION_WATCHDOG: check failed; no further dispatch attempted.");
+      throw new Error("Collection watchdog failed");
+    }).finally(() => { watchdogInFlight = null; });
+    return watchdogInFlight;
+  },
   async fetch(request, env) {
     const origin = env.ALLOWED_ORIGIN || DEFAULT_ORIGIN;
     const cors = corsHeaders(origin);
@@ -19,7 +34,7 @@ export default {
 
     try {
       if (url.pathname === "/health") {
-        return json({ ok: true, service: "soller-ara-admin", version: "0.71", capabilities: ["social_settings", "web_analytics", "manual_social_links", "manual_collection"] }, 200, cors);
+        return json({ ok: true, service: "soller-ara-admin", version: "0.72", capabilities: ["social_settings", "web_analytics", "manual_social_links", "manual_collection", "collection_watchdog"] }, 200, cors);
       }
 
       if (url.pathname === "/api/login" && request.method === "POST") {
@@ -319,7 +334,61 @@ async function status(env, cors) {
   return json({ ok: true, posts, moderation, socialLog }, 200, cors);
 }
 
-async function githubDispatch(env, workflow, inputs) {
+async function collectionWatchdog(env) {
+  if (env.COLLECTION_WATCHDOG_ENABLED === "false") return { action: "disabled" };
+  if (!env.GITHUB_TOKEN) return { action: "not_configured" };
+  const now = Date.now();
+  const staleAfter = 2 * 60 * 60 * 1000;
+  const retryAfter = 60 * 60 * 1000;
+  const { owner, repo, branch } = repoParts(env);
+  const key = `${owner}/${repo}/${branch}`;
+  const headers = {
+    Authorization: `Bearer ${env.GITHUB_TOKEN}`,
+    Accept: "application/vnd.github+json",
+    "X-GitHub-Api-Version": "2022-11-28",
+    "User-Agent": "SollerAra-Watchdog/0.72",
+  };
+  const dataResponse = await fetch(
+    `https://raw.githubusercontent.com/${owner}/${repo}/${encodeURIComponent(branch)}/data/posts.json?v=${now}`,
+    { headers: { "Cache-Control": "no-cache" }, signal: AbortSignal.timeout(15000) }
+  );
+  if (!dataResponse.ok) throw new Error("Cannot read collection data");
+  const data = await dataResponse.json();
+  // Manual publications refresh fetched_at. It must never mask a stale review.
+  const checked = typeof data.sources_checked_at === "string" && /T.*(?:Z|[+-]\d{2}:\d{2})$/.test(data.sources_checked_at)
+    ? Date.parse(data.sources_checked_at) : NaN;
+  if (!Number.isFinite(checked) || checked > now + 5 * 60 * 1000) {
+    return { action: "invalid_timestamp" };
+  }
+  if (now - checked <= staleAfter) return { action: "fresh", sources_checked_at: data.sources_checked_at };
+  if (watchdogDispatches.has(key) && now - watchdogDispatches.get(key) < retryAfter) {
+    return { action: "recent_attempt" };
+  }
+  const runsResponse = await fetch(
+    `https://api.github.com/repos/${owner}/${repo}/actions/workflows/update-sources.yml/runs?branch=${encodeURIComponent(branch)}&per_page=100`,
+    { headers, signal: AbortSignal.timeout(15000) }
+  );
+  if (!runsResponse.ok) throw new Error("Cannot read collection workflow runs");
+  const runs = await runsResponse.json();
+  if (!Array.isArray(runs.workflow_runs)) throw new Error("Invalid collection workflow response");
+  for (const run of runs.workflow_runs) {
+    if (!run || !run.id || typeof run.status !== "string") throw new Error("Invalid collection workflow run");
+    if (run.status !== "completed") return { action: "already_running", run_id: run.id };
+    const created = Date.parse(run.created_at || "");
+    const started = run.run_started_at ? Date.parse(run.run_started_at) : created;
+    if (!Number.isFinite(created) || !Number.isFinite(started) || Math.max(created, started) > now + 5 * 60 * 1000) {
+      throw new Error("Invalid workflow run time");
+    }
+    if (now - Math.max(created, started) < retryAfter) return { action: "recent_attempt", run_id: run.id };
+  }
+  // Remember even an uncertain response locally. Do not immediately retry a POST
+  // that GitHub might have accepted. The run list provides cross-tick backoff.
+  watchdogDispatches.set(key, now);
+  await githubDispatch(env, "update-sources.yml", { watchdog: true }, AbortSignal.timeout(20000));
+  return { action: "dispatched", sources_checked_at: data.sources_checked_at };
+}
+
+async function githubDispatch(env, workflow, inputs, signal) {
   if (!env.GITHUB_TOKEN) throw new Error("Falta GITHUB_TOKEN");
   const { owner, repo, branch } = repoParts(env);
 
@@ -327,6 +396,7 @@ async function githubDispatch(env, workflow, inputs) {
     `https://api.github.com/repos/${owner}/${repo}/actions/workflows/${workflow}/dispatches`,
     {
       method: "POST",
+      ...(signal ? { signal } : {}),
       headers: {
         "Authorization": `Bearer ${env.GITHUB_TOKEN}`,
         "Accept": "application/vnd.github+json",
