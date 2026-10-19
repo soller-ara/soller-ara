@@ -7,6 +7,9 @@ const translations = {
     "nav.news": "Notícies",
     "nav.agenda": "Agenda",
     "nav.alerts": "Avisos",
+    "alerts.current": "Avisos oficials vigents",
+    "alerts.context": "Horari indicat per la font · Hora de Mallorca",
+    "alerts.more": "Altres avisos vigents",
     "nav.services": "Serveis",
     "nav.culture": "Cultura",
     "nav.sports": "Esports",
@@ -98,6 +101,9 @@ const translations = {
     "nav.news": "Noticias",
     "nav.agenda": "Agenda",
     "nav.alerts": "Avisos",
+    "alerts.current": "Avisos oficiales vigentes",
+    "alerts.context": "Horario indicado por la fuente · Hora de Mallorca",
+    "alerts.more": "Otros avisos vigentes",
     "nav.services": "Servicios",
     "nav.culture": "Cultura",
     "nav.sports": "Deportes",
@@ -189,6 +195,9 @@ const translations = {
     "nav.news": "News",
     "nav.agenda": "Events",
     "nav.alerts": "Alerts",
+    "alerts.current": "Current official alerts",
+    "alerts.context": "Times provided by the source · Mallorca time",
+    "alerts.more": "More current alerts",
     "nav.services": "Services",
     "nav.culture": "Culture",
     "nav.sports": "Sports",
@@ -301,6 +310,7 @@ let currentCategory = "now";
 let currentSource = "all";
 let currentSearch = "";
 let sourceStatus = [];
+let sourcesCheckedAt = null;
 let configuredSources = [];
 
 const languageSelect = document.getElementById("languageSelect");
@@ -312,6 +322,7 @@ const sourceHealthTitle = document.getElementById("sourceHealthTitle");
 const sourceHealthBody = document.getElementById("sourceHealthBody");
 const socialSources = document.getElementById("socialSources");
 const refreshPageButton = document.getElementById("refreshPageButton");
+const currentAlerts = document.getElementById("currentAlerts");
 
 function t(key) {
   return translations[currentLanguage][key] ?? translations.ca[key] ?? key;
@@ -338,7 +349,61 @@ function alertStatus(post) {
   if (!post.alert_status) return "";
   const until = new Date(post.alert_valid_until || "").getTime();
   if (!Number.isNaN(until) && until <= Date.now()) return "expired";
+  if (["active", "scheduled"].includes(post.alert_status)) {
+    const start = new Date(post.alert_valid_from || "").getTime();
+    if (Number.isFinite(start)) return start > Date.now() ? "scheduled" : "active";
+  }
   return post.alert_status;
+}
+
+function currentOfficialAlerts(candidates, now = Date.now()) {
+  const checked = new Date(sourcesCheckedAt || "").getTime();
+  if (usingDemoData || !Number.isFinite(checked) || checked > now + 300000 || now - checked > 7200000) return [];
+  const eligible = candidates.filter((post) => {
+    const from = new Date(post.alert_valid_from || "").getTime();
+    const until = new Date(post.alert_valid_until || "").getTime();
+    const published = new Date(post.published_at || "").getTime();
+    return post.source_type === "official" && post.category === "alerts"
+      && ["active", "scheduled"].includes(post.alert_status) && post.alert_in_feed === true
+      && sourceStatus.some(source => source.source_id === post.source_id && source.ok === true)
+      && Number.isFinite(from) && Number.isFinite(until) && from <= now && now < until
+      && Number.isFinite(published) && published <= now
+      && until > from && Boolean(post.title?.trim()) && Boolean(safeLinkUrl(post.url));
+  }).sort((a, b) => new Date(b.published_at).getTime() - new Date(a.published_at).getTime());
+  const seen = new Set();
+  return eligible.filter(post => {
+    const key = JSON.stringify([post.source_id, post.title.trim().toLocaleLowerCase(),
+      new Date(post.alert_valid_from).getTime(), new Date(post.alert_valid_until).getTime()]);
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
+function renderCurrentAlerts(candidates) {
+  if (!currentAlerts) return;
+  const alerts = ["now", "alerts"].includes(currentCategory) ? currentOfficialAlerts(candidates) : [];
+  currentAlerts.hidden = alerts.length === 0;
+  if (!alerts.length) {
+    if (currentAlerts.innerHTML) currentAlerts.innerHTML = "";
+    return;
+  }
+  const locale = currentLanguage === "ca" ? "ca-ES" : currentLanguage === "es" ? "es-ES" : "en-GB";
+  const formatter = new Intl.DateTimeFormat(locale, {timeZone:"Europe/Madrid", day:"2-digit", month:"short", hour:"2-digit", minute:"2-digit", hourCycle:"h23"});
+  const item = post => `<li class="current-alert-item">
+      <a href="${escapeAttribute(safeLinkUrl(post.url))}" target="_blank" rel="noopener noreferrer">${escapeHtml(post.title)}</a>
+      <span class="current-alert-source">${escapeHtml(post.source || "")}</span>
+      <span class="current-alert-period"><time datetime="${escapeAttribute(post.alert_valid_from)}">${formatter.format(new Date(post.alert_valid_from))}</time> – <time datetime="${escapeAttribute(post.alert_valid_until)}">${formatter.format(new Date(post.alert_valid_until))}</time></span>
+    </li>`;
+  const expanded = currentAlerts.querySelector?.("details")?.open;
+  const markup = `<div class="current-alerts-heading"><h2 id="currentAlertsTitle"><span aria-hidden="true">⚠</span> ${t("alerts.current")}</h2><p>${t("alerts.context")}</p></div>
+    <ul class="current-alert-list">${alerts.slice(0, 2).map(item).join("")}</ul>
+    ${alerts.length > 2 ? `<details class="current-alerts-more"${expanded ? " open" : ""}><summary>${t("alerts.more")} (${alerts.length - 2})</summary><ul class="current-alert-list">${alerts.slice(2).map(item).join("")}</ul></details>` : ""}`;
+  if (currentAlerts.innerHTML !== markup) currentAlerts.innerHTML = markup;
+}
+
+function refreshCurrentAlerts() {
+  if (!document.hidden) renderCurrentAlerts(filteredPosts());
 }
 
 function renderAlertStatus(post) {
@@ -520,13 +585,9 @@ function populateSourceSelect() {
   currentSource = sourceSelect.value;
 }
 
-function renderFeed() {
-  if (socialSources) {
-    socialSources.hidden = currentCategory !== "social";
-  }
-
+function filteredPosts() {
   const normalizedSearch = currentSearch.trim().toLocaleLowerCase(currentLanguage);
-  let visiblePosts = posts.filter((post) => {
+  return posts.filter((post) => {
     const categoryMatches = currentCategory === "all"
       || (currentCategory === "now"
         ? isNowPost(post)
@@ -539,6 +600,14 @@ function renderFeed() {
     const searchMatches = !normalizedSearch || haystack.includes(normalizedSearch);
     return categoryMatches && sourceMatches && searchMatches;
   });
+}
+
+function renderFeed() {
+  if (socialSources) {
+    socialSources.hidden = currentCategory !== "social";
+  }
+  let visiblePosts = filteredPosts();
+  renderCurrentAlerts(visiblePosts);
 
   if (currentCategory === "now") {
     visiblePosts = [...visiblePosts].sort((a, b) => {
@@ -881,6 +950,7 @@ function applyPostsPayload(payload) {
   posts = payload.posts;
   fetchedAt = payload.fetched_at || null;
   sourceStatus = Array.isArray(payload.source_status) ? payload.source_status : [];
+  sourcesCheckedAt = payload.sources_checked_at || null;
   usingDemoData = false;
 }
 
@@ -975,3 +1045,6 @@ document.querySelectorAll(".category").forEach((button) => {
 
 applyTranslations();
 loadPosts();
+// Refresh only this compact block, preserving embeds and feed position.
+window.setInterval(refreshCurrentAlerts, 60000);
+document.addEventListener("visibilitychange", refreshCurrentAlerts);

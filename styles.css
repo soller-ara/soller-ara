@@ -246,6 +246,19 @@ a { color: inherit; }
 .status-card span { color: rgba(255,255,255,.76); }
 
 
+.current-alerts { margin-top:18px; padding:16px 20px; border:1px solid #d9ba78; border-left:5px solid #95601b; border-radius:16px; background:#fff9eb; color:#473719; }
+.current-alerts[hidden] { display:none; }
+.current-alerts-heading h2 { margin:0; font-size:1.05rem; line-height:1.4; }
+.current-alerts-heading p { margin:4px 0 12px; font-size:.8rem; line-height:1.45; }
+.current-alert-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px 20px; margin:0; padding:0; list-style:none; }
+.current-alert-item { display:grid; align-content:start; gap:4px; min-width:0; overflow-wrap:anywhere; }
+.current-alert-item a { color:inherit; font-weight:750; font-size:.93rem; line-height:1.4; text-underline-offset:3px; }
+.current-alert-source,.current-alert-period { font-size:.8rem; line-height:1.45; }
+.current-alerts-more { margin-top:12px; border-top:1px solid #d9ba78; padding-top:8px; }
+.current-alerts-more summary { cursor:pointer; min-height:36px; font-size:.88rem; font-weight:650; }
+.current-alert-item a:focus-visible,.current-alerts-more summary:focus-visible { outline:3px solid var(--primary); outline-offset:3px; }
+@media (max-width:560px) { .current-alerts { padding:14px; } .current-alert-list { grid-template-columns:1fr; gap:12px; } }
+
 .quick-access {
   margin-top: 18px;
   padding: 16px 20px;
