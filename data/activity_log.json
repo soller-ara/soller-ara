@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "034dc47e15b403b6",
+      "timestamp": "2026-10-19T10:38:20.813530+00:00",
+      "action": "publish",
+      "area": "publications",
+      "target_id": "soller-ara-6a66910ea5e04365",
+      "title": "soller-ara-6a66910ea5e04365",
+      "detail": "Publicación propia creada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "383d12035f985082",
       "timestamp": "2026-10-19T10:34:37.984378+00:00",
       "action": "publish",
