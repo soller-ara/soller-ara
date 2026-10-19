@@ -55,6 +55,8 @@ jobs:
           node --check admin/collection-health.js
           node --check admin/public-data.js
           node --check admin/admin.js
+          node --check admin/editorial-guide.js
+          node tests/test_editorial_guide.mjs
           node --check admin/sources-v2.js
           node --check admin/visits-v1.js
           node tests/test_admin_analytics.mjs

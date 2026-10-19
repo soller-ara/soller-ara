@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Sóller Ara · comprobación de ayuda editorial</title>
+<link rel="stylesheet" href="../../admin/admin.css?v=0.93.4">
+<style>
+body{padding:20px}h1{font-size:1.2rem}.test-note{max-width:900px;line-height:1.5}.fixture-frames{display:flex;gap:24px;justify-content:center;align-items:flex-start}.fixture-frames section{flex:none}.fixture-frames h2{font-size:1rem}iframe{display:block;width:100%;height:844px;border:1px solid #d9e3e0;border-radius:12px;background:white}.fixture-narrow{width:320px}.fixture-phone{width:390px}#socialLinkForm{margin:0 auto}body.form-fixture{padding:10px}.fixture-message{color:#667572;font-size:.9rem;line-height:1.5}
+</style>
+<main id="fixtureRoot"></main>
+<script>
+(async () => {
+  const root = document.getElementById('fixtureRoot');
+  if (!new URLSearchParams(location.search).has('form')) {
+    root.innerHTML = '<h1>Comprobación visual de la ayuda editorial</h1><p class="test-note">Formulario de prueba: no guarda ni publica. Anchuras de 320 y 390 píxeles.</p><div class="fixture-frames"><section class="fixture-narrow"><h2>320 píxeles</h2><iframe title="Formulario de 320 píxeles" src="?form=1"></iframe></section><section class="fixture-phone"><h2>390 píxeles</h2><iframe title="Formulario de 390 píxeles" src="?form=1"></iframe></section></div>';
+    return;
+  }
+  document.body.classList.add('form-fixture');
+  root.innerHTML = '<p class="fixture-message">Formulario de prueba. No guarda ni publica.</p>';
+  try {
+    const response = await fetch('../../admin/index.html', {cache:'no-store'});
+    if (!response.ok) throw new Error('No se ha podido cargar el formulario actual.');
+    const page = new DOMParser().parseFromString(await response.text(), 'text/html');
+    const form = page.getElementById('socialLinkForm');
+    if (!form) throw new Error('No se ha encontrado el formulario actual.');
+    form.addEventListener('submit', event => event.preventDefault());
+    form.querySelector('[type="submit"]').disabled = true;
+    form.querySelector('[type="submit"]').textContent = 'Prueba: no publica';
+    root.appendChild(form);
+    const script = document.createElement('script');
+    script.src = '../../admin/editorial-guide.js?v=0.93.4';
+    document.body.appendChild(script);
+  } catch (error) {
+    root.appendChild(document.createTextNode(error.message));
+  }
+})();
+</script>
+</html>

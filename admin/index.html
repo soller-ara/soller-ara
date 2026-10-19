@@ -10,7 +10,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="../assets/brand/apple-touch-icon.png" />
   <title>Administración · Sóller Ara</title>
   <link rel="preload" as="image" href="../assets/brand/logo-soller-ara-web.png" />
-  <link rel="stylesheet" href="./admin.css?v=0.93.3" />
+  <link rel="stylesheet" href="./admin.css?v=0.93.4" />
 </head>
 <body>
   <main class="admin-shell">
@@ -41,7 +41,7 @@
         <div class="header-actions">
           <a class="public-link button-secondary" href="../index.html">Volver a Sóller Ara</a>
           <button id="refreshAdminPageButton" class="button-secondary" type="button" title="Actualizar la página de Administración"><span aria-hidden="true">↻</span> Actualizar</button>
-          <span id="adminVersion" class="status-pill">v0.93.3</span>
+          <span id="adminVersion" class="status-pill">v0.93.4</span>
           <span id="connectionState" class="status-pill">Conectado</span>
           <button id="logoutButton" class="button-secondary" type="button">Salir</button>
         </div>
@@ -99,8 +99,22 @@
            <label>Fuente o cuenta oficial<input name="source_name" maxlength="120" placeholder="Ej.: Partido Popular de Sóller" /></label>
            <label>Enlace de la publicación original<input name="original_url" type="url" required placeholder="https://www.facebook.com/..." /></label>
            <label>Tipo de publicación<select name="content_type"><option value="social_link" selected>Referencia de una red social</option><option value="event_poster">Anuncio o cartel de evento</option></select></label>
-           <label>Titular propio <span class="hint">(obligatorio solo si publicas también en Instagram)</span><input name="title" maxlength="180" /></label>
-           <label>Resumen propio y neutral<textarea name="body" rows="6"></textarea></label>
+           <label>Titular propio <span class="hint">(obligatorio solo si publicas también en Instagram)</span><input name="title" maxlength="180" aria-describedby="socialTitleCount" /></label>
+           <label>Resumen propio y neutral<textarea name="body" rows="6" aria-describedby="socialBodyCount"></textarea></label>
+          <aside class="editorial-guide" aria-labelledby="socialTextGuideTitle">
+            <h3 id="socialTextGuideTitle">Ayuda para el titular y el resumen</h3>
+            <p class="hint">Sugerencias opcionales para revisar tu texto.</p>
+            <p class="editorial-counts"><span id="socialTitleCount">Titular: 0/180 caracteres</span><span id="socialBodyCount">Resumen: 0 caracteres</span></p>
+            <ul id="socialTextSuggestions" class="editorial-suggestions" aria-live="polite" aria-atomic="true"></ul>
+            <details>
+              <summary>Pautas de redacción</summary>
+              <ul>
+                <li><strong>Titular:</strong> explica quién hace qué y dónde. Evita dejar solo «Nueva publicación» o una dirección web.</li>
+                <li><strong>Resumen:</strong> escribe de una a tres frases propias. Añade la fecha, el lugar y los detalles útiles cuando estén confirmados.</li>
+                <li><strong>Tono y fuente:</strong> atribuye las opiniones a quien las expresa y distingue los hechos de las valoraciones.</li>
+              </ul>
+            </details>
+          </aside>
           <div class="form-row">
             <label>Categoría<select name="category"><option value="politics" selected>Política</option><option value="news">Noticias</option><option value="agenda">Agenda</option><option value="alerts">Avisos</option><option value="services">Servicios</option><option value="culture">Cultura</option><option value="sports">Deportes</option><option value="commerce">Comercio</option><option value="social">Redes</option></select></label>
             <label>Idioma<select name="language"><option value="ca">Català</option><option value="es">Español</option><option value="en">English</option></select></label>
@@ -134,8 +148,9 @@
   </main>
 
   <script src="./public-data.js?v=0.61"></script>
-  <script src="./config.js?v=0.93.3"></script>
+  <script src="./config.js?v=0.93.4"></script>
   <script src="./collection-health.js?v=0.93.3"></script>
-  <script src="./admin.js?v=0.93.3"></script>
+  <script src="./editorial-guide.js?v=0.93.4"></script>
+  <script src="./admin.js?v=0.93.4"></script>
 </body>
 </html>

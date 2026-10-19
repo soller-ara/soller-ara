@@ -21,7 +21,7 @@ onLoad();
 assert.equal(window.SOLLER_ARA_ADMIN_VERSION, initialVersion);
 assert.equal(badge.textContent, 'v' + initialVersion,
   'Configuration must not overwrite the HTML badge with an older version');
-for (const script of ['config.js', 'admin.js']) {
+for (const script of ['config.js', 'admin.js', 'editorial-guide.js']) {
   const cacheVersion = html.match(new RegExp(`src="\\./${script.replace('.', '\\.')}\\?v=([^"]+)"`))[1];
   assert.ok(cacheVersion === initialVersion || cacheVersion.startsWith(initialVersion + '.'),
     `${script} must request the current administration version`);

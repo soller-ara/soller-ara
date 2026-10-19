@@ -480,6 +480,7 @@
     socialLinkForm.elements.instagram.disabled = false;
     if (resetForm) socialLinkForm.reset();
     updateSocialPosterFields();
+    window.SOLLER_ARA_EDITORIAL_GUIDE?.refresh();
     setMessage(socialLinkMessage, "");
   }
 
@@ -521,6 +522,7 @@
     socialLinkEditNote.hidden = false;
     socialLinkSubmitButton.textContent = "Guardar cambios";
     cancelSocialLinkEditButton.hidden = false;
+    window.SOLLER_ARA_EDITORIAL_GUIDE?.refresh();
     setMessage(socialLinkMessage, "");
     openModule("social-links");
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -853,6 +855,7 @@
         }
         socialLinkForm.reset();
         updateSocialPosterFields();
+        window.SOLLER_ARA_EDITORIAL_GUIDE?.refresh();
         await loadStatus();
         setMessage(socialLinkMessage, "Enlace guardado y disponible para editar. La web y los destinos seleccionados se actualizarán al terminar el proceso.", "success");
       }
