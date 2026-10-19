@@ -767,6 +767,22 @@ a { color: inherit; }
 .source-filter:focus,
 .search:focus { border-color: var(--primary); box-shadow: 0 0 0 3px var(--primary-soft); }
 
+.date-filters { margin:0 0 16px; color:var(--text); }
+.date-filters > summary { width:fit-content; max-width:100%; min-height:44px; padding:11px 0; color:var(--primary); font-size:.9rem; font-weight:750; cursor:pointer; overflow-wrap:anywhere; }
+.date-filters > summary:focus-visible { outline:3px solid var(--primary); outline-offset:3px; border-radius:4px; }
+.date-filter-summary { font-weight:500; }
+.date-filter-fields { display:grid; grid-template-columns:minmax(0,190px) minmax(0,190px) auto; align-items:end; justify-content:start; gap:12px; padding:14px; border:1px solid var(--border); border-radius:14px; background:var(--surface); }
+.date-field { display:grid; min-width:0; gap:6px; font-size:.85rem; font-weight:700; }
+.date-field input { display:block; min-width:0; width:100%; min-height:44px; padding:10px; border:1px solid var(--border); border-radius:10px; background:var(--surface); color:var(--text); }
+.date-field input:focus { outline:2px solid var(--primary); outline-offset:2px; }
+#clearDatesButton { min-height:44px; padding:10px 14px; border:1px solid var(--primary); border-radius:10px; background:var(--surface); color:var(--primary); font-weight:700; }
+#clearDatesButton:focus-visible { outline:3px solid var(--primary); outline-offset:3px; }
+#clearDatesButton:disabled { opacity:.5; cursor:default; }
+.date-filter-help,.date-filter-error { grid-column:1 / -1; margin:0; font-size:.8rem; line-height:1.5; }
+.date-filter-help { color:var(--muted); }
+.date-filter-error { color:#a42d23; font-weight:650; }
+.date-filter-error[hidden] { display:none; }
+
 .feed {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -969,6 +985,8 @@ a { color: inherit; }
   .mobility-now-links, .emergency-links, .live-social-grid, .social-source-grid { grid-template-columns: 1fr; }
   .feed-controls { width:100%; display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:8px; }
   .source-filter, .search { width: 100%; min-width: 0; }
+  .date-filter-fields { grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:10px; padding:12px; }
+  #clearDatesButton { grid-column:1 / -1; justify-self:start; }
   .feed { grid-template-columns: 1fr; }
 }
 

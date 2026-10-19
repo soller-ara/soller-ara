@@ -33,6 +33,12 @@ const translations = {
     "feed.updated": "Darrera actualització",
     "feed.demo": "Dades de demostració: la font automàtica encara no està disponible.",
     "search.placeholder": "Cercar...",
+    "date.filter": "Filtrar per dates",
+    "date.from": "Des de",
+    "date.until": "Fins a",
+    "date.clear": "Netejar dates",
+    "date.help": "Data de publicació · Hora de Mallorca · Inclou els dies seleccionats",
+    "date.invalid": "La data final ha de ser igual o posterior a la inicial.",
     "source.label": "Font",
     "source.all": "Totes les fonts",
     "source.unknown": "Font no indicada",
@@ -129,6 +135,12 @@ const translations = {
     "feed.updated": "Última actualización",
     "feed.demo": "Datos de demostración: la fuente automática aún no está disponible.",
     "search.placeholder": "Buscar...",
+    "date.filter": "Filtrar por fechas",
+    "date.from": "Desde",
+    "date.until": "Hasta",
+    "date.clear": "Borrar fechas",
+    "date.help": "Fecha de publicación · Hora de Mallorca · Incluye los días seleccionados",
+    "date.invalid": "La fecha final debe ser igual o posterior a la inicial.",
     "source.label": "Fuente",
     "source.all": "Todas las fuentes",
     "source.unknown": "Fuente no indicada",
@@ -225,6 +237,12 @@ const translations = {
     "feed.updated": "Last updated",
     "feed.demo": "Demo data: the automatic source is not available yet.",
     "search.placeholder": "Search...",
+    "date.filter": "Filter by date",
+    "date.from": "From",
+    "date.until": "Until",
+    "date.clear": "Clear dates",
+    "date.help": "Publication date · Mallorca time · Includes the selected days",
+    "date.invalid": "The end date must be on or after the start date.",
     "source.label": "Source",
     "source.all": "All sources",
     "source.unknown": "Source not specified",
@@ -315,6 +333,8 @@ try {
 let currentCategory = "now";
 let currentSource = "all";
 let currentSearch = "";
+let currentDateFrom = "";
+let currentDateUntil = "";
 let sourceStatus = [];
 let sourcesCheckedAt = null;
 let configuredSources = [];
@@ -335,6 +355,14 @@ const currentAlerts = document.getElementById("currentAlerts");
 const feedPagination = document.getElementById("feedPagination");
 const feedProgress = document.getElementById("feedProgress");
 const loadMorePostsButton = document.getElementById("loadMorePostsButton");
+const dateFromInput = document.getElementById("dateFromInput");
+const dateUntilInput = document.getElementById("dateUntilInput");
+const clearDatesButton = document.getElementById("clearDatesButton");
+const dateFilterSummary = document.getElementById("dateFilterSummary");
+const dateFilterError = document.getElementById("dateFilterError");
+const publicationDayFormatter = new Intl.DateTimeFormat("en-GB", {
+  timeZone: "Europe/Madrid", year: "numeric", month: "2-digit", day: "2-digit",
+});
 
 function t(key) {
   return translations[currentLanguage][key] ?? translations.ca[key] ?? key;
@@ -497,6 +525,7 @@ function applyTranslations() {
   populateSourceSelect();
   updateSourceHealth();
   updateLastUpdated();
+  updateDateFilters();
   renderFeed({ preserveCount: true });
 }
 
@@ -597,8 +626,59 @@ function populateSourceSelect() {
   currentSource = sourceSelect.value;
 }
 
+function normalizedSearchText(value) {
+  return String(value || "").normalize("NFD").replace(/\p{M}/gu, "")
+    .toLocaleLowerCase(currentLanguage).replace(/\s+/g, " ").trim();
+}
+
+function publicationDay(value) {
+  if (!value) return "";
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return "";
+  const parts = Object.fromEntries(publicationDayFormatter.formatToParts(date)
+    .map(part => [part.type, part.value]));
+  return `${parts.year}-${parts.month}-${parts.day}`;
+}
+
+function dateRangeIsValid() {
+  return !currentDateFrom || !currentDateUntil || currentDateFrom <= currentDateUntil;
+}
+
+function updateDateFilters() {
+  const invalid = !dateRangeIsValid();
+  const error = invalid ? t("date.invalid") : "";
+  dateUntilInput?.setCustomValidity?.(error);
+  dateUntilInput?.setAttribute?.("aria-invalid", String(invalid));
+  if (dateFilterError) {
+    dateFilterError.textContent = error;
+    dateFilterError.hidden = !invalid;
+  }
+  if (clearDatesButton) clearDatesButton.disabled = !currentDateFrom && !currentDateUntil;
+  if (dateFilterSummary) {
+    const locale = currentLanguage === "ca" ? "ca-ES" : currentLanguage === "es" ? "es-ES" : "en-GB";
+    const formatter = new Intl.DateTimeFormat(locale, {
+      timeZone: "UTC", day: "2-digit", month: "2-digit", year: "numeric",
+    });
+    const selectedDate = value => formatter.format(new Date(`${value}T12:00:00Z`));
+    let label = "";
+    if (currentDateFrom && currentDateUntil) label = `${selectedDate(currentDateFrom)} – ${selectedDate(currentDateUntil)}`;
+    else if (currentDateFrom) label = `${t("date.from")} ${selectedDate(currentDateFrom)}`;
+    else if (currentDateUntil) label = `${t("date.until")} ${selectedDate(currentDateUntil)}`;
+    dateFilterSummary.textContent = label ? ` · ${label}` : "";
+  }
+}
+
+function handleDateFilterChange() {
+  // Native date inputs provide ISO calendar dates or an empty value.
+  currentDateFrom = dateFromInput?.value || "";
+  currentDateUntil = dateUntilInput?.value || "";
+  updateDateFilters();
+  renderFeed();
+}
+
 function filteredPosts() {
-  const normalizedSearch = currentSearch.trim().toLocaleLowerCase(currentLanguage);
+  if (!dateRangeIsValid()) return [];
+  const normalizedSearch = normalizedSearchText(currentSearch);
   return posts.filter((post) => {
     const categoryMatches = currentCategory === "all"
       || (currentCategory === "now"
@@ -608,9 +688,12 @@ function filteredPosts() {
           : post.category === currentCategory);
     const sourceMatches = currentSource === "all" || sourceFilterKey(sourceNameForFilter(post)) === currentSource;
     const relatedText = Array.isArray(post.related_sources) ? post.related_sources.map((item) => `${item.source || ""} ${item.title || ""}`).join(" ") : "";
-    const haystack = `${post.title || ""} ${post.summary || ""} ${post.source || ""} ${relatedText}`.toLocaleLowerCase(currentLanguage);
+    const haystack = normalizedSearchText(`${post.title || ""} ${post.summary || ""} ${post.source || ""} ${relatedText}`);
     const searchMatches = !normalizedSearch || haystack.includes(normalizedSearch);
-    return categoryMatches && sourceMatches && searchMatches;
+    const day = currentDateFrom || currentDateUntil ? publicationDay(post.published_at) : "";
+    const dateMatches = (!currentDateFrom && !currentDateUntil) || Boolean(day
+      && (!currentDateFrom || day >= currentDateFrom) && (!currentDateUntil || day <= currentDateUntil));
+    return categoryMatches && sourceMatches && searchMatches && dateMatches;
   });
 }
 
@@ -637,7 +720,7 @@ function renderFeed({ append = false, preserveCount = false } = {}) {
     return;
   }
 
-  const viewKey = JSON.stringify([currentCategory, currentSource, currentSearch, currentLanguage]);
+  const viewKey = JSON.stringify([currentCategory, currentSource, currentSearch, currentDateFrom, currentDateUntil, currentLanguage]);
   append = append && renderedFeedPosts.length > 0 && renderedFeedKey === viewKey
     && renderedFeedPosts.every((post, index) => post === visiblePosts[index]);
   const start = append ? renderedFeedPosts.length : 0;
@@ -1067,6 +1150,14 @@ loadMorePostsButton?.addEventListener("click", () => {
     firstNewCard.focus({ preventScroll: true });
     firstNewCard.scrollIntoView({ block: "start", behavior: "auto" });
   }
+});
+
+dateFromInput?.addEventListener("change", handleDateFilterChange);
+dateUntilInput?.addEventListener("change", handleDateFilterChange);
+clearDatesButton?.addEventListener("click", () => {
+  if (dateFromInput) dateFromInput.value = "";
+  if (dateUntilInput) dateUntilInput.value = "";
+  handleDateFilterChange();
 });
 
 sourceSelect.addEventListener("change", (event) => {

@@ -51,6 +51,7 @@ jobs:
           node tests/test_collection_watchdog.mjs
           node tests/test_current_alerts.mjs
           node tests/test_feed_pagination.mjs
+          node tests/test_search_dates.mjs
           node --check admin/collection-health.js
           node --check admin/public-data.js
           node --check admin/admin.js
