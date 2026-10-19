@@ -17,7 +17,7 @@
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="sitemap" type="application/xml" href="sitemap.xml" />
   <link rel="preload" as="image" href="assets/brand/logo-soller-ara-web.png" />
-  <link rel="stylesheet" href="styles.css?v=0.90.3" />
+  <link rel="stylesheet" href="styles.css?v=0.90.4" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="ca_ES" />
   <meta property="og:site_name" content="Sóller Ara" />
@@ -373,14 +373,18 @@
     </section>
 
     <section id="feed" class="feed" aria-live="polite"></section>
+    <div id="feedPagination" class="feed-pagination" hidden>
+      <p id="feedProgress" class="feed-progress" role="status" aria-live="polite" aria-atomic="true"></p>
+      <button id="loadMorePostsButton" class="load-more-button" type="button" aria-controls="feed" data-i18n="feed.more">Veure més</button>
+    </div>
   </main>
 
   <footer class="footer">
-    <p>© 2026 Sóller Ara · <span data-i18n="footer.nonprofit">Projecte sense ànim de lucre</span> · Recopilació assistida per IA i supervisió humana · <a href="mailto:infosollerara@gmail.com">infosollerara@gmail.com</a> · <a href="https://www.instagram.com/soller.ara/" target="_blank" rel="noopener noreferrer">Instagram</a> · <a href="https://www.facebook.com/profile.php?id=1384755221378998" target="_blank" rel="noopener noreferrer">Facebook</a> · <a href="privacy.html">Privacitat</a> · <a href="transparency.html">Transparència</a> · <a href="data-deletion.html">Eliminació de dades</a> · <a href="admin/">Administració</a> · <span id="siteVersion">v0.90.3</span></p>
+    <p>© 2026 Sóller Ara · <span data-i18n="footer.nonprofit">Projecte sense ànim de lucre</span> · Recopilació assistida per IA i supervisió humana · <a href="mailto:infosollerara@gmail.com">infosollerara@gmail.com</a> · <a href="https://www.instagram.com/soller.ara/" target="_blank" rel="noopener noreferrer">Instagram</a> · <a href="https://www.facebook.com/profile.php?id=1384755221378998" target="_blank" rel="noopener noreferrer">Facebook</a> · <a href="privacy.html">Privacitat</a> · <a href="transparency.html">Transparència</a> · <a href="data-deletion.html">Eliminació de dades</a> · <a href="admin/">Administració</a> · <span id="siteVersion">v0.90.4</span></p>
   </footer>
 
   <script src="data/posts.js?v=0.39" defer></script>
-  <script src="app.js?v=0.90.3" defer></script>
+  <script src="app.js?v=0.90.4" defer></script>
   <script src="analytics.js?v=1" defer></script>
 </body>
 </html>

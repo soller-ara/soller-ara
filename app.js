@@ -27,6 +27,8 @@ const translations = {
     "hero.statusPartialBody": "Alguna font no ha respost en la darrera actualització.",
     "feed.eyebrow": "Actualitat",
     "feed.title": "Publicacions destacades",
+    "feed.more": "Veure més",
+    "feed.progress": "Mostrant {shown} de {total} publicacions",
     "feed.loading": "Carregant actualització...",
     "feed.updated": "Darrera actualització",
     "feed.demo": "Dades de demostració: la font automàtica encara no està disponible.",
@@ -121,6 +123,8 @@ const translations = {
     "hero.statusPartialBody": "Alguna fuente no ha respondido en la última actualización.",
     "feed.eyebrow": "Actualidad",
     "feed.title": "Publicaciones destacadas",
+    "feed.more": "Ver más",
+    "feed.progress": "Mostrando {shown} de {total} publicaciones",
     "feed.loading": "Cargando actualización...",
     "feed.updated": "Última actualización",
     "feed.demo": "Datos de demostración: la fuente automática aún no está disponible.",
@@ -215,6 +219,8 @@ const translations = {
     "hero.statusPartialBody": "One or more sources did not respond in the latest update.",
     "feed.eyebrow": "Latest",
     "feed.title": "Featured posts",
+    "feed.more": "Show more",
+    "feed.progress": "Showing {shown} of {total} posts",
     "feed.loading": "Loading update...",
     "feed.updated": "Last updated",
     "feed.demo": "Demo data: the automatic source is not available yet.",
@@ -312,6 +318,9 @@ let currentSearch = "";
 let sourceStatus = [];
 let sourcesCheckedAt = null;
 let configuredSources = [];
+const FEED_PAGE_SIZE = 20;
+let renderedFeedPosts = [];
+let renderedFeedKey = "";
 
 const languageSelect = document.getElementById("languageSelect");
 const feed = document.getElementById("feed");
@@ -323,6 +332,9 @@ const sourceHealthBody = document.getElementById("sourceHealthBody");
 const socialSources = document.getElementById("socialSources");
 const refreshPageButton = document.getElementById("refreshPageButton");
 const currentAlerts = document.getElementById("currentAlerts");
+const feedPagination = document.getElementById("feedPagination");
+const feedProgress = document.getElementById("feedProgress");
+const loadMorePostsButton = document.getElementById("loadMorePostsButton");
 
 function t(key) {
   return translations[currentLanguage][key] ?? translations.ca[key] ?? key;
@@ -485,7 +497,7 @@ function applyTranslations() {
   populateSourceSelect();
   updateSourceHealth();
   updateLastUpdated();
-  renderFeed();
+  renderFeed({ preserveCount: true });
 }
 
 function formatStatusTemplate(key, values) {
@@ -602,7 +614,7 @@ function filteredPosts() {
   });
 }
 
-function renderFeed() {
+function renderFeed({ append = false, preserveCount = false } = {}) {
   if (socialSources) {
     socialSources.hidden = currentCategory !== "social";
   }
@@ -619,10 +631,51 @@ function renderFeed() {
 
   if (!visiblePosts.length) {
     feed.innerHTML = `<div class="empty">${t("empty")}</div>`;
+    renderedFeedPosts = [];
+    renderedFeedKey = "";
+    updateFeedPagination(0);
     return;
   }
 
-  feed.innerHTML = visiblePosts.map((post) => {
+  const viewKey = JSON.stringify([currentCategory, currentSource, currentSearch, currentLanguage]);
+  append = append && renderedFeedPosts.length > 0 && renderedFeedKey === viewKey
+    && renderedFeedPosts.every((post, index) => post === visiblePosts[index]);
+  const start = append ? renderedFeedPosts.length : 0;
+  const count = Math.min(visiblePosts.length, append ? start + FEED_PAGE_SIZE
+    : preserveCount ? Math.max(FEED_PAGE_SIZE, renderedFeedPosts.length) : FEED_PAGE_SIZE);
+  const markup = visiblePosts.slice(start, count).map(renderPostCard).join("");
+  if (append) {
+    if (markup) feed.insertAdjacentHTML("beforeend", markup);
+  } else {
+    feed.innerHTML = markup;
+  }
+  renderedFeedPosts = visiblePosts.slice(0, count);
+  renderedFeedKey = viewKey;
+  updateFeedPagination(visiblePosts.length);
+
+  const addedCards = Array.from(feed.children || []).slice(start);
+  // Scope X to newly appended articles. Ask Instagram to process only when
+  // this batch adds an Instagram embed; existing iframe nodes stay intact.
+  if (append) {
+    addedCards.forEach(card => ensureXWidgets(card));
+    if (addedCards.some(card => card.querySelector(".instagram-media"))) ensureInstagramWidgets();
+  } else {
+    ensureXWidgets();
+    ensureInstagramWidgets();
+  }
+  return append ? addedCards[0] : null;
+}
+
+function updateFeedPagination(total) {
+  if (feedPagination) feedPagination.hidden = total === 0;
+  if (feedProgress) feedProgress.textContent = formatStatusTemplate("feed.progress", { shown: renderedFeedPosts.length, total });
+  if (loadMorePostsButton) {
+    loadMorePostsButton.hidden = renderedFeedPosts.length >= total;
+    loadMorePostsButton.textContent = t("feed.more");
+  }
+}
+
+function renderPostCard(post) {
     const categoryLabel = translations[currentLanguage].categories[post.category] || post.category;
     const safeUrl = safeLinkUrl(post.url) || "#";
     const originalUrl = safeLinkUrl(post.original_url);
@@ -639,7 +692,7 @@ function renderFeed() {
       ? `<div class="related-sources"><span>${t("card.related")}:</span>${relatedSources.map((item) => `<a href="${escapeAttribute(safeLinkUrl(item.url) || "#")}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.source || "")}</a>`).join("")}</div>`
       : "";
     return `
-      <article class="card">
+      <article class="card" data-post-id="${escapeAttribute(post.id || "")}" tabindex="-1">
         <div class="card-media" aria-hidden="true">${iconFor(post.category)}</div>
         <div class="card-body">
           <div class="meta">
@@ -661,14 +714,6 @@ function renderFeed() {
           </div>
         </div>
       </article>`;
-  }).join("");
-
-  document.querySelectorAll("[data-share-id]").forEach((button) => {
-    button.addEventListener("click", () => sharePost(button.dataset.shareId));
-  });
-
-  ensureXWidgets();
-  ensureInstagramWidgets();
 }
 
 function safeLinkUrl(value) {
@@ -913,11 +958,11 @@ function ensureInstagramWidgets() {
   document.body.appendChild(script);
 }
 
-function ensureXWidgets() {
-  if (!document.querySelector("[data-x-embed], .twitter-timeline")) return;
+function ensureXWidgets(root = document) {
+  if (!root.querySelector("[data-x-embed], .twitter-timeline")) return;
 
   if (window.twttr?.widgets) {
-    window.twttr.widgets.load();
+    window.twttr.widgets.load(root === document ? undefined : root);
     return;
   }
 
@@ -1010,6 +1055,19 @@ async function loadPosts() {
   updateLastUpdated();
   renderFeed();
 }
+
+feed.addEventListener("click", (event) => {
+  const button = event.target.closest?.("button[data-share-id]");
+  if (button && feed.contains(button)) sharePost(button.dataset.shareId);
+});
+
+loadMorePostsButton?.addEventListener("click", () => {
+  const firstNewCard = renderFeed({ append: true });
+  if (firstNewCard) {
+    firstNewCard.focus({ preventScroll: true });
+    firstNewCard.scrollIntoView({ block: "start", behavior: "auto" });
+  }
+});
 
 sourceSelect.addEventListener("change", (event) => {
   currentSource = event.target.value;
