@@ -7,10 +7,12 @@ Requires no network, credentials, Pillow or third-party packages.
 from __future__ import annotations
 
 import html
+import argparse
 import json
 from pathlib import Path
 import re
 import subprocess
+import shutil
 from datetime import datetime
 import xml.etree.ElementTree as ET
 from html.parser import HTMLParser
@@ -85,7 +87,11 @@ def replace_metadata(document: str, markup: str, *, detail: bool) -> str:
     return head.rstrip() + '\n  <!-- SEO:START -->\n' + markup + '\n  <!-- SEO:END -->\n</head>' + tail
 
 
-def build(root: Path = ROOT) -> dict:
+def build(root: Path = ROOT, output: Path | None = None) -> dict:
+    if output is not None:
+        root, output = root.resolve(), output.resolve()
+        if output == root or root in output.parents or output in root.parents:
+            raise ValueError('Deployment output must be outside the source checkout')
     manual = json.loads((root / 'data/manual_posts.json').read_text(encoding='utf-8'))
     moderation = json.loads((root / 'data/moderation.json').read_text(encoding='utf-8'))
     posts = manual['posts']
@@ -166,11 +172,19 @@ def build(root: Path = ROOT) -> dict:
             ET.SubElement(entry, f'{{{NS}}}lastmod').text = modified
     ET.indent(sitemap, space='  ')
     writes[root / 'sitemap.xml'] = '<?xml version="1.0" encoding="UTF-8"?>\n' + ET.tostring(sitemap, encoding='unicode') + '\n'
-    # Validate everything before touching deployment files. No JSON writes.
+    # Keep the checkout clean: later social receipt commits must still be able
+    # to pull --rebase. Only the separate upload copy receives generated SEO.
+    if output is not None:
+        shutil.copytree(root, output, ignore=shutil.ignore_patterns('.git', '__pycache__', '*.pyc'))
     for path, content in writes.items():
-        path.write_text(content, encoding='utf-8')
+        target = output / path.relative_to(root) if output is not None else path
+        target.write_text(content, encoding='utf-8')
     return {'static': len(STATIC), 'publications': len(included), 'noindex': excluded, 'urls': len(entries)}
 
 
 if __name__ == '__main__':
-    print('SEO_BUILD ' + json.dumps(build(), sort_keys=True))
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--output-dir', required=True, type=Path,
+                        help='New deployment directory outside the source checkout')
+    arguments = parser.parse_args()
+    print('SEO_BUILD ' + json.dumps(build(output=arguments.output_dir), sort_keys=True))

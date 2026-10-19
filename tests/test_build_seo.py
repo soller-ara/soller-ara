@@ -172,12 +172,48 @@ class SeoTests(unittest.TestCase):
             self.assertIsNone(seo.last_change(self.root, 'privacy.html'))
         run.assert_called_once()
 
+    def test_deployment_copy_leaves_checkout_clean_for_social_receipt_rebase(self):
+        self.inventories()
+        self.git('init')
+        self.git('config', 'user.email', 'test@example.test')
+        self.git('config', 'user.name', 'Local test')
+        self.git('add', '.')
+        self.git('commit', '-m', 'Create')
+        with tempfile.TemporaryDirectory() as temporary:
+            output = Path(temporary) / 'site'
+            result = seo.build(self.root, output=output)
+            self.assertEqual(result['urls'], 6)
+            self.assertTrue((output / 'sitemap.xml').exists())
+            self.assertTrue((output / 'data/manual_posts.json').exists())
+            self.assertFalse((output / '.git').exists())
+            self.assertEqual((self.root / 'enllacos.html').read_text(), self.document)
+            self.assertEqual(self.git('status', '--porcelain'), '')
+            remote = Path(temporary) / 'remote.git'
+            subprocess.run(['git', 'init', '--bare', str(remote)], check=True, capture_output=True)
+            self.git('remote', 'add', 'origin', str(remote))
+            self.git('push', '-u', 'origin', 'HEAD:main')
+            (self.root / 'data/social_publish_log.json').write_text('{"entries":[]}')
+            self.git('add', 'data/social_publish_log.json')
+            self.git('commit', '-m', 'Save social receipts')
+            self.git('pull', '--rebase', 'origin', 'main')
+            self.git('push', 'origin', 'HEAD:main')
+            self.assertEqual(self.git('status', '--porcelain'), '')
+
+    def test_output_inside_checkout_is_rejected_before_any_change(self):
+        self.inventories()
+        with self.assertRaises(ValueError):
+            seo.build(self.root, output=self.root / 'site')
+        self.assertEqual(self.detail(self.posts[0]).read_text(), self.document)
+
     def test_every_deployment_builds_after_commit_before_upload_with_full_history(self):
         for name in ['deploy-pages', 'update-sources', 'publish-own-content', 'edit-own-content', 'manage-posts']:
             workflow = (ROOT / f'.github/workflows/{name}.yml').read_text()
             build = workflow.index('run: python3 scripts/build_seo.py')
             upload = workflow.index('uses: actions/upload-pages-artifact@v4')
             self.assertLess(build, upload, name)
+            self.assertIn('--output-dir "$RUNNER_TEMP/soller-ara-site"', workflow, name)
+            self.assertIn('path: ${{ runner.temp }}/soller-ara-site', workflow, name)
+            self.assertNotIn('path: "."', workflow, name)
             self.assertIn('fetch-depth: 0', workflow[:build], name)
             if name in {'update-sources', 'publish-own-content'}:
                 self.assertLess(workflow.index('git push origin HEAD:main'), build, name)

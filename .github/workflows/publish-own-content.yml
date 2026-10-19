@@ -131,13 +131,13 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Preparar sitemap y metadatos de búsqueda
-        run: python3 scripts/build_seo.py
+        run: python3 scripts/build_seo.py --output-dir "$RUNNER_TEMP/soller-ara-site"
 
       - name: Upload site
         uses: actions/upload-pages-artifact@v4
         with:
           name: github-pages-${{ github.run_attempt }}
-          path: "."
+          path: ${{ runner.temp }}/soller-ara-site
 
       - name: Deploy to GitHub Pages
         id: deployment
