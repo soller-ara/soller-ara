@@ -1,50 +1,31 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-19T08:44:53.972976+00:00",
+  "generated_at": "2026-10-19T08:54:08.056474+00:00",
   "entries": [
     {
-      "post_id": "8c4589234a16826f00f4",
-      "title": "Arranca el muntatge de les bastides del Fantasio",
-      "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
-      "source_type": "media",
-      "category": "services",
-      "language": "ca",
-      "published_at": "2026-10-19T10:33:00+02:00",
-      "original_url": "https://www.elsoller.cat/soller/local/2026/10/19/354673/arranca-muntatge-les-bastides-del-fantasio.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/8c4589234a16826f00f4.jpg"
-    },
-    {
-      "post_id": "cf78b7fa33a272935fbc",
-      "title": "Sant Jaume, tallat al trànsit per col·locar els bastiments del Fantasio",
+      "post_id": "eb885eac891a3518c9c2",
+      "title": "Pere Casasnovas mostra el seu domini a la Tramuntanya",
       "summary": "",
       "source": "Sa Veu de Sóller",
       "source_id": "sa-veu-soller",
       "source_type": "media",
-      "category": "services",
+      "category": "news",
       "language": "ca",
-      "published_at": "2026-10-19T08:25:59+00:00",
-      "original_url": "https://saveu.cat/noticies/sant-jaume-tallat-al-transit-per-collocar-els-bastiments-del-fantasio/",
+      "published_at": "2026-10-19T08:01:19+00:00",
+      "original_url": "https://saveu.cat/noticies/pere-casasnovas-mostra-el-seu-domini-a-la-tramuntanya/",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/cf78b7fa33a272935fbc.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/eb885eac891a3518c9c2.jpg"
     },
     {
-      "post_id": "7bb62337d1cd982a8356",
-      "title": "Aviso. Nivel amarillo. Tormentas. Sierra Tramontana",
-      "summary": "Aviso de tormentas de nivel amarillo de 12:00 19-10-2026 CEST (UTC+2) a 11:59 20-10-2026 CEST (UTC+2).",
+      "post_id": "a0656136d7c6e02f5a49",
+      "title": "Aviso. Nivel amarillo. Lluvias. Sierra Tramontana",
+      "summary": "Aviso de precipitación acumulada en una hora de nivel amarillo de 00:00 20-10-2026 CEST (UTC+2) a 11:59 20-10-2026 CEST (UTC+2).",
       "source": "AEMET · Serra de Tramuntana",
       "source_id": "aemet-avisos-mallorca",
       "source_type": "official",
@@ -52,16 +33,16 @@
       "language": "es",
       "published_at": "2026-10-19T07:06:50+00:00",
       "alert_status": "scheduled",
-      "alert_valid_from": "2026-10-19T10:00:00+00:00",
+      "alert_valid_from": "2026-10-19T22:00:00+00:00",
       "alert_valid_until": "2026-10-20T09:59:00+00:00",
-      "original_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261019070650_AFAZ645401TOTO2010.xml",
+      "original_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261019070650_AFAZ645401PRP12010.xml",
       "content_policy": "short_factual_excerpt",
       "rights_status": "reuse_authorized_with_attribution",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/7bb62337d1cd982a8356.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/a0656136d7c6e02f5a49.jpg"
     }
   ]
 }
