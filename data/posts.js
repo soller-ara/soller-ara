@@ -12,7 +12,7 @@ window.SOLLER_ARA_DATA = {
       "count": 10,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "sa-veu-soller",
@@ -23,7 +23,7 @@ window.SOLLER_ARA_DATA = {
       "count": 12,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "setmanari-soller",
@@ -34,7 +34,7 @@ window.SOLLER_ARA_DATA = {
       "count": 20,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "soller-2010",
@@ -45,7 +45,7 @@ window.SOLLER_ARA_DATA = {
       "count": 2,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "aemet-avisos-mallorca",
@@ -53,10 +53,10 @@ window.SOLLER_ARA_DATA = {
       "source_type": "official",
       "method": "aemet_alerts",
       "ok": true,
-      "count": 32,
-      "archived_count": 26,
+      "count": 37,
+      "archived_count": 31,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "youtube-ajuntament-soller",
@@ -67,7 +67,7 @@ window.SOLLER_ARA_DATA = {
       "count": 3,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "youtube-ib3-noticies-soller",
@@ -78,7 +78,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "goib-noticies-soller",
@@ -89,7 +89,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "ib3-noticies-soller",
@@ -100,7 +100,7 @@ window.SOLLER_ARA_DATA = {
       "count": 9,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "dbalears-soller",
@@ -111,7 +111,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "diario-mallorca-soller",
@@ -122,7 +122,7 @@ window.SOLLER_ARA_DATA = {
       "count": 6,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "ultima-hora-soller",
@@ -133,7 +133,7 @@ window.SOLLER_ARA_DATA = {
       "count": 21,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "mallorca-directo-soller",
@@ -144,7 +144,7 @@ window.SOLLER_ARA_DATA = {
       "count": 1,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "tib-avisos-soller",
@@ -155,7 +155,7 @@ window.SOLLER_ARA_DATA = {
       "count": 1,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "consell-mallorca-soller",
@@ -166,7 +166,7 @@ window.SOLLER_ARA_DATA = {
       "count": 4,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "youtube-can-prunera",
@@ -177,7 +177,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "youtube-aires-sollerics",
@@ -188,7 +188,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "youtube-xeremiers-soller",
@@ -199,7 +199,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "youtube-club-volei-soller",
@@ -210,7 +210,7 @@ window.SOLLER_ARA_DATA = {
       "count": 1,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "youtube-ballades-mallorca-soller",
@@ -221,7 +221,7 @@ window.SOLLER_ARA_DATA = {
       "count": 8,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "youtube-tramuntana-xxi",
@@ -232,7 +232,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "youtube-gob-mallorca-soller",
@@ -243,7 +243,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "youtube-museu-maritim-soller",
@@ -254,7 +254,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "youtube-serra-tramuntana",
@@ -265,7 +265,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "youtube-consell-mallorca-soller",
@@ -276,7 +276,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "mucbo-noticies",
@@ -287,7 +287,7 @@ window.SOLLER_ARA_DATA = {
       "count": 10,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "can-prunera-noticies",
@@ -298,7 +298,7 @@ window.SOLLER_ARA_DATA = {
       "count": 4,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "cronica-balear-soller",
@@ -309,7 +309,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "ara-balears-soller",
@@ -320,7 +320,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "fora-vila-soller",
@@ -331,7 +331,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "tren-soller-noticies",
@@ -342,7 +342,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "ajuntament-fornalutx-noticies",
@@ -353,7 +353,7 @@ window.SOLLER_ARA_DATA = {
       "count": 6,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "futbol-balear-cf-soller",
@@ -364,7 +364,7 @@ window.SOLLER_ARA_DATA = {
       "count": 1,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "mancomunitat-tramuntana-soller",
@@ -375,7 +375,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "youtube-sus-mallorca-soller",
@@ -386,7 +386,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "partido-popular-soller",
@@ -397,7 +397,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "ports-ib-port-soller",
@@ -408,7 +408,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "mes-per-soller",
@@ -419,7 +419,7 @@ window.SOLLER_ARA_DATA = {
       "count": 8,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "psib-psoe-soller",
@@ -430,7 +430,7 @@ window.SOLLER_ARA_DATA = {
       "count": 1,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "uep-mallorca-soller",
@@ -441,7 +441,7 @@ window.SOLLER_ARA_DATA = {
       "count": 4,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "ies-guillem-colom-casasnoves",
@@ -452,7 +452,7 @@ window.SOLLER_ARA_DATA = {
       "count": 10,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "ajuntament-deia-noticies",
@@ -463,7 +463,7 @@ window.SOLLER_ARA_DATA = {
       "count": 10,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "mallorcadiario-soller",
@@ -474,7 +474,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "fibwi-diario-soller",
@@ -485,7 +485,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "youtube-fibwi-diario-soller",
@@ -496,7 +496,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "gob-mallorca-noticies",
@@ -507,7 +507,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "eldiario-balears-soller",
@@ -518,7 +518,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "majorca-daily-bulletin-soller",
@@ -529,7 +529,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "ceip-es-puig-soller",
@@ -540,7 +540,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "sagrats-cors-soller",
@@ -551,7 +551,7 @@ window.SOLLER_ARA_DATA = {
       "count": 1,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "europa-press-balears-soller",
@@ -562,7 +562,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "mallorca-confidencial-soller",
@@ -573,7 +573,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     },
     {
       "source_id": "soller-ara",
@@ -581,13 +581,13 @@ window.SOLLER_ARA_DATA = {
       "source_type": "own",
       "method": "manual",
       "ok": true,
-      "count": 64,
+      "count": 70,
       "error": null,
-      "checked_at": "2026-10-19T09:07:58.345149+00:00"
+      "checked_at": "2026-10-19T11:18:16.623500+00:00"
     }
   ],
   "social_integration_status": [],
-  "post_count": 254,
+  "post_count": 259,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
@@ -608,7 +608,8 @@ window.SOLLER_ARA_DATA = {
       "content_policy": "manual_link_reference",
       "rights_status": "no_reuse_reference_only",
       "image_allowed": false,
-      "original_url": "https://www.facebook.com/story.php?story_fbid=1415644987442401&id=100069907391489&hpir=1"
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1415644987442401&id=100069907391489&hpir=1",
+      "related_sources": []
     },
     {
       "id": "soller-ara-8ea2748f4f921be1",
@@ -627,7 +628,8 @@ window.SOLLER_ARA_DATA = {
       "content_policy": "manual_link_reference",
       "rights_status": "no_reuse_reference_only",
       "image_allowed": false,
-      "original_url": "https://www.facebook.com/story.php?story_fbid=1415524827454417&id=100069907391489&hpir=1"
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1415524827454417&id=100069907391489&hpir=1",
+      "related_sources": []
     },
     {
       "id": "soller-ara-c75335992aeb8e58",
@@ -646,7 +648,8 @@ window.SOLLER_ARA_DATA = {
       "content_policy": "manual_link_reference",
       "rights_status": "no_reuse_reference_only",
       "image_allowed": false,
-      "original_url": "https://www.facebook.com/story.php?story_fbid=1576500631186403&id=100064794426084&hpir=1"
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1576500631186403&id=100064794426084&hpir=1",
+      "related_sources": []
     },
     {
       "id": "soller-ara-71d3f8483ba5556f",
@@ -665,7 +668,8 @@ window.SOLLER_ARA_DATA = {
       "content_policy": "manual_link_reference",
       "rights_status": "no_reuse_reference_only",
       "image_allowed": false,
-      "original_url": "https://www.facebook.com/story.php?story_fbid=1542452531256469&id=100064752094509&hpir=1"
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1542452531256469&id=100064752094509&hpir=1",
+      "related_sources": []
     },
     {
       "id": "soller-ara-5b63934cc7908a03",
@@ -684,7 +688,8 @@ window.SOLLER_ARA_DATA = {
       "content_policy": "manual_link_reference",
       "rights_status": "no_reuse_reference_only",
       "image_allowed": false,
-      "original_url": "https://www.facebook.com/story.php?story_fbid=1542422327926156&id=100064752094509&hpir=1"
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1542422327926156&id=100064752094509&hpir=1",
+      "related_sources": []
     },
     {
       "id": "soller-ara-18f104137c96ce3d",
@@ -703,7 +708,170 @@ window.SOLLER_ARA_DATA = {
       "content_policy": "manual_link_reference",
       "rights_status": "no_reuse_reference_only",
       "image_allowed": false,
-      "original_url": "https://www.facebook.com/story.php?story_fbid=1576447481191718&id=100064794426084&hpir=1"
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1576447481191718&id=100064794426084&hpir=1",
+      "related_sources": []
+    },
+    {
+      "id": "1ef9db60fb59f762f151",
+      "category": "alerts",
+      "source_id": "aemet-avisos-mallorca",
+      "source": "AEMET · Serra de Tramuntana",
+      "source_type": "official",
+      "language": "es",
+      "locality": "Sóller / Serra de Tramuntana",
+      "published_at": "2026-10-19T09:34:46+00:00",
+      "title": "Aviso. Nivel naranja. Lluvias. Sierra Tramontana",
+      "summary": "Aviso de precipitación acumulada en una hora de nivel naranja de 11:00 19-10-2026 CEST (UTC+2) a 13:59 19-10-2026 CEST (UTC+2).",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261019093446_AFAZ645401PRP11912.xml",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "reuse_authorized_with_attribution",
+      "image_allowed": false,
+      "alert_valid_from": "2026-10-19T09:00:00+00:00",
+      "alert_valid_until": "2026-10-19T11:59:00+00:00",
+      "alert_status": "active",
+      "alert_in_feed": true,
+      "related_sources": []
+    },
+    {
+      "id": "7a4030bffb44a08b9235",
+      "category": "alerts",
+      "source_id": "aemet-avisos-mallorca",
+      "source": "AEMET · Serra de Tramuntana",
+      "source_type": "official",
+      "language": "es",
+      "locality": "Sóller / Serra de Tramuntana",
+      "published_at": "2026-10-19T09:34:46+00:00",
+      "title": "Aviso. Nivel naranja. Lluvias. Sierra Tramontana",
+      "summary": "Aviso de precipitación acumulada en 12 horas de nivel naranja de 11:00 19-10-2026 CEST (UTC+2) a 13:59 19-10-2026 CEST (UTC+2).",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261019093446_AFAZ645401PRP21912.xml",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "reuse_authorized_with_attribution",
+      "image_allowed": false,
+      "alert_valid_from": "2026-10-19T09:00:00+00:00",
+      "alert_valid_until": "2026-10-19T11:59:00+00:00",
+      "alert_status": "active",
+      "alert_in_feed": true,
+      "related_sources": []
+    },
+    {
+      "id": "b4e10d4a35433552c602",
+      "category": "alerts",
+      "source_id": "aemet-avisos-mallorca",
+      "source": "AEMET · Serra de Tramuntana",
+      "source_type": "official",
+      "language": "es",
+      "locality": "Sóller / Serra de Tramuntana",
+      "published_at": "2026-10-19T09:34:46+00:00",
+      "title": "Aviso. Nivel naranja. Tormentas. Sierra Tramontana",
+      "summary": "Aviso de tormentas de nivel naranja de 11:00 19-10-2026 CEST (UTC+2) a 13:59 19-10-2026 CEST (UTC+2).",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261019093446_AFAZ645401TOTO1912.xml",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "reuse_authorized_with_attribution",
+      "image_allowed": false,
+      "alert_valid_from": "2026-10-19T09:00:00+00:00",
+      "alert_valid_until": "2026-10-19T11:59:00+00:00",
+      "alert_status": "active",
+      "alert_in_feed": true,
+      "related_sources": []
+    },
+    {
+      "id": "089ea864f5f7b2376dca",
+      "category": "alerts",
+      "source_id": "aemet-avisos-mallorca",
+      "source": "AEMET · Serra de Tramuntana",
+      "source_type": "official",
+      "language": "es",
+      "locality": "Sóller / Serra de Tramuntana",
+      "published_at": "2026-10-19T09:34:46+00:00",
+      "title": "Aviso. Nivel amarillo. Lluvias. Sierra Tramontana",
+      "summary": "Aviso de precipitación acumulada en una hora de nivel amarillo de 14:00 19-10-2026 CEST (UTC+2) a 23:59 19-10-2026 CEST (UTC+2).",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261019093446_AFAZ645401PRP11922.xml",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "reuse_authorized_with_attribution",
+      "image_allowed": false,
+      "alert_valid_from": "2026-10-19T12:00:00+00:00",
+      "alert_valid_until": "2026-10-19T21:59:00+00:00",
+      "alert_status": "scheduled",
+      "alert_in_feed": true,
+      "related_sources": []
+    },
+    {
+      "id": "f651a50d10616da4c734",
+      "category": "alerts",
+      "source_id": "aemet-avisos-mallorca",
+      "source": "AEMET · Serra de Tramuntana",
+      "source_type": "official",
+      "language": "es",
+      "locality": "Sóller / Serra de Tramuntana",
+      "published_at": "2026-10-19T09:34:46+00:00",
+      "title": "Aviso. Nivel amarillo. Tormentas. Sierra Tramontana",
+      "summary": "Aviso de tormentas de nivel amarillo de 14:00 19-10-2026 CEST (UTC+2) a 11:59 20-10-2026 CEST (UTC+2).",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261019093446_AFAZ645401TOTO2010.xml",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "reuse_authorized_with_attribution",
+      "image_allowed": false,
+      "alert_valid_from": "2026-10-19T12:00:00+00:00",
+      "alert_valid_until": "2026-10-20T09:59:00+00:00",
+      "alert_status": "scheduled",
+      "alert_in_feed": true,
+      "related_sources": []
+    },
+    {
+      "id": "e9b157d546021b233fe4",
+      "category": "services",
+      "source_id": "sa-veu-soller",
+      "source": "Sa Veu de Sóller",
+      "source_type": "media",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-19T09:29:22+00:00",
+      "title": "L’alarma per pluja retarda un dia les obres del túnel",
+      "summary": "",
+      "url": "https://saveu.cat/noticies/lalarma-per-pluja-retarda-un-dia-les-obres-del-tunel/",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "image_allowed": false,
+      "embed_type": "official_oembed",
+      "embed_url": "https://saveu.cat/noticies/lalarma-per-pluja-retarda-un-dia-les-obres-del-tunel/embed/",
+      "related_sources": []
+    },
+    {
+      "id": "39372fa904f1ccb7460e",
+      "category": "sports",
+      "source_id": "setmanari-soller",
+      "source": "Setmanari Sóller",
+      "source_type": "media",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-19T11:04:00+02:00",
+      "title": "Pere Casasnovas revalida victòria en una participada Tramuntanya Winter",
+      "summary": "",
+      "url": "https://www.elsoller.cat/soller/esports/2026/10/19/354677/pere-casasnovas-revalida-victoria-participada-tramuntana-winter.html",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "image_allowed": false,
+      "related_sources": []
     },
     {
       "id": "8c4589234a16826f00f4",
@@ -770,30 +938,6 @@ window.SOLLER_ARA_DATA = {
       "related_sources": []
     },
     {
-      "id": "7bb62337d1cd982a8356",
-      "category": "alerts",
-      "source_id": "aemet-avisos-mallorca",
-      "source": "AEMET · Serra de Tramuntana",
-      "source_type": "official",
-      "language": "es",
-      "locality": "Sóller / Serra de Tramuntana",
-      "published_at": "2026-10-19T07:06:50+00:00",
-      "title": "Aviso. Nivel amarillo. Tormentas. Sierra Tramontana",
-      "summary": "Aviso de tormentas de nivel amarillo de 12:00 19-10-2026 CEST (UTC+2) a 11:59 20-10-2026 CEST (UTC+2).",
-      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261019070650_AFAZ645401TOTO2010.xml",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "short_factual_excerpt",
-      "rights_status": "reuse_authorized_with_attribution",
-      "image_allowed": false,
-      "alert_valid_from": "2026-10-19T10:00:00+00:00",
-      "alert_valid_until": "2026-10-20T09:59:00+00:00",
-      "alert_status": "scheduled",
-      "alert_in_feed": true,
-      "related_sources": []
-    },
-    {
       "id": "a0656136d7c6e02f5a49",
       "category": "alerts",
       "source_id": "aemet-avisos-mallorca",
@@ -815,6 +959,30 @@ window.SOLLER_ARA_DATA = {
       "alert_valid_until": "2026-10-20T09:59:00+00:00",
       "alert_status": "scheduled",
       "alert_in_feed": true,
+      "related_sources": []
+    },
+    {
+      "id": "7bb62337d1cd982a8356",
+      "category": "alerts",
+      "source_id": "aemet-avisos-mallorca",
+      "source": "AEMET · Serra de Tramuntana",
+      "source_type": "official",
+      "language": "es",
+      "locality": "Sóller / Serra de Tramuntana",
+      "published_at": "2026-10-19T07:06:50+00:00",
+      "title": "Aviso. Nivel amarillo. Tormentas. Sierra Tramontana",
+      "summary": "Aviso de tormentas de nivel amarillo de 12:00 19-10-2026 CEST (UTC+2) a 11:59 20-10-2026 CEST (UTC+2).",
+      "url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261019070650_AFAZ645401TOTO2010.xml",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "reuse_authorized_with_attribution",
+      "image_allowed": false,
+      "alert_valid_from": "2026-10-19T10:00:00+00:00",
+      "alert_valid_until": "2026-10-20T09:59:00+00:00",
+      "alert_status": "archived",
+      "alert_in_feed": false,
       "related_sources": []
     },
     {
@@ -857,8 +1025,8 @@ window.SOLLER_ARA_DATA = {
       "image_allowed": false,
       "alert_valid_from": "2026-10-19T07:00:00+00:00",
       "alert_valid_until": "2026-10-19T09:59:00+00:00",
-      "alert_status": "active",
-      "alert_in_feed": true,
+      "alert_status": "expired",
+      "alert_in_feed": false,
       "related_sources": []
     },
     {
@@ -1011,8 +1179,8 @@ window.SOLLER_ARA_DATA = {
       "image_allowed": false,
       "alert_valid_from": "2026-10-19T07:00:00+00:00",
       "alert_valid_until": "2026-10-19T09:59:00+00:00",
-      "alert_status": "active",
-      "alert_in_feed": true,
+      "alert_status": "expired",
+      "alert_in_feed": false,
       "related_sources": []
     },
     {
@@ -1035,8 +1203,8 @@ window.SOLLER_ARA_DATA = {
       "image_allowed": false,
       "alert_valid_from": "2026-10-19T07:00:00+00:00",
       "alert_valid_until": "2026-10-19T09:59:00+00:00",
-      "alert_status": "active",
-      "alert_in_feed": true,
+      "alert_status": "expired",
+      "alert_in_feed": false,
       "related_sources": []
     },
     {
@@ -1059,8 +1227,8 @@ window.SOLLER_ARA_DATA = {
       "image_allowed": false,
       "alert_valid_from": "2026-10-19T10:00:00+00:00",
       "alert_valid_until": "2026-10-19T21:59:00+00:00",
-      "alert_status": "scheduled",
-      "alert_in_feed": true,
+      "alert_status": "archived",
+      "alert_in_feed": false,
       "related_sources": []
     },
     {
@@ -1107,7 +1275,7 @@ window.SOLLER_ARA_DATA = {
       "image_allowed": false,
       "alert_valid_from": "2026-10-18T22:00:00+00:00",
       "alert_valid_until": "2026-10-19T09:59:00+00:00",
-      "alert_status": "archived",
+      "alert_status": "expired",
       "alert_in_feed": false,
       "related_sources": []
     },
@@ -2090,28 +2258,6 @@ window.SOLLER_ARA_DATA = {
       "related_sources": []
     },
     {
-      "id": "21cfcc0b02799365c82b",
-      "category": "culture",
-      "source_id": "sa-veu-soller",
-      "source": "Sa Veu de Sóller",
-      "source_type": "media",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-10-15T13:34:33+00:00",
-      "title": "La Font des Teix obté el distintiu Serra de Tramuntana",
-      "summary": "",
-      "url": "https://saveu.cat/noticies/la-font-des-teix-obte-el-distintiu-serra-de-tramuntana/",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
-      "embed_type": "official_oembed",
-      "embed_url": "https://saveu.cat/noticies/la-font-des-teix-obte-el-distintiu-serra-de-tramuntana/embed/",
-      "related_sources": []
-    },
-    {
       "id": "026b592c05d61d25ad85",
       "category": "news",
       "source_id": "consell-mallorca-soller",
@@ -2833,26 +2979,6 @@ window.SOLLER_ARA_DATA = {
       "rights_status": "no_reuse_reference_only",
       "image_allowed": false,
       "original_url": "https://www.facebook.com/story.php?story_fbid=1475913137919030&id=100065010721171&hpir=1",
-      "related_sources": []
-    },
-    {
-      "id": "2e5409d2f7e263c17d0d",
-      "category": "culture",
-      "source_id": "setmanari-soller",
-      "source": "Setmanari Sóller",
-      "source_type": "media",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-10-09T11:15:00+02:00",
-      "title": "«Les Journées són una festa de tot el poble»",
-      "summary": "",
-      "url": "https://www.elsoller.cat/soller/societat-i-cultura/2026/10/09/354635/les-journees-son-festa-tot-poble.html",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
       "related_sources": []
     },
     {
@@ -5856,6 +5982,6 @@ window.SOLLER_ARA_DATA = {
       "related_sources": []
     }
   ],
-  "sources_checked_at": "2026-10-19T09:07:58.345149+00:00",
-  "fetched_at": "2026-10-19T10:38:20.761871+00:00"
+  "sources_checked_at": "2026-10-19T11:18:16.623500+00:00",
+  "fetched_at": "2026-10-19T11:18:16.623500+00:00"
 };
