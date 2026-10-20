@@ -587,29 +587,10 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 267,
+  "post_count": 266,
   "related_pair_count": 0,
   "errors": [],
   "posts": [
-    {
-      "id": "soller-ara-f149f28e970fae72",
-      "category": "services",
-      "source_id": "soller-ara",
-      "source": "Publicació de xarxa",
-      "source_type": "own",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-10-20T18:27:46.664790+00:00",
-      "show_in_now": true,
-      "content_type": "social_link",
-      "title": "",
-      "summary": "",
-      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-f149f28e970fae72.html",
-      "content_policy": "manual_link_reference",
-      "rights_status": "no_reuse_reference_only",
-      "image_allowed": false,
-      "original_url": "https://www.facebook.com/AjuntamentdeDeia/photos/d41d8cd9/1543746194460436/?set=a.290333073135094&hpir=1"
-    },
     {
       "id": "b06a7a94323b8810c039",
       "category": "services",
@@ -6148,5 +6129,5 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "sources_checked_at": "2026-10-20T17:03:15.145466+00:00",
-  "fetched_at": "2026-10-20T18:27:46.672300+00:00"
+  "fetched_at": "2026-10-20T18:35:41.755107+00:00"
 };
