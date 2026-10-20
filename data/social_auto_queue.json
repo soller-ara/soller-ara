@@ -1,64 +1,64 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-20T12:03:56.797690+00:00",
+  "generated_at": "2026-10-20T14:19:22.972142+00:00",
   "entries": [
     {
-      "post_id": "c26ed379f5623d896ce0",
-      "title": "CRIDA URGENT CONTRACTACIÓ SUBSTITUCIÓ OPERARI_A RSU I NETEJA VIÀRIA",
+      "post_id": "894f7b6cacb405cca706",
+      "title": "La tempesta Adam s’acomiada deixant un total de 71 litres",
       "summary": "",
-      "source": "Sóller 2010",
-      "source_id": "soller-2010",
-      "source_type": "official",
-      "category": "services",
-      "language": "ca",
-      "published_at": "2026-10-20T12:00:00+00:00",
-      "original_url": "https://soller2010.com/noticias/su-y-limpuieza-viaria",
-      "content_policy": "short_factual_excerpt",
-      "rights_status": "public_source_reviewed",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/c26ed379f5623d896ce0.jpg"
-    },
-    {
-      "post_id": "f548d29a08e7ee77549a",
-      "title": "El Consorci Serra de Tramuntana consolida su apoyo a la conservación de la Serra con un presupuesto de 5,3 millones de euros",
-      "summary": "",
-      "source": "Consell de Mallorca",
-      "source_id": "consell-mallorca-soller",
-      "source_type": "official",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-10-20T12:00:00+00:00",
-      "original_url": "https://www.conselldemallorca.es/es/todas-las-noticias/-/asset_publisher/bqOupoVYvgPA/content/el-consorci-serra-de-tramuntana-consolida-el-seu-suport-a-la-conservaci%C3%B3-de-la-serra-amb-un-pressupost-de-5-3-milions-d-euros/695139",
-      "content_policy": "short_factual_excerpt",
-      "rights_status": "official_public_source",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/f548d29a08e7ee77549a.jpg"
-    },
-    {
-      "post_id": "c25506615df52f72bc1a",
-      "title": "El Consorci Serra de Tramuntana reserva 3’5 milions per a subvencions",
-      "summary": "",
-      "source": "Fora Vila",
-      "source_id": "fora-vila-soller",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
       "source_type": "media",
-      "category": "news",
+      "category": "alerts",
       "language": "ca",
-      "published_at": "2026-10-20T10:31:59+00:00",
-      "original_url": "https://www.foravila.net/foravilaverd/el-consorci-serra-de-tramuntana-reserva-35-milions-per-a-subvencions/",
+      "published_at": "2026-10-20T13:46:25+00:00",
+      "original_url": "https://saveu.cat/noticies/la-tempesta-adam-sacomiada-deixant-un-total-de-71-litres/",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/c25506615df52f72bc1a.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/894f7b6cacb405cca706.jpg"
+    },
+    {
+      "post_id": "139532a06269d1e38572",
+      "title": "El MUCBO du a terme Tallers infantils a Les Journées del Modernisme de Sóller",
+      "summary": "",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "source_type": "institution",
+      "category": "culture",
+      "language": "ca",
+      "published_at": "2026-10-20T12:28:44+00:00",
+      "original_url": "https://mucbo.org/el-mucbo-du-a-terme-tallers-infantils-a-les-journees-del-modernisme-de-soller/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/139532a06269d1e38572.jpg"
+    },
+    {
+      "post_id": "3a8ef037d90e6077f2d1",
+      "title": "Guia de sostenibilitat i protecció ambiental de Sóller",
+      "summary": "",
+      "source": "Sóller 2010",
+      "source_id": "soller-2010",
+      "source_type": "official",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-10-20T12:00:00+00:00",
+      "original_url": "https://soller2010.com/noticias/guia-de-sostenibilitat-i-proteccio-ambiental-de-soller",
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "public_source_reviewed",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/3a8ef037d90e6077f2d1.jpg"
     }
   ]
 }
