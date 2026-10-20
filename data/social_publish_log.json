@@ -9103,6 +9103,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-20T08:28:43.338523+00:00",
       "error": ""
+    },
+    {
+      "post_id": "8c91c24852db99a2b24f",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122125538151467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122125538151467310",
+      "title": "El MUCBO ja té les etiquetes del seu vi!",
+      "post_url": "https://mucbo.org/el-mucbo-ja-te-les-etiquetes-del-seu-vi/",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-20T09:59:51.285747+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "8c91c24852db99a2b24f",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "El MUCBO ja té les etiquetes del seu vi!",
+      "post_url": "https://mucbo.org/el-mucbo-ja-te-les-etiquetes-del-seu-vi/",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-20T10:00:00.953230+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18119832436905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "8c91c24852db99a2b24f",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "17975753949156026",
+      "remote_url": "https://www.instagram.com/p/DetkWCmlBIt/",
+      "title": "El MUCBO ja té les etiquetes del seu vi!",
+      "post_url": "https://mucbo.org/el-mucbo-ja-te-les-etiquetes-del-seu-vi/",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-20T10:00:05.259497+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
