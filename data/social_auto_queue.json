@@ -1,64 +1,45 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-20T14:19:22.972142+00:00",
+  "generated_at": "2026-10-20T14:59:39.014055+00:00",
   "entries": [
     {
-      "post_id": "894f7b6cacb405cca706",
-      "title": "La tempesta Adam s’acomiada deixant un total de 71 litres",
+      "post_id": "b06a7a94323b8810c039",
+      "title": "Els aparcaments de Can Cera, Can Roig i Can Tinet 1 tancaran a finals d'octubre",
       "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
       "source_type": "media",
-      "category": "alerts",
+      "category": "services",
       "language": "ca",
-      "published_at": "2026-10-20T13:46:25+00:00",
-      "original_url": "https://saveu.cat/noticies/la-tempesta-adam-sacomiada-deixant-un-total-de-71-litres/",
+      "published_at": "2026-10-20T16:34:00+02:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/10/20/354679/els-aparcaments-can-cera-can-roig-can-tinet-tancaran-finals-octubre.html",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/894f7b6cacb405cca706.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/b06a7a94323b8810c039.jpg"
     },
     {
-      "post_id": "139532a06269d1e38572",
-      "title": "El MUCBO du a terme Tallers infantils a Les Journées del Modernisme de Sóller",
+      "post_id": "465684db33c0dcf34079",
+      "title": "Fornalutx lidera Balears en renda mitjana per llar amb 59.702 euros",
       "summary": "",
-      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
-      "source_id": "mucbo-noticies",
-      "source_type": "institution",
-      "category": "culture",
-      "language": "ca",
-      "published_at": "2026-10-20T12:28:44+00:00",
-      "original_url": "https://mucbo.org/el-mucbo-du-a-terme-tallers-infantils-a-les-journees-del-modernisme-de-soller/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "link_only_no_media_license",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/139532a06269d1e38572.jpg"
-    },
-    {
-      "post_id": "3a8ef037d90e6077f2d1",
-      "title": "Guia de sostenibilitat i protecció ambiental de Sóller",
-      "summary": "",
-      "source": "Sóller 2010",
-      "source_id": "soller-2010",
-      "source_type": "official",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "source_type": "media",
       "category": "news",
       "language": "ca",
-      "published_at": "2026-10-20T12:00:00+00:00",
-      "original_url": "https://soller2010.com/noticias/guia-de-sostenibilitat-i-proteccio-ambiental-de-soller",
-      "content_policy": "short_factual_excerpt",
-      "rights_status": "public_source_reviewed",
+      "published_at": "2026-10-20T13:39:51+00:00",
+      "original_url": "https://saveu.cat/noticies/fornalutx-lidera-balears-en-renda-mitjana-per-llar-amb-59-702-euros/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/3a8ef037d90e6077f2d1.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/465684db33c0dcf34079.jpg"
     }
   ]
 }
