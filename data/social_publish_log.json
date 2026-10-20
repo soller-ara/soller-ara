@@ -9508,6 +9508,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-20T15:02:57.883417+00:00",
       "error": ""
+    },
+    {
+      "post_id": "0e21c3a2652ef162aff0",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122125633275467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122125633275467310",
+      "title": "Els rellotges s’endarrereixen una hora aquest diumenge",
+      "post_url": "https://saveu.cat/noticies/els-rellotges-sendarrereixen-una-hora-aquest-diumenge/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-20T17:03:37.079947+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "0e21c3a2652ef162aff0",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Els rellotges s’endarrereixen una hora aquest diumenge",
+      "post_url": "https://saveu.cat/noticies/els-rellotges-sendarrereixen-una-hora-aquest-diumenge/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-20T17:03:49.612301+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18119922367905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "0e21c3a2652ef162aff0",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "17898923121395243",
+      "remote_url": "https://www.instagram.com/p/DeuU1vUFyMO/",
+      "title": "Els rellotges s’endarrereixen una hora aquest diumenge",
+      "post_url": "https://saveu.cat/noticies/els-rellotges-sendarrereixen-una-hora-aquest-diumenge/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-20T17:03:54.381507+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
