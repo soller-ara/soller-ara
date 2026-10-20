@@ -9058,6 +9058,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-19T15:05:21.589894+00:00",
       "error": ""
+    },
+    {
+      "post_id": "735a550ded59a917b4c1",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122125517595467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122125517595467310",
+      "title": "El túnel de Sóller, tancat els vespres durant un mes a partir d'avui",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/20/354675/tunel-soller-tancat-els-vespres-durant-mes-partir-avui.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-20T08:28:29.567365+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "735a550ded59a917b4c1",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "El túnel de Sóller, tancat els vespres durant un mes a partir d'avui",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/20/354675/tunel-soller-tancat-els-vespres-durant-mes-partir-avui.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-20T08:28:39.168131+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18119813524905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "735a550ded59a917b4c1",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18088405289700672",
+      "remote_url": "https://www.instagram.com/p/DetZ48ZHW1e/",
+      "title": "El túnel de Sóller, tancat els vespres durant un mes a partir d'avui",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/20/354675/tunel-soller-tancat-els-vespres-durant-mes-partir-avui.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-20T08:28:43.338523+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
