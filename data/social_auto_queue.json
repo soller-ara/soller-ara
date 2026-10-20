@@ -1,45 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-20T14:59:39.014055+00:00",
+  "generated_at": "2026-10-20T17:03:15.328479+00:00",
   "entries": [
     {
-      "post_id": "b06a7a94323b8810c039",
-      "title": "Els aparcaments de Can Cera, Can Roig i Can Tinet 1 tancaran a finals d'octubre",
-      "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
-      "source_type": "media",
-      "category": "services",
-      "language": "ca",
-      "published_at": "2026-10-20T16:34:00+02:00",
-      "original_url": "https://www.elsoller.cat/soller/local/2026/10/20/354679/els-aparcaments-can-cera-can-roig-can-tinet-tancaran-finals-octubre.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/b06a7a94323b8810c039.jpg"
-    },
-    {
-      "post_id": "465684db33c0dcf34079",
-      "title": "Fornalutx lidera Balears en renda mitjana per llar amb 59.702 euros",
+      "post_id": "0e21c3a2652ef162aff0",
+      "title": "Els rellotges s’endarrereixen una hora aquest diumenge",
       "summary": "",
       "source": "Sa Veu de Sóller",
       "source_id": "sa-veu-soller",
       "source_type": "media",
-      "category": "news",
+      "category": "agenda",
       "language": "ca",
-      "published_at": "2026-10-20T13:39:51+00:00",
-      "original_url": "https://saveu.cat/noticies/fornalutx-lidera-balears-en-renda-mitjana-per-llar-amb-59-702-euros/",
+      "published_at": "2026-10-20T13:29:46+00:00",
+      "original_url": "https://saveu.cat/noticies/els-rellotges-sendarrereixen-una-hora-aquest-diumenge/",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/465684db33c0dcf34079.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/0e21c3a2652ef162aff0.jpg"
     }
   ]
 }
