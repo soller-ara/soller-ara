@@ -9553,6 +9553,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-20T17:03:54.381507+00:00",
       "error": ""
+    },
+    {
+      "post_id": "79f4738c9bb21d285c2b",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122125779387467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122125779387467310",
+      "title": "El tresor modernista de Sóller surt a la llum com mai abans",
+      "post_url": "https://uepmallorca.app/el-tresor-modernista-de-soller-surt-a-la-llum-com-mai-abans/",
+      "source": "UEP! Mallorca · Sóller i Fornalutx",
+      "source_id": "uep-mallorca-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-21T06:50:59.372105+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "79f4738c9bb21d285c2b",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "El tresor modernista de Sóller surt a la llum com mai abans",
+      "post_url": "https://uepmallorca.app/el-tresor-modernista-de-soller-surt-a-la-llum-com-mai-abans/",
+      "source": "UEP! Mallorca · Sóller i Fornalutx",
+      "source_id": "uep-mallorca-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-21T06:51:08.522190+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18120043474905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "79f4738c9bb21d285c2b",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "17970153336187759",
+      "remote_url": "https://www.instagram.com/p/DevzhoHnWj8/",
+      "title": "El tresor modernista de Sóller surt a la llum com mai abans",
+      "post_url": "https://uepmallorca.app/el-tresor-modernista-de-soller-surt-a-la-llum-com-mai-abans/",
+      "source": "UEP! Mallorca · Sóller i Fornalutx",
+      "source_id": "uep-mallorca-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-21T06:51:12.545725+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
