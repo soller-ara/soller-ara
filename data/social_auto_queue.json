@@ -1,6 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-10-21T06:49:31.171206+00:00",
+  "entries": [
+    {
+      "post_id": "79f4738c9bb21d285c2b",
+      "title": "El tresor modernista de Sóller surt a la llum com mai abans",
+      "summary": "",
+      "source": "UEP! Mallorca · Sóller i Fornalutx",
+      "source_id": "uep-mallorca-soller",
+      "source_type": "media",
+      "category": "culture",
+      "language": "ca",
+      "published_at": "2026-10-21T06:10:22+00:00",
+      "original_url": "https://uepmallorca.app/el-tresor-modernista-de-soller-surt-a-la-llum-com-mai-abans/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/79f4738c9bb21d285c2b.jpg"
+    }
+  ]
 }
