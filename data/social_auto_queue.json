@@ -1,26 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-21T21:34:27.026870+00:00",
-  "entries": [
-    {
-      "post_id": "70edb0fa43a571f1a39d",
-      "title": "Amundi compra el hotel Bikini de Port de Sóller a JP Immobilien",
-      "summary": "",
-      "source": "Última Hora",
-      "source_id": "ultima-hora-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "es",
-      "published_at": "2026-10-21T22:48:52+02:00",
-      "original_url": "https://www.ultimahora.es/noticias/part-forana/2026/10/21/2733931/amundi-compra-hotel-bikini-port-soller-immobilien.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/70edb0fa43a571f1a39d.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
