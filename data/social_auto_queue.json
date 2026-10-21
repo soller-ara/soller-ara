@@ -1,26 +1,64 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-21T06:49:31.171206+00:00",
+  "generated_at": "2026-10-21T09:04:05.809437+00:00",
   "entries": [
     {
-      "post_id": "79f4738c9bb21d285c2b",
-      "title": "El tresor modernista de Sóller surt a la llum com mai abans",
-      "summary": "",
-      "source": "UEP! Mallorca · Sóller i Fornalutx",
-      "source_id": "uep-mallorca-soller",
-      "source_type": "media",
-      "category": "culture",
+      "post_id": "4005155485d767390139",
+      "title": "Tancaments nocturns dels túnels de sa Mola i de Sóller per manteniment",
+      "summary": "Durant les pròximes setmanes hi haurà les afectacions següents: Túnel de sa Mola ▪️ Des del 20 d’octubre fins al 23 d’octubre ▪️ Tancaments les nits dels dies laborables, de 23 a 6 h. Desviament pel Port o pel camí de sa…",
+      "source": "Ajuntament de Sóller",
+      "source_id": "ajuntament-soller-noticies",
+      "source_type": "official",
+      "category": "alerts",
       "language": "ca",
-      "published_at": "2026-10-21T06:10:22+00:00",
-      "original_url": "https://uepmallorca.app/el-tresor-modernista-de-soller-surt-a-la-llum-com-mai-abans/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "link_only_no_media_license",
+      "published_at": "2026-10-21T08:50:21+00:00",
+      "original_url": "https://ajsoller.net/ca/noticies/tancaments-nocturns-dels-tunels-de-sa-mola-i-de-soller-manteniment",
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "public_source_reviewed",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/79f4738c9bb21d285c2b.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/4005155485d767390139.jpg"
+    },
+    {
+      "post_id": "b1e3f18273ef040b39fb",
+      "title": "Un documental convida a descobrir el patrimoni modernista solleric",
+      "summary": "",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "source_type": "media",
+      "category": "culture",
+      "language": "ca",
+      "published_at": "2026-10-21T08:46:34+00:00",
+      "original_url": "https://saveu.cat/noticies/un-documental-convida-a-descobrir-el-patrimoni-modernista-solleric/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/b1e3f18273ef040b39fb.jpg"
+    },
+    {
+      "post_id": "74044dded33cedd23b87",
+      "title": "Sóller presenta un documental per posar en valor el patrimoni modernista",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "agenda",
+      "language": "ca",
+      "published_at": "2026-10-21T09:47:00+02:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/10/21/354681/soller-presenta-documental-per-posar-valor-seu-patrimoni-modernista.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/74044dded33cedd23b87.jpg"
     }
   ]
 }
