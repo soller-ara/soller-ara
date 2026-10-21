@@ -10003,6 +10003,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-21T14:37:58.910164+00:00",
       "error": ""
+    },
+    {
+      "post_id": "70edb0fa43a571f1a39d",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122125964775467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122125964775467310",
+      "title": "Amundi compra el hotel Bikini de Port de Sóller a JP Immobilien",
+      "post_url": "https://www.ultimahora.es/noticias/part-forana/2026/10/21/2733931/amundi-compra-hotel-bikini-port-soller-immobilien.html",
+      "source": "Última Hora",
+      "source_id": "ultima-hora-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-21T21:34:45.986591+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "70edb0fa43a571f1a39d",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Amundi compra el hotel Bikini de Port de Sóller a JP Immobilien",
+      "post_url": "https://www.ultimahora.es/noticias/part-forana/2026/10/21/2733931/amundi-compra-hotel-bikini-port-soller-immobilien.html",
+      "source": "Última Hora",
+      "source_id": "ultima-hora-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-21T21:35:05.147250+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18120198799905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "70edb0fa43a571f1a39d",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18643229554032815",
+      "remote_url": "https://www.instagram.com/p/DexYq9VEtR3/",
+      "title": "Amundi compra el hotel Bikini de Port de Sóller a JP Immobilien",
+      "post_url": "https://www.ultimahora.es/noticias/part-forana/2026/10/21/2733931/amundi-compra-hotel-bikini-port-soller-immobilien.html",
+      "source": "Última Hora",
+      "source_id": "ultima-hora-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-21T21:35:09.905777+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
