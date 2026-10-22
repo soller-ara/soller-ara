@@ -1,26 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-22T15:10:36.985595+00:00",
+  "generated_at": "2026-10-22T17:21:55.467182+00:00",
   "entries": [
     {
-      "post_id": "474cd39e8965be7c3995",
-      "title": "La rehabilitació de Ses Escolàpies ja veu la llum",
+      "post_id": "bae153c80eca19455a06",
+      "title": "L’Ibavi dona per iniciades les obres per construir onze habitatges al Fantasio",
       "summary": "",
       "source": "Sa Veu de Sóller",
       "source_id": "sa-veu-soller",
       "source_type": "media",
-      "category": "culture",
+      "category": "services",
       "language": "ca",
-      "published_at": "2026-10-22T13:32:04+00:00",
-      "original_url": "https://saveu.cat/noticies/la-rehabilitacio-de-ses-escolapies-ja-veu-la-llum/",
+      "published_at": "2026-10-22T13:26:06+00:00",
+      "original_url": "https://saveu.cat/noticies/libavi-dona-per-iniciades-les-obres-per-construir-onze-habitatges-al-fantasio/",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/474cd39e8965be7c3995.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/bae153c80eca19455a06.jpg"
     }
   ]
 }
