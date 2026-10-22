@@ -10408,6 +10408,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-22T15:11:16.106047+00:00",
       "error": ""
+    },
+    {
+      "post_id": "bae153c80eca19455a06",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122126211363467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122126211363467310",
+      "title": "L’Ibavi dona per iniciades les obres per construir onze habitatges al Fantasio",
+      "post_url": "https://saveu.cat/noticies/libavi-dona-per-iniciades-les-obres-per-construir-onze-habitatges-al-fantasio/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-22T17:23:33.288212+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "bae153c80eca19455a06",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "L’Ibavi dona per iniciades les obres per construir onze habitatges al Fantasio",
+      "post_url": "https://saveu.cat/noticies/libavi-dona-per-iniciades-les-obres-per-construir-onze-habitatges-al-fantasio/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-22T17:23:42.033791+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18120398203905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "bae153c80eca19455a06",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18112623497164694",
+      "remote_url": "https://www.instagram.com/p/DezgtfFl7mq/",
+      "title": "L’Ibavi dona per iniciades les obres per construir onze habitatges al Fantasio",
+      "post_url": "https://saveu.cat/noticies/libavi-dona-per-iniciades-les-obres-per-construir-onze-habitatges-al-fantasio/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-22T17:23:46.293819+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
