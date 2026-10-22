@@ -10318,6 +10318,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-22T12:22:21.256974+00:00",
       "error": ""
+    },
+    {
+      "post_id": "ac92881e2cd569423d10",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122126171763467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122126171763467310",
+      "title": "El Parlament reclama estudiar l’extensió de la protecció de la Serra de Tramuntana al medi marí",
+      "post_url": "https://saveu.cat/noticies/el-parlament-reclama-estudiar-lextensio-de-la-proteccio-de-la-serra-de-tramuntana-al-medi-mari/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-22T14:46:33.424341+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "ac92881e2cd569423d10",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "El Parlament reclama estudiar l’extensió de la protecció de la Serra de Tramuntana al medi marí",
+      "post_url": "https://saveu.cat/noticies/el-parlament-reclama-estudiar-lextensio-de-la-proteccio-de-la-serra-de-tramuntana-al-medi-mari/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-22T14:46:42.575418+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18120362035905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "ac92881e2cd569423d10",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18482841829114857",
+      "remote_url": "https://www.instagram.com/p/DezOvnAF44u/",
+      "title": "El Parlament reclama estudiar l’extensió de la protecció de la Serra de Tramuntana al medi marí",
+      "post_url": "https://saveu.cat/noticies/el-parlament-reclama-estudiar-lextensio-de-la-proteccio-de-la-serra-de-tramuntana-al-medi-mari/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-22T14:46:46.187238+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
