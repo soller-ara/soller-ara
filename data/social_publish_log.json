@@ -10363,6 +10363,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-22T14:46:46.187238+00:00",
       "error": ""
+    },
+    {
+      "post_id": "474cd39e8965be7c3995",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122126177541467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122126177541467310",
+      "title": "La rehabilitació de Ses Escolàpies ja veu la llum",
+      "post_url": "https://saveu.cat/noticies/la-rehabilitacio-de-ses-escolapies-ja-veu-la-llum/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-22T15:10:59.185503+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "474cd39e8965be7c3995",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "La rehabilitació de Ses Escolàpies ja veu la llum",
+      "post_url": "https://saveu.cat/noticies/la-rehabilitacio-de-ses-escolapies-ja-veu-la-llum/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-22T15:11:11.293102+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18120366916905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "474cd39e8965be7c3995",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18115055618029797",
+      "remote_url": "https://www.instagram.com/p/DezRiunDYpt/",
+      "title": "La rehabilitació de Ses Escolàpies ja veu la llum",
+      "post_url": "https://saveu.cat/noticies/la-rehabilitacio-de-ses-escolapies-ja-veu-la-llum/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-22T15:11:16.106047+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
