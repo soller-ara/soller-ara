@@ -10048,6 +10048,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-21T21:35:09.905777+00:00",
       "error": ""
+    },
+    {
+      "post_id": "5b8799fe1dce2a7e17a3",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122126020749467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122126020749467310",
+      "title": "Santiago Auserón presenta en Sóller su nuevo proyecto Nerantzi",
+      "post_url": "https://www.ultimahora.es/noticias/cultura/2026/10/22/2732775/santiago-auseron-presenta-soller-nuevo-proyecto-nerantzi.html",
+      "source": "Última Hora",
+      "source_id": "ultima-hora-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-22T03:34:29.948953+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "5b8799fe1dce2a7e17a3",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Santiago Auserón presenta en Sóller su nuevo proyecto Nerantzi",
+      "post_url": "https://www.ultimahora.es/noticias/cultura/2026/10/22/2732775/santiago-auseron-presenta-soller-nuevo-proyecto-nerantzi.html",
+      "source": "Última Hora",
+      "source_id": "ultima-hora-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-22T03:34:41.235753+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18120247549905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "5b8799fe1dce2a7e17a3",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "17908650873569138",
+      "remote_url": "https://www.instagram.com/p/DeyB1iAnXK6/",
+      "title": "Santiago Auserón presenta en Sóller su nuevo proyecto Nerantzi",
+      "post_url": "https://www.ultimahora.es/noticias/cultura/2026/10/22/2732775/santiago-auseron-presenta-soller-nuevo-proyecto-nerantzi.html",
+      "source": "Última Hora",
+      "source_id": "ultima-hora-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-22T03:34:45.489508+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
