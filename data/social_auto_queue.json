@@ -1,6 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-10-22T09:06:26.988566+00:00",
+  "entries": [
+    {
+      "post_id": "ac21d1a38780bd241b5f",
+      "title": "El Ibavi inicia las obras en el antiguo cine Fantasio de Sóller para construir 11 viviendas públicas de alquiler",
+      "summary": "",
+      "source": "Europa Press Illes Balears · Sóller",
+      "source_id": "europa-press-balears-soller",
+      "source_type": "media",
+      "category": "politics",
+      "language": "es",
+      "published_at": "2026-10-22T09:01:18+00:00",
+      "original_url": "https://www.europapress.es/illes-balears/noticia-ibavi-inicia-obras-antiguo-cine-fantasio-soller-construir-11-viviendas-publicas-alquiler-20261022110118.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/ac21d1a38780bd241b5f.jpg"
+    }
+  ]
 }
