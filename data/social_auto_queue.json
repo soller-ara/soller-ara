@@ -1,45 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-22T12:21:34.038467+00:00",
+  "generated_at": "2026-10-22T14:46:12.960947+00:00",
   "entries": [
     {
-      "post_id": "b09443e5d086aa5f703f",
-      "title": "Unanimidad en el Parlament para reclamar la extensión de la protección de la Serra de Tramuntana al mar",
+      "post_id": "ac92881e2cd569423d10",
+      "title": "El Parlament reclama estudiar l’extensió de la protecció de la Serra de Tramuntana al medi marí",
       "summary": "",
-      "source": "Europa Press Illes Balears · Sóller",
-      "source_id": "europa-press-balears-soller",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
       "source_type": "media",
-      "category": "news",
-      "language": "es",
-      "published_at": "2026-10-22T11:28:22+00:00",
-      "original_url": "https://www.europapress.es/illes-balears/noticia-unanimidad-parlament-reclamar-extension-proteccion-serra-tramuntana-mar-20261022132822.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "link_only_no_media_license",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/b09443e5d086aa5f703f.jpg"
-    },
-    {
-      "post_id": "3228c27d1cdfc4c3d539",
-      "title": "Santiago Auserón presenta en Sóller su nuevo proyecto Nerantzi",
-      "summary": "",
-      "source": "Última Hora",
-      "source_id": "ultima-hora-soller",
-      "source_type": "media",
-      "category": "culture",
-      "language": "es",
-      "published_at": "2026-10-22T13:20:00+02:00",
-      "original_url": "https://www.ultimahora.es/noticias/cultura/2026/10/22/2734235/santiago-auseron-presenta-soller-nuevo-proyecto-nerantzi-1.html",
+      "category": "politics",
+      "language": "ca",
+      "published_at": "2026-10-22T13:35:17+00:00",
+      "original_url": "https://saveu.cat/noticies/el-parlament-reclama-estudiar-lextensio-de-la-proteccio-de-la-serra-de-tramuntana-al-medi-mari/",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/3228c27d1cdfc4c3d539.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/ac92881e2cd569423d10.jpg"
     }
   ]
 }
