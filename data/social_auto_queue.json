@@ -1,45 +1,45 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-23T09:07:17.940566+00:00",
+  "generated_at": "2026-10-23T10:01:13.537241+00:00",
   "entries": [
     {
-      "post_id": "de0e0ae062551b47881f",
-      "title": "Felanitx-Sóller (dissabte, 18.30 h), a la recerca dels punts front un recent descendit de Tercera",
-      "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-10-23T10:51:00+02:00",
-      "original_url": "https://www.elsoller.cat/soller/esports/2026/10/23/354693/felanitx-soller-dissabte-1830-recerca-dels-punts-front-recent-descendit-tercera.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/de0e0ae062551b47881f.jpg"
-    },
-    {
-      "post_id": "2c11d945d02891424199",
-      "title": "El Gas projecta el soterrament d’una línia aèria entre els Estiradors, La Bolla i Can Rullan",
+      "post_id": "cbb2e5237d9b4297f77c",
+      "title": "Protestes per la brutícia i males olors al punt d’aportació del polvorí del Cingle",
       "summary": "",
       "source": "Sa Veu de Sóller",
       "source_id": "sa-veu-soller",
       "source_type": "media",
       "category": "services",
       "language": "ca",
-      "published_at": "2026-10-23T08:30:00+00:00",
-      "original_url": "https://saveu.cat/noticies/el-gas-projecta-el-soterrament-duna-linia-aeria-entre-els-estiradors-la-bolla-i-can-rullan/",
+      "published_at": "2026-10-23T09:45:00+00:00",
+      "original_url": "https://saveu.cat/noticies/protestes-per-la-bruticia-i-males-olors-al-punt-daportacio-del-polvori-del-cingle/",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/2c11d945d02891424199.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/cbb2e5237d9b4297f77c.jpg"
+    },
+    {
+      "post_id": "111dabbe85ebc524512e",
+      "title": "Sóller redescobreix el Modernisme amb unes consolidades jornades",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-10-23T11:30:00+02:00",
+      "original_url": "https://www.elsoller.cat/soller/reportatges/2026/10/23/354689/soller-redescobreix-modernisme-amb-unes-consolidades-jornades.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/111dabbe85ebc524512e.jpg"
     }
   ]
 }
