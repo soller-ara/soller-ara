@@ -1,5 +1,5 @@
 {
-  "version": 41,
+  "version": 42,
   "sources": [
     {
       "id": "ajuntament-soller-noticies",
@@ -1026,7 +1026,7 @@
       "max_age_days": 60,
       "enabled": true,
       "force_category": "politics",
-      "image_policy": "disabled_until_rights_verified",
+      "image_policy": "official_oembed",
       "content_policy": "headline_date_link_only",
       "rights_status": "official_party_source"
     },
@@ -1055,7 +1055,7 @@
       ],
       "enabled": true,
       "force_category": "politics",
-      "image_policy": "disabled_until_rights_verified",
+      "image_policy": "official_oembed",
       "content_policy": "headline_date_link_only",
       "rights_status": "official_party_source"
     },
@@ -1233,7 +1233,7 @@
       "locality": "Sóller / Port de Sóller / Fornalutx / Biniaraix / Deià / Serra de Tramuntana",
       "max_age_days": 60,
       "enabled": true,
-      "image_policy": "disabled_until_rights_verified",
+      "image_policy": "official_oembed",
       "content_policy": "headline_date_link_only",
       "rights_status": "link_only_no_media_license",
       "verified_at": "2026-10-09",
@@ -1360,7 +1360,7 @@
     {
       "max_age_days": 60,
       "enabled": true,
-      "image_policy": "disabled_until_rights_verified",
+      "image_policy": "official_oembed",
       "content_policy": "headline_date_link_only",
       "rights_status": "link_only_no_media_license",
       "verified_at": "2026-10-17",
@@ -1499,7 +1499,7 @@
       ],
       "filter_title_only": true,
       "force_category": "sports",
-      "image_policy": "disabled_until_rights_verified",
+      "image_policy": "official_oembed",
       "content_policy": "headline_date_link_only",
       "rights_status": "link_only_no_media_license",
       "verification_url": "https://esportbalear.com/",

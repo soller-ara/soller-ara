@@ -205,7 +205,12 @@ class SourceCollectionTests(unittest.TestCase):
 
         configured = json.loads((ROOT / "sources.json").read_text(encoding="utf-8"))["sources"]
         enabled = {item["id"] for item in configured if item.get("image_policy") == "official_oembed"}
-        self.assertEqual(enabled, {'mucbo-noticies', 'can-prunera-noticies', 'futbol-balear-cf-soller', 'fora-vila-soller', 'sa-veu-soller'})
+        self.assertEqual(enabled, {
+            'mucbo-noticies', 'can-prunera-noticies', 'futbol-balear-cf-soller',
+            'fora-vila-soller', 'sa-veu-soller', 'esport-balear-soller',
+            'gob-mallorca-noticies', 'sagrats-cors-soller',
+            'mes-per-soller', 'psib-psoe-soller',
+        })
 
 
 class NewPublicSourceTests(unittest.TestCase):

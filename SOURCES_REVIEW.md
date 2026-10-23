@@ -128,3 +128,15 @@ La cerca de publicacions públiques de Facebook mitjançant una API de cercador 
 - Lectura real dels cinc canals afectats, sense executar cap publicació de prova: Govern 3 referències locals aptes, ARA Balears 1, Majorca Daily Bulletin 2, Mallorca Global Mag 2 i Esport Balear 1.
 - Les dues noves fonts no generen extractes ni permeten imatges de tercers. Esport Balear conserva la categoria Esports.
 - Els límits, categories, plataformes i regles de les 52 fonts existents de distribució social es conserven; només s'afegeixen les dues noves regles.
+
+## Vistes prèvies oficials addicionals — 23 d'octubre de 2026
+
+S'activa la política `official_oembed` per a Esport Balear, GOB Mallorca, Col·legi Sagrats Cors de Sóller, MÉS per Sóller i PSIB-PSOE. S'utilitza el mateix mecanisme que les cinc fonts ja configurades: la targeta es carrega en un iframe del domini original, amb el seu titular, imatge i extracte quan el proveïdor els inclou.
+
+La verificació ha comprovat el descobriment oEmbed anunciat a cada article, la resposta del proveïdor i la pàgina oficial d'incrustació. Les cinc mostres serveixen targeta WordPress amb imatge i sense capçalera de bloqueig d'iframe. En Esport Balear també es comprova el camí amb barra final que genera el nostre recopilador. Les vistes oficials d'Esport Balear, GOB i Sagrats Cors s'han inspeccionat al navegador; les imatges es carreguen.
+
+No es descarreguen ni s'autoritza la reutilització de fotografies: `image_allowed` continua sent fals i es conserven `content_policy` i `rights_status`. La distribució a Facebook i Instagram segueix utilitzant el sistema vigent i no rep les fotografies dels embeds. MÉS i PSIB-PSOE conserven la categoria Política i la resta de les seves regles. El GOB només aportarà targetes quan hi hagi notícies que superin el filtre territorial i temporal.
+
+Mallorca Global Mag i UEP! Mallorca queden amb la política anterior: anuncien oEmbed però les respostes comprovades inclouen `X-Frame-Options: SAMEORIGIN`. Ports IB no s'activa perquè el seu endpoint oEmbed ha respost amb un 401. No s'han confirmat vistes oficials equivalents en les mostres d'IB3 i Mallorca Directo.
+
+La llista explícita d'opt-in de la prova de recopilació s'actualitza a deu fonts. No es modifica el codi del recopilador, la interfície, les regles socials ni el cron.
