@@ -1,26 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-23T14:28:15.325176+00:00",
-  "entries": [
-    {
-      "post_id": "37003e2d024c561e0771",
-      "title": "Sóller, entre els deu municipis de Mallorca amb l’IBI urbà més car",
-      "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
-      "source_type": "media",
-      "category": "politics",
-      "language": "ca",
-      "published_at": "2026-10-23T16:00:00+02:00",
-      "original_url": "https://www.elsoller.cat/soller/local/2026/10/23/354691/soller-entre-els-deu-municipis-mallorca-amb-ibi-urba-mes-car.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/37003e2d024c561e0771.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
