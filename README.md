@@ -1,5 +1,11 @@
 # Sóller Ara
 
+## Fonts: optimització del 23 d'octubre de 2026
+
+S'incorporen Mallorca Global Mag i Esport Balear mitjançant RSS de cerca local, amb filtre del titular original, atribució i enllaç, sense reutilitzar imatges o textos. El catàleg passa a 54 fonts externes (55 amb les publicacions pròpies).
+
+Es recupera l'actualitat del Govern amb el canal oficial de notes informatives, es consulta l'arxiu de Tramuntana de Majorca Daily Bulletin i s'amplia la lectura del feed d'ARA Balears. Es mantenen les dates originals, els criteris locals i la distribució social de màxim 5 publicacions per execució, una per font i dins les 6 hores. Vegeu [la revisió de fonts](SOURCES_REVIEW.md).
+
 Projecte públic i sense ànim de lucre per reunir informació local de Sóller en un sol lloc, mantenint sempre visible la font original i l'accés a la publicació d'origen.
 
 ## Versió

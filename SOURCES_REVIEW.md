@@ -98,3 +98,33 @@ Les deu fonts automàtiques disposen de regles explícites per a Facebook i Inst
 La descripció del 3 d'octubre documenta la configuració d'aquella data. Per a l'estat vigent de distribució, `social_distribution.json` és la referència; no s'han alterat les decisions de les fonts existents.
 
 Validació: 107 proves Python, 7 proves d'interfície JavaScript, comprovacions de sintaxi i compilació, i lectura real dels deu canals. Les proves cobreixen el XML amb espais/BOM, la data original davant la de modificació, el filtre de titular local i la conservació del feed anterior quan falla la verificació d'un article.
+
+## Optimització i incorporació de fonts — 23 d'octubre de 2026
+
+El catàleg passa de 52 a 54 fonts externes automàtiques. Amb la font pròpia de Sóller Ara, el resum públic compta 55 fonts.
+
+### Millores de fonts existents
+
+- **Govern de les Illes Balears:** el canal `grup=noticies` responia correctament però només retornava entrades de 2024. Se substitueix pel RSS de notes informatives (`grup=salaDePremsaNotaInformativa`) anunciat al directori RSS oficial. Es llegeixen fins a 1.000 entrades abans de filtrar-les territorialment; el feed provat conté 787 elements i el canal anterior només 14. Es conserven les dates originals, el filtre local i el màxim de 60 dies. La prova identifica notícies locals d'octubre sobre el Fantasio i el trasllat de la Unitat Bàsica de Salut del Port.
+- **Majorca Daily Bulletin:** es consulta [l'arxiu de Serra Tramuntana](https://www.majorcadailybulletin.com/news/local/serra-tramuntana.html) en lloc de la portada general. Es mantenen el prefiltre d'URL, el filtre del titular original i la verificació estricta de la data de publicació de cada article. No es fan servir les dates de modificació ni les de la URL per admetre una notícia.
+- **ARA Balears:** es llegeixen fins a 100 elements en lloc de 30, per cobrir el feed comprovat de 77 entrades. S'afegeix «Serra de Tramuntana» al vocabulari territorial ja acordat. No es modifica la resta de la selecció.
+
+### Noves fonts
+
+| Font | Canal | Tractament |
+| --- | --- | --- |
+| [Mallorca Global Mag](https://mallorcaglobalmag.es/) | RSS públic de cerca local de Sóller | Titular original amb referència territorial; data original, font i enllaç. La prova conté notícies locals del 19 i 21 d'octubre. |
+| [Esport Balear](https://esportbalear.com/) | RSS públic de cerca local de Sóller | Mateix filtre territorial explícit sobre el titular; categoria Esports. La prova conté una notícia del Sóller de Superlliga femenina del 2 d'octubre. |
+
+Els resultats de cerca RSS poden contenir mencions locals dins el cos d'articles generals. Per això, les dues noves fonts requereixen la coincidència territorial en el titular original. No es copien extractes, fotografies ni vídeos dels mitjans. Les dates originals governen els 60 dies de recopilació i les 6 hores de distribució social; les incorporacions antigues no es difonen com si fossin novetats.
+
+Les dues fonts disposen de regles explícites de distribució automàtica a Facebook i Instagram. Es mantenen 5 publicacions per execució, una per font, la moderació i els controls d'enviaments confirmats. No es modifica el cron horari ni els permisos de Meta.
+
+La cerca de publicacions públiques de Facebook mitjançant una API de cercador queda com a millora independent: aquesta incorporació no activa cap nou servei de cerca ni recopila dades de Facebook. Les fonts amb RSS antics (Tramuntana XXI, Cooperativa i SollerWeb) queden en reserva.
+
+### Validació de la incorporació
+
+- 30 proves existents de recopilació i 13 de distribució social superades, més les comprovacions d'interfície de fonts i agrupació.
+- Lectura real dels cinc canals afectats, sense executar cap publicació de prova: Govern 3 referències locals aptes, ARA Balears 1, Majorca Daily Bulletin 2, Mallorca Global Mag 2 i Esport Balear 1.
+- Les dues noves fonts no generen extractes ni permeten imatges de tercers. Esport Balear conserva la categoria Esports.
+- Els límits, categories, plataformes i regles de les 52 fonts existents de distribució social es conserven; només s'afegeixen les dues noves regles.

@@ -1,5 +1,5 @@
 {
-  "version": 40,
+  "version": 41,
   "sources": [
     {
       "id": "ajuntament-soller-noticies",
@@ -131,11 +131,11 @@
       "id": "goib-noticies-soller",
       "name": "Govern de les Illes Balears",
       "type": "rss",
-      "url": "https://www.caib.es/pidip2front/pidipRSS?grup=noticies&lang=ca&opcio=getRSS",
+      "url": "https://www.caib.es/pidip2front/pidipRSS?opcio=getRSS&grup=salaDePremsaNotaInformativa&lang=ca",
       "language": "ca",
       "locality": "Sóller / Serra de Tramuntana",
       "source_type": "official",
-      "max_items": 200,
+      "max_items": 1000,
       "max_age_days": 60,
       "include_keywords": [
         "Sóller",
@@ -150,7 +150,10 @@
       "enabled": true,
       "image_policy": "disabled_until_rights_verified",
       "content_policy": "short_factual_excerpt",
-      "rights_status": "cc_by_open_data"
+      "rights_status": "cc_by_open_data",
+      "verification_url": "https://www.caib.es/pidip2front/jsp/ca/rss/?lang=ca",
+      "verification_method": "official_informative_notes_feed_and_original_dates",
+      "verified_at": "2026-10-23"
     },
     {
       "id": "ib3-noticies-soller",
@@ -761,7 +764,7 @@
       "language": "ca",
       "locality": "Sóller / Serra de Tramuntana",
       "source_type": "media",
-      "max_items": 30,
+      "max_items": 100,
       "max_age_days": 60,
       "enabled": true,
       "image_policy": "disabled_until_rights_verified",
@@ -781,7 +784,8 @@
         "Túnel de Sóller",
         "Tunel de Soller",
         "Deià",
-        "Deia"
+        "Deia",
+        "Serra de Tramuntana"
       ]
     },
     {
@@ -1297,11 +1301,11 @@
       "image_policy": "disabled_until_rights_verified",
       "content_policy": "headline_date_link_only",
       "rights_status": "link_only_no_media_license",
-      "verified_at": "2026-10-09",
+      "verified_at": "2026-10-23",
       "id": "majorca-daily-bulletin-soller",
       "name": "Majorca Daily Bulletin · Sóller",
       "type": "html_listing_regex",
-      "url": "https://www.majorcadailybulletin.com/",
+      "url": "https://www.majorcadailybulletin.com/news/local/serra-tramuntana.html",
       "source_type": "media",
       "max_items": 8,
       "include_keywords": [
@@ -1330,7 +1334,7 @@
         "deia"
       ],
       "strict_publication_date": true,
-      "verification_url": "https://www.majorcadailybulletin.com/",
+      "verification_url": "https://www.majorcadailybulletin.com/news/local/serra-tramuntana.html",
       "verification_method": "original_article_published_time_metadata"
     },
     {
@@ -1436,6 +1440,71 @@
         "Serra de Tramuntana"
       ],
       "filter_title_only": true
+    },
+    {
+      "id": "mallorca-global-mag-soller",
+      "name": "Mallorca Global Mag · Sóller",
+      "type": "rss",
+      "url": "https://mallorcaglobalmag.es/?s=S%C3%B3ller&feed=rss2",
+      "language": "es",
+      "locality": "Sóller / Port de Sóller / Fornalutx / Biniaraix / Deià / Serra de Tramuntana",
+      "source_type": "media",
+      "max_items": 40,
+      "max_age_days": 60,
+      "enabled": true,
+      "include_keywords": [
+        "Sóller",
+        "Soller",
+        "Port de Sóller",
+        "Port de Soller",
+        "Vall de Sóller",
+        "Vall de Soller",
+        "Fornalutx",
+        "Biniaraix",
+        "Deià",
+        "Deia",
+        "Serra de Tramuntana"
+      ],
+      "filter_title_only": true,
+      "image_policy": "disabled_until_rights_verified",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "verification_url": "https://mallorcaglobalmag.es/",
+      "verification_method": "public_local_search_feed_and_original_dated_entries",
+      "verified_at": "2026-10-23"
+    },
+    {
+      "id": "esport-balear-soller",
+      "name": "Esport Balear · Sóller",
+      "type": "rss",
+      "url": "https://esportbalear.com/?s=S%C3%B3ller&feed=rss2",
+      "language": "es",
+      "locality": "Sóller / Port de Sóller / Fornalutx / Biniaraix / Deià / Serra de Tramuntana",
+      "source_type": "media",
+      "max_items": 40,
+      "max_age_days": 60,
+      "enabled": true,
+      "include_keywords": [
+        "Sóller",
+        "Soller",
+        "Port de Sóller",
+        "Port de Soller",
+        "Vall de Sóller",
+        "Vall de Soller",
+        "Fornalutx",
+        "Biniaraix",
+        "Deià",
+        "Deia",
+        "Serra de Tramuntana"
+      ],
+      "filter_title_only": true,
+      "force_category": "sports",
+      "image_policy": "disabled_until_rights_verified",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "verification_url": "https://esportbalear.com/",
+      "verification_method": "public_local_search_feed_and_original_dated_entries",
+      "verified_at": "2026-10-23"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "version": 13,
+  "version": 14,
   "enabled": true,
   "platforms": {
     "facebook": true,
@@ -223,6 +223,14 @@
       "instagram": true
     },
     "mallorca-confidencial-soller": {
+      "facebook": true,
+      "instagram": true
+    },
+    "mallorca-global-mag-soller": {
+      "facebook": true,
+      "instagram": true
+    },
+    "esport-balear-soller": {
       "facebook": true,
       "instagram": true
     }
