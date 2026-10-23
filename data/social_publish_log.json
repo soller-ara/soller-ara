@@ -10453,6 +10453,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-22T17:23:46.293819+00:00",
       "error": ""
+    },
+    {
+      "post_id": "04514f78c43a008a84dd",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122126340447467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122126340447467310",
+      "title": "Recuperem ca nostra",
+      "post_url": "https://mespersoller.cat/recuperem-ca-nostra/",
+      "source": "MÉS per Sóller",
+      "source_id": "mes-per-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-23T04:40:00.854180+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "04514f78c43a008a84dd",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Recuperem ca nostra",
+      "post_url": "https://mespersoller.cat/recuperem-ca-nostra/",
+      "source": "MÉS per Sóller",
+      "source_id": "mes-per-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-23T04:40:14.465459+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18120491923905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "04514f78c43a008a84dd",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18072012788780573",
+      "remote_url": "https://www.instagram.com/p/De0uH8NF10S/",
+      "title": "Recuperem ca nostra",
+      "post_url": "https://mespersoller.cat/recuperem-ca-nostra/",
+      "source": "MÉS per Sóller",
+      "source_id": "mes-per-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-23T04:40:18.073915+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
