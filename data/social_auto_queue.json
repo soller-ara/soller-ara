@@ -1,26 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-23T04:39:40.635525+00:00",
-  "entries": [
-    {
-      "post_id": "04514f78c43a008a84dd",
-      "title": "Recuperem ca nostra",
-      "summary": "",
-      "source": "MÉS per Sóller",
-      "source_id": "mes-per-soller",
-      "source_type": "political_party",
-      "category": "politics",
-      "language": "ca",
-      "published_at": "2026-10-23T04:28:14+00:00",
-      "original_url": "https://mespersoller.cat/recuperem-ca-nostra/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "official_party_source",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/04514f78c43a008a84dd.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
