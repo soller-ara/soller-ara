@@ -1,6 +1,45 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-10-24T08:07:52.995541+00:00",
+  "entries": [
+    {
+      "post_id": "7e40110bf00a68acfb77",
+      "title": "L’aigua de Sa Torrentera tornarà a córrer per les rentadores de l’estació",
+      "summary": "",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "source_type": "media",
+      "category": "services",
+      "language": "ca",
+      "published_at": "2026-10-24T07:00:00+00:00",
+      "original_url": "https://saveu.cat/noticies/laigua-de-sa-torrentera-tornara-a-correr-per-les-rentadores-de-lestacio/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/7e40110bf00a68acfb77.jpg"
+    },
+    {
+      "post_id": "5d11ffdb88eda57b86d1",
+      "title": "L’acumulació de baixes mèdiques condiciona el servei de recollida del fems",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "services",
+      "language": "ca",
+      "published_at": "2026-10-24T09:00:00+02:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/10/24/354697/acumulacio-baixes-mediques-condiciona-servei-recollida-del-fems.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/5d11ffdb88eda57b86d1.jpg"
+    }
+  ]
 }
