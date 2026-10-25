@@ -1,26 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-25T10:37:12.008604+00:00",
+  "generated_at": "2026-10-25T11:19:12.624879+00:00",
   "entries": [
     {
-      "post_id": "8c8af3507e348c96bbc6",
-      "title": "CVS Salsa Picante Martínez - Sant Josep. Cadete femenino 2°B. Jornada 3",
-      "summary": "Vídeo publicat per Club Vòlei Sóller · YouTube.",
-      "source": "Club Vòlei Sóller · YouTube",
-      "source_id": "youtube-club-volei-soller",
-      "source_type": "social",
-      "category": "sports",
+      "post_id": "dc7a43283e2c36a3af0b",
+      "title": "Els treballadors de Sóller 2010 rebutgen que les baixes mèdiques siguin assenyalades com el problema del servei",
+      "summary": "",
+      "source": "ARA Balears",
+      "source_id": "ara-balears-soller",
+      "source_type": "media",
+      "category": "services",
       "language": "ca",
-      "published_at": "2026-10-25T09:46:18+00:00",
-      "original_url": "https://www.youtube.com/watch?v=ThqU31XrLPw",
-      "content_policy": "generated_social_summary",
-      "rights_status": "platform_embed",
+      "published_at": "2026-10-25T10:47:58+00:00",
+      "original_url": "https://www.arabalears.cat/societat/treballadors-soller-2010-rebutgen-baixes-mediques-siguin-assenyalades-problema-servei_1_5890022.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/8c8af3507e348c96bbc6.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/dc7a43283e2c36a3af0b.jpg"
     }
   ]
 }
