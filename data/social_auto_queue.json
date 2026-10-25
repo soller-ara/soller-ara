@@ -1,6 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-10-25T16:06:11.685449+00:00",
+  "entries": [
+    {
+      "post_id": "7b8ca4f389843745ecc2",
+      "title": "La mostra d'indumentària posa el colofó a les Journées del Modernisme",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-10-25T16:52:00+01:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/10/25/354703/mostra-indumentaria-posa-colofo-les-journees-del-modernisme-1.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/7b8ca4f389843745ecc2.jpg"
+    }
+  ]
 }
