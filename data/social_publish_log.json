@@ -11038,6 +11038,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-25T08:22:25.756458+00:00",
       "error": ""
+    },
+    {
+      "post_id": "8c8af3507e348c96bbc6",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122126983677467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122126983677467310",
+      "title": "CVS Salsa Picante Martínez - Sant Josep. Cadete femenino 2°B. Jornada 3",
+      "post_url": "https://www.youtube.com/watch?v=ThqU31XrLPw",
+      "source": "Club Vòlei Sóller · YouTube",
+      "source_id": "youtube-club-volei-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-25T10:37:31.935897+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "8c8af3507e348c96bbc6",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "CVS Salsa Picante Martínez - Sant Josep. Cadete femenino 2°B. Jornada 3",
+      "post_url": "https://www.youtube.com/watch?v=ThqU31XrLPw",
+      "source": "Club Vòlei Sóller · YouTube",
+      "source_id": "youtube-club-volei-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-25T10:37:41.219492+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18121066147905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "8c8af3507e348c96bbc6",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "17939279115400451",
+      "remote_url": "https://www.instagram.com/p/De6goPfl_Bm/",
+      "title": "CVS Salsa Picante Martínez - Sant Josep. Cadete femenino 2°B. Jornada 3",
+      "post_url": "https://www.youtube.com/watch?v=ThqU31XrLPw",
+      "source": "Club Vòlei Sóller · YouTube",
+      "source_id": "youtube-club-volei-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-25T10:37:44.536906+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
