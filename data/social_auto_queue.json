@@ -1,45 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-25T18:21:39.845198+00:00",
-  "entries": [
-    {
-      "post_id": "64bacddaae423d1810a5",
-      "title": "Las Journées salen de paseo por Sóller",
-      "summary": "",
-      "source": "Última Hora",
-      "source_id": "ultima-hora-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "es",
-      "published_at": "2026-10-25T19:08:50+01:00",
-      "original_url": "https://www.ultimahora.es/noticias/part-forana/2026/10/25/2736325/journees-salen-paseo-por-soller.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/64bacddaae423d1810a5.jpg"
-    },
-    {
-      "post_id": "4e4375c13c0a90d200e9",
-      "title": "La mostra d'indumentària posa el colofó a les Journées del Modernisme",
-      "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-10-25T16:52:00+01:00",
-      "original_url": "https://www.elsoller.cat/soller/societat-i-cultura/2026/10/25/354703/mostra-indumentaria-posa-colofo-les-journees-del-modernisme-1.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/4e4375c13c0a90d200e9.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
