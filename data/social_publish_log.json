@@ -11128,6 +11128,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-25T11:20:06.515525+00:00",
       "error": ""
+    },
+    {
+      "post_id": "7b8ca4f389843745ecc2",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122127097323467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122127097323467310",
+      "title": "La mostra d'indumentària posa el colofó a les Journées del Modernisme",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/25/354703/mostra-indumentaria-posa-colofo-les-journees-del-modernisme-1.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-25T16:06:29.021964+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "7b8ca4f389843745ecc2",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "La mostra d'indumentària posa el colofó a les Journées del Modernisme",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/25/354703/mostra-indumentaria-posa-colofo-les-journees-del-modernisme-1.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-25T16:06:38.415763+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18121151362905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "7b8ca4f389843745ecc2",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "17917801992265106",
+      "remote_url": "https://www.instagram.com/p/De7GRvjDafv/",
+      "title": "La mostra d'indumentària posa el colofó a les Journées del Modernisme",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/25/354703/mostra-indumentaria-posa-colofo-les-journees-del-modernisme-1.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-25T16:06:42.600411+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
