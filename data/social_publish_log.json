@@ -11083,6 +11083,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-25T10:37:44.536906+00:00",
       "error": ""
+    },
+    {
+      "post_id": "dc7a43283e2c36a3af0b",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122126990895467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122126990895467310",
+      "title": "Els treballadors de Sóller 2010 rebutgen que les baixes mèdiques siguin assenyalades com el problema del servei",
+      "post_url": "https://www.arabalears.cat/societat/treballadors-soller-2010-rebutgen-baixes-mediques-siguin-assenyalades-problema-servei_1_5890022.html",
+      "source": "ARA Balears",
+      "source_id": "ara-balears-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-25T11:19:54.963314+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "dc7a43283e2c36a3af0b",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Els treballadors de Sóller 2010 rebutgen que les baixes mèdiques siguin assenyalades com el problema del servei",
+      "post_url": "https://www.arabalears.cat/societat/treballadors-soller-2010-rebutgen-baixes-mediques-siguin-assenyalades-problema-servei_1_5890022.html",
+      "source": "ARA Balears",
+      "source_id": "ara-balears-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-25T11:20:02.784779+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18121074937905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "dc7a43283e2c36a3af0b",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18029448671693370",
+      "remote_url": "https://www.instagram.com/p/De6lesll4qu/",
+      "title": "Els treballadors de Sóller 2010 rebutgen que les baixes mèdiques siguin assenyalades com el problema del servei",
+      "post_url": "https://www.arabalears.cat/societat/treballadors-soller-2010-rebutgen-baixes-mediques-siguin-assenyalades-problema-servei_1_5890022.html",
+      "source": "ARA Balears",
+      "source_id": "ara-balears-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-25T11:20:06.515525+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
