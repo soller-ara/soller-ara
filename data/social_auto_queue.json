@@ -1,6 +1,45 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-10-25T08:21:40.712508+00:00",
+  "entries": [
+    {
+      "post_id": "9cb9e02f10de80a586e3",
+      "title": "La Vila cerca un lloc per reubicarla unitat bàsica de salut del Port",
+      "summary": "",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "source_type": "media",
+      "category": "politics",
+      "language": "ca",
+      "published_at": "2026-10-25T08:00:00+00:00",
+      "original_url": "https://saveu.cat/noticies/la-vila-cerca-un-lloc-per-reubicarla-unitat-basica-de-salut-del-port/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/9cb9e02f10de80a586e3.jpg"
+    },
+    {
+      "post_id": "ba404f4edc632371b4b6",
+      "title": "Éric Sadin adverteix dels perills de la IA a Can Prunera",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "alerts",
+      "language": "ca",
+      "published_at": "2026-10-25T09:00:00+01:00",
+      "original_url": "https://www.elsoller.cat/soller/societat-i-cultura/2026/10/25/354699/eric-sadin-adverteix-dels-perills-can-prunera.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/ba404f4edc632371b4b6.jpg"
+    }
+  ]
 }
