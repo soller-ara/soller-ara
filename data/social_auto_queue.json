@@ -1,26 +1,25 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-26T11:04:14.599629+00:00",
+  "generated_at": "2026-10-26T13:18:46.662710+00:00",
   "entries": [
     {
-      "post_id": "d13ef1d3076973eb5709",
-      "title": "UGT denuncia la «criminalització» del personal en estat de baixa mèdica",
+      "post_id": "e7dcc5ec8a0ee426f538",
+      "title": "IB3 | Tauler d'anuncis",
       "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
+      "source": "IB3 Notícies",
+      "source_id": "ib3-noticies-soller",
       "source_type": "media",
-      "category": "commerce",
+      "category": "news",
       "language": "ca",
-      "published_at": "2026-10-26T10:59:00+01:00",
-      "original_url": "https://www.elsoller.cat/soller/local/2026/10/26/354705/ugt-denuncia-criminalitzacio-del-personal-baixa-medica.html",
+      "published_at": "2026-10-26T12:00:00+00:00",
+      "original_url": "https://ib3.org/tauler-danuncis",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
-        "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/d13ef1d3076973eb5709.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/e7dcc5ec8a0ee426f538.jpg"
     }
   ]
 }
