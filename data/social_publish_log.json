@@ -11564,6 +11564,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-26T15:38:23.347600+00:00",
       "error": ""
+    },
+    {
+      "post_id": "21eb139f661be7601ee3",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122127402261467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122127402261467310",
+      "title": "La «Processó de la lasanya» es tradueix en 1.500 euros de multa",
+      "post_url": "https://saveu.cat/noticies/la-processo-de-la-lasanya-es-tradueix-en-1-500-euros-de-multa/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-26T17:23:05.046432+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "21eb139f661be7601ee3",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "La «Processó de la lasanya» es tradueix en 1.500 euros de multa",
+      "post_url": "https://saveu.cat/noticies/la-processo-de-la-lasanya-es-tradueix-en-1-500-euros-de-multa/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-26T17:23:17.078207+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18121471594905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "21eb139f661be7601ee3",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18135877528782279",
+      "remote_url": "https://www.instagram.com/p/De9z1cyF8rg/",
+      "title": "La «Processó de la lasanya» es tradueix en 1.500 euros de multa",
+      "post_url": "https://saveu.cat/noticies/la-processo-de-la-lasanya-es-tradueix-en-1-500-euros-de-multa/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-26T17:23:19.651075+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
