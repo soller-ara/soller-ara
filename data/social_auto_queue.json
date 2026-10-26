@@ -1,25 +1,45 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-26T13:18:46.662710+00:00",
+  "generated_at": "2026-10-26T15:37:27.020627+00:00",
   "entries": [
     {
-      "post_id": "e7dcc5ec8a0ee426f538",
-      "title": "IB3 | Tauler d'anuncis",
+      "post_id": "c19204e5d4a858650972",
+      "title": "Torna la Mostra de Cinema de Muntanya de Palma: un parèntesi a la ficció amb accent mallorquí i la Serra de Tramuntana com a escenari",
       "summary": "",
-      "source": "IB3 Notícies",
-      "source_id": "ib3-noticies-soller",
+      "source": "dBalears",
+      "source_id": "dbalears-soller",
       "source_type": "media",
       "category": "news",
       "language": "ca",
-      "published_at": "2026-10-26T12:00:00+00:00",
-      "original_url": "https://ib3.org/tauler-danuncis",
+      "published_at": "2026-10-26T14:55:15+00:00",
+      "original_url": "https://www.dbalears.cat/balears/cultura/2026/10/26/423611/torna-mostra-cinema-muntanya-palma-parentesi-ficcio-amb-accent-mallorqui-serra-tramuntana-com-escenari.html",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
+        "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/e7dcc5ec8a0ee426f538.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/c19204e5d4a858650972.jpg"
+    },
+    {
+      "post_id": "e6128cdf223a102eb003",
+      "title": "Tècnics del Consell decidiran si es pot obrir el camí de Cas Jurat",
+      "summary": "",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "source_type": "media",
+      "category": "services",
+      "language": "ca",
+      "published_at": "2026-10-26T14:49:54+00:00",
+      "original_url": "https://saveu.cat/noticies/tecnics-del-consell-decidiran-si-es-pot-obrir-el-cami-de-cas-jurat/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/e6128cdf223a102eb003.jpg"
     }
   ]
 }
