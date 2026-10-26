@@ -1,26 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-26T19:37:27.892963+00:00",
-  "entries": [
-    {
-      "post_id": "b43c2fd880a290c7c417",
-      "title": "Senyals que evidencien el mal estat del desviament",
-      "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
-      "source_type": "media",
-      "category": "services",
-      "language": "ca",
-      "published_at": "2026-10-26T14:42:25+00:00",
-      "original_url": "https://saveu.cat/noticies/senyals-que-evidencien-el-mal-estat-del-desviament/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/b43c2fd880a290c7c417.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
