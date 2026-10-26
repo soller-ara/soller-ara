@@ -609,7 +609,7 @@
     }
   ],
   "social_integration_status": [],
-  "post_count": 285,
+  "post_count": 286,
   "related_pair_count": 0,
   "errors": [
     {
@@ -622,6 +622,25 @@
     }
   ],
   "posts": [
+    {
+      "id": "soller-ara-f05c5f4eac745265",
+      "category": "services",
+      "source_id": "soller-ara",
+      "source": "Publicació de xarxa",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-26T13:09:06.666574+00:00",
+      "show_in_now": true,
+      "content_type": "social_link",
+      "title": "",
+      "summary": "",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-f05c5f4eac745265.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": false,
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1231004119163059&id=100067604481291&hpir=1"
+    },
     {
       "id": "soller-ara-04c75d2da2bf63b4",
       "category": "culture",
@@ -6558,5 +6577,5 @@
     }
   ],
   "sources_checked_at": "2026-10-26T11:04:14.480037+00:00",
-  "fetched_at": "2026-10-26T11:04:14.480037+00:00"
+  "fetched_at": "2026-10-26T13:09:06.671628+00:00"
 }
