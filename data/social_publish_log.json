@@ -11609,6 +11609,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-26T17:23:19.651075+00:00",
       "error": ""
+    },
+    {
+      "post_id": "b43c2fd880a290c7c417",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122127431007467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122127431007467310",
+      "title": "Senyals que evidencien el mal estat del desviament",
+      "post_url": "https://saveu.cat/noticies/senyals-que-evidencien-el-mal-estat-del-desviament/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-26T19:38:32.033707+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "b43c2fd880a290c7c417",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Senyals que evidencien el mal estat del desviament",
+      "post_url": "https://saveu.cat/noticies/senyals-que-evidencien-el-mal-estat-del-desviament/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-26T19:38:43.516723+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18121495729905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "b43c2fd880a290c7c417",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "17912922924515040",
+      "remote_url": "https://www.instagram.com/p/De-DVhnF9zZ/",
+      "title": "Senyals que evidencien el mal estat del desviament",
+      "post_url": "https://saveu.cat/noticies/senyals-que-evidencien-el-mal-estat-del-desviament/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-26T19:38:46.071564+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
