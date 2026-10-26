@@ -11398,6 +11398,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-26T09:09:40.671186+00:00",
       "error": ""
+    },
+    {
+      "post_id": "d13ef1d3076973eb5709",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122127311241467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122127311241467310",
+      "title": "UGT denuncia la «criminalització» del personal en estat de baixa mèdica",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/26/354705/ugt-denuncia-criminalitzacio-del-personal-baixa-medica.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-26T11:04:34.629672+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "d13ef1d3076973eb5709",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "UGT denuncia la «criminalització» del personal en estat de baixa mèdica",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/26/354705/ugt-denuncia-criminalitzacio-del-personal-baixa-medica.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-26T11:04:52.623083+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18121381399905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "d13ef1d3076973eb5709",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18015026342977708",
+      "remote_url": "https://www.instagram.com/p/De9IhmcjZJw/",
+      "title": "UGT denuncia la «criminalització» del personal en estat de baixa mèdica",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/26/354705/ugt-denuncia-criminalitzacio-del-personal-baixa-medica.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-26T11:04:57.303548+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
