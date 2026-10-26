@@ -11443,6 +11443,37 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-26T11:04:57.303548+00:00",
       "error": ""
+    },
+    {
+      "post_id": "e7dcc5ec8a0ee426f538",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "IB3 | Tauler d'anuncis",
+      "post_url": "https://ib3.org/tauler-danuncis",
+      "source": "IB3 Notícies",
+      "source_id": "ib3-noticies-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-26T13:19:18.007188+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18121409593905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "e7dcc5ec8a0ee426f538",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18133401121865481",
+      "remote_url": "https://www.instagram.com/p/De9X6JaGH9o/",
+      "title": "IB3 | Tauler d'anuncis",
+      "post_url": "https://ib3.org/tauler-danuncis",
+      "source": "IB3 Notícies",
+      "source_id": "ib3-noticies-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-26T13:19:21.734470+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
