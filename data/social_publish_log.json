@@ -11263,6 +11263,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-25T18:22:22.769916+00:00",
       "error": ""
+    },
+    {
+      "post_id": "6d2d2021ff16bb48b705",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122127263787467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122127263787467310",
+      "title": "Mitja serra de Tramuntana",
+      "post_url": "https://www.arabalears.cat/opinio/mitja-serra-tramuntana-sebastia-alzamora_129_5887385.html",
+      "source": "ARA Balears",
+      "source_id": "ara-balears-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-26T06:53:07.364804+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "6d2d2021ff16bb48b705",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Mitja serra de Tramuntana",
+      "post_url": "https://www.arabalears.cat/opinio/mitja-serra-tramuntana-sebastia-alzamora_129_5887385.html",
+      "source": "ARA Balears",
+      "source_id": "ara-balears-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-26T06:53:16.763019+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18121334035905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "6d2d2021ff16bb48b705",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18130627843825772",
+      "remote_url": "https://www.instagram.com/p/De8rvnjjUAW/",
+      "title": "Mitja serra de Tramuntana",
+      "post_url": "https://www.arabalears.cat/opinio/mitja-serra-tramuntana-sebastia-alzamora_129_5887385.html",
+      "source": "ARA Balears",
+      "source_id": "ara-balears-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-26T06:53:21.778155+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
