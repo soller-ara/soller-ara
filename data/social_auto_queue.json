@@ -1,26 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-26T17:22:44.891489+00:00",
+  "generated_at": "2026-10-26T19:37:27.892963+00:00",
   "entries": [
     {
-      "post_id": "21eb139f661be7601ee3",
-      "title": "La «Processó de la lasanya» es tradueix en 1.500 euros de multa",
+      "post_id": "b43c2fd880a290c7c417",
+      "title": "Senyals que evidencien el mal estat del desviament",
       "summary": "",
       "source": "Sa Veu de Sóller",
       "source_id": "sa-veu-soller",
       "source_type": "media",
-      "category": "culture",
+      "category": "services",
       "language": "ca",
-      "published_at": "2026-10-26T14:45:23+00:00",
-      "original_url": "https://saveu.cat/noticies/la-processo-de-la-lasanya-es-tradueix-en-1-500-euros-de-multa/",
+      "published_at": "2026-10-26T14:42:25+00:00",
+      "original_url": "https://saveu.cat/noticies/senyals-que-evidencien-el-mal-estat-del-desviament/",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/21eb139f661be7601ee3.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/b43c2fd880a290c7c417.jpg"
     }
   ]
 }
