@@ -1,45 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-27T16:38:48.823797+00:00",
+  "generated_at": "2026-10-27T18:52:35.649200+00:00",
   "entries": [
     {
-      "post_id": "4e348b75f234183b1e22",
-      "title": "Mor Josep Bauzà i Pizà, el mestre de Monti-Sion que va fer de l'ensenyament una forma de compromís",
-      "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-10-27T16:05:43+01:00",
-      "original_url": "https://www.elsoller.cat/soller/local/2026/10/27/354707/mor-josep-bauza-piza-mestre-montesion-fer-ensenyament-forma-compromis.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/4e348b75f234183b1e22.jpg"
-    },
-    {
-      "post_id": "2fe02154bb965e738277",
-      "title": "Cas Jurat obrirà finalment divendres a l’espera dels informes favorables del Consell",
+      "post_id": "930eceeadebfc9c00f79",
+      "title": "Detenguts tres lladres que actuaven contra turistes a la Serra",
       "summary": "",
       "source": "Sa Veu de Sóller",
       "source_id": "sa-veu-soller",
       "source_type": "media",
-      "category": "services",
+      "category": "news",
       "language": "ca",
-      "published_at": "2026-10-27T13:54:52+00:00",
-      "original_url": "https://saveu.cat/noticies/cas-jurat-obrira-finalment-divendres-a-lespera-dels-informes-favorables-del-consell/",
+      "published_at": "2026-10-27T13:43:30+00:00",
+      "original_url": "https://saveu.cat/noticies/detenguts-tres-lladres-que-actuaven-contra-turistes-a-la-serra/",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/2fe02154bb965e738277.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/930eceeadebfc9c00f79.jpg"
     }
   ]
 }
