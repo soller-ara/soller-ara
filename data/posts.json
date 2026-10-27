@@ -609,7 +609,7 @@
     }
   ],
   "social_integration_status": [],
-  "post_count": 287,
+  "post_count": 288,
   "related_pair_count": 0,
   "errors": [
     {
@@ -674,6 +674,25 @@
     }
   ],
   "posts": [
+    {
+      "id": "soller-ara-12957805483b3e0b",
+      "category": "services",
+      "source_id": "soller-ara",
+      "source": "Publicació de xarxa",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-27T07:12:56.274505+00:00",
+      "show_in_now": true,
+      "content_type": "social_link",
+      "title": "",
+      "summary": "",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-12957805483b3e0b.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": false,
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1550232970478425&id=100064752094509&hpir=1"
+    },
     {
       "id": "soller-ara-81a95c4088c165ca",
       "category": "politics",
@@ -6649,5 +6668,5 @@
     }
   ],
   "sources_checked_at": "2026-10-27T06:52:13.596827+00:00",
-  "fetched_at": "2026-10-27T07:10:35.601488+00:00"
+  "fetched_at": "2026-10-27T07:12:56.282734+00:00"
 }
