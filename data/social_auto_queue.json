@@ -1,26 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-27T18:52:35.649200+00:00",
-  "entries": [
-    {
-      "post_id": "930eceeadebfc9c00f79",
-      "title": "Detenguts tres lladres que actuaven contra turistes a la Serra",
-      "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-10-27T13:43:30+00:00",
-      "original_url": "https://saveu.cat/noticies/detenguts-tres-lladres-que-actuaven-contra-turistes-a-la-serra/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/930eceeadebfc9c00f79.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
