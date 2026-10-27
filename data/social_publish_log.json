@@ -11789,6 +11789,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-27T16:39:53.277863+00:00",
       "error": ""
+    },
+    {
+      "post_id": "930eceeadebfc9c00f79",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122127713043467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122127713043467310",
+      "title": "Detenguts tres lladres que actuaven contra turistes a la Serra",
+      "post_url": "https://saveu.cat/noticies/detenguts-tres-lladres-que-actuaven-contra-turistes-a-la-serra/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-27T18:53:14.499480+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "930eceeadebfc9c00f79",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Detenguts tres lladres que actuaven contra turistes a la Serra",
+      "post_url": "https://saveu.cat/noticies/detenguts-tres-lladres-que-actuaven-contra-turistes-a-la-serra/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-27T18:53:26.138663+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18121738126905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "930eceeadebfc9c00f79",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "17977277580125415",
+      "remote_url": "https://www.instagram.com/p/DfAi85Qm98U/",
+      "title": "Detenguts tres lladres que actuaven contra turistes a la Serra",
+      "post_url": "https://saveu.cat/noticies/detenguts-tres-lladres-que-actuaven-contra-turistes-a-la-serra/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-27T18:53:30.962099+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
