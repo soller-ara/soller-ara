@@ -1718,6 +1718,25 @@
       "rights_status": "no_reuse_reference_only",
       "image_allowed": false,
       "original_url": "https://www.facebook.com/story.php?story_fbid=1585756100260856&id=100064794426084&hpir=1"
+    },
+    {
+      "id": "soller-ara-52e1b6eafe975b95",
+      "category": "services",
+      "source_id": "manual-c671fec4a9a6",
+      "source": "Ajuntament de Sóller",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-28T09:00:05.777879+00:00",
+      "show_in_now": true,
+      "content_type": "social_link",
+      "title": "",
+      "summary": "",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-52e1b6eafe975b95.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": false,
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1424137289926504&id=100069907391489&hpir=1"
     }
   ]
 }
