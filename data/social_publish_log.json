@@ -12014,6 +12014,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-28T12:23:05.520172+00:00",
       "error": ""
+    },
+    {
+      "post_id": "287ee2d2de20c63ed037",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122127938277467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122127938277467310",
+      "title": "Circules habitualment pel centre de Sóller? Comprova les dades del teu vehicle",
+      "post_url": "https://ajsoller.net/ca/noticies/circules-habitualment-pel-centre-de-soller-comprova-les-dades-del-teu-vehicle",
+      "source": "Ajuntament de Sóller",
+      "source_id": "ajuntament-soller-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-28T12:47:33.237652+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "287ee2d2de20c63ed037",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Circules habitualment pel centre de Sóller? Comprova les dades del teu vehicle",
+      "post_url": "https://ajsoller.net/ca/noticies/circules-habitualment-pel-centre-de-soller-comprova-les-dades-del-teu-vehicle",
+      "source": "Ajuntament de Sóller",
+      "source_id": "ajuntament-soller-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-28T12:47:49.926869+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18121913149905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "287ee2d2de20c63ed037",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18106909184524497",
+      "remote_url": "https://www.instagram.com/p/DfCd5bGGPhp/",
+      "title": "Circules habitualment pel centre de Sóller? Comprova les dades del teu vehicle",
+      "post_url": "https://ajsoller.net/ca/noticies/circules-habitualment-pel-centre-de-soller-comprova-les-dades-del-teu-vehicle",
+      "source": "Ajuntament de Sóller",
+      "source_id": "ajuntament-soller-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-28T12:47:53.964356+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
