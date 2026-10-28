@@ -609,7 +609,7 @@
     }
   ],
   "social_integration_status": [],
-  "post_count": 289,
+  "post_count": 290,
   "related_pair_count": 0,
   "errors": [
     {
@@ -622,6 +622,25 @@
     }
   ],
   "posts": [
+    {
+      "id": "soller-ara-dc476081800567b9",
+      "category": "alerts",
+      "source_id": "manual-13e44f9445ef",
+      "source": "Policia Local de Sóller",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-28T09:50:24.260116+00:00",
+      "show_in_now": true,
+      "content_type": "social_link",
+      "title": "",
+      "summary": "",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-dc476081800567b9.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": false,
+      "original_url": "https://www.facebook.com/policialocaldesoller/photos/previsi%C3%B3-de-reserves-destacionament-tancaments-%EF%B8%8F-ocupacionsper-els-dies-2810-al-/1585827456920387/?set=a.349058100597335&hpir=1"
+    },
     {
       "id": "soller-ara-52e1b6eafe975b95",
       "category": "services",
@@ -6634,5 +6653,5 @@
     }
   ],
   "sources_checked_at": "2026-10-28T07:52:16.441841+00:00",
-  "fetched_at": "2026-10-28T09:00:05.784457+00:00"
+  "fetched_at": "2026-10-28T09:50:24.268385+00:00"
 }
