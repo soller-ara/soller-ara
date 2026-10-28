@@ -1,26 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-28T12:47:08.477368+00:00",
+  "generated_at": "2026-10-28T15:06:13.074522+00:00",
   "entries": [
     {
-      "post_id": "287ee2d2de20c63ed037",
-      "title": "Circules habitualment pel centre de Sóller? Comprova les dades del teu vehicle",
-      "summary": "Si circules per la Zona de Baixes Emissions (ZBE), et recordam la importància de comprovar que el teu vehicle està autoritzat i que les seves dades estan actualitzades. Revisa que el vehicle tengui el domicili fiscal al…",
-      "source": "Ajuntament de Sóller",
-      "source_id": "ajuntament-soller-noticies",
-      "source_type": "official",
+      "post_id": "d684f85727739e1e7944",
+      "title": "Son Sang es posa guapo amb la vista posada a Tots Sants",
+      "summary": "",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "source_type": "media",
       "category": "news",
       "language": "ca",
-      "published_at": "2026-10-28T08:37:46+00:00",
-      "original_url": "https://ajsoller.net/ca/noticies/circules-habitualment-pel-centre-de-soller-comprova-les-dades-del-teu-vehicle",
-      "content_policy": "short_factual_excerpt",
-      "rights_status": "public_source_reviewed",
+      "published_at": "2026-10-28T14:58:32+00:00",
+      "original_url": "https://saveu.cat/noticies/son-sang-es-posa-guapo-amb-la-vista-posada-a-tots-sants/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/287ee2d2de20c63ed037.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/d684f85727739e1e7944.jpg"
     }
   ]
 }
