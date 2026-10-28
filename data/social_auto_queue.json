@@ -1,45 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-28T18:53:31.974320+00:00",
-  "entries": [
-    {
-      "post_id": "8795bdd0f1d75d6e8cb1",
-      "title": "Nou enrajolat cap a la nova entrada del primer pis del mercat municipal",
-      "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
-      "source_type": "media",
-      "category": "commerce",
-      "language": "ca",
-      "published_at": "2026-10-28T16:15:03+01:00",
-      "original_url": "https://www.elsoller.cat/soller/local/2026/10/28/354709/nou-enrajolat-cap-nova-entrada-del-primer-pis-del-mercat-municipal.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/8795bdd0f1d75d6e8cb1.jpg"
-    },
-    {
-      "post_id": "c3724d463297f7e9efb6",
-      "title": "Rescaten una persona ferida després de precipitar-se al torrent de Pareis",
-      "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-10-28T14:40:57+00:00",
-      "original_url": "https://saveu.cat/noticies/rescaten-una-persona-ferida-despres-de-precipitar-se-al-torrent-de-pareis/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/c3724d463297f7e9efb6.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
