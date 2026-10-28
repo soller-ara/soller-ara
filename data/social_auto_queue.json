@@ -1,26 +1,45 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-28T15:06:13.074522+00:00",
+  "generated_at": "2026-10-28T17:20:11.468029+00:00",
   "entries": [
     {
-      "post_id": "d684f85727739e1e7944",
-      "title": "Son Sang es posa guapo amb la vista posada a Tots Sants",
+      "post_id": "9909fe4660563d42d7fe",
+      "title": "El tren i el tramvia redueixen freqüències a partir de dilluns",
       "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
       "source_type": "media",
-      "category": "news",
+      "category": "services",
       "language": "ca",
-      "published_at": "2026-10-28T14:58:32+00:00",
-      "original_url": "https://saveu.cat/noticies/son-sang-es-posa-guapo-amb-la-vista-posada-a-tots-sants/",
+      "published_at": "2026-10-28T17:15:12+01:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/10/28/354711/tren-tramvia-redueixen-frequencies-partir-dilluns.html",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/d684f85727739e1e7944.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/9909fe4660563d42d7fe.jpg"
+    },
+    {
+      "post_id": "98d64eaafdb9700365b3",
+      "title": "Arranca l’embelliment de la plaça porticada del mercat municipal",
+      "summary": "",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "source_type": "media",
+      "category": "commerce",
+      "language": "ca",
+      "published_at": "2026-10-28T14:46:31+00:00",
+      "original_url": "https://saveu.cat/noticies/arranca-lembelliment-de-la-placa-porticada-del-mercat-municipal/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/98d64eaafdb9700365b3.jpg"
     }
   ]
 }
