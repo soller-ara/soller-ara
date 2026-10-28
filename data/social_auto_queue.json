@@ -1,45 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-28T12:22:04.195961+00:00",
+  "generated_at": "2026-10-28T12:47:08.477368+00:00",
   "entries": [
     {
-      "post_id": "960ef68a60af8d917146",
-      "title": "Sóller, amb les víctimes de l’accident ferroviari de Toledo",
-      "summary": "Des de l’Ajuntament de Sóller expressam el nostre condol per les persones que han perdut la vida en l’accident ferroviari d’Urda (Toledo) i traslladam tot el nostre suport als seus familiars, a les persones ferides i a…",
+      "post_id": "287ee2d2de20c63ed037",
+      "title": "Circules habitualment pel centre de Sóller? Comprova les dades del teu vehicle",
+      "summary": "Si circules per la Zona de Baixes Emissions (ZBE), et recordam la importància de comprovar que el teu vehicle està autoritzat i que les seves dades estan actualitzades. Revisa que el vehicle tengui el domicili fiscal al…",
       "source": "Ajuntament de Sóller",
       "source_id": "ajuntament-soller-noticies",
       "source_type": "official",
       "category": "news",
       "language": "ca",
-      "published_at": "2026-10-28T12:13:42+00:00",
-      "original_url": "https://ajsoller.net/ca/noticies/soller-amb-les-victimes-de-laccident-ferroviari-de-toledo",
+      "published_at": "2026-10-28T08:37:46+00:00",
+      "original_url": "https://ajsoller.net/ca/noticies/circules-habitualment-pel-centre-de-soller-comprova-les-dades-del-teu-vehicle",
       "content_policy": "short_factual_excerpt",
       "rights_status": "public_source_reviewed",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/960ef68a60af8d917146.jpg"
-    },
-    {
-      "post_id": "a79519fd8e2968aa1a3f",
-      "title": "Bases de la convocatòria d'ajuts a l'estudi pel curs 2026-2027",
-      "summary": "sarrom dc., 28/10/2026 - 12:59 28-Octubre-2026 El termini de presentació de les sol·licituds és de dia 29 d'octubre a 12 de novembre.",
-      "source": "Ajuntament de Fornalutx",
-      "source_id": "ajuntament-fornalutx-noticies",
-      "source_type": "official",
-      "category": "agenda",
-      "language": "ca",
-      "published_at": "2026-10-28T11:59:30+00:00",
-      "original_url": "https://ajfornalutx.net/ca/noticies/bases-de-la-convocatoria-dajuts-lestudi-pel-curs-2026-2027",
-      "content_policy": "short_factual_excerpt",
-      "rights_status": "official_public_source",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/a79519fd8e2968aa1a3f.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/287ee2d2de20c63ed037.jpg"
     }
   ]
 }
