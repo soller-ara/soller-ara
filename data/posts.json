@@ -609,7 +609,7 @@
     }
   ],
   "social_integration_status": [],
-  "post_count": 292,
+  "post_count": 293,
   "related_pair_count": 0,
   "errors": [
     {
@@ -622,6 +622,25 @@
     }
   ],
   "posts": [
+    {
+      "id": "soller-ara-4f8208b4e8ce457d",
+      "category": "agenda",
+      "source_id": "manual-c671fec4a9a6",
+      "source": "Ajuntament de Sóller",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-28T11:50:02.257344+00:00",
+      "show_in_now": true,
+      "content_type": "social_link",
+      "title": "",
+      "summary": "",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-4f8208b4e8ce457d.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": false,
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1424274733246093&id=100069907391489&hpir=1"
+    },
     {
       "id": "soller-ara-dd1f66a628bae1cf",
       "category": "news",
@@ -6697,5 +6716,5 @@
     }
   ],
   "sources_checked_at": "2026-10-28T10:08:00.431089+00:00",
-  "fetched_at": "2026-10-28T10:58:59.000325+00:00"
+  "fetched_at": "2026-10-28T11:50:02.266109+00:00"
 }
