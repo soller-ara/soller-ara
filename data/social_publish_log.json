@@ -12059,6 +12059,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-28T12:47:53.964356+00:00",
       "error": ""
+    },
+    {
+      "post_id": "d684f85727739e1e7944",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122127967791467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122127967791467310",
+      "title": "Son Sang es posa guapo amb la vista posada a Tots Sants",
+      "post_url": "https://saveu.cat/noticies/son-sang-es-posa-guapo-amb-la-vista-posada-a-tots-sants/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-28T15:07:07.226209+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "d684f85727739e1e7944",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Son Sang es posa guapo amb la vista posada a Tots Sants",
+      "post_url": "https://saveu.cat/noticies/son-sang-es-posa-guapo-amb-la-vista-posada-a-tots-sants/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-28T15:07:15.368859+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18121946248905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "d684f85727739e1e7944",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18108848981250570",
+      "remote_url": "https://www.instagram.com/p/DfCt3fTDQxx/",
+      "title": "Son Sang es posa guapo amb la vista posada a Tots Sants",
+      "post_url": "https://saveu.cat/noticies/son-sang-es-posa-guapo-amb-la-vista-posada-a-tots-sants/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-28T15:07:18.813885+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
