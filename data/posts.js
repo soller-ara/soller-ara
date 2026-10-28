@@ -609,7 +609,7 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 291,
+  "post_count": 292,
   "related_pair_count": 0,
   "errors": [
     {
@@ -622,6 +622,25 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "posts": [
+    {
+      "id": "soller-ara-dd1f66a628bae1cf",
+      "category": "news",
+      "source_id": "manual-2e171bcf6e41",
+      "source": "Part forana Diari de Mallorca",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-28T10:58:58.995211+00:00",
+      "show_in_now": true,
+      "content_type": "social_link",
+      "title": "",
+      "summary": "",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-dd1f66a628bae1cf.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": false,
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1752091766704237&id=100057102921293&hpir=1"
+    },
     {
       "id": "soller-ara-dc476081800567b9",
       "category": "alerts",
@@ -6678,5 +6697,5 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "sources_checked_at": "2026-10-28T10:08:00.431089+00:00",
-  "fetched_at": "2026-10-28T10:08:00.431089+00:00"
+  "fetched_at": "2026-10-28T10:58:59.000325+00:00"
 };
