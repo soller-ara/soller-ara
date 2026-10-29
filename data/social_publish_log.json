@@ -12599,6 +12599,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-29T16:13:53.434198+00:00",
       "error": ""
+    },
+    {
+      "post_id": "3bf0a118bc32740d1ec9",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122128354845467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122128354845467310",
+      "title": "La col·lecció de Varietats Locals del MUCBO",
+      "post_url": "https://mucbo.org/la-colleccio-de-varietats-locals-del-mucbo/",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-29T16:57:57.526668+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "3bf0a118bc32740d1ec9",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "La col·lecció de Varietats Locals del MUCBO",
+      "post_url": "https://mucbo.org/la-colleccio-de-varietats-locals-del-mucbo/",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-29T16:58:11.422032+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18122230438905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "3bf0a118bc32740d1ec9",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18121682695938362",
+      "remote_url": "https://www.instagram.com/p/DfFfWK9DRsC/",
+      "title": "La col·lecció de Varietats Locals del MUCBO",
+      "post_url": "https://mucbo.org/la-colleccio-de-varietats-locals-del-mucbo/",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-29T16:58:14.246513+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
