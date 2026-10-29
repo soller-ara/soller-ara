@@ -12,7 +12,7 @@ window.SOLLER_ARA_DATA = {
       "count": 10,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "sa-veu-soller",
@@ -23,7 +23,7 @@ window.SOLLER_ARA_DATA = {
       "count": 12,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "setmanari-soller",
@@ -34,7 +34,7 @@ window.SOLLER_ARA_DATA = {
       "count": 20,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "soller-2010",
@@ -45,7 +45,7 @@ window.SOLLER_ARA_DATA = {
       "count": 4,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "aemet-avisos-mallorca",
@@ -56,7 +56,7 @@ window.SOLLER_ARA_DATA = {
       "count": 38,
       "archived_count": 38,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "youtube-ajuntament-soller",
@@ -67,7 +67,7 @@ window.SOLLER_ARA_DATA = {
       "count": 4,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "youtube-ib3-noticies-soller",
@@ -78,7 +78,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "goib-noticies-soller",
@@ -89,7 +89,7 @@ window.SOLLER_ARA_DATA = {
       "count": 3,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "ib3-noticies-soller",
@@ -100,7 +100,7 @@ window.SOLLER_ARA_DATA = {
       "count": 6,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "dbalears-soller",
@@ -111,7 +111,7 @@ window.SOLLER_ARA_DATA = {
       "count": 1,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "diario-mallorca-soller",
@@ -122,7 +122,7 @@ window.SOLLER_ARA_DATA = {
       "count": 6,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "ultima-hora-soller",
@@ -133,7 +133,7 @@ window.SOLLER_ARA_DATA = {
       "count": 23,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "mallorca-directo-soller",
@@ -144,7 +144,7 @@ window.SOLLER_ARA_DATA = {
       "count": 1,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "tib-avisos-soller",
@@ -155,7 +155,7 @@ window.SOLLER_ARA_DATA = {
       "count": 1,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "consell-mallorca-soller",
@@ -166,7 +166,7 @@ window.SOLLER_ARA_DATA = {
       "count": 3,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "youtube-can-prunera",
@@ -177,7 +177,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "youtube-aires-sollerics",
@@ -188,7 +188,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "youtube-xeremiers-soller",
@@ -199,7 +199,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "youtube-club-volei-soller",
@@ -210,7 +210,7 @@ window.SOLLER_ARA_DATA = {
       "count": 2,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "youtube-ballades-mallorca-soller",
@@ -221,7 +221,7 @@ window.SOLLER_ARA_DATA = {
       "count": 8,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "youtube-tramuntana-xxi",
@@ -232,7 +232,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "youtube-gob-mallorca-soller",
@@ -243,7 +243,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "youtube-museu-maritim-soller",
@@ -254,7 +254,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "youtube-serra-tramuntana",
@@ -265,7 +265,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "youtube-consell-mallorca-soller",
@@ -276,7 +276,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "mucbo-noticies",
@@ -287,7 +287,7 @@ window.SOLLER_ARA_DATA = {
       "count": 10,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "can-prunera-noticies",
@@ -298,7 +298,7 @@ window.SOLLER_ARA_DATA = {
       "count": 3,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "cronica-balear-soller",
@@ -309,7 +309,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "ara-balears-soller",
@@ -320,7 +320,7 @@ window.SOLLER_ARA_DATA = {
       "count": 1,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "fora-vila-soller",
@@ -331,7 +331,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "tren-soller-noticies",
@@ -342,7 +342,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "ajuntament-fornalutx-noticies",
@@ -353,7 +353,7 @@ window.SOLLER_ARA_DATA = {
       "count": 4,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "futbol-balear-cf-soller",
@@ -364,7 +364,7 @@ window.SOLLER_ARA_DATA = {
       "count": 2,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "mancomunitat-tramuntana-soller",
@@ -375,7 +375,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "youtube-sus-mallorca-soller",
@@ -386,7 +386,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "partido-popular-soller",
@@ -397,7 +397,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "ports-ib-port-soller",
@@ -408,7 +408,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "mes-per-soller",
@@ -419,7 +419,7 @@ window.SOLLER_ARA_DATA = {
       "count": 7,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "psib-psoe-soller",
@@ -430,7 +430,7 @@ window.SOLLER_ARA_DATA = {
       "count": 1,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "uep-mallorca-soller",
@@ -441,7 +441,7 @@ window.SOLLER_ARA_DATA = {
       "count": 4,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "ies-guillem-colom-casasnoves",
@@ -452,7 +452,7 @@ window.SOLLER_ARA_DATA = {
       "count": 10,
       "retained_count": 10,
       "error": "<urlopen error timed out>",
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "ajuntament-deia-noticies",
@@ -463,7 +463,7 @@ window.SOLLER_ARA_DATA = {
       "count": 10,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "mallorcadiario-soller",
@@ -474,7 +474,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "fibwi-diario-soller",
@@ -485,7 +485,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "youtube-fibwi-diario-soller",
@@ -496,7 +496,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "gob-mallorca-noticies",
@@ -507,7 +507,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "eldiario-balears-soller",
@@ -518,7 +518,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "majorca-daily-bulletin-soller",
@@ -529,7 +529,7 @@ window.SOLLER_ARA_DATA = {
       "count": 2,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "ceip-es-puig-soller",
@@ -540,7 +540,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "retained_count": 0,
       "error": "<urlopen error timed out>",
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "sagrats-cors-soller",
@@ -551,7 +551,7 @@ window.SOLLER_ARA_DATA = {
       "count": 1,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "europa-press-balears-soller",
@@ -562,7 +562,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "mallorca-confidencial-soller",
@@ -573,7 +573,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "mallorca-global-mag-soller",
@@ -584,7 +584,7 @@ window.SOLLER_ARA_DATA = {
       "count": 2,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "esport-balear-soller",
@@ -595,7 +595,7 @@ window.SOLLER_ARA_DATA = {
       "count": 1,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     },
     {
       "source_id": "soller-ara",
@@ -603,9 +603,9 @@ window.SOLLER_ARA_DATA = {
       "source_type": "own",
       "method": "manual",
       "ok": true,
-      "count": 95,
+      "count": 96,
       "error": null,
-      "checked_at": "2026-10-29T12:07:24.707551+00:00"
+      "checked_at": "2026-10-29T14:22:34.064587+00:00"
     }
   ],
   "social_integration_status": [],
@@ -623,6 +623,160 @@ window.SOLLER_ARA_DATA = {
   ],
   "posts": [
     {
+      "id": "82cb3c3c818a5a5091cd",
+      "category": "culture",
+      "source_id": "mucbo-noticies",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_type": "institution",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-29T14:11:49+00:00",
+      "title": "Identificació de Bolets",
+      "summary": "",
+      "url": "https://mucbo.org/identificacio-de-bolets/",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "image_allowed": false,
+      "embed_type": "official_oembed",
+      "embed_url": "https://mucbo.org/identificacio-de-bolets/embed/",
+      "related_sources": []
+    },
+    {
+      "id": "3bf0a118bc32740d1ec9",
+      "category": "culture",
+      "source_id": "mucbo-noticies",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_type": "institution",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-29T13:32:41+00:00",
+      "title": "La col·lecció de Varietats Locals del MUCBO",
+      "summary": "",
+      "url": "https://mucbo.org/la-colleccio-de-varietats-locals-del-mucbo/",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "image_allowed": false,
+      "embed_type": "official_oembed",
+      "embed_url": "https://mucbo.org/la-colleccio-de-varietats-locals-del-mucbo/embed/",
+      "related_sources": []
+    },
+    {
+      "id": "f8426134912a97090845",
+      "category": "culture",
+      "source_id": "mucbo-noticies",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_type": "institution",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-29T13:32:12+00:00",
+      "title": "Anellament d’ocells",
+      "summary": "",
+      "url": "https://mucbo.org/anellament-docells/",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "image_allowed": false,
+      "embed_type": "official_oembed",
+      "embed_url": "https://mucbo.org/anellament-docells/embed/",
+      "related_sources": []
+    },
+    {
+      "id": "5967c5d882b558854304",
+      "category": "culture",
+      "source_id": "mucbo-noticies",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_type": "institution",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-29T13:31:45+00:00",
+      "title": "Taller de l’Hort a la Cuina: Tap de Cortí",
+      "summary": "",
+      "url": "https://mucbo.org/taller-de-lhort-a-la-cuina-tap-de-corti/",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "image_allowed": false,
+      "embed_type": "official_oembed",
+      "embed_url": "https://mucbo.org/taller-de-lhort-a-la-cuina-tap-de-corti/embed/",
+      "related_sources": []
+    },
+    {
+      "id": "ae7064a0d7b36d723184",
+      "category": "culture",
+      "source_id": "mucbo-noticies",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_type": "institution",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-29T13:30:21+00:00",
+      "title": "Jornada Micològica 2026",
+      "summary": "",
+      "url": "https://mucbo.org/jornada-micologica-2026/",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "image_allowed": false,
+      "embed_type": "official_oembed",
+      "embed_url": "https://mucbo.org/jornada-micologica-2026/embed/",
+      "related_sources": []
+    },
+    {
+      "id": "79b06f9b522635dab814",
+      "category": "culture",
+      "source_id": "mucbo-noticies",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_type": "institution",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-29T13:27:36+00:00",
+      "title": "Una Nit al Museu!",
+      "summary": "",
+      "url": "https://mucbo.org/una-nit-al-museu-2/",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "image_allowed": false,
+      "embed_type": "official_oembed",
+      "embed_url": "https://mucbo.org/una-nit-al-museu-2/embed/",
+      "related_sources": []
+    },
+    {
+      "id": "303483a94a90c1bf9a82",
+      "category": "culture",
+      "source_id": "mucbo-noticies",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_type": "institution",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-29T13:26:57+00:00",
+      "title": "Sortida Micològica dels Joves amb la Natura",
+      "summary": "",
+      "url": "https://mucbo.org/sortida-micologica-dels-joves-amb-la-natura/",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "image_allowed": false,
+      "embed_type": "official_oembed",
+      "embed_url": "https://mucbo.org/sortida-micologica-dels-joves-amb-la-natura/embed/",
+      "related_sources": []
+    },
+    {
       "id": "soller-ara-a0230c77a4f1cdd2",
       "category": "alerts",
       "source_id": "manual-c671fec4a9a6",
@@ -639,7 +793,72 @@ window.SOLLER_ARA_DATA = {
       "content_policy": "manual_link_reference",
       "rights_status": "no_reuse_reference_only",
       "image_allowed": false,
-      "original_url": "https://www.facebook.com/story.php?story_fbid=1425333636473536&id=100069907391489&hpir=1#"
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1425333636473536&id=100069907391489&hpir=1#",
+      "related_sources": []
+    },
+    {
+      "id": "d56243a6151a1c8d5dd3",
+      "category": "news",
+      "source_id": "setmanari-soller",
+      "source": "Setmanari Sóller",
+      "source_type": "media",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-29T13:18:00+01:00",
+      "title": "Decretats tres dies de dol oficial",
+      "summary": "",
+      "url": "https://www.elsoller.cat/soller/local/2026/10/29/354713/decretats-tres-dies-dol-oficial.html",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
+      "id": "3022cf225c29180415a4",
+      "category": "news",
+      "source_id": "sa-veu-soller",
+      "source": "Sa Veu de Sóller",
+      "source_type": "media",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-29T12:08:03+00:00",
+      "title": "El Tren de Sóller guarda un minut de silenci per les víctimes de l’accident ferroviari",
+      "summary": "",
+      "url": "https://saveu.cat/noticies/el-tren-de-soller-guarda-un-minut-de-silenci-per-les-victimes-de-laccident-ferroviari/",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "image_allowed": false,
+      "embed_type": "official_oembed",
+      "embed_url": "https://saveu.cat/noticies/el-tren-de-soller-guarda-un-minut-de-silenci-per-les-victimes-de-laccident-ferroviari/embed/",
+      "related_sources": []
+    },
+    {
+      "id": "353c2cafe791a4fe17ca",
+      "category": "news",
+      "source_id": "sa-veu-soller",
+      "source": "Sa Veu de Sóller",
+      "source_type": "media",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-29T12:01:20+00:00",
+      "title": "Un radar pedagògic i més control policial per combatre les curses a Juli Ramis",
+      "summary": "",
+      "url": "https://saveu.cat/noticies/un-radar-pedagogic-i-mes-control-policial-per-combatre-les-curses-a-juli-ramis/",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "image_allowed": false,
+      "embed_type": "official_oembed",
+      "embed_url": "https://saveu.cat/noticies/un-radar-pedagogic-i-mes-control-policial-per-combatre-les-curses-a-juli-ramis/embed/",
+      "related_sources": []
     },
     {
       "id": "c81a528c6c7bdabf2389",
@@ -841,7 +1060,7 @@ window.SOLLER_ARA_DATA = {
       "locality": "Sóller",
       "published_at": "2026-10-28T12:13:42+00:00",
       "title": "Sóller, amb les víctimes de l’accident ferroviari de Toledo",
-      "summary": "Des de l’Ajuntament de Sóller expressam el nostre condol per les persones que han perdut la vida en l’accident ferroviari d’Urda (Toledo) i traslladam tot el nostre suport als seus familiars, a les persones ferides i a…",
+      "summary": "sarrom dc., 28/10/2026 - 13:13 28-Octubre-2026 Des de l’Ajuntament de Sóller expressam el nostre condol per les persones que han perdut la vida en l’accident ferroviari d’Urda (Toledo) i traslladam tot el nostre suport…",
       "url": "https://ajsoller.net/ca/noticies/soller-amb-les-victimes-de-laccident-ferroviari-de-toledo",
       "platform": null,
       "account": null,
@@ -983,7 +1202,7 @@ window.SOLLER_ARA_DATA = {
       "locality": "Sóller",
       "published_at": "2026-10-28T08:40:11+00:00",
       "title": "Finalitza la segona edició de Les Journées del Modernisme",
-      "summary": "Tancam la segona edició de Les Journées del Modernisme amb molt bones sensacions després de tot el que hem viscut aquests dies i amb amb molta gratitud cap a totes les persones que hi han dedicat temps, idees i il·lusió…",
+      "summary": "sarrom dc., 28/10/2026 - 09:40 28-Octubre-2026 Tancam la segona edició de Les Journées del Modernisme amb molt bones sensacions després de tot el que hem viscut aquests dies i amb amb molta gratitud cap a totes les…",
       "url": "https://ajsoller.net/ca/noticies/finalitza-la-segona-edicio-de-les-journees-del-modernisme",
       "platform": null,
       "account": null,
@@ -1023,7 +1242,7 @@ window.SOLLER_ARA_DATA = {
       "locality": "Sóller",
       "published_at": "2026-10-28T08:37:46+00:00",
       "title": "Circules habitualment pel centre de Sóller? Comprova les dades del teu vehicle",
-      "summary": "Si circules per la Zona de Baixes Emissions (ZBE), et recordam la importància de comprovar que el teu vehicle està autoritzat i que les seves dades estan actualitzades. Revisa que el vehicle tengui el domicili fiscal al…",
+      "summary": "sarrom dc., 28/10/2026 - 09:37 28-Octubre-2026 Si circules per la Zona de Baixes Emissions (ZBE), et recordam la importància de comprovar que el teu vehicle està autoritzat i que les seves dades estan actualitzades…",
       "url": "https://ajsoller.net/ca/noticies/circules-habitualment-pel-centre-de-soller-comprova-les-dades-del-teu-vehicle",
       "platform": null,
       "account": null,
@@ -1137,6 +1356,28 @@ window.SOLLER_ARA_DATA = {
       "rights_status": "no_reuse_reference_only",
       "image_allowed": false,
       "original_url": "https://www.facebook.com/story.php?story_fbid=1586908653464204&id=100064352547067&hpir=1",
+      "related_sources": []
+    },
+    {
+      "id": "24e64f7d6816f8f99c18",
+      "category": "culture",
+      "source_id": "mucbo-noticies",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_type": "institution",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-27T08:23:12+00:00",
+      "title": "TARDOR ALS MUSEUS 2026: Taller «Arbres i creativitat»",
+      "summary": "",
+      "url": "https://mucbo.org/__trashed/",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "image_allowed": false,
+      "embed_type": "official_oembed",
+      "embed_url": "https://mucbo.org/__trashed/embed/",
       "related_sources": []
     },
     {
@@ -1355,7 +1596,7 @@ window.SOLLER_ARA_DATA = {
       "locality": "Sóller",
       "published_at": "2026-10-26T07:46:50+00:00",
       "title": "L’Escola de Música i Amics de la Música coneixen les sales que tendran a la seva disposició a les Escolàpies",
-      "summary": "La regidora de Cultura i Patrimoni, Antònia Frau, ha fet una visita d’obra a les Escolàpies amb representants de l’Escola de Música de Sóller i de l’associació Amics de la Música de Sóller per mostrar-los les…",
+      "summary": "sarrom dl., 26/10/2026 - 08:46 23-Octubre-2026 La regidora de Cultura i Patrimoni, Antònia Frau, ha fet una visita d’obra a les Escolàpies amb representants de l’Escola de Música de Sóller i de l’associació Amics de la…",
       "url": "https://ajsoller.net/ca/noticies/lescola-de-musica-i-amics-de-la-musica-coneixen-les-sales-que-tendran-la-seva-disposicio",
       "platform": null,
       "account": null,
@@ -1468,28 +1709,6 @@ window.SOLLER_ARA_DATA = {
       "related_sources": []
     },
     {
-      "id": "9cb9e02f10de80a586e3",
-      "category": "politics",
-      "source_id": "sa-veu-soller",
-      "source": "Sa Veu de Sóller",
-      "source_type": "media",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-10-25T08:00:00+00:00",
-      "title": "La Vila cerca un lloc per reubicarla unitat bàsica de salut del Port",
-      "summary": "",
-      "url": "https://saveu.cat/noticies/la-vila-cerca-un-lloc-per-reubicarla-unitat-basica-de-salut-del-port/",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
-      "embed_type": "official_oembed",
-      "embed_url": "https://saveu.cat/noticies/la-vila-cerca-un-lloc-per-reubicarla-unitat-basica-de-salut-del-port/embed/",
-      "related_sources": []
-    },
-    {
       "id": "ba404f4edc632371b4b6",
       "category": "alerts",
       "source_id": "setmanari-soller",
@@ -1527,28 +1746,6 @@ window.SOLLER_ARA_DATA = {
       "rights_status": "no_reuse_reference_only",
       "image_allowed": false,
       "original_url": "https://www.facebook.com/story.php?story_fbid=1621710739984836&id=100064377771793&hpir=1",
-      "related_sources": []
-    },
-    {
-      "id": "7e40110bf00a68acfb77",
-      "category": "services",
-      "source_id": "sa-veu-soller",
-      "source": "Sa Veu de Sóller",
-      "source_type": "media",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-10-24T07:00:00+00:00",
-      "title": "L’aigua de Sa Torrentera tornarà a córrer per les rentadores de l’estació",
-      "summary": "",
-      "url": "https://saveu.cat/noticies/laigua-de-sa-torrentera-tornara-a-correr-per-les-rentadores-de-lestacio/",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
-      "embed_type": "official_oembed",
-      "embed_url": "https://saveu.cat/noticies/laigua-de-sa-torrentera-tornara-a-correr-per-les-rentadores-de-lestacio/embed/",
       "related_sources": []
     },
     {
@@ -1661,7 +1858,7 @@ window.SOLLER_ARA_DATA = {
       "locality": "Sóller",
       "published_at": "2026-10-23T10:03:29+00:00",
       "title": "Ha arribat l'època de les tradicionals matances",
-      "summary": "Aquí teniu el BAN relatiu a l'inici de la campanya 2026/2027 i dels controls sanitaris obligatoris per a la detecció de la TRIQUINA. Enllaç CAIB: https://www.caib.es/sites/seguretatalimentaria/ca/la_triquinosi/",
+      "summary": "dmaimo dv., 23/10/2026 - 12:03 23-Octubre-2026 Aquí teniu el BAN relatiu a l'inici de la campanya 2026/2027 i dels controls sanitaris obligatoris per a la detecció de la TRIQUINA. Enllaç CAIB…",
       "url": "https://ajsoller.net/ca/noticies/ha-arribat-lepoca-de-les-tradicionals-matances-0",
       "platform": null,
       "account": null,
@@ -1803,7 +2000,7 @@ window.SOLLER_ARA_DATA = {
       "locality": "Sóller",
       "published_at": "2026-10-22T09:30:47+00:00",
       "title": "Sóller presenta el documental «Sóller Modernista», una mirada al patrimoni i a la història compartida del municipi",
-      "summary": "L’audiovisual forma part del projecte de la Ruta Modernista, presentat en el marc de la segona edició de les Journées del Modernisme El Centre Cultural Victòria va acollir ahir la presentació i projecció del documental…",
+      "summary": "mnicolau dj., 22/10/2026 - 11:30 20-Octubre-2026 L’audiovisual forma part del projecte de la Ruta Modernista, presentat en el marc de la segona edició de les Journées del Modernisme El Centre Cultural Victòria va acollir…",
       "url": "https://ajsoller.net/ca/noticies/soller-presenta-el-documental-soller-modernista-una-mirada-al-patrimoni-i-la-historia",
       "platform": null,
       "account": null,
@@ -2043,7 +2240,7 @@ window.SOLLER_ARA_DATA = {
       "locality": "Sóller",
       "published_at": "2026-10-21T09:42:46+00:00",
       "title": "Sóller redescobreix el seu llegat modernista",
-      "summary": "Hem donat la benvinguda a una nova edició de les Journées del Modernisme, una oportunitat per mirar amb uns altres ulls els edificis, els carrers i els detalls que formen part de la nostra història. Durant la inauguració…",
+      "summary": "sarrom dc., 21/10/2026 - 11:42 16-Octubre-2026 Hem donat la benvinguda a una nova edició de les Journées del Modernisme, una oportunitat per mirar amb uns altres ulls els edificis, els carrers i els detalls que formen…",
       "url": "https://ajsoller.net/ca/noticies/soller-redescobreix-el-seu-llegat-modernista",
       "platform": null,
       "account": null,
@@ -2083,7 +2280,7 @@ window.SOLLER_ARA_DATA = {
       "locality": "Sóller",
       "published_at": "2026-10-21T08:50:21+00:00",
       "title": "Tancaments nocturns dels túnels de sa Mola i de Sóller per manteniment",
-      "summary": "Durant les pròximes setmanes hi haurà les afectacions següents: Túnel de sa Mola ▪️ Des del 20 d’octubre fins al 23 d’octubre ▪️ Tancaments les nits dels dies laborables, de 23 a 6 h. Desviament pel Port o pel camí de sa…",
+      "summary": "sarrom dc., 21/10/2026 - 10:50 21-Octubre-2026 Durant les pròximes setmanes hi haurà les afectacions següents: Túnel de sa Mola ▪️ Des del 20 d’octubre fins al 23 d’octubre ▪️ Tancaments les nits dels dies laborables, de…",
       "url": "https://ajsoller.net/ca/noticies/tancaments-nocturns-dels-tunels-de-sa-mola-i-de-soller-manteniment",
       "platform": null,
       "account": null,
@@ -2293,28 +2490,6 @@ window.SOLLER_ARA_DATA = {
       "rights_status": "no_reuse_reference_only",
       "image_allowed": false,
       "original_url": "https://www.facebook.com/story.php?story_fbid=1577594047743728&id=100064794426084&hpir=1",
-      "related_sources": []
-    },
-    {
-      "id": "8c91c24852db99a2b24f",
-      "category": "culture",
-      "source_id": "mucbo-noticies",
-      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
-      "source_type": "institution",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-10-20T09:39:49+00:00",
-      "title": "El MUCBO ja té les etiquetes del seu vi!",
-      "summary": "",
-      "url": "https://mucbo.org/el-mucbo-ja-te-les-etiquetes-del-seu-vi/",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "link_only_no_media_license",
-      "image_allowed": false,
-      "embed_type": "official_oembed",
-      "embed_url": "https://mucbo.org/el-mucbo-ja-te-les-etiquetes-del-seu-vi/embed/",
       "related_sources": []
     },
     {
@@ -2831,26 +3006,6 @@ window.SOLLER_ARA_DATA = {
       "rights_status": "no_reuse_reference_only",
       "image_allowed": false,
       "original_url": "https://www.facebook.com/story.php?story_fbid=1565817525588039&id=100064794188146&hpir=1",
-      "related_sources": []
-    },
-    {
-      "id": "d7233051893632bdc690",
-      "category": "alerts",
-      "source_id": "setmanari-soller",
-      "source": "Setmanari Sóller",
-      "source_type": "media",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-10-18T18:54:39+02:00",
-      "title": "Suspeses les classes de demà per la DANA",
-      "summary": "",
-      "url": "https://www.elsoller.cat/soller/local/2026/10/18/354671/suspeses-les-classes-dema-per-dana.html",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
       "related_sources": []
     },
     {
@@ -3457,7 +3612,7 @@ window.SOLLER_ARA_DATA = {
       "locality": "Sóller",
       "published_at": "2026-10-16T09:55:40+00:00",
       "title": "La Unitat Bàsica de Salut Port de Sóller trasllada provisionalment l’activitat al Centre de Salut Serra Nord",
-      "summary": "El consistori valora i ja treballa amb la possibilitat de disposar d’un nou emplaçament per reubicar la UBS A partir d’avui, la Unitat Bàsica de Salut (UBS) Port de Sóller trasllada provisionalment l’activitat…",
+      "summary": "sarrom dv., 16/10/2026 - 11:55 16-Octubre-2026 El consistori valora i ja treballa amb la possibilitat de disposar d’un nou emplaçament per reubicar la UBS A partir d’avui, la Unitat Bàsica de Salut (UBS) Port de Sóller…",
       "url": "https://ajsoller.net/ca/noticies/la-unitat-basica-de-salut-port-de-soller-trasllada-provisionalment-lactivitat-al-centre-de",
       "platform": null,
       "account": null,
@@ -3577,7 +3732,7 @@ window.SOLLER_ARA_DATA = {
     },
     {
       "id": "6fef1a93a42673533b72",
-      "category": "culture",
+      "category": "news",
       "source_id": "ajuntament-soller-noticies",
       "source": "Ajuntament de Sóller",
       "source_type": "official",
@@ -3585,7 +3740,7 @@ window.SOLLER_ARA_DATA = {
       "locality": "Sóller",
       "published_at": "2026-10-16T07:35:21+00:00",
       "title": "Una nova mirada al nostre patrimoni: «Sóller Modernista»",
-      "summary": "Vos convidam a descobrir-les amb la projecció del documental «Sóller Modernista», una oportunitat per acostar-nos al nostre patrimoni i mirar amb uns altres ulls els espais que formen part del nostre dia a dia. Dimarts…",
+      "summary": "sarrom dv., 16/10/2026 - 09:35 16-Octubre-2026 Vos convidam a descobrir-les amb la projecció del documental «Sóller Modernista», una oportunitat per acostar-nos al nostre patrimoni i mirar amb uns altres ulls els espais…",
       "url": "https://ajsoller.net/ca/noticies/una-nova-mirada-al-nostre-patrimoni-soller-modernista",
       "platform": null,
       "account": null,
@@ -3826,28 +3981,6 @@ window.SOLLER_ARA_DATA = {
       "related_sources": []
     },
     {
-      "id": "36a1e7587c270b7c8620",
-      "category": "culture",
-      "source_id": "mucbo-noticies",
-      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
-      "source_type": "institution",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-10-13T13:00:20+00:00",
-      "title": "Observació d’aus a S’Albufera: Cicle d’Ornitologia 2026",
-      "summary": "",
-      "url": "https://mucbo.org/observacio-daus-a-salbufera-cloenda-del-cicle-dornitologia-2026/",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "link_only_no_media_license",
-      "image_allowed": false,
-      "embed_type": "official_oembed",
-      "embed_url": "https://mucbo.org/observacio-daus-a-salbufera-cloenda-del-cicle-dornitologia-2026/embed/",
-      "related_sources": []
-    },
-    {
       "id": "429f25024f942943fc01",
       "category": "news",
       "source_id": "ajuntament-deia-noticies",
@@ -4045,28 +4178,6 @@ window.SOLLER_ARA_DATA = {
       "rights_status": "no_reuse_reference_only",
       "image_allowed": false,
       "original_url": "https://www.facebook.com/story.php?story_fbid=1558309069664320&id=100064557255473&hpir=1",
-      "related_sources": []
-    },
-    {
-      "id": "e822519c0bec85d637c6",
-      "category": "culture",
-      "source_id": "mucbo-noticies",
-      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
-      "source_type": "institution",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-10-09T13:11:01+00:00",
-      "title": "El MUCBO estrena audioguia",
-      "summary": "",
-      "url": "https://mucbo.org/el-mucbo-estrena-audioguia/",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "link_only_no_media_license",
-      "image_allowed": false,
-      "embed_type": "official_oembed",
-      "embed_url": "https://mucbo.org/el-mucbo-estrena-audioguia/embed/",
       "related_sources": []
     },
     {
@@ -4642,72 +4753,6 @@ window.SOLLER_ARA_DATA = {
       "related_sources": []
     },
     {
-      "id": "683bbb20051a0f0e5938",
-      "category": "culture",
-      "source_id": "mucbo-noticies",
-      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
-      "source_type": "institution",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-10-05T12:26:15+00:00",
-      "title": "Els nous guies del MUCBO",
-      "summary": "",
-      "url": "https://mucbo.org/els-nous-guies-del-mucbo/",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "link_only_no_media_license",
-      "image_allowed": false,
-      "embed_type": "official_oembed",
-      "embed_url": "https://mucbo.org/els-nous-guies-del-mucbo/embed/",
-      "related_sources": []
-    },
-    {
-      "id": "3fdccd95dfee575614a2",
-      "category": "culture",
-      "source_id": "mucbo-noticies",
-      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
-      "source_type": "institution",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-10-05T12:04:54+00:00",
-      "title": "Erica multiflora",
-      "summary": "",
-      "url": "https://mucbo.org/erica-multiflora/",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "link_only_no_media_license",
-      "image_allowed": false,
-      "embed_type": "official_oembed",
-      "embed_url": "https://mucbo.org/erica-multiflora/embed/",
-      "related_sources": []
-    },
-    {
-      "id": "a74e463dc4a02a4cb8f7",
-      "category": "culture",
-      "source_id": "mucbo-noticies",
-      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
-      "source_type": "institution",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-10-05T08:55:51+00:00",
-      "title": "El MUCBO inaugura l’exposició «RADIOLARIS i ALTRES BITXOS» de Maria Abando",
-      "summary": "",
-      "url": "https://mucbo.org/el-mucbo-inaugura-lexposicio-radiolaris-i-altres-bitxos-de-maria-abando/",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "link_only_no_media_license",
-      "image_allowed": false,
-      "embed_type": "official_oembed",
-      "embed_url": "https://mucbo.org/el-mucbo-inaugura-lexposicio-radiolaris-i-altres-bitxos-de-maria-abando/embed/",
-      "related_sources": []
-    },
-    {
       "id": "soller-ara-ce3feda8c0a51520",
       "category": "agenda",
       "source_id": "manual-13e44f9445ef",
@@ -5007,28 +5052,6 @@ window.SOLLER_ARA_DATA = {
       "related_sources": []
     },
     {
-      "id": "cb049076edc66abf508b",
-      "category": "culture",
-      "source_id": "mucbo-noticies",
-      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
-      "source_type": "institution",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-10-02T10:33:59+00:00",
-      "title": "Beudanticeras revoili",
-      "summary": "",
-      "url": "https://mucbo.org/beudanticeras-revoili/",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "link_only_no_media_license",
-      "image_allowed": false,
-      "embed_type": "official_oembed",
-      "embed_url": "https://mucbo.org/beudanticeras-revoili/embed/",
-      "related_sources": []
-    },
-    {
       "id": "soller-ara-0fb3a9b47c46a335",
       "category": "politics",
       "source_id": "soller-ara",
@@ -5299,28 +5322,6 @@ window.SOLLER_ARA_DATA = {
       "content_policy": "short_factual_excerpt",
       "rights_status": "public_source_reviewed",
       "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "3fe0f86d22e1f647e80c",
-      "category": "culture",
-      "source_id": "mucbo-noticies",
-      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
-      "source_type": "institution",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-10-01T11:02:52+00:00",
-      "title": "Donació d’una pell de vell marí (Monachus monachus) al MUCBO",
-      "summary": "",
-      "url": "https://mucbo.org/donacio-duna-pell-de-vell-mari-monachus-monachus-al-mucbo/",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "link_only_no_media_license",
-      "image_allowed": false,
-      "embed_type": "official_oembed",
-      "embed_url": "https://mucbo.org/donacio-duna-pell-de-vell-mari-monachus-monachus-al-mucbo/embed/",
       "related_sources": []
     },
     {
@@ -6756,6 +6757,6 @@ window.SOLLER_ARA_DATA = {
       "related_sources": []
     }
   ],
-  "sources_checked_at": "2026-10-29T12:07:24.707551+00:00",
-  "fetched_at": "2026-10-29T12:52:26.491363+00:00"
+  "sources_checked_at": "2026-10-29T14:22:34.064587+00:00",
+  "fetched_at": "2026-10-29T14:22:34.064587+00:00"
 };
