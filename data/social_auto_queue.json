@@ -1,26 +1,45 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-29T16:57:27.762283+00:00",
+  "generated_at": "2026-10-29T19:07:32.138921+00:00",
   "entries": [
     {
-      "post_id": "3bf0a118bc32740d1ec9",
-      "title": "La col·lecció de Varietats Locals del MUCBO",
+      "post_id": "2a21961bfb358aeaba98",
+      "title": "Eros danzó en el Jardín de las Hespérides",
       "summary": "",
-      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
-      "source_id": "mucbo-noticies",
+      "source": "Can Prunera · Actualitat",
+      "source_id": "can-prunera-noticies",
       "source_type": "institution",
       "category": "culture",
-      "language": "ca",
-      "published_at": "2026-10-29T13:32:41+00:00",
-      "original_url": "https://mucbo.org/la-colleccio-de-varietats-locals-del-mucbo/",
+      "language": "es",
+      "published_at": "2026-10-29T17:04:56+00:00",
+      "original_url": "https://canprunera.com/eros-danzo-en-el-jardin-de-las-hesperides-santiago-auseron-y-nerantzi-ofrecen-un-canto-a-la-vida-en-can-prunera/?utm_source=rss&utm_medium=rss&utm_campaign=eros-danzo-en-el-jardin-de-las-hesperides-santiago-auseron-y-nerantzi-ofrecen-un-canto-a-la-vida-en-can-prunera",
       "content_policy": "headline_date_link_only",
       "rights_status": "link_only_no_media_license",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/3bf0a118bc32740d1ec9.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/2a21961bfb358aeaba98.jpg"
+    },
+    {
+      "post_id": "f8426134912a97090845",
+      "title": "Anellament d’ocells",
+      "summary": "",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "source_type": "institution",
+      "category": "culture",
+      "language": "ca",
+      "published_at": "2026-10-29T13:32:12+00:00",
+      "original_url": "https://mucbo.org/anellament-docells/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/f8426134912a97090845.jpg"
     }
   ]
 }
