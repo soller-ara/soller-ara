@@ -1,45 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-29T16:12:20.970642+00:00",
+  "generated_at": "2026-10-29T16:57:27.762283+00:00",
   "entries": [
     {
-      "post_id": "79e40b407324441e4aca",
-      "title": "Conferència: Els Bolets Comestibles",
+      "post_id": "3bf0a118bc32740d1ec9",
+      "title": "La col·lecció de Varietats Locals del MUCBO",
       "summary": "",
       "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
       "source_id": "mucbo-noticies",
       "source_type": "institution",
       "category": "culture",
       "language": "ca",
-      "published_at": "2026-10-29T14:22:45+00:00",
-      "original_url": "https://mucbo.org/conferencia-els-bolets-comestibles/",
+      "published_at": "2026-10-29T13:32:41+00:00",
+      "original_url": "https://mucbo.org/la-colleccio-de-varietats-locals-del-mucbo/",
       "content_policy": "headline_date_link_only",
       "rights_status": "link_only_no_media_license",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/79e40b407324441e4aca.jpg"
-    },
-    {
-      "post_id": "353c2cafe791a4fe17ca",
-      "title": "Un radar pedagògic i més control policial per combatre les curses a Juli Ramis",
-      "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-10-29T12:01:20+00:00",
-      "original_url": "https://saveu.cat/noticies/un-radar-pedagogic-i-mes-control-policial-per-combatre-les-curses-a-juli-ramis/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/353c2cafe791a4fe17ca.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/3bf0a118bc32740d1ec9.jpg"
     }
   ]
 }
