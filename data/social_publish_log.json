@@ -12779,6 +12779,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-30T06:23:20.623245+00:00",
       "error": ""
+    },
+    {
+      "post_id": "70bf9484370780dd0423",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122128564449467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122128564449467310",
+      "title": "Fer una passa endavant per defensar ca nostra",
+      "post_url": "https://mespersoller.cat/fer-una-passa-endavant-per-defensar-ca-nostra/",
+      "source": "MÉS per Sóller",
+      "source_id": "mes-per-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-30T08:27:18.365972+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "70bf9484370780dd0423",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Fer una passa endavant per defensar ca nostra",
+      "post_url": "https://mespersoller.cat/fer-una-passa-endavant-per-defensar-ca-nostra/",
+      "source": "MÉS per Sóller",
+      "source_id": "mes-per-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-30T08:27:37.223057+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18122358187905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "70bf9484370780dd0423",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18133335592685510",
+      "remote_url": "https://www.instagram.com/p/DfHJtf4HFZs/",
+      "title": "Fer una passa endavant per defensar ca nostra",
+      "post_url": "https://mespersoller.cat/fer-una-passa-endavant-per-defensar-ca-nostra/",
+      "source": "MÉS per Sóller",
+      "source_id": "mes-per-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-30T08:27:40.870207+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
