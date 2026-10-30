@@ -487,10 +487,10 @@ function nowPriority(post) {
 }
 
 function iconFor(category) {
+  if (category === "agenda") return `<svg width="52" height="52" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="8" y="10" width="32" height="30" rx="4"/><path d="M16 6v8M32 6v8M8 20h32M22 27h10M22 33h7"/><circle cx="16" cy="27" r="1.4" fill="currentColor" stroke="none"/><circle cx="16" cy="33" r="1.4" fill="currentColor" stroke="none"/></svg>`;
   return {
     alerts: "🚨",
     services: "🛠️",
-    agenda: "📅",
     culture: "🎭",
     sports: "🏅",
     commerce: "🏪",
