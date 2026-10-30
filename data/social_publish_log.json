@@ -12734,6 +12734,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-29T19:08:26.461535+00:00",
       "error": ""
+    },
+    {
+      "post_id": "9b2ac8237415ba8a8c92",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122128535427467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122128535427467310",
+      "title": "Restaurem el patrimoni modernista",
+      "post_url": "https://mespersoller.cat/restaurem-el-patrimoni-modernista/",
+      "source": "MÉS per Sóller",
+      "source_id": "mes-per-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-30T06:23:08.123945+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "9b2ac8237415ba8a8c92",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Restaurem el patrimoni modernista",
+      "post_url": "https://mespersoller.cat/restaurem-el-patrimoni-modernista/",
+      "source": "MÉS per Sóller",
+      "source_id": "mes-per-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-30T06:23:17.401044+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18122340088905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "9b2ac8237415ba8a8c92",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18464261059191439",
+      "remote_url": "https://www.instagram.com/p/DfG7flxINva/",
+      "title": "Restaurem el patrimoni modernista",
+      "post_url": "https://mespersoller.cat/restaurem-el-patrimoni-modernista/",
+      "source": "MÉS per Sóller",
+      "source_id": "mes-per-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-30T06:23:20.623245+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
