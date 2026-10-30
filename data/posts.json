@@ -1,7 +1,7 @@
 {
   "version": 41,
   "generator_version": "0.61",
-  "source_count": 55,
+  "source_count": 56,
   "source_status": [
     {
       "source_id": "ajuntament-soller-noticies",
@@ -12,7 +12,7 @@
       "count": 10,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "sa-veu-soller",
@@ -23,7 +23,7 @@
       "count": 12,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "setmanari-soller",
@@ -34,7 +34,7 @@
       "count": 20,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "soller-2010",
@@ -45,7 +45,7 @@
       "count": 4,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "aemet-avisos-mallorca",
@@ -56,29 +56,29 @@
       "count": 38,
       "archived_count": 38,
       "error": null,
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "youtube-ajuntament-soller",
       "name": "Ajuntament de Sóller · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 4,
-      "retained_count": 4,
-      "error": "HTTP Error 404: Not Found",
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "archived_count": 0,
+      "error": null,
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "youtube-ib3-noticies-soller",
       "name": "IB3 Notícies · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "retained_count": 0,
-      "error": "HTTP Error 404: Not Found",
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "archived_count": 0,
+      "error": null,
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "goib-noticies-soller",
@@ -89,7 +89,7 @@
       "count": 3,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "ib3-noticies-soller",
@@ -97,10 +97,10 @@
       "source_type": "media",
       "method": "html_search",
       "ok": true,
-      "count": 6,
+      "count": 3,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "dbalears-soller",
@@ -111,7 +111,7 @@
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "diario-mallorca-soller",
@@ -122,7 +122,7 @@
       "count": 6,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "ultima-hora-soller",
@@ -133,7 +133,7 @@
       "count": 23,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "mallorca-directo-soller",
@@ -144,7 +144,7 @@
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "tib-avisos-soller",
@@ -155,7 +155,7 @@
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "consell-mallorca-soller",
@@ -166,117 +166,117 @@
       "count": 3,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "youtube-can-prunera",
       "name": "Can Prunera · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "retained_count": 0,
-      "error": "HTTP Error 404: Not Found",
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "archived_count": 0,
+      "error": null,
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "youtube-aires-sollerics",
       "name": "Aires Sollerics · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "retained_count": 0,
-      "error": "HTTP Error 404: Not Found",
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "archived_count": 0,
+      "error": null,
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "youtube-xeremiers-soller",
       "name": "Xeremiers de Sóller · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "retained_count": 0,
-      "error": "HTTP Error 404: Not Found",
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "archived_count": 0,
+      "error": null,
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "youtube-club-volei-soller",
       "name": "Club Vòlei Sóller · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 2,
-      "retained_count": 2,
-      "error": "HTTP Error 404: Not Found",
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "archived_count": 0,
+      "error": null,
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "youtube-ballades-mallorca-soller",
       "name": "Ballades A Mallorca · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 8,
-      "retained_count": 8,
-      "error": "HTTP Error 404: Not Found",
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "archived_count": 0,
+      "error": null,
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "youtube-tramuntana-xxi",
       "name": "Tramuntana XXI · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "retained_count": 0,
-      "error": "HTTP Error 404: Not Found",
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "archived_count": 0,
+      "error": null,
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "youtube-gob-mallorca-soller",
       "name": "GOB Mallorca · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "retained_count": 0,
-      "error": "HTTP Error 404: Not Found",
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "archived_count": 0,
+      "error": null,
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "youtube-museu-maritim-soller",
       "name": "Museu Marítim de Mallorca · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "retained_count": 0,
-      "error": "HTTP Error 404: Not Found",
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "archived_count": 0,
+      "error": null,
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "youtube-serra-tramuntana",
       "name": "Serra de Tramuntana Patrimoni Mundial · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "retained_count": 0,
-      "error": "HTTP Error 404: Not Found",
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "archived_count": 0,
+      "error": null,
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "youtube-consell-mallorca-soller",
       "name": "Consell de Mallorca · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "retained_count": 0,
-      "error": "HTTP Error 404: Not Found",
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "archived_count": 0,
+      "error": null,
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "mucbo-noticies",
@@ -287,7 +287,7 @@
       "count": 10,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "can-prunera-noticies",
@@ -298,7 +298,7 @@
       "count": 4,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "cronica-balear-soller",
@@ -309,7 +309,7 @@
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "ara-balears-soller",
@@ -320,7 +320,7 @@
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "fora-vila-soller",
@@ -331,7 +331,7 @@
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "tren-soller-noticies",
@@ -342,7 +342,7 @@
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "ajuntament-fornalutx-noticies",
@@ -353,7 +353,7 @@
       "count": 4,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "futbol-balear-cf-soller",
@@ -364,7 +364,7 @@
       "count": 2,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "mancomunitat-tramuntana-soller",
@@ -375,18 +375,18 @@
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "youtube-sus-mallorca-soller",
       "name": "SUS Mallorca · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "retained_count": 0,
-      "error": "HTTP Error 404: Not Found",
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "archived_count": 0,
+      "error": null,
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "partido-popular-soller",
@@ -397,7 +397,7 @@
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "ports-ib-port-soller",
@@ -408,7 +408,7 @@
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "mes-per-soller",
@@ -416,10 +416,10 @@
       "source_type": "political_party",
       "method": "rss",
       "ok": true,
-      "count": 8,
+      "count": 9,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "psib-psoe-soller",
@@ -430,7 +430,7 @@
       "count": 1,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "uep-mallorca-soller",
@@ -441,7 +441,7 @@
       "count": 4,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "ies-guillem-colom-casasnoves",
@@ -452,7 +452,7 @@
       "count": 10,
       "retained_count": 10,
       "error": "<urlopen error timed out>",
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "ajuntament-deia-noticies",
@@ -463,7 +463,7 @@
       "count": 9,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "mallorcadiario-soller",
@@ -474,7 +474,7 @@
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "fibwi-diario-soller",
@@ -485,18 +485,18 @@
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "youtube-fibwi-diario-soller",
       "name": "Fibwi Diario · YouTube",
       "source_type": "social",
       "method": "youtube_channel",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "retained_count": 0,
-      "error": "HTTP Error 404: Not Found",
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "archived_count": 0,
+      "error": null,
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "gob-mallorca-noticies",
@@ -507,7 +507,7 @@
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "eldiario-balears-soller",
@@ -518,7 +518,7 @@
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "majorca-daily-bulletin-soller",
@@ -529,7 +529,7 @@
       "count": 2,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "ceip-es-puig-soller",
@@ -540,7 +540,7 @@
       "count": 0,
       "retained_count": 0,
       "error": "<urlopen error timed out>",
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "sagrats-cors-soller",
@@ -551,7 +551,7 @@
       "count": 1,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "europa-press-balears-soller",
@@ -562,7 +562,7 @@
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "mallorca-confidencial-soller",
@@ -573,7 +573,7 @@
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "mallorca-global-mag-soller",
@@ -584,7 +584,7 @@
       "count": 2,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "esport-balear-soller",
@@ -595,7 +595,18 @@
       "count": 1,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
+    },
+    {
+      "source_id": "ajuntament-deia-agenda",
+      "name": "Ajuntament de Deià · Agenda",
+      "source_type": "institution",
+      "method": "rss",
+      "ok": true,
+      "count": 2,
+      "archived_count": 0,
+      "error": null,
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     },
     {
       "source_id": "soller-ara",
@@ -603,74 +614,18 @@
       "source_type": "own",
       "method": "manual",
       "ok": true,
-      "count": 96,
+      "count": 97,
       "error": null,
-      "checked_at": "2026-10-30T06:22:40.747709+00:00"
+      "checked_at": "2026-10-30T08:26:56.827695+00:00"
     }
   ],
   "social_integration_status": [],
-  "post_count": 293,
+  "post_count": 294,
   "related_pair_count": 0,
   "errors": [
     {
-      "source_id": "youtube-ajuntament-soller",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-ib3-noticies-soller",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-can-prunera",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-aires-sollerics",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-xeremiers-soller",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-club-volei-soller",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-ballades-mallorca-soller",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-tramuntana-xxi",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-gob-mallorca-soller",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-museu-maritim-soller",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-serra-tramuntana",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-consell-mallorca-soller",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "source_id": "youtube-sus-mallorca-soller",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
       "source_id": "ies-guillem-colom-casasnoves",
       "error": "<urlopen error timed out>"
-    },
-    {
-      "source_id": "youtube-fibwi-diario-soller",
-      "error": "HTTP Error 404: Not Found"
     },
     {
       "source_id": "ceip-es-puig-soller",
@@ -695,7 +650,30 @@
       "content_policy": "manual_link_reference",
       "rights_status": "no_reuse_reference_only",
       "image_allowed": false,
-      "original_url": "https://www.facebook.com/story.php?story_fbid=1587607756742357&id=100064794426084&hpir=1#"
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1587607756742357&id=100064794426084&hpir=1#",
+      "related_sources": []
+    },
+    {
+      "id": "70bf9484370780dd0423",
+      "category": "politics",
+      "source_id": "mes-per-soller",
+      "source": "MÉS per Sóller",
+      "source_type": "political_party",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-30T06:50:09+00:00",
+      "title": "Fer una passa endavant per defensar ca nostra",
+      "summary": "",
+      "url": "https://mespersoller.cat/fer-una-passa-endavant-per-defensar-ca-nostra/",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "official_party_source",
+      "image_allowed": false,
+      "embed_type": "official_oembed",
+      "embed_url": "https://mespersoller.cat/fer-una-passa-endavant-per-defensar-ca-nostra/embed/",
+      "related_sources": []
     },
     {
       "id": "9b2ac8237415ba8a8c92",
@@ -2312,17 +2290,17 @@
       "related_sources": []
     },
     {
-      "id": "fb9c0b721da7920b41a7",
-      "category": "politics",
+      "id": "30f3690da301aa1157cc",
+      "category": "services",
       "source_id": "ajuntament-soller-noticies",
       "source": "Ajuntament de Sóller",
       "source_type": "official",
       "language": "ca",
       "locality": "Sóller",
-      "published_at": "2026-10-21T09:44:05+00:00",
-      "title": "10 anys fent equip per la igualtat",
-      "summary": "sarrom dc., 21/10/2026 - 11:44 16-Octubre-2026 La Gala del Futbol para la Igualdad ha celebrat la seva desena edició, una ocasió per reconèixer la feina de les persones que defensen un esport amb les mateixes…",
-      "url": "https://ajsoller.net/ca/noticies/10-anys-fent-equip-la-igualtat",
+      "published_at": "2026-10-21T09:42:46+00:00",
+      "title": "Sóller redescobreix el seu llegat modernista",
+      "summary": "sarrom dc., 21/10/2026 - 11:42 16-Octubre-2026 Hem donat la benvinguda a una nova edició de les Journées del Modernisme, una oportunitat per mirar amb uns altres ulls els edificis, els carrers i els detalls que formen…",
+      "url": "https://ajsoller.net/ca/noticies/soller-redescobreix-el-seu-llegat-modernista",
       "platform": null,
       "account": null,
       "media_type": null,
@@ -4040,6 +4018,46 @@
       "related_sources": []
     },
     {
+      "id": "6694b4d515111e9a4907",
+      "category": "agenda",
+      "source_id": "ajuntament-deia-agenda",
+      "source": "Ajuntament de Deià · Agenda",
+      "source_type": "institution",
+      "language": "ca",
+      "locality": "Deià",
+      "published_at": "2026-10-13T11:31:19+00:00",
+      "title": "TALLER “BRODANT LA MEMÒRIA. Dones guardianes de la terra, el cor del canvi”",
+      "summary": "",
+      "url": "https://ajdeia.net/ca/agenda/taller-brodant-la-memoria-dones-guardianes-de-la-terra-el-cor-del-canvi",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
+      "id": "e06e7cc201b0bb045817",
+      "category": "agenda",
+      "source_id": "ajuntament-deia-agenda",
+      "source": "Ajuntament de Deià · Agenda",
+      "source_type": "institution",
+      "language": "ca",
+      "locality": "Deià",
+      "published_at": "2026-10-13T11:29:22+00:00",
+      "title": "CLUB DE LECTURA",
+      "summary": "",
+      "url": "https://ajdeia.net/ca/agenda/club-de-lectura-5",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
       "id": "429f25024f942943fc01",
       "category": "news",
       "source_id": "ajuntament-deia-noticies",
@@ -4546,26 +4564,6 @@
       "media_type": null,
       "content_policy": "headline_date_link_only",
       "rights_status": "link_only_no_media_license",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "85583b91f1810ed1e333",
-      "category": "news",
-      "source_id": "ib3-noticies-soller",
-      "source": "IB3 Notícies",
-      "source_type": "media",
-      "language": "ca",
-      "locality": "Sóller / Serra de Tramuntana",
-      "published_at": "2026-10-07T12:00:00+00:00",
-      "title": "IB3N | Denúncia davant la Fiscalia per una presumpta contaminació del torrent de Solleric",
-      "summary": "",
-      "url": "https://ib3.org/denuncia-davant-la-fiscalia-per-una-presumpta-contaminacio-del-torrent-de-solleric",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
       "image_allowed": false,
       "related_sources": []
     },
@@ -6168,26 +6166,6 @@
       "related_sources": []
     },
     {
-      "id": "58829026096dc6d5d78d",
-      "category": "news",
-      "source_id": "ib3-noticies-soller",
-      "source": "IB3 Notícies",
-      "source_type": "media",
-      "language": "ca",
-      "locality": "Sóller / Serra de Tramuntana",
-      "published_at": "2026-09-18T12:00:00+00:00",
-      "title": "IB3N | Bel Fullana invoca el Club Miseria al Solleric per la Nit de l’Art",
-      "summary": "",
-      "url": "https://ib3.org/bel-fullana-invoca-el-club-miseria-al-solleric-per-la-nit-de-lart",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
       "id": "2c1bff89fcc07f7b2e18",
       "category": "services",
       "source_id": "ies-guillem-colom-casasnoves",
@@ -6776,6 +6754,6 @@
       "related_sources": []
     }
   ],
-  "sources_checked_at": "2026-10-30T06:22:40.747709+00:00",
-  "fetched_at": "2026-10-30T07:34:06.395090+00:00"
+  "sources_checked_at": "2026-10-30T08:26:56.827695+00:00",
+  "fetched_at": "2026-10-30T08:26:56.827695+00:00"
 }
