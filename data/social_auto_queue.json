@@ -1,102 +1,45 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-30T13:07:16.086638+00:00",
+  "generated_at": "2026-10-30T15:22:38.278460+00:00",
   "entries": [
     {
-      "post_id": "887a2b309dababaf8ab0",
-      "title": "Obert al trànsit el Camí de Cas Jurat",
+      "post_id": "81789e22d0da83a4b2f1",
+      "title": "Fins a 23 comunicacions a les Jornades d’Estudis",
       "summary": "",
       "source": "Setmanari Sóller",
       "source_id": "setmanari-soller",
       "source_type": "media",
-      "category": "services",
+      "category": "culture",
       "language": "ca",
-      "published_at": "2026-10-30T13:06:00+01:00",
-      "original_url": "https://www.elsoller.cat/soller/local/2026/10/30/354735/obert-transit-cami-cas-jurat.html",
+      "published_at": "2026-10-30T12:30:00+01:00",
+      "original_url": "https://www.elsoller.cat/soller/societat-i-cultura/2026/10/30/354719/fins-comunicacions-les-jornades-estudis.html",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/887a2b309dababaf8ab0.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/81789e22d0da83a4b2f1.jpg"
     },
     {
-      "post_id": "3cadf21dbcbf3c2ddc10",
-      "title": "El Consell de Mallorca aprueba el proyecto de las obras de mejora de la seguridad del túnel de sa Mola, en el Port de Sóller",
-      "summary": "",
-      "source": "Consell de Mallorca",
-      "source_id": "consell-mallorca-soller",
-      "source_type": "official",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-10-30T12:00:00+00:00",
-      "original_url": "https://www.conselldemallorca.es/es/todas-las-noticias/-/asset_publisher/bqOupoVYvgPA/content/el-consell-de-mallorca-aprova-el-projecte-de-les-obres-de-millora-de-la-seguretat-del-t%C3%BAnel-de-sa-mola-al-port-de-s%C3%B3ller/695139",
-      "content_policy": "short_factual_excerpt",
-      "rights_status": "official_public_source",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/3cadf21dbcbf3c2ddc10.jpg"
-    },
-    {
-      "post_id": "ad2280109d25a4a2ce7b",
-      "title": "El camí de Cas Jurat ja està obert al trànsit després de deu mesos tancat",
+      "post_id": "6fd8b18d8cf461412f82",
+      "title": "El GOB denuncia una activitat de slackline sense permís al Puig Major",
       "summary": "",
       "source": "Sa Veu de Sóller",
       "source_id": "sa-veu-soller",
       "source_type": "media",
-      "category": "services",
+      "category": "culture",
       "language": "ca",
-      "published_at": "2026-10-30T11:50:00+00:00",
-      "original_url": "https://saveu.cat/noticies/el-cami-de-cas-jurat-ja-esta-obert-al-transit-despres-de-deu-mesos-tancat/",
+      "published_at": "2026-10-30T11:20:40+00:00",
+      "original_url": "https://saveu.cat/noticies/el-gob-denuncia-una-activitat-de-slackline-sense-permis-al-puig-major/",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/ad2280109d25a4a2ce7b.jpg"
-    },
-    {
-      "post_id": "486e0860cb0b6078dc22",
-      "title": "La reforma del túnel de sa Mola en el Port de Sóller costará 7 millones de euros",
-      "summary": "",
-      "source": "Última Hora",
-      "source_id": "ultima-hora-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "es",
-      "published_at": "2026-10-30T12:46:00+01:00",
-      "original_url": "https://www.ultimahora.es/noticias/part-forana/2026/10/30/2739753/reforma-del-tunel-mola-port-soller-costara-millones-euros.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/486e0860cb0b6078dc22.jpg"
-    },
-    {
-      "post_id": "732c234c9a9bdd77e70a",
-      "title": "Las obras de mejora del túnel de sa Mola, en el Port de Sóller, comenzarán en el primer trimestre de 2027",
-      "summary": "",
-      "source": "Mallorca Global Mag · Sóller",
-      "source_id": "mallorca-global-mag-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "es",
-      "published_at": "2026-10-30T10:45:04+00:00",
-      "original_url": "https://mallorcaglobalmag.es/obras-tunel-sa-mola-port-soller-2027/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "link_only_no_media_license",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/732c234c9a9bdd77e70a.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/6fd8b18d8cf461412f82.jpg"
     }
   ]
 }
