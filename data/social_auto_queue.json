@@ -1,45 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-30T15:55:29.881939+00:00",
+  "generated_at": "2026-10-30T18:11:13.363515+00:00",
   "entries": [
     {
-      "post_id": "4eee380261d2a373905b",
-      "title": "El Consell de Mallorca aprova millorar la seguretat del túnel de Sa Mola",
+      "post_id": "0e5f7dc8f15f0b8f80da",
+      "title": "L’IES alerta de canals anònims de mems contra docents i alumnes",
       "summary": "",
       "source": "Setmanari Sóller",
       "source_id": "setmanari-soller",
       "source_type": "media",
-      "category": "news",
+      "category": "alerts",
       "language": "ca",
-      "published_at": "2026-10-30T12:10:00+01:00",
-      "original_url": "https://www.elsoller.cat/soller/local/2026/10/30/354733/consell-mallorca-aprova-projecte-les-obres-millora-seguretat-del-tunel-mola.html",
+      "published_at": "2026-10-30T17:00:00+01:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/10/30/354721/ies-alerta-canals-anonims-mems-contra-docents-alumnes.html",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/4eee380261d2a373905b.jpg"
-    },
-    {
-      "post_id": "4c1778a9ac86e56a0484",
-      "title": "La Vila destina 400.000 euros a pavimentar tres quilómetres de vies",
-      "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
-      "source_type": "media",
-      "category": "services",
-      "language": "ca",
-      "published_at": "2026-10-30T11:00:00+00:00",
-      "original_url": "https://saveu.cat/noticies/la-vila-destina-400-000-euros-a-pavimentar-tres-quilometres-de-vies/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/4c1778a9ac86e56a0484.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/0e5f7dc8f15f0b8f80da.jpg"
     }
   ]
 }
