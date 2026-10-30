@@ -12824,6 +12824,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-30T08:27:40.870207+00:00",
       "error": ""
+    },
+    {
+      "post_id": "b9878029f898c7df9893",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122128569843467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122128569843467310",
+      "title": "“La tradició de dur flors al cementeri es menté viva, però han canviat les preferències”",
+      "post_url": "https://saveu.cat/entrevistes/la-tradicio-de-dur-flors-al-cementeri-es-mente-viva-pero-han-canviat-les-preferencies/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-30T08:37:27.463163+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "b9878029f898c7df9893",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "“La tradició de dur flors al cementeri es menté viva, però han canviat les preferències”",
+      "post_url": "https://saveu.cat/entrevistes/la-tradicio-de-dur-flors-al-cementeri-es-mente-viva-pero-han-canviat-les-preferencies/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-30T08:37:36.439673+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18122359483905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "b9878029f898c7df9893",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18114647384168662",
+      "remote_url": "https://www.instagram.com/p/DfHK3TxAdj2/",
+      "title": "“La tradició de dur flors al cementeri es menté viva, però han canviat les preferències”",
+      "post_url": "https://saveu.cat/entrevistes/la-tradicio-de-dur-flors-al-cementeri-es-mente-viva-pero-han-canviat-les-preferencies/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-30T08:37:39.842850+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
