@@ -609,7 +609,7 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 292,
+  "post_count": 293,
   "related_pair_count": 0,
   "errors": [
     {
@@ -678,6 +678,25 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "posts": [
+    {
+      "id": "soller-ara-4fd1e8d94150343c",
+      "category": "alerts",
+      "source_id": "manual-13e44f9445ef",
+      "source": "Policia Local de Sóller",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-30T07:34:06.386311+00:00",
+      "show_in_now": true,
+      "content_type": "social_link",
+      "title": "",
+      "summary": "",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-4fd1e8d94150343c.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": false,
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1587607756742357&id=100064794426084&hpir=1#"
+    },
     {
       "id": "9b2ac8237415ba8a8c92",
       "category": "politics",
@@ -6758,5 +6777,5 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "sources_checked_at": "2026-10-30T06:22:40.747709+00:00",
-  "fetched_at": "2026-10-30T06:22:40.747709+00:00"
+  "fetched_at": "2026-10-30T07:34:06.395090+00:00"
 };
