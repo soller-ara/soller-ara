@@ -13364,6 +13364,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-30T15:56:33.705058+00:00",
       "error": ""
+    },
+    {
+      "post_id": "0e5f7dc8f15f0b8f80da",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122128689843467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122128689843467310",
+      "title": "L’IES alerta de canals anònims de mems contra docents i alumnes",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/30/354721/ies-alerta-canals-anonims-mems-contra-docents-alumnes.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-30T18:11:49.197379+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "0e5f7dc8f15f0b8f80da",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "L’IES alerta de canals anònims de mems contra docents i alumnes",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/30/354721/ies-alerta-canals-anonims-mems-contra-docents-alumnes.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-30T18:12:03.727382+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18122458291905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "0e5f7dc8f15f0b8f80da",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "17897549214680916",
+      "remote_url": "https://www.instagram.com/p/DfIMl_7lwz5/",
+      "title": "L’IES alerta de canals anònims de mems contra docents i alumnes",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/30/354721/ies-alerta-canals-anonims-mems-contra-docents-alumnes.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-30T18:12:06.893273+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
