@@ -1,26 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-30T18:11:13.363515+00:00",
-  "entries": [
-    {
-      "post_id": "0e5f7dc8f15f0b8f80da",
-      "title": "L’IES alerta de canals anònims de mems contra docents i alumnes",
-      "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
-      "source_type": "media",
-      "category": "alerts",
-      "language": "ca",
-      "published_at": "2026-10-30T17:00:00+01:00",
-      "original_url": "https://www.elsoller.cat/soller/local/2026/10/30/354721/ies-alerta-canals-anonims-mems-contra-docents-alumnes.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/0e5f7dc8f15f0b8f80da.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
