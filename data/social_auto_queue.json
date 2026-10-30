@@ -1,26 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-30T08:26:56.957422+00:00",
+  "generated_at": "2026-10-30T08:37:06.383154+00:00",
   "entries": [
     {
-      "post_id": "70bf9484370780dd0423",
-      "title": "Fer una passa endavant per defensar ca nostra",
+      "post_id": "b9878029f898c7df9893",
+      "title": "“La tradició de dur flors al cementeri es menté viva, però han canviat les preferències”",
       "summary": "",
-      "source": "MÉS per Sóller",
-      "source_id": "mes-per-soller",
-      "source_type": "political_party",
-      "category": "politics",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "source_type": "media",
+      "category": "commerce",
       "language": "ca",
-      "published_at": "2026-10-30T06:50:09+00:00",
-      "original_url": "https://mespersoller.cat/fer-una-passa-endavant-per-defensar-ca-nostra/",
+      "published_at": "2026-10-30T08:27:18+00:00",
+      "original_url": "https://saveu.cat/entrevistes/la-tradicio-de-dur-flors-al-cementeri-es-mente-viva-pero-han-canviat-les-preferencies/",
       "content_policy": "headline_date_link_only",
-      "rights_status": "official_party_source",
+      "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/70bf9484370780dd0423.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/b9878029f898c7df9893.jpg"
     }
   ]
 }
