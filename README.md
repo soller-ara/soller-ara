@@ -359,3 +359,8 @@ Pendiente de conexión:
 - probar login y acciones reales desde el panel.
 
 La interfaz pública puede existir en GitHub Pages, pero ninguna acción administrativa funciona hasta que el backend privado esté conectado.
+
+
+## Actualització de fonts · 30 d’octubre de 2026
+
+S’afegeix el RSS oficial de l’agenda de Deià amb les dates originals i categoria Agenda; Mallorcadiario disposa de vista prèvia oficial. IB3 incorpora el filtre territorial explícit per excloure el Solleric de Palma i el torrent de Solleric sense perdre les referències reals a Sóller. El catàleg té 55 fonts externes (56 amb Sóller Ara). Es conserven el cron i les regles socials. La incidència de lectura dels feeds de YouTube continua oberta i no es presenta com a resolta. Detalls i comprovacions a [SOURCES_REVIEW.md](SOURCES_REVIEW.md).

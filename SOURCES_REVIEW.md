@@ -140,3 +140,24 @@ No es descarreguen ni s'autoritza la reutilització de fotografies: `image_allow
 Mallorca Global Mag i UEP! Mallorca queden amb la política anterior: anuncien oEmbed però les respostes comprovades inclouen `X-Frame-Options: SAMEORIGIN`. Ports IB no s'activa perquè el seu endpoint oEmbed ha respost amb un 401. No s'han confirmat vistes oficials equivalents en les mostres d'IB3 i Mallorca Directo.
 
 La llista explícita d'opt-in de la prova de recopilació s'actualitza a deu fonts. No es modifica el codi del recopilador, la interfície, les regles socials ni el cron.
+
+
+## Actualització del 30 d’octubre de 2026
+
+- El catàleg incorpora **Ajuntament de Deià · Agenda**, mitjançant el RSS oficial anunciat a la seva agenda (`https://ajdeia.net/ca/eventos/rss.xml`). Les dues entrades comprovades conserven la publicació original del 13/10/2026, no la data de l’activitat. Categoria Agenda, màxim de 60 dies, titular i enllaç; no es copien textos ni fotografies. La distribució social té la mateixa regla explícita de Facebook/Instagram que la resta de fonts, amb el límit vigent de 6 hores: aquestes incorporacions antigues no es reenvien com a novetats. Total: 55 fonts externes, 56 estats amb les publicacions pròpies.
+- **Mallorcadiario** activa `official_oembed`, després de verificar el descobriment natiu, el seu iframe, la càrrega real de la fotografia al navegador i el camí generat per l’aplicació. La política d’imatge continua sense permetre’n la còpia. No es modifica el feed, la selecció territorial ni la distribució social. Són onze proveïdors amb activació explícita.
+- **IB3 web** passa pel filtre territorial sobre el titular original, igual que les altres fonts generals. També es reconeix el nom propi «al Solleric» de Palma, diferenciant-lo del gentilici «al solleric Joan». Es conserven les notícies amb una altra menció local real, els gentilicis i Aires Sollerics. La prova amb les dades actuals descarta només les dues referències alienes ja diagnosticades. La mateixa selecció s’aplica a les entrades conservades quan una font falla.
+
+### YouTube: incidència externa encara oberta
+
+Els canals oficials de l’Ajuntament i IB3 responen i anuncien els mateixos identificadors i feeds configurats, però `/feeds/videos.xml?channel_id=...` continua retornant 404. No s’han canviat els identificadors, esborrat les entrades anteriors ni substituït els canals per llistes de vídeos parcials.
+
+La ruta `/xml/feeds/videos.xml` de la documentació de notificacions de Google respon 200 però és un document estàtic sense entrades ni identificador del canal: **no és una recuperació de la recopilació** i no s’ha activat. Les fonts continuen mostrant el seu error real i conservant les entrades anteriors dins del límit temporal. Una alternativa amb YouTube Data API requereix la configuració de credencials i quota de Google; no s’han creat credencials ni introduït serveis intermediaris.
+
+Referència oficial: https://developers.google.com/youtube/data/guides/push_notifications
+
+### Abast preservat i comprovacions
+
+No es modifiquen el cron, el Worker, els límits socials (5 per execució, una per font, 6 hores), la moderació, els registres de confirmació, les publicacions manuals ni l’aspecte de la web. Amics de la Terra i Deixalles queden com a candidates; no s’activen sense coincidències locals seleccionables verificades.
+
+Les 135 proves Python passen, incloses dues regressions noves per la selecció d’IB3 i les dates originals de l’agenda. Les comprovacions de la interfície i de les regles de distribució es mantenen. No es creen publicacions de prova en producció.

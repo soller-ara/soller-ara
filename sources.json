@@ -1,5 +1,5 @@
 {
-  "version": 42,
+  "version": 43,
   "sources": [
     {
       "id": "ajuntament-soller-noticies",
@@ -169,7 +169,21 @@
       "image_policy": "disabled_until_rights_verified",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
-      "allowed_host": "ib3.org"
+      "allowed_host": "ib3.org",
+      "include_keywords": [
+        "Sóller",
+        "Soller",
+        "Port de Sóller",
+        "Port de Soller",
+        "Vall de Sóller",
+        "Vall de Soller",
+        "Fornalutx",
+        "Biniaraix",
+        "Deià",
+        "Deia",
+        "Serra de Tramuntana"
+      ],
+      "filter_title_only": true
     },
     {
       "id": "dbalears-soller",
@@ -1135,10 +1149,10 @@
       "locality": "Sóller / Port de Sóller / Fornalutx / Biniaraix / Deià / Serra de Tramuntana",
       "max_age_days": 60,
       "enabled": true,
-      "image_policy": "disabled_until_rights_verified",
+      "image_policy": "official_oembed",
       "content_policy": "headline_date_link_only",
       "rights_status": "link_only_no_media_license",
-      "verified_at": "2026-10-09",
+      "verified_at": "2026-10-30",
       "id": "mallorcadiario-soller",
       "name": "Mallorcadiario · Sóller",
       "type": "rss",
@@ -1505,6 +1519,25 @@
       "verification_url": "https://esportbalear.com/",
       "verification_method": "public_local_search_feed_and_original_dated_entries",
       "verified_at": "2026-10-23"
+    },
+    {
+      "id": "ajuntament-deia-agenda",
+      "name": "Ajuntament de Deià · Agenda",
+      "type": "rss",
+      "url": "https://ajdeia.net/ca/eventos/rss.xml",
+      "language": "ca",
+      "locality": "Deià",
+      "source_type": "institution",
+      "max_items": 40,
+      "max_age_days": 60,
+      "enabled": true,
+      "force_category": "agenda",
+      "image_policy": "disabled_until_rights_verified",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "verification_url": "https://ajdeia.net/ca/agenda",
+      "verification_method": "official_agenda_feed_original_publication_date",
+      "verified_at": "2026-10-30"
     }
   ]
 }

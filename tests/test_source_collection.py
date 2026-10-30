@@ -210,7 +210,44 @@ class SourceCollectionTests(unittest.TestCase):
             'fora-vila-soller', 'sa-veu-soller', 'esport-balear-soller',
             'gob-mallorca-noticies', 'sagrats-cors-soller',
             'mes-per-soller', 'psib-psoe-soller',
+            'mallorcadiario-soller',
         })
+
+    def test_ib3_filters_venues_without_losing_demonyms_or_real_local_references(self):
+        configured = json.loads((ROOT / "sources.json").read_text(encoding="utf-8"))["sources"]
+        source = next(item for item in configured if item["id"] == "ib3-noticies-soller")
+        titles = [
+            "IB3N | Denúncia per contaminació del torrent de Solleric",
+            "IB3N | Bel Fullana invoca el Club Miseria al Solleric per la Nit de l’Art",
+            "Exposició al Casal Solleric de Palma",
+            "Una notícia de Palma",
+            "Un premi al solleric Joan",
+            "Retrat del solleric Joan",
+            "Les preocupacions dels sollerics",
+            "Aires Sollerics actuen a Barcelona",
+            "Artistes de Sóller exposen al Solleric",
+            "L'artista solleric exposa al Casal Solleric",
+            "Una millora a Fornalutx",
+        ]
+        posts = [{"title": title, "summary": "Sóller", "url": "https://ib3.org/soller"} for title in titles]
+        self.assertEqual(collector.filter_by_keywords(source, posts), posts[4:])
+
+    def test_deia_agenda_uses_publication_date_and_does_not_copy_media(self):
+        configured = json.loads((ROOT / "sources.json").read_text(encoding="utf-8"))["sources"]
+        source = next(item for item in configured if item["id"] == "ajuntament-deia-agenda")
+        feed = b'''<rss><channel><item><title>CLUB DE LECTURA</title>
+          <link>https://ajdeia.net/ca/agenda/club-de-lectura-5</link>
+          <pubDate>Tue, 13 Oct 2026 11:29:22 +0000</pubDate>
+          <description>Activitat 24/11/2026. Text i fotografia de la font.</description>
+          </item></channel></rss>'''
+        post = collector.parse_rss(feed, source)[0]
+        self.assertEqual(post["published_at"], "2026-10-13T11:29:22+00:00")
+        self.assertEqual(post["category"], "agenda")
+        self.assertEqual(post["summary"], "")
+        self.assertFalse(post["image_allowed"])
+        with patch.object(collector, "datetime", wraps=datetime) as clock:
+            clock.now.return_value = datetime(2026, 12, 20, tzinfo=timezone.utc)
+            self.assertEqual(collector.filter_by_max_age(source, [post]), [])
 
 
 class NewPublicSourceTests(unittest.TestCase):

@@ -1484,8 +1484,11 @@ def filter_by_keywords(source: dict, posts: list[dict]) -> list[dict]:
         r"(?<!\w)(?:" + "|".join(re.escape(keyword) for keyword in keywords) + r")(?!\w)"
     )
     nonlocal_solleric = re.compile(
-        r"\b(?:casal|torrent(?:e)?)[\s_-]+(?:(?:de|del)[\s_-]+)?solleric\b"
+        r"\b(?:casal|torrent(?:e)?)[\s_-]+(?:(?:de|del)[\s_-]+)?solleric\b", re.I
     )
+    # El nom propi «al Solleric» també designa el centre de Palma.
+    # Es distingeix del gentilici en minúscula: «un premi al solleric Joan».
+    nonlocal_solleric_venue = re.compile(r"\b(?:[Aa]l|[Dd]el)\s+Solleric\b")
 
     filtered: list[dict] = []
     for post in posts:
@@ -1495,12 +1498,13 @@ def filter_by_keywords(source: dict, posts: list[dict]) -> list[dict]:
         fields = ["title"] if title_only else ["title", "summary", "url"]
         haystack = unicodedata.normalize("NFC", " ".join(
             str(post.get(field) or "") for field in fields
-        )).casefold()
+        ))
         if has_soller_keyword:
             # Només retiram el nom ambigu; una altra referència real a Sóller
             # dins el mateix titular continua sent una coincidència vàlida.
             haystack = nonlocal_solleric.sub(" ", haystack)
-        if locality_pattern.search(haystack):
+            haystack = nonlocal_solleric_venue.sub(" ", haystack)
+        if locality_pattern.search(haystack.casefold()):
             filtered.append(post)
     return filtered
 

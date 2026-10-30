@@ -1,5 +1,5 @@
 {
-  "version": 14,
+  "version": 15,
   "enabled": true,
   "platforms": {
     "facebook": true,
@@ -231,6 +231,10 @@
       "instagram": true
     },
     "esport-balear-soller": {
+      "facebook": true,
+      "instagram": true
+    },
+    "ajuntament-deia-agenda": {
       "facebook": true,
       "instagram": true
     }
