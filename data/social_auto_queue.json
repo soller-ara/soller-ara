@@ -1,45 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-10-31T09:07:24.220493+00:00",
+  "generated_at": "2026-10-31T11:21:42.784362+00:00",
   "entries": [
     {
-      "post_id": "63ef3eae4f3353debfe2",
-      "title": "Més alerta del mal estat del drac modernistade Can Torrens",
-      "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
-      "source_type": "media",
-      "category": "alerts",
-      "language": "ca",
-      "published_at": "2026-10-31T08:00:00+00:00",
-      "original_url": "https://saveu.cat/noticies/mes-alerta-del-mal-estat-del-drac-modernistade-can-torrens/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/63ef3eae4f3353debfe2.jpg"
-    },
-    {
-      "post_id": "5f1b9c70c43eb9bc3b64",
-      "title": "La Vila asfaltarà deu carrers amb una inversió de 400.000 euros",
+      "post_id": "fc15a1f9bd18cc864561",
+      "title": "La demanda d’habitatge públic gairebé es triplica en un any",
       "summary": "",
       "source": "Setmanari Sóller",
       "source_id": "setmanari-soller",
       "source_type": "media",
-      "category": "services",
+      "category": "news",
       "language": "ca",
       "published_at": "2026-10-31T09:00:00+01:00",
-      "original_url": "https://www.elsoller.cat/soller/local/2026/10/31/354725/vila-asfaltara-deu-carrers-amb-inversio-400000-euros.html",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/10/31/354723/demanda-habitatge-public-gairebe-triplica-any.html",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/5f1b9c70c43eb9bc3b64.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/fc15a1f9bd18cc864561.jpg"
     }
   ]
 }
