@@ -13499,6 +13499,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-10-31T09:08:31.164336+00:00",
       "error": ""
+    },
+    {
+      "post_id": "fc15a1f9bd18cc864561",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122128880391467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122128880391467310",
+      "title": "La demanda d’habitatge públic gairebé es triplica en un any",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/31/354723/demanda-habitatge-public-gairebe-triplica-any.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-31T11:24:04.982446+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "fc15a1f9bd18cc864561",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "La demanda d’habitatge públic gairebé es triplica en un any",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/31/354723/demanda-habitatge-public-gairebe-triplica-any.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-31T11:24:13.149160+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18122624728905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "fc15a1f9bd18cc864561",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18149481355541718",
+      "remote_url": "https://www.instagram.com/p/DfKCulJFx4S/",
+      "title": "La demanda d’habitatge públic gairebé es triplica en un any",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/10/31/354723/demanda-habitatge-public-gairebe-triplica-any.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-10-31T11:24:15.608786+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
