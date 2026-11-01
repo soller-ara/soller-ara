@@ -1,6 +1,45 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-11-01T08:51:26.973873+00:00",
+  "entries": [
+    {
+      "post_id": "f63436be2bd48223ccff",
+      "title": "El procés de desertització de la Serra ha començat",
+      "summary": "",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-11-01T08:00:00+00:00",
+      "original_url": "https://saveu.cat/noticies/comencam-el-proces-de-desertitzacio/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/f63436be2bd48223ccff.jpg"
+    },
+    {
+      "post_id": "94f5a7838a39209caa73",
+      "title": "Santiago Auserón omple Can Prunera amb una doble sessió",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "culture",
+      "language": "ca",
+      "published_at": "2026-11-01T09:00:00+01:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/11/01/354729/santiago-auseron-omple-can-prunera-amb-doble-sessio.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/94f5a7838a39209caa73.jpg"
+    }
+  ]
 }
