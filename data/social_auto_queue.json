@@ -1,26 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-01T15:52:23.518695+00:00",
-  "entries": [
-    {
-      "post_id": "3dd02f6381a777515bb8",
-      "title": "Denuncien l’Ajuntament de Sóller davant la Junta Electoral per un vídeo sobre les Escolàpies",
-      "summary": "",
-      "source": "ARA Balears",
-      "source_id": "ara-balears-soller",
-      "source_type": "media",
-      "category": "services",
-      "language": "ca",
-      "published_at": "2026-11-01T15:09:10+00:00",
-      "original_url": "https://www.arabalears.cat/politica/ara-mes-denuncia-l-ajuntament-soller-davant-junta-electoral-video-escolapies_1_5896834.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/3dd02f6381a777515bb8.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
