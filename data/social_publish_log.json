@@ -13724,6 +13724,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-11-01T11:22:13.978686+00:00",
       "error": ""
+    },
+    {
+      "post_id": "3dd02f6381a777515bb8",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122129372253467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122129372253467310",
+      "title": "Denuncien l’Ajuntament de Sóller davant la Junta Electoral per un vídeo sobre les Escolàpies",
+      "post_url": "https://www.arabalears.cat/politica/ara-mes-denuncia-l-ajuntament-soller-davant-junta-electoral-video-escolapies_1_5896834.html",
+      "source": "ARA Balears",
+      "source_id": "ara-balears-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-01T15:52:43.834645+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "3dd02f6381a777515bb8",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Denuncien l’Ajuntament de Sóller davant la Junta Electoral per un vídeo sobre les Escolàpies",
+      "post_url": "https://www.arabalears.cat/politica/ara-mes-denuncia-l-ajuntament-soller-davant-junta-electoral-video-escolapies_1_5896834.html",
+      "source": "ARA Balears",
+      "source_id": "ara-balears-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-01T15:53:02.875174+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18122946331905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "3dd02f6381a777515bb8",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18099136043428119",
+      "remote_url": "https://www.instagram.com/p/DfNGRiolVPp/",
+      "title": "Denuncien l’Ajuntament de Sóller davant la Junta Electoral per un vídeo sobre les Escolàpies",
+      "post_url": "https://www.arabalears.cat/politica/ara-mes-denuncia-l-ajuntament-soller-davant-junta-electoral-video-escolapies_1_5896834.html",
+      "source": "ARA Balears",
+      "source_id": "ara-balears-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-01T15:53:06.901665+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
