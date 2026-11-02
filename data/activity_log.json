@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "8e286aca0309d2d0",
+      "timestamp": "2026-11-02T16:43:35.656456+00:00",
+      "action": "reclassify",
+      "area": "moderation",
+      "target_id": "71a31909648f3f6dfc72",
+      "title": "Elegides les 162 persones que hauran de presentar-se als col.legis electorals el 29N",
+      "detail": "Acción de moderación completada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "8dac7f8f7bd024d6",
       "timestamp": "2026-11-02T16:42:36.755450+00:00",
       "action": "reclassify",
