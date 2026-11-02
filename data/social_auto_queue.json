@@ -1,26 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-02T18:13:59.074453+00:00",
-  "entries": [
-    {
-      "post_id": "71a31909648f3f6dfc72",
-      "title": "Elegides les 162 persones que hauran de presentar-se als col.legis electorals el 29N",
-      "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-11-02T14:35:38+00:00",
-      "original_url": "https://saveu.cat/noticies/elegides-les-162-persones-que-hauran-de-presentar-se-als-col-legis-electorals-el-29n/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/71a31909648f3f6dfc72.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
