@@ -13994,6 +13994,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-11-02T12:07:55.936720+00:00",
       "error": ""
+    },
+    {
+      "post_id": "a32a2cbacf5ad8b68aad",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122129639367467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122129639367467310",
+      "title": "Feim Nadal entre tots!",
+      "post_url": "https://ajsoller.net/ca/noticies/feim-nadal-entre-tots",
+      "source": "Ajuntament de Sóller",
+      "source_id": "ajuntament-soller-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-02T14:21:59.557937+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "a32a2cbacf5ad8b68aad",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Feim Nadal entre tots!",
+      "post_url": "https://ajsoller.net/ca/noticies/feim-nadal-entre-tots",
+      "source": "Ajuntament de Sóller",
+      "source_id": "ajuntament-soller-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-02T14:22:13.003633+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18123156796905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "a32a2cbacf5ad8b68aad",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "17952317439339462",
+      "remote_url": "https://www.instagram.com/p/DfPgrN4l2Ex/",
+      "title": "Feim Nadal entre tots!",
+      "post_url": "https://ajsoller.net/ca/noticies/feim-nadal-entre-tots",
+      "source": "Ajuntament de Sóller",
+      "source_id": "ajuntament-soller-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-02T14:22:16.265115+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
