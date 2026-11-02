@@ -647,7 +647,7 @@ window.SOLLER_ARA_DATA = {
   "posts": [
     {
       "id": "44b6e7c90110399525e2",
-      "category": "sports",
+      "category": "politics",
       "source_id": "setmanari-soller",
       "source": "Setmanari Sóller",
       "source_type": "media",
@@ -6853,5 +6853,5 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "sources_checked_at": "2026-11-02T16:37:11.404805+00:00",
-  "fetched_at": "2026-11-02T16:37:11.404805+00:00"
+  "fetched_at": "2026-11-02T16:42:36.678460+00:00"
 };
