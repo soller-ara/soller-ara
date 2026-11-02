@@ -620,7 +620,7 @@
     }
   ],
   "social_integration_status": [],
-  "post_count": 297,
+  "post_count": 298,
   "related_pair_count": 0,
   "errors": [
     {
@@ -645,6 +645,25 @@
     }
   ],
   "posts": [
+    {
+      "id": "soller-ara-58089602eaf02077",
+      "category": "services",
+      "source_id": "manual-4f785079a49c",
+      "source": "Som joves",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-11-02T12:25:52.751509+00:00",
+      "show_in_now": true,
+      "content_type": "social_link",
+      "title": "",
+      "summary": "",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-58089602eaf02077.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": false,
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1593773206111082&id=100064352547067&hpir=1#"
+    },
     {
       "id": "de027aec9840503e6ca7",
       "category": "news",
@@ -6833,5 +6852,5 @@
     }
   ],
   "sources_checked_at": "2026-11-02T12:06:46.789975+00:00",
-  "fetched_at": "2026-11-02T12:06:46.789975+00:00"
+  "fetched_at": "2026-11-02T12:25:52.760490+00:00"
 }
