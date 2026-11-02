@@ -1,67 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-02T12:06:46.957806+00:00",
+  "generated_at": "2026-11-02T14:21:38.971839+00:00",
   "entries": [
     {
-      "post_id": "de027aec9840503e6ca7",
-      "title": "L'ajuntament de Sóller és denunciat davant la Junta Electoral",
-      "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-11-02T11:59:20+01:00",
-      "original_url": "https://www.elsoller.cat/soller/local/2026/11/02/354737/ajuntament-soller-denunciat-davant-junta-electoral.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/de027aec9840503e6ca7.jpg"
-    },
-    {
-      "post_id": "fee30a1d2db8a96b3283",
-      "title": "Ple extraordinari de l'Ajuntament de Sóller, celebrada el 2/11/2026",
-      "summary": "Vídeo publicat per Ajuntament de Sóller · YouTube relacionat amb una sessió plenària o activitat municipal.",
-      "source": "Ajuntament de Sóller · YouTube",
-      "source_id": "youtube-ajuntament-soller",
-      "source_type": "social",
-      "category": "agenda",
-      "language": "ca",
-      "published_at": "2026-11-02T10:22:15+00:00",
-      "original_url": "https://www.youtube.com/watch?v=sx8ojFCBrok",
-      "content_policy": "generated_social_summary",
-      "rights_status": "platform_embed",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/fee30a1d2db8a96b3283.jpg"
-    },
-    {
-      "post_id": "2f7dd4c8dc1968933369",
-      "title": "Aviso. Nivel amarillo. Lluvias. Sierra Tramontana",
-      "summary": "Aviso de precipitación acumulada en una hora de nivel amarillo de 10:00 03-11-2026 CET (UTC+1) a 23:59 03-11-2026 CET (UTC+1).",
-      "source": "AEMET · Serra de Tramuntana",
-      "source_id": "aemet-avisos-mallorca",
+      "post_id": "a32a2cbacf5ad8b68aad",
+      "title": "Feim Nadal entre tots!",
+      "summary": "sarrom dl., 02/11/2026 - 12:56 02-Novembre-2026 Des d’avui, obrim el termini perquè les entitats, associacions i qualsevol persona que vulgui organitzar una activitat durant aquestes festes ens facin arribar les seves…",
+      "source": "Ajuntament de Sóller",
+      "source_id": "ajuntament-soller-noticies",
       "source_type": "official",
-      "category": "alerts",
-      "language": "es",
-      "published_at": "2026-11-02T10:11:39+00:00",
-      "alert_status": "scheduled",
-      "alert_valid_from": "2026-11-03T09:00:00+00:00",
-      "alert_valid_until": "2026-11-03T22:59:00+00:00",
-      "original_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261102101139_AFAZ645401PRP10323.xml",
+      "category": "culture",
+      "language": "ca",
+      "published_at": "2026-11-02T11:56:34+00:00",
+      "original_url": "https://ajsoller.net/ca/noticies/feim-nadal-entre-tots",
       "content_policy": "short_factual_excerpt",
-      "rights_status": "reuse_authorized_with_attribution",
+      "rights_status": "public_source_reviewed",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/2f7dd4c8dc1968933369.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/a32a2cbacf5ad8b68aad.jpg"
     }
   ]
 }
