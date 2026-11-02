@@ -14174,6 +14174,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-11-02T16:38:58.092963+00:00",
       "error": ""
+    },
+    {
+      "post_id": "71a31909648f3f6dfc72",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122129680551467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122129680551467310",
+      "title": "Elegides les 162 persones que hauran de presentar-se als col.legis electorals el 29N",
+      "post_url": "https://saveu.cat/noticies/elegides-les-162-persones-que-hauran-de-presentar-se-als-col-legis-electorals-el-29n/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-02T18:14:22.881276+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "71a31909648f3f6dfc72",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Elegides les 162 persones que hauran de presentar-se als col.legis electorals el 29N",
+      "post_url": "https://saveu.cat/noticies/elegides-les-162-persones-que-hauran-de-presentar-se-als-col-legis-electorals-el-29n/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-02T18:14:39.829183+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18123200599905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "71a31909648f3f6dfc72",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18641259223040787",
+      "remote_url": "https://www.instagram.com/p/DfP7RoamJNL/",
+      "title": "Elegides les 162 persones que hauran de presentar-se als col.legis electorals el 29N",
+      "post_url": "https://saveu.cat/noticies/elegides-les-162-persones-que-hauran-de-presentar-se-als-col-legis-electorals-el-29n/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-02T18:14:44.329289+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
