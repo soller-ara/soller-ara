@@ -1,45 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-03T20:07:36.736913+00:00",
-  "entries": [
-    {
-      "post_id": "e631794b91a9f00d133e",
-      "title": "Pedro Olalla y Santiago Auserón realizan un viaje sonoro por la filosofía musical de Grecia",
-      "summary": "",
-      "source": "Can Prunera · Actualitat",
-      "source_id": "can-prunera-noticies",
-      "source_type": "institution",
-      "category": "culture",
-      "language": "es",
-      "published_at": "2026-11-03T18:38:12+00:00",
-      "original_url": "https://canprunera.com/pedro-olalla-y-santiago-auseron-realizan-un-viaje-sonoro-por-la-filosofia-musical-de-grecia/?utm_source=rss&utm_medium=rss&utm_campaign=pedro-olalla-y-santiago-auseron-realizan-un-viaje-sonoro-por-la-filosofia-musical-de-grecia",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "link_only_no_media_license",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/e631794b91a9f00d133e.jpg"
-    },
-    {
-      "post_id": "91399fc94c1fd2134b18",
-      "title": "Reforçada la seguretat contra despreniments a la carretera del Port",
-      "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
-      "source_type": "media",
-      "category": "services",
-      "language": "ca",
-      "published_at": "2026-11-03T14:24:30+00:00",
-      "original_url": "https://saveu.cat/noticies/reforcada-la-seguretat-contra-despreniments-a-la-carretera-del-port/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/91399fc94c1fd2134b18.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
