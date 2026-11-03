@@ -364,3 +364,18 @@ La interfaz pública puede existir en GitHub Pages, pero ninguna acción adminis
 ## Actualització de fonts · 30 d’octubre de 2026
 
 S’afegeix el RSS oficial de l’agenda de Deià amb les dates originals i categoria Agenda; Mallorcadiario disposa de vista prèvia oficial. IB3 incorpora el filtre territorial explícit per excloure el Solleric de Palma i el torrent de Solleric sense perdre les referències reals a Sóller. El catàleg té 55 fonts externes (56 amb Sóller Ara). Es conserven el cron i les regles socials. La incidència de lectura dels feeds de YouTube continua oberta i no es presenta com a resolta. Detalls i comprovacions a [SOURCES_REVIEW.md](SOURCES_REVIEW.md).
+
+
+## Recuperación de fuentes · 3 de noviembre de 2026
+
+Free News API exige autenticación desde el 01/11/2026. Para Diario de Mallorca y Crónica Balear, crear una clave en el **plan Free** y guardarla en GitHub, repositorio `soller-ara/soller-ara`, en **Settings → Secrets and variables → Actions → New repository secret**, con el nombre exacto **`FREENEWSAPI_KEY`**. No ponerla en el código, en `sources.json`, en una URL ni en el chat. El workflow de recopilación la recibe como variable privada; no requiere actualizar Cloudflare.
+
+Las búsquedas mantienen los seis términos territoriales originales y comparten la consulta entre los dos medios. Se conserva únicamente titular, fecha original, idioma y enlace. El presupuesto persistente de `data/freenewsapi_state.json` permite tres solicitudes por hora de media, acumula hasta seis para recuperar revisiones retrasadas y detiene la API al llegar a 2.700 solicitudes en el mes natural. Una simulación de 31 días con revisión horaria consume 2.235 solicitudes; las revisiones manuales usan el mismo presupuesto. El resto de fuentes sigue revisándose con su programación actual. La caché publica las fechas reales de sus consultas en los metadatos de estado y no contiene credenciales.
+
+Si falta la clave, es incorrecta, la API limita el acceso o el registro de cuota es ilegible, estas dos fuentes mantienen un error explícito y conservan las referencias anteriores dentro del límite de 60 días. No se reinicia el contador para forzar nuevas consultas. La recuperación efectiva queda pendiente de añadir la clave y comprobar una ejecución real autenticada.
+
+YouTube reintenta hasta tres veces los 404 transitorios y valida el canal del feed Atom (con o sin el prefijo `UC` en sus metadatos). Un 200 genérico sin canal no cuenta como recuperación; los fallos persistentes siguen visibles y conservan las entradas anteriores. La prueba de lectura del 03/11 recuperó los 14 feeds antes del despliegue, por lo que esa recuperación espontánea no se atribuye al cambio.
+
+Mallorca Directo devuelve HTTP 410 tanto en la portada como en la sección de Sóller. Se mantiene su URL y su error visible con una explicación de página retirada, pendiente de una alternativa verificable. No se sustituye por noticias antiguas ni se desactiva para mejorar el contador. Los centros educativos siguen presentando fallos externos de disponibilidad.
+
+Documentación del proveedor: https://freenewsapi.ai/docs/quickstart · https://freenewsapi.ai/docs/search · https://freenewsapi.ai/pricing

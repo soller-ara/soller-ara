@@ -2,6 +2,7 @@ import importlib.util
 import json
 import tempfile
 import unittest
+from urllib.error import HTTPError
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from unittest.mock import patch
@@ -14,6 +15,41 @@ spec.loader.exec_module(collector)
 
 
 class SourceCollectionTests(unittest.TestCase):
+    def test_authenticated_shared_search_keeps_original_dates_and_local_rules(self):
+        now = datetime.now(timezone.utc)
+        with tempfile.TemporaryDirectory() as temp:
+            folder = Path(temp)
+            sources = [{"id": host, "name": host, "type": "freenewsapi_search", "host": host,
+                        "query_terms": ["Sóller"], "max_age_days": 60,
+                        "include_keywords": ["Sóller", "Soller"], "source_type": "media",
+                        "content_policy": "headline_date_link_only"}
+                       for host in ("www.diariodemallorca.es", "cronicabalear.es")]
+            (folder / "sources.json").write_text(json.dumps({"sources": sources}))
+            items = [{"url": "https://" + source["host"] + "/" + suffix,
+                      "title": title, "published_at": date.isoformat(), "lang": "ca"}
+                     for source in sources for suffix, title, date in [
+                         ("valid", "Una notícia de Sóller", now - timedelta(hours=2)),
+                         ("old", "Una notícia de Sóller", now - timedelta(days=61)),
+                         ("wrong", "Una exposició al Casal Solleric de Palma", now),
+                         ("future", "Una notícia de Sóller", now + timedelta(days=1)),
+                     ]]
+            with patch.multiple(collector, SOURCES_FILE=folder / "sources.json",
+                                OUTPUT_FILE=folder / "posts.json", JS_OUTPUT_FILE=folder / "posts.js",
+                                MANUAL_POSTS_FILE=folder / "manual.json", MODERATION_FILE=folder / "moderation.json",
+                                FREENEWSAPI_STATE_FILE=folder / "api-state.json"), \
+                 patch.dict("os.environ", {"FREENEWSAPI_KEY": "unit-test-key"}), \
+                 patch.object(collector.FreeNewsAPIClient, "_request", return_value=items) as request, \
+                 patch.object(collector, "fetch_optional_meta_social_sources", return_value=([], [], [])):
+                self.assertEqual(collector.main(), 0)
+            result = json.loads((folder / "posts.json").read_text())
+            self.assertEqual(request.call_count, 1)
+            self.assertEqual(len(result["posts"]), 2)
+            self.assertTrue(all(x["url"].endswith("/valid") for x in result["posts"]))
+            self.assertTrue(all(x["published_at"] == (now - timedelta(hours=2)).isoformat() for x in result["posts"]))
+            self.assertTrue(all(x["summary"] == "" and x["image_allowed"] is False for x in result["posts"]))
+            self.assertTrue(all(x["ok"] for x in result["source_status"]))
+            self.assertNotIn("unit-test-key", (folder / "api-state.json").read_text())
+
     def test_aemet_filters_zone_before_limiting_rss_items(self):
         source = {"id": "aemet", "name": "AEMET", "type": "aemet_alerts",
                   "url": "https://example.test/rss", "filter_zone_codes": ["645401"], "max_items": 2}
@@ -171,10 +207,11 @@ class SourceCollectionTests(unittest.TestCase):
         self.assertIn("sessió plenària", collector.social_summary_from_title(municipal, "Ple ordinari"))
 
     def test_youtube_retains_original_metadata_without_copying_description_or_image(self):
-        source = {"id": "youtube-cultural", "name": "Entitat cultural", "url": "https://www.youtube.com/feeds/videos.xml",
+        source = {"id": "youtube-cultural", "name": "Entitat cultural", "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCcultural",
                   "type": "youtube_channel", "source_type": "social", "platform": "YouTube",
                   "account": "@cultural", "image_policy": "embed_only", "content_policy": "generated_social_summary"}
-        feed = b'''<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+        feed = b'''<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/"
+          xmlns:yt="http://www.youtube.com/xml/schemas/2015"><yt:channelId>cultural</yt:channelId>
           <entry><title>Concert complet a Soller</title><published>2026-09-16T18:00:00Z</published>
           <link rel="alternate" href="https://www.youtube.com/watch?v=abcdefghijk"/>
           <media:group><media:description>Text original llarg que no s'ha de copiar.</media:description>
@@ -188,6 +225,39 @@ class SourceCollectionTests(unittest.TestCase):
         self.assertFalse(post["image_allowed"])
         self.assertNotIn("Text original", post["summary"])
         self.assertNotIn("media_url", post)
+
+    def test_youtube_retries_transient_404_but_other_sources_do_not(self):
+        from unittest.mock import MagicMock
+        url = "https://www.youtube.com/feeds/videos.xml?channel_id=UCcultural"
+        response = MagicMock()
+        response.__enter__.return_value = response
+        response.read.return_value = b"recovered"
+        response.headers.get_content_charset.return_value = "utf-8"
+        with patch.object(collector, "urlopen", side_effect=[HTTPError(url, 404, "Not Found", {}, None), response]) as request, \
+             patch.object(collector.time, "sleep"):
+            self.assertEqual(collector.fetch_bytes(url, "application/atom+xml", retry_not_found=True)[0], b"recovered")
+            self.assertEqual(request.call_count, 2)
+        with patch.object(collector, "urlopen", side_effect=HTTPError(url, 404, "Not Found", {}, None)) as request, \
+             patch.object(collector.time, "sleep"):
+            with self.assertRaises(HTTPError):
+                collector.fetch_bytes(url, "text/html")
+            self.assertEqual(request.call_count, 1)
+
+    def test_youtube_persistent_404_remains_an_error_after_bounded_retries(self):
+        url = "https://www.youtube.com/feeds/videos.xml?channel_id=UCcultural"
+        with patch.object(collector, "urlopen", side_effect=HTTPError(url, 404, "Not Found", {}, None)) as request, \
+             patch.object(collector.time, "sleep"):
+            with self.assertRaises(HTTPError):
+                collector.fetch_bytes(url, "application/atom+xml", retry_not_found=True)
+            self.assertEqual(request.call_count, 3)
+
+    def test_youtube_rejects_generic_or_wrong_channel_feed_even_with_http_200(self):
+        source = {"url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCcultural"}
+        for feed in [b'<feed xmlns="http://www.w3.org/2005/Atom"/>',
+                     b'<feed xmlns="http://www.w3.org/2005/Atom" xmlns:yt="http://www.youtube.com/xml/schemas/2015"><yt:channelId>another</yt:channelId></feed>']:
+            with patch.object(collector, "fetch_bytes", return_value=(feed, "utf-8")):
+                with self.assertRaisesRegex(ValueError, "canal configurat"):
+                    collector.fetch_youtube_channel(source)
 
     def test_official_oembed_requires_explicit_policy_and_same_provider(self):
         source = {"id": "local-media", "name": "Mitjà local", "url": "https://local.test/feed/",

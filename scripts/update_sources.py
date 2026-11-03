@@ -19,7 +19,7 @@ from datetime import datetime, timezone
 from html.parser import HTMLParser
 from email.utils import parsedate_to_datetime
 from pathlib import Path
-from urllib.parse import urlencode, urljoin, urlparse
+from urllib.parse import parse_qs, urlencode, urljoin, urlparse
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 from xml.etree import ElementTree as ET
@@ -27,8 +27,10 @@ from xml.etree import ElementTree as ET
 
 try:
     from publication_state import aemet_post_state, mark_feed_updated
+    from freenewsapi_client import FreeNewsAPIClient
 except ModuleNotFoundError:
     from scripts.publication_state import aemet_post_state, mark_feed_updated
+    from scripts.freenewsapi_client import FreeNewsAPIClient
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCES_FILE = ROOT / "sources.json"
@@ -37,6 +39,8 @@ OUTPUT_FILE = ROOT / "data" / "posts.json"
 JS_OUTPUT_FILE = ROOT / "data" / "posts.js"
 MANUAL_POSTS_FILE = ROOT / "data" / "manual_posts.json"
 MODERATION_FILE = ROOT / "data" / "moderation.json"
+FREENEWSAPI_STATE_FILE = ROOT / "data" / "freenewsapi_state.json"
+FREENEWSAPI_CLIENT = None
 MAX_POSTS_PER_SOURCE = 40
 SUMMARY_LIMIT = 260
 USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0 Safari/537.36 SollerAra/0.40"
@@ -652,7 +656,7 @@ class ArticleMetaParser(HTMLParser):
         return clean_text(" ".join(self.h1_parts))
 
 
-def fetch_bytes(url: str, accept: str) -> tuple[bytes, str]:
+def fetch_bytes(url: str, accept: str, *, retry_not_found: bool = False) -> tuple[bytes, str]:
     request = Request(url, headers={"User-Agent": USER_AGENT, "Accept": accept})
     for attempt in range(3):
         try:
@@ -661,7 +665,10 @@ def fetch_bytes(url: str, accept: str) -> tuple[bytes, str]:
                 charset = response.headers.get_content_charset() or "utf-8"
             return payload, charset
         except HTTPError as exc:
-            if exc.code not in {429, 500, 502, 503, 504} or attempt == 2:
+            retryable = {429, 500, 502, 503, 504}
+            if retry_not_found:
+                retryable.add(404)
+            if exc.code not in retryable or attempt == 2:
                 raise
         except (URLError, TimeoutError):
             if attempt == 2:
@@ -1375,7 +1382,16 @@ def fetch_youtube_channel(source: dict) -> list[dict]:
     payload, _ = fetch_bytes(
         source["url"],
         "application/atom+xml, application/xml, text/xml;q=0.9, */*;q=0.8",
+        retry_not_found=True,
     )
+    root = ET.fromstring(payload)
+    expected = parse_qs(urlparse(source["url"]).query).get("channel_id", [""])[0]
+    actual = root.findtext("{http://www.youtube.com/xml/schemas/2015}channelId")
+    # YouTube's Atom metadata may omit the UC prefix used in channel URLs.
+    valid_ids = {expected, expected.removeprefix("UC")}
+    if (root.tag != "{http://www.w3.org/2005/Atom}feed" or not expected
+            or actual not in valid_ids):
+        raise ValueError("YouTube: el document rebut no és el feed del canal configurat.")
     posts = parse_rss(payload, source)
     max_items = int(source.get("max_items", 15))
 
@@ -1389,46 +1405,17 @@ def fetch_youtube_channel(source: dict) -> list[dict]:
 
 
 def fetch_freenewsapi_search(source: dict) -> list[dict]:
-    endpoint = source.get("url", "https://freenewsapi.ai/v1/search")
-    host = clean_text(source.get("host"))
-    query_terms = [
-        clean_text(str(term))
-        for term in source.get("query_terms", [])
-        if clean_text(str(term))
-    ]
-    if not host or not query_terms:
-        return []
-
+    client = FREENEWSAPI_CLIENT or FreeNewsAPIClient([source], FREENEWSAPI_STATE_FILE)
     max_items = int(source.get("max_items", 25))
-    seen_urls: set[str] = set()
     posts: list[dict] = []
-
-    for term in query_terms:
-        query = urlencode({
-            "host": host,
-            "q": term,
-            "size": max_items,
-            "fields": "title,url,published_at,lang",
-        })
-        payload, _ = fetch_bytes(
-            f"{endpoint}?{query}",
-            "application/json, text/plain;q=0.9, */*;q=0.8",
-        )
-        parsed = json.loads(payload.decode("utf-8", errors="replace"))
-
-        for item in parsed.get("results", []):
-            title = clean_text(item.get("title"))
-            url = clean_text(item.get("url"))
-            published_at = parse_date(item.get("published_at"))
-            if not title or not url or not published_at or url in seen_urls:
-                continue
-            if urlparse(url).netloc.casefold() != host.casefold():
-                continue
-            seen_urls.add(url)
+    for item in client.results(source):
+        title = clean_text(item.get("title"))
+        url = clean_text(item.get("url"))
+        published_at = parse_date(item.get("published_at"))
+        if title and url and published_at:
             posts.append(build_post(source, title, "", url, published_at))
-
     posts.sort(key=sort_key, reverse=True)
-    return posts[: max_items * max(1, len(query_terms))]
+    return posts[: max_items * max(1, len(source.get("query_terms", [])))]
 
 
 def fetch_source(source: dict) -> list[dict]:
@@ -1617,8 +1604,10 @@ def load_disabled_source_posts(sources: list[dict]) -> list[dict]:
 
 
 def main() -> int:
+    global FREENEWSAPI_CLIENT
     config = json.loads(SOURCES_FILE.read_text(encoding="utf-8"))
     sources = config.get("sources", [])
+    FREENEWSAPI_CLIENT = FreeNewsAPIClient(sources, FREENEWSAPI_STATE_FILE)
     previous = load_disabled_source_posts(sources)
     posts = [post for post in previous if any(source.get("id") == post.get("source_id") and not source.get("enabled", True) for source in sources)]
     # Valida dades persistents abans de consultar fonts o escriure el feed.
@@ -1654,13 +1643,18 @@ def main() -> int:
                 "archived_count": archived_count,
                 "error": None,
             })
+            if source.get("type") == "freenewsapi_search":
+                source_status[-1].update(FREENEWSAPI_CLIENT.status())
             print(f"OK {source['name']}: {len(source_posts)} publicacions")
         except Exception as exc:  # Es registra l'error sense impedir altres fonts.
             retained = [post for post in previous if post.get("source_id") == source.get("id")]
             if source.get("type") == "aemet_alerts":
                 retained = [aemet_post_state(post, in_feed=post.get("alert_in_feed", False), verified=False) for post in retained]
             posts.extend(retained)
-            errors.append({"source_id": source.get("id"), "error": str(exc)})
+            message = str(exc)
+            if isinstance(exc, HTTPError) and exc.code == 410:
+                message = "HTTP 410 Gone: la font ha retirat aquesta pàgina; pendent d'un canal alternatiu verificat."
+            errors.append({"source_id": source.get("id"), "error": message})
             source_status.append({
                 "source_id": source.get("id"),
                 "name": source.get("name"),
@@ -1669,9 +1663,9 @@ def main() -> int:
                 "ok": False,
                 "count": len(retained),
                 "retained_count": len(retained),
-                "error": str(exc),
+                "error": message,
             })
-            print(f"ERROR {source.get('name', source.get('id'))}: {exc}", file=sys.stderr)
+            print(f"ERROR {source.get('name', source.get('id'))}: {message}", file=sys.stderr)
 
     posts.extend(manual_posts)
     if manual_posts:
@@ -1707,7 +1701,7 @@ def main() -> int:
 
     payload = {
         "version": 41,
-        "generator_version": "0.61",
+        "generator_version": "0.62",
         "source_count": len(source_status),
         "source_status": source_status,
         "social_integration_status": social_integration_status,

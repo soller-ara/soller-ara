@@ -161,3 +161,12 @@ Referència oficial: https://developers.google.com/youtube/data/guides/push_noti
 No es modifiquen el cron, el Worker, els límits socials (5 per execució, una per font, 6 hores), la moderació, els registres de confirmació, les publicacions manuals ni l’aspecte de la web. Amics de la Terra i Deixalles queden com a candidates; no s’activen sense coincidències locals seleccionables verificades.
 
 Les 135 proves Python passen, incloses dues regressions noves per la selecció d’IB3 i les dates originals de l’agenda. Les comprovacions de la interfície i de les regles de distribució es mantenen. No es creen publicacions de prova en producció.
+
+
+## Recuperació de fonts — 3 de novembre de 2026
+
+- **Diario de Mallorca / Crónica Balear:** l'intermediari Free News API requereix una clau des de l'01/11. S'afegeix suport al secret de GitHub `FREENEWSAPI_KEY`, amb Authorization en capçalera i sense redireccions que puguin exposar-lo. Es comparteixen els dos dominis en cadascuna de les sis cerques territorials existents, es desa només titular/data/enllaç/idioma i s'apliquen els filtres territorials, d'antiguitat i moderació vigents.
+- **Pla gratuït:** pressupost persistent de tres consultes per hora de mitjana, reserva màxima de sis i tall preventiu a 2.700/mes natural. Les revisions manuals i els reintents comparteixen el mateix estat. Les peticions fallides també compten; un registre invàlid atura l'API sense reiniciar-ne el consum. La simulació de 31 dies amb revisió horària consumeix 2.235 peticions, per sota de les 3.000 del pla Free. El pressupost és exclusiu d'aquesta aplicació, no mesura altres usos de la mateixa clau.
+- **YouTube:** tres intents limitats davant un 404 i verificació del canal Atom; s'accepta el channelId real amb o sense `UC`. No s'activa cap proxy ni la ruta estàtica `/xml/feeds/videos.xml`. Els 14 feeds han respost amb entrades a la prova de lectura prèvia: és una recuperació externa, no una prova que el canvi ja s'hagués executat.
+- **Mallorca Directo:** portada i secció de Sóller responen 410. Es deixa l'error visible amb un diagnòstic de pàgina retirada; no es canvia la font sense un canal alternatiu verificat. CEIP Es Puig i IES Guillem Colom Casasnoves continuen amb problemes de disponibilitat.
+- **Pendent necessari:** configurar la clau gratuïta en els secrets d'Actions i comprovar un enviament autenticat. No s'han creat comptes, contractat plans, publicat entrades de prova ni canviat la política social, la moderació, el límit de 60 dies o el cron.
