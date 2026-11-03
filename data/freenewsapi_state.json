@@ -1,20 +1,20 @@
 {
   "version": 1,
   "month": "2026-11",
-  "requests_this_month": 24,
-  "credits": 0,
-  "refilled_at": "2026-11-03T16:23:41.954775+00:00",
+  "requests_this_month": 27,
+  "credits": 0.9598696608333328,
+  "refilled_at": "2026-11-03T17:42:53.798368+00:00",
   "queries": {
     "Sóller": {
-      "checked_at": "2026-11-03T16:23:41.954775+00:00",
+      "checked_at": "2026-11-03T17:42:53.798368+00:00",
       "results": []
     },
     "Port de Sóller": {
-      "checked_at": "2026-11-03T16:23:41.954775+00:00",
+      "checked_at": "2026-11-03T17:42:53.798368+00:00",
       "results": []
     },
     "Fornalutx": {
-      "checked_at": "2026-11-03T16:23:41.954775+00:00",
+      "checked_at": "2026-11-03T17:42:53.798368+00:00",
       "results": []
     },
     "Biniaraix": {
