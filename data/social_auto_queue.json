@@ -1,26 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-03T08:22:38.654272+00:00",
-  "entries": [
-    {
-      "post_id": "f3346833ad8ba1d1a38e",
-      "title": "La Policia conté l’incendi d’un contenidor durant la nit de dissabte",
-      "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
-      "source_type": "media",
-      "category": "alerts",
-      "language": "ca",
-      "published_at": "2026-11-03T07:34:27+00:00",
-      "original_url": "https://saveu.cat/noticies/la-policia-conte-lincendi-dun-contenidor-durant-la-nit-de-dissabte/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/f3346833ad8ba1d1a38e.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
