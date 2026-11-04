@@ -1,45 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-04T18:52:39.121649+00:00",
+  "generated_at": "2026-11-04T21:07:29.478007+00:00",
   "entries": [
     {
-      "post_id": "fc803120c81f7f74d881",
-      "title": "Arxivada la denúncia contra l’Ajuntament pel vídeo de les Escolàpies",
+      "post_id": "a63d66d709f9b87245e3",
+      "title": "Tradicions de Tots Sants a Educació Infantil i Primer Cicle",
       "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
-      "source_type": "media",
-      "category": "news",
+      "source": "Col·legi Sagrats Cors · Sóller",
+      "source_id": "sagrats-cors-soller",
+      "source_type": "institution",
+      "category": "services",
       "language": "ca",
-      "published_at": "2026-11-04T16:30:00+01:00",
-      "original_url": "https://www.elsoller.cat/soller/local/2026/11/04/354745/arxivada-denuncia-contra-ajuntament-pel-video-les-escolapies.html",
+      "published_at": "2026-11-04T20:26:13+00:00",
+      "original_url": "https://www.sagratscors.es/2026/11/04/tradicions-de-tots-sants-a-educacio-infantil-i-primer-cicle/?utm_source=rss&utm_medium=rss&utm_campaign=tradicions-de-tots-sants-a-educacio-infantil-i-primer-cicle",
       "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
+      "rights_status": "link_only_no_media_license",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/fc803120c81f7f74d881.jpg"
-    },
-    {
-      "post_id": "099b3507949afe0f87f7",
-      "title": "L’Ajuntament elimina el vídeo de propaganda i la Junta Electoral arxiva la denúncia",
-      "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-11-04T14:51:49+00:00",
-      "original_url": "https://saveu.cat/noticies/lajuntament-elimina-el-video-de-propaganda-i-la-junta-electoral-arxiva-la-denuncia/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/099b3507949afe0f87f7.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/a63d66d709f9b87245e3.jpg"
     }
   ]
 }
