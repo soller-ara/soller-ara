@@ -14877,6 +14877,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-11-04T18:53:47.432796+00:00",
       "error": ""
+    },
+    {
+      "post_id": "a63d66d709f9b87245e3",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122130301755467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122130301755467310",
+      "title": "Tradicions de Tots Sants a Educació Infantil i Primer Cicle",
+      "post_url": "https://www.sagratscors.es/2026/11/04/tradicions-de-tots-sants-a-educacio-infantil-i-primer-cicle/?utm_source=rss&utm_medium=rss&utm_campaign=tradicions-de-tots-sants-a-educacio-infantil-i-primer-cicle",
+      "source": "Col·legi Sagrats Cors · Sóller",
+      "source_id": "sagrats-cors-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-04T21:07:57.396082+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "a63d66d709f9b87245e3",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Tradicions de Tots Sants a Educació Infantil i Primer Cicle",
+      "post_url": "https://www.sagratscors.es/2026/11/04/tradicions-de-tots-sants-a-educacio-infantil-i-primer-cicle/?utm_source=rss&utm_medium=rss&utm_campaign=tradicions-de-tots-sants-a-educacio-infantil-i-primer-cicle",
+      "source": "Col·legi Sagrats Cors · Sóller",
+      "source_id": "sagrats-cors-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-04T21:08:06.148317+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18123627634905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "a63d66d709f9b87245e3",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18118411490080317",
+      "remote_url": "https://www.instagram.com/p/DfVYuhQjSiO/",
+      "title": "Tradicions de Tots Sants a Educació Infantil i Primer Cicle",
+      "post_url": "https://www.sagratscors.es/2026/11/04/tradicions-de-tots-sants-a-educacio-infantil-i-primer-cicle/?utm_source=rss&utm_medium=rss&utm_campaign=tradicions-de-tots-sants-a-educacio-infantil-i-primer-cicle",
+      "source": "Col·legi Sagrats Cors · Sóller",
+      "source_id": "sagrats-cors-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-04T21:08:10.336479+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
