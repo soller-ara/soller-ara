@@ -1,26 +1,64 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-04T14:26:22.298325+00:00",
+  "generated_at": "2026-11-04T16:39:04.123641+00:00",
   "entries": [
     {
-      "post_id": "d2006435a7d93c79209e",
-      "title": "Sortida ornitològica a s’Albufera organitzada per la Societat d’Amics del MUCBO",
+      "post_id": "4ca39bfa5a7f930ed76c",
+      "title": "El carrer de Pons es converteix en un punt negre de fems",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "services",
+      "language": "ca",
+      "published_at": "2026-11-04T17:07:56+01:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/11/04/354747/carrer-pons-converteix-punt-negre-fems.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/4ca39bfa5a7f930ed76c.jpg"
+    },
+    {
+      "post_id": "8d41cd9316ace28d840e",
+      "title": "La TDT canvia de freqüències aquest dijous i obliga a resintonitzar els televisors",
+      "summary": "",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-11-04T14:57:05+00:00",
+      "original_url": "https://saveu.cat/noticies/la-tdt-canvia-de-frequencies-aquest-dijous-i-obliga-a-resintonitzar-els-televisors/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/8d41cd9316ace28d840e.jpg"
+    },
+    {
+      "post_id": "20e57056be03c8bb88bd",
+      "title": "Primera activitat de Joves amb la Natura: Sortida de Snorkel!",
       "summary": "",
       "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
       "source_id": "mucbo-noticies",
       "source_type": "institution",
       "category": "culture",
       "language": "ca",
-      "published_at": "2026-11-04T13:30:42+00:00",
-      "original_url": "https://mucbo.org/sortida-ornitologica-a-salbufera-organitzada-per-la-societat-damics-del-mucbo/",
+      "published_at": "2026-11-04T13:15:35+00:00",
+      "original_url": "https://mucbo.org/primera-activitat-de-joves-amb-la-natura-sortida-de-snorkel/",
       "content_policy": "headline_date_link_only",
       "rights_status": "link_only_no_media_license",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/d2006435a7d93c79209e.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/20e57056be03c8bb88bd.jpg"
     }
   ]
 }
