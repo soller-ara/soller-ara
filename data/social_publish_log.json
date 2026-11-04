@@ -14607,6 +14607,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-11-04T13:06:56.216499+00:00",
       "error": ""
+    },
+    {
+      "post_id": "d2006435a7d93c79209e",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122130200049467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122130200049467310",
+      "title": "Sortida ornitològica a s’Albufera organitzada per la Societat d’Amics del MUCBO",
+      "post_url": "https://mucbo.org/sortida-ornitologica-a-salbufera-organitzada-per-la-societat-damics-del-mucbo/",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-04T14:26:49.219425+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "d2006435a7d93c79209e",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Sortida ornitològica a s’Albufera organitzada per la Societat d’Amics del MUCBO",
+      "post_url": "https://mucbo.org/sortida-ornitologica-a-salbufera-organitzada-per-la-societat-damics-del-mucbo/",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-04T14:26:58.293568+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18123567487905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "d2006435a7d93c79209e",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18442713571179688",
+      "remote_url": "https://www.instagram.com/p/DfUq0gyAYAR/",
+      "title": "Sortida ornitològica a s’Albufera organitzada per la Societat d’Amics del MUCBO",
+      "post_url": "https://mucbo.org/sortida-ornitologica-a-salbufera-organitzada-per-la-societat-damics-del-mucbo/",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-04T14:27:01.519855+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
