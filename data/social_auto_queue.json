@@ -1,29 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-04T13:06:33.776989+00:00",
+  "generated_at": "2026-11-04T14:26:22.298325+00:00",
   "entries": [
     {
-      "post_id": "4e683da05edce338a4f6",
-      "title": "Aviso. Nivel amarillo. Lluvias. Sierra Tramontana",
-      "summary": "Aviso de precipitación acumulada en una hora de nivel amarillo de 04:00 05-11-2026 CET (UTC+1) a 19:59 05-11-2026 CET (UTC+1).",
-      "source": "AEMET · Serra de Tramuntana",
-      "source_id": "aemet-avisos-mallorca",
-      "source_type": "official",
-      "category": "alerts",
-      "language": "es",
-      "published_at": "2026-11-04T10:00:29+00:00",
-      "alert_status": "scheduled",
-      "alert_valid_from": "2026-11-05T03:00:00+00:00",
-      "alert_valid_until": "2026-11-05T18:59:00+00:00",
-      "original_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261104100029_AFAZ645401PRP10519.xml",
-      "content_policy": "short_factual_excerpt",
-      "rights_status": "reuse_authorized_with_attribution",
+      "post_id": "d2006435a7d93c79209e",
+      "title": "Sortida ornitològica a s’Albufera organitzada per la Societat d’Amics del MUCBO",
+      "summary": "",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "source_type": "institution",
+      "category": "culture",
+      "language": "ca",
+      "published_at": "2026-11-04T13:30:42+00:00",
+      "original_url": "https://mucbo.org/sortida-ornitologica-a-salbufera-organitzada-per-la-societat-damics-del-mucbo/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/4e683da05edce338a4f6.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/d2006435a7d93c79209e.jpg"
     }
   ]
 }
