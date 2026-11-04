@@ -1,26 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-04T21:07:29.478007+00:00",
-  "entries": [
-    {
-      "post_id": "a63d66d709f9b87245e3",
-      "title": "Tradicions de Tots Sants a Educació Infantil i Primer Cicle",
-      "summary": "",
-      "source": "Col·legi Sagrats Cors · Sóller",
-      "source_id": "sagrats-cors-soller",
-      "source_type": "institution",
-      "category": "services",
-      "language": "ca",
-      "published_at": "2026-11-04T20:26:13+00:00",
-      "original_url": "https://www.sagratscors.es/2026/11/04/tradicions-de-tots-sants-a-educacio-infantil-i-primer-cicle/?utm_source=rss&utm_medium=rss&utm_campaign=tradicions-de-tots-sants-a-educacio-infantil-i-primer-cicle",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "link_only_no_media_license",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/a63d66d709f9b87245e3.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
