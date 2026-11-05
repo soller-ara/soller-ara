@@ -1,6 +1,45 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-11-05T12:24:45.373509+00:00",
+  "entries": [
+    {
+      "post_id": "f60981982ce124528cb7",
+      "title": "Gestió forestal a la Serra de Tramuntana",
+      "summary": "Vídeo publicat per Serra de Tramuntana Patrimoni Mundial · YouTube.",
+      "source": "Serra de Tramuntana Patrimoni Mundial · YouTube",
+      "source_id": "youtube-serra-tramuntana",
+      "source_type": "social",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-11-05T11:02:02+00:00",
+      "original_url": "https://www.youtube.com/watch?v=2J-y8F3f11g",
+      "content_policy": "generated_social_summary",
+      "rights_status": "platform_embed",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/f60981982ce124528cb7.jpg"
+    },
+    {
+      "post_id": "ba09d6cbe6f6e874f337",
+      "title": "Campanya de firmes per reclamar que el TIB 204 mantengui les freqüències",
+      "summary": "",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "source_type": "media",
+      "category": "services",
+      "language": "ca",
+      "published_at": "2026-11-05T10:49:41+00:00",
+      "original_url": "https://saveu.cat/noticies/campanya-de-firmes-per-reclamar-que-el-tib-204-mantengui-les-frequencies/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/ba09d6cbe6f6e874f337.jpg"
+    }
+  ]
 }
