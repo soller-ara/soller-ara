@@ -1,6 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-11-05T21:07:02.694688+00:00",
+  "entries": [
+    {
+      "post_id": "f4541b62936aeaae5604",
+      "title": "Orgull dels nostres alumnes en el lliurament de premis a l’excel·lència acadèmica",
+      "summary": "",
+      "source": "Col·legi Sagrats Cors · Sóller",
+      "source_id": "sagrats-cors-soller",
+      "source_type": "institution",
+      "category": "services",
+      "language": "ca",
+      "published_at": "2026-11-05T19:55:18+00:00",
+      "original_url": "https://www.sagratscors.es/2026/11/05/orgull-dels-nostres-alumnes-en-el-lliurament-de-premis-a-lexcellencia-academica/?utm_source=rss&utm_medium=rss&utm_campaign=orgull-dels-nostres-alumnes-en-el-lliurament-de-premis-a-lexcellencia-academica",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/f4541b62936aeaae5604.jpg"
+    }
+  ]
 }
