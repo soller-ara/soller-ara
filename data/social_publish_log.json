@@ -15552,6 +15552,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-11-06T13:29:14.229702+00:00",
       "error": ""
+    },
+    {
+      "post_id": "c266a1fc31848a97d99f",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122130788853467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122130788853467310",
+      "title": "Inversió de 300.000 euros per renovar les voreres a onze carrers",
+      "post_url": "https://saveu.cat/noticies/inversio-de-300-000-euros-per-renovar-les-voreres-a-onze-carrers/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-06T15:05:19.567500+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "c266a1fc31848a97d99f",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Inversió de 300.000 euros per renovar les voreres a onze carrers",
+      "post_url": "https://saveu.cat/noticies/inversio-de-300-000-euros-per-renovar-les-voreres-a-onze-carrers/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-06T15:05:29.011034+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18124006747905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "c266a1fc31848a97d99f",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18137720233634254",
+      "remote_url": "https://www.instagram.com/p/DfZ40PHD9FG/",
+      "title": "Inversió de 300.000 euros per renovar les voreres a onze carrers",
+      "post_url": "https://saveu.cat/noticies/inversio-de-300-000-euros-per-renovar-les-voreres-a-onze-carrers/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-06T15:05:33.678084+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
