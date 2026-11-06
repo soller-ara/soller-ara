@@ -1,64 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-06T17:21:48.067762+00:00",
-  "entries": [
-    {
-      "post_id": "e30c913e419f8f6adaed",
-      "title": "Escolares de Palma y Fornalutx toman el Parlament para comprometerse a reducir el uso de pantallas",
-      "summary": "Vídeo publicat per Fibwi Diario · YouTube.",
-      "source": "Fibwi Diario · YouTube",
-      "source_id": "youtube-fibwi-diario-soller",
-      "source_type": "social",
-      "category": "news",
-      "language": "es",
-      "published_at": "2026-11-06T15:30:18+00:00",
-      "original_url": "https://www.youtube.com/watch?v=sTtN1ox2huQ",
-      "content_policy": "generated_social_summary",
-      "rights_status": "platform_embed",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/e30c913e419f8f6adaed.jpg"
-    },
-    {
-      "post_id": "3d15df1595864b4aee79",
-      "title": "Escolares de Palma y Fornalutx toman el Parlament para comprometerse a reducir el uso de pantallas",
-      "summary": "",
-      "source": "Fibwi Diario · Sóller",
-      "source_id": "fibwi-diario-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "es",
-      "published_at": "2026-11-06T16:26:17+01:00",
-      "original_url": "https://www.fibwidiario.com/sociedad/escolares-palma-fornalutx-toman-parlament-comprometerse-reducir-uso-pantallas/20261106162617327466.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "link_only_no_media_license",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/3d15df1595864b4aee79.jpg"
-    },
-    {
-      "post_id": "c2cecfdc61f07e896017",
-      "title": "Santa Catalina-Sóller (dissabte, 17 h), a mantenir la bona ratxa front un rival perillós al seu camp",
-      "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
-      "source_type": "media",
-      "category": "sports",
-      "language": "ca",
-      "published_at": "2026-11-06T16:00:00+01:00",
-      "original_url": "https://www.elsoller.cat/soller/esports/2026/11/06/354755/santa-catalina-soller-dissabte-mantenir-bona-ratxa-front-rival-perillos-seu-camp.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/c2cecfdc61f07e896017.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
