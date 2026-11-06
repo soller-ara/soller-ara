@@ -1,45 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-06T13:22:17.199688+00:00",
+  "generated_at": "2026-11-06T15:02:11.101787+00:00",
   "entries": [
     {
-      "post_id": "a84d819211d4c1a862a5",
-      "title": "El centre de salut incorpora servei d’atenció psicològica amb un nou professional",
+      "post_id": "c266a1fc31848a97d99f",
+      "title": "Inversió de 300.000 euros per renovar les voreres a onze carrers",
       "summary": "",
       "source": "Sa Veu de Sóller",
       "source_id": "sa-veu-soller",
       "source_type": "media",
       "category": "services",
       "language": "ca",
-      "published_at": "2026-11-06T11:01:00+00:00",
-      "original_url": "https://saveu.cat/noticies/el-centre-de-salut-incorpora-servei-datencio-psicologicaamb-un-nou-professional/",
+      "published_at": "2026-11-06T09:30:00+00:00",
+      "original_url": "https://saveu.cat/noticies/inversio-de-300-000-euros-per-renovar-les-voreres-a-onze-carrers/",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/a84d819211d4c1a862a5.jpg"
-    },
-    {
-      "post_id": "916420da0453671a2203",
-      "title": "Fins a 50 parcel·les de Muleta I passaran a ser solars edificables",
-      "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
-      "source_type": "media",
-      "category": "services",
-      "language": "ca",
-      "published_at": "2026-11-06T10:47:00+01:00",
-      "original_url": "https://www.elsoller.cat/soller/local/2026/11/06/354751/fins-parcel-les-muleta-passaran-ser-solars-edificables.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/916420da0453671a2203.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/c266a1fc31848a97d99f.jpg"
     }
   ]
 }
