@@ -1,6 +1,64 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-11-06T08:52:00.644636+00:00",
+  "entries": [
+    {
+      "post_id": "324c1be1bbfe2fb4aefa",
+      "title": "“La Creu Roja va ser pionera en l’organització de rescats”",
+      "summary": "",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "source_type": "media",
+      "category": "services",
+      "language": "ca",
+      "published_at": "2026-11-06T08:08:07+00:00",
+      "original_url": "https://saveu.cat/entrevistes/la-creu-roja-va-ser-pionera-en-lorganitzacio-de-rescats/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/324c1be1bbfe2fb4aefa.jpg"
+    },
+    {
+      "post_id": "7285f5d72d11e359054e",
+      "title": "The saga of the Puerto Soller development that may now be drawing to an end",
+      "summary": "",
+      "source": "Majorca Daily Bulletin · Sóller",
+      "source_id": "majorca-daily-bulletin-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "en",
+      "published_at": "2026-11-06T09:06:00+01:00",
+      "original_url": "https://www.majorcadailybulletin.com/news/local/2026/11/06/147107/the-saga-the-puerto-soller-development-that-may-now-drawing-end.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/7285f5d72d11e359054e.jpg"
+    },
+    {
+      "post_id": "48c06b0f4a42cac857ba",
+      "title": "EL GREUGE DELS FEMS O LA INEFICÀCIA DEL PP",
+      "summary": "",
+      "source": "MÉS per Sóller",
+      "source_id": "mes-per-soller",
+      "source_type": "political_party",
+      "category": "politics",
+      "language": "ca",
+      "published_at": "2026-11-06T08:02:44+00:00",
+      "original_url": "https://mespersoller.cat/el-greuge-dels-fems-o-la-ineficacia-del-pp/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "official_party_source",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/48c06b0f4a42cac857ba.jpg"
+    }
+  ]
 }
