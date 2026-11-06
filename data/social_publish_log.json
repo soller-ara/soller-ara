@@ -15192,6 +15192,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-11-05T21:07:44.252145+00:00",
       "error": ""
+    },
+    {
+      "post_id": "f1219823e9670b5b8562",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122130674931467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122130674931467310",
+      "title": "Hasta 50 parcelas de Muleta-I en el Port de Sóller pasarán a ser solares edificables tras años de bloqueo",
+      "post_url": "https://www.ultimahora.es/noticias/part-forana/2026/11/06/2744129/hasta-parcelas-muleta-port-soller-pasaran-ser-solares-edificables-tras-anos-bloqueo.html",
+      "source": "Última Hora",
+      "source_id": "ultima-hora-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-06T04:38:27.777623+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "f1219823e9670b5b8562",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Hasta 50 parcelas de Muleta-I en el Port de Sóller pasarán a ser solares edificables tras años de bloqueo",
+      "post_url": "https://www.ultimahora.es/noticias/part-forana/2026/11/06/2744129/hasta-parcelas-muleta-port-soller-pasaran-ser-solares-edificables-tras-anos-bloqueo.html",
+      "source": "Última Hora",
+      "source_id": "ultima-hora-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-06T04:38:35.727641+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18123908662905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "f1219823e9670b5b8562",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "17916115893500788",
+      "remote_url": "https://www.instagram.com/p/DfYxE7wiX8r/",
+      "title": "Hasta 50 parcelas de Muleta-I en el Port de Sóller pasarán a ser solares edificables tras años de bloqueo",
+      "post_url": "https://www.ultimahora.es/noticias/part-forana/2026/11/06/2744129/hasta-parcelas-muleta-port-soller-pasaran-ser-solares-edificables-tras-anos-bloqueo.html",
+      "source": "Última Hora",
+      "source_id": "ultima-hora-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-06T04:38:40.241172+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
