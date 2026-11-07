@@ -15732,6 +15732,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-11-06T17:25:38.481687+00:00",
       "error": ""
+    },
+    {
+      "post_id": "6a1d0c02e4ea24edec1b",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122130968865467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122130968865467310",
+      "title": "Acaba la campanya d’oliva verda de taula amb 10 tones recollides",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/11/07/354759/acaba-campanya-oliva-verda-taula-amb-tones-recollides.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-07T09:22:43.376654+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "6a1d0c02e4ea24edec1b",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Acaba la campanya d’oliva verda de taula amb 10 tones recollides",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/11/07/354759/acaba-campanya-oliva-verda-taula-amb-tones-recollides.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-07T09:22:53.047900+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18124178527905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "6a1d0c02e4ea24edec1b",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18017410700952953",
+      "remote_url": "https://www.instagram.com/p/Dfb2Z_Zm9Yf/",
+      "title": "Acaba la campanya d’oliva verda de taula amb 10 tones recollides",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/11/07/354759/acaba-campanya-oliva-verda-taula-amb-tones-recollides.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-07T09:22:56.409328+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
