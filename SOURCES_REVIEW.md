@@ -170,3 +170,47 @@ Les 135 proves Python passen, incloses dues regressions noves per la selecció d
 - **YouTube:** tres intents limitats davant un 404 i verificació del canal Atom; s'accepta el channelId real amb o sense `UC`. No s'activa cap proxy ni la ruta estàtica `/xml/feeds/videos.xml`. Els 14 feeds han respost amb entrades a la prova de lectura prèvia: és una recuperació externa, no una prova que el canvi ja s'hagués executat.
 - **Mallorca Directo:** portada i secció de Sóller responen 410. Es deixa l'error visible amb un diagnòstic de pàgina retirada; no es canvia la font sense un canal alternatiu verificat. CEIP Es Puig i IES Guillem Colom Casasnoves continuen amb problemes de disponibilitat.
 - **Pendent necessari:** configurar la clau gratuïta en els secrets d'Actions i comprovar un enviament autenticat. No s'han creat comptes, contractat plans, publicat entrades de prova ni canviat la política social, la moderació, el límit de 60 dies o el cron.
+
+## Revisió i incorporacions — 7 de novembre de 2026
+
+S'afegeixen sis canals nous, amb autorització de l'usuari. El catàleg passa de 55 a **61 fonts externes**; el recompte de salut inclou també Sóller Ara i passa a 62. S'utilitza el lector RSS existent, sense modificar el recopilador, el cron, el Worker ni les regles de les fonts anteriors.
+
+### Fonts verificades
+
+| Font | Canal anunciat pel proveïdor | Selecció | Referències aptes a la lectura aïllada |
+| --- | --- | --- | ---: |
+| [Mallorca Caprice](https://mallorcacaprice.com/jornadas-gastronomicas-bolets-soller-2026/) | RSS públic de cerca local de Sóller | Titular original amb referència territorial; notícia dels Bolets publicada el 21/10, no datada amb l'inici ni el final de les jornades | 1 |
+| [Sóller en Mallorca](https://www.sollerenmallorca.com/noticias/) | `https://www.sollerenmallorca.com/feed.xml` | Titular original local, guia i informació de servei atribuïdes a aquest editor; articles individuals amb data de publicació i enllaç verificables | 15 |
+| [Ocio Mallorca](https://ociomallorca.com/festival-musica-clasica-port-soller/) | RSS públic de cerca local de Sóller | Titular original local; Festival de Música Clàssica del Port publicat el 07/10, mantenint aquesta data i no la del concert | 1 |
+| [Ajuntament de Bunyola](https://ajbunyola.net/ca/noticies) | `https://ajbunyola.net/ca/noticies/rss.xml` | Activitat pròpia i serveis municipals de Bunyola, dins l'abast de la Serra de Tramuntana | 10 |
+| [Ajuntament de Valldemossa](https://ajvalldemossa.net/ca/noticies) | `https://ajvalldemossa.net/ca/noticies/rss.xml` | Activitat pròpia i serveis municipals de Valldemossa; inclou les obres de la carretera del Port | 10 |
+| [Ajuntament d'Escorca](https://ajescorca.net/ca/noticies) | `https://ajescorca.net/ca/noticies/rss.xml` | Activitat pròpia, Lluc i serveis d'Escorca, dins la Serra de Tramuntana | 5 |
+
+Total de la lectura amb les funcions reals del recopilador: **42 referències** després dels filtres territorials i temporals. Es tracta de dates originals dins dels darrers 60 dies, no de 42 notícies d'avui. El feed d'Escorca descarta cinc entrades més antigues; els feeds de cerca dels mitjans també descarten titulars generals i mencions de Sóller només dins el cos. L'avís de la carretera de Valldemossa conserva el `pubDate` original del 03/11 encara que el llistat mostri una actualització del 04/11.
+
+Totes les incorporacions utilitzen `headline_date_link_only`: sense extractes copiats ni descàrregues de fotografies o vídeos. Les fonts generals passen pel filtre del titular, incloses les exclusions de Casal Solleric i torrent de Solleric, sense perdre gentilicis o altres referències reals. L'activitat municipal queda atribuïda al seu ajuntament.
+
+### Incrustació oficial
+
+- **Ocio Mallorca:** l'article anuncia el proveïdor oEmbed; aquest retorna un iframe del mateix domini. La ruta `/embed/` serveix la targeta WordPress, sense `X-Frame-Options` ni una política que en prohibeixi la incrustació. S'ha comprovat al navegador la fotografia carregada (`naturalWidth=350`), el titular i l'enllaç a l'original. S'activa `official_oembed`, amb el mateix mecanisme ja existent; són dotze fonts amb opt-in explícit.
+- **Mallorca Caprice:** anuncia oEmbed i retorna un iframe, però la resposta de la ruta oficial inclou `X-Frame-Options: SAMEORIGIN`. No s'activa una vista prèvia que el navegador bloquejaria. Es conserven el titular, la data, la font i l'enllaç.
+- **Sóller en Mallorca i els tres ajuntaments:** les pàgines verificades no anuncien una targeta equivalent compatible. No es substitueix per una còpia de la fotografia ni per un iframe de tota la web.
+
+`image_allowed` continua sent fals, també en Ocio Mallorca. La fotografia del seu embed es carrega des del proveïdor i no es reutilitza en les targetes de Facebook o Instagram.
+
+### Distribució, disponibilitat i comprovacions
+
+Les sis fonts tenen regles explícites per a Facebook i Instagram, seguint l'activació actual de l'usuari. Es conserven totes les regles anteriors, les categories i els límits de **5 per execució, una per font i 6 hores**. Les 42 referències de la prova són anteriors al termini social i no s'han de difondre com a novetats. No s'han generat publicacions de prova en producció.
+
+Abans d'incorporar les fonts, la darrera recopilació desada és del **07/11 a les 10:22 Europe/Madrid**, amb 53/56 estats correctes: els 14 canals de YouTube tornen a respondre. Mallorca Directo manté el 410 i els dos centres educatius, IES Guillem Colom Casasnoves i CEIP Es Puig, mantenen temps d'espera. Una publicació manual posterior, a les 11:20, no és una recopilació nova. Free News API funciona autenticada, sense resultat local als dos dominis en la consulta vigent; no s'equipara un resultat buit amb un error d'autenticació. La portada i el formulari d'accés a Administració s'han inspeccionat al navegador.
+
+La revisió de funcionament conserva com a prioritats independents els intervals superiors a dues hores entre recopilacions i la persistència de confirmacions de Facebook: els logs del 04/11 mostren una segona entrega després d'un error de GitHub en desar la primera confirmació. No es modifica aquest circuit en una ampliació de fonts, ni es confon amb Instagram, que va reconciliar el mateix identificador. La publicació en comptes propis continua sent una capacitat diferent del permís de lectura de comptes aliens de Meta.
+
+Validació local: **149 proves Python i 14 bateries JavaScript** superades, lectura real de les sis fonts, comprovació visual de l'embed d'Ocio Mallorca i comparació estructural de les configuracions anteriors per garantir que només s'afegeixen les sis fonts i les seves regles explícites. La comprovació del desplegament i de la recopilació posterior s'ha de contrastar amb les execucions de GitHub i `data/posts.json` actuals.
+
+### Candidates reservades
+
+- **FAIB:** informació esportiva local original verificada, però el RSS retorna errors i l'article comprovat no ofereix una data de publicació llegible pel lector HTML actual. No s'inventa la data ni s'instal·la un canal fallant.
+- **Fundació Cultural Coll Bardolet:** activitat cultural real de Valldemossa, però els endpoints provats retornen errors de disponibilitat. Pendent d'un canal estable.
+- **Club de Muntanya i Escalada de Sóller i SollerWeb:** feeds llegibles amb les darreres publicacions fora del límit de 60 dies. No s'amplia el termini per omplir el catàleg.
+- **Menja't Sóller i webs educatives sense notícies datades:** útils per a consulta o selecció manual, sense convertir les dates dels actes en dates de publicació.

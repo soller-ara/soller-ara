@@ -1,5 +1,5 @@
 {
-  "version": 15,
+  "version": 16,
   "enabled": true,
   "platforms": {
     "facebook": true,
@@ -235,6 +235,30 @@
       "instagram": true
     },
     "ajuntament-deia-agenda": {
+      "facebook": true,
+      "instagram": true
+    },
+    "mallorca-caprice-soller": {
+      "facebook": true,
+      "instagram": true
+    },
+    "soller-en-mallorca-noticies": {
+      "facebook": true,
+      "instagram": true
+    },
+    "ajuntament-bunyola-noticies": {
+      "facebook": true,
+      "instagram": true
+    },
+    "ajuntament-valldemossa-noticies": {
+      "facebook": true,
+      "instagram": true
+    },
+    "ajuntament-escorca-noticies": {
+      "facebook": true,
+      "instagram": true
+    },
+    "ocio-mallorca-soller": {
       "facebook": true,
       "instagram": true
     }

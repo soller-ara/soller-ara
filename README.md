@@ -1,5 +1,11 @@
 # Sóller Ara
 
+## Actualització de fonts · 7 de novembre de 2026
+
+S'incorporen sis canals verificats: Mallorca Caprice, Sóller en Mallorca, Ocio Mallorca i els RSS oficials dels ajuntaments de Bunyola, Valldemossa i Escorca. El catàleg té **61 fonts externes** (62 estats amb les publicacions pròpies). Els canals municipals aporten activitat i serveis de la Serra de Tramuntana; els mitjans requereixen una referència territorial al titular original. Les primeres lectures aporten 42 referències aptes, amb la data original, atribució i un màxim de 60 dies.
+
+Ocio Mallorca activa la targeta oficial amb fotografia, comprovada al navegador, i passa a ser el dotzè proveïdor amb `official_oembed`. Mallorca Caprice anuncia oEmbed però bloqueja els iframes externs amb `X-Frame-Options: SAMEORIGIN`; es manté amb titular i enllaç. No es copien les fotografies ni els textos d'aquestes fonts. Les sis regles socials s'afegeixen seguint la configuració actual, amb els límits vigents de 5 per execució, una per font i 6 hores; les referències incorporades ara són anteriors a aquest termini i no es reenvien com a novetats. Detalls a [SOURCES_REVIEW.md](SOURCES_REVIEW.md).
+
 ## Fonts: optimització del 23 d'octubre de 2026
 
 S'incorporen Mallorca Global Mag i Esport Balear mitjançant RSS de cerca local, amb filtre del titular original, atribució i enllaç, sense reutilitzar imatges o textos. El catàleg passa a 54 fonts externes (55 amb les publicacions pròpies).
