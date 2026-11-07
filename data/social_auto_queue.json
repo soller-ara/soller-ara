@@ -1,26 +1,45 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-07T09:22:22.479433+00:00",
+  "generated_at": "2026-11-07T11:36:32.939616+00:00",
   "entries": [
     {
-      "post_id": "6a1d0c02e4ea24edec1b",
-      "title": "Acaba la campanya d’oliva verda de taula amb 10 tones recollides",
+      "post_id": "5985129311bf8c8738ce",
+      "title": "Martí Morell debuta com a director amb un curt sobre Pep Girbent",
       "summary": "",
       "source": "Setmanari Sóller",
       "source_id": "setmanari-soller",
       "source_type": "media",
       "category": "news",
       "language": "ca",
-      "published_at": "2026-11-07T09:00:00+01:00",
-      "original_url": "https://www.elsoller.cat/soller/local/2026/11/07/354759/acaba-campanya-oliva-verda-taula-amb-tones-recollides.html",
+      "published_at": "2026-11-07T12:00:00+01:00",
+      "original_url": "https://www.elsoller.cat/soller/societat-i-cultura/2026/11/07/354763/marti-morell-debuta-com-director-amb-curt-sobre-pep-girbent.html",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/6a1d0c02e4ea24edec1b.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/5985129311bf8c8738ce.jpg"
+    },
+    {
+      "post_id": "01f0f164dbad1f467497",
+      "title": "Pillan a tres conocidas carteristas tratando de robar a anciados en la estación del tren de Sóller",
+      "summary": "",
+      "source": "Europa Press Illes Balears · Sóller",
+      "source_id": "europa-press-balears-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "es",
+      "published_at": "2026-11-07T08:19:25+00:00",
+      "original_url": "https://www.europapress.es/nacional/noticia-detenidas-tres-mujeres-palma-intentar-robar-varios-octogenarios-estacion-tren-soller-20261107091240.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/01f0f164dbad1f467497.jpg"
     }
   ]
 }
