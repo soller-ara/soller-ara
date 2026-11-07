@@ -15949,6 +15949,23 @@
       "retry_requested": true,
       "stage": "media_publish",
       "container_id": "18124256194905740"
+    },
+    {
+      "post_id": "3b0633cb78753aa428af",
+      "platform": "instagram",
+      "status": "verification_required",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Multes de milers d’euros a fornalutxencs per entrar a la ZBE",
+      "post_url": "https://www.elsoller.cat/soller/local/2026/11/07/354757/multes-milers-euros-fornalutxencs-per-entrar-zbe.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-07T20:52:09.976842+00:00",
+      "error": "Enviament anterior pendent de confirmació; no es crea una altra publicació.",
+      "retry_requested": true,
+      "stage": "media_publish",
+      "container_id": "18124256194905740"
     }
   ],
   "cooldowns": {
