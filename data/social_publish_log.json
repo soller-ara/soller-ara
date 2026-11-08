@@ -16146,6 +16146,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-11-08T09:09:05.661579+00:00",
       "error": ""
+    },
+    {
+      "post_id": "1ff03f8462ad33e34bb4",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122131465353467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122131465353467310",
+      "title": "Francina Armengol reivindica a Sóller la defensa dels serveis públics, l’habitatge i l’acció climàtica davant les polítiques de la dreta.",
+      "post_url": "https://www.psib-psoe.org/mallorca/francina-armengol-reivindica-a-soller-la-defensa-dels-serveis-publics-lhabitatge-i-laccio-climatica-davant-les-politiques-de-la-dreta/",
+      "source": "PSIB-PSOE · Sóller",
+      "source_id": "psib-psoe-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-08T21:09:34.087089+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "1ff03f8462ad33e34bb4",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Francina Armengol reivindica a Sóller la defensa dels serveis públics, l’habitatge i l’acció climàtica davant les polítiques de la dreta.",
+      "post_url": "https://www.psib-psoe.org/mallorca/francina-armengol-reivindica-a-soller-la-defensa-dels-serveis-publics-lhabitatge-i-laccio-climatica-davant-les-politiques-de-la-dreta/",
+      "source": "PSIB-PSOE · Sóller",
+      "source_id": "psib-psoe-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-08T21:09:45.834758+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18124562917905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "1ff03f8462ad33e34bb4",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18109759733462509",
+      "remote_url": "https://www.instagram.com/p/DffsFgbF0rp/",
+      "title": "Francina Armengol reivindica a Sóller la defensa dels serveis públics, l’habitatge i l’acció climàtica davant les polítiques de la dreta.",
+      "post_url": "https://www.psib-psoe.org/mallorca/francina-armengol-reivindica-a-soller-la-defensa-dels-serveis-publics-lhabitatge-i-laccio-climatica-davant-les-politiques-de-la-dreta/",
+      "source": "PSIB-PSOE · Sóller",
+      "source_id": "psib-psoe-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-08T21:09:49.917145+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
