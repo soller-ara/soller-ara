@@ -1,64 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-08T09:07:34.289661+00:00",
-  "entries": [
-    {
-      "post_id": "5060dd90621eb9461879",
-      "title": "Ramón Farrán presenta a Can Prunera els primers senzills del seu nou àlbum Back Home",
-      "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
-      "source_type": "media",
-      "category": "culture",
-      "language": "ca",
-      "published_at": "2026-11-08T10:00:00+01:00",
-      "original_url": "https://www.elsoller.cat/soller/societat-i-cultura/2026/11/08/354761/ramon-farran-presenta-can-prunera-els-primers-senzills-del-seu-nou-album-back-home.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/5060dd90621eb9461879.jpg"
-    },
-    {
-      "post_id": "0772fb6b8d440ee6b3bb",
-      "title": "El centre de dia de s’Escorxador s’equipa amb el mobiliari",
-      "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-11-08T08:00:00+00:00",
-      "original_url": "https://saveu.cat/noticies/el-centre-de-dia-de-sescorxador-sequipa-amb-el-mobiliari/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/0772fb6b8d440ee6b3bb.jpg"
-    },
-    {
-      "post_id": "5cf1ecc0b2ff4461f48e",
-      "title": "Els horts d’Es Jonquet, de Deià, es consoliden amb 28 usuaris i 60 participants",
-      "summary": "",
-      "source": "Fora Vila",
-      "source_id": "fora-vila-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-11-08T07:02:00+00:00",
-      "original_url": "https://www.foravila.net/area/serra-de-tramuntana/els-horts-des-jonquet-de-deia-es-consoliden-amb-28-usuaris-i-60-participants/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/5cf1ecc0b2ff4461f48e.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
