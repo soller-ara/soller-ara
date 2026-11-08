@@ -1,6 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-11-08T21:09:08.842537+00:00",
+  "entries": [
+    {
+      "post_id": "1ff03f8462ad33e34bb4",
+      "title": "Francina Armengol reivindica a Sóller la defensa dels serveis públics, l’habitatge i l’acció climàtica davant les polítiques de la dreta.",
+      "summary": "",
+      "source": "PSIB-PSOE · Sóller",
+      "source_id": "psib-psoe-soller",
+      "source_type": "political_party",
+      "category": "politics",
+      "language": "ca",
+      "published_at": "2026-11-08T19:24:42+00:00",
+      "original_url": "https://www.psib-psoe.org/mallorca/francina-armengol-reivindica-a-soller-la-defensa-dels-serveis-publics-lhabitatge-i-laccio-climatica-davant-les-politiques-de-la-dreta/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "official_party_source",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/1ff03f8462ad33e34bb4.jpg"
+    }
+  ]
 }
