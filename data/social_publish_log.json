@@ -15966,6 +15966,51 @@
       "retry_requested": true,
       "stage": "media_publish",
       "container_id": "18124256194905740"
+    },
+    {
+      "post_id": "b6f1daa9f5e228e5d1b2",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122131290975467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122131290975467310",
+      "title": "Investigan la muerte de un joven en su casa del Port de Sóller",
+      "post_url": "https://www.ultimahora.es/sucesos/ultimas/2026/11/08/2745343/investigan-muerte-joven-casa-del-port-soller.html",
+      "source": "Última Hora",
+      "source_id": "ultima-hora-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-08T04:38:27.947984+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "b6f1daa9f5e228e5d1b2",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Investigan la muerte de un joven en su casa del Port de Sóller",
+      "post_url": "https://www.ultimahora.es/sucesos/ultimas/2026/11/08/2745343/investigan-muerte-joven-casa-del-port-soller.html",
+      "source": "Última Hora",
+      "source_id": "ultima-hora-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-08T04:38:39.678951+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18124392244905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "b6f1daa9f5e228e5d1b2",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "17978863475934256",
+      "remote_url": "https://www.instagram.com/p/Dfd6rE_G_sE/",
+      "title": "Investigan la muerte de un joven en su casa del Port de Sóller",
+      "post_url": "https://www.ultimahora.es/sucesos/ultimas/2026/11/08/2745343/investigan-muerte-joven-casa-del-port-soller.html",
+      "source": "Última Hora",
+      "source_id": "ultima-hora-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-08T04:38:43.898425+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
