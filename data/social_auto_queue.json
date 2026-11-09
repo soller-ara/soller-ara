@@ -1,45 +1,45 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-09T10:07:52.360561+00:00",
+  "generated_at": "2026-11-09T12:22:21.182886+00:00",
   "entries": [
     {
-      "post_id": "bb2515719efe8d3ec37c",
-      "title": "El TIB guanya passatgers a Sóller i a la Serra, però retalla freqüències",
+      "post_id": "19c4cf061d3e47525d9b",
+      "title": "Programa SOIB Impulsa'T 2026-2027 de l'Ajuntament de Deià",
+      "summary": "",
+      "source": "Ajuntament de Deià",
+      "source_id": "ajuntament-deia-noticies",
+      "source_type": "official",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-11-09T11:45:41+00:00",
+      "original_url": "https://ajdeia.net/ca/noticies/programa-soib-impulsat-2026-2027-de-lajuntament-de-deia",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "official_public_source",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/19c4cf061d3e47525d9b.jpg"
+    },
+    {
+      "post_id": "dc52d0363f91a923d26d",
+      "title": "Investiguen la mort d'un jove a casa seva al Port de Sóller",
       "summary": "",
       "source": "Setmanari Sóller",
       "source_id": "setmanari-soller",
       "source_type": "media",
-      "category": "services",
-      "language": "ca",
-      "published_at": "2026-11-09T10:00:00+01:00",
-      "original_url": "https://www.elsoller.cat/soller/reportatges/2026/11/09/354767/tib-guanya-passatgers-soller-serra-pero-retalla-frequencies.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/bb2515719efe8d3ec37c.jpg"
-    },
-    {
-      "post_id": "01194ba3bdcafd8682ed",
-      "title": "Armengol defiende los servicios públicos y la lucha contra el cambio climático en un mitin en Sóller",
-      "summary": "",
-      "source": "Última Hora",
-      "source_id": "ultima-hora-soller",
-      "source_type": "media",
       "category": "news",
-      "language": "es",
-      "published_at": "2026-11-09T09:18:00+01:00",
-      "original_url": "https://www.ultimahora.es/noticias/part-forana/2026/11/09/2745967/armengol-defiende-servicios-publicos-lucha-contra-cambio-climatico.html",
+      "language": "ca",
+      "published_at": "2026-11-09T09:42:00+01:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/11/09/354765/investiguen-mort-jove-casa-seva-port-soller.html",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/01194ba3bdcafd8682ed.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/dc52d0363f91a923d26d.jpg"
     }
   ]
 }
