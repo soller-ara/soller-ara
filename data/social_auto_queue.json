@@ -1,6 +1,29 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-11-09T23:22:41.234316+00:00",
+  "entries": [
+    {
+      "post_id": "0639a3c18640ac6b5095",
+      "title": "Aviso. Nivel amarillo. Costeros. Sierra Tramontana",
+      "summary": "Aviso de costeros de nivel amarillo de 06:00 12-11-2026 CET (UTC+1) a 23:59 12-11-2026 CET (UTC+1).",
+      "source": "AEMET · Serra de Tramuntana",
+      "source_id": "aemet-avisos-mallorca",
+      "source_type": "official",
+      "category": "alerts",
+      "language": "es",
+      "published_at": "2026-11-09T22:50:01+00:00",
+      "alert_status": "scheduled",
+      "alert_valid_from": "2026-11-12T05:00:00+00:00",
+      "alert_valid_until": "2026-11-12T22:59:00+00:00",
+      "original_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261109225001_AFAZ645401COCO1223.xml",
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "reuse_authorized_with_attribution",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/0639a3c18640ac6b5095.jpg"
+    }
+  ]
 }
