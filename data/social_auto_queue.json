@@ -1,45 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-09T07:38:42.384963+00:00",
-  "entries": [
-    {
-      "post_id": "6a529558e57a4c69f39f",
-      "title": "La Guàrdia Civil investiga la mort d’un home de 34 anys trobat sense vida al Port de Sóller",
-      "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-11-09T07:30:25+00:00",
-      "original_url": "https://saveu.cat/noticies/la-guardia-civil-investiga-la-mort-dun-home-de-34-anys-trobat-sense-vida-al-port-de-soller/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/6a529558e57a4c69f39f.jpg"
-    },
-    {
-      "post_id": "ff406d4fab2bf7e040c4",
-      "title": "Punt Verd de Valldemossa · Avís Important",
-      "summary": "",
-      "source": "Ajuntament de Valldemossa",
-      "source_id": "ajuntament-valldemossa-noticies",
-      "source_type": "official",
-      "category": "services",
-      "language": "ca",
-      "published_at": "2026-11-09T06:54:47+00:00",
-      "original_url": "https://ajvalldemossa.net/ca/noticies/punt-verd-de-valldemossa-avis-important",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "official_public_source",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/ff406d4fab2bf7e040c4.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
