@@ -1,45 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-09T18:47:07.721355+00:00",
-  "entries": [
-    {
-      "post_id": "4bcb796b171741c7c535",
-      "title": "Can Prunera Pensament: Pedro Olalla.",
-      "summary": "Vídeo publicat per Can Prunera · YouTube.",
-      "source": "Can Prunera · YouTube",
-      "source_id": "youtube-can-prunera",
-      "source_type": "social",
-      "category": "culture",
-      "language": "es",
-      "published_at": "2026-11-09T17:52:46+00:00",
-      "original_url": "https://www.youtube.com/watch?v=m0yrTaHKo8o",
-      "content_policy": "generated_social_summary",
-      "rights_status": "platform_embed",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/4bcb796b171741c7c535.jpg"
-    },
-    {
-      "post_id": "613726f2cc063bd0e582",
-      "title": "Entra en obres d’embelliment el parc infantil dels Estiradors",
-      "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
-      "source_type": "media",
-      "category": "services",
-      "language": "ca",
-      "published_at": "2026-11-09T14:32:10+00:00",
-      "original_url": "https://saveu.cat/noticies/entra-en-obres-dembelliment-el-parc-infantil-dels-estiradors/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/613726f2cc063bd0e582.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
