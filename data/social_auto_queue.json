@@ -1,45 +1,83 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-09T12:22:21.182886+00:00",
+  "generated_at": "2026-11-09T14:36:56.565431+00:00",
   "entries": [
     {
-      "post_id": "19c4cf061d3e47525d9b",
-      "title": "Programa SOIB Impulsa'T 2026-2027 de l'Ajuntament de Deià",
+      "post_id": "a66b74e885092b61a298",
+      "title": "Més de 300 persones participen en una iniciativa de divulgació a bord del Tren de Sóller",
       "summary": "",
-      "source": "Ajuntament de Deià",
-      "source_id": "ajuntament-deia-noticies",
-      "source_type": "official",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-11-09T11:45:41+00:00",
-      "original_url": "https://ajdeia.net/ca/noticies/programa-soib-impulsat-2026-2027-de-lajuntament-de-deia",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "official_public_source",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/19c4cf061d3e47525d9b.jpg"
-    },
-    {
-      "post_id": "dc52d0363f91a923d26d",
-      "title": "Investiguen la mort d'un jove a casa seva al Port de Sóller",
-      "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
       "source_type": "media",
-      "category": "news",
+      "category": "agenda",
       "language": "ca",
-      "published_at": "2026-11-09T09:42:00+01:00",
-      "original_url": "https://www.elsoller.cat/soller/local/2026/11/09/354765/investiguen-mort-jove-casa-seva-port-soller.html",
+      "published_at": "2026-11-09T14:26:04+00:00",
+      "original_url": "https://saveu.cat/noticies/mes-de-300-persones-participen-en-una-iniciativa-de-divulgacio-a-bord-del-tren-de-soller/",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/dc52d0363f91a923d26d.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/a66b74e885092b61a298.jpg"
+    },
+    {
+      "post_id": "6db647793da6d4711b46",
+      "title": "Ara Més-Front Ampli proposa un límit per als preus dels aliments bàsics",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-11-09T13:32:00+01:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/11/09/354769/ara-mes-front-ampli-proposa-limit-per-als-preus-dels-aliments-basics.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/6db647793da6d4711b46.jpg"
+    },
+    {
+      "post_id": "37f3c2a31be3fa52f8ee",
+      "title": "Sóller se suma a la campanya de vacunació contra la grip",
+      "summary": "sarrom dl., 09/11/2026 - 13:29 09-Novembre-2026 La Conselleria de Salut del Govern de les Illes Balears impulsa la campanya de vacunació contra la grip, oberta a tothom des del primer dia. Des de l’Ajuntament de Sóller…",
+      "source": "Ajuntament de Sóller",
+      "source_id": "ajuntament-soller-noticies",
+      "source_type": "official",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-11-09T12:29:41+00:00",
+      "original_url": "https://ajsoller.net/ca/noticies/soller-se-suma-la-campanya-de-vacunacio-contra-la-grip",
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "public_source_reviewed",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/37f3c2a31be3fa52f8ee.jpg"
+    },
+    {
+      "post_id": "cee8603ace33ca8eb847",
+      "title": "Avís Important · Tall en el subministrament d'aigua",
+      "summary": "",
+      "source": "Ajuntament de Valldemossa",
+      "source_id": "ajuntament-valldemossa-noticies",
+      "source_type": "official",
+      "category": "services",
+      "language": "ca",
+      "published_at": "2026-11-09T11:58:25+00:00",
+      "original_url": "https://ajvalldemossa.net/ca/noticies/avis-important-tall-en-el-subministrament-daigua",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "official_public_source",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/cee8603ace33ca8eb847.jpg"
     }
   ]
 }
