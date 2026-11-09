@@ -16191,6 +16191,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-11-08T21:09:49.917145+00:00",
       "error": ""
+    },
+    {
+      "post_id": "9193fcf4a43ad010d1b2",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122131580037467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122131580037467310",
+      "title": "El bus 204 Sóller - Palma baja a 33 viajes al día en invierno, justo cuando cierra el tren",
+      "post_url": "https://www.sollerenmallorca.com/noticias/bus-204-soller-palma-menos-frecuencias-invierno/",
+      "source": "Sóller en Mallorca · Notícies",
+      "source_id": "soller-en-mallorca-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-09T05:23:52.814347+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "9193fcf4a43ad010d1b2",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "El bus 204 Sóller - Palma baja a 33 viajes al día en invierno, justo cuando cierra el tren",
+      "post_url": "https://www.sollerenmallorca.com/noticias/bus-204-soller-palma-menos-frecuencias-invierno/",
+      "source": "Sóller en Mallorca · Notícies",
+      "source_id": "soller-en-mallorca-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-09T05:24:05.384001+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18124625980905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "9193fcf4a43ad010d1b2",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18231676768333640",
+      "remote_url": "https://www.instagram.com/p/DfgkqHJFAu6/",
+      "title": "El bus 204 Sóller - Palma baja a 33 viajes al día en invierno, justo cuando cierra el tren",
+      "post_url": "https://www.sollerenmallorca.com/noticias/bus-204-soller-palma-menos-frecuencias-invierno/",
+      "source": "Sóller en Mallorca · Notícies",
+      "source_id": "soller-en-mallorca-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-09T05:24:08.608786+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
