@@ -694,7 +694,7 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 342,
+  "post_count": 343,
   "related_pair_count": 0,
   "errors": [
     {
@@ -711,6 +711,25 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "posts": [
+    {
+      "id": "soller-ara-53614b1aad74316c",
+      "category": "culture",
+      "source_id": "manual-15df5a2b3ac8",
+      "source": "Ajuntament Fornalutx",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-11-09T13:13:25.942285+00:00",
+      "show_in_now": true,
+      "content_type": "social_link",
+      "title": "",
+      "summary": "",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-53614b1aad74316c.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": false,
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1453154423614693&id=100067604481291&hpir=1#"
+    },
     {
       "id": "19c4cf061d3e47525d9b",
       "category": "news",
@@ -7815,5 +7834,5 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "sources_checked_at": "2026-11-09T12:22:20.988605+00:00",
-  "fetched_at": "2026-11-09T12:22:20.988605+00:00"
+  "fetched_at": "2026-11-09T13:13:25.948540+00:00"
 };
