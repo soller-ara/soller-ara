@@ -1,6 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-11-09T05:23:28.065207+00:00",
+  "entries": [
+    {
+      "post_id": "9193fcf4a43ad010d1b2",
+      "title": "El bus 204 Sóller - Palma baja a 33 viajes al día en invierno, justo cuando cierra el tren",
+      "summary": "",
+      "source": "Sóller en Mallorca · Notícies",
+      "source_id": "soller-en-mallorca-noticies",
+      "source_type": "media",
+      "category": "news",
+      "language": "es",
+      "published_at": "2026-11-09T00:00:00+00:00",
+      "original_url": "https://www.sollerenmallorca.com/noticias/bus-204-soller-palma-menos-frecuencias-invierno/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/9193fcf4a43ad010d1b2.jpg"
+    }
+  ]
 }
