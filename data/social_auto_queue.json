@@ -1,45 +1,45 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-10T16:20:32.410722+00:00",
+  "generated_at": "2026-11-10T17:45:31.867989+00:00",
   "entries": [
     {
-      "post_id": "2cadf23fb17f090611a7",
-      "title": "La Vila garanteix el servei de recollida de fems durant la jornada de vaga",
+      "post_id": "5e632a49553b3b51d759",
+      "title": "Joana Palmer es jubila entre els agraïments dels comerciants del Carrer de Sa Lluna",
       "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
       "source_type": "media",
-      "category": "services",
+      "category": "commerce",
       "language": "ca",
-      "published_at": "2026-11-10T15:22:38+00:00",
-      "original_url": "https://saveu.cat/noticies/la-vila-garanteix-el-servei-de-recollida-de-fems-durant-la-jornada-de-vaga/",
+      "published_at": "2026-11-10T17:51:31+01:00",
+      "original_url": "https://www.elsoller.cat/soller/societat-i-cultura/2026/11/10/354777/joana-palmer-jubila-entre-els-agraiments-dels-comerciants-del-carrer-lluna.html",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/2cadf23fb17f090611a7.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/5e632a49553b3b51d759.jpg"
     },
     {
-      "post_id": "f7e7950beb60f9a499d2",
-      "title": "SERVEIS MÍNIMS MUNICIPALS PER LA VAGA DEL 11 DE NOVEMBRE",
+      "post_id": "5ec62167dd6361a44f72",
+      "title": "De 14 bancs, només 2 són operatius a Son Angelats",
       "summary": "",
-      "source": "Ajuntament de Bunyola",
-      "source_id": "ajuntament-bunyola-noticies",
-      "source_type": "official",
-      "category": "services",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "source_type": "media",
+      "category": "sports",
       "language": "ca",
-      "published_at": "2026-11-10T12:18:19+00:00",
-      "original_url": "https://ajbunyola.net/ca/noticies/serveis-minims-municipals-la-vaga-del-11-de-novembre",
+      "published_at": "2026-11-10T15:17:26+00:00",
+      "original_url": "https://saveu.cat/noticies/de-14-bancs-nomes-2-son-operatius-a-son-angelats/",
       "content_policy": "headline_date_link_only",
-      "rights_status": "official_public_source",
+      "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/f7e7950beb60f9a499d2.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/5ec62167dd6361a44f72.jpg"
     }
   ]
 }
