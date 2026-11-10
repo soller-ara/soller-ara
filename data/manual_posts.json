@@ -2022,6 +2022,25 @@
       "rights_status": "no_reuse_reference_only",
       "image_allowed": false,
       "original_url": "https://www.facebook.com/story.php?story_fbid=1453154423614693&id=100067604481291&hpir=1#"
+    },
+    {
+      "id": "soller-ara-e10eb17f641167bf",
+      "category": "news",
+      "source_id": "manual-13e44f9445ef",
+      "source": "Policia Local de Sóller",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-11-10T11:17:38.531318+00:00",
+      "show_in_now": true,
+      "content_type": "social_link",
+      "title": "",
+      "summary": "",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-e10eb17f641167bf.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": false,
+      "original_url": "https://www.facebook.com/share/p/1DzdHjwPrm/?mibextid=wwXIfr&hpir=1&http_ref=eyJ0cyI6MTc5NDMwOTM4NzAwMCwiciI6IiJ9"
     }
   ]
 }
