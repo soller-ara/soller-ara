@@ -16956,6 +16956,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-11-10T04:24:00.391228+00:00",
       "error": ""
+    },
+    {
+      "post_id": "893b7c0509b8e7a1a70e",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122131906377467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122131906377467310",
+      "title": "Pròxim ple municipal",
+      "post_url": "https://ajsoller.net/ca/noticies/proxim-ple-municipal",
+      "source": "Ajuntament de Sóller",
+      "source_id": "ajuntament-soller-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-10T09:44:54.318957+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "893b7c0509b8e7a1a70e",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Pròxim ple municipal",
+      "post_url": "https://ajsoller.net/ca/noticies/proxim-ple-municipal",
+      "source": "Ajuntament de Sóller",
+      "source_id": "ajuntament-soller-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-10T09:45:00.773170+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18124890193905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "893b7c0509b8e7a1a70e",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "17958179700266895",
+      "remote_url": "https://www.instagram.com/p/DfjnUvpnEjz/",
+      "title": "Pròxim ple municipal",
+      "post_url": "https://ajsoller.net/ca/noticies/proxim-ple-municipal",
+      "source": "Ajuntament de Sóller",
+      "source_id": "ajuntament-soller-noticies",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-10T09:45:03.840678+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
