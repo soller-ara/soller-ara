@@ -16911,6 +16911,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-11-09T23:24:20.109275+00:00",
       "error": ""
+    },
+    {
+      "post_id": "0a537b0cd887b0eac235",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122131853823467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122131853823467310",
+      "title": "La Cooperativa de Sóller deja de comprar aceite tras la intervención estatal que obliga a inmovilizar el 12 % del producto",
+      "post_url": "https://www.ultimahora.es/noticias/part-forana/2026/11/10/2746321/cooperativa-soller-deja-comprar-aceite-tras-intervencion-estatal-obliga-inmovilizar-del-producto.html",
+      "source": "Última Hora",
+      "source_id": "ultima-hora-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-10T04:23:48.455237+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "0a537b0cd887b0eac235",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "La Cooperativa de Sóller deja de comprar aceite tras la intervención estatal que obliga a inmovilizar el 12 % del producto",
+      "post_url": "https://www.ultimahora.es/noticias/part-forana/2026/11/10/2746321/cooperativa-soller-deja-comprar-aceite-tras-intervencion-estatal-obliga-inmovilizar-del-producto.html",
+      "source": "Última Hora",
+      "source_id": "ultima-hora-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-10T04:23:57.328231+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18124834495905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "0a537b0cd887b0eac235",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18106921376571990",
+      "remote_url": "https://www.instagram.com/p/DfjClLkjEgE/",
+      "title": "La Cooperativa de Sóller deja de comprar aceite tras la intervención estatal que obliga a inmovilizar el 12 % del producto",
+      "post_url": "https://www.ultimahora.es/noticias/part-forana/2026/11/10/2746321/cooperativa-soller-deja-comprar-aceite-tras-intervencion-estatal-obliga-inmovilizar-del-producto.html",
+      "source": "Última Hora",
+      "source_id": "ultima-hora-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-10T04:24:00.391228+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
