@@ -1,45 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-10T17:45:31.867989+00:00",
+  "generated_at": "2026-11-10T19:52:15.437767+00:00",
   "entries": [
     {
-      "post_id": "5e632a49553b3b51d759",
-      "title": "Joana Palmer es jubila entre els agraïments dels comerciants del Carrer de Sa Lluna",
-      "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
-      "source_type": "media",
-      "category": "commerce",
-      "language": "ca",
-      "published_at": "2026-11-10T17:51:31+01:00",
-      "original_url": "https://www.elsoller.cat/soller/societat-i-cultura/2026/11/10/354777/joana-palmer-jubila-entre-els-agraiments-dels-comerciants-del-carrer-lluna.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/5e632a49553b3b51d759.jpg"
-    },
-    {
-      "post_id": "5ec62167dd6361a44f72",
-      "title": "De 14 bancs, només 2 són operatius a Son Angelats",
+      "post_id": "217fdd95effc928e9a30",
+      "title": "Noves pantalles informatives a la carretera de Sóller",
       "summary": "",
       "source": "Sa Veu de Sóller",
       "source_id": "sa-veu-soller",
       "source_type": "media",
-      "category": "sports",
+      "category": "services",
       "language": "ca",
-      "published_at": "2026-11-10T15:17:26+00:00",
-      "original_url": "https://saveu.cat/noticies/de-14-bancs-nomes-2-son-operatius-a-son-angelats/",
+      "published_at": "2026-11-10T15:16:11+00:00",
+      "original_url": "https://saveu.cat/noticies/noves-pantalles-informatives-a-la-carretera-de-soller/",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/5ec62167dd6361a44f72.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/217fdd95effc928e9a30.jpg"
     }
   ]
 }
