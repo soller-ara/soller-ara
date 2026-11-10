@@ -1,12 +1,69 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-10T11:51:40.594629+00:00",
+  "generated_at": "2026-11-10T14:07:51.280578+00:00",
   "entries": [
     {
-      "post_id": "79615b7c4a2b8a5ec305",
-      "title": "Aviso. Nivel amarillo. Vientos. Sierra Tramontana",
-      "summary": "Aviso de rachas máximas de nivel amarillo de 03:00 12-11-2026 CET (UTC+1) a 23:59 12-11-2026 CET (UTC+1).",
+      "post_id": "2309d7f843f1ed0213f9",
+      "title": "La Cooperativa de Sóller deixa de comprar oli després de la intervenció estatal que obliga a immobilitzar el 12% del producte",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-11-10T13:34:00+01:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/11/10/354775/cooperativa-soller-deixa-comprar-oli-despres-intervencio-estatal-obliga-immobilitzar-del-producte-1.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/2309d7f843f1ed0213f9.jpg"
+    },
+    {
+      "post_id": "aef59571736fa6beda9a",
+      "title": "INFORMACIÓ IMPORTANT DAVANT LA CONVOCATÒRIA DE VAGA GENERAL",
+      "summary": "",
+      "source": "Ajuntament de Bunyola",
+      "source_id": "ajuntament-bunyola-noticies",
+      "source_type": "official",
+      "category": "agenda",
+      "language": "ca",
+      "published_at": "2026-11-10T12:24:51+00:00",
+      "original_url": "https://ajbunyola.net/ca/noticies/informacio-important-davant-la-convocatoria-de-vaga-general",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "official_public_source",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/aef59571736fa6beda9a.jpg"
+    },
+    {
+      "post_id": "19c24c45b5d81b9f850d",
+      "title": "El Consell de Mallorca recorre la Serra de Tramuntana con «La Serra té nom» para poner rostro a las personas que conservan el paisaje cultural",
+      "summary": "",
+      "source": "Consell de Mallorca",
+      "source_id": "consell-mallorca-soller",
+      "source_type": "official",
+      "category": "culture",
+      "language": "ca",
+      "published_at": "2026-11-10T12:00:00+00:00",
+      "original_url": "https://www.conselldemallorca.es/es/todas-las-noticias/-/asset_publisher/bqOupoVYvgPA/content/el-consell-de-mallorca-recorr-la-serra-de-tramuntana-amb-%C2%ABla-serra-t%C3%A9-nom%C2%BB-per-posar-cara-a-les-persones-que-conserven-el-paisatge-cultural/695139",
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "official_public_source",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/19c24c45b5d81b9f850d.jpg"
+    },
+    {
+      "post_id": "dec66ac0fe9b2c08cc70",
+      "title": "Aviso. Nivel amarillo. Costeros. Sierra Tramontana",
+      "summary": "Aviso de costeros de nivel amarillo de 03:00 12-11-2026 CET (UTC+1) a 23:59 12-11-2026 CET (UTC+1).",
       "source": "AEMET · Serra de Tramuntana",
       "source_id": "aemet-avisos-mallorca",
       "source_type": "official",
@@ -16,33 +73,14 @@
       "alert_status": "scheduled",
       "alert_valid_from": "2026-11-12T02:00:00+00:00",
       "alert_valid_until": "2026-11-12T22:59:00+00:00",
-      "original_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261110105441_AFAZ645401VIRM1223.xml",
+      "original_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261110105441_AFAZ645401COCO1223.xml",
       "content_policy": "short_factual_excerpt",
       "rights_status": "reuse_authorized_with_attribution",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/79615b7c4a2b8a5ec305.jpg"
-    },
-    {
-      "post_id": "10c317316037cf44658f",
-      "title": "Reducció de serveis per Vaga",
-      "summary": "",
-      "source": "Ajuntament de Valldemossa",
-      "source_id": "ajuntament-valldemossa-noticies",
-      "source_type": "official",
-      "category": "services",
-      "language": "ca",
-      "published_at": "2026-11-10T08:03:19+00:00",
-      "original_url": "https://ajvalldemossa.net/ca/noticies/reduccio-de-serveis-vaga",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "official_public_source",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/10c317316037cf44658f.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/dec66ac0fe9b2c08cc70.jpg"
     }
   ]
 }
