@@ -1,26 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-10T19:52:15.437767+00:00",
-  "entries": [
-    {
-      "post_id": "217fdd95effc928e9a30",
-      "title": "Noves pantalles informatives a la carretera de Sóller",
-      "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
-      "source_type": "media",
-      "category": "services",
-      "language": "ca",
-      "published_at": "2026-11-10T15:16:11+00:00",
-      "original_url": "https://saveu.cat/noticies/noves-pantalles-informatives-a-la-carretera-de-soller/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/217fdd95effc928e9a30.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
