@@ -1,6 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-11-10T09:44:31.324030+00:00",
+  "entries": [
+    {
+      "post_id": "893b7c0509b8e7a1a70e",
+      "title": "Pròxim ple municipal",
+      "summary": "sarrom dt., 10/11/2026 - 09:48 10-Novembre-2026 Anunci de la convocatòria del pròxim ple ordinari que tindrà lloc demà, dimecres 11 de novembre, a les 11h.",
+      "source": "Ajuntament de Sóller",
+      "source_id": "ajuntament-soller-noticies",
+      "source_type": "official",
+      "category": "agenda",
+      "language": "ca",
+      "published_at": "2026-11-10T08:48:23+00:00",
+      "original_url": "https://ajsoller.net/ca/noticies/proxim-ple-municipal",
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "public_source_reviewed",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/893b7c0509b8e7a1a70e.jpg"
+    }
+  ]
 }
