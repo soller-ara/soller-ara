@@ -1,26 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-10T04:23:22.730693+00:00",
-  "entries": [
-    {
-      "post_id": "0a537b0cd887b0eac235",
-      "title": "La Cooperativa de Sóller deja de comprar aceite tras la intervención estatal que obliga a inmovilizar el 12 % del producto",
-      "summary": "",
-      "source": "Última Hora",
-      "source_id": "ultima-hora-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "es",
-      "published_at": "2026-11-10T04:48:01+01:00",
-      "original_url": "https://www.ultimahora.es/noticias/part-forana/2026/11/10/2746321/cooperativa-soller-deja-comprar-aceite-tras-intervencion-estatal-obliga-inmovilizar-del-producto.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/0a537b0cd887b0eac235.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
