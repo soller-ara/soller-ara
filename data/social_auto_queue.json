@@ -1,29 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-11T16:22:50.481765+00:00",
+  "generated_at": "2026-11-11T18:36:45.829275+00:00",
   "entries": [
     {
-      "post_id": "ef4978cda31dd2fc2ef3",
-      "title": "Aviso. Nivel amarillo. Vientos. Sierra Tramontana",
-      "summary": "Aviso de rachas máximas de nivel amarillo de 00:00 13-11-2026 CET (UTC+1) a 07:59 13-11-2026 CET (UTC+1).",
-      "source": "AEMET · Serra de Tramuntana",
-      "source_id": "aemet-avisos-mallorca",
-      "source_type": "official",
-      "category": "alerts",
+      "post_id": "40d83f1c80d9862af044",
+      "title": "Can Prunera Pensament: Santiago Auserón",
+      "summary": "Vídeo publicat per Can Prunera · YouTube.",
+      "source": "Can Prunera · YouTube",
+      "source_id": "youtube-can-prunera",
+      "source_type": "social",
+      "category": "culture",
       "language": "es",
-      "published_at": "2026-11-11T10:29:36+00:00",
-      "alert_status": "scheduled",
-      "alert_valid_from": "2026-11-12T23:00:00+00:00",
-      "alert_valid_until": "2026-11-13T06:59:00+00:00",
-      "original_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261111102936_AFAZ645401VIRM1307.xml",
-      "content_policy": "short_factual_excerpt",
-      "rights_status": "reuse_authorized_with_attribution",
+      "published_at": "2026-11-11T17:48:19+00:00",
+      "original_url": "https://www.youtube.com/watch?v=NMLI2fSfmsA",
+      "content_policy": "generated_social_summary",
+      "rights_status": "platform_embed",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/ef4978cda31dd2fc2ef3.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/40d83f1c80d9862af044.jpg"
     }
   ]
 }
