@@ -1,6 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-11-11T08:22:40.575142+00:00",
+  "entries": [
+    {
+      "post_id": "6edf45adaeaeebe96087",
+      "title": "L’AJUNTAMENT DE BUNYOLA SOL·LICITA UNA SUBVENCIÓ PER MILLORAR ELS CAMINS I TERRENYS MUNICIPALS",
+      "summary": "",
+      "source": "Ajuntament de Bunyola",
+      "source_id": "ajuntament-bunyola-noticies",
+      "source_type": "official",
+      "category": "agenda",
+      "language": "ca",
+      "published_at": "2026-11-11T07:34:25+00:00",
+      "original_url": "https://ajbunyola.net/ca/noticies/lajuntament-de-bunyola-sollicita-una-subvencio-millorar-els-camins-i-terrenys-municipals",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "official_public_source",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/6edf45adaeaeebe96087.jpg"
+    }
+  ]
 }
