@@ -1,64 +1,105 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-11T09:56:51.798016+00:00",
+  "generated_at": "2026-11-11T12:07:42.191292+00:00",
   "entries": [
     {
-      "post_id": "3dd940ca8590c28624f6",
-      "title": "Ple extraordinari de l'Ajuntament de Sóller, celebray el 11/11/2026",
-      "summary": "Vídeo publicat per Ajuntament de Sóller · YouTube relacionat amb una sessió plenària o activitat municipal.",
-      "source": "Ajuntament de Sóller · YouTube",
-      "source_id": "youtube-ajuntament-soller",
-      "source_type": "social",
-      "category": "agenda",
-      "language": "ca",
-      "published_at": "2026-11-11T09:46:55+00:00",
-      "original_url": "https://www.youtube.com/watch?v=wpV5AzpIkyU",
-      "content_policy": "generated_social_summary",
-      "rights_status": "platform_embed",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/3dd940ca8590c28624f6.jpg"
-    },
-    {
-      "post_id": "582980259da7871bf7bd",
-      "title": "POSAM A PUNT LES NOSTRES INSTAL·LACIONS ESPORTIVES!",
-      "summary": "",
-      "source": "Ajuntament de Bunyola",
-      "source_id": "ajuntament-bunyola-noticies",
-      "source_type": "official",
-      "category": "sports",
-      "language": "ca",
-      "published_at": "2026-11-11T09:04:09+00:00",
-      "original_url": "https://ajbunyola.net/ca/noticies/posam-punt-les-nostres-installacions-esportives",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "official_public_source",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/582980259da7871bf7bd.jpg"
-    },
-    {
-      "post_id": "c3ccd8c27718952af720",
-      "title": "Normalitat a Sóller durant les primeres hores de vaga",
+      "post_id": "3236880ce1ad03b058d0",
+      "title": "Més i PSOE no assisteixen al plenari i se sumen a la vaga general pel dret a l’habitatge",
       "summary": "",
       "source": "Sa Veu de Sóller",
       "source_id": "sa-veu-soller",
       "source_type": "media",
-      "category": "services",
+      "category": "agenda",
       "language": "ca",
-      "published_at": "2026-11-11T08:34:29+00:00",
-      "original_url": "https://saveu.cat/noticies/normalitat-a-soller-durant-les-primeres-hores-de-vaga/",
+      "published_at": "2026-11-11T11:53:42+00:00",
+      "original_url": "https://saveu.cat/noticies/mes-i-psoe-no-assisteixen-al-plenari-i-se-sumen-a-la-vaga-general-pel-dret-a-lhabitatge/",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/c3ccd8c27718952af720.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/3236880ce1ad03b058d0.jpg"
+    },
+    {
+      "post_id": "1594243285dea0dd2c85",
+      "title": "Sessió plenària ordinària de l'Ajuntament de Sóller, celebrada l'11 de novembre de 2026.",
+      "summary": "Vídeo publicat per Ajuntament de Sóller · YouTube relacionat amb una sessió plenària o activitat municipal.",
+      "source": "Ajuntament de Sóller · YouTube",
+      "source_id": "youtube-ajuntament-soller",
+      "source_type": "social",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-11-11T11:30:41+00:00",
+      "original_url": "https://www.youtube.com/watch?v=RZ0wPsGh0NY",
+      "content_policy": "generated_social_summary",
+      "rights_status": "platform_embed",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/1594243285dea0dd2c85.jpg"
+    },
+    {
+      "post_id": "4b004396139fc56ba015",
+      "title": "UGT denuncia la gestió dels serveis mínims de la vaga general",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "services",
+      "language": "ca",
+      "published_at": "2026-11-11T11:51:15+01:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/11/11/354783/ugt-denuncia-gestio-dels-serveis-minims-vaga-general.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/4b004396139fc56ba015.jpg"
+    },
+    {
+      "post_id": "098ca7d612e5bea8c419",
+      "title": "Aviso. Nivel naranja. Costeros. Sierra Tramontana",
+      "summary": "Aviso de costeros de nivel naranja de 00:00 13-11-2026 CET (UTC+1) a 05:59 13-11-2026 CET (UTC+1).",
+      "source": "AEMET · Serra de Tramuntana",
+      "source_id": "aemet-avisos-mallorca",
+      "source_type": "official",
+      "category": "alerts",
+      "language": "es",
+      "published_at": "2026-11-11T10:29:36+00:00",
+      "alert_status": "scheduled",
+      "alert_valid_from": "2026-11-12T23:00:00+00:00",
+      "alert_valid_until": "2026-11-13T04:59:00+00:00",
+      "original_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261111102936_AFAZ645401COCO1305.xml",
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "reuse_authorized_with_attribution",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/098ca7d612e5bea8c419.jpg"
+    },
+    {
+      "post_id": "8682839b5abacfbe477e",
+      "title": "L’Ajuntament de Bunyola ha presentat una sol·licitud de subvenció al marc de la Subvencions 2026 als ajuntaments de Mallorca per al compliment de les obligacions derivades de la Llei 7/2023, de 28 de març, de protecció dels drets i el benestar dels animal",
+      "summary": "",
+      "source": "Ajuntament de Bunyola",
+      "source_id": "ajuntament-bunyola-noticies",
+      "source_type": "official",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-11-11T06:08:27+00:00",
+      "original_url": "https://ajbunyola.net/ca/noticies/lajuntament-de-bunyola-ha-presentat-una-sollicitud-de-subvencio-al-marc-de-la-subvencions",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "official_public_source",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/8682839b5abacfbe477e.jpg"
     }
   ]
 }
