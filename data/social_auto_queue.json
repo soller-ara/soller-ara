@@ -1,12 +1,12 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-10T23:15:19.557579+00:00",
+  "generated_at": "2026-11-11T01:23:38.731098+00:00",
   "entries": [
     {
-      "post_id": "85122fe997663080846b",
-      "title": "Aviso. Nivel amarillo. Vientos. Sierra Tramontana",
-      "summary": "Aviso de rachas máximas de nivel amarillo de 00:00 13-11-2026 CET (UTC+1) a 11:59 13-11-2026 CET (UTC+1).",
+      "post_id": "480a5dde033dcdf83206",
+      "title": "Aviso. Nivel amarillo. Costeros. Sierra Tramontana",
+      "summary": "Aviso de costeros de nivel amarillo de 00:00 13-11-2026 CET (UTC+1) a 14:59 13-11-2026 CET (UTC+1).",
       "source": "AEMET · Serra de Tramuntana",
       "source_id": "aemet-avisos-mallorca",
       "source_type": "official",
@@ -15,15 +15,15 @@
       "published_at": "2026-11-10T22:50:01+00:00",
       "alert_status": "scheduled",
       "alert_valid_from": "2026-11-12T23:00:00+00:00",
-      "alert_valid_until": "2026-11-13T10:59:00+00:00",
-      "original_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261110225001_AFAZ645401VIRM1311.xml",
+      "alert_valid_until": "2026-11-13T13:59:00+00:00",
+      "original_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261110225001_AFAZ645401COCO1314.xml",
       "content_policy": "short_factual_excerpt",
       "rights_status": "reuse_authorized_with_attribution",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/85122fe997663080846b.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/480a5dde033dcdf83206.jpg"
     }
   ]
 }
