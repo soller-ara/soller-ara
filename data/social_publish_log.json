@@ -17812,6 +17812,23 @@
       "retry_requested": true,
       "stage": "media_publish",
       "container_id": "18125267080905740"
+    },
+    {
+      "post_id": "40d83f1c80d9862af044",
+      "platform": "instagram",
+      "status": "verification_required",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Can Prunera Pensament: Santiago Auserón",
+      "post_url": "https://www.youtube.com/watch?v=NMLI2fSfmsA",
+      "source": "Can Prunera · YouTube",
+      "source_id": "youtube-can-prunera",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-11T21:23:00.857446+00:00",
+      "error": "Enviament anterior pendent de confirmació; no es crea una altra publicació.",
+      "retry_requested": true,
+      "stage": "media_publish",
+      "container_id": "18125267080905740"
     }
   ],
   "cooldowns": {
