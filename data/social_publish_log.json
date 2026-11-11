@@ -2845,24 +2845,6 @@
       "error": ""
     },
     {
-      "post_id": "soller-ara-f4d8dca9bf645a7e",
-      "platform": "instagram",
-      "status": "error",
-      "remote_id": "",
-      "post_url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-f4d8dca9bf645a7e.html",
-      "recorded_at": "2026-10-01T07:20:56.836418+00:00",
-      "error": "Application request limit reached [code=4, subcode=2207051]"
-    },
-    {
-      "post_id": "soller-ara-5d6dc8c23b2feeae",
-      "platform": "instagram",
-      "status": "error",
-      "remote_id": "",
-      "post_url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-5d6dc8c23b2feeae.html",
-      "recorded_at": "2026-10-01T08:10:43.901221+00:00",
-      "error": "Application request limit reached [code=4, subcode=2207051]"
-    },
-    {
       "post_id": "93b189416dfd75823824",
       "platform": "facebook",
       "status": "success",
@@ -17782,6 +17764,54 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-11-11T16:23:30.833447+00:00",
       "error": ""
+    },
+    {
+      "post_id": "40d83f1c80d9862af044",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122132260227467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122132260227467310",
+      "title": "Can Prunera Pensament: Santiago Auserón",
+      "post_url": "https://www.youtube.com/watch?v=NMLI2fSfmsA",
+      "source": "Can Prunera · YouTube",
+      "source_id": "youtube-can-prunera",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-11T18:37:07.598340+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "40d83f1c80d9862af044",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Can Prunera Pensament: Santiago Auserón",
+      "post_url": "https://www.youtube.com/watch?v=NMLI2fSfmsA",
+      "source": "Can Prunera · YouTube",
+      "source_id": "youtube-can-prunera",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-11T18:37:12.911513+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18125267080905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "40d83f1c80d9862af044",
+      "platform": "instagram",
+      "status": "verification_required",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Can Prunera Pensament: Santiago Auserón",
+      "post_url": "https://www.youtube.com/watch?v=NMLI2fSfmsA",
+      "source": "Can Prunera · YouTube",
+      "source_id": "youtube-can-prunera",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-11T18:37:13.134583+00:00",
+      "error": "Media ID is not available [code=9007, subcode=2207027]",
+      "retry_requested": true,
+      "stage": "media_publish",
+      "container_id": "18125267080905740"
     }
   ],
   "cooldowns": {
