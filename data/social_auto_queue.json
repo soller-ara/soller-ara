@@ -1,105 +1,102 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-11T12:07:42.191292+00:00",
+  "generated_at": "2026-11-11T14:07:24.210077+00:00",
   "entries": [
     {
-      "post_id": "3236880ce1ad03b058d0",
-      "title": "Més i PSOE no assisteixen al plenari i se sumen a la vaga general pel dret a l’habitatge",
-      "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
-      "source_type": "media",
+      "post_id": "8c84531dbd3d66c589f3",
+      "title": "Ajornada fins el proper ple l'aprovació de la Unitat d'Actuació de Muleta 1 a Sóller",
+      "summary": "Vídeo publicat per IB3 Notícies · YouTube.",
+      "source": "IB3 Notícies · YouTube",
+      "source_id": "youtube-ib3-noticies-soller",
+      "source_type": "social",
       "category": "agenda",
       "language": "ca",
-      "published_at": "2026-11-11T11:53:42+00:00",
-      "original_url": "https://saveu.cat/noticies/mes-i-psoe-no-assisteixen-al-plenari-i-se-sumen-a-la-vaga-general-pel-dret-a-lhabitatge/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/3236880ce1ad03b058d0.jpg"
-    },
-    {
-      "post_id": "1594243285dea0dd2c85",
-      "title": "Sessió plenària ordinària de l'Ajuntament de Sóller, celebrada l'11 de novembre de 2026.",
-      "summary": "Vídeo publicat per Ajuntament de Sóller · YouTube relacionat amb una sessió plenària o activitat municipal.",
-      "source": "Ajuntament de Sóller · YouTube",
-      "source_id": "youtube-ajuntament-soller",
-      "source_type": "social",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-11-11T11:30:41+00:00",
-      "original_url": "https://www.youtube.com/watch?v=RZ0wPsGh0NY",
+      "published_at": "2026-11-11T13:25:22+00:00",
+      "original_url": "https://www.youtube.com/watch?v=hQFC-zo0RpE",
       "content_policy": "generated_social_summary",
       "rights_status": "platform_embed",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/1594243285dea0dd2c85.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/8c84531dbd3d66c589f3.jpg"
     },
     {
-      "post_id": "4b004396139fc56ba015",
-      "title": "UGT denuncia la gestió dels serveis mínims de la vaga general",
-      "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
-      "source_type": "media",
-      "category": "services",
+      "post_id": "eb20216960be7990df1c",
+      "title": "L’Ajuntament de Sóller convida la ciutadania a participar en el viatge institucional a Lares (Puerto Rico)",
+      "summary": "dmaimo dc., 11/11/2026 - 13:43 11-Novembre-2026 L’Ajuntament prepara un viatge a Lares amb l’objectiu d’impulsar l’agermanament entre els dos municipis i reforçar els vincles històrics, culturals i humans que els…",
+      "source": "Ajuntament de Sóller",
+      "source_id": "ajuntament-soller-noticies",
+      "source_type": "official",
+      "category": "culture",
       "language": "ca",
-      "published_at": "2026-11-11T11:51:15+01:00",
-      "original_url": "https://www.elsoller.cat/soller/local/2026/11/11/354783/ugt-denuncia-gestio-dels-serveis-minims-vaga-general.html",
+      "published_at": "2026-11-11T12:43:33+00:00",
+      "original_url": "https://ajsoller.net/ca/noticies/lajuntament-de-soller-convida-la-ciutadania-participar-en-el-viatge-institucional-lares",
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "public_source_reviewed",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/eb20216960be7990df1c.jpg"
+    },
+    {
+      "post_id": "d813a0cd654d7251a320",
+      "title": "Ciència a tot tren 2026!",
+      "summary": "",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "source_type": "institution",
+      "category": "culture",
+      "language": "ca",
+      "published_at": "2026-11-11T12:29:51+00:00",
+      "original_url": "https://mucbo.org/ciencia-a-tot-tren-2026/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/d813a0cd654d7251a320.jpg"
+    },
+    {
+      "post_id": "cfe615f8ea235e8b432a",
+      "title": "La regularització de Muleta I encalla en el plenari",
+      "summary": "",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "source_type": "media",
+      "category": "politics",
+      "language": "ca",
+      "published_at": "2026-11-11T12:05:07+00:00",
+      "original_url": "https://saveu.cat/noticies/la-regularitzacio-de-muleta-i-encalla-en-el-plenari/",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/4b004396139fc56ba015.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/cfe615f8ea235e8b432a.jpg"
     },
     {
-      "post_id": "098ca7d612e5bea8c419",
-      "title": "Aviso. Nivel naranja. Costeros. Sierra Tramontana",
-      "summary": "Aviso de costeros de nivel naranja de 00:00 13-11-2026 CET (UTC+1) a 05:59 13-11-2026 CET (UTC+1).",
-      "source": "AEMET · Serra de Tramuntana",
-      "source_id": "aemet-avisos-mallorca",
-      "source_type": "official",
-      "category": "alerts",
-      "language": "es",
-      "published_at": "2026-11-11T10:29:36+00:00",
-      "alert_status": "scheduled",
-      "alert_valid_from": "2026-11-12T23:00:00+00:00",
-      "alert_valid_until": "2026-11-13T04:59:00+00:00",
-      "original_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261111102936_AFAZ645401COCO1305.xml",
-      "content_policy": "short_factual_excerpt",
-      "rights_status": "reuse_authorized_with_attribution",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/098ca7d612e5bea8c419.jpg"
-    },
-    {
-      "post_id": "8682839b5abacfbe477e",
-      "title": "L’Ajuntament de Bunyola ha presentat una sol·licitud de subvenció al marc de la Subvencions 2026 als ajuntaments de Mallorca per al compliment de les obligacions derivades de la Llei 7/2023, de 28 de març, de protecció dels drets i el benestar dels animal",
+      "post_id": "83a0f9d9277ae73827ec",
+      "title": "IB3N | Ajornada fins el proper ple l’aprovació de la Unitat d’Actuació de Muleta 1 a Sóller",
       "summary": "",
-      "source": "Ajuntament de Bunyola",
-      "source_id": "ajuntament-bunyola-noticies",
-      "source_type": "official",
-      "category": "news",
+      "source": "IB3 Notícies",
+      "source_id": "ib3-noticies-soller",
+      "source_type": "media",
+      "category": "agenda",
       "language": "ca",
-      "published_at": "2026-11-11T06:08:27+00:00",
-      "original_url": "https://ajbunyola.net/ca/noticies/lajuntament-de-bunyola-ha-presentat-una-sollicitud-de-subvencio-al-marc-de-la-subvencions",
+      "published_at": "2026-11-11T12:00:00+00:00",
+      "original_url": "https://ib3.org/ajornada-fins-el-proper-ple-laprovacio-de-la-unitat-dactuacio-de-muleta-1-a-soller",
       "content_policy": "headline_date_link_only",
-      "rights_status": "official_public_source",
+      "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/8682839b5abacfbe477e.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/83a0f9d9277ae73827ec.jpg"
     }
   ]
 }
