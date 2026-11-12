@@ -3223,15 +3223,6 @@
       "error": ""
     },
     {
-      "post_id": "soller-ara-a203f9768fbe0125",
-      "platform": "instagram",
-      "status": "error",
-      "remote_id": "",
-      "post_url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-a203f9768fbe0125.html",
-      "recorded_at": "2026-10-03T10:03:08.422389+00:00",
-      "error": "Application request limit reached [code=4, subcode=2207051]"
-    },
-    {
       "post_id": "617c51d07c5b8d66babf",
       "platform": "facebook",
       "status": "success",
@@ -18223,6 +18214,51 @@
       "source_id": "aemet-avisos-mallorca",
       "mode": "automatic_collected",
       "recorded_at": "2026-11-12T15:24:02.813748+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "47e4357515c431c8d434",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122132510163467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122132510163467310",
+      "title": "La campanya electoral arranca aquesta mitjanit amb la mirada posada en les urnes del 29 de novembre",
+      "post_url": "https://saveu.cat/noticies/la-campanya-electoral-arranca-aquesta-mitjanit-amb-la-mirada-posada-en-les-urnes-del-29-de-novembre/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-12T17:37:01.799377+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "47e4357515c431c8d434",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "La campanya electoral arranca aquesta mitjanit amb la mirada posada en les urnes del 29 de novembre",
+      "post_url": "https://saveu.cat/noticies/la-campanya-electoral-arranca-aquesta-mitjanit-amb-la-mirada-posada-en-les-urnes-del-29-de-novembre/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-12T17:37:12.244752+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18125500411905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "47e4357515c431c8d434",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "17866509378692454",
+      "remote_url": "https://www.instagram.com/p/Dfpm8uNDWAL/",
+      "title": "La campanya electoral arranca aquesta mitjanit amb la mirada posada en les urnes del 29 de novembre",
+      "post_url": "https://saveu.cat/noticies/la-campanya-electoral-arranca-aquesta-mitjanit-amb-la-mirada-posada-en-les-urnes-del-29-de-novembre/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-12T17:37:16.048284+00:00",
       "error": ""
     }
   ],
