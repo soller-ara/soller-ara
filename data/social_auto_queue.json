@@ -1,6 +1,67 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-11-12T10:59:32.251897+00:00",
+  "entries": [
+    {
+      "post_id": "96f07c162aeaec1b2062",
+      "title": "Manresa visita Sóller con «alerta máxima» pese a su condición de líder",
+      "summary": "",
+      "source": "Esport Balear · Sóller",
+      "source_id": "esport-balear-soller",
+      "source_type": "media",
+      "category": "sports",
+      "language": "es",
+      "published_at": "2026-11-12T09:51:06+00:00",
+      "original_url": "https://esportbalear.com/manresa-visita-soller-con-alerta-maxima-pese-a-su-condicion-de-lider?utm_source=rss&utm_medium=rss&utm_campaign=manresa-visita-soller-con-alerta-maxima-pese-a-su-condicion-de-lider",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/96f07c162aeaec1b2062.jpg"
+    },
+    {
+      "post_id": "e51c48a7ddd4768307fe",
+      "title": "Aviso. Nivel naranja. Costeros. Sierra Tramontana",
+      "summary": "Aviso de costeros de nivel naranja de 10:00 12-11-2026 CET (UTC+1) a 05:59 13-11-2026 CET (UTC+1).",
+      "source": "AEMET · Serra de Tramuntana",
+      "source_id": "aemet-avisos-mallorca",
+      "source_type": "official",
+      "category": "alerts",
+      "language": "es",
+      "published_at": "2026-11-12T09:50:50+00:00",
+      "alert_status": "active",
+      "alert_valid_from": "2026-11-12T09:00:00+00:00",
+      "alert_valid_until": "2026-11-13T04:59:00+00:00",
+      "original_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261112095050_AFAZ645401COCO1305.xml",
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "reuse_authorized_with_attribution",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/e51c48a7ddd4768307fe.jpg"
+    },
+    {
+      "post_id": "cf566991d7a74050da84",
+      "title": "La Tramuntana, en alerta per ratxes de vent de fins a 110 km/h i ones de cinc metres",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "alerts",
+      "language": "ca",
+      "published_at": "2026-11-12T10:14:00+01:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/11/12/354785/tramuntana-alerta-per-ratxes-vent-fins-110-ones-cinc-metres.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/cf566991d7a74050da84.jpg"
+    }
+  ]
 }
