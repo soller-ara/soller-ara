@@ -1,25 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-11T23:36:36.859752+00:00",
-  "entries": [
-    {
-      "post_id": "40d83f1c80d9862af044",
-      "title": "Can Prunera Pensament: Santiago Auserón",
-      "summary": "Vídeo publicat per Can Prunera · YouTube.",
-      "source": "Can Prunera · YouTube",
-      "source_id": "youtube-can-prunera",
-      "source_type": "social",
-      "category": "culture",
-      "language": "es",
-      "published_at": "2026-11-11T17:48:19+00:00",
-      "original_url": "https://www.youtube.com/watch?v=NMLI2fSfmsA",
-      "content_policy": "generated_social_summary",
-      "rights_status": "platform_embed",
-      "platforms": [
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/40d83f1c80d9862af044.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
