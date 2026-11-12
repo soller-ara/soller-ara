@@ -694,7 +694,7 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 364,
+  "post_count": 365,
   "related_pair_count": 0,
   "errors": [
     {
@@ -711,6 +711,25 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "posts": [
+    {
+      "id": "soller-ara-0693ed5d1579d52f",
+      "category": "alerts",
+      "source_id": "manual-13e44f9445ef",
+      "source": "Policia Local de Sóller",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-11-12T13:36:31.756126+00:00",
+      "show_in_now": true,
+      "content_type": "social_link",
+      "title": "",
+      "summary": "",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-0693ed5d1579d52f.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": false,
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1603282455174887&id=100064794426084&hpir=1#"
+    },
     {
       "id": "1ebc4a87b0e93a07ac42",
       "category": "news",
@@ -8305,5 +8324,5 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "sources_checked_at": "2026-11-12T13:07:35.374612+00:00",
-  "fetched_at": "2026-11-12T13:07:35.374612+00:00"
+  "fetched_at": "2026-11-12T13:36:31.764234+00:00"
 };
