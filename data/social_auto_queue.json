@@ -1,45 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-13T16:14:45.224934+00:00",
-  "entries": [
-    {
-      "post_id": "d3828459e2fab3c74f8e",
-      "title": "CALENDARI 2027",
-      "summary": "",
-      "source": "Ajuntament de Deià",
-      "source_id": "ajuntament-deia-noticies",
-      "source_type": "official",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-11-13T12:25:02+00:00",
-      "original_url": "https://ajdeia.net/ca/noticies/calendari-2027",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "official_public_source",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/d3828459e2fab3c74f8e.jpg"
-    },
-    {
-      "post_id": "7a48b84c25d2250ad213",
-      "title": "Mercadet de Nadal",
-      "summary": "",
-      "source": "Ajuntament de Deià · Agenda",
-      "source_id": "ajuntament-deia-agenda",
-      "source_type": "institution",
-      "category": "agenda",
-      "language": "ca",
-      "published_at": "2026-11-13T12:17:34+00:00",
-      "original_url": "https://ajdeia.net/ca/agenda/mercadet-de-nadal-5",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "link_only_no_media_license",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/7a48b84c25d2250ad213.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
