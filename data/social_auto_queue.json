@@ -1,6 +1,64 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-11-13T09:03:00.658261+00:00",
+  "entries": [
+    {
+      "post_id": "ad6e03a82dbfb743e6d3",
+      "title": "La campanya electoral arranca a Sóller amb polèmica per la penjada de cartells",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-11-13T09:46:00+01:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/11/13/354793/campanya-electoral-arranca-soller-amb-polemica-per-penjada-cartells-1.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/ad6e03a82dbfb743e6d3.jpg"
+    },
+    {
+      "post_id": "a72aea3d70251e6547f2",
+      "title": "Physella acuta",
+      "summary": "",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "source_type": "institution",
+      "category": "culture",
+      "language": "ca",
+      "published_at": "2026-11-13T08:38:42+00:00",
+      "original_url": "https://mucbo.org/physella-acuta/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/a72aea3d70251e6547f2.jpg"
+    },
+    {
+      "post_id": "0cc08a0a1905c9c311ba",
+      "title": "“Insistesc que no s’ha de tastar ni menjar mai cap bolet si no se n’està completament segur”",
+      "summary": "",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-11-13T08:20:28+00:00",
+      "original_url": "https://saveu.cat/entrevistes/insistesc-que-no-sha-de-tastar-ni-menjar-mai-cap-bolet-si-no-se-nesta-completament-segur/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/0cc08a0a1905c9c311ba.jpg"
+    }
+  ]
 }
