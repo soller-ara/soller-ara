@@ -12,7 +12,7 @@ window.SOLLER_ARA_DATA = {
       "count": 10,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "sa-veu-soller",
@@ -23,7 +23,7 @@ window.SOLLER_ARA_DATA = {
       "count": 12,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "setmanari-soller",
@@ -34,7 +34,7 @@ window.SOLLER_ARA_DATA = {
       "count": 20,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "soller-2010",
@@ -45,7 +45,7 @@ window.SOLLER_ARA_DATA = {
       "count": 4,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "aemet-avisos-mallorca",
@@ -56,7 +56,7 @@ window.SOLLER_ARA_DATA = {
       "count": 55,
       "archived_count": 55,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "youtube-ajuntament-soller",
@@ -67,7 +67,7 @@ window.SOLLER_ARA_DATA = {
       "count": 6,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "youtube-ib3-noticies-soller",
@@ -78,7 +78,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "goib-noticies-soller",
@@ -89,7 +89,7 @@ window.SOLLER_ARA_DATA = {
       "count": 2,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "ib3-noticies-soller",
@@ -100,7 +100,7 @@ window.SOLLER_ARA_DATA = {
       "count": 4,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "dbalears-soller",
@@ -111,7 +111,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "diario-mallorca-soller",
@@ -122,11 +122,11 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "api_oldest_query_checked_at": "2026-11-13T11:16:10.324438+00:00",
-      "api_latest_query_checked_at": "2026-11-13T11:16:10.324438+00:00",
-      "api_requests_this_month": 636,
+      "api_oldest_query_checked_at": "2026-11-13T13:31:11.019668+00:00",
+      "api_latest_query_checked_at": "2026-11-13T13:31:11.019668+00:00",
+      "api_requests_this_month": 642,
       "api_monthly_limit": 2700,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "ultima-hora-soller",
@@ -137,7 +137,7 @@ window.SOLLER_ARA_DATA = {
       "count": 21,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "mallorca-directo-soller",
@@ -148,7 +148,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "retained_count": 0,
       "error": "HTTP 410 Gone: la font ha retirat aquesta pàgina; pendent d'un canal alternatiu verificat.",
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "tib-avisos-soller",
@@ -159,7 +159,7 @@ window.SOLLER_ARA_DATA = {
       "count": 1,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "consell-mallorca-soller",
@@ -170,7 +170,7 @@ window.SOLLER_ARA_DATA = {
       "count": 2,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "youtube-can-prunera",
@@ -181,7 +181,7 @@ window.SOLLER_ARA_DATA = {
       "count": 3,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "youtube-aires-sollerics",
@@ -192,7 +192,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "youtube-xeremiers-soller",
@@ -203,7 +203,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "youtube-club-volei-soller",
@@ -214,7 +214,7 @@ window.SOLLER_ARA_DATA = {
       "count": 2,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "youtube-ballades-mallorca-soller",
@@ -225,7 +225,7 @@ window.SOLLER_ARA_DATA = {
       "count": 8,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "youtube-tramuntana-xxi",
@@ -236,7 +236,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "youtube-gob-mallorca-soller",
@@ -247,7 +247,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "youtube-museu-maritim-soller",
@@ -258,7 +258,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "youtube-serra-tramuntana",
@@ -269,7 +269,7 @@ window.SOLLER_ARA_DATA = {
       "count": 1,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "youtube-consell-mallorca-soller",
@@ -280,7 +280,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "mucbo-noticies",
@@ -291,7 +291,7 @@ window.SOLLER_ARA_DATA = {
       "count": 10,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "can-prunera-noticies",
@@ -302,7 +302,7 @@ window.SOLLER_ARA_DATA = {
       "count": 4,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "cronica-balear-soller",
@@ -313,11 +313,11 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "api_oldest_query_checked_at": "2026-11-13T11:16:10.324438+00:00",
-      "api_latest_query_checked_at": "2026-11-13T11:16:10.324438+00:00",
-      "api_requests_this_month": 636,
+      "api_oldest_query_checked_at": "2026-11-13T13:31:11.019668+00:00",
+      "api_latest_query_checked_at": "2026-11-13T13:31:11.019668+00:00",
+      "api_requests_this_month": 642,
       "api_monthly_limit": 2700,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "ara-balears-soller",
@@ -328,7 +328,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "fora-vila-soller",
@@ -339,7 +339,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "tren-soller-noticies",
@@ -350,7 +350,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "ajuntament-fornalutx-noticies",
@@ -361,7 +361,7 @@ window.SOLLER_ARA_DATA = {
       "count": 4,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "futbol-balear-cf-soller",
@@ -372,7 +372,7 @@ window.SOLLER_ARA_DATA = {
       "count": 1,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "mancomunitat-tramuntana-soller",
@@ -383,7 +383,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "youtube-sus-mallorca-soller",
@@ -394,7 +394,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "partido-popular-soller",
@@ -405,7 +405,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "ports-ib-port-soller",
@@ -416,7 +416,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "mes-per-soller",
@@ -427,7 +427,7 @@ window.SOLLER_ARA_DATA = {
       "count": 8,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "psib-psoe-soller",
@@ -438,7 +438,7 @@ window.SOLLER_ARA_DATA = {
       "count": 1,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "uep-mallorca-soller",
@@ -449,7 +449,7 @@ window.SOLLER_ARA_DATA = {
       "count": 3,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "ies-guillem-colom-casasnoves",
@@ -460,7 +460,7 @@ window.SOLLER_ARA_DATA = {
       "count": 8,
       "retained_count": 8,
       "error": "<urlopen error timed out>",
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "ajuntament-deia-noticies",
@@ -468,10 +468,10 @@ window.SOLLER_ARA_DATA = {
       "source_type": "official",
       "method": "rss",
       "ok": true,
-      "count": 9,
+      "count": 10,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "mallorcadiario-soller",
@@ -482,7 +482,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "fibwi-diario-soller",
@@ -493,7 +493,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "youtube-fibwi-diario-soller",
@@ -504,7 +504,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "gob-mallorca-noticies",
@@ -515,7 +515,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "eldiario-balears-soller",
@@ -526,7 +526,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "majorca-daily-bulletin-soller",
@@ -537,7 +537,7 @@ window.SOLLER_ARA_DATA = {
       "count": 5,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "ceip-es-puig-soller",
@@ -548,7 +548,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "retained_count": 0,
       "error": "<urlopen error timed out>",
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "sagrats-cors-soller",
@@ -559,7 +559,7 @@ window.SOLLER_ARA_DATA = {
       "count": 3,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "europa-press-balears-soller",
@@ -570,7 +570,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "mallorca-confidencial-soller",
@@ -581,7 +581,7 @@ window.SOLLER_ARA_DATA = {
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "mallorca-global-mag-soller",
@@ -592,7 +592,7 @@ window.SOLLER_ARA_DATA = {
       "count": 3,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "esport-balear-soller",
@@ -603,7 +603,7 @@ window.SOLLER_ARA_DATA = {
       "count": 2,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "ajuntament-deia-agenda",
@@ -611,10 +611,10 @@ window.SOLLER_ARA_DATA = {
       "source_type": "institution",
       "method": "rss",
       "ok": true,
-      "count": 2,
+      "count": 6,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "mallorca-caprice-soller",
@@ -625,7 +625,7 @@ window.SOLLER_ARA_DATA = {
       "count": 1,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "soller-en-mallorca-noticies",
@@ -636,7 +636,7 @@ window.SOLLER_ARA_DATA = {
       "count": 14,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "ajuntament-bunyola-noticies",
@@ -647,7 +647,7 @@ window.SOLLER_ARA_DATA = {
       "count": 10,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "ajuntament-valldemossa-noticies",
@@ -658,7 +658,7 @@ window.SOLLER_ARA_DATA = {
       "count": 10,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "ajuntament-escorca-noticies",
@@ -669,7 +669,7 @@ window.SOLLER_ARA_DATA = {
       "count": 5,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "ocio-mallorca-soller",
@@ -680,7 +680,7 @@ window.SOLLER_ARA_DATA = {
       "count": 1,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     },
     {
       "source_id": "soller-ara",
@@ -690,11 +690,11 @@ window.SOLLER_ARA_DATA = {
       "ok": true,
       "count": 108,
       "error": null,
-      "checked_at": "2026-11-13T11:22:54.974012+00:00"
+      "checked_at": "2026-11-13T13:37:25.388837+00:00"
     }
   ],
   "social_integration_status": [],
-  "post_count": 363,
+  "post_count": 368,
   "related_pair_count": 0,
   "errors": [
     {
@@ -711,6 +711,230 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "posts": [
+    {
+      "id": "df878a529144a6d0cea4",
+      "category": "alerts",
+      "source_id": "ajuntament-deia-noticies",
+      "source": "Ajuntament de Deià",
+      "source_type": "official",
+      "language": "ca",
+      "locality": "Deià / Serra de Tramuntana",
+      "published_at": "2026-11-13T12:34:17+00:00",
+      "title": "ÈPOCA DE FOC, NETEJA I PREVENCIÓ D’INCENDIS",
+      "summary": "",
+      "url": "https://ajdeia.net/ca/noticies/epoca-de-foc-neteja-i-prevencio-dincendis",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "official_public_source",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
+      "id": "d6f23b66807aee6746e2",
+      "category": "news",
+      "source_id": "ajuntament-deia-noticies",
+      "source": "Ajuntament de Deià",
+      "source_type": "official",
+      "language": "ca",
+      "locality": "Deià / Serra de Tramuntana",
+      "published_at": "2026-11-13T12:28:44+00:00",
+      "title": "L’Ajuntament de Deià desenvolupa el programa «SOIB Oportunitats d’ocupació per a Persones Joves Qualificades en Entitats Locals 2026 – 2027»",
+      "summary": "",
+      "url": "https://ajdeia.net/ca/noticies/lajuntament-de-deia-desenvolupa-el-programa-soib-oportunitats-docupacio-persones-joves",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "official_public_source",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
+      "id": "d3828459e2fab3c74f8e",
+      "category": "news",
+      "source_id": "ajuntament-deia-noticies",
+      "source": "Ajuntament de Deià",
+      "source_type": "official",
+      "language": "ca",
+      "locality": "Deià / Serra de Tramuntana",
+      "published_at": "2026-11-13T12:25:02+00:00",
+      "title": "CALENDARI 2027",
+      "summary": "",
+      "url": "https://ajdeia.net/ca/noticies/calendari-2027",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "official_public_source",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
+      "id": "de6ea46c8bc00d63aeac",
+      "category": "agenda",
+      "source_id": "ajuntament-deia-agenda",
+      "source": "Ajuntament de Deià · Agenda",
+      "source_type": "institution",
+      "language": "ca",
+      "locality": "Deià",
+      "published_at": "2026-11-13T12:21:32+00:00",
+      "title": "Excursió al massís de Tossals Verds per a joves",
+      "summary": "",
+      "url": "https://ajdeia.net/ca/agenda/excursio-al-massis-de-tossals-verds-joves",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
+      "id": "0a29ecfffdedff8489a4",
+      "category": "agenda",
+      "source_id": "ajuntament-deia-agenda",
+      "source": "Ajuntament de Deià · Agenda",
+      "source_type": "institution",
+      "language": "ca",
+      "locality": "Deià",
+      "published_at": "2026-11-13T12:19:08+00:00",
+      "title": "Visita Tirme",
+      "summary": "",
+      "url": "https://ajdeia.net/ca/agenda/visita-tirme",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
+      "id": "7a48b84c25d2250ad213",
+      "category": "agenda",
+      "source_id": "ajuntament-deia-agenda",
+      "source": "Ajuntament de Deià · Agenda",
+      "source_type": "institution",
+      "language": "ca",
+      "locality": "Deià",
+      "published_at": "2026-11-13T12:17:34+00:00",
+      "title": "Mercadet de Nadal",
+      "summary": "",
+      "url": "https://ajdeia.net/ca/agenda/mercadet-de-nadal-5",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
+      "id": "3649631305391ba2f09b",
+      "category": "culture",
+      "source_id": "mucbo-noticies",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_type": "institution",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-11-13T12:15:18+00:00",
+      "title": "Ranunculus bullatus L.",
+      "summary": "",
+      "url": "https://mucbo.org/ranunculus-bullatus-l/",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "image_allowed": false,
+      "embed_type": "official_oembed",
+      "embed_url": "https://mucbo.org/ranunculus-bullatus-l/embed/",
+      "related_sources": []
+    },
+    {
+      "id": "b313883273214e1518f2",
+      "category": "agenda",
+      "source_id": "ajuntament-deia-agenda",
+      "source": "Ajuntament de Deià · Agenda",
+      "source_type": "institution",
+      "language": "ca",
+      "locality": "Deià",
+      "published_at": "2026-11-13T12:14:12+00:00",
+      "title": "Regenera 360",
+      "summary": "",
+      "url": "https://ajdeia.net/ca/agenda/regenera-360",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
+      "id": "9a9365d2cb5c2100f867",
+      "category": "services",
+      "source_id": "ajuntament-deia-noticies",
+      "source": "Ajuntament de Deià",
+      "source_type": "official",
+      "language": "ca",
+      "locality": "Deià / Serra de Tramuntana",
+      "published_at": "2026-11-13T12:11:18+00:00",
+      "title": "Nou camió elèctric a l’Ajuntament de Deià",
+      "summary": "",
+      "url": "https://ajdeia.net/ca/noticies/nou-camio-electric-lajuntament-de-deia",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "official_public_source",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
+      "id": "3b5e014d3a9d58c62720",
+      "category": "news",
+      "source_id": "sa-veu-soller",
+      "source": "Sa Veu de Sóller",
+      "source_type": "media",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-11-13T11:59:36+00:00",
+      "title": "Comencen els treballs de substitució de les faroles de la plaça de la Constitució",
+      "summary": "",
+      "url": "https://saveu.cat/noticies/comencen-els-treballs-de-substitucio-de-les-faroles-de-la-placa-de-la-constitucio/",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "image_allowed": false,
+      "embed_type": "official_oembed",
+      "embed_url": "https://saveu.cat/noticies/comencen-els-treballs-de-substitucio-de-les-faroles-de-la-placa-de-la-constitucio/embed/",
+      "related_sources": []
+    },
+    {
+      "id": "1ab4786ff5168d45f952",
+      "category": "culture",
+      "source_id": "setmanari-soller",
+      "source": "Setmanari Sóller",
+      "source_type": "media",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-11-13T12:30:00+01:00",
+      "title": "La Banda de Música de Sóller i alumnes de l’Escola actuen demà a Son Moix",
+      "summary": "",
+      "url": "https://www.elsoller.cat/soller/societat-i-cultura/2026/11/13/354801/banda-musica-soller-alguns-alumnes-escola-actuen-dema-son-moix.html",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "image_allowed": false,
+      "related_sources": []
+    },
     {
       "id": "ef79547569f2fcf3b1c0",
       "category": "services",
@@ -1680,28 +1904,6 @@ window.SOLLER_ARA_DATA = {
       "related_sources": []
     },
     {
-      "id": "5ec62167dd6361a44f72",
-      "category": "sports",
-      "source_id": "sa-veu-soller",
-      "source": "Sa Veu de Sóller",
-      "source_type": "media",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-11-10T15:17:26+00:00",
-      "title": "De 14 bancs, només 2 són operatius a Son Angelats",
-      "summary": "",
-      "url": "https://saveu.cat/noticies/de-14-bancs-nomes-2-son-operatius-a-son-angelats/",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
-      "embed_type": "official_oembed",
-      "embed_url": "https://saveu.cat/noticies/de-14-bancs-nomes-2-son-operatius-a-son-angelats/embed/",
-      "related_sources": []
-    },
-    {
       "id": "2309d7f843f1ed0213f9",
       "category": "news",
       "source_id": "setmanari-soller",
@@ -2372,26 +2574,6 @@ window.SOLLER_ARA_DATA = {
       "media_type": null,
       "content_policy": "headline_date_link_only",
       "rights_status": "official_public_source",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
-      "id": "0a61c410d973939a7757",
-      "category": "news",
-      "source_id": "setmanari-soller",
-      "source": "Setmanari Sóller",
-      "source_type": "media",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-11-06T11:30:00+01:00",
-      "title": "«Intentam introduir noves activitats»",
-      "summary": "",
-      "url": "https://www.elsoller.cat/soller/local/2026/11/06/354753/intentam-introduir-noves-activitats.html",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
       "image_allowed": false,
       "related_sources": []
     },
@@ -3580,28 +3762,6 @@ window.SOLLER_ARA_DATA = {
       "related_sources": []
     },
     {
-      "id": "ae7064a0d7b36d723184",
-      "category": "culture",
-      "source_id": "mucbo-noticies",
-      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
-      "source_type": "institution",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-10-29T13:30:21+00:00",
-      "title": "Jornada Micològica 2026",
-      "summary": "",
-      "url": "https://mucbo.org/jornada-micologica-2026/",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "link_only_no_media_license",
-      "image_allowed": false,
-      "embed_type": "official_oembed",
-      "embed_url": "https://mucbo.org/jornada-micologica-2026/embed/",
-      "related_sources": []
-    },
-    {
       "id": "soller-ara-a0230c77a4f1cdd2",
       "category": "alerts",
       "source_id": "manual-c671fec4a9a6",
@@ -4004,6 +4164,26 @@ window.SOLLER_ARA_DATA = {
       "related_sources": []
     },
     {
+      "id": "d09a2f8d1a930df42bfc",
+      "category": "culture",
+      "source_id": "ajuntament-soller-noticies",
+      "source": "Ajuntament de Sóller",
+      "source_type": "official",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-10-26T07:46:50+00:00",
+      "title": "L’Escola de Música i Amics de la Música coneixen les sales que tendran a la seva disposició a les Escolàpies",
+      "summary": "sarrom dl., 26/10/2026 - 08:46 23-Octubre-2026 La regidora de Cultura i Patrimoni, Antònia Frau, ha fet una visita d’obra a les Escolàpies amb representants de l’Escola de Música de Sóller i de l’associació Amics de la…",
+      "url": "https://ajsoller.net/ca/noticies/lescola-de-musica-i-amics-de-la-musica-coneixen-les-sales-que-tendran-la-seva-disposicio",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "public_source_reviewed",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
       "id": "94cd22ea6fdb2acd2706",
       "category": "culture",
       "source_id": "can-prunera-noticies",
@@ -4123,26 +4303,6 @@ window.SOLLER_ARA_DATA = {
       "rights_status": "no_reuse_reference_only",
       "image_allowed": false,
       "original_url": "https://www.facebook.com/story.php?story_fbid=1583084360513300&id=100064352547067&hpir=1",
-      "related_sources": []
-    },
-    {
-      "id": "6362d1e5eb4aaffbd8b9",
-      "category": "news",
-      "source_id": "ajuntament-soller-noticies",
-      "source": "Ajuntament de Sóller",
-      "source_type": "official",
-      "language": "ca",
-      "locality": "Sóller",
-      "published_at": "2026-10-23T10:03:29+00:00",
-      "title": "Ha arribat l'època de les tradicionals matances",
-      "summary": "dmaimo dv., 23/10/2026 - 12:03 23-Octubre-2026 Aquí teniu el BAN relatiu a l'inici de la campanya 2026/2027 i dels controls sanitaris obligatoris per a la detecció de la TRIQUINA. Enllaç CAIB…",
-      "url": "https://ajsoller.net/ca/noticies/ha-arribat-lepoca-de-les-tradicionals-matances-0",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "short_factual_excerpt",
-      "rights_status": "public_source_reviewed",
-      "image_allowed": false,
       "related_sources": []
     },
     {
@@ -6386,26 +6546,6 @@ window.SOLLER_ARA_DATA = {
       "related_sources": []
     },
     {
-      "id": "81b55b5df8eb9d2c71b9",
-      "category": "commerce",
-      "source_id": "ultima-hora-soller",
-      "source": "Última Hora",
-      "source_type": "media",
-      "language": "es",
-      "locality": "Sóller",
-      "published_at": "2026-10-08T04:48:01+02:00",
-      "title": "Cierra Can Tambora, historia de Sóller y el Port desde hace casi dos siglos",
-      "summary": "",
-      "url": "https://www.ultimahora.es/noticias/part-forana/2026/10/08/2724399/cierra-can-tambora-historia-soller-port-desde-hace-casi-dos-siglos.html",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
       "id": "d88bc2ee55d9b99c2d72",
       "category": "news",
       "source_id": "ultima-hora-soller",
@@ -6417,6 +6557,26 @@ window.SOLLER_ARA_DATA = {
       "title": "Vivienda, buses saturados y exceso de tráfico, las principales preocupaciones de los sollerics",
       "summary": "",
       "url": "https://www.ultimahora.es/noticias/part-forana/2026/10/08/2724531/vivienda-buses-saturados-exceso-trafico-principales-preocupaciones-sollerics.html",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
+      "id": "81b55b5df8eb9d2c71b9",
+      "category": "commerce",
+      "source_id": "ultima-hora-soller",
+      "source": "Última Hora",
+      "source_type": "media",
+      "language": "es",
+      "locality": "Sóller",
+      "published_at": "2026-10-08T04:48:01+02:00",
+      "title": "Cierra Can Tambora, historia de Sóller y el Port desde hace casi dos siglos",
+      "summary": "",
+      "url": "https://www.ultimahora.es/noticias/part-forana/2026/10/08/2724399/cierra-can-tambora-historia-soller-port-desde-hace-casi-dos-siglos.html",
       "platform": null,
       "account": null,
       "media_type": null,
@@ -7623,26 +7783,6 @@ window.SOLLER_ARA_DATA = {
       "related_sources": []
     },
     {
-      "id": "8c3ad54186ac078c164f",
-      "category": "politics",
-      "source_id": "ajuntament-deia-noticies",
-      "source": "Ajuntament de Deià",
-      "source_type": "official",
-      "language": "ca",
-      "locality": "Deià / Serra de Tramuntana",
-      "published_at": "2026-09-28T08:18:50+00:00",
-      "title": "L'Ajuntament de Deià s’ha acollit a la convocatòria de subvencions promoguda pel Departament de Promoció Econòmica i Desenvolupament Local del Consell de Mallorca",
-      "summary": "",
-      "url": "https://ajdeia.net/ca/noticies/lajuntament-de-deia-sha-acollit-la-convocatoria-de-subvencions-promoguda-pel-departament",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "official_public_source",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
       "id": "96700e88acd2a8211dbf",
       "category": "news",
       "source_id": "ultima-hora-soller",
@@ -7925,26 +8065,6 @@ window.SOLLER_ARA_DATA = {
       "related_sources": []
     },
     {
-      "id": "0022aae751e21d57a574",
-      "category": "services",
-      "source_id": "ajuntament-deia-noticies",
-      "source": "Ajuntament de Deià",
-      "source_type": "official",
-      "language": "ca",
-      "locality": "Deià / Serra de Tramuntana",
-      "published_at": "2026-09-23T06:23:17+00:00",
-      "title": "Nou calendari de recollida de residus",
-      "summary": "",
-      "url": "https://ajdeia.net/ca/noticies/nou-calendari-de-recollida-de-residus",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "official_public_source",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
       "id": "7c2571f3db07faf91077",
       "category": "agenda",
       "source_id": "ajuntament-escorca-noticies",
@@ -8164,26 +8284,6 @@ window.SOLLER_ARA_DATA = {
       "related_sources": []
     },
     {
-      "id": "a4ce77df699b7efb9bc1",
-      "category": "culture",
-      "source_id": "ajuntament-deia-noticies",
-      "source": "Ajuntament de Deià",
-      "source_type": "official",
-      "language": "ca",
-      "locality": "Deià / Serra de Tramuntana",
-      "published_at": "2026-09-17T05:27:03+00:00",
-      "title": "CURS ESCOLA MUNICIPAL DE MÚSICA DE DEIÀ",
-      "summary": "",
-      "url": "https://ajdeia.net/ca/noticies/curs-escola-municipal-de-musica-de-deia",
-      "platform": null,
-      "account": null,
-      "media_type": null,
-      "content_policy": "headline_date_link_only",
-      "rights_status": "official_public_source",
-      "image_allowed": false,
-      "related_sources": []
-    },
-    {
       "id": "604c935f00da2d0ccfef",
       "category": "news",
       "source_id": "youtube-ajuntament-soller",
@@ -8284,6 +8384,6 @@ window.SOLLER_ARA_DATA = {
       "related_sources": []
     }
   ],
-  "sources_checked_at": "2026-11-13T11:22:54.974012+00:00",
-  "fetched_at": "2026-11-13T11:22:54.974012+00:00"
+  "sources_checked_at": "2026-11-13T13:37:25.388837+00:00",
+  "fetched_at": "2026-11-13T13:37:25.388837+00:00"
 };

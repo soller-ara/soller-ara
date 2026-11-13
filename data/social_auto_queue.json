@@ -1,45 +1,102 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-13T11:22:55.098347+00:00",
+  "generated_at": "2026-11-13T13:37:25.547490+00:00",
   "entries": [
     {
-      "post_id": "ef79547569f2fcf3b1c0",
-      "title": "Inicien pel Camp Llarg la netejade diversos trams de torrents",
+      "post_id": "df878a529144a6d0cea4",
+      "title": "ÈPOCA DE FOC, NETEJA I PREVENCIÓ D’INCENDIS",
+      "summary": "",
+      "source": "Ajuntament de Deià",
+      "source_id": "ajuntament-deia-noticies",
+      "source_type": "official",
+      "category": "alerts",
+      "language": "ca",
+      "published_at": "2026-11-13T12:34:17+00:00",
+      "original_url": "https://ajdeia.net/ca/noticies/epoca-de-foc-neteja-i-prevencio-dincendis",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "official_public_source",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/df878a529144a6d0cea4.jpg"
+    },
+    {
+      "post_id": "de6ea46c8bc00d63aeac",
+      "title": "Excursió al massís de Tossals Verds per a joves",
+      "summary": "",
+      "source": "Ajuntament de Deià · Agenda",
+      "source_id": "ajuntament-deia-agenda",
+      "source_type": "institution",
+      "category": "agenda",
+      "language": "ca",
+      "published_at": "2026-11-13T12:21:32+00:00",
+      "original_url": "https://ajdeia.net/ca/agenda/excursio-al-massis-de-tossals-verds-joves",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/de6ea46c8bc00d63aeac.jpg"
+    },
+    {
+      "post_id": "3649631305391ba2f09b",
+      "title": "Ranunculus bullatus L.",
+      "summary": "",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "source_type": "institution",
+      "category": "culture",
+      "language": "ca",
+      "published_at": "2026-11-13T12:15:18+00:00",
+      "original_url": "https://mucbo.org/ranunculus-bullatus-l/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/3649631305391ba2f09b.jpg"
+    },
+    {
+      "post_id": "3b5e014d3a9d58c62720",
+      "title": "Comencen els treballs de substitució de les faroles de la plaça de la Constitució",
       "summary": "",
       "source": "Sa Veu de Sóller",
       "source_id": "sa-veu-soller",
       "source_type": "media",
-      "category": "services",
+      "category": "news",
       "language": "ca",
-      "published_at": "2026-11-13T11:00:00+00:00",
-      "original_url": "https://saveu.cat/noticies/inicien-pel-camp-llarg-la-netejade-diversos-trams-de-torrents/",
+      "published_at": "2026-11-13T11:59:36+00:00",
+      "original_url": "https://saveu.cat/noticies/comencen-els-treballs-de-substitucio-de-les-faroles-de-la-placa-de-la-constitucio/",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/ef79547569f2fcf3b1c0.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/3b5e014d3a9d58c62720.jpg"
     },
     {
-      "post_id": "dd7739ee76285f8036e5",
-      "title": "«A partir de la idea tot és experimentació»",
+      "post_id": "1ab4786ff5168d45f952",
+      "title": "La Banda de Música de Sóller i alumnes de l’Escola actuen demà a Son Moix",
       "summary": "",
       "source": "Setmanari Sóller",
       "source_id": "setmanari-soller",
       "source_type": "media",
-      "category": "news",
+      "category": "culture",
       "language": "ca",
-      "published_at": "2026-11-13T11:30:00+01:00",
-      "original_url": "https://www.elsoller.cat/soller/societat-i-cultura/2026/11/13/354795/partir-idea-tot-experimentacio.html",
+      "published_at": "2026-11-13T12:30:00+01:00",
+      "original_url": "https://www.elsoller.cat/soller/societat-i-cultura/2026/11/13/354801/banda-musica-soller-alguns-alumnes-escola-actuen-dema-son-moix.html",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/dd7739ee76285f8036e5.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/1ab4786ff5168d45f952.jpg"
     }
   ]
 }
