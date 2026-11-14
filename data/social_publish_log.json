@@ -18873,6 +18873,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-11-14T14:40:32.995694+00:00",
       "error": ""
+    },
+    {
+      "post_id": "74589d2d01675565f0e8",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122133140877467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122133140877467310",
+      "title": "Sóller-Alaró (diumenge, 17 h), a seguir la bona ratxa front un rival que sap puntuar a fora",
+      "post_url": "https://www.elsoller.cat/soller/esports/2026/11/14/354797/soller-alaro-diumenge-seguir-bona-ratxa-front-rival-sap-puntuar-fora.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-14T16:43:04.265936+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "74589d2d01675565f0e8",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Sóller-Alaró (diumenge, 17 h), a seguir la bona ratxa front un rival que sap puntuar a fora",
+      "post_url": "https://www.elsoller.cat/soller/esports/2026/11/14/354797/soller-alaro-diumenge-seguir-bona-ratxa-front-rival-sap-puntuar-fora.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-14T16:43:14.609306+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18126026587905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "74589d2d01675565f0e8",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "17940491031128373",
+      "remote_url": "https://www.instagram.com/p/DfuqXOQj56V/",
+      "title": "Sóller-Alaró (diumenge, 17 h), a seguir la bona ratxa front un rival que sap puntuar a fora",
+      "post_url": "https://www.elsoller.cat/soller/esports/2026/11/14/354797/soller-alaro-diumenge-seguir-bona-ratxa-front-rival-sap-puntuar-fora.html",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-14T16:43:19.110963+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
