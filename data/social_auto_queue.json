@@ -1,6 +1,45 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-11-14T10:06:34.054510+00:00",
+  "entries": [
+    {
+      "post_id": "79cd71091f94dcb5dbb8",
+      "title": "Les Jornades de Salvament Marítim ajuden a actualitzar els protocols",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-11-14T10:00:00+01:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/11/14/354805/les-jornades-salvament-maritim-ajuden-actualitzar-els-protocols.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/79cd71091f94dcb5dbb8.jpg"
+    },
+    {
+      "post_id": "5450f873ed674411931f",
+      "title": "La reforma de Ses Escolàpies arriba a la seva fi",
+      "summary": "",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "source_type": "media",
+      "category": "politics",
+      "language": "ca",
+      "published_at": "2026-11-14T08:01:00+00:00",
+      "original_url": "https://saveu.cat/noticies/la-reforma-de-ses-escolapies-arriba-a-la-seva-fi/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/5450f873ed674411931f.jpg"
+    }
+  ]
 }
