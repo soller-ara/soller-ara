@@ -1,6 +1,45 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-11-14T12:22:30.698101+00:00",
+  "entries": [
+    {
+      "post_id": "d30371c7fdcc0948b3f1",
+      "title": "Arriben setmanes de concerts amb Santa Cecília",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "culture",
+      "language": "ca",
+      "published_at": "2026-11-14T12:00:00+01:00",
+      "original_url": "https://www.elsoller.cat/soller/societat-i-cultura/2026/11/14/354807/arriben-setmanes-concerts-amb-santa-cecilia.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/d30371c7fdcc0948b3f1.jpg"
+    },
+    {
+      "post_id": "b85d66a8a65898ffb9f4",
+      "title": "Troben una granada de morter de la Guerra Civil dins un habitatge de Sóller",
+      "summary": "",
+      "source": "ARA Balears",
+      "source_id": "ara-balears-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-11-14T10:47:21+00:00",
+      "original_url": "https://www.arabalears.cat/societat/troben-granada-morter-guerra-civil-habitatge-soller_1_5910293.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/b85d66a8a65898ffb9f4.jpg"
+    }
+  ]
 }
