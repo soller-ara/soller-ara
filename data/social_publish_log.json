@@ -18828,6 +18828,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-11-14T12:23:41.939337+00:00",
       "error": ""
+    },
+    {
+      "post_id": "1cdbdb1ce6371ee62f59",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122133120711467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122133120711467310",
+      "title": "Hallan en una casa de Sóller una granada de mortero con la carga intacta",
+      "post_url": "https://www.mallorcadiario.com/hallan-en-una-vivienda-de-soller-una-granada-de-mortero-de-la-guerra-civil-con-la-carga-intacta",
+      "source": "Mallorcadiario · Sóller",
+      "source_id": "mallorcadiario-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-14T14:40:13.780556+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "1cdbdb1ce6371ee62f59",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "Hallan en una casa de Sóller una granada de mortero con la carga intacta",
+      "post_url": "https://www.mallorcadiario.com/hallan-en-una-vivienda-de-soller-una-granada-de-mortero-de-la-guerra-civil-con-la-carga-intacta",
+      "source": "Mallorcadiario · Sóller",
+      "source_id": "mallorcadiario-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-14T14:40:29.028019+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18125998912905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "1cdbdb1ce6371ee62f59",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18099525146124861",
+      "remote_url": "https://www.instagram.com/p/DfucTcHFzfS/",
+      "title": "Hallan en una casa de Sóller una granada de mortero con la carga intacta",
+      "post_url": "https://www.mallorcadiario.com/hallan-en-una-vivienda-de-soller-una-granada-de-mortero-de-la-guerra-civil-con-la-carga-intacta",
+      "source": "Mallorcadiario · Sóller",
+      "source_id": "mallorcadiario-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-14T14:40:32.995694+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
