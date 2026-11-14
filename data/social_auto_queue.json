@@ -1,26 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-14T14:39:48.755521+00:00",
+  "generated_at": "2026-11-14T16:42:36.544239+00:00",
   "entries": [
     {
-      "post_id": "1cdbdb1ce6371ee62f59",
-      "title": "Hallan en una casa de Sóller una granada de mortero con la carga intacta",
+      "post_id": "74589d2d01675565f0e8",
+      "title": "Sóller-Alaró (diumenge, 17 h), a seguir la bona ratxa front un rival que sap puntuar a fora",
       "summary": "",
-      "source": "Mallorcadiario · Sóller",
-      "source_id": "mallorcadiario-soller",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
       "source_type": "media",
       "category": "news",
-      "language": "es",
-      "published_at": "2026-11-14T10:59:50+00:00",
-      "original_url": "https://www.mallorcadiario.com/hallan-en-una-vivienda-de-soller-una-granada-de-mortero-de-la-guerra-civil-con-la-carga-intacta",
+      "language": "ca",
+      "published_at": "2026-11-14T16:00:00+01:00",
+      "original_url": "https://www.elsoller.cat/soller/esports/2026/11/14/354797/soller-alaro-diumenge-seguir-bona-ratxa-front-rival-sap-puntuar-fora.html",
       "content_policy": "headline_date_link_only",
-      "rights_status": "link_only_no_media_license",
+      "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/1cdbdb1ce6371ee62f59.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/74589d2d01675565f0e8.jpg"
     }
   ]
 }
