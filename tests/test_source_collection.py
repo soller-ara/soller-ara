@@ -322,6 +322,30 @@ class SourceCollectionTests(unittest.TestCase):
 
 
 class NewPublicSourceTests(unittest.TestCase):
+    def test_rss_nested_local_link_keeps_source_date_and_rejects_other_origins(self):
+        source = {
+            "id": "municipal", "name": "Ajuntament", "url": "https://example.test/ca/noticies/rss.xml",
+            "type": "rss", "rss_nested_local_link": True, "content_policy": "headline_date_link_only",
+        }
+        links = (
+            "/ca/noticies/obres#detalls", "//other.test/ca/noticies/obres",
+            "http://example.test/ca/noticies/obres", "javascript:alert(1)", "#detalls", "https://[invalid",
+        )
+        items = "".join(
+            f'<item><title>Obres al municipi</title><link><a href="{url}">Veure</a></link>'
+            '<pubDate>2026-11-06</pubDate><description>Text de la font</description></item>'
+            for url in links
+        )
+        feed = f"<rss><channel>{items}</channel></rss>".encode()
+
+        posts = collector.parse_rss(feed, source)
+        self.assertEqual(len(posts), 1)
+        self.assertEqual(posts[0]["url"], "https://example.test/ca/noticies/obres")
+        self.assertEqual(posts[0]["published_at"], "2026-11-06T00:00:00+00:00")
+        self.assertEqual(posts[0]["summary"], "")
+        self.assertFalse(posts[0]["image_allowed"])
+        self.assertEqual(collector.parse_rss(feed, {**source, "rss_nested_local_link": False}), [])
+
     def test_rss_with_leading_whitespace_retains_original_metadata(self):
         source = {"id": "school", "name": "Centre de Sóller", "type": "rss", "url": "https://school.test/feed/",
                   "image_policy": "disabled_until_rights_verified",

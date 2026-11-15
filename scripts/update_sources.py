@@ -344,6 +344,27 @@ def text_of(parent: ET.Element, names: list[str]) -> str:
     return ""
 
 
+def rss_nested_local_link(item: ET.Element, base_url: str) -> str:
+    # Alguns RSS municipals publiquen un enllaç HTML dins l'element link.
+    anchor = item.find("link/a")
+    href = anchor.get("href", "").strip() if anchor is not None else ""
+    if not href or href.startswith("#"):
+        return ""
+    try:
+        base = urlparse(base_url)
+        target = urlparse(urljoin(base_url, href))
+    except ValueError:
+        return ""
+    if (
+        target.scheme == "https"
+        and target.netloc.casefold() == base.netloc.casefold()
+        and target.path
+        and target.path != base.path
+    ):
+        return target._replace(fragment="").geturl()
+    return ""
+
+
 def parse_rss(xml_bytes: bytes, source: dict) -> list[dict]:
     # Alguns feeds de centres educatius anteposen espais a la declaració XML.
     root = ET.fromstring(xml_bytes.lstrip(b"\xef\xbb\xbf \t\r\n"))
@@ -356,6 +377,8 @@ def parse_rss(xml_bytes: bytes, source: dict) -> list[dict]:
         for item in rss_items[:item_limit]:
             title = clean_text(text_of(item, ["title"]))
             url = clean_text(text_of(item, ["link", "guid"]))
+            if not url and source.get("rss_nested_local_link"):
+                url = rss_nested_local_link(item, source["url"])
             summary = clean_summary(title, text_of(item, ["description", "summary"]))
             published_at = parse_date(text_of(item, ["pubDate", "date", "published", "updated"]))
             if not title or not url:
@@ -1701,7 +1724,7 @@ def main() -> int:
 
     payload = {
         "version": 41,
-        "generator_version": "0.62",
+        "generator_version": "0.63",
         "source_count": len(source_status),
         "source_status": source_status,
         "social_integration_status": social_integration_status,

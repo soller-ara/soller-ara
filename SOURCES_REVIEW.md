@@ -214,3 +214,23 @@ Validació local: **149 proves Python i 14 bateries JavaScript** superades, lect
 - **Fundació Cultural Coll Bardolet:** activitat cultural real de Valldemossa, però els endpoints provats retornen errors de disponibilitat. Pendent d'un canal estable.
 - **Club de Muntanya i Escalada de Sóller i SollerWeb:** feeds llegibles amb les darreres publicacions fora del límit de 60 dies. No s'amplia el termini per omplir el catàleg.
 - **Menja't Sóller i webs educatives sense notícies datades:** útils per a consulta o selecció manual, sense convertir les dates dels actes en dates de publicació.
+
+## Incorporacions i previsualitzacions — 15 de novembre de 2026
+
+S'incorporen tres RSS oficials amb avisos i activitat pròpia a la Serra. El catàleg passa de 61 a **64 fonts externes** (65 amb les publicacions pròpies). La primera lectura aïllada selecciona 19 referències:
+
+| Font | Mostra original | Entrades aptes |
+| --- | --- | ---: |
+| [Ajuntament d'Esporles](https://esporles.cat/ca/noticies) | [Actuació al Port des Canonge, 06/11](https://esporles.cat/ca/noticies/lajuntament-desporles-collabora-amb-lajuntament-de-banyalbufar-en-una-actuacio-demergencia) | 7 |
+| [Ajuntament de Banyalbufar](https://ajbanyalbufar.net/ca/noticies) | [Avís de tall d'aigua publicat l'11/11](https://ajbanyalbufar.net/ca/noticies/dijous-12-tall-de-subministrament-daigua-potable) | 4 |
+| [Ajuntament d'Estellencs](https://ajestellencs.net/ca/noticies) | [Neteja forestal i manteniment a Ca's Mossons, 11/11](https://ajestellencs.net/ca/noticies/actuacions-de-neteja-forestal-i-manteniment-cas-mossons) | 8 |
+
+Les tres fonts segueixen la selecció per titular amb referències territorials i de serveis municipals. Es manté la data del RSS, no la del servei ni la del dia de lectura; Esporles proporciona el dia sense hora. Els enllaços originals es comprovaren amb HTTP 200. S'exposa el titular, la font, la data i l'enllaç, amb 60 dies de màxim i sense copiar imatges ni extractes. No s'amplien els filtres de les fonts existents.
+
+Esporles inclou un element `a` dins `link` al RSS. El lector resol aquest enllaç únicament per a les fonts que activen aquesta opció i exigeix HTTPS al mateix origen. La prova cobreix la data original, la lectura correcta de l'enllaç relatiu i el rebuig de referències invàlides o externes. Les agendes oficials de Sóller i Fornalutx es deixen en reserva: els RSS anunciats responen però no aporten entrades.
+
+La distribució dels tres canals segueix les regles establertes de Facebook i Instagram, amb un màxim de cinc enviaments per execució, un per font i fins a sis hores d'antiguitat. Les referències inicials superen aquest termini social. No es modifica la planificació, la moderació, els permisos de Meta ni el Worker.
+
+### Auditoria de previsualitzacions
+
+Es revisen mostres dels articles i, quan existeix, la descoberta oEmbed i la resposta de la vista oficial. **Mallorca Global Mag, UEP! Mallorca i Mallorca Caprice** anuncien oEmbed però la vista retorna `X-Frame-Options: SAMEORIGIN`. A **Ports IB**, el punt oEmbed anunciat respon 401. Les mostres d'IB3, Setmanari Sóller, Última Hora, elDiario.es, Majorca Daily Bulletin i les tres noves fonts municipals no anuncien una targeta compatible. No es pot comprovar la vista dels centres que continuen sense respondre. Es mantenen les dotze fonts amb previsualització oficial i els reproductors de YouTube; no s'utilitza `og:image` com a permís de reutilització.

@@ -1,5 +1,5 @@
 {
-  "version": 16,
+  "version": 17,
   "enabled": true,
   "platforms": {
     "facebook": true,
@@ -259,6 +259,18 @@
       "instagram": true
     },
     "ocio-mallorca-soller": {
+      "facebook": true,
+      "instagram": true
+    },
+    "ajuntament-esporles-noticies": {
+      "facebook": true,
+      "instagram": true
+    },
+    "ajuntament-banyalbufar-noticies": {
+      "facebook": true,
+      "instagram": true
+    },
+    "ajuntament-estellencs-noticies": {
       "facebook": true,
       "instagram": true
     }
