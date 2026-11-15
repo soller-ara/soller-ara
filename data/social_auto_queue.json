@@ -1,26 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-15T21:36:35.722221+00:00",
-  "entries": [
-    {
-      "post_id": "4b4fcfc936c9e055ec01",
-      "title": "Fallece Catalina Morell, maestra y exconcejala de Sóller comprometida con la educación pública",
-      "summary": "",
-      "source": "Última Hora",
-      "source_id": "ultima-hora-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "es",
-      "published_at": "2026-11-15T20:19:00+01:00",
-      "original_url": "https://www.ultimahora.es/noticias/part-forana/2026/11/15/2750635/fallece-catalina-morell-maestra-exconcejala-soller-comprometida-educacion-publica.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/4b4fcfc936c9e055ec01.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
