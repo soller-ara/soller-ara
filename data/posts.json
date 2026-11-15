@@ -1,7 +1,7 @@
 {
   "version": 41,
-  "generator_version": "0.62",
-  "source_count": 62,
+  "generator_version": "0.63",
+  "source_count": 65,
   "source_status": [
     {
       "source_id": "ajuntament-soller-noticies",
@@ -12,7 +12,7 @@
       "count": 10,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "sa-veu-soller",
@@ -23,7 +23,7 @@
       "count": 12,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "setmanari-soller",
@@ -34,7 +34,7 @@
       "count": 20,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "soller-2010",
@@ -45,7 +45,7 @@
       "count": 4,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "aemet-avisos-mallorca",
@@ -56,7 +56,7 @@
       "count": 56,
       "archived_count": 55,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "youtube-ajuntament-soller",
@@ -67,7 +67,7 @@
       "count": 6,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "youtube-ib3-noticies-soller",
@@ -78,7 +78,7 @@
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "goib-noticies-soller",
@@ -89,7 +89,7 @@
       "count": 2,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "ib3-noticies-soller",
@@ -100,7 +100,7 @@
       "count": 4,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "dbalears-soller",
@@ -111,7 +111,7 @@
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "diario-mallorca-soller",
@@ -126,7 +126,7 @@
       "api_latest_query_checked_at": "2026-11-15T11:31:14.572461+00:00",
       "api_requests_this_month": 761,
       "api_monthly_limit": 2700,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "ultima-hora-soller",
@@ -137,7 +137,7 @@
       "count": 20,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "mallorca-directo-soller",
@@ -148,7 +148,7 @@
       "count": 0,
       "retained_count": 0,
       "error": "HTTP 410 Gone: la font ha retirat aquesta pàgina; pendent d'un canal alternatiu verificat.",
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "tib-avisos-soller",
@@ -159,7 +159,7 @@
       "count": 1,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "consell-mallorca-soller",
@@ -170,7 +170,7 @@
       "count": 2,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "youtube-can-prunera",
@@ -181,7 +181,7 @@
       "count": 3,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "youtube-aires-sollerics",
@@ -192,7 +192,7 @@
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "youtube-xeremiers-soller",
@@ -203,7 +203,7 @@
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "youtube-club-volei-soller",
@@ -214,7 +214,7 @@
       "count": 2,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "youtube-ballades-mallorca-soller",
@@ -225,7 +225,7 @@
       "count": 8,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "youtube-tramuntana-xxi",
@@ -236,7 +236,7 @@
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "youtube-gob-mallorca-soller",
@@ -247,7 +247,7 @@
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "youtube-museu-maritim-soller",
@@ -258,7 +258,7 @@
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "youtube-serra-tramuntana",
@@ -269,7 +269,7 @@
       "count": 1,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "youtube-consell-mallorca-soller",
@@ -280,7 +280,7 @@
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "mucbo-noticies",
@@ -291,7 +291,7 @@
       "count": 10,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "can-prunera-noticies",
@@ -302,7 +302,7 @@
       "count": 4,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "cronica-balear-soller",
@@ -317,7 +317,7 @@
       "api_latest_query_checked_at": "2026-11-15T11:31:14.572461+00:00",
       "api_requests_this_month": 761,
       "api_monthly_limit": 2700,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "ara-balears-soller",
@@ -328,7 +328,7 @@
       "count": 1,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "fora-vila-soller",
@@ -339,7 +339,7 @@
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "tren-soller-noticies",
@@ -350,7 +350,7 @@
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "ajuntament-fornalutx-noticies",
@@ -361,7 +361,7 @@
       "count": 4,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "futbol-balear-cf-soller",
@@ -372,7 +372,7 @@
       "count": 1,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "mancomunitat-tramuntana-soller",
@@ -383,7 +383,7 @@
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "youtube-sus-mallorca-soller",
@@ -394,7 +394,7 @@
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "partido-popular-soller",
@@ -405,7 +405,7 @@
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "ports-ib-port-soller",
@@ -416,7 +416,7 @@
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "mes-per-soller",
@@ -427,7 +427,7 @@
       "count": 8,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "psib-psoe-soller",
@@ -438,7 +438,7 @@
       "count": 1,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "uep-mallorca-soller",
@@ -449,7 +449,7 @@
       "count": 3,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "ies-guillem-colom-casasnoves",
@@ -460,7 +460,7 @@
       "count": 7,
       "retained_count": 7,
       "error": "<urlopen error timed out>",
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "ajuntament-deia-noticies",
@@ -471,7 +471,7 @@
       "count": 10,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "mallorcadiario-soller",
@@ -482,7 +482,7 @@
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "fibwi-diario-soller",
@@ -493,7 +493,7 @@
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "youtube-fibwi-diario-soller",
@@ -504,7 +504,7 @@
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "gob-mallorca-noticies",
@@ -515,7 +515,7 @@
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "eldiario-balears-soller",
@@ -526,7 +526,7 @@
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "majorca-daily-bulletin-soller",
@@ -537,7 +537,7 @@
       "count": 5,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "ceip-es-puig-soller",
@@ -548,7 +548,7 @@
       "count": 0,
       "retained_count": 0,
       "error": "<urlopen error timed out>",
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "sagrats-cors-soller",
@@ -559,7 +559,7 @@
       "count": 3,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "europa-press-balears-soller",
@@ -570,7 +570,7 @@
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "mallorca-confidencial-soller",
@@ -581,7 +581,7 @@
       "count": 0,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "mallorca-global-mag-soller",
@@ -592,7 +592,7 @@
       "count": 3,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "esport-balear-soller",
@@ -603,7 +603,7 @@
       "count": 2,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "ajuntament-deia-agenda",
@@ -614,7 +614,7 @@
       "count": 5,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "mallorca-caprice-soller",
@@ -625,7 +625,7 @@
       "count": 1,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "soller-en-mallorca-noticies",
@@ -636,7 +636,7 @@
       "count": 14,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "ajuntament-bunyola-noticies",
@@ -647,7 +647,7 @@
       "count": 10,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "ajuntament-valldemossa-noticies",
@@ -658,7 +658,7 @@
       "count": 10,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "ajuntament-escorca-noticies",
@@ -669,7 +669,7 @@
       "count": 4,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "ocio-mallorca-soller",
@@ -680,7 +680,40 @@
       "count": 1,
       "archived_count": 0,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
+    },
+    {
+      "source_id": "ajuntament-esporles-noticies",
+      "name": "Ajuntament d’Esporles",
+      "source_type": "official",
+      "method": "rss",
+      "ok": true,
+      "count": 7,
+      "archived_count": 0,
+      "error": null,
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
+    },
+    {
+      "source_id": "ajuntament-banyalbufar-noticies",
+      "name": "Ajuntament de Banyalbufar",
+      "source_type": "official",
+      "method": "rss",
+      "ok": true,
+      "count": 4,
+      "archived_count": 0,
+      "error": null,
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
+    },
+    {
+      "source_id": "ajuntament-estellencs-noticies",
+      "name": "Ajuntament d’Estellencs",
+      "source_type": "official",
+      "method": "rss",
+      "ok": true,
+      "count": 8,
+      "archived_count": 0,
+      "error": null,
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     },
     {
       "source_id": "soller-ara",
@@ -690,11 +723,11 @@
       "ok": true,
       "count": 108,
       "error": null,
-      "checked_at": "2026-11-15T11:37:27.754963+00:00"
+      "checked_at": "2026-11-15T12:13:03.773033+00:00"
     }
   ],
   "social_integration_status": [],
-  "post_count": 366,
+  "post_count": 385,
   "related_pair_count": 0,
   "errors": [
     {
@@ -1740,6 +1773,26 @@
       "related_sources": []
     },
     {
+      "id": "10c3b85f9231c1c85a1a",
+      "category": "services",
+      "source_id": "ajuntament-banyalbufar-noticies",
+      "source": "Ajuntament de Banyalbufar",
+      "source_type": "official",
+      "language": "ca",
+      "locality": "Banyalbufar / Port des Canonge / Serra de Tramuntana",
+      "published_at": "2026-11-11T10:55:28+00:00",
+      "title": "DIJOUS 12, TALL DE SUBMINISTRAMENT D'AIGUA POTABLE",
+      "summary": "",
+      "url": "https://ajbanyalbufar.net/ca/noticies/dijous-12-tall-de-subministrament-daigua-potable",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "official_public_source",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
       "id": "4b004396139fc56ba015",
       "category": "services",
       "source_id": "setmanari-soller",
@@ -1931,6 +1984,26 @@
       "title": "POSAM A PUNT LES NOSTRES INSTAL·LACIONS ESPORTIVES!",
       "summary": "",
       "url": "https://ajbunyola.net/ca/noticies/posam-punt-les-nostres-installacions-esportives",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "official_public_source",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
+      "id": "5697b436084e6f0529a9",
+      "category": "services",
+      "source_id": "ajuntament-estellencs-noticies",
+      "source": "Ajuntament d’Estellencs",
+      "source_type": "official",
+      "language": "ca",
+      "locality": "Estellencs / Cala Estellencs / Serra de Tramuntana",
+      "published_at": "2026-11-11T07:45:08+00:00",
+      "title": "Actuacions de neteja forestal i manteniment a Ca's Mossons",
+      "summary": "",
+      "url": "https://ajestellencs.net/ca/noticies/actuacions-de-neteja-forestal-i-manteniment-cas-mossons",
       "platform": null,
       "account": null,
       "media_type": null,
@@ -2400,6 +2473,26 @@
       "related_sources": []
     },
     {
+      "id": "9e2d31614e6f8fec3eab",
+      "category": "services",
+      "source_id": "ajuntament-banyalbufar-noticies",
+      "source": "Ajuntament de Banyalbufar",
+      "source_type": "official",
+      "language": "ca",
+      "locality": "Banyalbufar / Port des Canonge / Serra de Tramuntana",
+      "published_at": "2026-11-09T11:37:11+00:00",
+      "title": "Llista espera aparcaments",
+      "summary": "",
+      "url": "https://ajbanyalbufar.net/ca/noticies/llista-espera-aparcaments",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "official_public_source",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
       "id": "bb2515719efe8d3ec37c",
       "category": "services",
       "source_id": "setmanari-soller",
@@ -2496,6 +2589,26 @@
       "media_type": null,
       "content_policy": "headline_date_link_only",
       "rights_status": "link_only_no_media_license",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
+      "id": "2fddf292557b9e60078c",
+      "category": "agenda",
+      "source_id": "ajuntament-esporles-noticies",
+      "source": "Ajuntament d’Esporles",
+      "source_type": "official",
+      "language": "ca",
+      "locality": "Esporles / Serra de Tramuntana",
+      "published_at": "2026-11-09T00:00:00+00:00",
+      "title": "L'Ajuntament d'Esporles s'ha acollit a la convocatòria de subvencions per dur a terme actuacions d'administració electrònica, digitalització i ciberseguretat",
+      "summary": "",
+      "url": "https://esporles.cat/ca/noticies/lajuntament-desporles-sha-acollit-la-convocatoria-de-subvencions-dur-terme-actuacions",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "official_public_source",
       "image_allowed": false,
       "related_sources": []
     },
@@ -2684,6 +2797,26 @@
       "related_sources": []
     },
     {
+      "id": "dac2a2b1d1e00a5c790b",
+      "category": "news",
+      "source_id": "ajuntament-esporles-noticies",
+      "source": "Ajuntament d’Esporles",
+      "source_type": "official",
+      "language": "ca",
+      "locality": "Esporles / Serra de Tramuntana",
+      "published_at": "2026-11-06T00:00:00+00:00",
+      "title": "L’AJUNTAMENT D’ESPORLES COL·LABORA AMB l’AJUNTAMENT DE BANYALBUFAR EN UNA ACTUACIÓ D’EMERGÈNCIA PER RETIRAR ELS ENDERROCS DEL PORT DES CANONGE",
+      "summary": "",
+      "url": "https://esporles.cat/ca/noticies/lajuntament-desporles-collabora-amb-lajuntament-de-banyalbufar-en-una-actuacio-demergencia",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "official_public_source",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
       "id": "f4541b62936aeaae5604",
       "category": "services",
       "source_id": "sagrats-cors-soller",
@@ -2762,6 +2895,26 @@
       "media_type": null,
       "content_policy": "headline_date_link_only",
       "rights_status": "link_only_no_media_license",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
+      "id": "b3b81b86614ff1da3a92",
+      "category": "sports",
+      "source_id": "ajuntament-esporles-noticies",
+      "source": "Ajuntament d’Esporles",
+      "source_type": "official",
+      "language": "ca",
+      "locality": "Esporles / Serra de Tramuntana",
+      "published_at": "2026-11-05T00:00:00+00:00",
+      "title": "SUBVENCIONS MUNICIPALS PER A CLUBS I ESPORTISTES D'ESPORLES 2026",
+      "summary": "",
+      "url": "https://esporles.cat/ca/noticies/subvencions-municipals-clubs-i-esportistes-desporles-2026",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "official_public_source",
       "image_allowed": false,
       "related_sources": []
     },
@@ -2927,6 +3080,26 @@
       "title": "Sabies que... la col·locació de gàbies trampa per capturar moixos comunitaris està regulada?",
       "summary": "",
       "url": "https://ajbunyola.net/ca/noticies/sabies-que-la-collocacio-de-gabies-trampa-capturar-moixos-comunitaris-esta-regulada",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "official_public_source",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
+      "id": "17c12743b1ac08bbee1b",
+      "category": "services",
+      "source_id": "ajuntament-esporles-noticies",
+      "source": "Ajuntament d’Esporles",
+      "source_type": "official",
+      "language": "ca",
+      "locality": "Esporles / Serra de Tramuntana",
+      "published_at": "2026-11-04T00:00:00+00:00",
+      "title": "L'Ajuntament d'Esporles millora el finançament de la recollida de residus amb el nou conveni d'Ecoembes",
+      "summary": "",
+      "url": "https://esporles.cat/ca/noticies/lajuntament-desporles-millora-el-financament-de-la-recollida-de-residus-amb-el-nou-conveni",
       "platform": null,
       "account": null,
       "media_type": null,
@@ -3122,6 +3295,26 @@
       "related_sources": []
     },
     {
+      "id": "638532c35202569b5e9e",
+      "category": "agenda",
+      "source_id": "ajuntament-esporles-noticies",
+      "source": "Ajuntament d’Esporles",
+      "source_type": "official",
+      "language": "ca",
+      "locality": "Esporles / Serra de Tramuntana",
+      "published_at": "2026-11-03T00:00:00+00:00",
+      "title": "L’Ajuntament d’Esporles s’adhereix a la subvenció del Consell de Mallorca per a les activitats d’estiu",
+      "summary": "",
+      "url": "https://esporles.cat/ca/noticies/lajuntament-desporles-sadhereix-la-subvencio-del-consell-de-mallorca-les-activitats-destiu",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "official_public_source",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
       "id": "soller-ara-58089602eaf02077",
       "category": "services",
       "source_id": "manual-4f785079a49c",
@@ -3277,6 +3470,26 @@
       "title": "Celebració de la II Taula Local de Coordinació per a l’Abordatge de les Violències Masclistes d’Esporles i Valldemossa",
       "summary": "",
       "url": "https://ajvalldemossa.net/ca/noticies/celebracio-de-la-ii-taula-local-de-coordinacio-labordatge-de-les-violencies-masclistes",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "official_public_source",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
+      "id": "1118b00727e10ff9759d",
+      "category": "news",
+      "source_id": "ajuntament-esporles-noticies",
+      "source": "Ajuntament d’Esporles",
+      "source_type": "official",
+      "language": "ca",
+      "locality": "Esporles / Serra de Tramuntana",
+      "published_at": "2026-11-02T00:00:00+00:00",
+      "title": "Concurs de dibuix de Nadal a Esporles!",
+      "summary": "",
+      "url": "https://esporles.cat/ca/noticies/concurs-de-dibuix-de-nadal-esporles",
       "platform": null,
       "account": null,
       "media_type": null,
@@ -3470,6 +3683,26 @@
       "related_sources": []
     },
     {
+      "id": "02df9c543c56facbcbb1",
+      "category": "agenda",
+      "source_id": "ajuntament-banyalbufar-noticies",
+      "source": "Ajuntament de Banyalbufar",
+      "source_type": "official",
+      "language": "ca",
+      "locality": "Banyalbufar / Port des Canonge / Serra de Tramuntana",
+      "published_at": "2026-10-30T12:53:27+00:00",
+      "title": "Agenda cultural a Banyalbufar",
+      "summary": "",
+      "url": "https://ajbanyalbufar.net/ca/noticies/agenda-cultural-banyalbufar-2",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "official_public_source",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
       "id": "3cadf21dbcbf3c2ddc10",
       "category": "news",
       "source_id": "consell-mallorca-soller",
@@ -3570,6 +3803,46 @@
       "related_sources": []
     },
     {
+      "id": "b3753d23eb389e27f5f9",
+      "category": "services",
+      "source_id": "ajuntament-estellencs-noticies",
+      "source": "Ajuntament d’Estellencs",
+      "source_type": "official",
+      "language": "ca",
+      "locality": "Estellencs / Cala Estellencs / Serra de Tramuntana",
+      "published_at": "2026-10-30T08:37:46+00:00",
+      "title": "TRAMITACIÓ PER ADJUDICACIÓ DE PLACES D'APARCAMENT MUNICIPALS",
+      "summary": "",
+      "url": "https://ajestellencs.net/ca/noticies/tramitacio-adjudicacio-de-places-daparcament-municipals",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "official_public_source",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
+      "id": "6f65facb182bedcae382",
+      "category": "services",
+      "source_id": "ajuntament-estellencs-noticies",
+      "source": "Ajuntament d’Estellencs",
+      "source_type": "official",
+      "language": "ca",
+      "locality": "Estellencs / Cala Estellencs / Serra de Tramuntana",
+      "published_at": "2026-10-30T08:35:37+00:00",
+      "title": "Tramitació de guals i targetes d'estacionament",
+      "summary": "",
+      "url": "https://ajestellencs.net/ca/noticies/tramitacio-de-guals-i-targetes-destacionament",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "official_public_source",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
       "id": "soller-ara-4fd1e8d94150343c",
       "category": "alerts",
       "source_id": "manual-13e44f9445ef",
@@ -3651,6 +3924,26 @@
       "image_allowed": false,
       "embed_type": "official_oembed",
       "embed_url": "https://mespersoller.cat/restaurem-el-patrimoni-modernista/embed/",
+      "related_sources": []
+    },
+    {
+      "id": "c13e79516c64be0ea8cb",
+      "category": "news",
+      "source_id": "ajuntament-esporles-noticies",
+      "source": "Ajuntament d’Esporles",
+      "source_type": "official",
+      "language": "ca",
+      "locality": "Esporles / Serra de Tramuntana",
+      "published_at": "2026-10-30T00:00:00+00:00",
+      "title": "EL CEMENTIRI D’ESPORLES, A PUNT PER A LA FESTIVITAT DE TOTS SANTS",
+      "summary": "",
+      "url": "https://esporles.cat/ca/noticies/el-cementiri-desporles-punt-la-festivitat-de-tots-sants",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "official_public_source",
+      "image_allowed": false,
       "related_sources": []
     },
     {
@@ -4327,6 +4620,26 @@
       "rights_status": "no_reuse_reference_only",
       "image_allowed": false,
       "original_url": "https://www.facebook.com/story.php?story_fbid=1583084360513300&id=100064352547067&hpir=1",
+      "related_sources": []
+    },
+    {
+      "id": "62ffe0840b4bfc1fa8cd",
+      "category": "agenda",
+      "source_id": "ajuntament-banyalbufar-noticies",
+      "source": "Ajuntament de Banyalbufar",
+      "source_type": "official",
+      "language": "ca",
+      "locality": "Banyalbufar / Port des Canonge / Serra de Tramuntana",
+      "published_at": "2026-10-23T11:03:52+00:00",
+      "title": "L’AJUNTAMENT DE BANYALBUFAR S’ACULL A LA CONVOCATÒRIA PER ACTUACIONS D’ADMINISTRACIÓ ELECTRÒNICA, DIGITALITZACIÓ I CIBERSEGURETAT DEL CONSELL DE MALLORCA",
+      "summary": "",
+      "url": "https://ajbanyalbufar.net/ca/noticies/lajuntament-de-banyalbufar-sacull-la-convocatoria-actuacions-dadministracio-electronica",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "official_public_source",
+      "image_allowed": false,
       "related_sources": []
     },
     {
@@ -5830,6 +6143,26 @@
       "related_sources": []
     },
     {
+      "id": "8a1084c2dd0847963e41",
+      "category": "services",
+      "source_id": "ajuntament-estellencs-noticies",
+      "source": "Ajuntament d’Estellencs",
+      "source_type": "official",
+      "language": "ca",
+      "locality": "Estellencs / Cala Estellencs / Serra de Tramuntana",
+      "published_at": "2026-10-16T08:16:00+00:00",
+      "title": "L’Ajuntament d’Estellencs torna a prestar el servei d’Escola d’Estiu gràcies al finançament del Govern de les Illes Balears en el marc del Pla Corresponsables",
+      "summary": "",
+      "url": "https://ajestellencs.net/ca/noticies/lajuntament-destellencs-torna-prestar-el-servei-descola-destiu-gracies-al-financament-del",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "official_public_source",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
       "id": "cdb42d4d675e498f209d",
       "category": "services",
       "source_id": "ies-guillem-colom-casasnoves",
@@ -6131,6 +6464,26 @@
       "title": "BIBLIOTECA MUNICIPAL DE DEIÀ JOAN GRAVES",
       "summary": "",
       "url": "https://ajdeia.net/ca/noticies/biblioteca-municipal-de-deia-joan-graves-1",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "official_public_source",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
+      "id": "085fabbc2b57b6dd2614",
+      "category": "news",
+      "source_id": "ajuntament-estellencs-noticies",
+      "source": "Ajuntament d’Estellencs",
+      "source_type": "official",
+      "language": "ca",
+      "locality": "Estellencs / Cala Estellencs / Serra de Tramuntana",
+      "published_at": "2026-10-13T06:02:23+00:00",
+      "title": "BAN MUNICIPAL SOBRE RETIRADA DE BARQUES DE CALA ESTELLENCS",
+      "summary": "",
+      "url": "https://ajestellencs.net/ca/noticies/ban-municipal-sobre-retirada-de-barques-de-cala-estellencs",
       "platform": null,
       "account": null,
       "media_type": null,
@@ -7685,6 +8038,26 @@
       "related_sources": []
     },
     {
+      "id": "2ae23add91d8e690da7a",
+      "category": "culture",
+      "source_id": "ajuntament-estellencs-noticies",
+      "source": "Ajuntament d’Estellencs",
+      "source_type": "official",
+      "language": "ca",
+      "locality": "Estellencs / Cala Estellencs / Serra de Tramuntana",
+      "published_at": "2026-09-29T07:31:35+00:00",
+      "title": "L’Ajuntament d’Estellencs millora els equipaments culturals municipals amb el suport del Consell de Mallorca",
+      "summary": "",
+      "url": "https://ajestellencs.net/ca/noticies/lajuntament-destellencs-millora-els-equipaments-culturals-municipals-amb-el-suport-del",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "official_public_source",
+      "image_allowed": false,
+      "related_sources": []
+    },
+    {
       "id": "ceee3f66083f83b07142",
       "category": "culture",
       "source_id": "can-prunera-noticies",
@@ -7804,6 +8177,26 @@
       "original_url": "https://www.facebook.com/share/1Ayq4zfiL8/?mibextid=wwXIfr",
       "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-7976cbf50a08e01c.jpg",
       "media_type": "image",
+      "related_sources": []
+    },
+    {
+      "id": "c288dccc311a0f2096fa",
+      "category": "news",
+      "source_id": "ajuntament-estellencs-noticies",
+      "source": "Ajuntament d’Estellencs",
+      "source_type": "official",
+      "language": "ca",
+      "locality": "Estellencs / Cala Estellencs / Serra de Tramuntana",
+      "published_at": "2026-09-28T08:46:33+00:00",
+      "title": "Estellencs comença l’elaboració del seu Pla de Refugis Climàtics",
+      "summary": "",
+      "url": "https://ajestellencs.net/ca/noticies/estellencs-comenca-lelaboracio-del-seu-pla-de-refugis-climatics",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "official_public_source",
+      "image_allowed": false,
       "related_sources": []
     },
     {
@@ -8046,6 +8439,26 @@
       "original_url": "https://www.facebook.com/share/p/1EvKWu3c3i/?mibextid=wwXIfr",
       "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-4b240950c08e60ba.jpg",
       "media_type": "image",
+      "related_sources": []
+    },
+    {
+      "id": "ea805fda730ea44b54b2",
+      "category": "agenda",
+      "source_id": "ajuntament-estellencs-noticies",
+      "source": "Ajuntament d’Estellencs",
+      "source_type": "official",
+      "language": "ca",
+      "locality": "Estellencs / Cala Estellencs / Serra de Tramuntana",
+      "published_at": "2026-09-24T07:27:34+00:00",
+      "title": "L’Ajuntament d’Estellencs s’acull a la convocatòria de subvencions del Consell de Mallorca per a actuacions d'administració electrònica 2026",
+      "summary": "",
+      "url": "https://ajestellencs.net/ca/noticies/lajuntament-destellencs-sacull-la-convocatoria-de-subvencions-del-consell-de-mallorca-0",
+      "platform": null,
+      "account": null,
+      "media_type": null,
+      "content_policy": "headline_date_link_only",
+      "rights_status": "official_public_source",
+      "image_allowed": false,
       "related_sources": []
     },
     {
@@ -8348,6 +8761,6 @@
       "related_sources": []
     }
   ],
-  "sources_checked_at": "2026-11-15T11:37:27.754963+00:00",
-  "fetched_at": "2026-11-15T11:37:27.754963+00:00"
+  "sources_checked_at": "2026-11-15T12:13:03.773033+00:00",
+  "fetched_at": "2026-11-15T12:13:03.773033+00:00"
 }
