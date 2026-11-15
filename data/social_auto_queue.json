@@ -1,26 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-15T19:22:50.317060+00:00",
+  "generated_at": "2026-11-15T21:36:35.722221+00:00",
   "entries": [
     {
-      "post_id": "842e6afa9c208b00a531",
-      "title": "El petirrojo amplía su presencia en Mallorca y alcanza el norte de la Serra de Tramuntana",
+      "post_id": "4b4fcfc936c9e055ec01",
+      "title": "Fallece Catalina Morell, maestra y exconcejala de Sóller comprometida con la educación pública",
       "summary": "",
-      "source": "Mallorcadiario · Sóller",
-      "source_id": "mallorcadiario-soller",
+      "source": "Última Hora",
+      "source_id": "ultima-hora-soller",
       "source_type": "media",
       "category": "news",
       "language": "es",
-      "published_at": "2026-11-15T15:11:31+00:00",
-      "original_url": "https://www.mallorcadiario.com/el-petirrojo-amplia-su-presencia-en-mallorca-y-alcanza-el-norte-de-la-serra-de-tramuntana",
+      "published_at": "2026-11-15T20:19:00+01:00",
+      "original_url": "https://www.ultimahora.es/noticias/part-forana/2026/11/15/2750635/fallece-catalina-morell-maestra-exconcejala-soller-comprometida-educacion-publica.html",
       "content_policy": "headline_date_link_only",
-      "rights_status": "link_only_no_media_license",
+      "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/842e6afa9c208b00a531.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/4b4fcfc936c9e055ec01.jpg"
     }
   ]
 }
