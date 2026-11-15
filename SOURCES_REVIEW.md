@@ -234,3 +234,7 @@ La distribució dels tres canals segueix les regles establertes de Facebook i In
 ### Auditoria de previsualitzacions
 
 Es revisen mostres dels articles i, quan existeix, la descoberta oEmbed i la resposta de la vista oficial. **Mallorca Global Mag, UEP! Mallorca i Mallorca Caprice** anuncien oEmbed però la vista retorna `X-Frame-Options: SAMEORIGIN`. A **Ports IB**, el punt oEmbed anunciat respon 401. Les mostres d'IB3, Setmanari Sóller, Última Hora, elDiario.es, Majorca Daily Bulletin i les tres noves fonts municipals no anuncien una targeta compatible. No es pot comprovar la vista dels centres que continuen sense respondre. Es mantenen les dotze fonts amb previsualització oficial i els reproductors de YouTube; no s'utilitza `og:image` com a permís de reutilització.
+
+### Àmbit municipal revisat
+
+A petició de l'usuari, només es manté la recopilació dels ajuntaments de **Sóller, Fornalutx i Deià**, inclosos el canal de YouTube de Sóller i l'Agenda de Deià. Es retiren del catàleg i de la distribució Bunyola, Valldemossa, Escorca, Esporles, Banyalbufar i Estellencs. Són 58 fonts externes i 59 estats amb les publicacions pròpies. Les referències automàtiques dels canals retirats surten del llistat amb la recopilació següent; es conserven les publicacions pròpies i el registre social. El Consell, els altres organismes, els mitjans i les seves regles es mantenen.

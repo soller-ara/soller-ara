@@ -1,5 +1,11 @@
 # Sóller Ara
 
+## Fonts municipals i cercador web · 15 de novembre de 2026
+
+La recopilació municipal se centra en Sóller, Fornalutx i Deià. Es retiren els RSS de Bunyola, Valldemossa, Escorca, Esporles, Banyalbufar i Estellencs. Queden 58 fonts externes (59 estats amb Sóller Ara).
+
+**Administració → Buscar en la web** obre una cerca a Brave Search o Google per tema, territori i interval orientatiu. Funciona també al mòbil en un navegador habitual, sense instal·lar Brave ni configurar una clau. La cerca es fa en una altra pestanya i permet tornar a «Enlaces de redes» amb l'enllaç original. Abans de publicar, cal comprovar el vincle local, l'atribució, la data original (màxim de 60 dies) i que la referència no hi sigui ja. La cerca per si sola no publica.
+
 ## Actualització de fonts · 7 de novembre de 2026
 
 S'incorporen sis canals verificats: Mallorca Caprice, Sóller en Mallorca, Ocio Mallorca i els RSS oficials dels ajuntaments de Bunyola, Valldemossa i Escorca. El catàleg té **61 fonts externes** (62 estats amb les publicacions pròpies). Els canals municipals aporten activitat i serveis de la Serra de Tramuntana; els mitjans requereixen una referència territorial al titular original. Les primeres lectures aporten 42 referències aptes, amb la data original, atribució i un màxim de 60 dies.

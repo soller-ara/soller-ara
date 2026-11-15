@@ -53,6 +53,15 @@ button:disabled{cursor:not-allowed;opacity:.55}
 .editorial-guide summary{width:fit-content;max-width:100%;min-height:44px;padding:11px 0;color:var(--primary);font-weight:700;cursor:pointer}
 .editorial-guide summary:focus-visible{outline:3px solid var(--primary);outline-offset:3px;border-radius:4px}
 .editorial-guide details ul{margin:4px 0 0;padding-left:20px}.editorial-guide details li+li{margin-top:8px}
+.web-discovery{gap:14px;max-width:620px}
+.web-discovery label,.web-discovery select{min-width:0}
+.web-discovery button[type=submit]{min-height:44px;justify-self:start}
+.web-discovery .hint{margin:0;line-height:1.55}
+@media(max-width:620px){
+  .admin-nav{flex-wrap:wrap;gap:5px}
+  .admin-nav .nav-button{padding:9px 10px;min-height:44px}
+  .web-discovery button[type=submit]{justify-self:stretch}
+}
 fieldset{border:1px solid var(--border);border-radius:14px;padding:13px 15px}legend{padding:0 6px;font-weight:750}
 .check{display:inline-flex;grid-template-columns:none;align-items:center;gap:8px;margin-right:18px}.check input{width:auto}
 .publish-preview{padding:18px;border-radius:16px;background:var(--surface-2);border:1px solid var(--border)}

@@ -1,5 +1,5 @@
 {
-  "version": 17,
+  "version": 18,
   "enabled": true,
   "platforms": {
     "facebook": true,
@@ -246,31 +246,7 @@
       "facebook": true,
       "instagram": true
     },
-    "ajuntament-bunyola-noticies": {
-      "facebook": true,
-      "instagram": true
-    },
-    "ajuntament-valldemossa-noticies": {
-      "facebook": true,
-      "instagram": true
-    },
-    "ajuntament-escorca-noticies": {
-      "facebook": true,
-      "instagram": true
-    },
     "ocio-mallorca-soller": {
-      "facebook": true,
-      "instagram": true
-    },
-    "ajuntament-esporles-noticies": {
-      "facebook": true,
-      "instagram": true
-    },
-    "ajuntament-banyalbufar-noticies": {
-      "facebook": true,
-      "instagram": true
-    },
-    "ajuntament-estellencs-noticies": {
       "facebook": true,
       "instagram": true
     }
