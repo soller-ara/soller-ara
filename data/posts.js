@@ -661,7 +661,7 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 342,
+  "post_count": 343,
   "related_pair_count": 0,
   "errors": [
     {
@@ -678,6 +678,25 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "posts": [
+    {
+      "id": "soller-ara-f955a1e386c3f7d2",
+      "category": "alerts",
+      "source_id": "manual-ecee0cfd70c3",
+      "source": "Policu Local de Sóller",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-11-16T09:34:58.504995+00:00",
+      "show_in_now": true,
+      "content_type": "social_link",
+      "title": "",
+      "summary": "",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-f955a1e386c3f7d2.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": false,
+      "original_url": "https://www.facebook.com/story.php?story_fbid=1608201031349696&id=100064794426084&hpir=1#"
+    },
     {
       "id": "5c40b883716e005cf609",
       "category": "news",
@@ -7836,5 +7855,5 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "sources_checked_at": "2026-11-16T09:33:32.816717+00:00",
-  "fetched_at": "2026-11-16T09:33:32.816717+00:00"
+  "fetched_at": "2026-11-16T09:34:58.512308+00:00"
 };
