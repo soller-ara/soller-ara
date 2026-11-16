@@ -1,6 +1,45 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-11-16T09:33:33.172717+00:00",
+  "entries": [
+    {
+      "post_id": "5c40b883716e005cf609",
+      "title": "Martí Morell, premi al millor curtmetratge balear al festival MajorDocs",
+      "summary": "",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-11-16T08:56:01+00:00",
+      "original_url": "https://saveu.cat/noticies/marti-morell-premi-al-millor-curtmetratge-balear-al-festival-majordocs/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/5c40b883716e005cf609.jpg"
+    },
+    {
+      "post_id": "9a830f756655a86f655b",
+      "title": "Mor Catalina Morell, mestra i exregidora de Sóller compromesa amb l'educació pública",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-11-16T09:06:00+01:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/11/16/354811/mor-catalina-morell-mestra-exregidora-soller-compromesa-amb-educacio-publica.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/9a830f756655a86f655b.jpg"
+    }
+  ]
 }
