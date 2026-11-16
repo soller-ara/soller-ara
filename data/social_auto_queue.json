@@ -1,45 +1,105 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-16T09:33:33.172717+00:00",
+  "generated_at": "2026-11-16T11:51:47.211297+00:00",
   "entries": [
     {
-      "post_id": "5c40b883716e005cf609",
-      "title": "Martí Morell, premi al millor curtmetratge balear al festival MajorDocs",
+      "post_id": "19f23459a5b519443da9",
+      "title": "Can Prunera Pensament: Eric Sadin.",
+      "summary": "Vídeo publicat per Can Prunera · YouTube.",
+      "source": "Can Prunera · YouTube",
+      "source_id": "youtube-can-prunera",
+      "source_type": "social",
+      "category": "culture",
+      "language": "es",
+      "published_at": "2026-11-16T11:35:43+00:00",
+      "original_url": "https://www.youtube.com/watch?v=96wpSI3AirI",
+      "content_policy": "generated_social_summary",
+      "rights_status": "platform_embed",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/19f23459a5b519443da9.jpg"
+    },
+    {
+      "post_id": "831cb752a04af97e27c7",
+      "title": "La justícia ordena el pagament de 16.9 milions més per a l'empresa concessionària del Túnel de Sóller",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "commerce",
+      "language": "ca",
+      "published_at": "2026-11-16T12:35:35+01:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/11/16/354815/justicia-ordena-pagament-milions-mes-per-empresa-concessionaria-del-tunel-soller.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/831cb752a04af97e27c7.jpg"
+    },
+    {
+      "post_id": "a062be3b9b6fe748dbdd",
+      "title": "El Consell de Mallorca deberá pagar 16,93 millones de euros más a la empresa del túnel de Sóller por el rescate anulado",
+      "summary": "",
+      "source": "Europa Press Illes Balears · Sóller",
+      "source_id": "europa-press-balears-soller",
+      "source_type": "media",
+      "category": "commerce",
+      "language": "es",
+      "published_at": "2026-11-16T11:26:53+00:00",
+      "original_url": "https://www.europapress.es/illes-balears/noticia-consell-mallorca-debera-pagar-1693-millones-euros-mas-empresa-tunel-soller-rescate-anulado-20261116122653.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/a062be3b9b6fe748dbdd.jpg"
+    },
+    {
+      "post_id": "031011b1a955c3e53706",
+      "title": "Aviso. Nivel amarillo. Costeros. Sierra Tramontana",
+      "summary": "Aviso de costeros de nivel amarillo de 00:00 18-11-2026 CET (UTC+1) a 05:59 18-11-2026 CET (UTC+1).",
+      "source": "AEMET · Serra de Tramuntana",
+      "source_id": "aemet-avisos-mallorca",
+      "source_type": "official",
+      "category": "alerts",
+      "language": "es",
+      "published_at": "2026-11-16T10:28:53+00:00",
+      "alert_status": "scheduled",
+      "alert_valid_from": "2026-11-17T23:00:00+00:00",
+      "alert_valid_until": "2026-11-18T04:59:00+00:00",
+      "original_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261116102853_AFAZ645401COCO1805.xml",
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "reuse_authorized_with_attribution",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/031011b1a955c3e53706.jpg"
+    },
+    {
+      "post_id": "ceeacb78ac267739ed8d",
+      "title": "El Consell haurà de pagar 33 milions d’euros pel rescat del túnel de l’any 2017",
       "summary": "",
       "source": "Sa Veu de Sóller",
       "source_id": "sa-veu-soller",
       "source_type": "media",
       "category": "news",
       "language": "ca",
-      "published_at": "2026-11-16T08:56:01+00:00",
-      "original_url": "https://saveu.cat/noticies/marti-morell-premi-al-millor-curtmetratge-balear-al-festival-majordocs/",
+      "published_at": "2026-11-16T10:02:44+00:00",
+      "original_url": "https://saveu.cat/noticies/el-consell-haura-de-pagar-31-milions-deuros-pel-rescat-del-tunel-de-lany-2017/",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/5c40b883716e005cf609.jpg"
-    },
-    {
-      "post_id": "9a830f756655a86f655b",
-      "title": "Mor Catalina Morell, mestra i exregidora de Sóller compromesa amb l'educació pública",
-      "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-11-16T09:06:00+01:00",
-      "original_url": "https://www.elsoller.cat/soller/local/2026/11/16/354811/mor-catalina-morell-mestra-exregidora-soller-compromesa-amb-educacio-publica.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/9a830f756655a86f655b.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/ceeacb78ac267739ed8d.jpg"
     }
   ]
 }
