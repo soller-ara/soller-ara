@@ -1,45 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-16T18:37:23.887024+00:00",
-  "entries": [
-    {
-      "post_id": "065a47681248758e3b11",
-      "title": "El Consell de Mallorca deberá pagar casi 17 millones de euros más por el rescate del túnel de Sóller",
-      "summary": "Vídeo publicat per Fibwi Diario · YouTube.",
-      "source": "Fibwi Diario · YouTube",
-      "source_id": "youtube-fibwi-diario-soller",
-      "source_type": "social",
-      "category": "news",
-      "language": "es",
-      "published_at": "2026-11-16T18:02:02+00:00",
-      "original_url": "https://www.youtube.com/watch?v=CCknF2qEgmY",
-      "content_policy": "generated_social_summary",
-      "rights_status": "platform_embed",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/065a47681248758e3b11.jpg"
-    },
-    {
-      "post_id": "97797d1a09682c9b0828",
-      "title": "El Consell de Mallorca deberá pagar casi 17 millones de euros más por el rescate del túnel de Sóller",
-      "summary": "",
-      "source": "Fibwi Diario · Sóller",
-      "source_id": "fibwi-diario-soller",
-      "source_type": "media",
-      "category": "commerce",
-      "language": "es",
-      "published_at": "2026-11-16T19:01:49+01:00",
-      "original_url": "https://www.fibwidiario.com/baleares/mallorca/consell-mallorca-debera-pagar-casi-17-millones-euros-mas-rescate-tunel-soller/20261116190149327822.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "link_only_no_media_license",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/97797d1a09682c9b0828.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
