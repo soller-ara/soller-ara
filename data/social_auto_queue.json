@@ -1,105 +1,102 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-16T11:51:47.211297+00:00",
+  "generated_at": "2026-11-16T14:07:38.514985+00:00",
   "entries": [
     {
-      "post_id": "19f23459a5b519443da9",
-      "title": "Can Prunera Pensament: Eric Sadin.",
-      "summary": "Vídeo publicat per Can Prunera · YouTube.",
-      "source": "Can Prunera · YouTube",
-      "source_id": "youtube-can-prunera",
-      "source_type": "social",
-      "category": "culture",
-      "language": "es",
-      "published_at": "2026-11-16T11:35:43+00:00",
-      "original_url": "https://www.youtube.com/watch?v=96wpSI3AirI",
-      "content_policy": "generated_social_summary",
-      "rights_status": "platform_embed",
+      "post_id": "2280d817f95afcbd7964",
+      "title": "En record de Catalina Morell González",
+      "summary": "sarrom dl., 16/11/2026 - 13:22 16-Novembre-2026 L’Ajuntament de Sóller lamenta la pèrdua de Catalina Morell González, qui va exercir de regidora d’aquesta institució durant la legislatura 2003-2007, en representació del…",
+      "source": "Ajuntament de Sóller",
+      "source_id": "ajuntament-soller-noticies",
+      "source_type": "official",
+      "category": "politics",
+      "language": "ca",
+      "published_at": "2026-11-16T12:22:09+00:00",
+      "original_url": "https://ajsoller.net/ca/noticies/en-record-de-catalina-morell-gonzalez",
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "public_source_reviewed",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/19f23459a5b519443da9.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/2280d817f95afcbd7964.jpg"
     },
     {
-      "post_id": "831cb752a04af97e27c7",
-      "title": "La justícia ordena el pagament de 16.9 milions més per a l'empresa concessionària del Túnel de Sóller",
+      "post_id": "59888ae7a715387258c6",
+      "title": "El Consell haurà d’abonar 16,9 milions més per l’anul·lació del rescat del túnel de Sóller",
       "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
+      "source": "ARA Balears",
+      "source_id": "ara-balears-soller",
       "source_type": "media",
-      "category": "commerce",
+      "category": "news",
       "language": "ca",
-      "published_at": "2026-11-16T12:35:35+01:00",
-      "original_url": "https://www.elsoller.cat/soller/local/2026/11/16/354815/justicia-ordena-pagament-milions-mes-per-empresa-concessionaria-del-tunel-soller.html",
+      "published_at": "2026-11-16T12:00:18+00:00",
+      "original_url": "https://www.arabalears.cat/societat/consell-haura-d-abonar-16-9-milions-mes-l-anul-lacio-concessio-tunel-soller_1_5912141.html",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/831cb752a04af97e27c7.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/59888ae7a715387258c6.jpg"
     },
     {
-      "post_id": "a062be3b9b6fe748dbdd",
-      "title": "El Consell de Mallorca deberá pagar 16,93 millones de euros más a la empresa del túnel de Sóller por el rescate anulado",
+      "post_id": "e225bb0e96404d0806f7",
+      "title": "IB3N | El Consell de Mallorca haurà de pagar quasi 17 milions d’euros més a l’empresa del túnel de Sóller pel rescat anul·lat",
       "summary": "",
-      "source": "Europa Press Illes Balears · Sóller",
-      "source_id": "europa-press-balears-soller",
+      "source": "IB3 Notícies",
+      "source_id": "ib3-noticies-soller",
       "source_type": "media",
       "category": "commerce",
-      "language": "es",
-      "published_at": "2026-11-16T11:26:53+00:00",
-      "original_url": "https://www.europapress.es/illes-balears/noticia-consell-mallorca-debera-pagar-1693-millones-euros-mas-empresa-tunel-soller-rescate-anulado-20261116122653.html",
+      "language": "ca",
+      "published_at": "2026-11-16T12:00:00+00:00",
+      "original_url": "https://ib3.org/el-consell-de-mallorca-haura-de-pagar-quasi-17-milions-deuros-mes-a-lempresa-del-tunel-de-soller-pel-rescat-anullat",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/e225bb0e96404d0806f7.jpg"
+    },
+    {
+      "post_id": "58c8b6da5609c6a42be6",
+      "title": "Council of Mallorca hit with fresh €16.9 million bill over Soller Tunnel buyout",
+      "summary": "",
+      "source": "Majorca Daily Bulletin · Sóller",
+      "source_id": "majorca-daily-bulletin-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "en",
+      "published_at": "2026-11-16T12:57:00+01:00",
+      "original_url": "https://www.majorcadailybulletin.com/news/local/2026/11/16/147399/council-mallorca-hit-with-fresh-169-million-bill-over-cancelled-soller-tunnel-buyout.html",
       "content_policy": "headline_date_link_only",
       "rights_status": "link_only_no_media_license",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/a062be3b9b6fe748dbdd.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/58c8b6da5609c6a42be6.jpg"
     },
     {
-      "post_id": "031011b1a955c3e53706",
-      "title": "Aviso. Nivel amarillo. Costeros. Sierra Tramontana",
-      "summary": "Aviso de costeros de nivel amarillo de 00:00 18-11-2026 CET (UTC+1) a 05:59 18-11-2026 CET (UTC+1).",
-      "source": "AEMET · Serra de Tramuntana",
-      "source_id": "aemet-avisos-mallorca",
-      "source_type": "official",
-      "category": "alerts",
-      "language": "es",
-      "published_at": "2026-11-16T10:28:53+00:00",
-      "alert_status": "scheduled",
-      "alert_valid_from": "2026-11-17T23:00:00+00:00",
-      "alert_valid_until": "2026-11-18T04:59:00+00:00",
-      "original_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261116102853_AFAZ645401COCO1805.xml",
-      "content_policy": "short_factual_excerpt",
-      "rights_status": "reuse_authorized_with_attribution",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/031011b1a955c3e53706.jpg"
-    },
-    {
-      "post_id": "ceeacb78ac267739ed8d",
-      "title": "El Consell haurà de pagar 33 milions d’euros pel rescat del túnel de l’any 2017",
+      "post_id": "567454af877ffd4ae018",
+      "title": "La Justicia condena al Consell a pagar otros 17 millones por el rescate del Pacte del túnel de Sóller",
       "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
+      "source": "Mallorcadiario · Sóller",
+      "source_id": "mallorcadiario-soller",
       "source_type": "media",
       "category": "news",
-      "language": "ca",
-      "published_at": "2026-11-16T10:02:44+00:00",
-      "original_url": "https://saveu.cat/noticies/el-consell-haura-de-pagar-31-milions-deuros-pel-rescat-del-tunel-de-lany-2017/",
+      "language": "es",
+      "published_at": "2026-11-16T11:35:51+00:00",
+      "original_url": "https://www.mallorcadiario.com/justicia-condena-consell-pagar-otros-17-millones-rescate-pacte-tunel-de-soller",
       "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
+      "rights_status": "link_only_no_media_license",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/ceeacb78ac267739ed8d.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/567454af877ffd4ae018.jpg"
     }
   ]
 }
