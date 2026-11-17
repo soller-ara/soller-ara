@@ -1,86 +1,86 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-17T15:22:40.546804+00:00",
+  "generated_at": "2026-11-17T17:36:50.035641+00:00",
   "entries": [
     {
-      "post_id": "a9c40b9ff6c85454bba1",
-      "title": "El Consell estudia actuar contra els polítics del pacte que acordaren el rescat del túnel",
-      "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-11-17T14:52:45+00:00",
-      "original_url": "https://saveu.cat/noticies/el-consell-recorrera-la-nova-indemnitzacio-de-169-milions-pel-rescat-del-tunel/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/a9c40b9ff6c85454bba1.jpg"
-    },
-    {
-      "post_id": "8c7698b921f51e08710e",
-      "title": "XXI JORNADES D'ESTUDIS LOCALS DE SÓLLER I FORNALUTX",
-      "summary": "sarrom dt., 17/11/2026 - 13:48 02-Novembre-2026 Aquí teniu el programa de comunicacions de les XXI Jornades d’Estudis Locals, enguany dedicades a Foment de Cultura de la Dona i als Xeremiers de Sóller. Dies 6 i 7 de…",
-      "source": "Ajuntament de Fornalutx",
-      "source_id": "ajuntament-fornalutx-noticies",
-      "source_type": "official",
-      "category": "culture",
-      "language": "ca",
-      "published_at": "2026-11-17T12:48:26+00:00",
-      "original_url": "https://ajfornalutx.net/ca/noticies/xxi-jornades-destudis-locals-de-soller-i-fornalutx",
-      "content_policy": "short_factual_excerpt",
-      "rights_status": "official_public_source",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/8c7698b921f51e08710e.jpg"
-    },
-    {
-      "post_id": "d3d1e78710d82bfe58a8",
-      "title": "IB3N | El Consell de Mallorca estudia si pot emprendre alguna actuació contra els polítics del Pacte de progrés del 2017 que van acordar el rescat del túnel de Sóller",
-      "summary": "",
-      "source": "IB3 Notícies",
-      "source_id": "ib3-noticies-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-11-17T12:00:00+00:00",
-      "original_url": "https://ib3.org/el-consell-de-mallorca-estudia-si-pot-emprendre-alguna-actuacio-contra-els-politics-del-pacte-de-progres-del-2017-que-van-acordar-el-rescat-del-tunel-de-soller",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/d3d1e78710d82bfe58a8.jpg"
-    },
-    {
-      "post_id": "771e5ebebfbc3894d351",
-      "title": "Aviso. Nivel amarillo. Costeros. Sierra Tramontana",
-      "summary": "Aviso de costeros de nivel amarillo de 10:00 17-11-2026 CET (UTC+1) a 05:59 18-11-2026 CET (UTC+1).",
+      "post_id": "28e3789c6a6946075262",
+      "title": "Aviso. Nivel amarillo. Vientos. Sierra Tramontana",
+      "summary": "Aviso de rachas máximas de nivel amarillo de 17:00 17-11-2026 CET (UTC+1) a 23:59 17-11-2026 CET (UTC+1).",
       "source": "AEMET · Serra de Tramuntana",
       "source_id": "aemet-avisos-mallorca",
       "source_type": "official",
       "category": "alerts",
       "language": "es",
-      "published_at": "2026-11-17T09:35:03+00:00",
+      "published_at": "2026-11-17T16:03:34+00:00",
       "alert_status": "active",
-      "alert_valid_from": "2026-11-17T09:00:00+00:00",
-      "alert_valid_until": "2026-11-18T04:59:00+00:00",
-      "original_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261117093503_AFAZ645401COCO1805.xml",
+      "alert_valid_from": "2026-11-17T16:00:00+00:00",
+      "alert_valid_until": "2026-11-17T22:59:00+00:00",
+      "original_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261117160334_AFAZ645401VIRM1723.xml",
       "content_policy": "short_factual_excerpt",
       "rights_status": "reuse_authorized_with_attribution",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/771e5ebebfbc3894d351.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/28e3789c6a6946075262.jpg"
+    },
+    {
+      "post_id": "06c4791131cb62b90ede",
+      "title": "Un arbre cau a la plaça dels Estiradors, actualment en obres",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "services",
+      "language": "ca",
+      "published_at": "2026-11-17T16:40:00+01:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/11/17/354825/arbre-cau-placa-dels-estiradors-actualment-obres.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/06c4791131cb62b90ede.jpg"
+    },
+    {
+      "post_id": "46c278b17f0b69945975",
+      "title": "El vent tomba un arbre en mal estat als Estiradors",
+      "summary": "",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "source_type": "media",
+      "category": "services",
+      "language": "ca",
+      "published_at": "2026-11-17T15:30:00+00:00",
+      "original_url": "https://saveu.cat/noticies/el-vent-tomba-un-arbre-en-mal-estat-als-estiradors/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/46c278b17f0b69945975.jpg"
+    },
+    {
+      "post_id": "738eaf0827ca23fed41b",
+      "title": "Convocatòria de subvencions de l'any 2026 per actuacions d'administració electrònica, digitalització i ciberseguretat",
+      "summary": "sarrom dt., 17/11/2026 - 13:32 02-Novembre-2026 L'Ajuntament de Fornalutx s'ha adherit a la Convocatòria de subvencions de l'any 2026 dirigida a ajuntaments, mancomunitats i entitats locals menors de Mallorca per…",
+      "source": "Ajuntament de Fornalutx",
+      "source_id": "ajuntament-fornalutx-noticies",
+      "source_type": "official",
+      "category": "agenda",
+      "language": "ca",
+      "published_at": "2026-11-17T12:32:20+00:00",
+      "original_url": "https://ajfornalutx.net/ca/noticies/convocatoria-de-subvencions-de-lany-2026-actuacions-dadministracio-electronica",
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "official_public_source",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/738eaf0827ca23fed41b.jpg"
     }
   ]
 }
