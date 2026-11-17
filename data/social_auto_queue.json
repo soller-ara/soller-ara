@@ -1,67 +1,102 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-17T10:37:10.384353+00:00",
+  "generated_at": "2026-11-17T12:52:19.848750+00:00",
   "entries": [
     {
-      "post_id": "1a00a54730e0b783b1eb",
-      "title": "Aviso. Nivel amarillo. Costeros. Sierra Tramontana",
-      "summary": "Aviso de costeros de nivel amarillo de 00:00 19-11-2026 CET (UTC+1) a 11:59 19-11-2026 CET (UTC+1).",
-      "source": "AEMET · Serra de Tramuntana",
-      "source_id": "aemet-avisos-mallorca",
+      "post_id": "d3876134348befd70339",
+      "title": "FORNALUTX OBERT AL MÓN",
+      "summary": "sarrom dt., 17/11/2026 - 13:41 02-Novembre-2026 Quan és? Dissabte 5 de Desembre a partir de les 19:30h a Sa Plaça!!!! Com puc apuntar-me? Envia un mail a masanchez@ajfornalutx.net La recaptació d’aquesta fira solidària…",
+      "source": "Ajuntament de Fornalutx",
+      "source_id": "ajuntament-fornalutx-noticies",
       "source_type": "official",
-      "category": "alerts",
-      "language": "es",
-      "published_at": "2026-11-17T10:28:00+00:00",
-      "alert_status": "scheduled",
-      "alert_valid_from": "2026-11-18T23:00:00+00:00",
-      "alert_valid_until": "2026-11-19T10:59:00+00:00",
-      "original_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261117102800_AFAZ645401COCO1911.xml",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-11-17T12:41:07+00:00",
+      "original_url": "https://ajfornalutx.net/ca/noticies/fornalutx-obert-al-mon-0",
       "content_policy": "short_factual_excerpt",
-      "rights_status": "reuse_authorized_with_attribution",
+      "rights_status": "official_public_source",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/1a00a54730e0b783b1eb.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/d3876134348befd70339.jpg"
     },
     {
-      "post_id": "42896e48f33134764d7c",
-      "title": "Moviment Jove de Sóller i No Normal organitzen una taula rodona sobre habitatge i turisme",
+      "post_id": "5a837df0412b823ea272",
+      "title": "El fort vent aixeca part de la coberta provisional de la Fàbrica Nova",
       "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
       "source_type": "media",
       "category": "news",
       "language": "ca",
-      "published_at": "2026-11-17T11:12:00+01:00",
-      "original_url": "https://www.elsoller.cat/soller/local/2026/11/17/354817/moviment-jove-soller-normal-organitzen-taula-rodona-sobre-habitatge-turisme.html",
+      "published_at": "2026-11-17T12:14:19+00:00",
+      "original_url": "https://saveu.cat/noticies/el-fort-vent-aixeca-part-de-la-coberta-provisional-de-la-fabrica-nova/",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/42896e48f33134764d7c.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/5a837df0412b823ea272.jpg"
     },
     {
-      "post_id": "8e52c1b710fb96aa62b6",
-      "title": "Power outage plunges Soller into darkness",
+      "post_id": "746d35d8cbf505c51b6b",
+      "title": "Galmés critica la \"nefasta gestión\" del 'Pacte' y avanza que apelarán el aumento de la indemnización del túnel de Sóller",
       "summary": "",
-      "source": "Majorca Daily Bulletin · Sóller",
-      "source_id": "majorca-daily-bulletin-soller",
+      "source": "Europa Press Illes Balears · Sóller",
+      "source_id": "europa-press-balears-soller",
       "source_type": "media",
       "category": "news",
-      "language": "en",
-      "published_at": "2026-11-17T10:21:00+01:00",
-      "original_url": "https://www.majorcadailybulletin.com/news/local/2026/11/17/147429/power-outage-plunges-soller-into-darkness.html",
+      "language": "es",
+      "published_at": "2026-11-17T12:12:20+00:00",
+      "original_url": "https://www.europapress.es/illes-balears/noticia-galmes-critica-nefasta-gestion-pacte-avanza-apelaran-aumento-indemnizacion-tunel-soller-20261117131220.html",
       "content_policy": "headline_date_link_only",
       "rights_status": "link_only_no_media_license",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/8e52c1b710fb96aa62b6.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/746d35d8cbf505c51b6b.jpg"
+    },
+    {
+      "post_id": "00001fb1ab8331d12141",
+      "title": "Una pana deixà Sóller sense llum ni internet durant uns minuts",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-11-17T13:06:00+01:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/11/17/354819/pana-deixa-soller-sense-llum-internet-durant-uns-minuts.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/00001fb1ab8331d12141.jpg"
+    },
+    {
+      "post_id": "2219a959f04358240e3a",
+      "title": "El Tren de Sóller cerrará por mantenimiento entre el 23 de noviembre y el 31 de enero",
+      "summary": "",
+      "source": "Última Hora",
+      "source_id": "ultima-hora-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "es",
+      "published_at": "2026-11-17T12:40:35+01:00",
+      "original_url": "https://www.ultimahora.es/noticias/part-forana/2026/11/17/2751645/tren-soller-cerrara-por-mantenimiento-entre-noviembre-enero.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/2219a959f04358240e3a.jpg"
     }
   ]
 }
