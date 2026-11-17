@@ -1,102 +1,102 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-17T12:52:19.848750+00:00",
+  "generated_at": "2026-11-17T13:11:34.232264+00:00",
   "entries": [
     {
-      "post_id": "d3876134348befd70339",
-      "title": "FORNALUTX OBERT AL MÓN",
-      "summary": "sarrom dt., 17/11/2026 - 13:41 02-Novembre-2026 Quan és? Dissabte 5 de Desembre a partir de les 19:30h a Sa Plaça!!!! Com puc apuntar-me? Envia un mail a masanchez@ajfornalutx.net La recaptació d’aquesta fira solidària…",
+      "post_id": "769a280d9b6a0a4015e2",
+      "title": "L’AMS homenatjarà dissabte els Dansadors de la Vall d’Or i el Brot de Taronger",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "culture",
+      "language": "ca",
+      "published_at": "2026-11-17T14:00:00+01:00",
+      "original_url": "https://www.elsoller.cat/soller/societat-i-cultura/2026/11/17/354821/ams-homenatjara-dissabte-els-dansadors-vall-brot-taronger.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/769a280d9b6a0a4015e2.jpg"
+    },
+    {
+      "post_id": "2072e5f1c9d44918d6d9",
+      "title": "El Consell de Mallorca recorrerà la indemnització de 16,9 milions pel túnel de Sóller",
+      "summary": "Vídeo publicat per IB3 Notícies · YouTube.",
+      "source": "IB3 Notícies · YouTube",
+      "source_id": "youtube-ib3-noticies-soller",
+      "source_type": "social",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-11-17T12:55:28+00:00",
+      "original_url": "https://www.youtube.com/watch?v=fkBXA_zIadI",
+      "content_policy": "generated_social_summary",
+      "rights_status": "platform_embed",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/2072e5f1c9d44918d6d9.jpg"
+    },
+    {
+      "post_id": "a323b2b6292e93a8f84b",
+      "title": "Convocatòria de subvencions per a equipaments culturals del Consell de Mallorca",
+      "summary": "sarrom dt., 17/11/2026 - 13:51 28-Setembre-2026 Aquest 2026 gràcies a la convocatòria de subvencions per a equipaments culturals del Consell de Mallorca, hem pogut renovar el mobiliari de taules, cadires i 3 carpes…",
       "source": "Ajuntament de Fornalutx",
       "source_id": "ajuntament-fornalutx-noticies",
       "source_type": "official",
-      "category": "news",
+      "category": "culture",
       "language": "ca",
-      "published_at": "2026-11-17T12:41:07+00:00",
-      "original_url": "https://ajfornalutx.net/ca/noticies/fornalutx-obert-al-mon-0",
+      "published_at": "2026-11-17T12:51:12+00:00",
+      "original_url": "https://ajfornalutx.net/ca/noticies/convocatoria-de-subvencions-equipaments-culturals-del-consell-de-mallorca",
       "content_policy": "short_factual_excerpt",
       "rights_status": "official_public_source",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/d3876134348befd70339.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/a323b2b6292e93a8f84b.jpg"
     },
     {
-      "post_id": "5a837df0412b823ea272",
-      "title": "El fort vent aixeca part de la coberta provisional de la Fàbrica Nova",
-      "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-11-17T12:14:19+00:00",
-      "original_url": "https://saveu.cat/noticies/el-fort-vent-aixeca-part-de-la-coberta-provisional-de-la-fabrica-nova/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/5a837df0412b823ea272.jpg"
-    },
-    {
-      "post_id": "746d35d8cbf505c51b6b",
-      "title": "Galmés critica la \"nefasta gestión\" del 'Pacte' y avanza que apelarán el aumento de la indemnización del túnel de Sóller",
-      "summary": "",
-      "source": "Europa Press Illes Balears · Sóller",
-      "source_id": "europa-press-balears-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "es",
-      "published_at": "2026-11-17T12:12:20+00:00",
-      "original_url": "https://www.europapress.es/illes-balears/noticia-galmes-critica-nefasta-gestion-pacte-avanza-apelaran-aumento-indemnizacion-tunel-soller-20261117131220.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "link_only_no_media_license",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/746d35d8cbf505c51b6b.jpg"
-    },
-    {
-      "post_id": "00001fb1ab8331d12141",
-      "title": "Una pana deixà Sóller sense llum ni internet durant uns minuts",
-      "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-11-17T13:06:00+01:00",
-      "original_url": "https://www.elsoller.cat/soller/local/2026/11/17/354819/pana-deixa-soller-sense-llum-internet-durant-uns-minuts.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/00001fb1ab8331d12141.jpg"
-    },
-    {
-      "post_id": "2219a959f04358240e3a",
-      "title": "El Tren de Sóller cerrará por mantenimiento entre el 23 de noviembre y el 31 de enero",
+      "post_id": "542648e501fd70dbe650",
+      "title": "El Consell estudia emprender acciones legales contra el pacto de izquierdas de 2017 por el rescate del túnel de Sóller",
       "summary": "",
       "source": "Última Hora",
       "source_id": "ultima-hora-soller",
       "source_type": "media",
       "category": "news",
       "language": "es",
-      "published_at": "2026-11-17T12:40:35+01:00",
-      "original_url": "https://www.ultimahora.es/noticias/part-forana/2026/11/17/2751645/tren-soller-cerrara-por-mantenimiento-entre-noviembre-enero.html",
+      "published_at": "2026-11-17T13:50:00+01:00",
+      "original_url": "https://www.ultimahora.es/noticias/part-forana/2026/11/17/2751713/consell-recurrira-pago-del-rescate-del-tunel-soller-estudia-emprender-acciones-legales-contra-pacto-izquierdas-2017.html",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/2219a959f04358240e3a.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/542648e501fd70dbe650.jpg"
+    },
+    {
+      "post_id": "5f80f82b959e6d8ae355",
+      "title": "Last chance to enjoy Mallorca's historic Soller train before shutdown next week",
+      "summary": "",
+      "source": "Majorca Daily Bulletin · Sóller",
+      "source_id": "majorca-daily-bulletin-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "en",
+      "published_at": "2026-11-17T13:49:00+01:00",
+      "original_url": "https://www.majorcadailybulletin.com/news/local/2026/11/17/147463/last-chance-enjoy-mallorca-historic-soller-train-before-shutdown-next-week.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/5f80f82b959e6d8ae355.jpg"
     }
   ]
 }
