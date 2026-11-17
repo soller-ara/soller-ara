@@ -1,6 +1,67 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-11-17T10:37:10.384353+00:00",
+  "entries": [
+    {
+      "post_id": "1a00a54730e0b783b1eb",
+      "title": "Aviso. Nivel amarillo. Costeros. Sierra Tramontana",
+      "summary": "Aviso de costeros de nivel amarillo de 00:00 19-11-2026 CET (UTC+1) a 11:59 19-11-2026 CET (UTC+1).",
+      "source": "AEMET · Serra de Tramuntana",
+      "source_id": "aemet-avisos-mallorca",
+      "source_type": "official",
+      "category": "alerts",
+      "language": "es",
+      "published_at": "2026-11-17T10:28:00+00:00",
+      "alert_status": "scheduled",
+      "alert_valid_from": "2026-11-18T23:00:00+00:00",
+      "alert_valid_until": "2026-11-19T10:59:00+00:00",
+      "original_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261117102800_AFAZ645401COCO1911.xml",
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "reuse_authorized_with_attribution",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/1a00a54730e0b783b1eb.jpg"
+    },
+    {
+      "post_id": "42896e48f33134764d7c",
+      "title": "Moviment Jove de Sóller i No Normal organitzen una taula rodona sobre habitatge i turisme",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-11-17T11:12:00+01:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/11/17/354817/moviment-jove-soller-normal-organitzen-taula-rodona-sobre-habitatge-turisme.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/42896e48f33134764d7c.jpg"
+    },
+    {
+      "post_id": "8e52c1b710fb96aa62b6",
+      "title": "Power outage plunges Soller into darkness",
+      "summary": "",
+      "source": "Majorca Daily Bulletin · Sóller",
+      "source_id": "majorca-daily-bulletin-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "en",
+      "published_at": "2026-11-17T10:21:00+01:00",
+      "original_url": "https://www.majorcadailybulletin.com/news/local/2026/11/17/147429/power-outage-plunges-soller-into-darkness.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/8e52c1b710fb96aa62b6.jpg"
+    }
+  ]
 }
