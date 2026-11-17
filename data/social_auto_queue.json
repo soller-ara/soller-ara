@@ -1,64 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-17T19:51:52.422224+00:00",
-  "entries": [
-    {
-      "post_id": "053b975082803fefe90b",
-      "title": "Una càmera capta el moment exacte en què es romp l’arbre de la plaça dels Estiradors",
-      "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-11-17T19:49:00+01:00",
-      "original_url": "https://www.elsoller.cat/soller/local/2026/11/17/354827/camera-capta-moment-exacte-romp-arbre-placa-dels-estiradors.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/053b975082803fefe90b.jpg"
-    },
-    {
-      "post_id": "363cdbf6ec2a0191eb90",
-      "title": "El viento provoca la caída de un árbol de grandes dimensiones en Sóller",
-      "summary": "",
-      "source": "Última Hora",
-      "source_id": "ultima-hora-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "es",
-      "published_at": "2026-11-17T19:23:58+01:00",
-      "original_url": "https://www.ultimahora.es/noticias/part-forana/2026/11/17/2752041/viento-provoca-caida-arbol-grandes-dimensiones-soller.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/363cdbf6ec2a0191eb90.jpg"
-    },
-    {
-      "post_id": "44e826413901019ef855",
-      "title": "Un equip electrònic deixa Sóller 8 minuts sense energia",
-      "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-11-17T14:46:21+00:00",
-      "original_url": "https://saveu.cat/noticies/un-equip-electronic-deixa-soller-8-minuts-sense-energia/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/44e826413901019ef855.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
