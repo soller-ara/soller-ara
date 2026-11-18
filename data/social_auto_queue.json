@@ -1,83 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-18T15:10:03.213165+00:00",
+  "generated_at": "2026-11-18T17:21:57.445615+00:00",
   "entries": [
     {
-      "post_id": "32e07f02c1be51623c15",
-      "title": "El carrer de Bauzà tancarà tres setmanes per reparar el paviment",
+      "post_id": "62e2b6906768ac894c54",
+      "title": "Arranca per Plaça la campanya de podes, enguany més «suau»",
       "summary": "",
       "source": "Sa Veu de Sóller",
       "source_id": "sa-veu-soller",
       "source_type": "media",
       "category": "services",
       "language": "ca",
-      "published_at": "2026-11-18T14:49:56+00:00",
-      "original_url": "https://saveu.cat/noticies/el-carrer-de-bauza-tancara-tres-setmanes-per-reparar-el-paviment/",
+      "published_at": "2026-11-18T14:45:44+00:00",
+      "original_url": "https://saveu.cat/noticies/arranca-per-placa-la-campanya-de-podes-enguany-mes-suau/",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/32e07f02c1be51623c15.jpg"
-    },
-    {
-      "post_id": "99fc1e10de06cf207789",
-      "title": "BV per 'EXPO PELAIRES AL SOLLERIC' web",
-      "summary": "Vídeo publicat per IB3 Notícies · YouTube.",
-      "source": "IB3 Notícies · YouTube",
-      "source_id": "youtube-ib3-noticies-soller",
-      "source_type": "social",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-11-18T14:10:31+00:00",
-      "original_url": "https://www.youtube.com/watch?v=N2ZnvZeJWt4",
-      "content_policy": "generated_social_summary",
-      "rights_status": "platform_embed",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/99fc1e10de06cf207789.jpg"
-    },
-    {
-      "post_id": "7a55afd9949d6130d69a",
-      "title": "El PSIB acusa Galmés de fer campanya amb el túnel de Sóller i li exigeix que esgoti els recursos",
-      "summary": "",
-      "source": "ARA Balears",
-      "source_id": "ara-balears-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-11-18T13:44:10+00:00",
-      "original_url": "https://www.arabalears.cat/politica/psib-acusa-galmes-campanya-tunel-soller-li-exigeix-esgoti-recursos_1_5914804.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/7a55afd9949d6130d69a.jpg"
-    },
-    {
-      "post_id": "c0104662d33e020e6364",
-      "title": "El PSIB-PSOE reclama a Galmés que defensi fins al final els interessos de Mallorca i no els del PP, davant l’auto que fixa la indemnització pel rescat del túnel de Sóller.",
-      "summary": "",
-      "source": "PSIB-PSOE · Sóller",
-      "source_id": "psib-psoe-soller",
-      "source_type": "political_party",
-      "category": "politics",
-      "language": "ca",
-      "published_at": "2026-11-18T13:42:39+00:00",
-      "original_url": "https://www.psib-psoe.org/mallorca/el-psib-psoe-reclama-a-galmes-que-defensi-fins-al-final-els-interessos-de-mallorca-i-no-els-del-pp-davant-lauto-que-fixa-la-indemnitzacio-pel-rescat-del-tunel-de-soller/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "official_party_source",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/c0104662d33e020e6364.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/62e2b6906768ac894c54.jpg"
     }
   ]
 }
