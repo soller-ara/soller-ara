@@ -1,6 +1,45 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-11-18T10:22:03.928944+00:00",
+  "entries": [
+    {
+      "post_id": "8162408f3cfa1b3152d7",
+      "title": "Deià quedà ahir vuit hores sense llum per la caiguda d'un pi sobre una línia aèria",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-11-18T09:17:00+01:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/11/18/354829/deia-queda-ahir-vuit-hores-sense-llum-per-caiguda-sobre-linia-aeria.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/8162408f3cfa1b3152d7.jpg"
+    },
+    {
+      "post_id": "5c2d2c915a1cd58a5545",
+      "title": "Arbres i Creativitat: una experiència artística per connectar amb la natura al MUCBO",
+      "summary": "",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "source_type": "institution",
+      "category": "culture",
+      "language": "ca",
+      "published_at": "2026-11-18T08:14:23+00:00",
+      "original_url": "https://mucbo.org/arbres-i-creativitat-una-experiencia-artistica-per-connectar-amb-la-natura-al-mucbo/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/5c2d2c915a1cd58a5545.jpg"
+    }
+  ]
 }
