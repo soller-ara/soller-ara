@@ -1,45 +1,67 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-18T10:22:03.928944+00:00",
+  "generated_at": "2026-11-18T12:37:44.085754+00:00",
   "entries": [
     {
-      "post_id": "8162408f3cfa1b3152d7",
-      "title": "Deià quedà ahir vuit hores sense llum per la caiguda d'un pi sobre una línia aèria",
-      "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
-      "source_type": "media",
-      "category": "news",
+      "post_id": "c728b865f2b01e4069a2",
+      "title": "SERVEI DE TRANSPORT PER A PERSONES AMB MOBILITAT REDUÏDA",
+      "summary": "sarrom dc., 18/11/2026 - 13:07 18-Novembre-2026 Amb motiu de la jornada electoral del pròxim 29 de novembre, l’Ajuntament de Sóller posarà a disposició de les persones amb problemes de mobilitat un servei de transport…",
+      "source": "Ajuntament de Sóller",
+      "source_id": "ajuntament-soller-noticies",
+      "source_type": "official",
+      "category": "services",
       "language": "ca",
-      "published_at": "2026-11-18T09:17:00+01:00",
-      "original_url": "https://www.elsoller.cat/soller/local/2026/11/18/354829/deia-queda-ahir-vuit-hores-sense-llum-per-caiguda-sobre-linia-aeria.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
+      "published_at": "2026-11-18T12:07:19+00:00",
+      "original_url": "https://ajsoller.net/ca/noticies/servei-de-transport-persones-amb-mobilitat-reduida",
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "public_source_reviewed",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/8162408f3cfa1b3152d7.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/c728b865f2b01e4069a2.jpg"
     },
     {
-      "post_id": "5c2d2c915a1cd58a5545",
-      "title": "Arbres i Creativitat: una experiència artística per connectar amb la natura al MUCBO",
+      "post_id": "e428399121e0ab4c5dd3",
+      "title": "El tren y el tranvía de Sóller paran el lunes: estas son las fechas de regreso",
       "summary": "",
-      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
-      "source_id": "mucbo-noticies",
-      "source_type": "institution",
-      "category": "culture",
-      "language": "ca",
-      "published_at": "2026-11-18T08:14:23+00:00",
-      "original_url": "https://mucbo.org/arbres-i-creativitat-una-experiencia-artistica-per-connectar-amb-la-natura-al-mucbo/",
+      "source": "Fibwi Diario · Sóller",
+      "source_id": "fibwi-diario-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "es",
+      "published_at": "2026-11-18T11:21:27+01:00",
+      "original_url": "https://www.fibwidiario.com/baleares/mallorca/tren-tranvia-soller-paran-lunes-son-fechas-regreso/20261118112127327898.html",
       "content_policy": "headline_date_link_only",
       "rights_status": "link_only_no_media_license",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/5c2d2c915a1cd58a5545.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/e428399121e0ab4c5dd3.jpg"
+    },
+    {
+      "post_id": "415c1788111c77274f1e",
+      "title": "Aviso. Nivel amarillo. Vientos. Sierra Tramontana",
+      "summary": "Aviso de rachas máximas de nivel amarillo de 00:00 19-11-2026 CET (UTC+1) a 09:59 19-11-2026 CET (UTC+1).",
+      "source": "AEMET · Serra de Tramuntana",
+      "source_id": "aemet-avisos-mallorca",
+      "source_type": "official",
+      "category": "alerts",
+      "language": "es",
+      "published_at": "2026-11-18T10:12:36+00:00",
+      "alert_status": "scheduled",
+      "alert_valid_from": "2026-11-18T23:00:00+00:00",
+      "alert_valid_until": "2026-11-19T08:59:00+00:00",
+      "original_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261118101236_AFAZ645401VIRM1909.xml",
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "reuse_authorized_with_attribution",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/415c1788111c77274f1e.jpg"
     }
   ]
 }
