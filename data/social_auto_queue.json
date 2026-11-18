@@ -1,26 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-18T19:36:32.441262+00:00",
-  "entries": [
-    {
-      "post_id": "55b7b08cc184eec163b4",
-      "title": "El gregal deixa ràfegues de fins a 73 quilòmetres per hora i una inusual calor",
-      "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-11-18T14:40:42+00:00",
-      "original_url": "https://saveu.cat/sin-categoria/el-gregal-deixa-rafegues-de-fins-a-73-quilometres-per-hora-i-una-inusual-calor/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/55b7b08cc184eec163b4.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
