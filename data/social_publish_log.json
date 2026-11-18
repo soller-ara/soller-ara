@@ -20421,6 +20421,51 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-11-18T17:22:47.747532+00:00",
       "error": ""
+    },
+    {
+      "post_id": "55b7b08cc184eec163b4",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122134254531467310",
+      "remote_url": "https://www.facebook.com/1384755221378998_122134254531467310",
+      "title": "El gregal deixa ràfegues de fins a 73 quilòmetres per hora i una inusual calor",
+      "post_url": "https://saveu.cat/sin-categoria/el-gregal-deixa-rafegues-de-fins-a-73-quilometres-per-hora-i-una-inusual-calor/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-18T19:36:55.889705+00:00",
+      "error": ""
+    },
+    {
+      "post_id": "55b7b08cc184eec163b4",
+      "platform": "instagram",
+      "status": "publishing",
+      "remote_id": "",
+      "remote_url": "",
+      "title": "El gregal deixa ràfegues de fins a 73 quilòmetres per hora i una inusual calor",
+      "post_url": "https://saveu.cat/sin-categoria/el-gregal-deixa-rafegues-de-fins-a-73-quilometres-per-hora-i-una-inusual-calor/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-18T19:37:08.524738+00:00",
+      "error": "",
+      "retry_requested": true,
+      "container_id": "18127116847905740",
+      "stage": "media_publish"
+    },
+    {
+      "post_id": "55b7b08cc184eec163b4",
+      "platform": "instagram",
+      "status": "success",
+      "remote_id": "18159720838509298",
+      "remote_url": "https://www.instagram.com/p/Df5Rb28lzk6/",
+      "title": "El gregal deixa ràfegues de fins a 73 quilòmetres per hora i una inusual calor",
+      "post_url": "https://saveu.cat/sin-categoria/el-gregal-deixa-rafegues-de-fins-a-73-quilometres-per-hora-i-una-inusual-calor/",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "mode": "automatic_collected",
+      "recorded_at": "2026-11-18T19:37:12.062880+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
