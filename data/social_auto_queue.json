@@ -1,45 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-19T12:55:38.990972+00:00",
+  "generated_at": "2026-11-19T15:08:05.871832+00:00",
   "entries": [
     {
-      "post_id": "4013b9794dde70c84552",
-      "title": "Seny exigeix ajornar les obres del carrer de Bauzà fins després de Nadal",
+      "post_id": "a04e181dd11c36530f63",
+      "title": "L’Ajuntament defensa les obres de Bauzà i descarta ajornar-les després de Nadal",
       "summary": "",
       "source": "Sa Veu de Sóller",
       "source_id": "sa-veu-soller",
       "source_type": "media",
       "category": "services",
       "language": "ca",
-      "published_at": "2026-11-19T11:54:28+00:00",
-      "original_url": "https://saveu.cat/noticies/seny-exigeix-ajornar-les-obres-del-carrer-de-bauza-fins-despres-de-nadal/",
+      "published_at": "2026-11-19T14:17:32+00:00",
+      "original_url": "https://saveu.cat/noticies/darder-defensa-les-obres-de-bauza-i-descarta-ajornar-les-despres-de-nadal/",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/4013b9794dde70c84552.jpg"
-    },
-    {
-      "post_id": "783858fed40ab588a9dc",
-      "title": "«No et quedis mirant. Actua», una campanya per implicar la ciutadania contra la violència masclista",
-      "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
-      "source_type": "media",
-      "category": "services",
-      "language": "ca",
-      "published_at": "2026-11-19T12:36:00+01:00",
-      "original_url": "https://www.elsoller.cat/soller/local/2026/11/19/354831/quedis-mirant-actua-campanya-per-implicar-ciutadania-contra-violencia-masclista.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/783858fed40ab588a9dc.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/a04e181dd11c36530f63.jpg"
     }
   ]
 }
