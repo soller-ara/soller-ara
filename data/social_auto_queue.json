@@ -1,26 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-19T17:21:46.546901+00:00",
-  "entries": [
-    {
-      "post_id": "ba55219600112efb81b4",
-      "title": "Ports garanteix el manteniment del sistema d’amarratges i dels pantalans del Port",
-      "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-11-19T11:49:14+00:00",
-      "original_url": "https://saveu.cat/noticies/ports-garanteix-el-manteniment-del-sistema-damarratges-i-dels-pantalans-del-port/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/ba55219600112efb81b4.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
