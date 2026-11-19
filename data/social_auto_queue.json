@@ -1,6 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-11-19T10:07:00.627871+00:00",
+  "entries": [
+    {
+      "post_id": "e77d4d947b0683a0abe4",
+      "title": "El MUCBO celebra una nova Jornada Micològica amb gran participació!",
+      "summary": "",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "source_type": "institution",
+      "category": "culture",
+      "language": "ca",
+      "published_at": "2026-11-19T08:09:39+00:00",
+      "original_url": "https://mucbo.org/el-mucbo-celebra-una-nova-jornada-micologica-amb-gran-participacio/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/e77d4d947b0683a0abe4.jpg"
+    }
+  ]
 }
