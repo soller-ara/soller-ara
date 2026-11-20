@@ -1,6 +1,45 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-11-20T07:37:57.260506+00:00",
+  "entries": [
+    {
+      "post_id": "60f8060116a0f9496685",
+      "title": "Basta de normalitzar el feixisme: el 29N omplim les urnes!",
+      "summary": "",
+      "source": "MÉS per Sóller",
+      "source_id": "mes-per-soller",
+      "source_type": "political_party",
+      "category": "politics",
+      "language": "ca",
+      "published_at": "2026-11-20T07:02:38+00:00",
+      "original_url": "https://mespersoller.cat/basta-de-normalitzar-el-feixisme-el-29n-omplim-les-urnes/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "official_party_source",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/60f8060116a0f9496685.jpg"
+    },
+    {
+      "post_id": "65cb77c1d3da01a8fd72",
+      "title": "L'Ajuntament s’ha acollit a la convocatòria de subvencions als ajuntaments per a la neteja, manteniment i conservació de camins i terrenys de titularitat municipal per a l’any 2026",
+      "summary": "sarrom dv., 20/11/2026 - 07:48 19-Novembre-2026",
+      "source": "Ajuntament de Sóller",
+      "source_id": "ajuntament-soller-noticies",
+      "source_type": "official",
+      "category": "agenda",
+      "language": "ca",
+      "published_at": "2026-11-20T06:48:07+00:00",
+      "original_url": "https://ajsoller.net/ca/noticies/lajuntament-sha-acollit-la-convocatoria-de-subvencions-als-ajuntaments-la-neteja",
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "public_source_reviewed",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/65cb77c1d3da01a8fd72.jpg"
+    }
+  ]
 }
