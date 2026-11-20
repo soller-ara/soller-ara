@@ -1,64 +1,86 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-20T09:52:16.389515+00:00",
+  "generated_at": "2026-11-20T11:26:42.683502+00:00",
   "entries": [
     {
-      "post_id": "0552e7645555ff97facb",
-      "title": "«Brot ompliria avui la Plaça de Toros»",
-      "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
-      "source_type": "media",
-      "category": "culture",
-      "language": "ca",
-      "published_at": "2026-11-20T10:39:00+01:00",
-      "original_url": "https://www.elsoller.cat/soller/societat-i-cultura/2026/11/20/354835/brot-ompliria-avui-placa-toros.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
+      "post_id": "0df8e9f56e0ce4fcc303",
+      "title": "Aviso. Nivel amarillo. Costeros. Sierra Tramontana",
+      "summary": "Aviso de costeros de nivel amarillo de 06:00 22-11-2026 CET (UTC+1) a 19:59 22-11-2026 CET (UTC+1).",
+      "source": "AEMET · Serra de Tramuntana",
+      "source_id": "aemet-avisos-mallorca",
+      "source_type": "official",
+      "category": "alerts",
+      "language": "es",
+      "published_at": "2026-11-20T10:31:14+00:00",
+      "alert_status": "scheduled",
+      "alert_valid_from": "2026-11-22T05:00:00+00:00",
+      "alert_valid_until": "2026-11-22T18:59:00+00:00",
+      "original_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261120103114_AFAZ645401COCO2219.xml",
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "reuse_authorized_with_attribution",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/0552e7645555ff97facb.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/0df8e9f56e0ce4fcc303.jpg"
     },
     {
-      "post_id": "8a6438fb814157eb1454",
-      "title": "“Durant l’hivern no hi ha prou feina per poder mantenir el bar obert”",
+      "post_id": "307e4f6c35d8f223f471",
+      "title": "Tren i tramvia fan la pausa d’hivern a partir de dilluns",
       "summary": "",
       "source": "Sa Veu de Sóller",
       "source_id": "sa-veu-soller",
       "source_type": "media",
-      "category": "commerce",
+      "category": "services",
       "language": "ca",
-      "published_at": "2026-11-20T08:27:59+00:00",
-      "original_url": "https://saveu.cat/entrevistes/esperanca-ferragut-durant-lhivern-no-hi-ha-prou-feina-per-poder-mantenir-el-bar-obert/",
+      "published_at": "2026-11-20T10:29:25+00:00",
+      "original_url": "https://saveu.cat/noticies/tren-i-tramvia-fan-la-pausa-dhivern-a-partir-de-dilluns/",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/8a6438fb814157eb1454.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/307e4f6c35d8f223f471.jpg"
     },
     {
-      "post_id": "a1f156d3ef3d42d68461",
-      "title": "Vols posar una parada al Mercat de Nadal del MUCBO?",
-      "summary": "",
-      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
-      "source_id": "mucbo-noticies",
-      "source_type": "institution",
-      "category": "culture",
+      "post_id": "3cc8a07e969be5a6c41b",
+      "title": "Vols estalviar en la factura de la llum? Tens dubtes sobre el consum energètic de ca teva o t'agradaria conèixer les ajudes i subvencions disponibles?",
+      "summary": "sarrom dv., 20/11/2026 - 10:46 20-Novembre-2026 L'Ajuntament de Sóller acollirà una nova visita de l'Oficina per a la Transició Energètica de les Illes Balears (OTEIB), que oferirà assessorament gratuït i personalitzat a…",
+      "source": "Ajuntament de Sóller",
+      "source_id": "ajuntament-soller-noticies",
+      "source_type": "official",
+      "category": "news",
       "language": "ca",
-      "published_at": "2026-11-20T08:14:06+00:00",
-      "original_url": "https://mucbo.org/vols-posar-una-parada-al-mercat-de-nadal-del-mucbo/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "link_only_no_media_license",
+      "published_at": "2026-11-20T09:46:02+00:00",
+      "original_url": "https://ajsoller.net/ca/noticies/vols-estalviar-en-la-factura-de-la-llum-tens-dubtes-sobre-el-consum-energetic-de-ca-teva-o",
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "public_source_reviewed",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/a1f156d3ef3d42d68461.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/3cc8a07e969be5a6c41b.jpg"
+    },
+    {
+      "post_id": "134c274a34bda651078e",
+      "title": "Sóller té 234 arbres malalts pendents de tala prioritària",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-11-20T10:30:00+01:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/11/20/354833/soller-234-arbres-malalts-pendents-tala-prioritaria.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/134c274a34bda651078e.jpg"
     }
   ]
 }
