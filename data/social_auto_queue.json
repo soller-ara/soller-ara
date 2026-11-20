@@ -1,26 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-20T15:52:08.126199+00:00",
-  "entries": [
-    {
-      "post_id": "78a3477b7d9d1eb0fa6a",
-      "title": "Unes 200 persones coneixen i degusten els bolets al MUCBO",
-      "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
-      "source_type": "media",
-      "category": "agenda",
-      "language": "ca",
-      "published_at": "2026-11-20T16:00:00+01:00",
-      "original_url": "https://www.elsoller.cat/soller/societat-i-cultura/2026/11/20/354839/unes-200-persones-coneixen-degusten-els-bolets-mucbo.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/78a3477b7d9d1eb0fa6a.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
