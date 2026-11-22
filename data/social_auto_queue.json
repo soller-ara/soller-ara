@@ -1,6 +1,67 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-11-22T09:51:30.601973+00:00",
+  "entries": [
+    {
+      "post_id": "176f72d573149cfda61b",
+      "title": "Arranca la campanya de cítrics amb baixa producció prevista",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-11-22T10:00:00+01:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/11/22/354843/arranca-campanya-citrics-amb-baixa-produccio-prevista.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/176f72d573149cfda61b.jpg"
+    },
+    {
+      "post_id": "fb12ecc5f90bc7c4be71",
+      "title": "Homenatge pòstum dels Músics de Sóller a Gaspar Nadal Ramon",
+      "summary": "",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-11-22T08:06:13+00:00",
+      "original_url": "https://saveu.cat/noticies/homenatge-postum-dels-musics-de-soller-a-gaspar-nadal-ramon/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/fb12ecc5f90bc7c4be71.jpg"
+    },
+    {
+      "post_id": "461ddc4a5efc3ee6e9e3",
+      "title": "Aviso. Nivel amarillo. Costeros. Sierra Tramontana",
+      "summary": "Aviso de costeros de nivel amarillo de 09:00 22-11-2026 CET (UTC+1) a 03:59 23-11-2026 CET (UTC+1).",
+      "source": "AEMET · Serra de Tramuntana",
+      "source_id": "aemet-avisos-mallorca",
+      "source_type": "official",
+      "category": "alerts",
+      "language": "es",
+      "published_at": "2026-11-22T08:02:29+00:00",
+      "alert_status": "active",
+      "alert_valid_from": "2026-11-22T08:00:00+00:00",
+      "alert_valid_until": "2026-11-23T02:59:00+00:00",
+      "original_url": "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/cap/Z_CAP_C_LEMM_20261122080229_AFAZ645401COCO2303.xml",
+      "content_policy": "short_factual_excerpt",
+      "rights_status": "reuse_authorized_with_attribution",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/461ddc4a5efc3ee6e9e3.jpg"
+    }
+  ]
 }
