@@ -1,26 +1,45 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-23T14:47:49.139593+00:00",
+  "generated_at": "2026-11-23T17:07:41.513935+00:00",
   "entries": [
     {
-      "post_id": "b442538f50b4b91583b7",
-      "title": "El Ferrocarril inicia la campanya de millora de les vies",
+      "post_id": "a85bb00eb951c145fbc4",
+      "title": "La Conselleria detecta frau en la comercialització de sucs amb taronges de Sóller",
       "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
       "source_type": "media",
-      "category": "news",
+      "category": "commerce",
       "language": "ca",
-      "published_at": "2026-11-23T14:39:49+00:00",
-      "original_url": "https://saveu.cat/noticies/el-ferrocarril-inicia-la-campanya-de-millora-de-les-vies/",
+      "published_at": "2026-11-23T17:15:00+01:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/11/23/354847/conselleria-detecta-frau-comercialitzacio-sucs-amb-taronges-soller.html",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/b442538f50b4b91583b7.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/a85bb00eb951c145fbc4.jpg"
+    },
+    {
+      "post_id": "c4f5b2d8a158d2db7316",
+      "title": "El carrer de Bauzà entra en obres per renovar el paviment",
+      "summary": "",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "source_type": "media",
+      "category": "services",
+      "language": "ca",
+      "published_at": "2026-11-23T14:45:56+00:00",
+      "original_url": "https://saveu.cat/noticies/el-carrer-de-bauza-entra-en-obres-per-renovar-el-paviment/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/c4f5b2d8a158d2db7316.jpg"
     }
   ]
 }
