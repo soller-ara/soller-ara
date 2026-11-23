@@ -1,26 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-23T19:16:57.038238+00:00",
-  "entries": [
-    {
-      "post_id": "7aa32dbed5b1c3bf37eb",
-      "title": "Detecten sucs anunciats amb taronges de Sóller elaborats amb fruita d’altres procedències",
-      "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
-      "source_type": "media",
-      "category": "commerce",
-      "language": "ca",
-      "published_at": "2026-11-23T14:30:31+00:00",
-      "original_url": "https://saveu.cat/noticies/detecten-sucs-anunciats-amb-taronges-de-soller-elaborats-amb-fruita-daltres-procedencies/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/7aa32dbed5b1c3bf37eb.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
