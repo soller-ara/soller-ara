@@ -238,3 +238,24 @@ Es revisen mostres dels articles i, quan existeix, la descoberta oEmbed i la res
 ### Àmbit municipal revisat
 
 A petició de l'usuari, només es manté la recopilació dels ajuntaments de **Sóller, Fornalutx i Deià**, inclosos el canal de YouTube de Sóller i l'Agenda de Deià. Es retiren del catàleg i de la distribució Bunyola, Valldemossa, Escorca, Esporles, Banyalbufar i Estellencs. Són 58 fonts externes i 59 estats amb les publicacions pròpies. Les referències automàtiques dels canals retirats surten del llistat amb la recopilació següent; es conserven les publicacions pròpies i el registre social. El Consell, els altres organismes, els mitjans i les seves regles es mantenen.
+
+## Incorporacions locals — 23 de novembre de 2026
+
+Amb autorització de l'usuari, s'incorporen dues fonts oficials mitjançant el lector RSS existent. El catàleg passa de 58 a **60 fonts externes**, amb 61 estats de recopilació si s'inclouen les publicacions pròpies.
+
+| Font | Canal oficial | Selecció i categoria | Entrades aptes a la lectura aïllada |
+| --- | --- | --- | ---: |
+| [Cooperativa Agrícola de Sóller](https://www.coopsoller.coop/) | `https://www.coopsoller.coop/feed/` | Activitat pròpia de la cooperativa local; Comerç | 1 |
+| [Esport Solleric · Defensora Sollerense](https://esportsolleric.net/) | `https://esportsolleric.net/feed` | Filtre territorial sobre el titular original i noms de la societat; Esports | 1 |
+
+La cooperativa aporta [la renovació de la certificació ambiental](https://www.coopsoller.coop/renovam-el-nostre-compromis-ambiental-certificacio-iso-14001/), publicada el **03/11/2026 a les 12:01 Europe/Madrid**. Esport Solleric aporta [els records de la Defensora Sollerense](https://esportsolleric.net/qui-tha-vist-i-et-veu-bells-records-societat-defensora-sollerense.htm), del **03/11/2026 a les 22:02 Europe/Madrid**. Es conserven les dates originals del RSS, contrastades amb les pàgines; no es redaten les entrades al dia de la incorporació.
+
+Esport Solleric també publica informació general. Per això s'exigeix una referència territorial real o el nom de la Defensora en el titular; una coincidència només en el cos, la plantilla o el domini no és suficient. S'utilitza el filtre existent, que exclou el Casal Solleric de Palma i el torrent de Solleric sense perdre les referències locals reals i els gentilicis. No es modifica cap filtre de les fonts anteriors ni s'amplia l'àmbit municipal.
+
+### Incrustacions i distribució
+
+Les dues webs anuncien oEmbed oficial i retornen una targeta del seu propi domini. S'ha comprovat la resposta HTTP 200 del punt oEmbed i de la ruta `/embed/` generada per l'aplicació, sense capçalera que en prohibeixi la incrustació. S'activa la política existent `official_oembed`: són **catorze fonts** amb opt-in explícit. La targeta la serveix el proveïdor; `image_allowed` continua sent fals i no es copien fotografies ni extractes. Es manté `headline_date_link_only`, amb titular, data, atribució i enllaç original, i un màxim de 60 dies.
+
+Les dues fonts tenen regles explícites per a Facebook i Instagram, igual que les fonts actuals. Es conserven els límits de cinc enviaments per execució, un per font i sis hores d'antiguitat. Les dues referències inicials superen aquest termini social: no s'han de reenviar ara com a novetats. No es modifiquen el cron, el Worker, els permisos de Meta, la moderació, les publicacions manuals ni els registres de confirmació.
+
+Validació local: **150 proves Python, 15 bateries JavaScript i les comprovacions de sintaxi** superades. La lectura real amb les funcions del recopilador selecciona les dues referències anteriors. La prova aïllada de la cua social, sense enviaments ni generació de targetes, n'exclou totes dues pel límit de sis hores. La comparació estructural confirma que totes les fonts i regles socials anteriors es conserven. S'actualitza únicament la llista d'opt-in de la prova existent, sense canvis en el codi compartit. La recopilació i el desplegament posteriors s'han de contrastar amb les execucions de GitHub i les dades publicades actuals.

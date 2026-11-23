@@ -1,5 +1,5 @@
 {
-  "version": 18,
+  "version": 19,
   "enabled": true,
   "platforms": {
     "facebook": true,
@@ -247,6 +247,14 @@
       "instagram": true
     },
     "ocio-mallorca-soller": {
+      "facebook": true,
+      "instagram": true
+    },
+    "cooperativa-agricola-soller": {
+      "facebook": true,
+      "instagram": true
+    },
+    "esport-solleric": {
       "facebook": true,
       "instagram": true
     }

@@ -1,5 +1,5 @@
 {
-  "version": 46,
+  "version": 47,
   "sources": [
     {
       "id": "ajuntament-soller-noticies",
@@ -1634,6 +1634,62 @@
       ],
       "filter_title_only": true,
       "verification_url": "https://ociomallorca.com/festival-musica-clasica-port-soller/"
+    },
+    {
+      "type": "rss",
+      "language": "ca",
+      "locality": "Sóller",
+      "source_type": "institution",
+      "max_items": 40,
+      "max_age_days": 60,
+      "enabled": true,
+      "image_policy": "official_oembed",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "verification_method": "publisher_linked_rss_original_dates_and_official_oembed",
+      "verified_at": "2026-11-23",
+      "id": "cooperativa-agricola-soller",
+      "name": "Cooperativa Agrícola de Sóller",
+      "url": "https://www.coopsoller.coop/feed/",
+      "force_category": "commerce",
+      "verification_url": "https://www.coopsoller.coop/"
+    },
+    {
+      "type": "rss",
+      "language": "ca",
+      "locality": "Sóller",
+      "source_type": "institution",
+      "max_items": 40,
+      "max_age_days": 60,
+      "enabled": true,
+      "image_policy": "official_oembed",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "verification_method": "publisher_linked_rss_original_dates_and_official_oembed",
+      "verified_at": "2026-11-23",
+      "id": "esport-solleric",
+      "name": "Esport Solleric · Defensora Sollerense",
+      "url": "https://esportsolleric.net/feed",
+      "force_category": "sports",
+      "verification_url": "https://esportsolleric.net/",
+      "include_keywords": [
+        "Sóller",
+        "Soller",
+        "Sòller",
+        "Port de Sóller",
+        "Port de Soller",
+        "Vall de Sóller",
+        "Vall de Soller",
+        "Fornalutx",
+        "Biniaraix",
+        "Deià",
+        "Deia",
+        "Serra de Tramuntana",
+        "Defensora Sollerense",
+        "C.C.D.S.",
+        "CCDS"
+      ],
+      "filter_title_only": true
     }
   ]
 }

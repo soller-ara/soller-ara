@@ -282,6 +282,7 @@ class SourceCollectionTests(unittest.TestCase):
             'mes-per-soller', 'psib-psoe-soller',
             'mallorcadiario-soller',
             'ocio-mallorca-soller',
+            'cooperativa-agricola-soller', 'esport-solleric',
         })
 
     def test_ib3_filters_venues_without_losing_demonyms_or_real_local_references(self):
