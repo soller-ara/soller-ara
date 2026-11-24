@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
 <title>Sóller Ara · comprobación de ayuda editorial</title>
-<link rel="stylesheet" href="../../admin/admin.css?v=0.93.6">
+<link rel="stylesheet" href="../../admin/admin.css?v=0.93.7">
 <style>
 body{padding:20px}h1{font-size:1.2rem}.test-note{max-width:900px;line-height:1.5}.fixture-frames{display:flex;gap:24px;justify-content:center;align-items:flex-start}.fixture-frames section{flex:none}.fixture-frames h2{font-size:1rem}iframe{display:block;width:100%;height:844px;border:1px solid #d9e3e0;border-radius:12px;background:white}.fixture-narrow{width:320px}.fixture-phone{width:390px}#socialLinkForm{margin:0 auto}body.form-fixture{padding:10px}.fixture-message{color:#667572;font-size:.9rem;line-height:1.5}
 </style>
@@ -29,7 +29,7 @@ body{padding:20px}h1{font-size:1.2rem}.test-note{max-width:900px;line-height:1.5
     form.querySelector('[type="submit"]').textContent = 'Prueba: no publica';
     root.appendChild(form);
     const script = document.createElement('script');
-    script.src = '../../admin/editorial-guide.js?v=0.93.6';
+    script.src = '../../admin/editorial-guide.js?v=0.93.7';
     script.addEventListener('load', async () => {
       try {
         const dataResponse = await fetch('../../data/posts.json', {cache:'no-store'});

@@ -347,6 +347,14 @@
     return "";
   }
 
+  function manualFacebookStatus(post) {
+    const entries = (statusPayload?.socialLog?.entries || [])
+      .filter((entry) => entry.post_id === post.id && entry.platform === "facebook");
+    if (entries.some((entry) => entry.status === "success")) return "Facebook: publicado";
+    if (entries.at(-1)?.status === "error") return "Facebook: error de envío · revisar el registro de redes";
+    return "";
+  }
+
   function renderSocialLinkPosts() {
     const posts = Array.isArray(statusPayload?.posts?.posts) ? statusPayload.posts.posts : [];
     const links = posts.filter((post) => post.source_type === "own" && post.original_url);
@@ -358,6 +366,7 @@
       <article class="post-item">
         <header><h4>${escapeHtml(post.title || "Sin título")}</h4></header>
         <div class="post-meta">${escapeHtml(post.source || "")} · ${escapeHtml(post.category || "")} · ${escapeHtml(formatDate(post.published_at))}</div>
+        ${manualFacebookStatus(post) ? `<p class="hint">${escapeHtml(manualFacebookStatus(post))}</p>` : ""}
         ${manualInstagramStatus(post) ? `<p class="hint">${escapeHtml(manualInstagramStatus(post))}</p>` : ""}
         <div class="post-actions">
           ${safeLinkUrl(post.url) ? `<a class="button-link" href="${escapeHtml(safeLinkUrl(post.url))}" target="_blank" rel="noopener">Abrir en la web</a>` : ""}
@@ -478,6 +487,7 @@
     socialLinkEditNote.hidden = true;
     socialLinkSubmitButton.textContent = "Publicar propuesta revisada";
     cancelSocialLinkEditButton.hidden = true;
+    socialLinkForm.elements.facebook.disabled = false;
     socialLinkForm.elements.instagram.disabled = false;
     if (resetForm) socialLinkForm.reset();
     updateSocialPosterFields();
@@ -516,6 +526,8 @@
     const mediaUrl = String(post.media_url || "");
     socialLinkForm.elements.image_url.value = post.content_type !== "event_poster" && mediaUrl.includes("/assets/generated/") ? "" : mediaUrl;
     socialLinkForm.elements.image_authorized.checked = Boolean(post.image_allowed);
+    socialLinkForm.elements.facebook.checked = false;
+    socialLinkForm.elements.facebook.disabled = true;
     socialLinkForm.elements.instagram.checked = false;
     socialLinkForm.elements.instagram.disabled = true;
     updateSocialPosterFields();
@@ -802,7 +814,7 @@
       image_url: String(data.get("image_url") || "").trim(),
       image_authorized: data.get("image_authorized") === "on",
       show_in_now: data.get("show_in_now") === "on",
-      facebook: false,
+      facebook: data.get("facebook") === "on",
       instagram: data.get("instagram") === "on",
     };
     if (!payload.original_url) {
@@ -821,9 +833,11 @@
     const editing = Boolean(socialLinkEditPostId);
     if (editing) {
       payload.post_id = socialLinkEditPostId;
+      payload.facebook = false;
       payload.instagram = false;
       if (!confirm("¿Guardar los cambios de este enlace en Sóller Ara?")) return;
-    } else if (!confirm("¿Publicar esta propuesta revisada en Sóller Ara" + (payload.instagram ? " e Instagram" : "") + "?")) {
+    } else if (!confirm("¿Publicar esta propuesta revisada en Sóller Ara" +
+      (payload.facebook ? ", Facebook" : "") + (payload.instagram ? " e Instagram" : "") + "?")) {
       return;
     }
 

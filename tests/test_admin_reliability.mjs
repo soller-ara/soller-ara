@@ -3,7 +3,7 @@ import fs from 'node:fs/promises';
 import vm from 'node:vm';
 
 const source = await fs.readFile('admin/admin.js', 'utf8');
-function scenario({healthDelay = false, healthError = false, readFails = false, invalidRead = false, storedPost = null} = {}) {
+function scenario({healthDelay = false, healthError = false, readFails = false, invalidRead = false, storedPost = null, approve = true} = {}) {
   const nodes = new Map();
   const defaults = {category: 'agenda', language: 'ca', content_type: 'social_link',
     title: 'Título', body: 'Resumen', source_name: 'Fuente', original_url: 'https://example.test/post',
@@ -27,6 +27,7 @@ function scenario({healthDelay = false, healthError = false, readFails = false, 
     return nodes.get(id);
   };
   let healthCalls = 0, dispatches = 0, releaseHealth;
+  const submitted = [], prompts = [];
   const healthReady = new Promise(resolve => {releaseHealth = resolve;});
   const state = {posts: {posts: storedPost ? [storedPost] : []}, moderation: {hidden_post_ids: []}};
   const context = vm.createContext({console, URL, Headers, Date, Intl,
@@ -42,7 +43,7 @@ function scenario({healthDelay = false, healthError = false, readFails = false, 
       constructor(form) {this.form = form;}
       get(name) {const field = this.form.elements[name]; return name in defaults && typeof defaults[name] === 'boolean' ? (field.checked ? 'on' : null) : field.value;}
     },
-    confirm: () => true, setTimeout: callback => callback(),
+    confirm: message => {prompts.push(message);return approve;}, setTimeout: callback => callback(),
     fetch: async (url, options = {}) => {
       if (url.endsWith('/health')) {
         healthCalls++;
@@ -53,6 +54,7 @@ function scenario({healthDelay = false, healthError = false, readFails = false, 
       if (options.method === 'POST') {
         dispatches++;
         const payload = JSON.parse(options.body);
+        submitted.push({url, payload});
         state.posts.posts = [{...payload, id: payload.post_id || 'saved', source_type: 'own',
           summary: payload.body, source: payload.original_url ? payload.source_name || 'Publicació de xarxa' : 'Sóller Ara'}];
       }
@@ -64,11 +66,12 @@ function scenario({healthDelay = false, healthError = false, readFails = false, 
       getState() {return statusPayload;}, setState(value) {statusPayload = value;}};
   })();`), context);
   context.window.test.setState(structuredClone(state));
-  return {nodes, getNode, context, releaseHealth, counts: () => ({healthCalls, dispatches}),
+  return {nodes, getNode, context, releaseHealth, submitted, prompts, counts: () => ({healthCalls, dispatches}),
     submit: id => getNode(id).listeners.submit({preventDefault() {}})};
 }
 
 let s = scenario({healthDelay: true});
+s.getNode('socialLinkForm').elements.facebook.checked = true;
 const first = s.submit('socialLinkForm');
 const second = s.submit('socialLinkForm');
 assert.equal(s.counts().healthCalls, 1, 'Second click must not start another health check or dispatch');
@@ -79,6 +82,8 @@ s.getNode('cancelSocialLinkEditButton').listeners.click();
 assert.equal(s.getNode('socialLinkSubmitButton').disabled, true);
 s.releaseHealth(); await Promise.all([first, second]);
 assert.equal(s.counts().dispatches, 1);
+assert.equal(s.submitted[0].payload.facebook, true);
+assert.equal(s.submitted[0].payload.instagram, false);
 assert.equal(s.getNode('socialLinkSubmitButton').disabled, false);
 assert.equal(s.getNode('cancelSocialLinkEditButton').disabled, false);
 
@@ -94,8 +99,60 @@ const saved = {id: 'saved', source_type: 'own', title: 'Título', summary: 'Resu
   content_type: 'social_link', original_url: 'https://example.test/post'};
 s = scenario({storedPost: saved});
 s.context.window.test.startSocialLinkEdit('saved');
+assert.equal(s.getNode('socialLinkForm').elements.facebook.checked, false);
+assert.equal(s.getNode('socialLinkForm').elements.facebook.disabled, true);
+// Even a stale or programmatically checked destination must not resend an edit.
+s.getNode('socialLinkForm').elements.facebook.checked = true;
+s.getNode('socialLinkForm').elements.instagram.checked = true;
 await s.submit('socialLinkForm');
 assert.match(s.getNode('socialLinkMessage').textContent, /actualizado correctamente/);
+assert.equal(s.submitted[0].payload.facebook, false);
+assert.equal(s.submitted[0].payload.instagram, false);
+assert.ok(s.submitted[0].url.endsWith('/api/edit'));
+s.getNode('cancelSocialLinkEditButton').listeners.click();
+assert.equal(s.getNode('socialLinkForm').elements.facebook.disabled, false);
+
+// Sharing a bare Instagram reference on Facebook does not require a fabricated summary.
+s = scenario();
+let fields = s.getNode('socialLinkForm').elements;
+fields.original_url.value = 'https://www.instagram.com/p/Reference123/';
+fields.title.value = '';fields.body.value = '';fields.facebook.checked = true;
+await s.submit('socialLinkForm');
+assert.equal(s.submitted.length, 1);
+assert.equal(s.submitted[0].payload.facebook, true);
+assert.equal(s.submitted[0].payload.instagram, false);
+assert.equal(s.submitted[0].payload.original_url, fields.original_url.value);
+assert.match(s.prompts[0], /Facebook/);
+
+s = scenario();await s.submit('socialLinkForm');
+assert.equal(s.submitted[0].payload.facebook, false, 'Facebook remains an explicit choice');
+assert.ok(!s.prompts[0].includes('Facebook'));
+s = scenario({approve:false});s.getNode('socialLinkForm').elements.facebook.checked = true;
+await s.submit('socialLinkForm');assert.equal(s.counts().dispatches,0);
+assert.equal(s.counts().healthCalls,0,'Cancelling confirmation never starts the send');
+
+// A confirmed Facebook receipt wins over a later error; no receipt is not a failure.
+s = scenario({storedPost:saved});
+s.context.window.test.setState({posts:{posts:[saved]},socialLog:{entries:[]}});
+s.context.window.test.renderPosts();
+assert.ok(!s.getNode('socialLinkList').innerHTML.includes('Facebook:'));
+s.context.window.test.setState({posts:{posts:[saved]},socialLog:{entries:[
+  {post_id:saved.id,platform:'facebook',status:'error',error:'Do not render raw errors <script>'},
+]}});s.context.window.test.renderPosts();
+assert.match(s.getNode('socialLinkList').innerHTML,/Facebook: error de envío/);
+assert.ok(!s.getNode('socialLinkList').innerHTML.includes('Do not render raw errors'));
+s.context.window.test.setState({posts:{posts:[saved]},socialLog:{entries:[
+  {post_id:saved.id,platform:'facebook',status:'success',remote_id:'confirmed'},
+  {post_id:saved.id,platform:'facebook',status:'error'},
+]}});s.context.window.test.renderPosts();
+assert.match(s.getNode('socialLinkList').innerHTML,/Facebook: publicado/);
+assert.ok(!s.getNode('socialLinkList').innerHTML.includes('Facebook: error'));
+
+const html = await fs.readFile('admin/index.html','utf8');
+const socialForm = html.match(/<form id="socialLinkForm"[^>]*>([\s\S]*?)<\/form>/)?.[1];
+const facebookField = socialForm?.match(/<input\b[^>]*name="facebook"[^>]*>/)?.[0];
+assert.ok(facebookField,'The real social-link form offers Facebook');
+assert.ok(!/\b(?:checked|disabled)\b/.test(facebookField),'New Facebook destinations start unchecked and enabled');
 
 // Clearing a source label must not match its old value before the backend has saved it.
 const expected = {...saved, title:saved.title, body:saved.summary, source_name:'', show_in_now:true};

@@ -159,6 +159,7 @@ jobs:
           POST_IMAGE_URL: ${{ inputs.image_url }}
           POST_ORIGINAL_URL: ${{ inputs.original_url }}
           POST_SOURCE_NAME: ${{ inputs.source_name }}
+          POST_CONTENT_TYPE: ${{ inputs.content_type }}
           PUBLISH_FACEBOOK: ${{ inputs.facebook }}
           PUBLISH_INSTAGRAM: ${{ inputs.instagram }}
         run: python scripts/publish_own_social.py

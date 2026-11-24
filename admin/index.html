@@ -10,7 +10,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="../assets/brand/apple-touch-icon.png" />
   <title>Administración · Sóller Ara</title>
   <link rel="preload" as="image" href="../assets/brand/logo-soller-ara-web.png" />
-  <link rel="stylesheet" href="./admin.css?v=0.93.6" />
+  <link rel="stylesheet" href="./admin.css?v=0.93.7" />
 </head>
 <body>
   <main class="admin-shell">
@@ -41,7 +41,7 @@
         <div class="header-actions">
           <a class="public-link button-secondary" href="../index.html">Volver a Sóller Ara</a>
           <button id="refreshAdminPageButton" class="button-secondary" type="button" title="Actualizar la página de Administración"><span aria-hidden="true">↻</span> Actualizar</button>
-          <span id="adminVersion" class="status-pill">v0.93.6</span>
+          <span id="adminVersion" class="status-pill">v0.93.7</span>
           <span id="connectionState" class="status-pill">Conectado</span>
           <button id="logoutButton" class="button-secondary" type="button">Salir</button>
         </div>
@@ -92,13 +92,13 @@
           <div>
             <p class="eyebrow">Revisión manual</p>
             <h2 id="socialLinkHeading">Enlace de una red social</h2>
-            <p id="socialLinkEditNote" class="hint" hidden>La edición actualiza la web de Sóller Ara. No modifica publicaciones ya existentes en Instagram ni la publicación original de la fuente.</p>
+            <p id="socialLinkEditNote" class="hint" hidden>La edición actualiza la web de Sóller Ara. No vuelve a enviar la entrada a Facebook o Instagram ni modifica la publicación original de la fuente.</p>
             <p class="hint">Pega el enlace directo de una publicación. Si la plataforma permite incrustarla, se mostrará su contenido original en la web; los demás campos son opcionales.</p>
           </div>
         </div>
         <form id="socialLinkForm" class="form-card">
            <label>Fuente o cuenta oficial<input name="source_name" maxlength="120" placeholder="Ej.: Partido Popular de Sóller" /></label>
-           <label>Enlace de la publicación original<input name="original_url" type="url" required placeholder="https://www.facebook.com/..." /></label>
+           <label>Enlace de la publicación original<input name="original_url" type="url" required placeholder="https://..." /></label>
            <label>Tipo de publicación<select name="content_type"><option value="social_link" selected>Referencia de una red social</option><option value="event_poster">Anuncio o cartel de evento</option></select></label>
            <label>Titular propio <span class="hint">(obligatorio solo si publicas también en Instagram)</span><input name="title" maxlength="180" aria-describedby="socialTitleCount" /></label>
            <label>Resumen propio y neutral<textarea name="body" rows="6" aria-describedby="socialBodyCount"></textarea></label>
@@ -124,11 +124,11 @@
            </div>
            <div class="social-poster-fields" hidden>
              <label>URL directa del cartel autorizado <span class="hint">(JPG, PNG o WebP; no una página web)</span><input name="image_url" type="url" placeholder="https://ejemplo.org/cartel.jpg" /></label>
-             <label class="check"><input name="image_authorized" type="checkbox" /> Tengo autorización o licencia para mostrar este cartel en Sóller Ara y, si lo marco, en Instagram.</label>
+             <label class="check"><input name="image_authorized" type="checkbox" /> Tengo autorización o licencia para mostrar este cartel en Sóller Ara y en las redes seleccionadas.</label>
            </div>
            <label class="check"><input name="show_in_now" type="checkbox" checked /> Mostrar también en Ara <span class="hint">(si lo desmarcas, se verá en su sección y en «Tot»)</span></label>
-        <fieldset><legend>Destinos</legend><label class="check"><input type="checkbox" checked disabled /> Sóller Ara</label><label class="check"><input name="instagram" type="checkbox" /> Instagram</label></fieldset>
-           <p class="hint">Para una incrustación basta el enlace original. Si también quieres publicarlo en Instagram, añade un titular y resumen propios. Un cartel solo se muestra con autorización o licencia.</p>
+        <fieldset><legend>Destinos</legend><label class="check"><input type="checkbox" checked disabled /> Sóller Ara</label><label class="check"><input name="facebook" type="checkbox" /> Facebook</label><label class="check"><input name="instagram" type="checkbox" /> Instagram</label></fieldset>
+           <p class="hint">Para compartir una referencia en la web o Facebook basta el enlace original. Facebook decide qué vista previa muestra. Si también quieres publicarlo en Instagram, añade un titular y resumen propios. Un cartel solo se muestra con autorización o licencia.</p>
           <div class="header-actions"><button id="socialLinkSubmitButton" type="submit">Publicar propuesta revisada</button><button id="cancelSocialLinkEditButton" class="button-secondary" type="button" hidden>Cancelar edición</button></div>
           <p id="socialLinkMessage" class="message" aria-live="polite"></p>
         </form>
@@ -192,10 +192,10 @@
   </main>
 
   <script src="./public-data.js?v=0.61"></script>
-  <script src="./config.js?v=0.93.6"></script>
+  <script src="./config.js?v=0.93.7"></script>
   <script src="./collection-health.js?v=0.93.3"></script>
-  <script src="./editorial-guide.js?v=0.93.6"></script>
-  <script src="./web-discovery.js?v=0.93.6"></script>
-  <script src="./admin.js?v=0.93.6"></script>
+  <script src="./editorial-guide.js?v=0.93.7"></script>
+  <script src="./web-discovery.js?v=0.93.7"></script>
+  <script src="./admin.js?v=0.93.7"></script>
 </body>
 </html>

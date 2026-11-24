@@ -36,6 +36,7 @@ BODY = os.environ.get("POST_BODY", "").strip()
 IMAGE_URL = (os.environ.get("OWN_IMAGE_URL", "").strip() or os.environ.get("POST_IMAGE_URL", "").strip())
 SOURCE_NAME = os.environ.get("POST_SOURCE_NAME", "").strip()
 ORIGINAL_URL = os.environ.get("POST_ORIGINAL_URL", "").strip()
+CONTENT_TYPE = os.environ.get("POST_CONTENT_TYPE", "").strip() or ("social_link" if ORIGINAL_URL else "own")
 DO_FACEBOOK = os.environ.get("PUBLISH_FACEBOOK", "false").lower() == "true"
 DO_INSTAGRAM = os.environ.get("PUBLISH_INSTAGRAM", "false").lower() == "true"
 CONFIRMATION = os.environ.get("PUBLISH_CONFIRMATION", "").strip()
@@ -151,12 +152,14 @@ def source_reference() -> str:
 
 def publish_facebook(page_id: str, page_token: str) -> str:
     message = f"{TITLE}\n\n{BODY}{source_reference()}".strip()
+    # Share references directly; never copy the source's image or embedded text.
+    link = ORIGINAL_URL if CONTENT_TYPE == "social_link" and ORIGINAL_URL else POST_URL
     result = graph(
         f"{page_id}/feed",
         method="POST",
         params={
             "message": message,
-            "link": POST_URL,
+            "link": link,
         },
         token=page_token,
     )

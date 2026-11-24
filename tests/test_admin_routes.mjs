@@ -36,6 +36,14 @@ assert.equal((await request('/api/publish',{title:'',body:'',original_url:'https
 let dispatch=JSON.parse(calls.at(-1).opts.body);
 assert.equal(dispatch.inputs.show_in_now,false);assert.equal(dispatch.inputs.content_type,'social_link');assert.equal(dispatch.inputs.title,'');
 assert.ok(calls.at(-1).url.endsWith('/actions/workflows/publish-own-content.yml/dispatches'));
+assert.equal((await request('/api/publish',{title:'',body:'',original_url:'https://www.instagram.com/p/Reference123/',source_name:'Entitat de Sóller',facebook:true,instagram:false},token)).status,202);
+dispatch=JSON.parse(calls.at(-1).opts.body);
+assert.equal(dispatch.inputs.facebook,true);assert.equal(dispatch.inputs.instagram,false);
+assert.equal(dispatch.inputs.original_url,'https://www.instagram.com/p/Reference123/');
+assert.equal(dispatch.inputs.content_type,'social_link');assert.equal(dispatch.inputs.title,'');
+const beforeInvalid=calls.length;
+assert.equal((await request('/api/publish',{original_url:'javascript:alert(1)',facebook:true},token)).status,400);
+assert.equal(calls.length,beforeInvalid,'Invalid links never dispatch a Facebook send');
 assert.equal((await request('/api/edit',{post_id:'test',title:'Title',body:'Body',content_type:'event_poster',image_url:'https://example.test/poster.jpg',image_authorized:true,category:'social',show_in_now:false},token)).status,202);
 dispatch=JSON.parse(calls.at(-1).opts.body);assert.equal(dispatch.inputs.content_type,'event_poster');assert.equal(dispatch.inputs.category,'social');assert.equal(dispatch.inputs.show_in_now,false);
 assert.equal(login.headers.get('Cache-Control'),'no-store');

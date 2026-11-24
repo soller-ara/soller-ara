@@ -126,7 +126,7 @@
     if (sendToInstagram && (!title || !body)) {
       notes.push("Para publicar también en Instagram necesitas un titular y un resumen propios.");
     } else if (!title && !body) {
-      notes.push("Si solo compartes el enlace en la web, el titular y el resumen pueden quedar vacíos.");
+      notes.push("Si solo compartes el enlace en la web o Facebook, el titular y el resumen pueden quedar vacíos.");
     } else if (!title) {
       notes.push("Un titular concreto ayuda a reconocer el contenido cuando no se muestra la incrustación.");
     }
