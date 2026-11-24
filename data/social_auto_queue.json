@@ -1,6 +1,45 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-11-24T15:48:38.693439+00:00",
+  "entries": [
+    {
+      "post_id": "feaead5120f458ed4db7",
+      "title": "Madrid descarta excepcions i obliga les Balears a retirar el 12% d'oli d'oliva",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-11-24T16:30:00+01:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/11/24/354851/madrid-descarta-excepcions-obliga-les-balears-retirar-oli-oliva.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/feaead5120f458ed4db7.jpg"
+    },
+    {
+      "post_id": "0eeb09e9eee081fd7530",
+      "title": "Les tafones es rebel.len contra l’obligació de retirar el 12% de l’oli que produeixen",
+      "summary": "",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "source_type": "media",
+      "category": "commerce",
+      "language": "ca",
+      "published_at": "2026-11-24T15:12:24+00:00",
+      "original_url": "https://saveu.cat/noticies/les-tafones-es-rebel-len-contra-lobligacio-de-retirar-el-12-de-loli-que-produeixen/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/0eeb09e9eee081fd7530.jpg"
+    }
+  ]
 }
