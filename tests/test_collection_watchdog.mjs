@@ -43,10 +43,25 @@ function scenario(options = {}) {
     posts: () => calls.filter(call => call.init.method === 'POST') };
 }
 
-for (const timestamp of ['2026-10-19T11:59:00Z', '2026-10-19T10:00:00Z', '2026-10-19T14:00:00+02:00']) {
+for (const timestamp of ['2026-10-19T11:59:00Z', '2026-10-19T11:00:00Z', '2026-10-19T13:00:00+02:00', '2026-10-19T14:00:00+02:00']) {
   const test = scenario({ data: { sources_checked_at: timestamp } });
   assert.equal((await test.tick()).action, 'fresh');
   assert.equal(test.calls.length, 1);
+}
+for (const timestamp of ['2026-10-19T10:59:59Z', '2026-10-19T10:30:00Z', '2026-10-19T10:00:00Z']) {
+  const test = scenario({ data: { sources_checked_at: timestamp } });
+  assert.equal((await test.tick()).action, 'dispatched', 'The backup must rescue a missed hourly run before two hours');
+  assert.equal(test.posts().length, 1);
+}
+{
+  const test = scenario();
+  const response = await vm.runInContext('worker.fetch(new Request("https://worker.test/health"), env)', test.context);
+  const health = await response.json();
+  assert.equal(health.version, '0.73');
+  assert.equal(health.watchdog_stale_after_minutes, 60);
+  assert.ok(health.capabilities.includes('collection_watchdog'));
+  assert.equal(test.calls.length, 0, 'Public health reports the release without contacting providers');
+  assert.ok(!JSON.stringify(health).includes('test-only-watchdog-token'));
 }
 for (const timestamp of [null, '', 'bad', '2026-10-19T12:06:00Z', '2026-10-19T08:00:00']) {
   const test = scenario({ data: { sources_checked_at: timestamp } });

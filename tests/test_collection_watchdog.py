@@ -13,10 +13,14 @@ class CollectionWatchdogTests(unittest.TestCase):
     now = datetime(2026, 10, 19, 12, tzinfo=timezone.utc)
 
     def test_only_stale_source_review_allows_collection(self):
-        self.assertTrue(watchdog.should_collect({'sources_checked_at': '2026-10-19T09:59:59Z',
+        self.assertTrue(watchdog.should_collect({'sources_checked_at': '2026-10-19T10:59:59Z',
                                                'fetched_at': '2026-10-19T12:00:00Z'}, self.now))
-        for value in ['2026-10-19T10:00:00Z', '2026-10-19T11:59:59Z', '2026-10-19T14:00:00+02:00']:
+        for value in ['2026-10-19T11:00:00Z', '2026-10-19T11:59:59Z', '2026-10-19T13:00:00+02:00', '2026-10-19T14:00:00+02:00']:
             self.assertFalse(watchdog.should_collect({'sources_checked_at': value}, self.now))
+
+    def test_hourly_rescue_ignores_a_recent_manual_publication_timestamp(self):
+        self.assertTrue(watchdog.should_collect({'sources_checked_at': '2026-10-19T10:30:00Z',
+                                               'fetched_at': '2026-10-19T12:00:00Z'}, self.now))
 
     def test_invalid_missing_naive_or_future_review_does_not_allow_collection(self):
         for value in [None, '', 'bad', '2026-10-19T12:06:00Z', '2026-10-19T08:00:00']:

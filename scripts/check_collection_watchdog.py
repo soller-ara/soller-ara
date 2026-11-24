@@ -18,7 +18,7 @@ def should_collect(payload: dict, now: datetime) -> bool:
         raise ValueError('La fecha de revisión no es válida') from error
     if checked.tzinfo is None or checked > now + timedelta(minutes=5):
         raise ValueError('La fecha de revisión no es válida')
-    return now - checked > timedelta(hours=2)
+    return now - checked > timedelta(hours=1)
 
 
 def main() -> None:

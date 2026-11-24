@@ -34,7 +34,7 @@ export default {
 
     try {
       if (url.pathname === "/health") {
-        return json({ ok: true, service: "soller-ara-admin", version: "0.72", capabilities: ["social_settings", "web_analytics", "manual_social_links", "manual_collection", "collection_watchdog"] }, 200, cors);
+        return json({ ok: true, service: "soller-ara-admin", version: "0.73", watchdog_stale_after_minutes: 60, capabilities: ["social_settings", "web_analytics", "manual_social_links", "manual_collection", "collection_watchdog"] }, 200, cors);
       }
 
       if (url.pathname === "/api/login" && request.method === "POST") {
@@ -338,7 +338,7 @@ async function collectionWatchdog(env) {
   if (env.COLLECTION_WATCHDOG_ENABLED === "false") return { action: "disabled" };
   if (!env.GITHUB_TOKEN) return { action: "not_configured" };
   const now = Date.now();
-  const staleAfter = 2 * 60 * 60 * 1000;
+  const staleAfter = 1 * 60 * 60 * 1000;
   const retryAfter = 60 * 60 * 1000;
   const { owner, repo, branch } = repoParts(env);
   const key = `${owner}/${repo}/${branch}`;
@@ -346,7 +346,7 @@ async function collectionWatchdog(env) {
     Authorization: `Bearer ${env.GITHUB_TOKEN}`,
     Accept: "application/vnd.github+json",
     "X-GitHub-Api-Version": "2022-11-28",
-    "User-Agent": "SollerAra-Watchdog/0.72",
+    "User-Agent": "SollerAra-Watchdog/0.73",
   };
   const dataResponse = await fetch(
     `https://raw.githubusercontent.com/${owner}/${repo}/${encodeURIComponent(branch)}/data/posts.json?v=${now}`,
