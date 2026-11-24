@@ -1,26 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-24T17:34:54.381478+00:00",
-  "entries": [
-    {
-      "post_id": "a3545279b4b8b953c5fe",
-      "title": "Eliminat un perillós cimal d’un pi a la rotonda d’Antoni Montis",
-      "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-11-24T14:55:34+00:00",
-      "original_url": "https://saveu.cat/noticies/eliminat-un-perillos-cimal-dun-pi-a-la-rotonda-dantoni-montis/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/a3545279b4b8b953c5fe.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
