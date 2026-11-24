@@ -96,6 +96,9 @@ const translations = {
     "footer.nonprofit": "Projecte sense ànim de lucre",
     "card.original": "Veure original",
     "card.share": "Compartir",
+    "embed.interact": "Interactua amb la publicació",
+    "embed.scroll": "Continua desplaçant la pàgina",
+    "embed.hint": "Llisca damunt la vista prèvia per continuar llegint.",
     "card.related": "Contingut relacionat",
     "card.new": "Nou",
     "empty": "No hi ha publicacions que coincideixin amb la cerca.",
@@ -198,6 +201,9 @@ const translations = {
     "footer.nonprofit": "Proyecto sin ánimo de lucro",
     "card.original": "Ver original",
     "card.share": "Compartir",
+    "embed.interact": "Interactuar con la publicación",
+    "embed.scroll": "Seguir desplazando la página",
+    "embed.hint": "Desliza sobre la vista previa para seguir leyendo.",
     "card.related": "Contenido relacionado",
     "card.new": "Nuevo",
     "empty": "No hay publicaciones que coincidan con la búsqueda.",
@@ -300,6 +306,9 @@ const translations = {
     "footer.nonprofit": "Non-profit project",
     "card.original": "View original",
     "card.share": "Share",
+    "embed.interact": "Interact with the post",
+    "embed.scroll": "Continue scrolling the page",
+    "embed.hint": "Swipe over the preview to keep reading the page.",
     "card.related": "Related content",
     "card.new": "New",
     "empty": "No posts match your search.",
@@ -762,11 +771,11 @@ function renderPostCard(post) {
     const categoryLabel = translations[currentLanguage].categories[post.category] || post.category;
     const safeUrl = safeLinkUrl(post.url) || "#";
     const originalUrl = safeLinkUrl(post.original_url);
-    const officialPreview = renderOfficialLinkPreview(post);
+    const officialPreview = renderEmbedNavigation(renderOfficialLinkPreview(post));
     const authorizedPoster = renderAuthorizedPoster(post);
-    const originalEmbed = renderManualOriginalEmbed(post);
+    const originalEmbed = renderEmbedNavigation(renderManualOriginalEmbed(post));
     const usesOriginalEmbed = Boolean(originalEmbed);
-    const socialEmbed = renderSocialEmbed(post);
+    const socialEmbed = renderEmbedNavigation(renderSocialEmbed(post));
     const socialLabel = post.source_type === "social" && post.platform
       ? `<span class="social-platform">${escapeHtml(post.platform)}</span>`
       : "";
@@ -797,6 +806,36 @@ function renderPostCard(post) {
           </div>
         </div>
       </article>`;
+}
+
+// Keep touch scrolling in the page until the reader deliberately interacts.
+// Provider markup and iframe nodes stay intact, including SDK-generated embeds.
+function renderEmbedNavigation(markup) {
+  if (!/<(?:iframe|blockquote)\b/i.test(markup)) return markup;
+  return `<div class="embed-scroll-guard">
+    ${markup}
+    <div class="embed-scroll-tools">
+      <button class="embed-scroll-toggle" type="button" data-embed-toggle aria-pressed="false">${t("embed.interact")}</button>
+      <span class="embed-scroll-hint">${t("embed.hint")}</span>
+    </div>
+  </div>`;
+}
+
+function setEmbedInteraction(guard, interactive) {
+  guard.classList.toggle("is-interactive", interactive);
+  const control = guard.querySelector("[data-embed-toggle]");
+  if (control) {
+    control.setAttribute("aria-pressed", String(interactive));
+    control.textContent = t(interactive ? "embed.scroll" : "embed.interact");
+  }
+}
+
+function toggleEmbedInteraction(control) {
+  const guard = control.closest(".embed-scroll-guard");
+  if (!guard || !feed.contains(guard)) return;
+  const interactive = !guard.classList.contains("is-interactive");
+  feed.querySelectorAll(".embed-scroll-guard.is-interactive").forEach(item => setEmbedInteraction(item, false));
+  setEmbedInteraction(guard, interactive);
 }
 
 function safeLinkUrl(value) {
@@ -1140,6 +1179,11 @@ async function loadPosts() {
 }
 
 feed.addEventListener("click", (event) => {
+  const embedControl = event.target.closest?.("button[data-embed-toggle]");
+  if (embedControl && feed.contains(embedControl)) {
+    toggleEmbedInteraction(embedControl);
+    return;
+  }
   const button = event.target.closest?.("button[data-share-id]");
   if (button && feed.contains(button)) sharePost(button.dataset.shareId);
 });

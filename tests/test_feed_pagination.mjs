@@ -92,7 +92,7 @@ assert.deepEqual(feed.children.map(card=>card.id),items.map(item=>item.id));
 
 // Sharing is delegated once to the feed and works for appended cards.
 const button={dataset:{shareId:'post-40'},card:feed.children[40]};
-feed.listeners.click({target:{closest:()=>button}});
+feed.listeners.click({target:{closest:selector=>selector==='button[data-share-id]'?button:null}});
 assert.equal(shares.length,1);assert.equal(shares[0].url,'https://example.test/40');
 
 // SDK processing must not revisit existing embeds for a plain appended batch.
