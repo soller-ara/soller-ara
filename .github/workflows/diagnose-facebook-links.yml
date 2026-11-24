@@ -22,7 +22,7 @@ jobs:
           python-version: '3.13'
       - name: Validar diagnóstico sin conexiones externas
         run: python -m unittest discover -s tests -p test_meta_link_diagnostic.py -v
-      - name: Consultar enlaces y adjuntos mediante GET
+      - name: Consultar enlaces y cabeceras sin publicar ni descargar imágenes
         env:
-          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+          PUBLIC_METADATA_ONLY: 'true'
         run: python scripts/diagnose_facebook_link_readonly.py

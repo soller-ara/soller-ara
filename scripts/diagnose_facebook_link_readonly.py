@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Compare manual links with GET requests only. Never publish, scrape or edit.
+"""Compare manual links with GET/HEAD requests only. Never publish, scrape or edit.
 
 Run on a diagnostic branch, not inside the publishing workflow. The only local
 write is the Actions job summary. Tokens and source photographs are not saved.
@@ -74,10 +74,28 @@ class Metadata(HTMLParser):
         attrs = dict(attrs)
         if tag == "meta":
             key = attrs.get("property") or attrs.get("name")
-            if key in {"og:url", "og:type", "og:title", "og:image"}:
+            if key in {"og:url", "og:type", "og:title", "og:image", "og:image:width", "og:image:height",
+                       "og:image:type", "og:video", "article:published_time", "article:modified_time"}:
                 self.meta[key] = attrs.get("content") or ""
         if tag == "link" and attrs.get("rel") == "canonical":
             self.canonical = attrs.get("href") or ""
+
+
+def image_headers(url: str) -> dict:
+    parsed = urlparse(url)
+    if parsed.scheme != "https" or not (parsed.hostname or "").endswith((".cdninstagram.com", ".fbcdn.net")):
+        return {"checked": False, "reason": "Image host outside permitted Meta CDNs"}
+    request = Request(url, method="HEAD", headers={
+        "User-Agent": "facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)"})
+    try:
+        with build_opener(NoRedirect()).open(request, timeout=15) as response:
+            return {"checked": True, "http_status": response.status,
+                    "content_type": response.headers.get("Content-Type"),
+                    "content_length": response.headers.get("Content-Length")}
+    except HTTPError as exc:
+        return {"checked": True, "http_status": exc.code}
+    except (URLError, TimeoutError) as exc:
+        return {"checked": True, "error": type(exc).__name__}
 
 
 def public_metadata(url: str) -> dict:
@@ -91,13 +109,21 @@ def public_metadata(url: str) -> dict:
     try:
         with build_opener(NoRedirect()).open(request, timeout=20) as response:
             parser = Metadata()
-            parser.feed(response.read(524288).decode("utf-8", errors="replace"))
+            document = response.read(524288).decode("utf-8", errors="replace")
+            parser.feed(document)
             image = parser.meta.get("og:image") or ""
             return {"http_status": response.status, "canonical": clean_url(parser.canonical),
                     "og_url": clean_url(parser.meta.get("og:url") or ""),
                     "og_type": parser.meta.get("og:type"),
                     "og_title": (parser.meta.get("og:title") or "")[:180],
-                    "has_image": bool(image), "image_host": urlparse(image).hostname}
+                    "has_image": bool(image), "image_host": urlparse(image).hostname,
+                    "image_declared_size": [parser.meta.get("og:image:width"), parser.meta.get("og:image:height")],
+                    "image_headers": image_headers(image) if image else None,
+                    "has_video": bool(parser.meta.get("og:video")),
+                    "original_date_metadata": {k:v for k,v in parser.meta.items() if k.startswith("article:")},
+                    "document_dates": [{"field": m[0], "value": m[1] or m[2]} for m in re.findall(
+                        r'"(datePublished|uploadDate|dateCreated|taken_at_timestamp)"\s*:\s*(?:"([^"]{1,45})"|(\d{9,16}))',
+                        document.replace('\\"', '"'))][:6]}
     except HTTPError as exc:
         return {"http_status": exc.code, "redirect": clean_url(exc.headers.get("Location") or "")}
     except (URLError, TimeoutError) as exc:
@@ -120,6 +146,25 @@ def safe_json(payload, secrets: tuple[str, ...], *, indent=None) -> str:
         if secret:
             encoded = encoded.replace(secret, "[redacted]")
     return encoded
+
+
+def public_only() -> int:
+    manual = json.loads((ROOT / "data/manual_posts.json").read_text())["posts"]
+    report = {"checked_at": datetime.now(timezone.utc).isoformat(), "read_only": True, "cases": []}
+    for identifier in POST_IDS:
+        post = next(p for p in manual if p.get("id") == identifier)
+        url = post["original_url"]
+        case = {"post_id": identifier, "web_created_at": post.get("published_at"), "urls": []}
+        for label, reference in (("submitted", url), ("canonical", clean_url(url))):
+            case["urls"].append({"variant": label, "url": reference,
+                                 "public_metadata": public_metadata(reference)})
+        report["cases"].append(case)
+        print("PUBLIC_LINK_DIAGNOSTIC " + json.dumps(case, ensure_ascii=False), flush=True)
+    summary = os.environ.get("GITHUB_STEP_SUMMARY")
+    if summary:
+        Path(summary).write_text("# Metadatos e imágenes · solo GET/HEAD, sin credenciales\n\n```json\n" +
+                                 json.dumps(report, ensure_ascii=False, indent=2) + "\n```\n")
+    return 0
 
 
 def main() -> int:
@@ -177,4 +222,4 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    raise SystemExit(public_only() if os.environ.get("PUBLIC_METADATA_ONLY") == "true" else main())

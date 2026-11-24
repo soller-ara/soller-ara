@@ -71,6 +71,22 @@ class DiagnosticTests(unittest.TestCase):
                     diag.public_metadata(url)
             network.assert_not_called()
 
+    def test_image_check_uses_head_without_reading_body_or_sending_credentials(self):
+        opener = MagicMock()
+        response = opener.open.return_value.__enter__.return_value
+        response.status = 200
+        response.headers = {'Content-Type':'image/jpeg','Content-Length':'100000'}
+        with patch.object(diag,'build_opener',return_value=opener):
+            result = diag.image_headers('https://scontent.test.cdninstagram.com/image.jpg?signature=example')
+        req = opener.open.call_args.args[0]
+        self.assertEqual(req.get_method(),'HEAD')
+        self.assertIsNone(req.get_header('Authorization'))
+        response.read.assert_not_called()
+        self.assertEqual(result['content_type'],'image/jpeg')
+        with patch.object(diag,'build_opener') as network:
+            self.assertFalse(diag.image_headers('https://other.test/image.jpg')['checked'])
+            network.assert_not_called()
+
     def test_image_summary_does_not_download_or_expose_image_url(self):
         result = diag.attachment_summary({'type':'link', 'media': {'image': {
             'src':'https://cdn.test/photo.jpg?signature=private', 'width':1080, 'height':1350}}})
@@ -129,6 +145,21 @@ class DiagnosticTests(unittest.TestCase):
             self.assertNotIn('test-user-secret',text)
             self.assertNotIn('test-page-secret',text)
             self.assertEqual(before,{p.name:p.read_bytes() for p in (root/'data').iterdir()})
+
+    def test_public_only_mode_needs_no_credentials_or_graph_requests(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            (root/'data').mkdir()
+            posts = [{'id': identifier, 'original_url':f'https://www.instagram.com/p/Post{i}/?igsh=ref'}
+                     for i,identifier in enumerate(diag.POST_IDS)]
+            (root/'data/manual_posts.json').write_text(json.dumps({'posts':posts}))
+            with patch.object(diag,'ROOT',root),patch.object(diag,'public_metadata',return_value={}) as public, \
+                 patch.object(diag,'graph_get') as graph,patch.dict(os.environ,{
+                     'META_ACCESS_TOKEN':'','GITHUB_STEP_SUMMARY':str(root/'summary.md')}),redirect_stdout(StringIO()):
+                self.assertEqual(diag.public_only(),0)
+            public.assert_called()
+            self.assertEqual(public.call_count,8)
+            graph.assert_not_called()
 
 
 if __name__ == '__main__':
