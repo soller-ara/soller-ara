@@ -683,7 +683,7 @@
     }
   ],
   "social_integration_status": [],
-  "post_count": 376,
+  "post_count": 377,
   "related_pair_count": 0,
   "errors": [
     {
@@ -700,6 +700,25 @@
     }
   ],
   "posts": [
+    {
+      "id": "soller-ara-dddecc17dad9776d",
+      "category": "agenda",
+      "source_id": "soller-ara",
+      "source": "Publicació de xarxa",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-11-24T15:34:38.431909+00:00",
+      "show_in_now": false,
+      "content_type": "social_link",
+      "title": "",
+      "summary": "",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-dddecc17dad9776d.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": false,
+      "original_url": "https://www.instagram.com/p/DgHcHqwFiBr/?bqrl=bTFpbnQ0d3BjaWd6"
+    },
     {
       "id": "soller-ara-e6264aa37e94badb",
       "category": "agenda",
@@ -8587,5 +8606,5 @@
     }
   ],
   "sources_checked_at": "2026-11-24T14:07:31.737982+00:00",
-  "fetched_at": "2026-11-24T15:27:33.169894+00:00"
+  "fetched_at": "2026-11-24T15:34:38.442064+00:00"
 }
