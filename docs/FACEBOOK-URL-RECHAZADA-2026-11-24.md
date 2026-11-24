@@ -11,14 +11,20 @@ El 24 de noviembre de 2026, las dos últimas referencias de Instagram se guardar
 
 Ambas ejecuciones recibieron `PUBLISH_FACEBOOK=true` y `PUBLISH_INSTAGRAM=false`. El fallo no es una casilla desmarcada ni un permiso para consultar cuentas ajenas. Dos referencias manuales anteriores sí obtuvieron identificador de Facebook ese mismo día.
 
-## Corrección
+## Criterio vigente: detener el envío si Meta rechaza el original
 
-Se conserva el envío del enlace original como primera opción. Únicamente cuando Graph devuelve el rechazo estructurado exacto `1500/1611248`, para una referencia `social_link`, se admite una segunda solicitud compartiendo la entrada individual ya publicada de Sóller Ara. El mensaje conserva la atribución y el enlace original. No se copian imágenes ni textos del origen.
+Por indicación del usuario se ha retirado la alternativa que compartía la entrada individual de Sóller Ara tras el rechazo `1500/1611248`. El usuario prefiere que el envío falle antes que una publicación sin fotografía ni texto propio.
 
-No hay segunda solicitud ante tiempos de espera, errores de red, falta de identificador, permisos, límites de uso u otros errores de Graph. Si Facebook también rechaza la alternativa, se registra el error y se detiene. Los artículos propios y carteles mantienen su comportamiento. No cambia el Worker, las fuentes, el horario ni la publicación automática de Instagram.
+Una referencia `social_link` se envía exclusivamente con su enlace original. Si Meta lo rechaza, se conserva el error y se detiene el envío de Facebook, sin sustituir el enlace por el de nuestra web ni crear otra publicación. Se mantienen la atribución, la omisión de envíos confirmados y el tratamiento de errores de red o recibos ausentes. Los artículos propios y carteles conservan su comportamiento.
 
-## Pruebas y recuperación
+La aceptación de un enlace por Meta no demuestra que Facebook haya mostrado una imagen. La retirada de esta alternativa evita la sustitución que provocó estas dos publicaciones sin fotografía; no constituye una verificación de todas las vistas previas de Facebook.
 
-Las pruebas simulan el rechazo exacto y la respuesta de éxito; comprueban el mensaje, el destino alternativo, el recibo, el límite de dos solicitudes y la omisión de envíos que ya tienen éxito registrado. También comprueban que los errores inciertos y otros rechazos no disparan una segunda solicitud. No se contacta con Meta durante las pruebas.
+## Antecedente
 
-La recuperación de estas dos entradas debe utilizar sus ejecuciones originales: `PUBLISH_KEY=${{ github.run_id }}` conserva los identificadores existentes y `add_own_post.py` devuelve `OWN_SKIP` al encontrarlos. Antes de reintentar se comprueba que siguen presentes, no están ocultas y no existe ningún recibo de éxito. El resultado solo se considera publicado cuando `data/social_publish_log.json` contiene `status=success` y un identificador remoto. No se crea una entrada nueva ni se vuelve a enviar Instagram.
+La alternativa retirada permitió recuperar ambas publicaciones el 24 de noviembre de 2026 a las 17:50 (Europe/Madrid), con identificadores de Facebook `1384755221378998_122135919285467310` y `1384755221378998_122135919363467310`. En la web se conservaron los identificadores, fechas y contenidos originales. Las páginas individuales carecían de una imagen de vista previa, por lo que la recuperación no conservó la presentación de los enlaces anteriores.
+
+Retirar la alternativa no borra los envíos ya realizados ni altera sus recibos. No se vuelven a ejecutar sus workflows.
+
+## Pruebas
+
+Se simula el rechazo exacto `1500/1611248` y se comprueba una única solicitud con el enlace original, resultado de error e identificador remoto vacío. También se comprueba que los éxitos anteriores no se reenvían, incluso si hay un error posterior, y que los errores de red, permisos, límites o recibos ausentes no generan publicaciones alternativas. Las pruebas no contactan con Meta.

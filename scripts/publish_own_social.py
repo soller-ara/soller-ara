@@ -163,24 +163,12 @@ def publish_facebook(page_id: str, page_token: str) -> str:
     message = f"{TITLE}\n\n{BODY}{source_reference()}".strip()
     # Share references directly; never copy the source's image or embedded text.
     link = ORIGINAL_URL if CONTENT_TYPE == "social_link" and ORIGINAL_URL else POST_URL
-    try:
-        result = graph(
-            f"{page_id}/feed", method="POST",
-            params={"message": message, "link": link}, token=page_token,
-        )
-    except MetaGraphError as exc:
-        # Only an explicit invalid-URL rejection proves that no post was created.
-        # Timeouts, missing receipts, permission errors and other failures never
-        # trigger another send. The web entry was checked before this step.
-        if not (CONTENT_TYPE == "social_link" and ORIGINAL_URL and link != POST_URL
-                and POST_URL.startswith("https://soller-ara.github.io/soller-ara/noticies/")
-                and exc.code == 1500 and exc.subcode == 1611248):
-            raise
-        print(f"FACEBOOK_LINK_FALLBACK reason=invalid_original_url link={POST_URL}")
-        result = graph(
-            f"{page_id}/feed", method="POST",
-            params={"message": message, "link": POST_URL}, token=page_token,
-        )
+    # Do not substitute the web entry if Meta rejects the original reference:
+    # a bare reference can lose its source preview, leaving an empty-looking post.
+    result = graph(
+        f"{page_id}/feed", method="POST",
+        params={"message": message, "link": link}, token=page_token,
+    )
     identifier = str(result.get("post_id") or result.get("id") or "")
     if not identifier:
         raise RuntimeError("Facebook no ha retornat identificador de publicació.")

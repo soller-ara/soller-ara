@@ -76,32 +76,29 @@ class FacebookLinkTests(unittest.TestCase):
         self.assertIn('Simulated provider rejection', entry['error'])
         self.instagram.assert_not_called()
 
-    def test_explicit_invalid_url_falls_back_to_existing_web_entry_once(self):
-        self.graph.side_effect = [publisher.MetaGraphError('The url you supplied is invalid', 1500, 1611248),
-                                  {'id': 'page_fallback'}]
-        self.assertEqual(publisher.main(), 0)
-        self.assertEqual(self.graph.call_count, 2)
-        original, fallback = [call.kwargs['params'] for call in self.graph.call_args_list]
-        self.assertEqual(original['link'], self.original)
-        self.assertEqual(fallback['link'], publisher.POST_URL)
-        self.assertEqual(fallback['message'], original['message'])
-        self.assertIn(self.original, fallback['message'])
-        self.assertEqual(set(fallback), {'message', 'link'})
+    def test_invalid_original_url_stays_failed_without_substitute_publication(self):
+        self.graph.side_effect = publisher.MetaGraphError('The url you supplied is invalid', 1500, 1611248)
+        self.assertEqual(publisher.main(), 1)
+        self.graph.assert_called_once()
+        params = self.graph.call_args.kwargs['params']
+        self.assertEqual(params['link'], self.original)
+        self.assertNotEqual(params['link'], publisher.POST_URL)
+        self.assertIn(self.original, params['message'])
         entry = json.loads(self.log_file.read_text())['entries'][-1]
-        self.assertEqual((entry['status'], entry['remote_id']), ('success', 'page_fallback'))
-        self.assertEqual(publisher.main(), 0)
-        self.assertEqual(self.graph.call_count, 2)
+        self.assertEqual((entry['status'], entry['remote_id']), ('error', ''))
+        self.assertIn('code=1500, subcode=1611248', entry['error'])
         self.instagram.assert_not_called()
 
-    def test_fallback_failure_is_not_retried(self):
-        self.graph.side_effect = [publisher.MetaGraphError('Invalid URL', 1500, 1611248),
-                                  publisher.MetaGraphError('Rejected fallback', 1500, 1611248)]
-        self.assertEqual(publisher.main(), 1)
-        self.assertEqual(self.graph.call_count, 2)
-        entries = json.loads(self.log_file.read_text())['entries']
-        self.assertEqual(len(entries), 1)
-        self.assertEqual(entries[-1]['status'], 'error')
-        self.assertIn('Rejected fallback', entries[-1]['error'])
+    def test_withdrawing_fallback_never_resends_an_already_confirmed_post(self):
+        self.log_file.write_text(json.dumps({'entries': [
+            {'post_id': 'manual-reference', 'platform': 'facebook', 'status': 'success',
+             'remote_id': 'page_existing'},
+            {'post_id': 'manual-reference', 'platform': 'facebook', 'status': 'error',
+             'error': 'Later error does not erase confirmation'}]}))
+        self.assertEqual(publisher.main(), 0)
+        self.graph.assert_not_called()
+        self.discovery.assert_not_called()
+        self.instagram.assert_not_called()
 
     def test_network_permission_and_other_rejections_never_trigger_fallback(self):
         failures = [TimeoutError('Uncertain delivery'),
