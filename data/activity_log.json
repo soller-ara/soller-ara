@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "ddecc073d5bf74f5",
+      "timestamp": "2026-11-24T18:45:14.994532+00:00",
+      "action": "publish",
+      "area": "publications",
+      "target_id": "soller-ara-3ab7bce81679d14b",
+      "title": "Kidsandus.soller",
+      "detail": "Publicación propia creada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "4d5dbd338ee4e1c3",
       "timestamp": "2026-11-24T16:50:25.964835+00:00",
       "action": "publish",

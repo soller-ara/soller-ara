@@ -683,7 +683,7 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 379,
+  "post_count": 380,
   "related_pair_count": 0,
   "errors": [
     {
@@ -700,6 +700,27 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "posts": [
+    {
+      "id": "soller-ara-3ab7bce81679d14b",
+      "category": "culture",
+      "source_id": "soller-ara",
+      "source": "Publicació de xarxa",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-11-24T18:45:14.880124+00:00",
+      "show_in_now": true,
+      "content_type": "social_link",
+      "title": "Kidsandus.soller",
+      "summary": "",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-3ab7bce81679d14b.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": true,
+      "original_url": "https://www.instagram.com/p/DgIk00IiPU4/?jplx=MWVlMnp5djRham15NQ==",
+      "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-3ab7bce81679d14b.jpg",
+      "media_type": "image"
+    },
     {
       "id": "soller-ara-e175d2cb5467d844",
       "category": "culture",
@@ -8652,5 +8673,5 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "sources_checked_at": "2026-11-24T17:34:54.237728+00:00",
-  "fetched_at": "2026-11-24T17:34:54.237728+00:00"
+  "fetched_at": "2026-11-24T18:45:14.932116+00:00"
 };

@@ -2307,6 +2307,27 @@
       "rights_status": "no_reuse_reference_only",
       "image_allowed": false,
       "original_url": "https://www.instagram.com/p/DgIJXAnoYYU/?gwpx=cjd5dzFlbDN2N3ox"
+    },
+    {
+      "id": "soller-ara-3ab7bce81679d14b",
+      "category": "culture",
+      "source_id": "soller-ara",
+      "source": "Publicació de xarxa",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-11-24T18:45:14.880124+00:00",
+      "show_in_now": true,
+      "content_type": "social_link",
+      "title": "Kidsandus.soller",
+      "summary": "",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-3ab7bce81679d14b.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": true,
+      "original_url": "https://www.instagram.com/p/DgIk00IiPU4/?jplx=MWVlMnp5djRham15NQ==",
+      "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-3ab7bce81679d14b.jpg",
+      "media_type": "image"
     }
   ]
 }
