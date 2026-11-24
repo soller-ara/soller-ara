@@ -1,26 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-24T07:48:18.438055+00:00",
+  "generated_at": "2026-11-24T10:07:36.885054+00:00",
   "entries": [
     {
-      "post_id": "86c9705f8d9c07d60cea",
-      "title": "Mercadet de Nadal",
+      "post_id": "c9497aec33f737c7231c",
+      "title": "Tallat al trànsit el carrer de Bauzá des d'avui per les obres",
       "summary": "",
-      "source": "Ajuntament de Deià · Agenda",
-      "source_id": "ajuntament-deia-agenda",
-      "source_type": "institution",
-      "category": "agenda",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "services",
       "language": "ca",
-      "published_at": "2026-11-24T06:24:53+00:00",
-      "original_url": "https://ajdeia.net/ca/agenda/mercadet-de-nadal-6",
+      "published_at": "2026-11-24T10:44:00+01:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/11/24/354849/tallat-transit-carrer-bauza-des-avui-per-les-obres.html",
       "content_policy": "headline_date_link_only",
-      "rights_status": "link_only_no_media_license",
+      "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/86c9705f8d9c07d60cea.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/c9497aec33f737c7231c.jpg"
     }
   ]
 }
