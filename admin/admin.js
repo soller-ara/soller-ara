@@ -264,6 +264,7 @@
   }
 
   function renderPosts() {
+    window.SOLLER_ARA_EDITORIAL_GUIDE?.setPosts?.(statusPayload?.posts?.posts || []);
     const target = document.getElementById("postList");
     const posts = filteredPosts().slice(0, 120);
 

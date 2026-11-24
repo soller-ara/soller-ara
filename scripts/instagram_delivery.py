@@ -1,6 +1,11 @@
 """Read Instagram delivery receipts before retrying a publication."""
 from __future__ import annotations
 
+try:
+    from social_text import SITE_LABEL
+except ModuleNotFoundError:
+    from scripts.social_text import SITE_LABEL
+
 import re
 
 
@@ -56,6 +61,7 @@ def matching_media(media: list[dict], post_url: str, source_name: str | None = N
         raise ValueError("Falta l'enllaç únic de la notícia per verificar Instagram.")
     pattern = re.compile(r"(?<!\S)" + re.escape(post_url) + r"(?=$|\s)")
     return [item for item in media if item.get("id")
-            and pattern.search(str(item.get("caption") or ""))
+            and pattern.search("\n".join(line for line in str(item.get("caption") or "").splitlines()
+                                         if line.strip() != SITE_LABEL))
             and (source_name is None or f"Font: {source_name}" in
                  str(item.get("caption") or "").splitlines())]

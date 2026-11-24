@@ -23,6 +23,7 @@ on:
       - "scripts/reconcile_instagram_deliveries.py"
       - "scripts/prepare_collected_social.py"
       - "scripts/publish_collected_social.py"
+      - "scripts/social_text.py"
       - "social_sources.json"
       - ".github/workflows/update-sources.yml"
 

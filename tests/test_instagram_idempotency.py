@@ -12,6 +12,7 @@ from unittest.mock import patch
 from scripts import publish_own_social as own, publish_collected_social as auto
 from scripts import retry_manual_social as retry
 from scripts.instagram_delivery import InstagramPublishUncertain
+from scripts.social_text import SITE_URL
 
 
 RATE_LIMIT = "Application request limit reached [code=4, subcode=2207051]"
@@ -102,6 +103,8 @@ class InstagramIdempotencyTests(unittest.TestCase):
     def test_accepted_manual_publish_with_rate_limit_is_reconciled_without_repeat(self):
         self.response_error = RuntimeError(RATE_LIMIT)
         self.assertEqual(own.main(), 0)
+        self.assertIn(self.url, self.caption)
+        self.assertIn('Sóller Ara · ' + SITE_URL, self.caption)
         self.assertEqual(self.read()["entries"][-1]["status"], "verification_required")
         self.assertIn("code=4", self.read()["entries"][-1]["error"])
         self.unpause()
@@ -165,6 +168,8 @@ class InstagramIdempotencyTests(unittest.TestCase):
     def test_automatic_publish_lost_response_does_not_repeat_either_platform(self):
         self.response_error = RuntimeError(RATE_LIMIT)
         self.assertEqual(auto.main(), 0)
+        self.assertIn(self.url, self.caption)
+        self.assertIn('Sóller Ara · ' + SITE_URL, self.caption)
         self.auto_facebook.assert_called_once()
         self.assertEqual(self.read()["entries"][-1]["status"], "verification_required")
         self.unpause()

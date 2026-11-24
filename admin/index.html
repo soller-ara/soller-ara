@@ -10,7 +10,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="../assets/brand/apple-touch-icon.png" />
   <title>Administración · Sóller Ara</title>
   <link rel="preload" as="image" href="../assets/brand/logo-soller-ara-web.png" />
-  <link rel="stylesheet" href="./admin.css?v=0.93.5" />
+  <link rel="stylesheet" href="./admin.css?v=0.93.6" />
 </head>
 <body>
   <main class="admin-shell">
@@ -41,7 +41,7 @@
         <div class="header-actions">
           <a class="public-link button-secondary" href="../index.html">Volver a Sóller Ara</a>
           <button id="refreshAdminPageButton" class="button-secondary" type="button" title="Actualizar la página de Administración"><span aria-hidden="true">↻</span> Actualizar</button>
-          <span id="adminVersion" class="status-pill">v0.93.5</span>
+          <span id="adminVersion" class="status-pill">v0.93.6</span>
           <span id="connectionState" class="status-pill">Conectado</span>
           <button id="logoutButton" class="button-secondary" type="button">Salir</button>
         </div>
@@ -102,6 +102,8 @@
            <label>Tipo de publicación<select name="content_type"><option value="social_link" selected>Referencia de una red social</option><option value="event_poster">Anuncio o cartel de evento</option></select></label>
            <label>Titular propio <span class="hint">(obligatorio solo si publicas también en Instagram)</span><input name="title" maxlength="180" aria-describedby="socialTitleCount" /></label>
            <label>Resumen propio y neutral<textarea name="body" rows="6" aria-describedby="socialBodyCount"></textarea></label>
+          <div class="header-actions"><button id="socialPrepareTextButton" class="button-secondary" type="button">Preparar texto automáticamente</button></div>
+          <p id="socialPrepareTextMessage" class="hint" role="status" aria-live="polite">Completa los campos vacíos con la información disponible. Revisa la propuesta antes de publicar.</p>
           <aside class="editorial-guide" aria-labelledby="socialTextGuideTitle">
             <h3 id="socialTextGuideTitle">Ayuda para el titular y el resumen</h3>
             <p class="hint">Sugerencias opcionales para revisar tu texto.</p>
@@ -190,10 +192,10 @@
   </main>
 
   <script src="./public-data.js?v=0.61"></script>
-  <script src="./config.js?v=0.93.5"></script>
+  <script src="./config.js?v=0.93.6"></script>
   <script src="./collection-health.js?v=0.93.3"></script>
-  <script src="./editorial-guide.js?v=0.93.5"></script>
-  <script src="./web-discovery.js?v=0.93.5"></script>
-  <script src="./admin.js?v=0.93.5"></script>
+  <script src="./editorial-guide.js?v=0.93.6"></script>
+  <script src="./web-discovery.js?v=0.93.6"></script>
+  <script src="./admin.js?v=0.93.6"></script>
 </body>
 </html>

@@ -23,10 +23,12 @@ from urllib.request import Request, urlopen
 
 
 try:
+    from social_text import compose_instagram_caption, prepare_summary
     from publication_state import alert_can_be_published, social_was_published
     from instagram_delivery import (InstagramPublishUncertain, InstagramVerificationUnavailable,
                                     matching_media, read_account_media, unconfirmed_container)
 except ModuleNotFoundError:
+    from scripts.social_text import compose_instagram_caption, prepare_summary
     from scripts.publication_state import alert_can_be_published, social_was_published
     from scripts.instagram_delivery import (InstagramPublishUncertain, InstagramVerificationUnavailable,
                                             matching_media, read_account_media, unconfirmed_container)
@@ -248,6 +250,25 @@ def publish_facebook(item: dict, page_id: str, page_token: str) -> str:
     return identifier
 
 
+def instagram_caption(item: dict) -> str:
+    # Summary preparation is optional: a local failure cannot stop an eligible send.
+    try:
+        summary = prepare_summary(item)
+    except Exception:
+        summary = safe_summary(item) if item.get("content_policy") in (
+            "short_factual_excerpt", "generated_social_summary", "summary_allowed",
+        ) else ""
+    header = "\n\n".join((
+        f"Informació original: {item.get('original_url') or ''}",
+        str(item.get("title") or "").strip(),
+        f"Font: {item.get('source') or 'Font original'}",
+    ))
+    return compose_instagram_caption(
+        header, summary, "",
+        f"{hashtag(str(item.get('category') or 'news'))} #Sóller #SollerAra",
+    )
+
+
 def wait_public_image(url: str) -> None:
     if not url:
         raise RuntimeError("Falta la targeta d'imatge per Instagram.")
@@ -293,11 +314,7 @@ def publish_instagram(item: dict, ig_id: str, ig_username: str, page_token: str)
     image_url = str(item.get("image_url") or "")
     wait_public_image(image_url)
 
-    caption = (
-        base_text(item)
-        + "\n\n"
-        + f"{hashtag(str(item.get('category') or 'news'))} #Sóller #SollerAra"
-    )
+    caption = instagram_caption(item)
     container = graph(
         f"{ig_id}/media",
         method="POST",

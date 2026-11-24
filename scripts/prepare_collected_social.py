@@ -255,6 +255,7 @@ def generate_card(post: dict) -> str:
     draw.line((110, height - 310, width - 110, height - 310), fill=accent, width=5)
     draw.text((110, height - 255), f"Font: {post.get('source') or 'Font original'}", font=source_font, fill=text_color)
     draw.text((110, height - 205), "Informació recopilada per Sóller Ara", font=footer_font, fill=muted)
+    draw.text((110, height - 145), "soller-ara.github.io/soller-ara/", font=footer_font, fill=muted)
 
     image.save(path, "JPEG", quality=92, optimize=True)
     return f"{IMAGE_BASE}/{post_id}.jpg"

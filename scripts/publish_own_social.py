@@ -18,9 +18,11 @@ from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
 try:
+    from social_text import compose_instagram_caption
     from instagram_delivery import (InstagramPublishUncertain, InstagramVerificationUnavailable,
                                     matching_media, read_account_media, unconfirmed_container)
 except ModuleNotFoundError:
+    from scripts.social_text import compose_instagram_caption
     from scripts.instagram_delivery import (InstagramPublishUncertain, InstagramVerificationUnavailable,
                                             matching_media, read_account_media, unconfirmed_container)
 
@@ -197,7 +199,10 @@ def publish_instagram(ig_id: str, ig_username: str, page_token: str) -> str:
             "Instagram necessita una imatge pública. Afegeix POST_IMAGE_URL o desactiva Instagram."
         )
 
-    caption = f"{TITLE}\n\nNotícia completa: {POST_URL}\nEnllaços: https://soller-ara.github.io/soller-ara/enllacos.html\n\n{BODY}{source_reference()}\n\n#Sóller #SollerAra".strip()
+    caption = compose_instagram_caption(
+        f"{TITLE}\n\nNotícia completa: {POST_URL}\nEnllaços: https://soller-ara.github.io/soller-ara/enllacos.html",
+        BODY, source_reference(), "#Sóller #SollerAra",
+    )
     container = graph(
         f"{ig_id}/media",
         method="POST",
