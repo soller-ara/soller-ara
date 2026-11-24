@@ -1,8 +1,10 @@
 """Simulated manual Facebook link shares: no Meta account is contacted."""
 import json
+from io import BytesIO
 import tempfile
 import unittest
 from pathlib import Path
+from urllib.error import HTTPError
 from unittest.mock import patch
 
 from scripts import publish_own_social as publisher
@@ -16,7 +18,7 @@ class FacebookLinkTests(unittest.TestCase):
         self.original = 'https://www.instagram.com/p/Reference123/?igsh=reference'
         self.enterContext(patch.multiple(publisher, LOG_FILE=self.log_file, TOKEN='test-only',
             CONFIRMATION='PUBLICAR', POST_ID='manual-reference',
-            POST_URL='https://example.test/noticies/manual-reference.html',
+            POST_URL='https://soller-ara.github.io/soller-ara/noticies/manual-reference.html',
             TITLE='', BODY='', SOURCE_NAME='Entitat de Sóller', ORIGINAL_URL=self.original,
             CONTENT_TYPE='social_link', DO_FACEBOOK=True, DO_INSTAGRAM=False))
         self.discovery = self.enterContext(patch.object(publisher, 'discover_accounts',
@@ -73,6 +75,79 @@ class FacebookLinkTests(unittest.TestCase):
         self.assertEqual(entry['status'], 'error')
         self.assertIn('Simulated provider rejection', entry['error'])
         self.instagram.assert_not_called()
+
+    def test_explicit_invalid_url_falls_back_to_existing_web_entry_once(self):
+        self.graph.side_effect = [publisher.MetaGraphError('The url you supplied is invalid', 1500, 1611248),
+                                  {'id': 'page_fallback'}]
+        self.assertEqual(publisher.main(), 0)
+        self.assertEqual(self.graph.call_count, 2)
+        original, fallback = [call.kwargs['params'] for call in self.graph.call_args_list]
+        self.assertEqual(original['link'], self.original)
+        self.assertEqual(fallback['link'], publisher.POST_URL)
+        self.assertEqual(fallback['message'], original['message'])
+        self.assertIn(self.original, fallback['message'])
+        self.assertEqual(set(fallback), {'message', 'link'})
+        entry = json.loads(self.log_file.read_text())['entries'][-1]
+        self.assertEqual((entry['status'], entry['remote_id']), ('success', 'page_fallback'))
+        self.assertEqual(publisher.main(), 0)
+        self.assertEqual(self.graph.call_count, 2)
+        self.instagram.assert_not_called()
+
+    def test_fallback_failure_is_not_retried(self):
+        self.graph.side_effect = [publisher.MetaGraphError('Invalid URL', 1500, 1611248),
+                                  publisher.MetaGraphError('Rejected fallback', 1500, 1611248)]
+        self.assertEqual(publisher.main(), 1)
+        self.assertEqual(self.graph.call_count, 2)
+        entries = json.loads(self.log_file.read_text())['entries']
+        self.assertEqual(len(entries), 1)
+        self.assertEqual(entries[-1]['status'], 'error')
+        self.assertIn('Rejected fallback', entries[-1]['error'])
+
+    def test_network_permission_and_other_rejections_never_trigger_fallback(self):
+        failures = [TimeoutError('Uncertain delivery'),
+                    publisher.MetaGraphError('Permission denied', 200, None),
+                    publisher.MetaGraphError('Expired token', 190, None),
+                    publisher.MetaGraphError('Application request limit', 4, None),
+                    publisher.MetaGraphError('Another rejection', 1500, 999),
+                    RuntimeError('Invalid URL [code=1500, subcode=1611248]')]
+        for failure in failures:
+            with self.subTest(failure=str(failure)):
+                self.graph.reset_mock()
+                self.graph.side_effect = failure
+                self.assertEqual(publisher.main(), 1)
+                self.graph.assert_called_once()
+
+    def test_missing_receipt_never_triggers_fallback(self):
+        self.graph.return_value = {}
+        self.assertEqual(publisher.main(), 1)
+        self.graph.assert_called_once()
+        self.assertEqual(json.loads(self.log_file.read_text())['entries'][-1]['status'], 'error')
+
+    def test_own_article_or_unsafe_fallback_is_never_retried(self):
+        cases = [{'CONTENT_TYPE': 'own'}, {'CONTENT_TYPE': 'event_poster'},
+                 {'POST_URL': ''}, {'POST_URL': 'https://example.test/noticies/reference.html'},
+                 {'POST_URL': self.original}, {'ORIGINAL_URL': ''}]
+        for values in cases:
+            with self.subTest(values=values), patch.multiple(publisher, **values):
+                self.graph.reset_mock()
+                self.graph.side_effect = publisher.MetaGraphError('Invalid URL', 1500, 1611248)
+                with self.assertRaises(publisher.MetaGraphError):
+                    publisher.publish_facebook('page', 'test-only-page')
+                self.graph.assert_called_once()
+
+
+class GraphRejectionTests(unittest.TestCase):
+    def test_api_error_preserves_structured_code_without_exposing_token(self):
+        payload = {'error': {'message': 'The url you supplied is invalid',
+                             'code': 1500, 'error_subcode': 1611248}}
+        rejection = HTTPError('https://graph.facebook.com/v26.0/page/feed', 400, 'Bad Request',
+                              {}, BytesIO(json.dumps(payload).encode()))
+        with patch.object(publisher, 'urlopen', side_effect=rejection):
+            with self.assertRaises(publisher.MetaGraphError) as caught:
+                publisher.graph('page/feed', method='POST', params={'link':'https://example.test'},
+                                token='test-only-secret')
+        self.assertEqual((caught.exception.code, caught.exception.subcode), (1500, 1611248))
+        self.assertNotIn('test-only-secret', str(caught.exception))
 
 
 if __name__ == '__main__':

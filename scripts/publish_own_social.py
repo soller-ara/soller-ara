@@ -78,6 +78,15 @@ def record_result(log: dict, platform: str, status: str, remote_id: str = "", er
     LOG_FILE.write_text(json.dumps(log, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
+class MetaGraphError(RuntimeError):
+    """An explicit API rejection, distinct from an uncertain network failure."""
+
+    def __init__(self, message: str, code=None, subcode=None):
+        self.code = code
+        self.subcode = subcode
+        super().__init__(f"{message} [code={code}, subcode={subcode}]")
+
+
 def graph(path: str, method: str = "GET", params: dict | None = None, token: str | None = None) -> dict:
     url = f"https://graph.facebook.com/{GRAPH_VERSION}/{path.lstrip('/')}"
     data = None
@@ -105,9 +114,9 @@ def graph(path: str, method: str = "GET", params: dict | None = None, token: str
         try:
             payload = json.loads(raw)
             error = payload.get("error") or {}
-            raise RuntimeError(
-                f"{error.get('message') or f'HTTP {exc.code}'} "
-                f"[code={error.get('code')}, subcode={error.get('error_subcode')}]"
+            raise MetaGraphError(
+                error.get("message") or f"HTTP {exc.code}",
+                error.get("code"), error.get("error_subcode"),
             ) from exc
         except json.JSONDecodeError:
             raise RuntimeError(f"HTTP {exc.code}: resposta no interpretable") from exc
@@ -154,15 +163,24 @@ def publish_facebook(page_id: str, page_token: str) -> str:
     message = f"{TITLE}\n\n{BODY}{source_reference()}".strip()
     # Share references directly; never copy the source's image or embedded text.
     link = ORIGINAL_URL if CONTENT_TYPE == "social_link" and ORIGINAL_URL else POST_URL
-    result = graph(
-        f"{page_id}/feed",
-        method="POST",
-        params={
-            "message": message,
-            "link": link,
-        },
-        token=page_token,
-    )
+    try:
+        result = graph(
+            f"{page_id}/feed", method="POST",
+            params={"message": message, "link": link}, token=page_token,
+        )
+    except MetaGraphError as exc:
+        # Only an explicit invalid-URL rejection proves that no post was created.
+        # Timeouts, missing receipts, permission errors and other failures never
+        # trigger another send. The web entry was checked before this step.
+        if not (CONTENT_TYPE == "social_link" and ORIGINAL_URL and link != POST_URL
+                and POST_URL.startswith("https://soller-ara.github.io/soller-ara/noticies/")
+                and exc.code == 1500 and exc.subcode == 1611248):
+            raise
+        print(f"FACEBOOK_LINK_FALLBACK reason=invalid_original_url link={POST_URL}")
+        result = graph(
+            f"{page_id}/feed", method="POST",
+            params={"message": message, "link": POST_URL}, token=page_token,
+        )
     identifier = str(result.get("post_id") or result.get("id") or "")
     if not identifier:
         raise RuntimeError("Facebook no ha retornat identificador de publicació.")
