@@ -21711,6 +21711,15 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-11-25T13:52:45.941951+00:00",
       "error": ""
+    },
+    {
+      "post_id": "soller-ara-97bb03025ba33ef1",
+      "platform": "facebook",
+      "status": "success",
+      "remote_id": "1384755221378998_122136136065467310",
+      "post_url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-97bb03025ba33ef1.html",
+      "recorded_at": "2026-11-25T13:59:06.872267+00:00",
+      "error": ""
     }
   ],
   "cooldowns": {
