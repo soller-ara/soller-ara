@@ -1,83 +1,45 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-25T15:07:08.108851+00:00",
+  "generated_at": "2026-11-25T16:22:41.664660+00:00",
   "entries": [
     {
-      "post_id": "0ee90e8395978164f366",
-      "title": "El 25-N, un dia per refermar el compromís contra la violència envers les dones",
+      "post_id": "5b86f32901d491895ead",
+      "title": "Seny i Sentit reclama una rotonda que representi el paisatge solleric",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-11-25T16:55:27+01:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/11/25/354855/seny-sentit-reclama-rotonda-representi-paisatge-solleric.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/5b86f32901d491895ead.jpg"
+    },
+    {
+      "post_id": "d959fff754818799f6dd",
+      "title": "Sóller obri els tallers de cuina amb peix local per formar els futurs restauradors en pesca sostenible",
       "summary": "",
       "source": "Sa Veu de Sóller",
       "source_id": "sa-veu-soller",
       "source_type": "media",
       "category": "agenda",
       "language": "ca",
-      "published_at": "2026-11-25T14:59:40+00:00",
-      "original_url": "https://saveu.cat/noticies/el-25-n-un-dia-per-refermar-el-compromis-contra-la-violencia-envers-les-dones/",
+      "published_at": "2026-11-25T14:57:23+00:00",
+      "original_url": "https://saveu.cat/noticies/soller-obri-els-tallers-de-cuina-amb-peix-local-per-formar-els-futurs-restauradors-en-pesca-sostenible/",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/0ee90e8395978164f366.jpg"
-    },
-    {
-      "post_id": "15e60af29d89b8fd26f8",
-      "title": "Sóller acoge un taller de cocina con pescado local para futuros restauradores",
-      "summary": "",
-      "source": "Última Hora",
-      "source_id": "ultima-hora-soller",
-      "source_type": "media",
-      "category": "agenda",
-      "language": "es",
-      "published_at": "2026-11-25T15:48:25+01:00",
-      "original_url": "https://www.ultimahora.es/noticias/part-forana/2026/11/25/2757533/soller-acoge-taller-cocina-pescado-local-para-futuros-restauradores.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/15e60af29d89b8fd26f8.jpg"
-    },
-    {
-      "post_id": "d5a510a8aa7b39a85f97",
-      "title": "L’Institut de Sóller acull el primer taller de cuina amb peix de proximitat",
-      "summary": "",
-      "source": "Fora Vila",
-      "source_id": "fora-vila-soller",
-      "source_type": "media",
-      "category": "agenda",
-      "language": "ca",
-      "published_at": "2026-11-25T14:40:01+00:00",
-      "original_url": "https://www.foravila.net/area/serra-de-tramuntana/linstitut-de-soller-acull-el-primer-taller-de-cuina-amb-peix-de-proximitat/",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/d5a510a8aa7b39a85f97.jpg"
-    },
-    {
-      "post_id": "08a7fa2331ecf1284421",
-      "title": "Sóller acull el primer dels tallers de cuina amb peix local programats per al curs 2026-2027",
-      "summary": "",
-      "source": "Govern de les Illes Balears",
-      "source_id": "goib-noticies-soller",
-      "source_type": "official",
-      "category": "agenda",
-      "language": "ca",
-      "published_at": "2026-11-25T14:56:00+01:00",
-      "original_url": "https://intranet.caib.es/pidip2front/jsp/ca/fitxa-convocatoria/soller-acull-el-primer-dels-tallers-de-cuina-amb-peix-local-programats-per-al-curs-2026-2027",
-      "content_policy": "short_factual_excerpt",
-      "rights_status": "cc_by_open_data",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/08a7fa2331ecf1284421.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/d959fff754818799f6dd.jpg"
     }
   ]
 }
