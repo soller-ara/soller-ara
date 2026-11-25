@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "bc38c19572f078f9",
+      "timestamp": "2026-11-25T13:58:46.937664+00:00",
+      "action": "publish",
+      "area": "publications",
+      "target_id": "soller-ara-97bb03025ba33ef1",
+      "title": "Talleres de Navidad",
+      "detail": "Publicación propia creada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "f3835e07bd19bcd1",
       "timestamp": "2026-11-25T11:12:45.966859+00:00",
       "action": "publish",

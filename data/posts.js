@@ -683,7 +683,7 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "social_integration_status": [],
-  "post_count": 382,
+  "post_count": 383,
   "related_pair_count": 0,
   "errors": [
     {
@@ -704,6 +704,27 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "posts": [
+    {
+      "id": "soller-ara-97bb03025ba33ef1",
+      "category": "agenda",
+      "source_id": "soller-ara",
+      "source": "Publicació de xarxa",
+      "source_type": "own",
+      "language": "ca",
+      "locality": "Sóller",
+      "published_at": "2026-11-25T13:58:46.780943+00:00",
+      "show_in_now": true,
+      "content_type": "social_link",
+      "title": "Talleres de Navidad",
+      "summary": "",
+      "url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-97bb03025ba33ef1.html",
+      "content_policy": "manual_link_reference",
+      "rights_status": "no_reuse_reference_only",
+      "image_allowed": true,
+      "original_url": "https://www.instagram.com/p/DgKsAEhN8Ay/?avpt=MTFqNG4zemJ0eWNjaw==",
+      "media_url": "https://soller-ara.github.io/soller-ara/assets/generated/soller-ara-97bb03025ba33ef1.jpg",
+      "media_type": "image"
+    },
     {
       "id": "9713c122f211bc156d85",
       "category": "culture",
@@ -8722,5 +8743,5 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "sources_checked_at": "2026-11-25T13:51:39.232022+00:00",
-  "fetched_at": "2026-11-25T13:51:39.232022+00:00"
+  "fetched_at": "2026-11-25T13:58:46.887314+00:00"
 };
