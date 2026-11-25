@@ -1,5 +1,5 @@
 window.SOLLER_ARA_ADMIN_API = "https://soller-ara-admin.infosollerara.workers.dev";
-window.SOLLER_ARA_ADMIN_VERSION = "0.93.7";
+window.SOLLER_ARA_ADMIN_VERSION = "0.94.0";
 
 window.addEventListener("DOMContentLoaded", () => {
   const version = document.getElementById("adminVersion");

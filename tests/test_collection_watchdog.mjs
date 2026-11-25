@@ -57,7 +57,7 @@ for (const timestamp of ['2026-10-19T10:59:59Z', '2026-10-19T10:30:00Z', '2026-1
   const test = scenario();
   const response = await vm.runInContext('worker.fetch(new Request("https://worker.test/health"), env)', test.context);
   const health = await response.json();
-  assert.equal(health.version, '0.73');
+  assert.equal(health.version, '0.74');
   assert.equal(health.watchdog_stale_after_minutes, 60);
   assert.ok(health.capabilities.includes('collection_watchdog'));
   assert.equal(test.calls.length, 0, 'Public health reports the release without contacting providers');
@@ -120,5 +120,7 @@ for (const options of [
   assert.equal(test.posts().length, 1);
 }
 const config = await fs.readFile('worker/wrangler.toml', 'utf8');
-assert.ok(config.includes('crons = ["*/15 * * * *"]'));
+const crons = JSON.parse(config.match(/^crons = (\[.*\])$/m)[1]);
+assert.ok(crons.includes('*/15 * * * *'), 'the original watchdog schedule is preserved');
+assert.ok(crons.includes('7,22,37,52 * * * *'), 'watchlist uses its own offset, separate from the watchdog');
 console.log('PASS: watchdog freshness ignores manual timestamps, preserves the hourly workflow, skips active/recent runs, limits retries, merges concurrent ticks, validates provider responses and never contacts Meta.');

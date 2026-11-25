@@ -10,6 +10,7 @@ let watchdogInFlight = null;
 
 export default {
   async scheduled(controller, env) {
+    if (controller?.cron === WATCH_CRON) return watchTick(env);
     // The workflow checks freshness again under its existing global lock.
     // That second check also protects against separate Worker instances racing.
     if (watchdogInFlight) return watchdogInFlight;
@@ -34,7 +35,7 @@ export default {
 
     try {
       if (url.pathname === "/health") {
-        return json({ ok: true, service: "soller-ara-admin", version: "0.73", watchdog_stale_after_minutes: 60, capabilities: ["social_settings", "web_analytics", "manual_social_links", "manual_collection", "collection_watchdog"] }, 200, cors);
+        return json({ ok: true, service: "soller-ara-admin", version: "0.74", watchdog_stale_after_minutes: 60, capabilities: ["social_settings", "web_analytics", "manual_social_links", "manual_collection", "collection_watchdog", "social_watch"] }, 200, cors);
       }
 
       if (url.pathname === "/api/login" && request.method === "POST") {
@@ -44,6 +45,7 @@ export default {
       const session = await requireSession(request, env);
       if (!session) return json({ error: "Sesión no válida o caducada." }, 401, cors);
 
+      if (url.pathname === "/api/social-watch") return await watchApi(request, env, cors);
       if (url.pathname === "/api/analytics" && request.method === "GET") {
         return await webAnalytics(url, env, cors);
       }
@@ -705,4 +707,222 @@ async function webAnalytics(url, env, cors) {
   } catch (_) {
     return json({ code: "analytics_unavailable", error: "No se han podido leer las visitas. Prueba de nuevo dentro de unos minutos." }, 502, cors);
   }
+}
+
+// Private social watch. It owns only the watch_* tables and has no publication or GitHub path.
+const WATCH_CRON = "7,22,37,52 * * * *";
+const WATCH_DAY = 86400000;
+const watchInit = new WeakMap();
+const watchCalendar = new Intl.DateTimeFormat("sv-SE", {timeZone:"Europe/Madrid", year:"numeric", month:"2-digit", day:"2-digit"});
+function watchSchema(db) {
+  if (!watchInit.has(db)) watchInit.set(db, db.batch([
+    db.prepare(`CREATE TABLE IF NOT EXISTS watch_accounts (
+      id TEXT PRIMARY KEY, profile_key TEXT UNIQUE NOT NULL, network TEXT NOT NULL, handle TEXT NOT NULL,
+      page_id TEXT NOT NULL DEFAULT '', label TEXT NOT NULL, profile TEXT NOT NULL, added INTEGER NOT NULL,
+      status TEXT NOT NULL DEFAULT 'pending', attempted INTEGER NOT NULL DEFAULT 0, completed INTEGER NOT NULL DEFAULT 0,
+      earliest INTEGER NOT NULL DEFAULT 0, due INTEGER NOT NULL DEFAULT 0, lease TEXT NOT NULL DEFAULT '',
+      cursor TEXT NOT NULL DEFAULT '', scan_from INTEGER NOT NULL DEFAULT 0, scan_start INTEGER NOT NULL DEFAULT 0, scan_partial INTEGER NOT NULL DEFAULT 0)`),
+    db.prepare(`CREATE TABLE IF NOT EXISTS watch_posts (
+      account TEXT NOT NULL REFERENCES watch_accounts(id) ON DELETE CASCADE, k TEXT PRIMARY KEY,
+      stamp INTEGER NOT NULL, day TEXT NOT NULL, url TEXT NOT NULL, brief TEXT NOT NULL)`),
+    db.prepare('CREATE INDEX IF NOT EXISTS watch_dates ON watch_posts(day,stamp,k)'),
+  ]).catch(error => { watchInit.delete(db); throw error; }));
+  return watchInit.get(db);
+}
+function watchFail(code) { const e = new Error(code); e.watchCode = code; return e; }
+function watchUrl(value) {
+  if (typeof value !== "string" || value.length > 1800) return null;
+  try { const u=new URL(value); if (u.protocol!=="https:" || u.port || u.username || u.password) return null; return u; } catch { return null; }
+}
+function watchProfile(input) {
+  const url=watchUrl(input.profile), label=String(input.name||"").trim().slice(0,90);
+  if (!url || url.href.length>350) throw watchFail("profile");
+  const host=url.hostname.replace(/^(www\.|m\.)/,""), path=url.pathname.replace(/^\/|\/$/g,"");
+  let network, handle, profile, pageId="";
+  if (host==="instagram.com" && /^[a-zA-Z0-9._]{1,30}$/.test(path) &&
+      !/^(p|reels?|stories|explore|direct|accounts|share|tv|about|developer|legal|directory|web)$/i.test(path)) {
+    network="instagram"; handle=path.toLowerCase(); profile="https://www.instagram.com/"+handle+"/";
+  } else if (host==="facebook.com") {
+    network="facebook"; handle=path;
+    if (path==="profile.php") {handle=url.searchParams.get("id")||"";if(!/^\d{1,22}$/.test(handle))throw watchFail("profile");}
+    else if (/^(?:pages|people)\/[^/]+\/\d{1,22}$/.test(path)) handle=path.split("/").at(-1);
+    if (!/^[a-zA-Z0-9.\-]{1,90}$/.test(handle) || /(?:\.php$|^(?:groups|group|share|posts|watch|reels?|events|stories|marketplace|gaming|pages|people|login|media|photo|videos|plugins|help))$/i.test(handle)) throw watchFail("profile");
+    handle=handle.toLowerCase(); const explicit=String(input.page_id||"").trim();
+    if (explicit&&!/^\d{1,22}$/.test(explicit)) throw watchFail("page_id");
+    const numeric=/^\d{1,22}$/.test(handle);
+    if (numeric && explicit && explicit!==handle) throw watchFail("page_id");
+    pageId=numeric?handle:explicit;
+    profile=numeric?"https://www.facebook.com/profile.php?id="+handle:"https://www.facebook.com/"+handle+"/";
+  } else throw watchFail("profile");
+  return {network,handle,pageId,profile,label:label||(network==="instagram"?"@":"")+handle,key:network+":"+handle};
+}
+function watchOriginal(raw, network) {
+  const u=watchUrl(raw); if(!u) return "";
+  const host=u.hostname.replace(/^(www\.|m\.)/,"");
+  if(network==="instagram"&&host==="instagram.com"&&/^\/(?:p|reel|tv)\/[\w-]+\/?$/.test(u.pathname))
+    return "https://www.instagram.com"+u.pathname.replace(/\/?$/,"/");
+  if(network==="facebook"&&host==="facebook.com"){
+    if(/^\/(?:story\.php|permalink\.php|photo(?:\.php)?\/?|watch\/?)$/.test(u.pathname)){
+      const q=new URLSearchParams();
+      for(const k of ["story_fbid","id","fbid","v"]) {const v=u.searchParams.get(k); if(v&&/^[\w-]{1,180}$/.test(v))q.set(k,v);}
+      if(!["story_fbid","fbid","v"].some(k=>q.has(k)))return "";
+      return "https://www.facebook.com"+u.pathname+"?"+q.toString();
+    }
+    if(/^\/(?:[^/]+\/(?:posts|photos|videos)(?:\/[\w.\-]+){1,4}|(?:reel|watch\/live)\/[\w.\-]+)\/?$/.test(u.pathname))
+      return "https://www.facebook.com"+u.pathname;
+  }
+  return "";
+}
+const watchStop = new Set(("para sobre desde cuando esta este estas estos estamos nuestra nuestro nuestros nuestra avui aquest aquesta amb per del les ses dels des una unes uns molt més també com pel hem que los las con como por sus nos hay más del els sa ses una unas unos somos molt avui dels the and with from that this your our link bio instagram facebook publicación publicació publicado publicadoa reel reels foto vídeo video fotos imatges imagen mira segueix síguenos compartim compartimos http https www post para".split(" ")));
+function watchBrief(text, kind) {
+  const words=String(text||"").slice(0,2500).replace(/https?:\/\/\S+|@[\p{L}\d._]+/gu," ").match(/[\p{L}\d]+(?:['’·-][\p{L}\d]+)*/gu)||[];
+  const terms=[],seen=new Set();for(const w of words){const key=w.toLocaleLowerCase("es");if(key.length<3||watchStop.has(key)||seen.has(key)||/^\d+$/.test(key)||key.length>35)continue;seen.add(key);terms.push(w);if(terms.length===7)break;}
+  if(!words.length)return (kind==="VIDEO"?"Vídeo":"Publicación")+" sin descripción de la fuente.";
+  // Describe the subject, not an inferred outcome or a copied caption. These are never selection filters.
+  const plain=words.join(" ").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"");
+  const topics=[
+    [/\b(contacontes|cuentacuentos)\b/,"una sesión de cuentacuentos"],[/\btallers?\b|\btalleres\b/,"un taller"],
+    [/\b(inscripcio|inscripcions|inscripcion|inscripciones)\b/,"las inscripciones"],[/\b(horaris?|horarios?)\b/,"los horarios"],
+    [/\b(exposicio|exposicion|exposicions|exposiciones)\b/,"una exposición"],[/\bconcerts?\b|\bconciertos?\b/,"un concierto"],
+    [/\b(autobus|autobusos|bus|transport|transporte|tren|tramvia|tranvia)\b/,"el transporte"],
+    [/\b(partit|partido|partits|partidos|campionat|campeonato|torneig|torneo)\b/,"una competición"],
+    [/\b(reunio|reunion|assemblea|asamblea|plenari|plenario)\b/,"una reunión"],
+    [/\b(transit|trafico|circulacio|circulacion|aparcaments?|aparcamiento)\b/,"la circulación o el aparcamiento"]
+  ].filter(([pattern])=>pattern.test(plain)).map(([,label])=>label).slice(0,2);
+  const hour=String(text||"").match(/\b(?:[01]?\d|2[0-3])[:.]([0-5]\d)\s*(?:h(?:oras)?\b)?/i);
+  let brief=topics.length?"La publicación trata de "+topics.join(" y ")+".":terms.length?"La publicación menciona: "+terms.slice(0,5).join(", ")+".":"La fuente ha compartido una publicación breve.";
+  if(hour)brief+=" Hora mencionada: "+hour[0].trim()+".";
+  else if(topics.length&&terms.length>2)brief+=" Referencias: "+terms.slice(0,4).join(", ")+".";
+  return brief;
+}
+function watchValidDay(day) {
+  return typeof day==="string"&&/^\d{4}-\d{2}-\d{2}$/.test(day)&&Number.isFinite(Date.parse(day+"T12:00:00Z"))&&new Date(day+"T12:00:00Z").toISOString().slice(0,10)===day;
+}
+async function watchApi(req,env,cors) {
+  const db=env.SOCIAL_WATCH_DB;
+  if(!db)return json({code:"watch_storage_setup",error:"El archivo de cuentas compartido aún no está conectado."},503,cors);
+  try {
+    await watchSchema(db);
+    if(req.method==="GET") {
+      const u=new URL(req.url),from=u.searchParams.get("from")||"",to=u.searchParams.get("to")||"";
+      if(!watchValidDay(from)||!watchValidDay(to)||from>to||Date.parse(to)-Date.parse(from)>6*WATCH_DAY)throw watchFail("dates");
+      const before=u.searchParams.get("before")||"";const match=before.match(/^(\d{1,16}):([\w.:_-]{1,220})$/);
+      if(before&&!match)throw watchFail("dates");
+      const [accounts,posts]=await db.batch([
+        db.prepare("SELECT id,label,profile,network,handle,page_id,status,attempted,completed,earliest FROM watch_accounts ORDER BY label COLLATE NOCASE,id"),
+        db.prepare(`SELECT p.k,p.stamp,p.url,p.brief,a.label,a.network FROM watch_posts p JOIN watch_accounts a ON a.id=p.account
+          WHERE day BETWEEN ? AND ? AND (p.stamp < ? OR (p.stamp=? AND p.k>?)) ORDER BY p.stamp DESC,p.k LIMIT 51`)
+          .bind(from,to,match?Number(match[1]):9007199254740991,match?Number(match[1]):9007199254740991,match?match[2]:"")
+      ]);
+      const rows=posts.results.slice(0,50),last=rows.at(-1);
+      return json({accounts:accounts.results,posts:rows,next:posts.results.length>50?last.stamp+":"+last.k:""},200,cors);
+    }
+    if(req.method!=="POST")return json({error:"Método no permitido."},405,cors);
+    let b; try{b=await req.json();}catch{throw watchFail("profile");}if(!b||typeof b!=="object"||Array.isArray(b))throw watchFail("profile");
+    if(b.action==="add"){
+      const p=watchProfile(b);
+      const r=await db.prepare(`INSERT OR IGNORE INTO watch_accounts (id,profile_key,network,handle,page_id,label,profile,added)
+        SELECT ?,?,?,?,?,?,?,? WHERE (SELECT count(*) FROM watch_accounts)<100`)
+        .bind(crypto.randomUUID(),p.key,p.network,p.handle,p.pageId,p.label,p.profile,Date.now()).run();
+      if(!r.meta.changes){const hit=await db.prepare("SELECT id FROM watch_accounts WHERE profile_key=?").bind(p.key).first();return json(hit?{ok:true,existing:true}:{error:"La lista admite hasta 100 cuentas."},hit?200:409,cors);}
+      return json({ok:true},201,cors);
+    }
+    if(!["remove","check"].includes(b.action)||typeof b.id!=="string"||b.id.length>64)throw watchFail("action");
+    const a=await db.prepare("SELECT * FROM watch_accounts WHERE id=?").bind(b.id).first();
+    if(!a)return json({error:"La cuenta ya no está en la lista."},404,cors);
+    if(b.action==="remove"){await db.batch([db.prepare("DELETE FROM watch_posts WHERE account=?").bind(a.id),db.prepare("DELETE FROM watch_accounts WHERE id=?").bind(a.id)]);return json({ok:true},200,cors);}
+    if(a.attempted>Date.now()-60000 || (a.lease&&a.due>Date.now()))return json({error:"Esta cuenta se acaba de revisar. Espera un minuto."},429,cors);
+    return json({ok:true,state:await watchReadAccount(db,env,a,true)},200,cors);
+  }catch(e){
+    const messages={profile:"Pega la dirección del perfil de Instagram o de la página de Facebook, no la de una publicación o grupo.",page_id:"El ID de página debe ser numérico y corresponder a ese perfil.",dates:"Elige un día o una semana válidos.",action:"Acción no válida."};
+    return json({error:messages[e.watchCode]||"No se ha podido consultar el archivo de seguimiento."},messages[e.watchCode]?400:503,cors);
+  }
+}
+async function watchGraph(env,path,params) {
+  const u=new URL("https://graph.facebook.com/v26.0/"+path);
+  for(const [k,v] of Object.entries(params))u.searchParams.set(k,v);
+  const response=await fetch(u.href,{method:"GET",headers:{Authorization:"Bearer "+env.WATCH_META_READ_TOKEN},redirect:"error",signal:AbortSignal.timeout(9000)});
+  let data={};try{data=await response.json();}catch{throw watchFail("temporary");}
+  if(!response.ok||data.error){
+    const code=data.error?.code;
+    if(code===190||response.status===401)throw watchFail("credentials");
+    if([10,200,294].includes(code)||response.status===403)throw watchFail("permission");
+    if([4,17,32,613].includes(code)||response.status===429)throw watchFail("limited");
+    if(code===100||response.status===404)throw watchFail("unavailable");
+    throw watchFail("temporary");
+  }
+  return data;
+}
+async function watchPage(env,a,cursor,from,until){
+  if(!env.WATCH_META_READ_TOKEN || (a.network==="instagram"&&!/^\d{1,24}$/.test(env.WATCH_INSTAGRAM_ID||"")))throw watchFail("credentials");
+  const fields="id,caption,permalink,timestamp,media_type";
+  if(cursor&&!/^[A-Za-z0-9_+=.\/~:-]{1,1800}$/.test(cursor))throw watchFail("cursor");
+  if(a.network==="instagram"){
+    const field=`business_discovery.username(${a.handle}){username,media.limit(35)${cursor?".after("+cursor+")":""}{${fields}}}`;
+    const v=await watchGraph(env,env.WATCH_INSTAGRAM_ID,{fields:field});
+    if(!v.business_discovery||v.business_discovery.username?.toLowerCase()!==a.handle || !Array.isArray(v.business_discovery.media?.data))throw watchFail("unavailable");
+    return v.business_discovery.media;
+  }
+  let pageId=a.page_id;
+  if(!/^\d{1,22}$/.test(a.handle)){
+    const v=await watchGraph(env,pageId||a.handle,{fields:"id,link"});
+    if(!/^\d{1,22}$/.test(v.id||"") || (pageId&&v.id!==pageId))throw watchFail("unavailable");
+    if(pageId){
+      let verified; try{verified=watchProfile({profile:v.link});}catch{}
+      if(verified?.handle!==a.handle)throw watchFail("unavailable");
+    }
+    pageId=v.id;
+  }
+  const v=await watchGraph(env,pageId+"/posts",{fields:"id,created_time,permalink_url,message,story",limit:"35",since:String(Math.floor(from/1000)),until:String(Math.ceil(until/1000)),...(cursor?{after:cursor}:{})});
+  if(!Array.isArray(v.data))throw watchFail("unavailable"); return v;
+}
+async function watchReadAccount(db,env,a,manual=false){
+  const now=Date.now(), lease=crypto.randomUUID();
+  const lock=await db.prepare(`UPDATE watch_accounts SET lease=?,due=?,attempted=? WHERE id=? AND
+    ((lease='' AND (due<=? OR ?=1)) OR due<=?) AND (?=0 OR attempted<=?)`).bind(lease,now+180000,now,a.id,now,manual?1:0,now,manual?1:0,now-60000).run();
+  if(!lock.meta.changes)return "busy";
+  let cursor=a.cursor||"", from=a.scan_from||(a.completed?Math.max(1,a.completed-2*WATCH_DAY):now-30*WATCH_DAY), start=a.scan_start||now;
+  try{
+    for(let n=0;n<2;n++){
+      const page=await watchPage(env,a,cursor,from,start), statements=[], records=[];let valid=0, older=0,skipped=false;
+      for(const v of page.data){
+        const stamp=Date.parse(v.timestamp||v.created_time||"");
+        if(!Number.isFinite(stamp)){skipped=true;continue;}
+        valid++;if(stamp<from){older++;continue;}if(stamp>start)continue;
+        const url=watchOriginal(v.permalink||v.permalink_url,a.network);
+        if(!url||!v.id||!/^[\w-]{1,120}$/.test(v.id)){skipped=true;continue;}
+        records.push([a.id+":"+v.id,stamp,watchCalendar.format(new Date(stamp)),url,watchBrief(v.caption||v.message||v.story,v.media_type)]);
+      }
+      if(records.length) statements.push(db.prepare(`INSERT INTO watch_posts(account,k,stamp,day,url,brief)
+        SELECT a.id,j.value->>0,j.value->>1,j.value->>2,j.value->>3,j.value->>4
+        FROM watch_accounts a,json_each(?) j WHERE a.id=? AND a.lease=? AND true
+        ON CONFLICT(k) DO UPDATE SET url=excluded.url,brief=excluded.brief`).bind(JSON.stringify(records),a.id,lease));
+      const next=page.paging?.next?String(page.paging?.cursors?.after||""):"";
+      if(page.paging?.next&&(!next||next===cursor||!/^[A-Za-z0-9_+=.\/~:-]{1,1800}$/.test(next)))throw watchFail("cursor");
+      const done=!next||(valid>0 && older===page.data.length && (a.network==="facebook"||!!cursor));
+      // Unusable rows must never turn into a claim of complete coverage.
+      const partial=skipped||Boolean(a.scan_partial);
+      if(done)statements.push(db.prepare(`UPDATE watch_accounts SET completed=?,earliest=CASE WHEN earliest=0 THEN ? ELSE min(earliest,?) END,
+        status=?,due=?,lease='',cursor='',scan_from=0,scan_start=0,scan_partial=0 WHERE id=? AND lease=?`).bind(start,from,from,partial?"incomplete":"ready",now+3600000,a.id,lease));
+      else statements.push(db.prepare("UPDATE watch_accounts SET status=?,due=?,cursor=?,scan_from=?,scan_start=?,scan_partial=?,lease=? WHERE id=? AND lease=?")
+        .bind(partial?"partial_rows":"catching_up",n===1?now+60000:now+180000,next,from,start,partial?1:0,n===1?"":lease,a.id,lease));
+      await db.batch(statements);
+      if(done)return partial?"incomplete":"ready";
+      a.scan_partial=partial?1:0; cursor=next;
+    }
+    return "catching_up";
+  }catch(e){
+    const status=["credentials","permission","limited","unavailable","cursor"].includes(e.watchCode)?e.watchCode:"temporary";
+    const delay=status==="credentials"||status==="permission"||status==="unavailable"?12*3600000:status==="limited"?2*3600000:30*60000;
+    const reset=status==="cursor"||(status==="unavailable"&&cursor);
+    await db.prepare("UPDATE watch_accounts SET status=?,due=?,lease='',cursor=CASE WHEN ? THEN '' ELSE cursor END WHERE id=? AND lease=?")
+      .bind(status,now+delay,reset?1:0,a.id,lease).run();return status;
+  }
+}
+async function watchTick(env) {
+  const db=env.SOCIAL_WATCH_DB;if(!db)return {action:"watch_not_configured"};
+  await watchSchema(db);
+  const {results}=await db.prepare("SELECT * FROM watch_accounts WHERE due<=? ORDER BY due,id LIMIT 3").bind(Date.now()).all();
+  for(const a of results)await watchReadAccount(db,env,a);
+  return {action:"social_watch",accounts:results.length};
 }

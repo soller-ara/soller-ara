@@ -495,6 +495,27 @@
     setMessage(socialLinkMessage, "");
   }
 
+  // Hand off a review candidate as a draft only; never submit it or replace an edit.
+  window.SOLLER_ARA_WATCH_DRAFT = (source, original) => {
+    if (socialLinkSubmitButton.disabled || socialLinkEditPostId) throw new Error("Termina o cancela la edición en «Enlaces de redes» antes de preparar otro enlace.");
+    const url = new URL(original);
+    if (url.protocol !== "https:" || !["www.instagram.com", "www.facebook.com"].includes(url.hostname) || url.username || url.password || url.port) throw new Error("Enlace original no válido.");
+    const dirty = Array.from(socialLinkForm.elements).some(el => {
+      if (el.tagName === "SELECT") return el.value !== (Array.from(el.options).find(o => o.defaultSelected) || el.options[0]).value;
+      if (["checkbox", "radio"].includes(el.type)) return el.checked !== el.defaultChecked;
+      return ["INPUT", "TEXTAREA"].includes(el.tagName) && el.value !== el.defaultValue;
+    });
+    if (dirty && !window.confirm("Ya hay un borrador en «Enlaces de redes». ¿Sustituirlo por este enlace?")) return false;
+    resetSocialLinkEditMode(true);
+    socialLinkForm.elements.source_name.value = String(source || "").slice(0, 120);
+    socialLinkForm.elements.original_url.value = url.href;
+    socialLinkForm.elements.facebook.checked = socialLinkForm.elements.instagram.checked = false;
+    openModule("social-links");
+    setMessage(socialLinkMessage, "Enlace preparado. Revisa el formulario y elige los destinos antes de publicar.");
+    socialLinkForm.elements.original_url.focus();
+    return true;
+  };
+
   function updateSocialPosterFields() {
     const isPoster = socialLinkForm.elements.content_type.value === "event_poster";
     const fields = socialLinkForm.querySelector(".social-poster-fields");

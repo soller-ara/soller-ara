@@ -3,7 +3,7 @@ main = "admin-worker.js"
 compatibility_date = "2026-09-16"
 
 [triggers]
-crons = ["*/15 * * * *"]
+crons = ["*/15 * * * *", "7,22,37,52 * * * *"]
 
 [vars]
 ALLOWED_ORIGIN = "https://soller-ara.github.io"
@@ -21,3 +21,11 @@ GITHUB_BRANCH = "main"
 # Estadísticas privadas (opcional):
 # CF_ANALYTICS_ACCOUNT_ID: ID de la cuenta, no el token público del beacon.
 # CF_ANALYTICS_API_TOKEN: secret con permiso Account Analytics:Read.
+
+# Seguimiento social opcional (privado). No reutilizar la base de otra aplicación.
+# Al desplegar con Wrangler, descomenta el binding y usa el ID real creado en tu cuenta:
+# [[d1_databases]]
+# binding = "SOCIAL_WATCH_DB"
+# database_name = "soller-ara-seguiment"
+# database_id = "ID de la base privada"
+# WATCH_META_READ_TOKEN: secret de solo lectura. WATCH_INSTAGRAM_ID: ID profesional propio.
