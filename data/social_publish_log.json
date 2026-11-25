@@ -21674,6 +21674,15 @@
       "mode": "automatic_collected",
       "recorded_at": "2026-11-25T08:37:55.488126+00:00",
       "error": ""
+    },
+    {
+      "post_id": "soller-ara-714ac1601ff0046b",
+      "platform": "facebook",
+      "status": "error",
+      "remote_id": "",
+      "post_url": "https://soller-ara.github.io/soller-ara/noticies/soller-ara-714ac1601ff0046b.html",
+      "recorded_at": "2026-11-25T10:30:30.892711+00:00",
+      "error": "The url you supplied is invalid [code=1500, subcode=1611248]"
     }
   ],
   "cooldowns": {
