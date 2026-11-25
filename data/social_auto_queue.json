@@ -1,6 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-11-25T13:51:39.386069+00:00",
+  "entries": [
+    {
+      "post_id": "9713c122f211bc156d85",
+      "title": "Jornada d’anellament científic d’aus a les marjades de Son Angelats",
+      "summary": "",
+      "source": "MUCBO · Jardí Botànic i Museu de Ciències Naturals",
+      "source_id": "mucbo-noticies",
+      "source_type": "institution",
+      "category": "culture",
+      "language": "ca",
+      "published_at": "2026-11-25T12:57:33+00:00",
+      "original_url": "https://mucbo.org/jornada-danellament-cientific-daus-a-les-marjades-de-son-angelats/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "link_only_no_media_license",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/9713c122f211bc156d85.jpg"
+    }
+  ]
 }
