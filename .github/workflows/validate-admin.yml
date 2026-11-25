@@ -59,6 +59,7 @@ jobs:
           node --check admin/editorial-guide.js
           node tests/test_editorial_guide.mjs
           node tests/test_web_discovery.mjs
+          node tests/test_social_watch.mjs
           node --check admin/sources-v2.js
           node --check admin/visits-v1.js
           node tests/test_admin_analytics.mjs
