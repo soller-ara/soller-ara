@@ -8,7 +8,7 @@ Acceso directo: [abrir la sección](https://soller-ara.github.io/soller-ara/admi
 2. En **Settings → Variables and Secrets**, añadir **WATCH_META_READ_TOKEN** como *Secret* con un token de lectura autorizado por Meta. Para Instagram, añadir también **WATCH_INSTAGRAM_ID**, el ID numérico de la cuenta profesional propia vinculada al token. No sustituir los secretos del sistema de publicación ni enviar tokens por chat. El archivo funciona aunque falten permisos: conserva la lista, identifica qué cuenta no se ha podido leer y permite abrir su perfil.
 3. Actualizar el Worker con el [archivo completo](../worker/admin-worker.js). En el editor inglés: **Edit code → Deploy**. Si se usa Wrangler en lugar del panel, añadir primero el ID real de la base al bloque D1 indicado en [wrangler.toml](../worker/wrangler.toml), conservando los bindings existentes.
 4. En **Settings → Trigger Events → Cron Triggers**, **conservar** `*/15 * * * *` y **añadir** `7,22,37,52 * * * *`. Este segundo horario solo consulta las cuentas de esta lista. No llama al recopilador ni a los endpoints de publicación.
-5. Abrir [salud del Worker](https://soller-ara-admin.infosollerara.workers.dev/health): la versión **0.75** incluye la capacidad **social_watch**. Esto confirma la versión, no el permiso de lectura. Al entrar en **Cuentas que sigo**, debe verse «Lista privada de Administración». Añadir una cuenta elegida y usar **Comprobar lectura**: las respuestas de Meta se muestran por cuenta. Sin el binding o con el Worker anterior se ofrece una lista explícitamente **solo en este dispositivo**. Cuando el servidor esté conectado se pueden importar esas cuentas sin duplicarlas; el borrado de datos del navegador elimina una lista provisional.
+5. Abrir [salud del Worker](https://soller-ara-admin.infosollerara.workers.dev/health): la versión **0.76** incluye la capacidad **social_watch**. Esto confirma la versión, no el permiso de lectura. Al entrar en **Cuentas que sigo**, debe verse «Lista privada de Administración». Añadir una cuenta elegida y usar **Comprobar lectura**: las respuestas de Meta se muestran por cuenta. Sin el binding o con el Worker anterior se ofrece una lista explícitamente **solo en este dispositivo**. Cuando el servidor esté conectado se pueden importar esas cuentas sin duplicarlas; el borrado de datos del navegador elimina una lista provisional.
 
 ## Qué cubre la lista
 
@@ -20,8 +20,10 @@ Acceso directo: [abrir la sección](https://soller-ara.github.io/soller-ara/admi
 
 ## Diagnóstico de lectura
 
-La versión 0.75 continúa la paginación de Instagram con sus cursores, aunque Meta no incluya `paging.next`. Una página vacía cierra la lectura; los turnos limitados conservan el cursor y la cobertura parcial.
+La versión 0.76 continúa la paginación de Instagram con sus cursores, aunque Meta no incluya `paging.next`. Una página vacía cierra la lectura; los turnos limitados conservan el cursor y la cobertura parcial.
 
 Si «Comprobar lectura» se interrumpe, distingue entre la consulta a Meta, el procesamiento y el guardado. El diagnóstico solo contiene etiquetas fijas y códigos numéricos o SQLite permitidos: nunca devuelve ni registra el token, la URL de consulta ni el mensaje original de error. El error Meta 110 se muestra como cuenta que no se puede identificar o consultar; no se presenta como una interrupción temporal.
 
 El token de lectura se guarda como secreto en Cloudflare y debe renovarse antes de su caducidad. Su actualización no sustituye las credenciales de publicación de GitHub.
+
+La versión 0.76 usa `redirect: "manual"` al consultar Meta y rechaza cualquier respuesta 3xx sin reenviar el token. Cloudflare no implementa `redirect: "error"`: esa opción producía un TypeError antes de enviar la consulta. Se ha reproducido el error con workerd y se ha comprobado la lectura con D1 local y respuestas de Meta simuladas, sin permitir conexiones externas.

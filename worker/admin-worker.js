@@ -35,7 +35,7 @@ export default {
 
     try {
       if (url.pathname === "/health") {
-        return json({ ok: true, service: "soller-ara-admin", version: "0.75", watchdog_stale_after_minutes: 60, capabilities: ["social_settings", "web_analytics", "manual_social_links", "manual_collection", "collection_watchdog", "social_watch"] }, 200, cors);
+        return json({ ok: true, service: "soller-ara-admin", version: "0.76", watchdog_stale_after_minutes: 60, capabilities: ["social_settings", "web_analytics", "manual_social_links", "manual_collection", "collection_watchdog", "social_watch"] }, 200, cors);
       }
 
       if (url.pathname === "/api/login" && request.method === "POST") {
@@ -737,7 +737,7 @@ function watchDiagnostic(error,stage) {
     if(Number.isSafeInteger(source[key])&&source[key]>=0&&source[key]<=2147483647)detail[key]=source[key];
   if(["Error","TypeError","RangeError","SyntaxError","AbortError","TimeoutError"].includes(error?.name))detail.error_type=error.name;
   if(["AbortError","TimeoutError"].includes(error?.name))detail.reason="timeout";
-  else if(source.reason==="response_format")detail.reason="response_format";
+  else if(["response_format","redirect"].includes(source.reason))detail.reason=source.reason;
   else if(stage==="meta"&&error?.name==="TypeError")
     detail.reason=/header|character|bytestring/i.test(String(error.message||""))?"request_headers":"network";
   const sqlite=String(error?.message||"").match(/\bSQLITE_(?:ERROR|BUSY|LOCKED|CONSTRAINT|FULL|TOOBIG|MISMATCH|RANGE|CORRUPT|IOERR)\b/);
@@ -872,7 +872,9 @@ async function watchApi(req,env,cors) {
 async function watchGraph(env,path,params) {
   const u=new URL("https://graph.facebook.com/v26.0/"+path);
   for(const [k,v] of Object.entries(params))u.searchParams.set(k,v);
-  const response=await fetch(u.href,{method:"GET",headers:{Authorization:"Bearer "+env.WATCH_META_READ_TOKEN},redirect:"error",signal:AbortSignal.timeout(9000)});
+  // Workers does not implement redirect:error. Manual also prevents forwarding credentials to another host.
+  const response=await fetch(u.href,{method:"GET",headers:{Authorization:"Bearer "+env.WATCH_META_READ_TOKEN},redirect:"manual",signal:AbortSignal.timeout(9000)});
+  if(response.status>=300&&response.status<400)throw watchFail("temporary",{http_status:response.status,reason:"redirect"});
   let data={};try{data=await response.json();}catch{throw watchFail("temporary",{http_status:response.status,reason:"response_format"});}
   if(!response.ok||data.error){
     const code=data.error?.code;

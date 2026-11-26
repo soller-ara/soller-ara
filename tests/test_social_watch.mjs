@@ -24,8 +24,9 @@ const calls=[],env={SOCIAL_WATCH_DB:db,SESSION_SECRET:'isolated-test-session',WA
 let reply;
 const diagnosticLogs=[];
 const context=vm.createContext({URL,URLSearchParams,Date:Clock,Intl,Request,Response,Headers,AbortSignal,TextEncoder,TextDecoder,crypto:webcrypto,btoa,atob,env,console:{...console,warn:value=>diagnosticLogs.push(String(value))},fetch:async(url,opts)=>{
-  assert.equal(opts.method,'GET');assert.equal(opts.headers.Authorization,'Bearer offline-only');const u=new URL(url);
-  assert.equal(u.host,'graph.facebook.com');assert.equal(u.searchParams.has('access_token'),false);calls.push(u);const body=reply(u);return new Response(JSON.stringify(body),{status:body.error?400:200});
+  assert.equal(opts.method,'GET');assert.equal(opts.headers.Authorization,'Bearer offline-only');
+  assert.equal(opts.redirect,'manual','Workers rejects redirect:error; credentials must never follow redirects');const u=new URL(url);
+  assert.equal(u.host,'graph.facebook.com');assert.equal(u.searchParams.has('access_token'),false);calls.push(u);const body=reply(u);return body instanceof Response?body:new Response(JSON.stringify(body),{status:body.error?400:200});
 }});
 vm.runInContext(workerSource,context); vm.runInContext(ui,context);
 const run=(expr)=>vm.runInContext(expr,context);
@@ -75,6 +76,12 @@ assert.equal(failure[1].diagnostic.http_status,400);
 assert.equal(failure[1].diagnostic.meta_subcode,42);assert.match(failure[1].error,/Meta/);
 assert.ok(!JSON.stringify(failure[1]).includes('offline-only'));
 sql.prepare('UPDATE watch_accounts SET attempted=0,due=0').run();
+reply=()=>new Response('',{status:302,headers:{Location:'https://other.invalid/never-follow?access_token=offline-only'}});
+const callsBeforeRedirect=calls.length;failure=await request({action:'check',id});
+assert.equal(failure[0],503);assert.equal(failure[1].diagnostic.reason,'redirect');
+assert.equal(failure[1].diagnostic.http_status,302);assert.equal(calls.length,callsBeforeRedirect+1);
+assert.ok(!JSON.stringify(failure[1]).includes('offline-only'));assert.ok(!JSON.stringify(failure[1]).includes('other.invalid'));
+sql.prepare('UPDATE watch_accounts SET attempted=0,due=0').run();
 reply=()=>{const e=Error('Never echo offline-only');e.name='TimeoutError';throw e;};
 failure=await request({action:'check',id});assert.equal(failure[0],503);
 assert.equal(failure[1].diagnostic.stage,'meta');assert.equal(failure[1].diagnostic.reason,'timeout');
@@ -92,7 +99,7 @@ assert.equal(failure[1].diagnostic.db_code,'SQLITE_ERROR');assert.match(failure[
 assert.ok(!JSON.stringify(failure[1]).includes('offline-only'));
 data=(await request())[1];assert.equal(data.posts.length,2);assert.equal(data.accounts[0].status,'temporary');
 assert.equal(sql.prepare('SELECT lease FROM watch_accounts WHERE id=?').get(id).lease,'');
-assert.equal(diagnosticLogs.length,4);assert.ok(diagnosticLogs.every(line=>!line.includes('offline-only')));
+assert.equal(diagnosticLogs.length,5);assert.ok(diagnosticLogs.every(line=>!line.includes('offline-only')));
 const fb={action:'add',profile:'https://www.facebook.com/profile.php?id=456',name:'Pàgina'};
 assert.equal((await request(fb))[0],201);const fid=(await request())[1].accounts.find(x=>x.network==='facebook').id;
 reply=u=>{assert.match(u.pathname,/\/456\/posts$/);return {data:[{id:'456_7',created_time:'2026-11-25T11:00:00+0000',permalink_url:'https://www.facebook.com/permalink.php?story_fbid=7&id=456&utm_source=other',message:'Avís canvi del calendari'}]};};

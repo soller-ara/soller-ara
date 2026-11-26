@@ -57,7 +57,7 @@ for (const timestamp of ['2026-10-19T10:59:59Z', '2026-10-19T10:30:00Z', '2026-1
   const test = scenario();
   const response = await vm.runInContext('worker.fetch(new Request("https://worker.test/health"), env)', test.context);
   const health = await response.json();
-  assert.equal(health.version, '0.75');
+  assert.equal(health.version, '0.76');
   assert.equal(health.watchdog_stale_after_minutes, 60);
   assert.ok(health.capabilities.includes('collection_watchdog'));
   assert.equal(test.calls.length, 0, 'Public health reports the release without contacting providers');
