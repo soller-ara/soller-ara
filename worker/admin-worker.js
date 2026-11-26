@@ -35,7 +35,7 @@ export default {
 
     try {
       if (url.pathname === "/health") {
-        return json({ ok: true, service: "soller-ara-admin", version: "0.74", watchdog_stale_after_minutes: 60, capabilities: ["social_settings", "web_analytics", "manual_social_links", "manual_collection", "collection_watchdog", "social_watch"] }, 200, cors);
+        return json({ ok: true, service: "soller-ara-admin", version: "0.75", watchdog_stale_after_minutes: 60, capabilities: ["social_settings", "web_analytics", "manual_social_links", "manual_collection", "collection_watchdog", "social_watch"] }, 200, cors);
       }
 
       if (url.pathname === "/api/login" && request.method === "POST") {
@@ -729,7 +729,29 @@ function watchSchema(db) {
   ]).catch(error => { watchInit.delete(db); throw error; }));
   return watchInit.get(db);
 }
-function watchFail(code) { const e = new Error(code); e.watchCode = code; return e; }
+function watchFail(code, diagnostic) { const e = new Error(code); e.watchCode = code; if(diagnostic)e.watchDiagnostic=diagnostic; return e; }
+function watchDiagnostic(error,stage) {
+  // Only fixed labels and numeric codes may leave this reader. Never return/log raw errors, URLs or tokens.
+  const detail={stage,reason:"unexpected"}, source=error?.watchDiagnostic||{};
+  for(const key of ["http_status","meta_code","meta_subcode"])
+    if(Number.isSafeInteger(source[key])&&source[key]>=0&&source[key]<=2147483647)detail[key]=source[key];
+  if(["AbortError","TimeoutError"].includes(error?.name))detail.reason="timeout";
+  else if(source.reason==="response_format")detail.reason="response_format";
+  const sqlite=String(error?.message||"").match(/\bSQLITE_(?:ERROR|BUSY|LOCKED|CONSTRAINT|FULL|TOOBIG|MISMATCH|RANGE|CORRUPT|IOERR)\b/);
+  if(stage==="archive"&&sqlite)detail.db_code=sqlite[0];
+  return detail;
+}
+function watchManualFailure(detail) {
+  const message=detail.stage==="archive"?"La lectura se ha interrumpido al guardar en el archivo.":
+    detail.stage==="meta"?(detail.reason==="timeout"?"Meta no ha respondido dentro del plazo de lectura.":"La consulta a Meta no se ha completado."):
+    "No se ha podido procesar la respuesta de lectura.";
+  const codes=[];
+  if(detail.http_status)codes.push("HTTP "+detail.http_status);
+  if(detail.meta_code!==undefined)codes.push("Meta "+detail.meta_code);
+  if(detail.meta_subcode!==undefined)codes.push("subcódigo "+detail.meta_subcode);
+  if(detail.db_code)codes.push(detail.db_code);
+  return message+(codes.length?" Diagnóstico: "+codes.join(", ")+".":"")+" El archivo anterior se conserva.";
+}
 function watchUrl(value) {
   if (typeof value !== "string" || value.length > 1800) return null;
   try { const u=new URL(value); if (u.protocol!=="https:" || u.port || u.username || u.password) return null; return u; } catch { return null; }
@@ -832,7 +854,10 @@ async function watchApi(req,env,cors) {
     if(!a)return json({error:"La cuenta ya no está en la lista."},404,cors);
     if(b.action==="remove"){await db.batch([db.prepare("DELETE FROM watch_posts WHERE account=?").bind(a.id),db.prepare("DELETE FROM watch_accounts WHERE id=?").bind(a.id)]);return json({ok:true},200,cors);}
     if(a.attempted>Date.now()-60000 || (a.lease&&a.due>Date.now()))return json({error:"Esta cuenta se acaba de revisar. Espera un minuto."},429,cors);
-    return json({ok:true,state:await watchReadAccount(db,env,a,true)},200,cors);
+    const state=await watchReadAccount(db,env,a,true);
+    if(state==="temporary"&&a.watchDiagnostic)
+      return json({code:"watch_read_interrupted",state,error:watchManualFailure(a.watchDiagnostic),diagnostic:a.watchDiagnostic},503,cors);
+    return json({ok:true,state},200,cors);
   }catch(e){
     const messages={profile:"Pega la dirección del perfil de Instagram o de la página de Facebook, no la de una publicación o grupo.",page_id:"El ID de página debe ser numérico y corresponder a ese perfil.",dates:"Elige un día o una semana válidos.",action:"Acción no válida."};
     return json({error:messages[e.watchCode]||"No se ha podido consultar el archivo de seguimiento."},messages[e.watchCode]?400:503,cors);
@@ -842,14 +867,14 @@ async function watchGraph(env,path,params) {
   const u=new URL("https://graph.facebook.com/v26.0/"+path);
   for(const [k,v] of Object.entries(params))u.searchParams.set(k,v);
   const response=await fetch(u.href,{method:"GET",headers:{Authorization:"Bearer "+env.WATCH_META_READ_TOKEN},redirect:"error",signal:AbortSignal.timeout(9000)});
-  let data={};try{data=await response.json();}catch{throw watchFail("temporary");}
+  let data={};try{data=await response.json();}catch{throw watchFail("temporary",{http_status:response.status,reason:"response_format"});}
   if(!response.ok||data.error){
     const code=data.error?.code;
     if(code===190||response.status===401)throw watchFail("credentials");
     if([10,200,294].includes(code)||response.status===403)throw watchFail("permission");
     if([4,17,32,613].includes(code)||response.status===429)throw watchFail("limited");
-    if(code===100||response.status===404)throw watchFail("unavailable");
-    throw watchFail("temporary");
+    if([100,110].includes(code)||response.status===404)throw watchFail("unavailable");
+    throw watchFail("temporary",{http_status:response.status,meta_code:code,meta_subcode:data.error?.error_subcode});
   }
   return data;
 }
@@ -881,10 +906,12 @@ async function watchReadAccount(db,env,a,manual=false){
   const lock=await db.prepare(`UPDATE watch_accounts SET lease=?,due=?,attempted=? WHERE id=? AND
     ((lease='' AND (due<=? OR ?=1)) OR due<=?) AND (?=0 OR attempted<=?)`).bind(lease,now+180000,now,a.id,now,manual?1:0,now,manual?1:0,now-60000).run();
   if(!lock.meta.changes)return "busy";
-  let cursor=a.cursor||"", from=a.scan_from||(a.completed?Math.max(1,a.completed-2*WATCH_DAY):now-30*WATCH_DAY), start=a.scan_start||now;
+  let cursor=a.cursor||"", from=a.scan_from||(a.completed?Math.max(1,a.completed-2*WATCH_DAY):now-30*WATCH_DAY), start=a.scan_start||now, stage="meta";
   try{
     for(let n=0;n<2;n++){
+      stage="meta";
       const page=await watchPage(env,a,cursor,from,start), statements=[], records=[];let valid=0, older=0,skipped=false;
+      stage="process";
       for(const v of page.data){
         const stamp=Date.parse(v.timestamp||v.created_time||"");
         if(!Number.isFinite(stamp)){skipped=true;continue;}
@@ -897,8 +924,10 @@ async function watchReadAccount(db,env,a,manual=false){
         SELECT a.id,j.value->>0,j.value->>1,j.value->>2,j.value->>3,j.value->>4
         FROM watch_accounts a,json_each(?) j WHERE a.id=? AND a.lease=? AND true
         ON CONFLICT(k) DO UPDATE SET url=excluded.url,brief=excluded.brief`).bind(JSON.stringify(records),a.id,lease));
-      const next=page.paging?.next?String(page.paging?.cursors?.after||""):"";
-      if(page.paging?.next&&(!next||next===cursor||!/^[A-Za-z0-9_+=.\/~:-]{1,1800}$/.test(next)))throw watchFail("cursor");
+      // Business Discovery supplies after cursors without paging.next. Stop on an empty terminal page.
+      const more=page.data.length>0&&Boolean(a.network==="instagram"?(page.paging?.cursors?.after||page.paging?.next):page.paging?.next);
+      const next=more?String(page.paging?.cursors?.after||""):"";
+      if(more&&(!next||next===cursor||!/^[A-Za-z0-9_+=.\/~:-]{1,1800}$/.test(next)))throw watchFail("cursor");
       const done=!next||(valid>0 && older===page.data.length && (a.network==="facebook"||!!cursor));
       // Unusable rows must never turn into a claim of complete coverage.
       const partial=skipped||Boolean(a.scan_partial);
@@ -906,6 +935,7 @@ async function watchReadAccount(db,env,a,manual=false){
         status=?,due=?,lease='',cursor='',scan_from=0,scan_start=0,scan_partial=0 WHERE id=? AND lease=?`).bind(start,from,from,partial?"incomplete":"ready",now+3600000,a.id,lease));
       else statements.push(db.prepare("UPDATE watch_accounts SET status=?,due=?,cursor=?,scan_from=?,scan_start=?,scan_partial=?,lease=? WHERE id=? AND lease=?")
         .bind(partial?"partial_rows":"catching_up",n===1?now+60000:now+180000,next,from,start,partial?1:0,n===1?"":lease,a.id,lease));
+      stage="archive";
       await db.batch(statements);
       if(done)return partial?"incomplete":"ready";
       a.scan_partial=partial?1:0; cursor=next;
@@ -913,6 +943,10 @@ async function watchReadAccount(db,env,a,manual=false){
     return "catching_up";
   }catch(e){
     const status=["credentials","permission","limited","unavailable","cursor"].includes(e.watchCode)?e.watchCode:"temporary";
+    if(status==="temporary"){
+      a.watchDiagnostic=watchDiagnostic(e,stage);
+      console.warn("SOCIAL_WATCH_READ "+JSON.stringify(a.watchDiagnostic));
+    }
     const delay=status==="credentials"||status==="permission"||status==="unavailable"?12*3600000:status==="limited"?2*3600000:30*60000;
     const reset=status==="cursor"||(status==="unavailable"&&cursor);
     await db.prepare("UPDATE watch_accounts SET status=?,due=?,lease='',cursor=CASE WHEN ? THEN '' ELSE cursor END WHERE id=? AND lease=?")

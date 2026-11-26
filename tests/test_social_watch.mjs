@@ -12,16 +12,20 @@ class Stmt {
   exec(){const st=sql.prepare(this.q);if(st.columns().length)return {results:st.all(...this.b)};return {meta:{changes:Number(st.run(...this.b).changes)}};}
   async run(){return this.exec();} async all(){return this.exec();} async first(){return sql.prepare(this.q).get(...this.b);}
 }
-const db={prepare:q=>new Stmt(q),async batch(ss){sql.exec('BEGIN');try{const out=ss.map(s=>s.exec());sql.exec('COMMIT');return out;}catch(e){sql.exec('ROLLBACK');throw e;}}};
+let failArchive=false;
+const db={prepare:q=>new Stmt(q),async batch(ss){
+  if(failArchive&&ss.some(s=>s.q.includes('INSERT INTO watch_posts')))throw Error('D1_ERROR: archive failed: SQLITE_ERROR; offline-only');
+  sql.exec('BEGIN');try{const out=ss.map(s=>s.exec());sql.exec('COMMIT');return out;}catch(e){sql.exec('ROLLBACK');throw e;}}};
 const workerSource=(await fs.readFile('worker/admin-worker.js','utf8')).replace('export default {','const worker = {');
 const ui=await fs.readFile('admin/social-watch.js','utf8');
 const now=Date.parse('2026-11-25T16:30:00Z');
 class Clock extends Date{static now(){return now;}}
 const calls=[],env={SOCIAL_WATCH_DB:db,SESSION_SECRET:'isolated-test-session',WATCH_META_READ_TOKEN:'offline-only',WATCH_INSTAGRAM_ID:'123'};
 let reply;
-const context=vm.createContext({URL,URLSearchParams,Date:Clock,Intl,Request,Response,Headers,AbortSignal,TextEncoder,TextDecoder,crypto:webcrypto,btoa,atob,env,console,fetch:async(url,opts)=>{
+const diagnosticLogs=[];
+const context=vm.createContext({URL,URLSearchParams,Date:Clock,Intl,Request,Response,Headers,AbortSignal,TextEncoder,TextDecoder,crypto:webcrypto,btoa,atob,env,console:{...console,warn:value=>diagnosticLogs.push(String(value))},fetch:async(url,opts)=>{
   assert.equal(opts.method,'GET');assert.equal(opts.headers.Authorization,'Bearer offline-only');const u=new URL(url);
-  assert.equal(u.host,'graph.facebook.com');assert.equal(u.searchParams.has('access_token'),false);calls.push(u);return new Response(JSON.stringify(reply(u)),{status:200});
+  assert.equal(u.host,'graph.facebook.com');assert.equal(u.searchParams.has('access_token'),false);calls.push(u);const body=reply(u);return new Response(JSON.stringify(body),{status:body.error?400:200});
 }});
 vm.runInContext(workerSource,context); vm.runInContext(ui,context);
 const run=(expr)=>vm.runInContext(expr,context);
@@ -43,7 +47,12 @@ const id=(await request())[1].accounts[0].id;
 let pages=0;
 const post=(id,stamp,caption='Taller infantil: ceràmica i fang')=>({id:String(id),timestamp:stamp,caption,permalink:'https://www.instagram.com/p/P'+id+'/?igsh=tracking'});
 reply=u=>{assert.match(u.searchParams.get('fields'),/business_discovery.username\(local_museu\)/);
-  const n=++pages;return {business_discovery:{username:'LOCAL_MUSEU',media:n===1?{data:[post(1,'2026-11-24T23:30:00Z')],paging:{next:'opaque',cursors:{after:'page_2'}}}:n===2?{data:[post(2,'2026-11-24T13:00:00Z')],paging:{next:'opaque',cursors:{after:'page_3'}}}:{data:[post(1,'2026-11-24T23:30:00Z'),post(3,'2026-11-25T10:00:00Z','')]}}};};
+  // Business Discovery returns cursors without paging.next; a final cursor may lead to an empty page.
+  const n=++pages,media=n===1?{data:[post(1,'2026-11-24T23:30:00Z')],paging:{cursors:{after:'page_2'}}}
+    :n===2?{data:[post(2,'2026-11-24T13:00:00Z')],paging:{cursors:{after:'page_3'}}}
+    :n===3?{data:[post(1,'2026-11-24T23:30:00Z'),post(3,'2026-11-25T10:00:00Z','')],paging:{cursors:{after:'page_4'}}}
+    :{data:[],paging:{cursors:{after:'page_4'}}};
+  return {business_discovery:{username:'LOCAL_MUSEU',media}};};
 assert.equal((await request({action:'check',id}))[1].state,'catching_up');
 assert.equal((await request({action:'check',id}))[0],429);
 sql.prepare('UPDATE watch_accounts SET attempted=0,due=0').run();await run('worker.scheduled({cron: WATCH_CRON},env)');
@@ -55,6 +64,30 @@ assert.equal((await request(undefined,{url:path.replace('from=2026-11-25','from=
 sql.prepare('UPDATE watch_accounts SET attempted=0,due=0').run();reply=()=>({error:{code:10}});
 assert.equal((await request({action:'check',id}))[1].state,'permission');
 data=(await request())[1];assert.equal(data.posts.length,2);assert.equal(data.accounts[0].status,'permission');
+sql.prepare('UPDATE watch_accounts SET attempted=0,due=0').run();
+reply=()=>({error:{code:110,error_subcode:2207013,message:'Never echo the secret offline-only'}});
+assert.equal((await request({action:'check',id}))[1].state,'unavailable');
+sql.prepare('UPDATE watch_accounts SET attempted=0,due=0').run();
+reply=()=>({error:{code:1,error_subcode:42,message:'Never echo the secret offline-only'}});
+let failure=await request({action:'check',id});assert.equal(failure[0],503);
+assert.equal(failure[1].diagnostic.stage,'meta');assert.equal(failure[1].diagnostic.meta_code,1);
+assert.equal(failure[1].diagnostic.http_status,400);
+assert.equal(failure[1].diagnostic.meta_subcode,42);assert.match(failure[1].error,/Meta/);
+assert.ok(!JSON.stringify(failure[1]).includes('offline-only'));
+sql.prepare('UPDATE watch_accounts SET attempted=0,due=0').run();
+reply=()=>{const e=Error('Never echo offline-only');e.name='TimeoutError';throw e;};
+failure=await request({action:'check',id});assert.equal(failure[0],503);
+assert.equal(failure[1].diagnostic.stage,'meta');assert.equal(failure[1].diagnostic.reason,'timeout');
+assert.ok(!JSON.stringify(failure[1]).includes('offline-only'));
+sql.prepare('UPDATE watch_accounts SET attempted=0,due=0').run();
+reply=()=>({business_discovery:{username:'local_museu',media:{data:[post(4,'2026-11-25T11:00:00Z')]}}});
+failArchive=true;failure=await request({action:'check',id});failArchive=false;
+assert.equal(failure[0],503);assert.equal(failure[1].diagnostic.stage,'archive');
+assert.equal(failure[1].diagnostic.db_code,'SQLITE_ERROR');assert.match(failure[1].error,/guardar/);
+assert.ok(!JSON.stringify(failure[1]).includes('offline-only'));
+data=(await request())[1];assert.equal(data.posts.length,2);assert.equal(data.accounts[0].status,'temporary');
+assert.equal(sql.prepare('SELECT lease FROM watch_accounts WHERE id=?').get(id).lease,'');
+assert.equal(diagnosticLogs.length,3);assert.ok(diagnosticLogs.every(line=>!line.includes('offline-only')));
 const fb={action:'add',profile:'https://www.facebook.com/profile.php?id=456',name:'Pàgina'};
 assert.equal((await request(fb))[0],201);const fid=(await request())[1].accounts.find(x=>x.network==='facebook').id;
 reply=u=>{assert.match(u.pathname,/\/456\/posts$/);return {data:[{id:'456_7',created_time:'2026-11-25T11:00:00+0000',permalink_url:'https://www.facebook.com/permalink.php?story_fbid=7&id=456&utm_source=other',message:'Avís canvi del calendari'}]};};
