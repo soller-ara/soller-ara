@@ -1,16 +1,16 @@
 {
   "version": 1,
   "month": "2026-11",
-  "requests_this_month": 1474,
-  "credits": 0.9947221524999987,
-  "refilled_at": "2026-11-26T14:46:07.143896+00:00",
+  "requests_this_month": 1475,
+  "credits": 0.608933513333332,
+  "refilled_at": "2026-11-26T14:58:24.197529+00:00",
   "queries": {
     "Sóller": {
       "checked_at": "2026-11-26T14:46:07.143896+00:00",
       "results": []
     },
     "Port de Sóller": {
-      "checked_at": "2026-11-26T13:31:10.671789+00:00",
+      "checked_at": "2026-11-26T14:58:24.197529+00:00",
       "results": []
     },
     "Fornalutx": {
