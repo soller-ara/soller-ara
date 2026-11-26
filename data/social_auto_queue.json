@@ -1,26 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-26T17:36:48.071728+00:00",
-  "entries": [
-    {
-      "post_id": "cf4b5641696c106901c0",
-      "title": "El Moviment Jove de Sóller i Port Ramassat, entre les candidatures als premis Alzina del GOB",
-      "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
-      "source_type": "media",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-11-26T17:50:00+01:00",
-      "original_url": "https://www.elsoller.cat/soller/local/2026/11/26/354861/moviment-jove-soller-entre-les-candidatures-als-premis-alzina-del-gob.html",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "permission_pending",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/cf4b5641696c106901c0.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
