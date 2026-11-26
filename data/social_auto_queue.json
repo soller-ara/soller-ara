@@ -1,6 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-11-26T08:37:39.661481+00:00",
+  "entries": [
+    {
+      "post_id": "a1fc9664f5aaf4fc3493",
+      "title": "L’Ajuntament de Deià s’ha acollit a la convocatòria de subvencions de 2026 als ajuntaments de Mallorca per al compliment de les obligacions derivades de la Llei 7/2023, de 8 de març, de protecció dels drets i el benestar dels animals",
+      "summary": "",
+      "source": "Ajuntament de Deià",
+      "source_id": "ajuntament-deia-noticies",
+      "source_type": "official",
+      "category": "agenda",
+      "language": "ca",
+      "published_at": "2026-11-26T08:14:18+00:00",
+      "original_url": "https://ajdeia.net/ca/noticies/lajuntament-de-deia-sha-acollit-la-convocatoria-de-subvencions-de-2026-als-ajuntaments-de",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "official_public_source",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/a1fc9664f5aaf4fc3493.jpg"
+    }
+  ]
 }
