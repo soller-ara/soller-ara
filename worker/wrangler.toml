@@ -23,9 +23,9 @@ GITHUB_BRANCH = "main"
 # CF_ANALYTICS_API_TOKEN: secret con permiso Account Analytics:Read.
 
 # Seguimiento social opcional (privado). No reutilizar la base de otra aplicación.
-# Al desplegar con Wrangler, descomenta el binding y usa el ID real creado en tu cuenta:
-# [[d1_databases]]
-# binding = "SOCIAL_WATCH_DB"
-# database_name = "soller-ara-seguiment"
-# database_id = "ID de la base privada"
+# Base privada vinculada en Cloudflare; conservar al desplegar con Wrangler.
+[[d1_databases]]
+binding = "SOCIAL_WATCH_DB"
+database_name = "soller-ara-seguiment"
+database_id = "7b33782e-c295-456f-ab23-06fa361fc74e"
 # WATCH_META_READ_TOKEN: secret de solo lectura. WATCH_INSTAGRAM_ID: ID profesional propio.
