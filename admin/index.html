@@ -10,7 +10,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="../assets/brand/apple-touch-icon.png" />
   <title>Administración · Sóller Ara</title>
   <link rel="preload" as="image" href="../assets/brand/logo-soller-ara-web.png" />
-  <link rel="stylesheet" href="./admin.css?v=0.94.0" />
+  <link rel="stylesheet" href="./admin.css?v=0.94.1" />
 </head>
 <body>
   <main class="admin-shell">
@@ -41,7 +41,7 @@
         <div class="header-actions">
           <a class="public-link button-secondary" href="../index.html">Volver a Sóller Ara</a>
           <button id="refreshAdminPageButton" class="button-secondary" type="button" title="Actualizar la página de Administración"><span aria-hidden="true">↻</span> Actualizar</button>
-          <span id="adminVersion" class="status-pill">v0.94.0</span>
+          <span id="adminVersion" class="status-pill">v0.94.1</span>
           <span id="connectionState" class="status-pill">Conectado</span>
           <button id="logoutButton" class="button-secondary" type="button">Salir</button>
         </div>
@@ -145,7 +145,11 @@
           <p class="hint">Consulta las publicaciones de las cuentas que elijas. Tú decides qué compartir.</p></div></div>
         <p id="watchMode" class="watch-notice" role="status"></p>
         <article class="panel-card watch-filters">
-          <div class="module-heading"><h3>Publicaciones de mis cuentas</h3><button id="watchReload" type="button" class="button-secondary">Actualizar lista</button></div>
+          <div class="module-heading"><h3>Publicaciones de mis cuentas</h3><div class="watch-toolbar">
+            <button id="watchCheckAll" type="button" class="button-secondary" hidden>Comprobar todas las cuentas</button>
+            <button id="watchReload" type="button" class="button-secondary">Actualizar lista</button>
+          </div></div>
+          <p id="watchBatchProgress" class="hint" role="status" aria-live="polite" hidden></p>
           <div class="watch-days" role="group" aria-label="Periodo de consulta">
             <button type="button" data-watch-period="today" aria-pressed="true">Hoy</button>
             <button type="button" data-watch-period="day" aria-pressed="false">Elegir día</button>
@@ -153,6 +157,7 @@
           </div>
           <label id="watchDateBox" hidden>Fecha en Mallorca<input id="watchDate" type="date" /></label>
           <p id="watchPeriodLabel" class="hint"></p>
+          <p class="hint watch-archive-note">Las publicaciones guardadas no se borran automáticamente. «Hoy» muestra las de hoy; consulta las anteriores por fecha.</p>
           <p id="watchCoverage" class="hint" role="status"></p>
           <div id="watchPosts" class="post-list"></div><button id="watchMore" type="button" class="button-secondary" hidden>Ver más publicaciones</button>
         </article>
@@ -222,11 +227,11 @@
   </main>
 
   <script src="./public-data.js?v=0.61"></script>
-  <script src="./config.js?v=0.94.0"></script>
+  <script src="./config.js?v=0.94.1"></script>
   <script src="./collection-health.js?v=0.93.3"></script>
-  <script src="./editorial-guide.js?v=0.94.0"></script>
-  <script src="./web-discovery.js?v=0.94.0"></script>
-  <script src="./admin.js?v=0.94.0"></script>
-  <script src="./social-watch.js?v=0.94.0"></script>
+  <script src="./editorial-guide.js?v=0.94.1"></script>
+  <script src="./web-discovery.js?v=0.94.1"></script>
+  <script src="./admin.js?v=0.94.1"></script>
+  <script src="./social-watch.js?v=0.94.1"></script>
 </body>
 </html>

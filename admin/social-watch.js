@@ -40,6 +40,8 @@
   const months=new Intl.DateTimeFormat("es-ES",{timeZone:zone,dateStyle:"long"}), time=new Intl.DateTimeFormat("es-ES",{timeZone:zone,dateStyle:"short",timeStyle:"short"});
   const dateLabel=d=>months.format(new Date(d+"T12:00Z"));
   let mode="today",storeMode="loading",entries=[],items=[],next="",generation=0,busy=false,localReadable=true;
+  let batch=null;
+  const batchResults=new Map(),checkAll=el("watchCheckAll"),batchProgress=el("watchBatchProgress");
   function readLocal(){try{const raw=JSON.parse(localStorage.getItem(localKey)||"[]");if(!Array.isArray(raw))throw Error();const result=raw.map(a=>profile({profile:a.profile,name:a.label,page_id:a.page_id}));localReadable=true;return result;}catch{localReadable=false;return [];}}
   function saveLocal(rows){if(!localReadable)throw Error("No se puede leer la lista de este navegador. No se han escrito cambios.");try{localStorage.setItem(localKey,JSON.stringify(rows));}catch{throw Error("El navegador no ha permitido guardar la cuenta.");}}
   const msg=(s,err=false)=>{feedback.textContent=s;feedback.className=err?"message error":"message";};
@@ -57,7 +59,7 @@
     const target=String(window.SOLLER_ARA_ADMIN_API||"").replace(/\/$/,"")+"/api/social-watch"+(params?"?"+new URLSearchParams(params):"");
     const rsp=await fetch(target,{method:body?"POST":"GET",mode:"cors",cache:"no-store",signal:AbortSignal.timeout(20000),headers:{Authorization:"Bearer "+access,...(body?{"Content-Type":"application/json"}:{})},...(body?{body:JSON.stringify(body)}:{})});
     let data;try{data=await rsp.json();}catch{throw Error("Respuesta no válida de Administración.");}
-    if(!rsp.ok){const e=Error(data.error||"Error al consultar las cuentas.");e.device=!body&&(rsp.status===404||(rsp.status===503&&data.code==="watch_storage_setup"));throw e;}return data;
+    if(!rsp.ok){const e=Error(data.error||"Error al consultar las cuentas.");e.status=rsp.status;e.device=!body&&(rsp.status===404||(rsp.status===503&&data.code==="watch_storage_setup"));throw e;}return data;
   }
   function render(){
     const p=filters(),local=readLocal();
@@ -65,6 +67,9 @@
     el("watchMode").textContent=storeMode==="device"?"Lista provisional de este dispositivo. Puedes guardar cuentas y abrir sus perfiles; la lectura automática y la sincronización requieren conectar el archivo privado en Cloudflare.":storeMode==="server"?"Lista privada de Administración, disponible desde tus dispositivos.":storeMode==="error"?"No se ha podido actualizar la lista. No se han cambiado tus cuentas.":"Consultando las cuentas…";
     el("watchImport").hidden=storeMode!=="server"||!local.length;el("watchImport").disabled=busy;
     el("watchCount").textContent="("+entries.length+")";el("watchMore").hidden=!next;el("watchMore").disabled=busy;
+    checkAll.hidden=storeMode!=="server";checkAll.disabled=batch?batch.cancelled:busy||!entries.length;
+    checkAll.textContent=batch?"Detener comprobación":"Comprobar todas las cuentas";
+    el("watchReload").disabled=busy;
     const outside=entries.filter(a=>a.status!=="ready"||!a.earliest||dayKey(a.earliest)>=p.from||!a.completed||dayKey(a.completed)<p.to);
     el("watchCoverage").textContent=storeMode==="loading"?"":storeMode==="error"?"Los datos que ya estaban en pantalla pueden estar desactualizados.":!entries.length?"Añade tu primera cuenta en «Mis cuentas».":storeMode==="device"?"Las cuentas de este dispositivo no se han consultado automáticamente.":(items.length?"Publicaciones encontradas. ":"No se han encontrado publicaciones para este periodo. ")+(outside.length?"Hay cuentas pendientes, sin acceso o sin cobertura completa de estas fechas.":"Consulta realizada hasta la última lectura de cada cuenta.");
     list.replaceChildren();for(const p of items){const a=anchor("Abrir publicación original",p.url,p.network);if(!a)continue;
@@ -77,6 +82,7 @@
       const remove=button("Quitar",()=>{if(!window.confirm("¿Quitar "+a.label+" de esta lista y de su archivo de seguimiento? Las publicaciones de Sóller Ara no cambian."))return;
         act(async()=>{if(storeMode==="server")await request(null,{action:"remove",id:a.id});else saveLocal(readLocal().filter(x=>x.id!==a.id));return "Cuenta retirada de esta lista.";});});remove.disabled=busy||!["server","device"].includes(storeMode);controls.append(remove);
       card.append(node("h3",a.label),node("small",a.network==="instagram"?"Instagram":"Facebook"),node("p",stateText[a.status]||"Pendiente de comprobación."),controls);
+      if(batchResults.has(a.id))card.append(node("p","Comprobación conjunta: "+batchResults.get(a.id),"hint"));
       if(a.attempted)card.append(node("small","Último intento: "+time.format(new Date(a.attempted))+(a.completed?" · Última lectura: "+time.format(new Date(a.completed)):"")));accounts.append(card);}
   }
   async function load(more=false){
@@ -89,7 +95,36 @@
       else{storeMode="error";msg(e.message,true);}}
     render();if(!entries.length)el("watchAccountsBox").open=true;
   }
-  async function act(fn){if(busy||!current())return;busy=true;render();msg("Un momento…");try{const message=await fn();await load();if(current())msg(message);}catch(e){if(current())msg(e.message,true);}finally{busy=false;if(current())render();}}
+  async function act(fn){if(busy||!current())return;busy=true;batchResults.clear();batchProgress.hidden=true;render();msg("Un momento…");try{const message=await fn();await load();if(current())msg(message);}catch(e){if(current())msg(e.message,true);}finally{busy=false;if(current())render();}}
+  async function checkEveryAccount(){
+    if(batch){batch.cancelled=true;batchProgress.textContent="Deteniendo la comprobación después de la cuenta en curso…";render();return;}
+    if(busy||!current()||storeMode!=="server"||!entries.length)return;
+    const run={cancelled:false},targets=entries.map(a=>({id:a.id,label:a.label})),access=token();
+    let done=0,ready=0,recent=0,other=0,stopError="";
+    batch=run;busy=true;batchResults.clear();batchProgress.hidden=false;msg("");el("watchAccountsBox").open=true;render();
+    try{
+      for(const a of targets){
+        if(run.cancelled||!current()||token()!==access){run.cancelled=true;break;}
+        batchProgress.textContent="Comprobando "+(done+1)+" de "+targets.length+": "+a.label+"…";
+        try{
+          const result=await request(null,{action:"check",id:a.id});
+          batchResults.set(a.id,stateText[result.state]||"Revisión solicitada.");
+          if(result.state==="ready")ready++;else other++;
+        }catch(e){
+          batchResults.set(a.id,e.message);
+          if(e.status===429)recent++;else other++;
+          if(e.status===401||e.status===403){stopError=e.message;run.cancelled=true;}
+        }
+        done++;
+        if(current()&&token()===access){await load();if(storeMode!=="server"){run.cancelled=true;break;}}
+      }
+      if(current()&&token()===access){
+        batchProgress.textContent=(run.cancelled?"Comprobación detenida. ":"Comprobación terminada. ")+"Cuentas comprobadas: "+done+" de "+targets.length+". Lectura completa: "+ready+"."+(recent?" Revisadas recientemente: "+recent+".":"")+(other?" Sin lectura completa: "+other+".":"")+" Consulta el resultado en «Mis cuentas».";
+        if(stopError)msg(stopError,true);
+      }
+    }finally{batch=null;busy=false;if(current())render();}
+  }
+  checkAll.addEventListener("click",checkEveryAccount);
   form.addEventListener("submit",e=>{e.preventDefault();act(async()=>{const data={profile:form.elements.profile.value,name:form.elements.name.value,page_id:form.elements.page_id.value},a=profile(data);let existing=false;
     if(storeMode==="server"){existing=(await request(null,{action:"add",...data})).existing;}
     else if(storeMode==="device"){const rows=readLocal();existing=rows.some(x=>x.id===a.id);if(!existing){if(rows.length>=100)throw Error("La lista admite hasta 100 cuentas.");saveLocal([...rows,a]);}}
@@ -102,7 +137,7 @@
   panel.querySelectorAll("[data-watch-period]").forEach(b=>b.addEventListener("click",()=>{if(mode==="today"||b.dataset.watchPeriod==="today")date.value=dayKey();mode=b.dataset.watchPeriod;load();}));
   date.value=dayKey();date.addEventListener("change",()=>{if(valid(date.value)){load();}else msg("Selecciona una fecha válida.",true);});
   el("watchReload").addEventListener("click",()=>{msg("");load();});el("watchMore").addEventListener("click",()=>{if(next)load(true);});
-  const visible=()=>{if(current())load();else{generation++;if(el("adminView").hidden){entries=[];items=[];next="";storeMode="loading";accounts.replaceChildren();list.replaceChildren();msg("");form.reset();}}};
+  const visible=()=>{if(current())load();else{generation++;if(batch)batch.cancelled=true;if(el("adminView").hidden){entries=[];items=[];next="";storeMode="loading";batchResults.clear();batchProgress.hidden=true;accounts.replaceChildren();list.replaceChildren();msg("");form.reset();}}};
   new MutationObserver(visible).observe(panel,{attributes:true,attributeFilter:["class"]});
   new MutationObserver(visible).observe(el("adminView"),{attributes:true,attributeFilter:["hidden"]});
   const openBookmark=()=>{if(window.location.hash==="#cuentas-que-sigo")document.querySelector('.nav-button[data-view="social-watch"]')?.click();};

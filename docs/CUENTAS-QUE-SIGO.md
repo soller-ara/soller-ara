@@ -12,11 +12,12 @@ Acceso directo: [abrir la sección](https://soller-ara.github.io/soller-ara/admi
 
 ## Qué cubre la lista
 
-- Hoy, el día elegido o la semana de lunes a domingo, con las fechas originales en Europe/Madrid. Cambiar de día solo consulta el archivo. No se confunde la fecha de recogida con la de publicación.
+- Hoy, el día elegido o la semana de lunes a domingo, con las fechas originales en Europe/Madrid. Cambiar de día solo consulta el archivo. No se confunde la fecha de recogida con la de publicación. Las referencias guardadas no se borran automáticamente: si se mantiene elegido un día anterior, sus publicaciones siguen visibles. «Hoy» muestra únicamente las publicadas en el día actual.
 - En la primera lectura se intenta recuperar hasta 30 días anteriores. Después conserva lo archivado y repasa un margen de dos días para recoger entregas tardías. Si se interrumpe la lectura, conserva lo ya guardado. Una cuenta que se quite pierde su historial en esta sección.
 - La descripción identifica el tema y, cuando consta, la hora mencionada en el texto que ofrece Meta, sin descargar fotos ni guardar pies de foto completos. En publicaciones sin texto se indica esta circunstancia.
 - Los perfiles personales, grupos, historias y contenido privado no se garantizan. Solo se usan las API oficiales de [Instagram Business Discovery](https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/business_discovery/) y [páginas de Facebook](https://developers.facebook.com/docs/features-reference/page-public-content-access/), nunca una sesión personal. Si no se resuelve una URL de página de Facebook, usar la dirección pública que contiene su ID numérico. El permiso para publicar en cuentas propias es independiente.
 - Se procesan hasta tres cuentas por turno, por orden de próxima revisión; la paginación se reanuda en turnos posteriores. La frecuencia por cuenta depende del número de cuentas, el volumen y la disponibilidad de Meta. No se informa de «cero publicaciones» cuando la lectura ha sido parcial o imposible.
+- «Comprobar todas las cuentas» inicia una revisión conjunta desde Administración, una cuenta después de otra. Muestra el avance y el resultado de cada cuenta en «Mis cuentas»; un fallo o una revisión reciente no bloquean las demás. Durante la revisión el mismo botón permite detenerla después de la cuenta en curso. Hay que mantener abierta la sección para continuar; la lectura programada del servidor sigue su horario independiente.
 
 ## Diagnóstico de lectura
 

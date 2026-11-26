@@ -107,16 +107,39 @@ fieldset{border:1px solid var(--border);border-radius:14px;padding:13px 15px}leg
 @media(max-width:540px){.social-settings-heading,.social-settings-actions{align-items:stretch;flex-direction:column}.social-source-row{grid-template-columns:1fr 1fr}.social-source-row>span{grid-column:1/-1}}
 
 .watch-notice:not(:empty){background:var(--surface-2);border-left:3px solid var(--primary);padding:10px 14px;border-radius:6px}
-.watch-filters,.watch-accounts{margin-bottom:14px}
+.watch-filters,.watch-accounts{margin-bottom:14px;min-width:0}
+#social-watch .post-list{max-height:none;overflow:visible;min-width:0}
 .watch-filters h3,.watch-accounts h3{margin:0}
+.watch-filters>.module-heading{margin:0 0 16px}
+.watch-toolbar{display:flex;flex-wrap:wrap;gap:8px;min-width:0}
+.watch-toolbar button{min-height:44px;max-width:100%;white-space:normal}
 .watch-days,.watch-controls{display:flex;flex-wrap:wrap;gap:7px}
-.watch-days button,.watch-controls>*{min-height:44px}
+.watch-days button,.watch-controls>*{min-height:44px;min-width:0;max-width:100%;white-space:normal}
+.watch-days button{border:1px solid var(--primary);border-radius:10px;padding:10px 14px;background:var(--primary);color:#fff;font-weight:650}
 .watch-days button[aria-pressed=false]{background:var(--surface);color:var(--primary);border:1px solid var(--border)}
-.watch-filters label{max-width:15rem;margin:12px 0}
-.watch-accounts summary{min-height:44px;cursor:pointer;font-weight:750}
+.watch-filters label{display:grid;gap:7px;min-width:0;max-width:15rem;margin:12px 0}
+.watch-filters input,.watch-add label,.watch-add input{min-width:0;max-width:100%}
+.watch-archive-note{line-height:1.55;max-width:65ch}
+.watch-accounts{scroll-margin-top:12px}
+.watch-accounts summary{display:flex;align-items:center;gap:7px;list-style:none;min-height:44px;padding:10px 2px;cursor:pointer;font-weight:750;background:var(--surface);overflow-wrap:anywhere}
+.watch-accounts summary::-webkit-details-marker{display:none}
+.watch-accounts summary::after{content:"";width:8px;height:8px;flex:0 0 8px;margin-left:auto;margin-right:4px;border-right:2px solid var(--primary);border-bottom:2px solid var(--primary);transform:rotate(-45deg)}
+.watch-accounts[open]>summary::after{transform:rotate(45deg)}
+.watch-accounts[open]>summary{position:sticky;top:0;z-index:1;border-bottom:1px solid var(--border)}
+.watch-accounts summary:focus-visible{outline:3px solid var(--primary);outline-offset:3px;border-radius:4px}
+#watchCount{font-weight:500;white-space:nowrap}
 .watch-add{display:grid;gap:12px;margin:8px 0 20px;max-width:38rem}
 .watch-add button{justify-self:start}
 .watch-card{padding:14px 0;border-top:1px solid var(--border);min-width:0;overflow-wrap:anywhere}
 .watch-card p{margin:.4rem 0 .7rem}.watch-card small{color:var(--muted)}
-.watch-controls{align-items:center}.watch-controls a{display:inline-flex;align-items:center}
+.watch-card>small{display:block;line-height:1.5}
+.watch-controls{align-items:center;margin-bottom:8px}.watch-controls a{display:inline-flex;align-items:center}
 #social-watch [hidden]{display:none!important}
+@media(max-width:620px){
+  #social-watch .panel-card{padding:16px}
+  .watch-toolbar{display:grid;grid-template-columns:minmax(0,1fr)}
+  .watch-controls{display:grid;grid-template-columns:minmax(0,1fr);gap:8px}
+  .watch-controls>*{width:100%;justify-content:center;text-align:center}
+  .watch-controls a{padding:10px 14px;border:1px solid var(--border);border-radius:11px;color:var(--primary);text-decoration:none}
+  .watch-add button{justify-self:stretch}
+}
