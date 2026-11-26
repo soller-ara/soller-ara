@@ -118,9 +118,9 @@
         done++;
         if(current()&&token()===access){await load();if(storeMode!=="server"){run.cancelled=true;break;}}
       }
-      if(current()&&token()===access){
+      if(token()===access){
         batchProgress.textContent=(run.cancelled?"Comprobación detenida. ":"Comprobación terminada. ")+"Cuentas comprobadas: "+done+" de "+targets.length+". Lectura completa: "+ready+"."+(recent?" Revisadas recientemente: "+recent+".":"")+(other?" Sin lectura completa: "+other+".":"")+" Consulta el resultado en «Mis cuentas».";
-        if(stopError)msg(stopError,true);
+        if(stopError&&current())msg(stopError,true);
       }
     }finally{batch=null;busy=false;if(current())render();}
   }
