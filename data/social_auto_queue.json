@@ -1,26 +1,64 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-26T13:37:18.985081+00:00",
+  "generated_at": "2026-11-26T14:51:32.667815+00:00",
   "entries": [
     {
-      "post_id": "b065a4e300b275b3349f",
-      "title": "Sóller habilita el dispositiu electoral per als comicis de diumenge",
+      "post_id": "537468d8fa6487842644",
+      "title": "Les millors fotografies de la serra de Tramuntana protagonitzen una nova exposició itinerant",
       "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
+      "source": "Fora Vila",
+      "source_id": "fora-vila-soller",
       "source_type": "media",
-      "category": "news",
+      "category": "culture",
       "language": "ca",
-      "published_at": "2026-11-26T11:39:54+00:00",
-      "original_url": "https://saveu.cat/noticies/soller-habilita-el-dispositiu-electoral-per-als-comicis-de-diumenge/",
+      "published_at": "2026-11-26T14:46:17+00:00",
+      "original_url": "https://www.foravila.net/foravilaverd/les-millors-fotografies-de-la-serra-de-tramuntana-protagonitzen-una-nova-exposicio-itinerant/",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/b065a4e300b275b3349f.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/537468d8fa6487842644.jpg"
+    },
+    {
+      "post_id": "a2839ab37519fa03843b",
+      "title": "El Tren de Sóller dona 7.851 euros a UNICEF en una nova jornada solidària",
+      "summary": "",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "source_type": "media",
+      "category": "agenda",
+      "language": "ca",
+      "published_at": "2026-11-26T14:17:41+00:00",
+      "original_url": "https://saveu.cat/noticies/el-tren-de-soller-dona-7-851-euros-a-unicef-en-una-nova-jornada-solidaria/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/a2839ab37519fa03843b.jpg"
+    },
+    {
+      "post_id": "daa48230e44970ac4444",
+      "title": "Aquests són els premiats del Certamen de Fotografia Serra de Tramuntana Patrimoni Mundial",
+      "summary": "Vídeo publicat per IB3 Notícies · YouTube.",
+      "source": "IB3 Notícies · YouTube",
+      "source_id": "youtube-ib3-noticies-soller",
+      "source_type": "social",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-11-26T14:00:09+00:00",
+      "original_url": "https://www.youtube.com/watch?v=p71jmKOiiyc",
+      "content_policy": "generated_social_summary",
+      "rights_status": "platform_embed",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/daa48230e44970ac4444.jpg"
     }
   ]
 }
