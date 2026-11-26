@@ -1,26 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-26T09:51:44.555477+00:00",
-  "entries": [
-    {
-      "post_id": "27c941fe51da832d5f1e",
-      "title": "Neteja de vegetació al torrent des Racó",
-      "summary": "",
-      "source": "Ajuntament de Deià",
-      "source_id": "ajuntament-deia-noticies",
-      "source_type": "official",
-      "category": "services",
-      "language": "ca",
-      "published_at": "2026-11-26T08:48:07+00:00",
-      "original_url": "https://ajdeia.net/ca/noticies/neteja-de-vegetacio-al-torrent-des-raco",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "official_public_source",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/27c941fe51da832d5f1e.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }
