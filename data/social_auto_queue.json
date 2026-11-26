@@ -1,26 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-26T12:21:30.722866+00:00",
+  "generated_at": "2026-11-26T13:37:18.985081+00:00",
   "entries": [
     {
-      "post_id": "ebae87fe3916b717d289",
-      "title": "La reforma del carrer de Bauzà completa la primera fase amb la retirada de les llambordes",
+      "post_id": "b065a4e300b275b3349f",
+      "title": "Sóller habilita el dispositiu electoral per als comicis de diumenge",
       "summary": "",
       "source": "Sa Veu de Sóller",
       "source_id": "sa-veu-soller",
       "source_type": "media",
-      "category": "services",
+      "category": "news",
       "language": "ca",
-      "published_at": "2026-11-26T11:45:07+00:00",
-      "original_url": "https://saveu.cat/noticies/la-reforma-del-carrer-de-bauza-completa-la-primera-fase-amb-la-retirada-de-les-llambordes/",
+      "published_at": "2026-11-26T11:39:54+00:00",
+      "original_url": "https://saveu.cat/noticies/soller-habilita-el-dispositiu-electoral-per-als-comicis-de-diumenge/",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/ebae87fe3916b717d289.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/b065a4e300b275b3349f.jpg"
     }
   ]
 }
