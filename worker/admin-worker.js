@@ -735,21 +735,27 @@ function watchDiagnostic(error,stage) {
   const detail={stage,reason:"unexpected"}, source=error?.watchDiagnostic||{};
   for(const key of ["http_status","meta_code","meta_subcode"])
     if(Number.isSafeInteger(source[key])&&source[key]>=0&&source[key]<=2147483647)detail[key]=source[key];
+  if(["Error","TypeError","RangeError","SyntaxError","AbortError","TimeoutError"].includes(error?.name))detail.error_type=error.name;
   if(["AbortError","TimeoutError"].includes(error?.name))detail.reason="timeout";
   else if(source.reason==="response_format")detail.reason="response_format";
+  else if(stage==="meta"&&error?.name==="TypeError")
+    detail.reason=/header|character|bytestring/i.test(String(error.message||""))?"request_headers":"network";
   const sqlite=String(error?.message||"").match(/\bSQLITE_(?:ERROR|BUSY|LOCKED|CONSTRAINT|FULL|TOOBIG|MISMATCH|RANGE|CORRUPT|IOERR)\b/);
   if(stage==="archive"&&sqlite)detail.db_code=sqlite[0];
   return detail;
 }
 function watchManualFailure(detail) {
   const message=detail.stage==="archive"?"La lectura se ha interrumpido al guardar en el archivo.":
-    detail.stage==="meta"?(detail.reason==="timeout"?"Meta no ha respondido dentro del plazo de lectura.":"La consulta a Meta no se ha completado."):
+    detail.stage==="meta"?(detail.reason==="timeout"?"Meta no ha respondido dentro del plazo de lectura.":
+      detail.reason==="request_headers"?"El token de lectura no se puede enviar a Meta. Comprueba que se haya copiado completo y en una sola línea.":
+      detail.reason==="response_format"?"Meta ha devuelto una respuesta que no se puede interpretar.":"La consulta a Meta no se ha completado."):
     "No se ha podido procesar la respuesta de lectura.";
   const codes=[];
   if(detail.http_status)codes.push("HTTP "+detail.http_status);
   if(detail.meta_code!==undefined)codes.push("Meta "+detail.meta_code);
   if(detail.meta_subcode!==undefined)codes.push("subcódigo "+detail.meta_subcode);
   if(detail.db_code)codes.push(detail.db_code);
+  if(detail.error_type)codes.push(detail.error_type);
   return message+(codes.length?" Diagnóstico: "+codes.join(", ")+".":"")+" El archivo anterior se conserva.";
 }
 function watchUrl(value) {
