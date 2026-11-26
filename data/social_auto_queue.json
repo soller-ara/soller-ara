@@ -1,26 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-26T15:06:21.731544+00:00",
+  "generated_at": "2026-11-26T16:21:27.085536+00:00",
   "entries": [
     {
-      "post_id": "a3ad59e8f0bb8988416d",
-      "title": "El llum del Nadal encendrà els carrers de Sóller a partir de dia 5",
+      "post_id": "67f8e3ed80cc01111bf9",
+      "title": "El Tren de Sóller recapta 7.851 euros per a UNICEF",
       "summary": "",
-      "source": "Sa Veu de Sóller",
-      "source_id": "sa-veu-soller",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
       "source_type": "media",
-      "category": "services",
+      "category": "news",
       "language": "ca",
-      "published_at": "2026-11-26T11:34:29+00:00",
-      "original_url": "https://saveu.cat/noticies/el-llum-del-nadal-encendra-els-carrers-de-soller-a-partir-de-dia-5/",
+      "published_at": "2026-11-26T16:48:00+01:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/11/26/354859/tren-soller-recapta-7851-euros-per-unicef.html",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/a3ad59e8f0bb8988416d.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/67f8e3ed80cc01111bf9.jpg"
     }
   ]
 }
