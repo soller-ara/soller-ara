@@ -1,45 +1,45 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-27T09:21:23.222782+00:00",
+  "generated_at": "2026-11-27T10:36:32.684031+00:00",
   "entries": [
     {
-      "post_id": "deca7a25e76336b7f86f",
-      "title": "Madrid no farà excepcions i obligarà a retenir el 12% de l’oli",
+      "post_id": "1aae654305ae00f56b4b",
+      "title": "«Sóller inèdit», un passeig per una Vall que ja no hi és",
       "summary": "",
       "source": "Setmanari Sóller",
       "source_id": "setmanari-soller",
       "source_type": "media",
       "category": "news",
       "language": "ca",
-      "published_at": "2026-11-27T10:13:00+01:00",
-      "original_url": "https://www.elsoller.cat/soller/local/2026/11/27/354863/madrid-fara-excepcions-obligara-retenir-oli.html",
+      "published_at": "2026-11-27T10:44:42+01:00",
+      "original_url": "https://www.elsoller.cat/soller/societat-i-cultura/2026/11/27/354867/soller-inedit-passeig-per-vall-es.html",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/deca7a25e76336b7f86f.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/1aae654305ae00f56b4b.jpg"
     },
     {
-      "post_id": "9aa0e839bbb0ae2cd1af",
-      "title": "Moviment Jove i Port Ramassat, nominats als Premis Alzina 2026 del GOB Mallorca",
+      "post_id": "146268751d514d680004",
+      "title": "Jaume Pérez guanya el primer premi del certamen fotogràfic de la Serra de Tramuntana",
       "summary": "",
       "source": "Sa Veu de Sóller",
       "source_id": "sa-veu-soller",
       "source_type": "media",
       "category": "news",
       "language": "ca",
-      "published_at": "2026-11-27T09:08:41+00:00",
-      "original_url": "https://saveu.cat/noticies/moviment-jove-i-port-ramassat-nominats-als-premis-alzina-2026-del-gob-mallorca/",
+      "published_at": "2026-11-27T08:53:36+00:00",
+      "original_url": "https://saveu.cat/noticies/jaume-perez-guanya-el-primer-premi-del-certamen-fotografic-de-la-serra-de-tramuntana/",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/9aa0e839bbb0ae2cd1af.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/146268751d514d680004.jpg"
     }
   ]
 }
