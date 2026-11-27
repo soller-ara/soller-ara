@@ -1,9 +1,9 @@
 {
   "version": 1,
   "month": "2026-11",
-  "requests_this_month": 1556,
-  "credits": 0.0028058474999994587,
-  "refilled_at": "2026-11-27T17:46:16.844330+00:00",
+  "requests_this_month": 1557,
+  "credits": 0.061050480833332754,
+  "refilled_at": "2026-11-27T18:07:26.737890+00:00",
   "queries": {
     "Sóller": {
       "checked_at": "2026-11-27T17:46:16.844330+00:00",
@@ -18,7 +18,7 @@
       "results": []
     },
     "Biniaraix": {
-      "checked_at": "2026-11-27T16:31:08.138189+00:00",
+      "checked_at": "2026-11-27T18:07:26.737890+00:00",
       "results": []
     },
     "Deià": {
