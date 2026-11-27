@@ -1,26 +1,6 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-27T07:22:44.013101+00:00",
-  "entries": [
-    {
-      "post_id": "0e4036f7415a49887e85",
-      "title": "Subvencions destinades a les associacions i entitats culturals, socials i juvenils de Deià per a l'any 2026",
-      "summary": "",
-      "source": "Ajuntament de Deià",
-      "source_id": "ajuntament-deia-noticies",
-      "source_type": "official",
-      "category": "culture",
-      "language": "ca",
-      "published_at": "2026-11-27T07:18:22+00:00",
-      "original_url": "https://ajdeia.net/ca/noticies/subvencions-destinades-les-associacions-i-entitats-culturals-socials-i-juvenils-de-deia",
-      "content_policy": "headline_date_link_only",
-      "rights_status": "official_public_source",
-      "platforms": [
-        "facebook",
-        "instagram"
-      ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/0e4036f7415a49887e85.jpg"
-    }
-  ]
+  "generated_at": null,
+  "entries": []
 }

@@ -1,9 +1,9 @@
 {
   "version": 1,
   "month": "2026-11",
-  "requests_this_month": 1524,
-  "credits": 0.4968166374999994,
-  "refilled_at": "2026-11-27T07:16:09.657278+00:00",
+  "requests_this_month": 1526,
+  "credits": 1.0036458124999994,
+  "refilled_at": "2026-11-27T08:06:17.852288+00:00",
   "queries": {
     "Sóller": {
       "checked_at": "2026-11-27T07:16:09.657278+00:00",
@@ -14,7 +14,7 @@
       "results": []
     },
     "Fornalutx": {
-      "checked_at": "2026-11-27T06:01:13.977854+00:00",
+      "checked_at": "2026-11-27T08:06:17.852288+00:00",
       "results": []
     },
     "Biniaraix": {
@@ -22,7 +22,7 @@
       "results": []
     },
     "Deià": {
-      "checked_at": "2026-11-27T06:01:13.977854+00:00",
+      "checked_at": "2026-11-27T08:06:17.852288+00:00",
       "results": []
     },
     "Deia": {
