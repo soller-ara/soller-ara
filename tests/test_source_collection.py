@@ -15,6 +15,25 @@ spec.loader.exec_module(collector)
 
 
 class SourceCollectionTests(unittest.TestCase):
+    def test_manual_catalogue_is_not_collected_or_counted_as_feed_health(self):
+        with tempfile.TemporaryDirectory() as temp:
+            folder = Path(temp)
+            automatic = {"id": "auto", "name": "Fuente automática", "type": "rss", "enabled": True}
+            manual = {"id": "manual", "name": "Agenda para revisión", "collection_mode": "manual", "url": "https://example.test/agenda"}
+            (folder / "sources.json").write_text(json.dumps({"sources": [automatic], "manual_sources": [manual]}))
+            with patch.multiple(collector, SOURCES_FILE=folder / "sources.json",
+                                OUTPUT_FILE=folder / "posts.json", JS_OUTPUT_FILE=folder / "posts.js",
+                                MANUAL_POSTS_FILE=folder / "manual.json", MODERATION_FILE=folder / "moderation.json",
+                                FREENEWSAPI_STATE_FILE=folder / "api-state.json"), \
+                 patch.object(collector, "fetch_source", return_value=[]) as fetch, \
+                 patch.object(collector, "fetch_optional_meta_social_sources", return_value=([], [], [])):
+                self.assertEqual(collector.main(), 0)
+            fetch.assert_called_once_with(automatic)
+            result = json.loads((folder / "posts.json").read_text())
+            self.assertEqual(result["source_count"], 1)
+            self.assertEqual([item["source_id"] for item in result["source_status"]], ["auto"])
+            self.assertEqual(result["posts"], [])
+
     def test_authenticated_shared_search_keeps_original_dates_and_local_rules(self):
         now = datetime.now(timezone.utc)
         with tempfile.TemporaryDirectory() as temp:

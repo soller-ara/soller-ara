@@ -69,6 +69,10 @@ fieldset{border:1px solid var(--border);border-radius:14px;padding:13px 15px}leg
 .publish-preview h3{margin:9px 0 7px}.publish-preview p{margin:0;white-space:pre-wrap;color:var(--muted)}
 .search-input{max-width:320px}
 .post-list{display:grid;gap:10px;max-height:720px;overflow:auto}
+.manual-source-list{display:grid;gap:12px}
+.manual-source-list .hint{font-size:.9rem;line-height:1.5}
+.manual-source-list .post-actions{align-items:center}
+.manual-source-list .post-actions>button,.manual-source-list .post-actions>a{min-height:44px}
 .post-item{border:1px solid var(--border);border-radius:14px;padding:14px;background:var(--surface-2)}
 .post-item header{display:flex;justify-content:space-between;gap:10px;align-items:start}.post-item h4{margin:0;font-size:.98rem}.post-meta{font-size:.78rem;color:var(--muted);margin:6px 0 11px}
 .post-actions{display:flex;flex-wrap:wrap;gap:8px}.post-actions button{border:1px solid var(--border);background:#fff;border-radius:9px;padding:8px 10px;font-size:.82rem;font-weight:650}.post-actions .danger{color:var(--danger);border-color:#f1c7c2}

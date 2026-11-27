@@ -58,6 +58,11 @@
       <p id="collectionMessage" class="message" aria-live="polite"></p>
       <div id="sourcesSummary" class="metrics"></div>
       <article class="panel-card"><h3>Fuentes de información</h3><div id="sourcesList" class="post-list"><p class="empty">Cargando fuentes…</p></div></article>
+      <article id="manualSourcesPanel" class="panel-card" style="margin-top:18px" hidden>
+        <h3>Fuentes para revisión manual</h3>
+        <p class="hint">Abre la web, elige una noticia o actividad de la zona y comprueba su fecha. «Preparar enlace» abre un borrador para que pegues el enlace concreto y lo revises antes de publicar.</p>
+        <div id="manualSourcesList" class="manual-source-list"></div>
+      </article>
       <article class="panel-card" style="margin-top:18px"><h3>Fuentes sociales externas</h3><p class="hint">Su estado se muestra aquí. La activación depende de las APIs de cada plataforma.</p><div id="socialSourcesList" class="post-list"><p class="empty">Cargando…</p></div></article>
       <article class="panel-card" style="margin-top:18px"><h3>Distribución automática a redes</h3><p class="hint">Estado de los envíos automáticos a Facebook e Instagram según las fuentes y los límites configurados.</p></article>
       <p id="sourcesMessage" class="message" aria-live="polite"></p>`;
@@ -93,9 +98,10 @@
   function render(config, posts) {
     window.SOLLER_ARA_RENDER_COLLECTION_HEALTH?.(posts);
     const sources = Array.isArray(config.sources) ? config.sources : [];
+    const manual = Array.isArray(config.manual_sources) ? config.manual_sources : [];
     const active = sources.filter((x) => x.enabled !== false).length;
     document.getElementById("sourcesSummary").innerHTML = [
-      ["Fuentes configuradas", sources.length], ["Activas", active], ["Desactivadas", sources.length - active]
+      ["Fuentes automáticas", sources.length], ["Activas", active], ["Desactivadas", sources.length - active], ["Consulta manual", manual.length]
     ].map(([a,b]) => `<div class="metric"><span>${esc(a)}</span><strong>${esc(b)}</strong></div>`).join("");
 
     const health = statusMap(posts);
@@ -120,6 +126,33 @@
       </article>`;
     }).join("");
     list.querySelectorAll("[data-source-id]").forEach((button) => button.addEventListener("click", () => toggle(button)));
+    renderManual(manual);
+  }
+
+  function manualSourceUrl(raw) {
+    try{const url=new URL(raw);return url.protocol==="https:"&&!url.username&&!url.password&&!url.port?url.href:"";}catch{return "";}
+  }
+
+  function renderManual(sources) {
+    const panel=document.getElementById("manualSourcesPanel"),list=document.getElementById("manualSourcesList");
+    panel.hidden=!sources.length;
+    list.innerHTML=sources.map((source,index)=>{
+      const url=manualSourceUrl(source.url);
+      return `<article class="post-item">
+        <header><h4>${esc(source.name||source.id)}</h4></header>
+        <div class="post-meta">${esc(source.locality||"Sóller y entorno")}</div>
+        <p class="hint">${esc(source.review_note||"Comprueba la fecha original y el vínculo local antes de preparar una publicación.")}</p>
+        <div class="post-actions"><span class="pending">CONSULTA MANUAL</span>
+          ${url?`<a class="button-secondary public-link" href="${esc(url)}" target="_blank" rel="noopener noreferrer">Revisar web</a>
+          <button type="button" data-manual-source="${index}">Preparar enlace</button>`:""}
+        </div>
+      </article>`;
+    }).join("");
+    list.querySelectorAll("[data-manual-source]").forEach(button=>button.addEventListener("click",()=>{
+      const source=sources[Number(button.dataset.manualSource)];
+      try{window.SOLLER_ARA_SOURCE_DRAFT(source.name,source.category);message("");}
+      catch(error){message(error.message,"error");}
+    }));
   }
 
   function renderSocial(config) {

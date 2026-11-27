@@ -1,5 +1,5 @@
 {
-  "version": 47,
+  "version": 48,
   "sources": [
     {
       "id": "ajuntament-soller-noticies",
@@ -1690,6 +1690,56 @@
         "CCDS"
       ],
       "filter_title_only": true
+    }
+  ],
+  "manual_sources": [
+    {
+      "collection_mode": "manual",
+      "language": "ca",
+      "source_type": "official",
+      "content_policy": "headline_date_link_only",
+      "image_policy": "disabled_until_rights_verified",
+      "rights_status": "link_only_no_media_license",
+      "verified_at": "2026-11-27",
+      "id": "mallorca-literaria-agenda",
+      "name": "Fundació Mallorca Literària · Agenda",
+      "url": "https://www.mallorcaliteraria.cat/ca/agenda",
+      "locality": "Sóller y entorno · filtro por lugar de la actividad",
+      "category": "agenda",
+      "review_note": "Comprueba el lugar y la fecha del acto. La fecha de la actividad no acredita cuándo se publicó el anuncio.",
+      "verification_method": "official_agenda_and_individual_event_page"
+    },
+    {
+      "collection_mode": "manual",
+      "language": "ca",
+      "source_type": "official",
+      "content_policy": "headline_date_link_only",
+      "image_policy": "disabled_until_rights_verified",
+      "rights_status": "link_only_no_media_license",
+      "verified_at": "2026-11-27",
+      "id": "consell-mallorca-agenda",
+      "name": "Consell de Mallorca · Agenda local",
+      "url": "https://www.conselldemallorca.es/agenda",
+      "locality": "Sóller / Port de Sóller / Fornalutx / Deià / Biniaraix / Serra de Tramuntana",
+      "category": "agenda",
+      "review_note": "Selecciona actividades de la zona, incluido el Museu de la Mar del Port de Sóller, y verifica las fechas en la ficha original.",
+      "verification_method": "official_agenda_and_individual_event_page"
+    },
+    {
+      "collection_mode": "manual",
+      "language": "ca",
+      "source_type": "official",
+      "content_policy": "headline_date_link_only",
+      "image_policy": "disabled_until_rights_verified",
+      "rights_status": "link_only_no_media_license",
+      "verified_at": "2026-11-27",
+      "id": "ceip-es-fossaret-soller",
+      "name": "CEIP Es Fossaret · Sóller",
+      "url": "https://sites.google.com/ceipesfossaret.com/inici/",
+      "locality": "Sóller",
+      "category": "news",
+      "review_note": "Revisa los avisos del centro y su vigencia. El curso escolar o una página permanente no acreditan una fecha de publicación.",
+      "verification_method": "official_school_website_and_contact"
     }
   ]
 }

@@ -131,14 +131,28 @@ assert.equal((await run('worker.scheduled({cron: WATCH_CRON},env)')).action,'wat
 const admin=await fs.readFile('admin/admin.js','utf8');
 const bridge=admin.slice(admin.indexOf('  window.SOLLER_ARA_WATCH_DRAFT ='),admin.indexOf('  function updateSocialPosterFields()'));
 const input=(type='text')=>({type,tagName:'INPUT',value:'',defaultValue:'',checked:false,defaultChecked:false,focus(){}});
-const formElements=Object.assign([], {source_name:input(),original_url:input(),facebook:input('checkbox'),instagram:input('checkbox'),title:input()});
+const formElements=Object.assign([], {source_name:input(),original_url:input(),facebook:input('checkbox'),instagram:input('checkbox'),title:input(),category:input()});
 formElements.push(...Object.values(formElements));let opened=0,reset=0;
 const fixture={window:{confirm:()=>false},URL,socialLinkEditPostId:'',socialLinkSubmitButton:{disabled:false},socialLinkForm:{elements:formElements},
-  resetSocialLinkEditMode(){reset++;},openModule(v){assert.equal(v,'social-links');opened++;},socialLinkMessage:{},setMessage(){},
+  resetSocialLinkEditMode(){reset++;for(const field of formElements){field.value=field.defaultValue;field.checked=field.defaultChecked;}},openModule(v){assert.equal(v,'social-links');opened++;},socialLinkMessage:{},socialLinkHeading:{textContent:'Enlace de una red social'},setMessage(){},
   fetch(){throw Error('handoff must not call any service');}};
 vm.runInNewContext(bridge,fixture);const draft=fixture.window.SOLLER_ARA_WATCH_DRAFT,sourceUrl='https://www.instagram.com/p/P1/';
 formElements.title.value='Borrador existente';assert.equal(draft('Museu',sourceUrl),false);assert.equal(reset,0);
 fixture.window.confirm=()=>true;assert.equal(draft('Museu',sourceUrl),true);assert.equal(formElements.original_url.value,sourceUrl);
 assert.equal(formElements.source_name.value,'Museu');assert.equal(formElements.instagram.checked,false);assert.equal(formElements.facebook.checked,false);assert.equal(opened,1);
 fixture.socialLinkEditPostId='editing';assert.throws(()=>draft('Museu',sourceUrl));assert.equal(opened,1);
+const manual=fixture.window.SOLLER_ARA_SOURCE_DRAFT;
+assert.throws(()=>manual('Biblioteca','agenda'),'A manual source cannot replace an edit');
+fixture.socialLinkEditPostId='';fixture.socialLinkSubmitButton.disabled=true;
+assert.throws(()=>manual('Biblioteca','agenda'),'An ongoing submission cannot be replaced');
+fixture.socialLinkSubmitButton.disabled=false;fixture.window.confirm=()=>false;
+formElements.title.value='Borrador que conservar';const beforeManualReset=reset;
+assert.equal(manual('Biblioteca','agenda'),false);assert.equal(reset,beforeManualReset);
+assert.equal(formElements.title.value,'Borrador que conservar');assert.equal(formElements.original_url.value,sourceUrl);
+fixture.window.confirm=()=>true;formElements.facebook.checked=formElements.instagram.checked=true;
+assert.equal(manual('CEIP Es Fossaret · Sóller','news'),true);
+assert.equal(formElements.original_url.value,'','A catalogue homepage is never passed off as the chosen publication');
+assert.equal(formElements.source_name.value,'CEIP Es Fossaret · Sóller');assert.equal(formElements.category.value,'news');
+assert.equal(formElements.facebook.checked,false);assert.equal(formElements.instagram.checked,false);
+assert.equal(fixture.socialLinkHeading.textContent,'Enlace de una fuente');
 console.log('PASS: private accounts, original dates, pagination/resume, deduplication, Meta restrictions, manual handoff boundary and isolated cron.');

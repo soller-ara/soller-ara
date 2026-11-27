@@ -497,9 +497,21 @@
 
   // Hand off a review candidate as a draft only; never submit it or replace an edit.
   window.SOLLER_ARA_WATCH_DRAFT = (source, original) => {
-    if (socialLinkSubmitButton.disabled || socialLinkEditPostId) throw new Error("Termina o cancela la edición en «Enlaces de redes» antes de preparar otro enlace.");
     const url = new URL(original);
     if (url.protocol !== "https:" || !["www.instagram.com", "www.facebook.com"].includes(url.hostname) || url.username || url.password || url.port) throw new Error("Enlace original no válido.");
+    return prepareReviewedLink(source,url.href);
+  };
+
+  window.SOLLER_ARA_SOURCE_DRAFT = (source, category) => {
+    if(!prepareReviewedLink(source,""))return false;
+    socialLinkHeading.textContent="Enlace de una fuente";
+    socialLinkForm.elements.category.value=category==="news"?"news":"agenda";
+    setMessage(socialLinkMessage,"Pega el enlace concreto de la noticia o actividad de esta fuente y revísalo antes de publicar.");
+    return true;
+  };
+
+  function prepareReviewedLink(source, original) {
+    if (socialLinkSubmitButton.disabled || socialLinkEditPostId) throw new Error("Termina o cancela la edición en «Enlaces de redes» antes de preparar otro enlace.");
     const dirty = Array.from(socialLinkForm.elements).some(el => {
       if (el.tagName === "SELECT") return el.value !== (Array.from(el.options).find(o => o.defaultSelected) || el.options[0]).value;
       if (["checkbox", "radio"].includes(el.type)) return el.checked !== el.defaultChecked;
@@ -508,13 +520,13 @@
     if (dirty && !window.confirm("Ya hay un borrador en «Enlaces de redes». ¿Sustituirlo por este enlace?")) return false;
     resetSocialLinkEditMode(true);
     socialLinkForm.elements.source_name.value = String(source || "").slice(0, 120);
-    socialLinkForm.elements.original_url.value = url.href;
+    socialLinkForm.elements.original_url.value = original;
     socialLinkForm.elements.facebook.checked = socialLinkForm.elements.instagram.checked = false;
     openModule("social-links");
     setMessage(socialLinkMessage, "Enlace preparado. Revisa el formulario y elige los destinos antes de publicar.");
     socialLinkForm.elements.original_url.focus();
     return true;
-  };
+  }
 
   function updateSocialPosterFields() {
     const isPoster = socialLinkForm.elements.content_type.value === "event_poster";
