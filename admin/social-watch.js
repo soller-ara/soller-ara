@@ -33,7 +33,25 @@
     unavailable:"Solo consulta manual: Meta no permite identificar o consultar esta cuenta.",limited:"Meta ha limitado las consultas. Se volverá a intentar.",
     temporary:"Lectura interrumpida. El archivo anterior se conserva.",cursor:"Paginación interrumpida. Se volverá a consultar.",
     catching_up:"Leyendo más publicaciones: cobertura parcial.",partial_rows:"Lectura parcial: hay entradas sin enlace o fecha verificables.",incomplete:"Lectura parcial: faltan enlaces o fechas verificables.",busy:"Hay una revisión en curso."};
-  if(typeof document==="undefined"){globalThis.socialWatchTest={period,dayKey,profile,stateText};return;}
+  function previewUrl(raw,network){
+    let u;try{u=new URL(raw);}catch{return "";}
+    if(u.protocol!=="https:"||u.username||u.password||u.port)return "";
+    if(network==="instagram"&&u.hostname==="www.instagram.com"){
+      const m=u.pathname.match(/^\/(?:p|reel|tv)\/([\w-]+)\/?$/);
+      return m?"https://www.instagram.com/p/"+m[1]+"/embed/captioned/":"";
+    }
+    if(network!=="facebook"||u.hostname!=="www.facebook.com")return "";
+    const p=u.pathname,query=/^\/(?:story\.php|permalink\.php|photo(?:\.php)?\/?|watch\/?)$/.test(p);
+    const path=/^\/(?:[^/]+\/(?:posts|photos|videos)(?:\/[\w.\-]+){1,4}|(?:reel|watch\/live)\/[\w.\-]+)\/?$/.test(p);
+    if(!query&&!path)return "";
+    const clean=new URL(u.origin+p);
+    for(const key of ["story_fbid","id","fbid","v"]){const v=u.searchParams.get(key);if(v&&/^[\w-]{1,180}$/.test(v))clean.searchParams.set(key,v);}
+    if(query&&!["story_fbid","fbid","v"].some(key=>clean.searchParams.has(key)))return "";
+    const frame=new URL("https://www.facebook.com/plugins/"+(/\/(?:videos|reel|watch)\b/.test(p)?"video.php":"post.php"));
+    frame.searchParams.set("href",clean.href);frame.searchParams.set("show_text","true");frame.searchParams.set("width","500");
+    return frame.href;
+  }
+  if(typeof document==="undefined"){globalThis.socialWatchTest={period,dayKey,profile,stateText,previewUrl};return;}
   const el=id=>document.getElementById(id), panel=el("social-watch");if(!panel)return;
   const form=el("watchAddForm"),list=el("watchPosts"),accounts=el("watchAccounts"),date=el("watchDate"),feedback=el("watchFeedback");
   const localKey="sollerAraWatchProfiles.v1",token=()=>sessionStorage.getItem("sollerAraAdminSession")||"";
@@ -42,6 +60,8 @@
   let mode="today",storeMode="loading",entries=[],items=[],next="",generation=0,busy=false,localReadable=true;
   let batch=null;
   const batchResults=new Map(),checkAll=el("watchCheckAll"),batchProgress=el("watchBatchProgress");
+  const preview=el("watchPreviewDialog"),previewMedia=el("watchPreviewMedia"),previewClose=el("watchPreviewClose");
+  let previewKey="";
   function readLocal(){try{const raw=JSON.parse(localStorage.getItem(localKey)||"[]");if(!Array.isArray(raw))throw Error();const result=raw.map(a=>profile({profile:a.profile,name:a.label,page_id:a.page_id}));localReadable=true;return result;}catch{localReadable=false;return [];}}
   function saveLocal(rows){if(!localReadable)throw Error("No se puede leer la lista de este navegador. No se han escrito cambios.");try{localStorage.setItem(localKey,JSON.stringify(rows));}catch{throw Error("El navegador no ha permitido guardar la cuenta.");}}
   const msg=(s,err=false)=>{feedback.textContent=s;feedback.className=err?"message error":"message";};
@@ -50,6 +70,21 @@
   function anchor(label,raw,network){const a=node("a",label,"button-link");let u;try{u=new URL(raw);}catch{return null;}
     if(u.protocol!=="https:"||u.hostname!==(network==="instagram"?"www.instagram.com":"www.facebook.com")||u.username||u.password||u.port)return null;
     a.href=u.href;a.target="_blank";a.rel="noopener noreferrer";return a;}
+  function closePreview(){if(preview.open)preview.close();previewMedia.replaceChildren();}
+  function openPreview(post){
+    if(!current())return;const src=previewUrl(post.url,post.network),link=anchor("Abrir publicación original",post.url,post.network);if(!src||!link)return;
+    previewKey=post.k;previewMedia.replaceChildren();
+    el("watchPreviewMeta").textContent=post.label+" · "+time.format(new Date(post.stamp))+" · "+(post.network==="instagram"?"Instagram":"Facebook");
+    const target=el("watchPreviewOriginal");target.href=link.href;
+    const frame=document.createElement("iframe");frame.title="Publicación original de "+post.label;
+    frame.referrerPolicy="no-referrer";frame.allow="encrypted-media; picture-in-picture; fullscreen";frame.allowFullscreen=true;
+    frame.setAttribute("sandbox","allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-presentation");
+    frame.src=src;previewMedia.append(frame);if(!preview.open)preview.showModal();previewClose.focus({preventScroll:true});
+  }
+  previewClose.addEventListener("click",closePreview);
+  preview.addEventListener("close",()=>{previewMedia.replaceChildren();if(current()){
+    const control=[...list.querySelectorAll("[data-watch-preview]")].find(b=>b.dataset.watchPreview===previewKey);control?.focus({preventScroll:true});
+  }previewKey="";});
   function current(){return !el("adminView").hidden&&panel.classList.contains("active")&&Boolean(token());}
   function filters(){const p=period(mode,date.value);date.hidden=false;el("watchDateBox").hidden=mode==="today";
     panel.querySelectorAll("[data-watch-period]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.watchPeriod===mode)));
@@ -74,6 +109,7 @@
     el("watchCoverage").textContent=storeMode==="loading"?"":storeMode==="error"?"Los datos que ya estaban en pantalla pueden estar desactualizados.":!entries.length?"Añade tu primera cuenta en «Mis cuentas».":storeMode==="device"?"Las cuentas de este dispositivo no se han consultado automáticamente.":(items.length?"Publicaciones encontradas. ":"No se han encontrado publicaciones para este periodo. ")+(outside.length?"Hay cuentas pendientes, sin acceso o sin cobertura completa de estas fechas.":"Consulta realizada hasta la última lectura de cada cuenta.");
     list.replaceChildren();for(const p of items){const a=anchor("Abrir publicación original",p.url,p.network);if(!a)continue;
       const card=node("article",undefined,"watch-card"),controls=node("div",undefined,"watch-controls");
+      if(previewUrl(p.url,p.network)){const show=button("Ver foto o vídeo",()=>openPreview(p));show.dataset.watchPreview=p.k;controls.append(show);}
       controls.append(a,button("Preparar en Enlaces de redes",()=>{try{window.SOLLER_ARA_WATCH_DRAFT(p.label,p.url);}catch(e){msg(e.message,true);}}));
       card.append(node("small",time.format(new Date(p.stamp))+" · "+(p.network==="instagram"?"Instagram":"Facebook")),node("h3",p.label),node("p",p.brief),controls);list.append(card);}
     accounts.replaceChildren();for(const a of entries){const card=node("article",undefined,"watch-card"),controls=node("div",undefined,"watch-controls"),link=anchor("Abrir perfil",a.profile,a.network);
@@ -137,7 +173,7 @@
   panel.querySelectorAll("[data-watch-period]").forEach(b=>b.addEventListener("click",()=>{if(mode==="today"||b.dataset.watchPeriod==="today")date.value=dayKey();mode=b.dataset.watchPeriod;load();}));
   date.value=dayKey();date.addEventListener("change",()=>{if(valid(date.value)){load();}else msg("Selecciona una fecha válida.",true);});
   el("watchReload").addEventListener("click",()=>{msg("");load();});el("watchMore").addEventListener("click",()=>{if(next)load(true);});
-  const visible=()=>{if(current())load();else{generation++;if(batch)batch.cancelled=true;if(el("adminView").hidden){entries=[];items=[];next="";storeMode="loading";batchResults.clear();batchProgress.hidden=true;accounts.replaceChildren();list.replaceChildren();msg("");form.reset();}}};
+  const visible=()=>{if(current())load();else{generation++;closePreview();if(batch)batch.cancelled=true;if(el("adminView").hidden){entries=[];items=[];next="";storeMode="loading";batchResults.clear();batchProgress.hidden=true;accounts.replaceChildren();list.replaceChildren();msg("");form.reset();}}};
   new MutationObserver(visible).observe(panel,{attributes:true,attributeFilter:["class"]});
   new MutationObserver(visible).observe(el("adminView"),{attributes:true,attributeFilter:["hidden"]});
   const openBookmark=()=>{if(window.location.hash==="#cuentas-que-sigo")document.querySelector('.nav-button[data-view="social-watch"]')?.click();};

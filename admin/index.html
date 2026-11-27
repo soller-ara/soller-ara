@@ -10,7 +10,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="../assets/brand/apple-touch-icon.png" />
   <title>Administración · Sóller Ara</title>
   <link rel="preload" as="image" href="../assets/brand/logo-soller-ara-web.png" />
-  <link rel="stylesheet" href="./admin.css?v=0.94.2" />
+  <link rel="stylesheet" href="./admin.css?v=0.94.3" />
 </head>
 <body>
   <main class="admin-shell">
@@ -41,7 +41,7 @@
         <div class="header-actions">
           <a class="public-link button-secondary" href="../index.html">Volver a Sóller Ara</a>
           <button id="refreshAdminPageButton" class="button-secondary" type="button" title="Actualizar la página de Administración"><span aria-hidden="true">↻</span> Actualizar</button>
-          <span id="adminVersion" class="status-pill">v0.94.2</span>
+          <span id="adminVersion" class="status-pill">v0.94.3</span>
           <span id="connectionState" class="status-pill">Conectado</span>
           <button id="logoutButton" class="button-secondary" type="button">Salir</button>
         </div>
@@ -171,6 +171,17 @@
           <button id="watchImport" type="button" class="button-secondary" hidden>Guardar en Administración las cuentas de este dispositivo</button>
           <div id="watchAccounts" class="post-list"></div>
         </details>
+        <dialog id="watchPreviewDialog" class="watch-preview-dialog" aria-labelledby="watchPreviewHeading" aria-describedby="watchPreviewMeta watchPreviewHelp">
+          <header class="watch-preview-header">
+            <div><h3 id="watchPreviewHeading">Vista previa de la publicación</h3><p id="watchPreviewMeta" class="hint"></p></div>
+            <button id="watchPreviewClose" type="button" class="button-secondary" autofocus>Cerrar</button>
+          </header>
+          <div id="watchPreviewMedia" class="watch-preview-media"></div>
+          <footer class="watch-preview-footer">
+            <p id="watchPreviewHelp" class="hint">La plataforma puede pedir abrir el original para reproducir el vídeo. Si no aparece la vista previa, usa el enlace inferior.</p>
+            <a id="watchPreviewOriginal" class="button-secondary public-link" target="_blank" rel="noopener noreferrer">Abrir publicación original</a>
+          </footer>
+        </dialog>
         <p id="watchFeedback" class="message" role="status" aria-live="polite"></p>
       </section>
 
@@ -227,11 +238,11 @@
   </main>
 
   <script src="./public-data.js?v=0.61"></script>
-  <script src="./config.js?v=0.94.2"></script>
+  <script src="./config.js?v=0.94.3"></script>
   <script src="./collection-health.js?v=0.93.3"></script>
-  <script src="./editorial-guide.js?v=0.94.2"></script>
-  <script src="./web-discovery.js?v=0.94.2"></script>
-  <script src="./admin.js?v=0.94.2"></script>
-  <script src="./social-watch.js?v=0.94.2"></script>
+  <script src="./editorial-guide.js?v=0.94.3"></script>
+  <script src="./web-discovery.js?v=0.94.3"></script>
+  <script src="./admin.js?v=0.94.3"></script>
+  <script src="./social-watch.js?v=0.94.3"></script>
 </body>
 </html>

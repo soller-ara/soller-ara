@@ -36,6 +36,23 @@ async function request(body,options={}){const req=new Request(options.url||path,
 assert.equal((await request(undefined,{noAuth:true}))[0],401);
 assert.deepEqual((await request())[1].posts,[]);
 const api=run('globalThis.socialWatchTest'), plain=x=>JSON.parse(JSON.stringify(x));
+assert.equal(api.previewUrl('https://www.instagram.com/reel/Example_27/?igsh=tracking','instagram'),
+  'https://www.instagram.com/p/Example_27/embed/captioned/');
+assert.equal(api.previewUrl('https://www.instagram.com/p/Example_28/','instagram'),
+  'https://www.instagram.com/p/Example_28/embed/captioned/');
+const fbPreview=new URL(api.previewUrl('https://www.facebook.com/story.php?id=12&story_fbid=34&access_token=discard','facebook'));
+assert.equal(fbPreview.origin,'https://www.facebook.com');assert.equal(fbPreview.pathname,'/plugins/post.php');
+assert.equal(fbPreview.searchParams.get('href'),'https://www.facebook.com/story.php?story_fbid=34&id=12');
+assert.ok(!fbPreview.href.includes('discard'));
+assert.equal(new URL(api.previewUrl('https://www.facebook.com/local/videos/123','facebook')).pathname,'/plugins/video.php');
+for(const [url,network] of [
+  ['javascript:alert(1)','instagram'],['http://www.instagram.com/p/ABC/','instagram'],
+  ['https://www.instagram.com.evil.test/p/ABC/','instagram'],['https://www.instagram.com:444/p/ABC/','instagram'],
+  ['https://person:secret@www.instagram.com/p/ABC/','instagram'],['https://www.instagram.com/ajuntament_de_soller/','instagram'],
+  ['https://www.instagram.com/p/ABC/embed/','instagram'],['https://www.instagram.com/p/ABC/','facebook'],
+  ['https://www.facebook.com/redirect?next=https://evil.test/','facebook'],['https://www.facebook.com/profile.php?id=12','facebook'],
+  ['https://www.facebook.com/story.php?id=12','facebook'],['https://www.facebook.com/people/','facebook']
+])assert.equal(api.previewUrl(url,network),'','Only verified post paths can open inside Administration');
 assert.deepEqual(plain(api.period('today','',Date.parse('2026-11-24T23:30:00Z'))),{from:'2026-11-25',to:'2026-11-25'});
 assert.deepEqual(plain(api.period('week','2026-03-29')),{from:'2026-03-23',to:'2026-03-29'});
 assert.deepEqual(plain(api.period('week','2026-01-01')),{from:'2025-12-29',to:'2026-01-04'});
