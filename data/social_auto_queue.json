@@ -1,6 +1,64 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": null,
-  "entries": []
+  "generated_at": "2026-11-28T08:06:59.057126+00:00",
+  "entries": [
+    {
+      "post_id": "2e235652a47952e66c53",
+      "title": "Demolició parcial d’un edifici situat en zona protegida de Costes",
+      "summary": "",
+      "source": "Sa Veu de Sóller",
+      "source_id": "sa-veu-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-11-28T08:00:00+00:00",
+      "original_url": "https://saveu.cat/noticies/demolicio-parcial-dun-edificisituat-en-zona-protegida-de-costes/",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/2e235652a47952e66c53.jpg"
+    },
+    {
+      "post_id": "aa69974e26a98077acb1",
+      "title": "El Jumeirah tancarà fins al 2028 per reformar l’hotel",
+      "summary": "",
+      "source": "Setmanari Sóller",
+      "source_id": "setmanari-soller",
+      "source_type": "media",
+      "category": "news",
+      "language": "ca",
+      "published_at": "2026-11-28T09:00:00+01:00",
+      "original_url": "https://www.elsoller.cat/soller/local/2026/11/28/354869/jumeirah-tancara-fins-2028-per-reformar-hotel.html",
+      "content_policy": "headline_date_link_only",
+      "rights_status": "permission_pending",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/aa69974e26a98077acb1.jpg"
+    },
+    {
+      "post_id": "66742b27402f46fc4282",
+      "title": "CVS Fustes ca'n Vaquer - Esporles. Infantil Femení 1°. Jornada 9",
+      "summary": "Vídeo publicat per Club Vòlei Sóller · YouTube.",
+      "source": "Club Vòlei Sóller · YouTube",
+      "source_id": "youtube-club-volei-soller",
+      "source_type": "social",
+      "category": "sports",
+      "language": "ca",
+      "published_at": "2026-11-28T07:36:05+00:00",
+      "original_url": "https://www.youtube.com/watch?v=mS0fK4q6tns",
+      "content_policy": "generated_social_summary",
+      "rights_status": "platform_embed",
+      "platforms": [
+        "facebook",
+        "instagram"
+      ],
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/66742b27402f46fc4282.jpg"
+    }
+  ]
 }
