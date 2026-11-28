@@ -2,6 +2,16 @@
   "version": 1,
   "entries": [
     {
+      "id": "f578144d5396f6a2",
+      "timestamp": "2026-11-28T13:17:31.469487+00:00",
+      "action": "reclassify",
+      "area": "moderation",
+      "target_id": "6313ef07aee4fa6baf70",
+      "title": "El túnel de Sóller estará cerrado las noches de este domingo al próximo jueves por tareas de mantenimiento",
+      "detail": "Acción de moderación completada desde Administración",
+      "status": "success"
+    },
+    {
       "id": "feb9f5f10a68f635",
       "timestamp": "2026-11-27T16:38:34.095334+00:00",
       "action": "publish",

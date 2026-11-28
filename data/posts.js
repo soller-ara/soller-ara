@@ -706,7 +706,7 @@ window.SOLLER_ARA_DATA = {
   "posts": [
     {
       "id": "6313ef07aee4fa6baf70",
-      "category": "sports",
+      "category": "alerts",
       "source_id": "ultima-hora-soller",
       "source": "Última Hora",
       "source_type": "media",
@@ -9026,5 +9026,5 @@ window.SOLLER_ARA_DATA = {
     }
   ],
   "sources_checked_at": "2026-11-28T12:51:45.025026+00:00",
-  "fetched_at": "2026-11-28T12:51:45.025026+00:00"
+  "fetched_at": "2026-11-28T13:17:31.425429+00:00"
 };
