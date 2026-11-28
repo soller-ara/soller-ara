@@ -1,26 +1,26 @@
 {
   "version": 1,
   "enabled": true,
-  "generated_at": "2026-11-28T11:37:38.532291+00:00",
+  "generated_at": "2026-11-28T12:51:45.212109+00:00",
   "entries": [
     {
-      "post_id": "d771a0dc6dfdc8bc2917",
-      "title": "Més de 10.400 sollerics decidiran el futur del Congrés i el Senat",
+      "post_id": "6313ef07aee4fa6baf70",
+      "title": "El túnel de Sóller estará cerrado las noches de este domingo al próximo jueves por tareas de mantenimiento",
       "summary": "",
-      "source": "Setmanari Sóller",
-      "source_id": "setmanari-soller",
+      "source": "Última Hora",
+      "source_id": "ultima-hora-soller",
       "source_type": "media",
-      "category": "news",
-      "language": "ca",
-      "published_at": "2026-11-28T12:00:00+01:00",
-      "original_url": "https://www.elsoller.cat/soller/local/2026/11/28/354873/mes-10400-sollerics-decidiran-futur-del-congres-senat.html",
+      "category": "sports",
+      "language": "es",
+      "published_at": "2026-11-28T12:41:45+01:00",
+      "original_url": "https://www.ultimahora.es/noticias/part-forana/2026/11/28/2759615/tunel-soller-estara-cerrado-noches-este-domingo-proximo-jueves-por-tareas-mantenimiento.html",
       "content_policy": "headline_date_link_only",
       "rights_status": "permission_pending",
       "platforms": [
         "facebook",
         "instagram"
       ],
-      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/d771a0dc6dfdc8bc2917.jpg"
+      "image_url": "https://soller-ara.github.io/soller-ara/assets/generated/social/6313ef07aee4fa6baf70.jpg"
     }
   ]
 }

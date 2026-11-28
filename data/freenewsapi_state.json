@@ -1,16 +1,16 @@
 {
   "version": 1,
   "month": "2026-11",
-  "requests_this_month": 1609,
-  "credits": 0.2505820475,
-  "refilled_at": "2026-11-28T11:31:14.175770+00:00",
+  "requests_this_month": 1612,
+  "credits": 0.9970208975000001,
+  "refilled_at": "2026-11-28T12:46:09.902390+00:00",
   "queries": {
     "Sóller": {
-      "checked_at": "2026-11-28T11:31:14.175770+00:00",
+      "checked_at": "2026-11-28T12:46:09.902390+00:00",
       "results": []
     },
     "Port de Sóller": {
-      "checked_at": "2026-11-28T11:31:14.175770+00:00",
+      "checked_at": "2026-11-28T12:46:09.902390+00:00",
       "results": []
     },
     "Fornalutx": {
@@ -26,7 +26,7 @@
       "results": []
     },
     "Deia": {
-      "checked_at": "2026-11-28T10:11:10.103111+00:00",
+      "checked_at": "2026-11-28T12:46:09.902390+00:00",
       "results": []
     }
   }
