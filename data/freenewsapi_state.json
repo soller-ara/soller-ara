@@ -1,9 +1,9 @@
 {
   "version": 1,
   "month": "2026-11",
-  "requests_this_month": 1579,
-  "credits": 0.2418405058333324,
-  "refilled_at": "2026-11-28T01:31:03.685920+00:00",
+  "requests_this_month": 1580,
+  "credits": 0.30228247249999907,
+  "refilled_at": "2026-11-28T01:52:16.216280+00:00",
   "queries": {
     "Sóller": {
       "checked_at": "2026-11-28T01:31:03.685920+00:00",
@@ -14,7 +14,7 @@
       "results": []
     },
     "Fornalutx": {
-      "checked_at": "2026-11-28T00:16:10.734356+00:00",
+      "checked_at": "2026-11-28T01:52:16.216280+00:00",
       "results": []
     },
     "Biniaraix": {
